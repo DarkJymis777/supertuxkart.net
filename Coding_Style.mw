@@ -1,0 +1,92 @@
+While currently the sources do not follow the coding style, it would be nice if all new code would be using the following rules. Old code will be re-styled as we go along with development.
+
+== Identation ==
+4 spaces, no tabs.
+
+== Braces placement ==
+Both the opening and the closing braces should be on a line of their
+own. That means:
+
+ int main()
+ {
+     return 0;
+ }
+
+'''not'''
+
+ int main(){
+     return 0;
+ }
+
+
+== Doxygen and function separations ==
+For Doxygen, use the /** style, /// could be easily missed and //! looks too different from the usual C++ syntax. More info can be found at http://www.stack.nl/~dimitri/doxygen/docblocks.html .
+
+Class member function definitions and function definitions in the same namespace should be separated inbetween by a line of '// ' followed by 77 '-'. In cases where there are more than one class implementation in the same file (which should almost never happen), instead of '-' an equal sign (=) should be used around each class' functions. Also use equal signs between functions that are not class members.
+
+You can use Doxygen documentation instead of the function separators(but not class implementations), or just place it between the function separator and the beginning of the function.
+
+For example:
+
+ int main()
+ [...]  
+ 
+ //============================================================================ 
+ Kart::update()
+ {
+     [...]
+ }
+ 
+ // -----------------------------------------------------------------------------
+ /** \brief Searches recursively through the model for any branches representing
+  *  wheels.
+  *
+  *  Searches recursively though the model for any branches having the name
+  *  WheelFront.L, WheelFront.R, WheelRear.L, WheelRear.R. If a wheel is found,
+  *  a new transform node will be inserted 'above' the branch.
+  *  \param branch This is the branch in which the wheels are searched.
+ **/
+ void Kart::load_wheels(ssgBranch* branch)
+ {
+ }
+ 
+ //----------------------------------------------------------------------------
+ Kart::handlePhysics()
+ [...]
+ 
+ //============================================================================
+ Screen::show()
+ [...]
+ 
+It should generally be avoided to have more than one class in a file, meaning that all // === lines should be cleaned up after creating appropriate new files.
+
+== Const usage ==
+Use const instead of #define when able.
+
+The program should be 'const correct', which means that anything that is not meant to be
+modified is declared const, both variables and functions.
+
+== Names ==
+Constants are named with all characters in caps separated by '_'.
+Example: KART_LENGTH
+
+Non-constant variable names are lower case separated by '_'.
+Example: sun_position
+
+Function names should be capitalized, except the first word.
+Example: getWidth()
+
+Type(including classes/struct/enum) names have all their words capitalized.
+Example: KartControl
+
+Class member non-constant variables should be prefixed with "m_".
+Example: m_model
+
+== Misc ==
+* Use true/false instead of TRUE/FALSE. In [http://lists.kde.org/?l=kde-devel&m=111737503228222&w=2] it's written that uppercase booleans are used only for older compilers, so we should try to avoid this inconsistency.
+
+* Prefer std::string instead of char*. If you need a C-style string, use the function std::string.c_str(). However, there are cases when this cannot be avoided(like when using strings with gettext).
+
+* Instead of using ulList or other plib container classes, use stl containers like vector.
+
+* Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h)
