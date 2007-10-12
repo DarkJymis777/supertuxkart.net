@@ -5,32 +5,32 @@ __NOTOC__
 |
 '''July 2007:''' The 0.3 release is finally out. The most important news items:
 
-!* Highscore lists
-!* Fullscreen support
-!* A new track: The Island
-!* A new character: Hexley
-!* A new penalty: a bomb
-!* Two new Grand Prix (a volcano and an island Grand Prix)
-!* Improved user interface
-!* Improved AI
-!* new documentation (including a cover for a DVD case) in English, German, and French (available as separate download)
-!* And bugfixes
+* Highscore lists
+* Fullscreen support
+* A new track: The Island
+* A new character: Hexley
+* A new penalty: a bomb
+* Two new Grand Prix (a volcano and an island Grand Prix)
+* Improved user interface
+* Improved AI
+* new documentation (including a cover for a DVD case) in English, German, and French (available as separate download)
+* And bugfixes
 |-
 |
 SuperTuxKart is an enhanced version of TuxKart, a kart racing game, originally done by Steve Baker, featuring Tux and a bunch of his friends. SuperTuxKart is the work of the GotM run for TuxKart at  happypenguin.org. It was recently picked up by a new pair of maintainers.
 
 '''September 2006:''' We finally published a first official release: version 0.2. This version is the first playable version, and (among other things) contains the following updates compared to the last GotM version of SuperTuxKart:
 
-!* performance improvements
-!* significant stronger computer controlled karts (which do not cheat anymore)
-!* several grand prix
-!* two new collectables (anchor and anvil)
+* performance improvements
+* significant stronger computer controlled karts (which do not cheat anymore)
+* several grand prix
+* two new collectables (anchor and anvil)
 
 Compared with the original TuxKart the following improvements were done by the GotM team:
 
-!* new characters
-!* new tracks
-!* a completly new interface
-!* some smaller graphical improvements (animated wheels, etc.)
+* new characters
+* new tracks
+* a completly new interface
+* some smaller graphical improvements (animated wheels, etc.)
 |-
 |}
