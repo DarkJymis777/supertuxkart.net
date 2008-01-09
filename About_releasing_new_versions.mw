@@ -29,13 +29,21 @@ The final release is copied from the RC branch to the tag directory (using the r
 == Naming scheme for packages ==
 All files released on the STK web page should use the following naming scheme:
 
-supertuxkart-VERSION-ARCHITECTURE.SUFFIX
+supertuxkart-<VERSION>-<ARCHITECTURE>.<FILE EXTENSION>
 
 '''VERSION''':
-E.g. 0.3rc1,  0.3.1rc2,  0.3, SVN1020, ...
+* Release candidates: the version number of the next stable release + rc + release candidate number. Examples: 0.3rc1 or 0.3.1rc2
+* Stable release examples: the version number. Examples: 0.3, 0.4
+* Unstable release examples: SVN + SVN revision number. Examples: SVN1020, SVN2418
 
 '''ARCHITECTURE''':
-src, win, macosx, linuxi686, linuxppc, ...
+* Source packages: src
+* Windows binary packages: win
+* Mac OS X binary packages: macosx
+* Linux x86 packages: linux + required processor type. Examples: linuxi586, linuxi686, linuxppc
 
-'''SUFFIX''':
-e.g. tar.gz, bz2, dmg, zip, ...
+'''FILE EXTENSION''':
+* Depends on the file type. Examples: tar.gz, tar.bz2, dmg, zip, ...
+
+
+''Examples of full package file names: supertuxkart-0.3-linuxi586.tar.bz2, supertuxkart-SVN2110-macosx.dmg, supertuxkart-0.4rc1-win.zip''
