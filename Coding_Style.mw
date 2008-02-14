@@ -1,4 +1,4 @@
-While currently the sources do not follow the coding style, it would be nice if all new code would be using the following rules. Old code will be re-styled as we go along with development.
+Most of the sources follow this coding style, and the rest is being re-styled as we continue development.
 
 == Identation ==
 4 spaces, no tabs.
