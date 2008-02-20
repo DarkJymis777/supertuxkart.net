@@ -6,11 +6,16 @@ To make a stable package, first a tag must be created in the source tree, by cop
 The final release is copied from the RC branch to the tag directory (using the release number as name). The branch will be removed to reflect the release number (e.g. 0.3rc2 -> 0.3). For now the branches should be kept in place, since it helps finding problems which might get reported for the release (if they can't be reproduced in the trunk anymore). We might decide on a delete-branch policy later, if this directory gets too full. Also, the license under which STK is released, requires us to provide the source code for at least 3 years for any binaries we provide.
 
 
-==Committing changes during the preparation of an stable release==
+==Committing changes during the preparation of a stable release==
 
 * Any bug fixes to the RC branch should be independently committed to the trunk as well, just as they should be committed to the RC branch if it's meant for the trunk, but it applies to the RC. While this adds a bit overhead of committing a change (since it has to be committed twice), it saves the time and complexity of merging all bug fixes into the trunk when the release is done, and keeps the trunk free for further development.
 
-* Any new patches not related to the RC or release should be committed to the trunk only. 
+* Any new patches not related to the RC or release should be committed to the trunk only.
+
+* The new version number should be inserted in the following files of the branch:
+** configure.ac (the release number must not have a space, otherwise 'make dist' fails)
+** ChangeLog
+** data/CREDITS
 
 ==Checklist for stable releases==
 * Tested to compile and play under MacOSX.
