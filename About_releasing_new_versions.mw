@@ -11,11 +11,6 @@ The final release is copied from the RC branch to the tag directory (using the r
 
 * Any new patches not related to the RC or release should be committed to the trunk only.
 
-* The new version number should be inserted in the following files of the branch:
-** configure.ac (the release number must not have a space, otherwise 'make dist' fails)
-** ChangeLog
-** data/CREDITS
-
 ==Checklist for stable releases==
 * Tested to compile and play under MacOSX.
 * Tested to compile and play under Windows.
