@@ -1,0 +1,164 @@
+This page will explain how I built and packaged SuperTuxKart on mac OS X.
+
+Note that this is only how I did it, and there might be other ways. I personnaly do not like macports/fink and prefer building everything from source, however if you are comfortable with these tools then go on and use them, you just might need to adapt your environments and some paths so that libraries built with them are correctly picked up.
+
+You could also use OS X frameworks instead of Unix-style libs, this would of course require heavier patching of the STK build system.
+
+====== Before beginning ======
+* Install developer tools, either from the OS X Install DVD or from Apple's website
+
+* Add /usr/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
+
+* symlink include folder of OpenGL framework to /usr/local/include/GL (Unix programs have an easier time finding it this way)
+<pre>
+    % sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /usr/local/include/GL
+</pre>
+
+* Download pkg-config sources from http://pkgconfig.freedesktop.org/releases/ and build it:
+<pre>
+    % cd /path/to/pkg-config-0.22
+    % ./configure
+    % make
+    % sudo make install
+</pre>
+
+* Autotools
+This step is probably only necessary if you use SVN version of STK (I think).
+You may want to install more recent autotools (the ones that come with OS X 10.4 are often too old. Maybe 10.5 users don't need this.). For this make sure /usr/local/bin is in your PATH as described above otherwise it won't work (will pick old versions).
+
+All the following programs can be built and installed with the following commands on the terminal :
+<pre>
+    % cd /path/to/source_file
+    % ./configure
+    % make
+    % sudo make install
+</pre>
+
+** get M4 from http://ftp.gnu.org/gnu/m4/ and install it
+** symlink m4 to gm4 since that's how some programs refer to it. 
+
+<pre>
+        % sudo ln -s /usr/local/bin/m4 /usr/local/bin/gm4
+</pre>
+
+*Then, build and install autoconf and automake from GNU the same way as described above
+** http://www.gnu.org/software/autoconf/
+** http://www.gnu.org/software/automake/
+
+====== ogg/vorbis ======
+* download libogg sources from http://xiph.org/downloads/
+<pre>
+    % ./configure
+    % make
+    % sudo make install
+</pre>
+
+* download libvorbis from http://xiph.org/downloads/
+<pre>
+    % ./configure PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
+    % make
+    % sudo make install
+</pre>
+
+====== OpenAL ======
+
+The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility we do the following :
+
+* Get OpenAL source code
+** I personnaly used SVN. It's actually probably not a good idea to use an unstable version. Anyway it worked for me so I leave it this way but you might want to try a source archive or a stable branch instead.
+<pre>
+    % svn checkout http://www.openal.org/repos/openal/trunk openal
+    % cd openal
+</pre>
+
+* build OpenAL:
+** open folder OpenAL-MacOSX, open XCode project
+** select target openal.dylib and build style "deployment"
+** build
+** find /OpenAL-MacOSX/build/Deployment/openal.dylib and copy it to /usr/local/lib
+<pre>
+        % sudo cp ./OpenAL-MacOSX/build/Deployment/openal.dylib /usr/local/lib
+        % sudo install_name_tool -id /usr/local/lib/libopenal.dylib /usr/local/lib/libopenal.dylib
+</pre>
+
+* copy headers from /OpenAL-MacOSXbuild/include/AL to /usr/local/include/AL
+<pre>
+    % sudo cp -r ./include/AL/  /usr/local/include/AL
+</pre>
+
+* build alut:
+<pre>
+    % cd /openal/alut
+    % ./autogen.sh
+    % ./configure
+    % make
+    % sudo make install
+</pre>
+
+====== SDL ======
+* get source code archive from http://www.libsdl.org/download-1.2.php
+<pre>
+    % cd /path/to/SDL-1.2.13
+    % ./configure --without-x --disable-x11-video
+    % make
+    % sudo make install
+</pre>    
+
+====== PLib ======
+* The sources you can download from the official plib website will not build on mac. Download these modified sources instead : '''(Coming soon)'''
+
+<pre>
+./configure
+make
+sudo make install
+</pre>
+
+====== Building STK ======
+* If you have anything installed in /opt/supertuxkart (like an older version) it's probably a good idea to delete it now so you can start with a clean install.
+
+<pre>
+    % ./autogen.sh (for SVN version only?)
+    % ./configure PKG_CONFIG_PATH=/usr/local/lib/pkgconfig --enable-debug=no --prefix=/opt/supertuxkart
+    % make
+    % sudo make install
+<pre>
+
+* You can now launch STK from terminal
+<pre>
+    % /opt/supertuxkart/bin/supertuxkart
+<pre>
+
+
+====== Making an app bundle ======
+
+* Download this small "packaging kit" : '''(Coming soon)'''
+
+<pre>
+    % chmod +x makeapp.sh
+    % ./makeapp.sh
+</pre>
+
+You should now be able to open it by double-clicking, however you can't send it to another computer.
+
+====== Getting ready for distribution ======
+
+* Here, many strategies are possible, I personnaly used '''dylib bundler'''.
+Get its sources from http://macdylibbundler.sourceforge.net, build it and install it.
+
+* The "packaging kit" mentionned above provides a sample dylibbundler config file. You might need to modify it, for instance if some of your libraries are not in the same prefix as me, or if they have more dependencies (this will happen if you use macports).
+
+Issue one of these two depending on your architecture
+
+<code>
+% dylibbundler -l -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs-ppc/ -cd -od -p @executable_path/../libs-ppc/
+</code>
+
+<code>
+% dylibbundler -l -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs-intel/ -cd -od -p @executable_path/../libs-intel/
+</code>
+
+* To make a Universal Binary, you need to build it on 2 computers, then you can merge the two executable with command
+
+<pre>
+% lipo -create [ppc-file] [intel-file] -output [filename]
+</pre>
