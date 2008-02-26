@@ -131,7 +131,7 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
 
 ====== Making an app bundle ======
 
-* Download this small "packaging kit" : '''(Coming soon)'''
+* Download this small "packaging kit" : http://www.mediafire.com/?yjzzjmy2dnj
 
 <pre>
     % chmod +x makeapp.sh
