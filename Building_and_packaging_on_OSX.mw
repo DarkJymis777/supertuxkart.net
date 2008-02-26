@@ -4,7 +4,7 @@ Note that this is only how I did it, and there might be other ways. I personnaly
 
 You could also use OS X frameworks instead of Unix-style libs, this would of course require heavier patching of the STK build system.
 
-====== Before beginning ======
+====== Environment ======
 * Install developer tools, either from the OS X Install DVD or from Apple's website
 
 * Add /usr/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
@@ -22,7 +22,7 @@ You could also use OS X frameworks instead of Unix-style libs, this would of cou
     % sudo make install
 </pre>
 
-* Autotools
+====== Autotools ======
 This step is probably only necessary if you use SVN version of STK (I think).
 You may want to install more recent autotools (the ones that come with OS X 10.4 are often too old. Maybe 10.5 users don't need this.). For this make sure /usr/local/bin is in your PATH as described above otherwise it won't work (will pick old versions).
 
