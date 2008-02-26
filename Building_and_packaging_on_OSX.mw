@@ -105,7 +105,7 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
 </pre>    
 
 ====== PLib ======
-* The sources you can download from the official plib website will not build on mac. Download these modified sources instead : http://www.mediafire.com/?yjzzjmy2dnj
+* The sources you can download from the official plib website will not build on mac. Download these modified sources instead : '''(Coming Soon)'''
 
 <pre>
     % ./configure
