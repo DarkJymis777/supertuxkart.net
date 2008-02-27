@@ -82,6 +82,8 @@ All the following programs can be built and installed with the following command
 
 ==== Alternate path : macports ====
 
+These commands install a bit more stuff than needed, because their author needed to build other games too. For STK, freetype, sdl_tiff, esound, SDL_mixer, SDL-image and mikmod should not be necessary. Since I don't use macports I will leave them as-is.
+
 <pre>
 sudo port -v install pkgconig
 sudo port -v install plib
