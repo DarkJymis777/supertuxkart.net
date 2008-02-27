@@ -1,8 +1,10 @@
 This page will explain how I built and packaged SuperTuxKart on mac OS X.
 
-Note that this is only how I did it, and there might be other ways. I personnaly do not like macports/fink and prefer building everything from source, however if you are comfortable with these tools then go on and use them, you just might need to adapt your environments and some paths so that libraries built with them are correctly picked up.
+Note that this is only how I did it, and there might be other ways. I personnaly do not like macports/fink and prefer building everything from source, however if you are comfortable with these tools then go on and use them, you just might need to adapt your environments and some paths so that libraries built with them are correctly picked up. I added a section below with macports commands - however be aware you will probably need to adapt your environment for stuff to be picked up properly.
 
 You could also use OS X frameworks instead of Unix-style libs, this would of course require heavier patching of the STK build system.
+
+==== Building dependencies from source ====
 
 ====== Environment ======
 * Install developer tools, either from the OS X Install DVD or from Apple's website
@@ -60,7 +62,41 @@ All the following programs can be built and installed with the following command
     % sudo make install
 </pre>
 
-====== OpenAL ======
+====== SDL ======
+* get source code archive from http://www.libsdl.org/download-1.2.php
+<pre>
+    % cd /path/to/SDL-1.2.13
+    % ./configure --without-x --disable-x11-video
+    % make
+    % sudo make install
+</pre>    
+
+====== PLib ======
+* The sources you can download from the official plib website will not build on mac. Instead, download the modified sources from the dependencies package of the downloads area here : http://sourceforge.net/projects/supertuxkart
+
+<pre>
+    % ./configure
+    % make
+    % sudo make install
+</pre>
+
+==== Alternate path : macports ====
+
+<pre>
+sudo port -v install pkgconig
+sudo port -v install plib
+sudo port -v install libsdl +quartz
+sudo port -v install libsdl_mixer +mikmod
+sudo port -v install libsdl_image
+sudo port -v install libogg
+sudo port -v install livorbis
+sudo port -v install automake
+sudo port -v install esound
+sudo port -v install libsdl_tiff
+sudo port -v install freetype 
+</pre>
+
+==== OpenAL ====
 
 The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility we do the following :
 
@@ -95,25 +131,22 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
     % sudo make install
 </pre>
 
-====== SDL ======
-* get source code archive from http://www.libsdl.org/download-1.2.php
+* create openal.pc in /usr/local/lib/pkgconfig
 <pre>
-    % cd /path/to/SDL-1.2.13
-    % ./configure --without-x --disable-x11-video
-    % make
-    % sudo make install
-</pre>    
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
 
-====== PLib ======
-* The sources you can download from the official plib website will not build on mac. Download these modified sources instead : '''(Coming Soon)'''
-
-<pre>
-    % ./configure
-    % make
-    % sudo make install
+Name: OpenAL
+Description: OpenAL blah blah blah not an official .pc file
+Requires:
+Version: 1.1.0
+Libs: -L${libdir} -lopenal
+Cflags: -I${includedir}
 </pre>
 
-====== Building STK ======
+==== Building STK ====
 * If you have anything installed in /opt/supertuxkart (like an older version) it's probably a good idea to delete it now so you can start with a clean install.
 
 <pre>
@@ -129,7 +162,7 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
 </pre>
 
 
-====== Making an app bundle ======
+==== Making an app bundle ====
 
 * Download this small "packaging kit" : http://www.mediafire.com/?yjzzjmy2dnj
 
