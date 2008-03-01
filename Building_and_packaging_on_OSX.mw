@@ -100,6 +100,8 @@ sudo port -v install freetype
 
 ==== OpenAL ====
 
+(This bit is a bit messy, sorry)
+
 The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility we do the following :
 
 * Get OpenAL source code
@@ -113,9 +115,9 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
 ** open folder OpenAL-MacOSX, open XCode project
 ** select target openal.dylib and build style "deployment"
 ** build
-** find /OpenAL-MacOSX/build/Deployment/openal.dylib and copy it to /usr/local/lib
+** find /OpenAL-MacOSX/build/Deployment/openal.dylib and copy it to /usr/local/lib, renaming it to libopenal.dylib
 <pre>
-        % sudo cp ./OpenAL-MacOSX/build/Deployment/openal.dylib /usr/local/lib
+        % sudo cp ./OpenAL-MacOSX/build/Deployment/openal.dylib /usr/local/lib/libopenal.dylib
         % sudo install_name_tool -id /usr/local/lib/libopenal.dylib /usr/local/lib/libopenal.dylib
 </pre>
 
