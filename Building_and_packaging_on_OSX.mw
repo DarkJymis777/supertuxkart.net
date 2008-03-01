@@ -126,15 +126,6 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
     % sudo cp -r ./include/AL/  /usr/local/include/AL
 </pre>
 
-* build alut:
-<pre>
-    % cd /openal/alut
-    % ./autogen.sh
-    % ./configure
-    % make
-    % sudo make install
-</pre>
-
 * create openal.pc in /usr/local/lib/pkgconfig
 <pre>
 prefix=/usr/local
@@ -148,6 +139,16 @@ Requires:
 Version: 1.1.0
 Libs: -L${libdir} -lopenal
 Cflags: -I${includedir}
+</pre>
+
+
+* build alut:
+<pre>
+    % cd /openal/alut
+    % ./autogen.sh
+    % ./configure
+    % make
+    % sudo make install
 </pre>
 
 ==== Building STK ====
