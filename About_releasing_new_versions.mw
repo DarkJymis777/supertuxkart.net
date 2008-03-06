@@ -20,6 +20,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 ** in configure.ac (from which the define for the sources is created. This number should not have any spaces in it, otherwise "make dist" will fail)
 ** ChangeLog
 ** data/CREDITS
+** src/ide/vc8/supertuxkart.vcproj
 * Update ChangeLog
 * Update data/CREDITS
 * Test to run when no sound card is available. Sound should be disabled and continue, not crash.
