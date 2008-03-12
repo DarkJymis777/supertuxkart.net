@@ -3,6 +3,36 @@ __NOTOC__
 {|
 |-
 |
+
+== Linux unstable binaries ==
+
+Just uploaded a new binary of a recent SVN commit, that has some static linked libraries and the dynamic libraries are included, it was packaged by Sebastian Rode. Hopefully for the 0.5 stable release(yes, I don't mean the 0.4) we will use autopackage and things will be a lot simpler!
+
+--[[User:Coz|Coz]] 12:26, 3 February 2008 (PST) 
+|-
+|
+== New Windows binary of SVN version ==
+
+I just created a simple windows binary of the current SVN version (1410). It contains many GUI and physics bug fixes, and should be 'more stable' than the previous test version. If you have any problems running this executable, please contact me (there might be a dll missing, but I can't test this on any systems I have access to).
+
+--[[User:Hiker|Hiker]] 21:45, 20 January 2008 (PST) 
+
+
+|-
+|
+
+== Windows binary of SVN version ==
+I just created a simple windows binary of the current SVN version. While the current SVN version is not complete and not really stable, it will give all windows users who do not want to compile from SVN the opportunity to see where STK is heading.
+
+--[[User:Hiker|Hiker]] 04:03, 13 December 2007 (PST)
+|-
+|
+== Bullet physics now default ==
+Beginning with revision 1326 the bullet physics are now officially used in SuperTuxKart. This means that collision handling is significantly improved, and the game is much more fun. While not all old features have been ported yet, the game is already playable, and we are busy porting the missing features. Known bugs are listed on our [http://sourceforge.net/tracker/?group_id=202302&atid=981038 bug tracker].
+
+--[[User:Hiker|Hiker]] 16:25, 9 December 2007 (PST)
+|-
+|
 '''July 2007:''' The 0.3 release is finally out. The most important news items:
 
 * Highscore lists
