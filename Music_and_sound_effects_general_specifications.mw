@@ -1,11 +1,19 @@
 == Music ==
 
-Music should be in ogg/vorbis format (.ogg extension). While mod files are currently used in the 0.3 version, support for this will be removed soon!
+Music should be in ogg/vorbis format (.ogg extension), support for mod files has been removed. Try to keep the music file size under 5 megabytes. We want most music to be light-hearted, but it is required that the music isn't 'aggressive' (we want to keep the game's ambient mostly happy).  Also most music needs to be 'loopable', except :
 
-Try to keep the music file size under 5 megabytes.
+*Grand Prix endings
+*Game themes
+*Anything else that doesn't makes sense to loop.
+
+Also, please embed inside the file:
+*The song's name if you wanted to give it a name (not required thought), because the file names are bound to be changed.
+*The name of the author(s). Please don't delete the name of anyone, just append yours if you made a significant modification that you want to be recognized for. This isn't required, just if the song's author desires to do so.
+*The date. Thought we use SVN to to track versions and changes to files, this might come in handy if SVN is not available or if the file was obtained through another way, which is the most likely situation for players.
 
 
-We want most music to be light-hearted, but it is required that the music isn't 'aggressive' (we want to keep the game's ambient mostly happy). 
+
+=== Testing music in 0.4 and earlier versions ===
 
 If you want to test your music in game, modify the *.track files in .../data, and add (or replace) the name of the .ogg files you want to play. If more than one is specified, one will be picked at random each time the track is started, see the following example for a modified version of data/race.track:
  
@@ -20,16 +28,29 @@ If you want to test your music in game, modify the *.track files in .../data, an
  )
 
 
-Also most music needs to be 'loopable', except :
 
-*Grand Prix endings
-*Game themes
-*Anything else that doesn't makes sense to loop.
+=== Music handling in current SVN ===
+The current SVN version supports separate sound packages to be installed. I.e. it is possible to add music to the game without having to modify any data files of an existing STK installation. Additionally, it allows a 'faster' music to be played in the last lap of a race, to add a bit to the excitment :)
 
-Also, please embed inside the file:
-*The song's name if you wanted to give it a name (not required thought), because the file names are bound to be changed.
-*The name of the author(s). Please don't delete the name of anyone, just append yours if you made a significant modification that you want to be recognized for. This isn't required, just if the song's author desires to do so.
-*The date. Thought we use SVN to to track versions and changes to files, this might come in handy if SVN is not available or if the file was obtained through another way, which is the most likely situation for players.
+All music to be used in STK needs a separate configuration file (''filename''.'''music''') in the format:
+ (music-information
+   (title      "Tuxkart 2")
+   (composer   "Matt Thomas")
+   (music      "tk5a.ogg")
+   (fast-music "tk2.ogg")
+   (fade-time   2)
+   (tracks      "beach"  "race")
+ ;;   (loop     10)
+ )
+
+The entries for title, and composer are used to display the name of the track and the composer in the game. Two ogg files can be used: the default one ("music"), and a faster version to be played in the last lap of a race ("fast-music"). The value of "fade-time" determines how many seconds the fade-out of the default music and fade-in of the faster music takes. The fade-in and -out take place at the same time, meaning that the faster music replaces the slower music without a music-less time. For "tracks" a list of tracks can be specified in which the specified music is played. The value for "loop" is currently not used, it is meant to restrict the number of times a song is repeated.
+
+At startup, STK reads all .music files from
+* .../data/music
+* .../data/tracks/*   (i.e. all track specific music)
+* in all directories specified in the SUPERTUXKART_MUSIC_PATH environment variable, which is a ":" separated list. For example: SUPERTUXKART_MUSIC_PATH=/home/user1/ogg:/usr/share/ogg  (for windows user: using drive letters works as expected, e.g.: c:/myoggs:d:/moreoggs).
+
+To test new music in STK just create a .music file (in the same directory as the .ogg file), add the tracks in which this music should be used, and  add the path to this directory to the SUPERTUXKART_MUSIC_PATH environment variable. Just remember that music is picked randomly, so the new music might not be played every time.
 
 == Sound effects ==
 
