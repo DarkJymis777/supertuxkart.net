@@ -46,3 +46,9 @@ supertuxkart-<VERSION>-<ARCHITECTURE>.<FILE EXTENSION>
 
 
 ''Examples of full package file names: supertuxkart-0.3-linuxi586.tar.bz2, supertuxkart-SVN2110-macosx.dmg, supertuxkart-0.4rc1-win.zip''
+
+== Uploading packages to sourceforge ==
+
+You a file to be automatically downloaded depending on the OS used (e.g. a windows, linux, mac  version). Anybody just clicking on the download link from the project overview page will automatically get this specific version offered (with the option to download something else of course).
+
+You can do this by going to admin->file release -> create/edit download page.
