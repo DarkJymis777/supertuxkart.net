@@ -266,6 +266,12 @@ Get its sources from http://macdylibbundler.sourceforge.net, build it and instal
 	dependencies="libvorbis:libogg"
 	ends_with=".dylib"
 	/>
+
+<library
+	name="libintl"
+	starts_with="libintl"
+	ends_with=".dylib"
+	/>
 			
 </config>
 </pre>
