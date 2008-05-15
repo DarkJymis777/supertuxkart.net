@@ -169,8 +169,19 @@ Cflags: -I${includedir}
 
 ==== Making an app bundle ====
 
-* Download this small "packaging kit" : http://www.mediafire.com/?yjzzjmy2dnj
+Use a small ''makeapp.sh'' script like the following one :
+<pre>
+mkdir -p ./SuperTuxKart.app/Contents/Resources
+mkdir ./SuperTuxKart.app/Contents/MacOS
+cp info.plist ./SuperTuxKart.app/Contents/info.plist
+cp stk.icns ./SuperTuxKart.app/Contents/Resources/stk.icns
+cp /opt/supertuxkart/games/supertuxkart ./SuperTuxKart.app/Contents/MacOS/supertuxkart
+cp -r /opt/supertuxkart/share/games/supertuxkart ./SuperTuxKart.app/Contents/Resources/data
+</pre>
 
+You'll need an icon file named 'stk.icns'
+
+And run it as :
 <pre>
     % chmod +x makeapp.sh
     % ./makeapp.sh
@@ -183,7 +194,56 @@ You should now be able to open it by double-clicking, however you can't send it 
 * Here, many strategies are possible, I personnaly used '''dylib bundler'''.
 Get its sources from http://macdylibbundler.sourceforge.net, build it and install it.
 
-* The "packaging kit" mentionned above provides a sample dylibbundler config file. You might need to modify it, for instance if some of your libraries are not in the same prefix as me, or if they have more dependencies (this will happen if you use macports).
+* Here's a sample ''dylibbundler.config'' file. You might need to modify it, for instance if some of your libraries are not in the same prefix as me, or if they have more dependencies (this will happen if you use macports).
+
+<pre>
+<?xml version="1.0"?>
+<config>
+<search_path>/usr/local/lib</search_path>
+
+<library
+	name="libopenal"
+	starts_with="libopenal"
+	ends_with=".dylib"
+	/>
+
+<library
+	name="libalut"
+	starts_with="libalut"
+	dependencies="libopenal"
+	ends_with=".dylib"
+	/>
+		
+<library
+	name="libSDL"
+	starts_with="libSDL"
+	doesnt_contain="_"
+	ends_with=".dylib"
+	/>
+	
+<library
+	name="libogg"
+	starts_with="libogg"
+	ends_with=".dylib"
+	/>
+	
+<library
+	name="libvorbis"
+	starts_with="libvorbis"
+	doesnt_contain="enc:file"
+	dependencies="libogg"
+	ends_with=".dylib"
+	/>
+	
+<library
+	name="libvorbisfile"
+	starts_with="libvorbisfile"
+	dependencies="libvorbis:libogg"
+	ends_with=".dylib"
+	/>
+			
+</config>
+</pre>
 
 Issue one of these two depending on your architecture
 
