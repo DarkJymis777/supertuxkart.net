@@ -47,6 +47,10 @@ All the following programs can be built and installed with the following command
 ** http://www.gnu.org/software/autoconf/
 ** http://www.gnu.org/software/automake/
 
+====== Gettext ======
+Build and install gnu gettext using regular ''./configure && make && sudo make install''
+* http://www.gnu.org/software/gettext/
+
 ====== ogg/vorbis ======
 * download libogg sources from http://xiph.org/downloads/
 <pre>
