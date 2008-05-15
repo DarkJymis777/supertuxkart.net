@@ -173,13 +173,38 @@ Use a small ''makeapp.sh'' script like the following one :
 <pre>
 mkdir -p ./SuperTuxKart.app/Contents/Resources
 mkdir ./SuperTuxKart.app/Contents/MacOS
-cp info.plist ./SuperTuxKart.app/Contents/info.plist
+cp Info.plist ./SuperTuxKart.app/Contents/Info.plist
 cp stk.icns ./SuperTuxKart.app/Contents/Resources/stk.icns
 cp /opt/supertuxkart/games/supertuxkart ./SuperTuxKart.app/Contents/MacOS/supertuxkart
 cp -r /opt/supertuxkart/share/games/supertuxkart ./SuperTuxKart.app/Contents/Resources/data
 </pre>
 
-You'll need an icon file named 'stk.icns'
+* You'll need an icon file named 'stk.icns'
+* Create an Info.plist file like the following one (adapt version number) :
+<pre>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>supertuxkart</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>SuperTuxKart</string>
+	<key>CFBundleIconFile</key>
+	<string>stk.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleVersion</key>
+	<string>0.5RC1</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>
+</pre>
 
 And run it as :
 <pre>
