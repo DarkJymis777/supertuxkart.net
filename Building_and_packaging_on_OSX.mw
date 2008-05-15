@@ -210,6 +210,8 @@ cp -r /opt/supertuxkart/share/games/supertuxkart ./SuperTuxKart.app/Contents/Res
 </plist>
 </pre>
 
+A packaging script, info.plist, icon, dylibbundler files  can be downloaded at- [http://www.mediafire.com/?e9bzwbihazz]
+
 And run it as :
 <pre>
     % chmod +x makeapp.sh
@@ -223,7 +225,9 @@ You should now be able to open it by double-clicking, however you can't send it 
 * Here, many strategies are possible, I personnaly used '''dylib bundler'''.
 Get its sources from http://macdylibbundler.sourceforge.net, build it and install it.
 
-* Here's a sample ''dylibbundler.config'' file. You might need to modify it, for instance if some of your libraries are not in the same prefix as me, or if they have more dependencies (this will happen if you use macports).
+* The dylibbundler script in the packaging archive has been made for use with macports
+
+* Here's a sample ''dylibbundler.config'' file. You might need to modify it, for instance if some of your libraries are not in the same prefix as me, or if they have more dependencies.
 
 <pre>
 <?xml version="1.0"?>
