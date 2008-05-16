@@ -1,0 +1,26 @@
+This article will explain how to translate STK into another language.
+
+* Get poEdit from http://www.poedit.net/ or from your repositories on linux
+* Get STK version 0.5rc1 or better
+
+The directory where you need to go is /data/po. There you will see a file named ''supertuxkart.pot'' and a script called ''update_pot.sh''. The .pot file contains all translatable strings of STK. The ''update_pot.sh'' script can be run from the base directory to update the .pot file, but you generally do not need to do that since the STK developers will do it for you.
+
+== Creating a new translation ==
+* Create a directory with your [http://xml.coverpages.org/iso639a.html language keycode] as name.
+
+* Open poEdit and use menu '''File > New catalog from POT file'''.
+[[Image:Poedit1.png]]
+
+* Select ''supertuxkart.pot''.
+[[Image:Poedit2.png]]
+
+* Enter the appropriate information in the dialog that pops-up (ignore fields you do not understand or that do not make sense for this project. Only the first tab needs to be completed)
+[[Image:Poedit3.png]]
+
+* Make sure poEdit is configured to compile .mo files on saving (check in preferences)
+[[Image:Poedit_prefs.png]]
+
+* Then simply select the strings in the list and enter a translation.
+* When you're done, save and a .mo file will be generated
+
+== Updating an existing translation ==
