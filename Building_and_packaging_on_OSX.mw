@@ -229,7 +229,9 @@ Cflags: -I${includedir}
 
 ==== Making an app bundle ====
 
-Use a small ''makeapp.sh'' script like the following one :
+Download this packaging script, info.plist, icon, dylibbundler files  can be downloaded at- [http://www.mediafire.com/?e9bzwbihazz]
+
+If you prefer to make your own ''makeapp.sh'' script, you may; the following is an example:
 <pre>
 mkdir -p ./SuperTuxKart.app/Contents/Resources
 mkdir ./SuperTuxKart.app/Contents/MacOS
@@ -265,8 +267,6 @@ cp -r /opt/supertuxkart/share/games/supertuxkart ./SuperTuxKart.app/Contents/Res
 </dict>
 </plist>
 </pre>
-
-A packaging script, info.plist, icon, dylibbundler files  can be downloaded at- [http://www.mediafire.com/?e9bzwbihazz]
 
 And run it as :
 <pre>
