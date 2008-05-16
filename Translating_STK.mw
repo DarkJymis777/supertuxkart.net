@@ -6,7 +6,7 @@ This article will explain how to translate STK into another language.
 The directory where you need to go is /data/po. There you will see a file named ''supertuxkart.pot'' and a script called ''update_pot.sh''. The .pot file contains all translatable strings of STK. The ''update_pot.sh'' script can be run from the base directory to update the .pot file, but you generally do not need to do that since the STK developers will do it for you.
 
 == Creating a new translation ==
-* Create a directory with your [http://xml.coverpages.org/iso639a.html language keycode] as name.
+* Create a directory with your [http://xml.coverpages.org/iso639a.html language code] as name.
 
 * Open poEdit and use menu '''File > New catalog from POT file'''.
 [[Image:Poedit1.png]]
@@ -21,6 +21,20 @@ The directory where you need to go is /data/po. There you will see a file named 
 [[Image:Poedit_prefs.png]]
 
 * Then simply select the strings in the list and enter a translation.
-* When you're done, save and a .mo file will be generated
+* When you're done, save the file as ''[language code].po''. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
+
+* To test, ''export LANG=[keycode]'' then run SuperTuxKart (on Unix systems)
 
 == Updating an existing translation ==
+
+* Open the ''[language code].po'' file in poEdit.
+* Choose ''Catalog > update from POT file''
+[[Image:Poedit_update.png]]
+
+* Select ''supertuxkart.pot''.
+[[Image:Poedit2.png]]
+
+* You will then get a summary of changes (new and/or osolete strings) if any.
+
+* Then simply select the strings in the list and enter a translation.
+* When you're done, save the file. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
