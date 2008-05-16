@@ -34,7 +34,7 @@ The directory where you need to go is /data/po. There you will see a file named 
 * Select ''supertuxkart.pot''.
 [[Image:Poedit2.png]]
 
-* You will then get a summary of changes (new and/or osolete strings) if any.
+* You will then get a summary of changes (new and/or obsolete strings) if any.
 
 * Then simply select the strings in the list and enter a translation.
 * When you're done, save the file. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
