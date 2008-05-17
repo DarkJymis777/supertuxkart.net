@@ -355,3 +355,6 @@ Issue one of these two depending on your architecture
 <pre>
 % lipo -create [ppc-file] [intel-file] -output [filename]
 </pre>
+
+====== Making a DMG-- Optional ======
+To make a DMG place your executacutables in a folder, alond with the changelog, CREDITS, CCOPYING & README, a background image, along with any other files you want to include.  Then open disk utility and create a new disk image from folder; once you select the folder you put your files in, select read/write from the format menu in 2nd dialog.  Once that disk image has been created, open it up.  Once the disk image is open, cange it to icon view; then select Show View Options from the Veiw menu, select "this window only" and then select "picture", choose your image in your disk image, and close the "view options, then resize the window and posision the icon hhhow you want [http://www.mediafire.com/imageview.php?quickkey=mzmgbmjusy3&thumb=4 example].  Then open disk utility back up, click on convert, select the supertuxkart disk image you just made, select "compressed (bzip2)" from the format drop-down menu, and click save.  Your disk image is complete!
