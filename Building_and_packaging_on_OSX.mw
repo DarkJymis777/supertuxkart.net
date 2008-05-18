@@ -229,7 +229,7 @@ Cflags: -I${includedir}
 
 ==== Making an app bundle ====
 
-Download this packaging script, info.plist, icon, dylibbundler files  can be downloaded at- [http://www.mediafire.com/?e9bzwbihazz]
+Download this packaging script, info.plist, icon, dylibbundler files  can be downloaded at- [http://www.mediafire.com/?dmtoz242jmz]
 
 If you prefer to make your own ''makeapp.sh'' script, you may; the following is an example:
 <pre>
