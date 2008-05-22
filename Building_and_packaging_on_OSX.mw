@@ -86,6 +86,18 @@ Build and install gnu gettext using regular ''./configure && make && sudo make i
     % sudo make install
 </pre>
 
+
+==== OpenAL-- macports hack ====
+Because macports oonly supplies openal_1.0, and you need 1.1; you can use this new portfile to install 1.1
+
+HOW-TO
+1. place the file [http://www.mediafire.com/?wzbzn3g1jyv] in /opt/local/var/macports/sources/rsync.macports.org/release/ports/
+2. open terminal
+3. <pre> cd /opt/local/var/macports/sources/rsync.macports.org/release/ports/ <pre>
+4. <pre> sudo patch -p1 < openal-1.1-Portfile.diff <pre>
+5. if it ask you what file tp patch type, /opt/local/var/macports/sources/rsync.macports.org/release/ports/audio/openal/
+6. create the openal.pc fil as describe later
+
 ==== OpenAL ====
 
 (This bit is a bit messy, sorry)
@@ -131,6 +143,7 @@ Cflags: -I${includedir}
 
 
 * build alut:
+STK no longer requires ALUT!
 <pre>
     % cd /openal/alut
     % ./autogen.sh
@@ -162,7 +175,7 @@ sudo port -v install libsdl_tiff
 sudo port -v install freetype 
 </pre>
 
-The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL as described above.
+MacPorts curreently supplies openal 1.0, however this is to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL as described above. (remumbeber to replace usr with opt)
 
 ==== Building STK ====
 * If you have anything installed in /opt/supertuxkart (like an older version) it's probably a good idea to delete it now so you can start with a clean install.
