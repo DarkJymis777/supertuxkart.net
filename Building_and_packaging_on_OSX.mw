@@ -164,7 +164,7 @@ sudo port -v install libsdl_tiff
 sudo port -v install freetype 
 </pre>
 
-MacPorts curreently supplies openal 1.0, however this is to to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL .  You can use this process
+MacPorts currently supplies openal 1.0, however this is to to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL .  You can use this process
 
 1. place the file [http://www.mediafire.com/?wzbzn3g1jyv] in /opt/local/var/macports/sources/rsync.macports.org/release/ports/
 2. open terminal
@@ -174,7 +174,7 @@ MacPorts curreently supplies openal 1.0, however this is to to old.  The OpenAL 
 6. <pre> sudo port -v install openal </pre>
 7. place the file [http://www.mediafire.com/?vv42cwjks8y] in /opt/local/lib/pkgconfig/
 
-Or, if you prefer to build your own copy of openal, you can do as described above. (rememberer to replace usr with opt)
+Or, if you prefer to build your own copy of openal, you can do as described [http://supertuxkart.sourceforge.net/Building_and_packaging_on_OSX#OpenAL above]. (rememberer to replace usr with opt)
 
 ==== Building STK ====
 * If you have anything installed in /opt/supertuxkart (like an older version) it's probably a good idea to delete it now so you can start with a clean install.
@@ -194,8 +194,7 @@ Or, if you prefer to build your own copy of openal, you can do as described abov
 
 ==== Making an app bundle ====
 
-Download this packaging script, info.plist, icon, dylibbundler files  can be downloaded at- [http://www.mediafire.com/?dmtoz242jmz]
-
+Download this [http://www.mediafire.com/?j5dzdcjojs2 packaging kit]
 If you prefer to make your own ''makeapp.sh'' script, you may; the following is an example:
 <pre>
 mkdir -p ./SuperTuxKart.app/Contents/Resources
