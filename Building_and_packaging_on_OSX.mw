@@ -162,54 +162,7 @@ sudo port -v install libsdl_tiff
 sudo port -v install freetype 
 </pre>
 
-The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility we do the following :
-
-* Get OpenAL source code
-** I personally used SVN. It's actually probably not a good idea to use an unstable version. Anyway it worked for me so I leave it this way but you might want to try a source archive or a stable branch instead.
-<pre>
-    % svn checkout http://www.openal.org/repos/openal/trunk openal
-    % cd openal
-</pre>
-
-* build OpenAL:
-** open folder OpenAL-MacOSX, open XCode project
-** select target openal.dylib and build style "deployment"
-** build
-<pre>
-        % sudo cp ./OpenAL-MacOSX/build/Deployment/openal.dylib /opt/local/lib/libopenal.dylib
-        % sudo install_name_tool -id /opt/local/lib/libopenal.dylib /opt/local/lib/libopenal.dylib
-</pre>
-
-* copy headers from /OpenAL-MacOSXbuild/include/AL to /opt/local/include/AL
-<pre>
-    % sudo cp -r ./include/AL/  /opt/local/include/AL
-</pre>
-
-* create openal.pc in /opt/local/lib/pkgconfig
-<pre>
-prefix=/opt/local
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-includedir=${prefix}/include
-
-Name: OpenAL
-Description: OpenAL blah blah blah not an official .pc file
-Requires:
-Version: 1.1.0
-Libs: -L${libdir} -lopenal
-Cflags: -I${includedir}
-</pre>
-
-
-* build alut:
-<pre>
-    % cd /openal/alut  --prefix=/opt/local
-    % ./autogen.sh
-    % ./configure
-    % make
-    % sudo make install
-</pre>
-
+The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL as described above.
 
 ==== Building STK ====
 * If you have anything installed in /opt/supertuxkart (like an older version) it's probably a good idea to delete it now so you can start with a clean install.
