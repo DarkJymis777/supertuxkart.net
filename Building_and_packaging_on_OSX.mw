@@ -1,6 +1,6 @@
 This page will explain how I built and packaged SuperTuxKart on mac OS X.
 
-Note that this is only how I did it, and there might be other ways (I [[jpenguin]] have update it to include better instructions for using macports). I personnaly do not like macports/fink and prefer building everything from source, however if you are comfortable with these tools then go on and use them, you just might need to adapt your environments and some paths so that libraries built with them are correctly picked up. I added a section below with macports commands - however be aware you will probably need to adapt your environment for stuff to be picked up properly.
+Note that this is only how I did it, and there might be other ways (I [[jpenguin]] have update it to include better instructions for using macports). I personally do not like macports/fink and prefer building everything from source, however if you are comfortable with these tools then go on and use them, you just might need to adapt your environments and some paths so that libraries built with them are correctly picked up. I added a section below with macports commands - however be aware you will probably need to adapt your environment for stuff to be picked up properly.
 
 You could also use OS X frameworks instead of Unix-style libs, this would of course require heavier patching of the STK build system.
 
@@ -143,6 +143,8 @@ STK no longer requires ALUT!
 
 ==== Alternate path : macports ====
 
+* Add /opt/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
+* OPTIONAL: symblink /opt/local/ to usr/local<pre> ln -s /opt/local/ usr/local </pre>
 * symlink include folder of OpenGL framework to /opt/local/include/GL (Unix programs have an easier time finding it this way)
 <pre>
     % sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /opt/local/include/GL
