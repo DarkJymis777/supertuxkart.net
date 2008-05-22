@@ -9,7 +9,7 @@ You could also use OS X frameworks instead of Unix-style libs, this would of cou
 ====== Environment ======
 * Install developer tools, either from the OS X Install DVD or from Apple's website
 
-* if you plan on using macports, you may skip to macports section
+* if you plan on using macports, you may skip to [http://supertuxkart.sourceforge.net/site/index.php?title=Building_and_packaging_on_OSX&action=submit#Alternate_path_:_macports Alternate path : macports]
 
 * Add /usr/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
 
@@ -86,17 +86,6 @@ Build and install gnu gettext using regular ''./configure && make && sudo make i
     % sudo make install
 </pre>
 
-
-==== OpenAL-- macports hack ====
-Because macports oonly supplies openal_1.0, and you need 1.1; you can use this new portfile to install 1.1
-
-HOW-TO
-1. place the file [http://www.mediafire.com/?wzbzn3g1jyv] in /opt/local/var/macports/sources/rsync.macports.org/release/ports/
-2. open terminal
-3. <pre> cd /opt/local/var/macports/sources/rsync.macports.org/release/ports/ <pre>
-4. <pre> sudo patch -p1 < openal-1.1-Portfile.diff <pre>
-5. if it ask you what file tp patch type, /opt/local/var/macports/sources/rsync.macports.org/release/ports/audio/openal/
-6. create the openal.pc fil as describe later
 
 ==== OpenAL ====
 
@@ -175,7 +164,17 @@ sudo port -v install libsdl_tiff
 sudo port -v install freetype 
 </pre>
 
-MacPorts curreently supplies openal 1.0, however this is to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL as described above. (remumbeber to replace usr with opt)
+MacPorts curreently supplies openal 1.0, however this is to to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL .  You can use this process
+
+1. place the file [http://www.mediafire.com/?wzbzn3g1jyv] in /opt/local/var/macports/sources/rsync.macports.org/release/ports/
+2. open terminal
+3. <pre> cd /opt/local/var/macports/sources/rsync.macports.org/release/ports/ </pre>
+4. <pre> sudo patch -p1 < openal-1.1-Portfile.diff </pre>
+5. if it ask you what file to patch, type: /opt/local/var/macports/sources/rsync.macports.org/release/ports/audio/openal/
+6. <pre> sudo port -v install openal </pre>
+7. place the file [http://www.mediafire.com/?vv42cwjks8y] in /opt/local/lib/pkgconfig/
+
+Or, if you prefer to build your own copy of openal, you can do as described above. (rememberer to replace usr with opt)
 
 ==== Building STK ====
 * If you have anything installed in /opt/supertuxkart (like an older version) it's probably a good idea to delete it now so you can start with a clean install.
