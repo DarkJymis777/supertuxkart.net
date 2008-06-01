@@ -145,10 +145,6 @@ STK no longer requires ALUT!
 
 * Add /opt/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
 * OPTIONAL: symblink /opt/local/ to usr/local<pre> ln -s /opt/local/ usr/local </pre>
-* symlink include folder of OpenGL framework to /opt/local/include/GL (Unix programs have an easier time finding it this way)
-<pre>
-    % sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /opt/local/include/GL
-</pre>
 
 These commands install a bit more stuff than needed, because their author [[jpenguin]] [http://jpenguin.110mb.com] needed to build other games too. For STK, freetype, sdl_tiff, esound, SDL_mixer, SDL-image and mikmod should not be necessary. Since I don't use macports I will leave them as-is.
 
@@ -166,6 +162,10 @@ sudo port -v install libsdl_tiff
 sudo port -v install freetype 
 </pre>
 
+<pre>
+    % sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /opt/local/include/GL
+</pre>
+
 MacPorts currently supplies openal 1.0, however this is to to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL .  You can use this process
 
 1. place the file [http://www.mediafire.com/?wzbzn3g1jyv] in /opt/local/var/macports/sources/rsync.macports.org/release/ports/
@@ -174,7 +174,9 @@ MacPorts currently supplies openal 1.0, however this is to to old.  The OpenAL f
 4. <pre> sudo patch -p1 < openal-1.1-Portfile.diff </pre>
 5. if it ask you what file to patch, type: /opt/local/var/macports/sources/rsync.macports.org/release/ports/audio/openal/
 6. <pre> sudo port -v install openal </pre>
-7. place the file [http://www.mediafire.com/?vv42cwjks8y] in /opt/local/lib/pkgconfig/
+7. The portfile for openal isn't perfect, you need to make the openal dylib know where it is; for me, the command was
+    <pre>sudo install_name_tool -id  /opt/local/lib/libopenal1.1.0.dylib /opt/local/lib/libopenal1.1.0.dylib</pre>
+8.. place the file [http://www.mediafire.com/?vv42cwjks8y] in /opt/local/lib/pkgconfig/
 
 Or, if you prefer to build your own copy of openal, you can do as described [http://supertuxkart.sourceforge.net/Building_and_packaging_on_OSX#OpenAL above]. (rememberer to replace usr with opt)
 
