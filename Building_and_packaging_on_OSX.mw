@@ -249,73 +249,15 @@ You should now be able to open it by double-clicking, however you can't send it 
 * Here, many strategies are possible, I personnaly used '''dylib bundler'''.
 Get its sources from http://macdylibbundler.sourceforge.net, build it and install it.
 
-* The dylibbundler script in the packaging archive has been made for use with macports
-
-* Here's a sample ''dylibbundler.config'' file. You might need to modify it, for instance if some of your libraries are not in the same prefix as me, or if they have more dependencies.
-
-<pre>
-<?xml version="1.0"?>
-<config>
-<search_path>/usr/local/lib</search_path>
-
-<library
-	name="libopenal"
-	starts_with="libopenal"
-	ends_with=".dylib"
-	/>
-
-<library
-	name="libalut"
-	starts_with="libalut"
-	dependencies="libopenal"
-	ends_with=".dylib"
-	/>
-		
-<library
-	name="libSDL"
-	starts_with="libSDL"
-	doesnt_contain="_"
-	ends_with=".dylib"
-	/>
-	
-<library
-	name="libogg"
-	starts_with="libogg"
-	ends_with=".dylib"
-	/>
-	
-<library
-	name="libvorbis"
-	starts_with="libvorbis"
-	doesnt_contain="enc:file"
-	dependencies="libogg"
-	ends_with=".dylib"
-	/>
-	
-<library
-	name="libvorbisfile"
-	starts_with="libvorbisfile"
-	dependencies="libvorbis:libogg"
-	ends_with=".dylib"
-	/>
-
-<library
-	name="libintl"
-	starts_with="libintl"
-	ends_with=".dylib"
-	/>
-			
-</config>
-</pre>
 
 Issue one of these two depending on your architecture
 
 <code>
-% dylibbundler -l -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs-ppc/ -cd -od -p @executable_path/../libs-ppc/
+% dylibbundler -b -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs-ppc/ -od -p @executable_path/../libs-ppc/
 </code>
 
 <code>
-% dylibbundler -l -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs-intel/ -cd -od -p @executable_path/../libs-intel/
+% dylibbundler -b -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs-intel/ -od -p @executable_path/../libs-intel/
 </code>
 
 * To make a Universal Binary, you need to build it on 2 computers, then you can merge the two executable with command
