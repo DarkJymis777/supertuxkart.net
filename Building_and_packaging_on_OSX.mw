@@ -247,7 +247,7 @@ You should now be able to open it by double-clicking, however you can't send it 
 ====== Getting ready for distribution ======
 
 * Here, many strategies are possible, I personnaly used '''dylib bundler'''.
-Get its sources from http://macdylibbundler.sourceforge.net, build it and install it.
+Get its sources from http://macdylibbundler.sourceforge.net (version 0.3 or better required), build it and install it.
 
 
 Issue one of these two depending on your architecture
