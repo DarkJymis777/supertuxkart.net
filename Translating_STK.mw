@@ -23,6 +23,8 @@ The directory where you need to go is /data/po. There you will see a file named 
 * Then simply select the strings in the list and enter a translation.
 * When you're done, save the file as ''[language code].po''. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
 
+* Then translate the following strings.
+
 * To test, ''export LANG=[keycode]'' then run SuperTuxKart (on Unix systems)
 
 == Updating an existing translation ==
