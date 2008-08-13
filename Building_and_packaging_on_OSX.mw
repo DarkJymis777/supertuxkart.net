@@ -131,8 +131,7 @@ Cflags: -I${includedir}
 </pre>
 
 
-* build alut:
-STK no longer requires ALUT!
+* build alut (STK SVN no longer requires ALUT, version 0.5 and prior do) :
 <pre>
     % cd /openal/alut
     % ./autogen.sh
