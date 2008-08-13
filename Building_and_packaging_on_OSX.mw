@@ -149,7 +149,7 @@ STK no longer requires ALUT!
 These commands install a bit more stuff than needed, because their author [[jpenguin]] [http://jpenguin.110mb.com] needed to build other games too. For STK, freetype, sdl_tiff, esound, SDL_mixer, SDL-image and mikmod should not be necessary. Since I don't use macports I will leave them as-is.
 
 <pre>
-sudo port -v install pkgconig
+sudo port -v install pkgconfig
 sudo port -v install plib
 sudo port -v install libsdl +quartz
 sudo port -v install libsdl_mixer +mikmod
