@@ -96,7 +96,7 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
 * Get OpenAL source code
 ** I personnaly used SVN. It's actually probably not a good idea to use an unstable version. Anyway it worked for me so I leave it this way but you might want to try a source archive or a stable branch instead.
 <pre>
-    % svn checkout http://www.openal.org/repos/openal/trunk openal
+    % svn checkout svn://connect.creativelabs.com/OpenAL/trunk openal
     % cd openal
 </pre>
 
