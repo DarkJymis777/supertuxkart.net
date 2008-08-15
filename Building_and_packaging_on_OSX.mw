@@ -115,7 +115,7 @@ The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe
     % sudo cp -r ./include/AL/  /usr/local/include/AL
 </pre>
 
-* create openal.pc in /usr/local/lib/pkgconfig
+* create openal.pc in /usr/local/lib/pkgconfig (beware, if you copy-and-paste from your browser, line endings may be messed up) :
 <pre>
 prefix=/usr/local
 exec_prefix=${prefix}
