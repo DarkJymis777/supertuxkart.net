@@ -46,4 +46,5 @@ The directory where you need to go is /data/po. There you will see a file named 
 == Opening language from PowerPoint presentation ==
 
 * Open the language code in poedit.
+
 * Select supertuxkart.pot, a Microsoft PowerPoint presentation.
