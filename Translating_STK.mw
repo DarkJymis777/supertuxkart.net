@@ -40,11 +40,3 @@ The directory where you need to go is /data/po. There you will see a file named 
 
 * Then simply select the strings in the list and enter a translation.
 * When you're done, save the file. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
-
-
-
-== Opening language from PowerPoint presentation ==
-
-* Open the language code in poedit.
-
-* Select supertuxkart.pot, a Microsoft PowerPoint presentation.
