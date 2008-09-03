@@ -54,12 +54,12 @@ Use Doxygen comments (this is work in progress). The comments should be before t
 * References should only be used as const: const Kart &k . If an object is modified, pass it in as a pointer. This makes it more obvious which values are modified.
 * If possible, all parameters of functions should be const correct (i.e. if it's not modified, it should be declared const).
 * Try to sort parameters with input first, then output parameters.
-* Compile time constant values should be all uppercase, e.g.  const float PI=3.1415
-* Member variables start with m_ , e.g. m_kart
-* Variable names are lower case separated by '_'. Example: sun_position (member variable: m_kart_pointer)
+* Compile time constant values should be all uppercase, e.g.  const float PI=3.1415 .
+* Member variables start with m_ , e.g. m_kart .
+* Variable names are lower case separated by '_'. Example: sun_position (member variable: m_kart_pointer).
 * Function names should be capitalized, except the first word. Example: getWidth(). 
-* Type(including classes/struct/enum) names have all their words capitalized. Example: KartControl
+* Type(including classes/struct/enum) names have all their words capitalized. Example: KartControl.
 * Use true/false instead of TRUE/FALSE. In [http://lists.kde.org/?l=kde-devel&m=111737503228222&w=2] it's written that uppercase booleans are used only for older compilers, so we should try to avoid this inconsistency.
 * Use std::string instead of char*. If you need a C-style string, use the function std::string.c_str(). However, there are cases when this cannot be avoided(like when using strings with gettext).
 * Instead of using ulList or other plib container classes, use stl containers like vector (or once we switched rrlicht corresponding irrlicht classes, which can have better performance than STL classes).
-* Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h)
+* Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h).
