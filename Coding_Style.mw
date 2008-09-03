@@ -51,7 +51,9 @@ Use Doxygen comments (this is work in progress). The comments should be before t
 
 == Coding ==
 * Use const instead of #define if possible.
-* The program should be 'const correct', which means that anything that is not meant to be modified is declared const, both variables and functions.
+* References should only be used as const: const Kart &k . If an object is modified, pass it in as a pointer. This makes it more obvious which values are modified.
+* If possible, all parameters of functions should be const correct (i.e. if it's not modified, it should be declared const).
+* Try to sort parameters with input first, then output parameters.
 
 == Names ==
 Constants are named with all characters in caps separated by '_'.
