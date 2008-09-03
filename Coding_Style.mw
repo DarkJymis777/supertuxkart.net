@@ -1,70 +1,57 @@
+This is our preferred coding style. It was inspired by googles coding style at http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml, but we decided to change certain rules. Currently, not all our sources are following this style, and we welcome any patches that improve this.
+
 Most of the sources follow this coding style, and the rest is being re-styled as we continue development.
 
-== Identation ==
-4 spaces, no tabs.
+== File names and directories ==
+* All include files should end in .hpp, all sources are .cpp (this allows easy shell commands to specify all source: *.?pp).
+* All file names are in lower case, with _ as a word separator, e.g.: grand_prix_ending.hpp.
+* Files should be grouped in appropriate subdirectories (work in progress). Avoid having more than one level of subdirectories, i.e. <pre>*.?pp */*.?pp</pre> will find all STK source files.
+* The file names should represent the name of the classes it contains, e.g. grand_prix_ending.hpp contains the class GrandPrixEnding (see Names below). Not more than one class should be declared inside a single file.
 
-== Braces placement ==
-Both the opening and the closing braces should be on a line of their
-own. That means:
+== Include files ==
+* In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header have no hidden dependencies). Then include:
+** system files and STL,
+** external libraries used by STK (plib, openal, ...),
+** libraries that are included with the STK source code (bullet, enet),
+** STK header files.
+* Use a #ifdef header guard in the following form to protect against multiple include:  HEADER_FILE_NAME_HPP. I.e. HEADER_ followed by the filename in all caps, with "." replaced by "_".
+* Even when including a .hpp file that is in the same subdir (say gui/menu_manager.hpp in gui/char_sel.cpp), use the path including the subdir, i.e.:<pre> #include "gui/menu_manager.hpp"</pre>and not<pre> #include "menu_manager.hpp"</pre>This makes it easier to move files into different directories.
+* If possible, use a simple 'class XYZ' forward declarations instead of including the header file. This will reduce the amount of recompilation necessary when modifying files (see http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Header_File_Dependencies for more details).
 
+== Layout ==
+* 4 spaces, no tabs
+* Both the opening and the closing braces should be on a line of their own. That means:
  int main()
  {
      return 0;
  }
-
-'''not'''
-
- int main(){
-     return 0;
- }
+* Try not to use more than 80 characters in a line.
+* Have a line "// ------------------------" (up to 80th column) separate each function definition (see doxygen comments for an example)
+* If the closing } is more than a few lines away from the opening {, add a comment indicating that this } closes. This comment can be an informatl comment, or just be the corresponding opening statement. E.g: <pre>}   // for i in all karts</pre> or <pre>}   // for(int i=0; i<m_num_karts; i++)</pre>
+* It should be avoided to have more than one class in a file
 
 
-== Doxygen and function separations ==
-For Doxygen, use the /** style, /// could be easily missed and //! looks too different from the usual C++ syntax. More info can be found at http://www.stack.nl/~dimitri/doxygen/docblocks.html .
-
-Class member function definitions and function definitions in the same namespace should be separated inbetween by a line of '// ' followed by 77 '-'. In cases where there are more than one class implementation in the same file (which should almost never happen), instead of '-' an equal sign (=) should be used around each class' functions. Also use equal signs between functions that are not class members.
-
-You can use Doxygen documentation instead of the function separators(but not class implementations), or just place it between the function separator and the beginning of the function.
-
-For example:
-
- int main()
- [...]  
- 
- //============================================================================ 
- Kart::update()
- {
-     [...]
- }
- 
+== Doxygen ==
+Use Doxygen comments (this is work in progress). The comments should be before the definition of the function/class/variable/... abd be in the following format (Doxyfile is set up to use the first sentence as a brief description):
  // -----------------------------------------------------------------------------
- /** \brief Searches recursively through the model for any branches representing
-  *  wheels.
-  *
-  *  Searches recursively though the model for any branches having the name
+ /** Searches recursively through the model for any branches representing
+  *  wheels. It looks for any branches having the name
   *  WheelFront.L, WheelFront.R, WheelRear.L, WheelRear.R. If a wheel is found,
   *  a new transform node will be inserted 'above' the branch.
   *  \param branch This is the branch in which the wheels are searched.
- **/
- void Kart::load_wheels(ssgBranch* branch)
+  *  \return true if found.
+  */
+ bool Kart::load_wheels(ssgBranch* branch)
  {
  }
  
  //----------------------------------------------------------------------------
+ /** Updates the physics for a kart.                                         */
  Kart::handlePhysics()
- [...]
- 
- //============================================================================
- Screen::show()
- [...]
- 
-It should generally be avoided to have more than one class in a file, meaning that all // === lines should be cleaned up after creating appropriate new files.
 
-== Const usage ==
-Use const instead of #define when able.
-
-The program should be 'const correct', which means that anything that is not meant to be
-modified is declared const, both variables and functions.
+== Coding ==
+* Use const instead of #define if possible.
+* The program should be 'const correct', which means that anything that is not meant to be modified is declared const, both variables and functions.
 
 == Names ==
 Constants are named with all characters in caps separated by '_'.
