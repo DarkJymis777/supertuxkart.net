@@ -3,10 +3,10 @@ This is our preferred coding style. It was inspired by googles coding style at h
 Most of the sources follow this coding style, and the rest is being re-styled as we continue development.
 
 == File names and directories ==
-* All include files should end in .hpp, all sources are .cpp (this allows easy shell commands to specify all source: *.?pp).
+* All include files should end in .hpp, all sources are .cpp (this allows shell commands to easily specify all sources: *.?pp).
 * All file names are in lower case, with _ as a word separator, e.g.: grand_prix_ending.hpp.
 * Files should be grouped in appropriate subdirectories (work in progress). Avoid having more than one level of subdirectories, i.e. <pre>*.?pp */*.?pp</pre> will find all STK source files.
-* The file names should represent the name of the classes it contains, e.g. grand_prix_ending.hpp contains the class GrandPrixEnding (see Names below). Not more than one class should be declared inside a single file.
+* The file names should represent the name of the classes it contains, e.g. grand_prix_ending.hpp contains the class GrandPrixEnding (see [[#Names]] below). Not more than one class should be declared inside a single file.
 
 == Include files ==
 * In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header have no hidden dependencies). Then include:
