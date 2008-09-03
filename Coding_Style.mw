@@ -6,7 +6,7 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 * All include files should end in .hpp, all sources are .cpp (this allows shell commands to easily specify all sources: *.?pp).
 * All file names are in lower case, with _ as a word separator, e.g.: grand_prix_ending.hpp.
 * Files should be grouped in appropriate subdirectories (work in progress). Avoid having more than one level of subdirectories, i.e. <pre>*.?pp */*.?pp</pre> will find all STK source files.
-* The file names should represent the name of the classes it contains, e.g. grand_prix_ending.hpp contains the class GrandPrixEnding (see [[#Names]] below). Not more than one class should be declared inside a single file.
+* The file names should represent the name of the classes it contains, e.g. grand_prix_ending.hpp contains the class GrandPrixEnding (see [[#Coding]] below). Not more than one class should be declared inside a single file.
 
 == Include files ==
 * In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header have no hidden dependencies). Then include:
@@ -26,7 +26,7 @@ Most of the sources follow this coding style, and the rest is being re-styled as
      return 0;
  }
 * Try not to use more than 80 characters in a line.
-* Have a line "// ------------------------" (up to 80th column) separate each function definition (see doxygen comments for an example)
+* Have a line "// ------------------------" (up to 80th column) separate each function definition (see [[#Doxygen]] for an example)
 * If the closing } is more than a few lines away from the opening {, add a comment indicating that this } closes. This comment can be an informatl comment, or just be the corresponding opening statement. E.g: <pre>}   // for i in all karts</pre> or <pre>}   // for(int i=0; i<m_num_karts; i++)</pre>
 * It should be avoided to have more than one class in a file
 
