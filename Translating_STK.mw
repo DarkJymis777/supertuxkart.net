@@ -29,7 +29,7 @@ The directory where you need to go is /data/po. There you will see a file named 
 
 == Updating an existing translation ==
 
-* Open the ''[language code].po'' file in poEdit.
+* Open the ''language code.po'' file in poEdit.
 * Choose ''Catalog > update from POT file''
 [[Image:Poedit_update.png]]
 
