@@ -8,8 +8,8 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 * Files should be grouped in appropriate subdirectories (work in progress). Avoid having more than one level of subdirectories, i.e. <pre>*.?pp */*.?pp</pre> will find all STK source files.
 * The file names should represent the name of the classes it contains, e.g. grand_prix_ending.hpp contains the class GrandPrixEnding (see [[#Coding]] below). Not more than one class should be declared inside a single file.
 
-== Include files ==
-* In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header have no hidden dependencies). Then include:
+== Including files ==
+* In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header has no hidden dependencies). Then include:
 ** system files and STL,
 ** external libraries used by STK (plib, openal, ...),
 ** libraries that are included with the STK source code (bullet, enet),
