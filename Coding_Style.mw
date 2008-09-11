@@ -20,16 +20,11 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 
 == Layout ==
 * 4 spaces, no tabs
-* Both the opening and the closing braces should be on a line of their own. That means:
- int main()
- {
-     return 0;
- }
+* Both the opening and the closing braces should be on a line of their own. That means:<pre> int main()</pre><pre> {</pre><pre>     return 0;</pre><pre> }</pre>Exception for this are one line function in header files:<pre> float getValue() const { return m_my_value; }</pre>
 * Try not to use more than 80 characters in a line.
 * Have a line "// ------------------------" (up to 80th column) separate each function definition (see [[#Doxygen]] for an example)
-* If the closing } is more than a few lines away from the opening {, add a comment indicating that this } closes. This comment can be an informatl comment, or just be the corresponding opening statement. E.g: <pre>}   // for i in all karts</pre> or <pre>}   // for(int i=0; i<m_num_karts; i++)</pre>
+* If the closing } is more than a few lines away from the opening {, add a comment indicating that this } closes. This comment can be an informal comment, or just be the corresponding opening statement. E.g: <pre>}   // for i in all karts</pre> or <pre>}   // for(int i=0; i<m_num_karts; i++)</pre>
 * It should be avoided to have more than one class in a file
-
 
 == Doxygen ==
 Use Doxygen comments (this is work in progress). The comments should be before the definition of the function/class/variable/... abd be in the following format (Doxyfile is set up to use the first sentence as a brief description):
