@@ -154,7 +154,7 @@ sudo port -v install libsdl +quartz
 sudo port -v install libsdl_mixer +mikmod
 sudo port -v install libsdl_image
 sudo port -v install libogg
-sudo port -v install livorbis
+sudo port -v install libvorbis
 sudo port -v install automake
 sudo port -v install esound
 sudo port -v install libsdl_ttf
