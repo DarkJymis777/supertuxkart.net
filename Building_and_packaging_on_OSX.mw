@@ -168,6 +168,7 @@ sudo port -v install freetype
 MacPorts currently supplies openal 1.0, however this is to to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL .  You can use this process
 
 1. place the file [http://www.mediafire.com/?wzbzn3g1jyv] in /opt/local/var/macports/sources/rsync.macports.org/release/ports/
+
 2. open terminal
 3. <pre> cd /opt/local/var/macports/sources/rsync.macports.org/release/ports/ </pre>
 4. <pre> sudo patch -p1 < openal-1.1-Portfile.diff </pre>
