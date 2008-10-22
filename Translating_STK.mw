@@ -21,6 +21,9 @@ The directory where you need to go is /data/po. There you will see a file named 
 [[Image:Poedit_prefs.png]]
 
 * Then simply select the strings in the list and enter a translation.
+
+* Or translate the strings by copying and pasting it from [http://babelfish.yahoo.com/ Babel Fish].
+
 * When you're done, save the file as ''[language code].po''. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
 
 * Then translate the following strings.
