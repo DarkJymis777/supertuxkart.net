@@ -201,12 +201,23 @@ Or, if you prefer to build your own copy of openal, you can do as described [htt
 Download this [http://www.mediafire.com/?j5dzdcjojs2 packaging kit]
 If you prefer to make your own ''makeapp.sh'' script, you may; the following is an example:
 <pre>
+INSTALL_PREFIX="/opt/supertuxkart"
+
+echo "* Removing any existing installation"
+rm -rf ./SuperTuxKart.app
+
+echo "* Creating skeleton"
 mkdir -p ./SuperTuxKart.app/Contents/Resources
 mkdir ./SuperTuxKart.app/Contents/MacOS
-cp Info.plist ./SuperTuxKart.app/Contents/Info.plist
+cp info.plist ./SuperTuxKart.app/Contents/info.plist
 cp stk.icns ./SuperTuxKart.app/Contents/Resources/stk.icns
-cp /opt/supertuxkart/games/supertuxkart ./SuperTuxKart.app/Contents/MacOS/supertuxkart
-cp -r /opt/supertuxkart/share/games/supertuxkart ./SuperTuxKart.app/Contents/Resources/data
+
+echo "* Copying executable"
+cp $INSTALL_PREFIX/games/supertuxkart ./SuperTuxKart.app/Contents/MacOS/supertuxkart
+
+echo "* Copying data files"
+cp -r $INSTALL_PREFIX/share/games/supertuxkart ./SuperTuxKart.app/Contents/Resources/data/
+
 </pre>
 
 * You'll need an icon file named 'stk.icns'
