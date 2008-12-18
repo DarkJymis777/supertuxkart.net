@@ -44,4 +44,6 @@ The directory where you need to go is /data/po. There you will see a file named 
 * You will then get a summary of changes (new and/or obsolete strings) if any.
 
 * Then simply select the strings in the list and enter a translation.
+ (for extra users, simply select the strings in list, copy the text, paste it then select translate from Yahoo! Babelfish)
+
 * When you're done, save the file. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
