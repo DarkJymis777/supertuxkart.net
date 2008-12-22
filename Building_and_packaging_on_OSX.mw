@@ -198,7 +198,7 @@ Or, if you prefer to build your own copy of openal, you can do as described [htt
 
 ==== Making an app bundle ====
 
-Download this [http://www.mediafire.com/?j5dzdcjojs2 packaging kit]
+Download this [http://www.mediafire.com/?sharekey=96f5dc098fb65581d2db6fb9a8902bda packaging kit]
 If you prefer to make your own ''makeapp.sh'' script, you may; the following is an example:
 <pre>
 INSTALL_PREFIX="/opt/supertuxkart"
