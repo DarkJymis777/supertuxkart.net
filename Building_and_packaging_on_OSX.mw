@@ -89,9 +89,10 @@ Build and install gnu gettext using regular ''./configure && make && sudo make i
 
 ==== OpenAL ====
 
-(This bit is a bit messy, sorry)
-
-The OpenAL framework provided by Apple on OS X 10.4 is too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility we do the following :
+OpenAL on OS X is a bit of a pain in the a...
+* OS X comes with a pre-built OpenAL framework, '''however''' this framework apepars to be too old on 10.4. Since we wish to retain 10.4 compatibility, we cannot use Apple's framework so we will instead build from source. If you are on OS X 10.5 and are only building for yourself (not creating any packages) you can simply skip this step.
+* The OpenAL repository has been down for ages so use this snapshot if necessary : http://www.mediafire.com/?t3mmdmtwunz 
+* Unfortunately the OpenAL guys didn't include strong mac support in, so the build procedure is a little complicated.
 
 * Get OpenAL source code
 ** I personnaly used SVN. It's actually probably not a good idea to use an unstable version. Anyway it worked for me so I leave it this way but you might want to try a source archive or a stable branch instead.
