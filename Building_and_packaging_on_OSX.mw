@@ -1,6 +1,6 @@
 This page will explain how I built and packaged SuperTuxKart on mac OS X.
 
-Note that this is only how I did it, and there might be other ways (I [[jpenguin]] have update it to include better instructions for using macports). I personally do not like macports/fink and prefer building everything from source, however if you are comfortable with these tools then go on and use them, you just might need to adapt your environments and some paths so that libraries built with them are correctly picked up. I added a section below with macports commands - however be aware you will probably need to adapt your environment for stuff to be picked up properly.
+Note that this is only how I did it, and there might be other ways (I jpenguin have update it to include better instructions for using macports). I personally do not like macports/fink and prefer building everything from source, however if you are comfortable with these tools then go on and use them, you just might need to adapt your environments and some paths so that libraries built with them are correctly picked up. I added a section below with macports commands - however be aware you will probably need to adapt your environment for stuff to be picked up properly.
 
 You could also use OS X frameworks instead of Unix-style libs, this would of course require heavier patching of the STK build system.
 
