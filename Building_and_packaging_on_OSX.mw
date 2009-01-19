@@ -146,7 +146,7 @@ Cflags: -I${includedir}
 * Add /opt/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
 * OPTIONAL: symblink /opt/local/ to usr/local<pre> ln -s /opt/local/ usr/local </pre>
 
-These commands install a bit more stuff than needed, because their author [[jpenguin]] [http://jpenguin.110mb.com] needed to build other games too. For STK, freetype, sdl_tiff, esound, SDL_mixer, SDL-image and mikmod should not be necessary. Since I don't use macports I will leave them as-is.
+These commands install a bit more stuff than needed, because their author jpenguin [http://jpenguin.110mb.com] needed to build other games too. For STK, freetype, sdl_tiff, esound, SDL_mixer, SDL-image and mikmod should not be necessary. Since I don't use macports I will leave them as-is.
 
 <pre>
 sudo port -v install pkgconfig
