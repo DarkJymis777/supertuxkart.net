@@ -1,45 +1,60 @@
+=How can I install STK ?=
 There are several ways SuperTuxKart can be installed. The easiest solution is to use a binary (which are supplied for Windows, MacOSX, and Linux), but it is not complicated to build STK yourself from either the latest stable sources or from the cutting edge SVN.
-= Binaries =
+== Binaries ==
+=== Windows (Vista and XP) ===
+Download the latest binary from our [Download] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation - though since 0.6 you will only get some warnings, which you can safely ignore.
 
-== Windows (XP and above) ==
-Download the latest binary from our [[Download]] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation. Newer versions (0.8 and later) will prompt to uninstall a previously installed version if this situation is detected.
+===Linux===
+For GNU/Linux you can see if an up-to-date package is available for your distro - depending on distro try:
+* apt-get install supertuxkart
+* aptitude install supertuxkart
+* or for Fedora:  yum install supertuxkart
+* or for Gentoo  emerge supertuxkart
+* or for [http://distrowatch.com/table.php?distribution=uhu UHU] get it at http://uhu.linux.hu/
+* For SuSE Linux / openSUSE, you can add the games:/action repository and then install supertuxkart using your favourite tool (YaST, rug, zen-installer, zypper, smart). SuperTuxKart is built for SuSE i586 and x86_64. There are 2 known repositories:
+**http://ftp-1.gwdg.de/pub/opensuse/repositories/games:/action/ then browse to your Linux Version.
+**http://download.opensuse.org/repositories/games:/arcade/.
 
-== Linux ==
-For Linux you can see if an up-to-date package is available for your distribution:
-* Debian-based (Ubuntu, Mint, ...): <tt>sudo apt-get install supertuxkart</tt>
-* Fedora:  <tt>yum install supertuxkart</tt>
-* Gentoo  <tt>emerge supertuxkart</tt>
+Alternatively, download the binary tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
+ tar -xjvf supertuxkart_bin_x86_linux.tar.bz2
+ cd supertuxkart-0.6
+and to run STK:
+ run_game.sh
 
-In case your linux distribution does not have STK in their repositories, you can always [[download]] a static binary.
+=== MacOS x ===
+* The MacOS X binary is at http://sourceforge.net/project/showfiles.php?group_id=202302
 
-== macOS ==
-* The macOS binary can be found on our [[Download]] page.
+== Build the latest stable version ==
+Download the source tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
 
-= Build from source =
+ tar -xjvf supertuxkart-0.6.tar.bz2
+ cd supertuxkart-0.6
+ ./autogen.sh && ./configure && make
+ sudo make install
+and if it's OK, you can run STK:
+ supertuxkart
 
-== Getting STK sources ==
+== Build the latest unstable version (from SVN) ==
+Check out the sources using:
+ svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
+ cd supertuxkart
+ ./autogen.sh && ./configure && make
+ sudo make install
+and if it's OK, you can run STK:
+ supertuxkart
 
-Pick either stable or development version. The latter has the latest features and fixes but might also have new bugs.
+==== For Ubuntu Edgy Eft ====
+This guide was contributed by Damien.
 
-=== Stable version ===
-To compile the stable version, you can download source code tarballs from the SourceForge [http://sourceforge.net/projects/supertuxkart/files/ downloads page].
+install following packages:
+  apt-get install libsdl1.2-dev libopenal-dev libalut-dev libmikmod2-dev plib1.8.4-dev
+  libglu1-mesa-dev subversion autoconf automake1.9 g++ gcc
 
-=== Latest development version ===
-
-SupertTuxKart biw uses git for source code, and SVN for data files. The core code repository is hosted on our [https://github.com/supertuxkart/stk-code github page]. Example clone command:
-<code>git clone https://github.com/supertuxkart/stk-code.git stk-code</code>
-It is about 130 MB in size.
-
-Data files are hosted on sourceforge and use SVN. Example checkout command :
-<code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets</code>
-It is about 650 MB in size (some of the assets from a downloaded supertuxkart tarball could also be reused probably).
-
-These two repositories should be downloaded in the same folder, so that folders "stk-code" and "stk-assets" are next to each other.
-
-== Platform-specific compile instructions ==
-
-After picking stable or SVN version, choose your path depending on your operating system:
-
-* [[Build_STK_on_Linux|Linux]]
-* [[Building_and_packaging_on_OSX|Mac OS X]]
-* [[How_to_build_the_Windows_version|Windows]]
+do a:
+ $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
+then:
+ $ cd trunk
+ $ ./autogen.sh && ./configure && make
+and if all went well:
+ $ src/supertuxkart
+Tested with g++ 3.3 and 4.1 , both succeeded.
