@@ -1,0 +1,60 @@
+=How can I install STK ?=
+There are several ways SuperTuxKart can be installed. The easiest solution is to use a binary (which are supplied for Windows, MacOSX, and Linux), but it is not complicated to build STK yourself from either the latest stable sources or from the cutting edge SVN.
+== Binaries ==
+=== Windows (Vista and XP) ===
+Download the latest binary from our [Download] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation - though since 0.6 you will only get some warnings, which you can safely ignore.
+
+===Linux===
+For GNU/Linux you can see if an up-to-date package is available for your distro - depending on distro try:
+* apt-get install supertuxkart
+* aptitude install supertuxkart
+* or for Fedora:  yum install supertuxkart
+* or for Gentoo  emerge supertuxkart
+* or for [http://distrowatch.com/table.php?distribution=uhu UHU] get it at http://uhu.linux.hu/
+* For SuSE Linux / openSUSE, you can add the games:/action repository and then install supertuxkart using your favourite tool (YaST, rug, zen-installer, zypper, smart). SuperTuxKart is built for SuSE i586 and x86_64. There are 2 known repositories:
+**http://ftp-1.gwdg.de/pub/opensuse/repositories/games:/action/ then browse to your Linux Version.
+**http://download.opensuse.org/repositories/games:/arcade/.
+
+Alternatively, download the binary tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
+ tar -xjvf supertuxkart_bin_x86_linux.tar.bz2
+ cd supertuxkart-0.6
+and to run STK:
+ run_game.sh
+
+=== MacOS x ===
+* The MacOS X binary is at http://sourceforge.net/project/showfiles.php?group_id=202302
+
+== Build the latest stable version ==
+Download the source tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
+
+ tar -xjvf supertuxkart-0.6.tar.bz2
+ cd supertuxkart-0.6
+ ./autogen.sh && ./configure && make
+ sudo make install
+and if it's OK, you can run STK:
+ supertuxkart
+
+== Build the latest unstable version (from SVN) ==
+Check out the sources using:
+ svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
+ cd supertuxkart
+ ./autogen.sh && ./configure && make
+ sudo make install
+and if it's OK, you can run STK:
+ supertuxkart
+
+==== For Ubuntu Edgy Eft ====
+This guide was contributed by Damien.
+
+install following packages:
+  apt-get install libsdl1.2-dev libopenal-dev libalut-dev libmikmod2-dev plib1.8.4-dev
+  libglu1-mesa-dev subversion autoconf automake1.9 g++ gcc
+
+do a:
+ $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
+then:
+ $ cd trunk
+ $ ./autogen.sh && ./configure && make
+and if all went well:
+ $ src/supertuxkart
+Tested with g++ 3.3 and 4.1 , both succeeded.
