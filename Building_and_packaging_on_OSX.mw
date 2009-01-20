@@ -131,16 +131,6 @@ Libs: -L${libdir} -lopenal
 Cflags: -I${includedir}
 </pre>
 
-
-* build alut (STK SVN no longer requires ALUT, version 0.5 and prior do) :
-<pre>
-    % cd /openal/alut
-    % ./autogen.sh
-    % ./configure
-    % make
-    % sudo make install
-</pre>
-
 ==== Alternate path : macports ====
 
 * Add /opt/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
