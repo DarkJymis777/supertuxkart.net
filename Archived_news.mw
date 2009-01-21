@@ -33,6 +33,13 @@ Beginning with revision 1326 the bullet physics are now officially used in Super
 --[[User:Hiker|Hiker]] 16:25, 9 December 2007 (PST)
 |-
 |
+== Read this if this page looks yellow! ==
+When I was working in the wiki, I deleted all the skins (except the classic skin which apparently cannot be deleted) and added the 'clean' skin. The behavior I expected (and what I understood from the comments in the file includes/Skin.php), is that all the others that had their selected skin deleted would fallback to the default, that is the clean skin. This is not what happened, instead falling back to the classic skin, causing that all users that were registered before the wiki website see a change from the clean skin to the classic skin when they log in. To fix this, all you have to do is to go to your preferences and change your default skin.
+
+--[[User:Coz|Coz]] 14:36, 19 November 2007 (PST)
+
+|-
+|
 '''July 2007:''' The 0.3 release is finally out. The most important news items:
 
 * Highscore lists
