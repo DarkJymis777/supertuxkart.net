@@ -4,6 +4,29 @@ __NOTOC__
 |-
 |
 
+|-
+|
+== '''SuperTuxKart version 0.5 released''' ==
+
+Version 0.5 of SuperTuxKart has been released. It offers 6 new and improved tracks, a new game mode ('Follow the Leader'), new Grand Prix, some new music, and translations into German, French, Dutch, Spanish, Italian and Swedish. The new tracks and game modes need to be unlocked: you have to fulfill a challenge in order to use them. If all challenges are done, a preview of the upcoming skidding support can be tested. Binaries for Linux, Macs, and Windows as well as source packages can be found on our [http://sourceforge.net/project/showfiles.php?group_id=202302 download] page.
+We hope you enjoy this release!
+
+--[[User:Hiker|Hiker]] 00:49, 3 June 2008 (PDT)
+
+
+|-
+|
+== Official SuperTuxKart Forum ==
+
+SuperTuxKart has finally a forum: http://forum.freegamedev.net/index.php?t=i&cat=7. We are looking forward to many postings there!
+
+--[[User:Hiker|Hiker]] 19:09, 11 March 2008 (PDT)
+
+
+
+|-
+|
+
 == Linux unstable binaries ==
 
 Just uploaded a new binary of a recent SVN commit, that has some static linked libraries and the dynamic libraries are included, it was packaged by Sebastian Rode. Hopefully for the 0.5 stable release(yes, I don't mean the 0.4) we will use autopackage and things will be a lot simpler!
