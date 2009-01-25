@@ -35,6 +35,8 @@ You could also use OS X frameworks instead of Unix-style libs, this would of cou
 This step is probably only necessary for OS X 10.4 users who use SVN version of STK (I think) - OS X 10.5 users can skip it.
 On OS X 10.4, you will want to install more recent autotools (the ones that came with your computer are too old). Before doing this, make sure /usr/local/bin is in your PATH as described above otherwise it won't work (will pick old versions and just ignore the new ones).
 
+''It is probably possible to install these with macports to make it quicker.''
+
 All the following programs can be built and installed with the following commands on the terminal :
 <pre>
     % cd /path/to/source_file
