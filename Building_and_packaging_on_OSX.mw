@@ -11,8 +11,7 @@ You could also use OS X frameworks instead of Unix-style libs, this would of cou
 <pre>
     % sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /usr/local/include/GL
 </pre>
-(you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source!)
-
+(you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source! <TT>sudo mkdir -p /usr/local/include/</TT>)
 
 ==== Building dependencies from source ====
 
