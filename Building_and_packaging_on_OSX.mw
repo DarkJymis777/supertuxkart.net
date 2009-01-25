@@ -11,7 +11,11 @@ You could also use OS X frameworks instead of Unix-style libs, this would of cou
 
 * if you plan on using macports, you may skip to [http://supertuxkart.sourceforge.net/site/index.php?title=Building_and_packaging_on_OSX&action=submit#Alternate_path_:_macports Alternate path : macports]
 
-* Add /usr/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
+* Add /usr/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might not be necessary if you don't install autotools below)
+** sudo nano /etc/profile (enter your password as prompted)
+** add the line <TT>export PATH=/usr/local/bin:$PATH</TT> at the bottom of the file
+** Hit ''Ctrl+O'' then press ''enter'' to save changes.
+** Hit ''Ctrl-X'' to exit.
 
 * symlink include folder of OpenGL framework to /usr/local/include/GL (Unix programs have an easier time finding it this way)
 <pre>
