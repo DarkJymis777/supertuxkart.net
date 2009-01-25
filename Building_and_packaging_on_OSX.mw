@@ -157,20 +157,7 @@ sudo port -v install gettext
     % sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /opt/local/include/GL
 </pre>
 
-MacPorts currently supplies openal 1.0, however this is to to old.  The OpenAL framework provided by Apple on OS X 10.4 is also too old. Once again maybe 10.5 users will have a more recent one but for now if we want 10.4 compatibility, you will likely need to install OpenAL .  You can use this process
-
-1. place the file [http://www.mediafire.com/?wzbzn3g1jyv] in /opt/local/var/macports/sources/rsync.macports.org/release/ports/
-
-2. open terminal
-3. <pre> cd /opt/local/var/macports/sources/rsync.macports.org/release/ports/ </pre>
-4. <pre> sudo patch -p1 < openal-1.1-Portfile.diff </pre>
-5. if it asks you what file to patch, type: /opt/local/var/macports/sources/rsync.macports.org/release/ports/audio/openal/
-6. <pre> sudo port -v install openal </pre>
-7. The portfile for openal isn't perfect, you need to make the openal dylib know where it is; for me, the command was
-    <pre>sudo install_name_tool -id  /opt/local/lib/libopenal1.1.0.dylib /opt/local/lib/libopenal1.1.0.dylib</pre>
-8.. place the file [http://www.mediafire.com/?vv42cwjks8y] in /opt/local/lib/pkgconfig/
-
-Or, if you prefer to build your own copy of openal, you can do as described [http://supertuxkart.sourceforge.net/Building_and_packaging_on_OSX#OpenAL above]. (rememberer to replace usr with opt)
+OpenAL still causes trouble here, so it's best to use the instructions posted [http://supertuxkart.sourceforge.net/Building_and_packaging_on_OSX#OpenAL above].
 
 ==== Building STK ====
 * If you have anything installed in /opt/supertuxkart (like an older version) it's probably a good idea to delete it now so you can start with a clean install.
