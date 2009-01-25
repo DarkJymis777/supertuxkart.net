@@ -139,22 +139,16 @@ Cflags: -I${includedir}
 ==== Alternate path : macports ====
 
 * Add /opt/local/bin to your PATH, *before* /usr/bin (http://www.troubleshooters.com/linux/prepostpath.htm) so that the new versions of stuff you install are picked over the older ones installed by default (this might no be necessary if you don't install autotools below)
-* OPTIONAL: symblink /opt/local/ to usr/local<pre> ln -s /opt/local/ usr/local </pre>
 
-These commands install a bit more stuff than needed, because their author jpenguin [http://jpenguin.110mb.com] needed to build other games too. For STK, freetype, sdl_tiff, esound, SDL_mixer, SDL-image and mikmod should not be necessary. Since I don't use macports I will leave them as-is.
+These commands install a bit more stuff than needed, because their author [http://jpenguin.110mb.com jpenguin] needed to build other games too.
 
 <pre>
 sudo port -v install pkgconfig
 sudo port -v install plib
 sudo port -v install libsdl +quartz
-sudo port -v install libsdl_mixer +mikmod
-sudo port -v install libsdl_image
 sudo port -v install libogg
 sudo port -v install libvorbis
-sudo port -v install automake
-sudo port -v install esound
-sudo port -v install libsdl_ttf
-sudo port -v install freetype 
+sudo port -v install gettext
 </pre>
 
 <pre>
