@@ -249,11 +249,11 @@ Issue one of these two depending on your architecture
 % lipo -create [ppc-file] [intel-file] -output [filename]
 </pre>
 
-====== Making a DMG-- Optional ======
+====== Making a DMG ======
 To make a DMG place your executables in a folder, along with the changelog, data/CREDITS, COPYING, ChangeLog & README, and optionnally a background image.  Then open disk utility and create a new disk image from folder; once you select the folder you put your files in, select read/write from the format menu in 2nd dialog. 
 
 '''Using a background image :'''
-Once that disk image has been created, open it up.  Once the disk image is open, change it to icon view; then select Show View Options from the Veiw menu, select "this window only" and then select "picture", choose your image in your disk image, and close the "view options, then resize the window and position the icon how you want [http://www.mediafire.com/imageview.php?quickkey=mzmgbmjusy3&thumb=4 example]; next open terminal and type <pre>
-/developer/tools/setfile -a V ''PATHTOIMAGE''</pre>. 
+Once that disk image has been created, open it up.  Once the disk image is open, change it to icon view; then select Show View Options from the Veiw menu, select "this window only" and then select "picture", choose your image in your disk image, and close the "view options, then resize the window and position the icon how you want [http://www.mediafire.com/imageview.php?quickkey=mzmgbmjusy3&thumb=4 example]; next open terminal and type
+<pre>/developer/tools/setfile -a V ''PATHTOIMAGE''</pre>
 
 Then open disk utility back up, click on convert, select the supertuxkart disk image you just made, select "compressed (bzip2)"(Panther does not support bz2 compressed dmgs, `soo unless you want to exclude panther users; use another compressed format) from the format drop-down menu, and click save.  Your disk image is complete!
