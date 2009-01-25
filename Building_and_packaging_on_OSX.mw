@@ -13,7 +13,7 @@ You could also use OS X frameworks instead of Unix-style libs, this would of cou
 </pre>
 (you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source! <TT>sudo mkdir -p /usr/local/include/</TT>)
 
-From there you can install dependencies either from source or from macports.
+From there you can install dependencies either [[Building_and_packaging_on_OSX#Building_dependencies_from_source|from source]] or [[Building_and_packaging_on_OSX#Alternate_path_:_macports|from macports]].
 
 ==== Building dependencies from source ====
 
