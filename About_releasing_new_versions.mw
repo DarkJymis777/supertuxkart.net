@@ -19,6 +19,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 * Make sure to update the version number:
 ** in configure.ac (from which the define for the sources is created. This number should not have any spaces in it, otherwise "make dist" will fail)
 ** ChangeLog
+** NEWS
 ** data/CREDITS
 ** src/ide/vc8/supertuxkart.vcproj
 * Update ChangeLog
