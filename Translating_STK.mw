@@ -29,6 +29,8 @@ The directory where you need to go is /data/po. There you will see a file named 
 
 * To test your translation :
 ** On UNIX (Linux, Mac) your translation should be automatically picked if your system is set to the language you made the translation for. If your system is in english or another language, you can force a language from terminal : ''export LANG=[keycode]'' then ''./src/supertuxkart'' or so.
+** In a Windows command interpreter: <code>set LANG=de_DE</code> followed by <code>.\supertuxkart.exe</code>
+** In a Cygwin shell: <code>$ env LANG=de_DE ./supertuxkart.exe</code>
 
 == Updating an existing translation ==
 
