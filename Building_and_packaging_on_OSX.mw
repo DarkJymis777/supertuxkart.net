@@ -243,9 +243,9 @@ Issue one of these two depending on your architecture
 
 * To make a Universal Binary, you need to build it on 2 computers, then you can merge the two executable with command
 
-<pre>
+<code>
 % lipo -create [ppc-file] [intel-file] -output [filename]
-</pre>
+</code>
 
 ====== Making a DMG ======
 To make a DMG place your executables in a folder, along with the changelog, data/CREDITS, COPYING, ChangeLog & README, and optionnally a background image.  Then open disk utility and create a new disk image from folder; once you select the folder you put your files in, select read/write from the format menu in 2nd dialog. 
@@ -255,3 +255,25 @@ Once that disk image has been created, open it up.  Once the disk image is open,
 <pre>/developer/tools/setfile -a V ''PATHTOIMAGE''</pre>
 
 Then open disk utility back up, click on convert, select the supertuxkart disk image you just made, select "compressed (bzip2)"(Panther does not support bz2 compressed dmgs, `soo unless you want to exclude panther users; use another compressed format) from the format drop-down menu, and click save.  Your disk image is complete!
+
+= IrrLicht =
+
+In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with ittLicht, it's not meant to be well-organized or complete.
+
+* Open the Xcode project that comes with irrLicht
+* Select target irrlicht, build style release, target system 10.4
+* Go in target options and edit options for ''Release'' build style.
+** In ''other C flags'', add <TT>-D_IRR_USE_SDL_DEVICE_</TT> and the output of <TT>sdl-config --cflags</TT>
+** In ''other ld flags'', add the output of ''sdl-config --libs''
+** uncheck <TT>Inline Methods Hidden</TT> and <TT>Symbols Hidden by Default</TT>
+** Add -I/usr/local/include/
+** Remove -Wl,framework,Cocoa
+
+Then build.
+
+* copy libIrrlicht.a to /usr/local/lib
+* copy include to /usr/local/include/irrlicht
+
+Configure and build STK :
+* <code>./configure --enable-irrlicht --with-irrlicht=/usr/local</code>
+* <code>make</code>
