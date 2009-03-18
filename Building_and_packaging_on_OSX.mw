@@ -261,18 +261,25 @@ Then open disk utility back up, click on convert, select the supertuxkart disk i
 In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with ittLicht, it's not meant to be well-organized or complete.
 
 * Open the Xcode project that comes with irrLicht
-* Select target irrlicht, build style release, target system 10.4
+* Select target libirrlicht.a, build style release, target system 10.4
 * Go in target options and edit options for ''Release'' build style.
+** Change ''Architectures'' to the native arch of your computer
 ** In ''other C flags'', add <TT>-D_IRR_USE_SDL_DEVICE_</TT> and the output of <TT>sdl-config --cflags</TT>
-** In ''other ld flags'', add the output of ''sdl-config --libs''
+** In ''other Linker flags'', add the output of ''sdl-config --libs''
+*** Remove -Wl,framework,Cocoa
 ** uncheck <TT>Inline Methods Hidden</TT> and <TT>Symbols Hidden by Default</TT>
-** Add -I/usr/local/include/
-** Remove -Wl,framework,Cocoa
+** Add <TT>/usr/local/include/<TT> to ''Header Search Paths''
 
 Then build.
 
 * copy libIrrlicht.a to /usr/local/lib
+<pre>
+sudo cp ~/irrlicht-1.5/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a /usr/local/lib/
+</pre>
 * copy include to /usr/local/include/irrlicht
+<pre>
+sudo cp -R ~/irrlicht-1.5/include /usr/local/include/irrlicht
+</pre>
 
 Configure and build STK :
 * <code>./configure --enable-irrlicht --with-irrlicht=/usr/local</code>
