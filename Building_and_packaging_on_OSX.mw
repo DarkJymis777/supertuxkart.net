@@ -268,7 +268,7 @@ In current SVN, STK is being ported to irrLicht. Please note that this is work-i
 ** In ''other Linker flags'', add the output of ''sdl-config --libs''
 *** Remove -Wl,framework,Cocoa
 ** uncheck <TT>Inline Methods Hidden</TT> and <TT>Symbols Hidden by Default</TT>
-** Add <TT>/usr/local/include/<TT> to ''Header Search Paths''
+** Add <TT>/usr/local/include/</TT> to ''Header Search Paths''
 
 Then build.
 
