@@ -260,7 +260,6 @@ Then open disk utility back up, click on convert, select the supertuxkart disk i
 
 In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with ittLicht, it's not meant to be well-organized or complete.
 
-* Currently, Irlicht dosen't work with SDL on MacOSX, there is a patch that fixed this [http://sourceforge.net/tracker2/?func=detail&aid=2687245&group_id=74339&atid=540678]
 * You will need a patched irrlicht for this to work. The patch is pending approval for inclusion on their tracker.
 * Edit include/IrrCompileConfig.h, uncomment #define _IRR_USE_SDL_DEVICE_ 1
 
