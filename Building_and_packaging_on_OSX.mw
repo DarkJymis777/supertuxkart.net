@@ -288,5 +288,8 @@ Configure and build STK :
 ** Replace: '''CPPFLAGS="${CPPFLAGS} -I$with_irrlicht/include"''' ''(line 280)'' with: '''CPPFLAGS="${CPPFLAGS} -I$with_irrlicht/include/iirrlicht"'''
 ** Replace: '''irrlicht_LIBS="$irrlicht_LIBS -lXxf86vm"'''
  ''(line 310)'' with: '''irrlicht_LIBS="$irrlicht_LIBS"'''
-* <code>./configure --enable-irrlicht --with-irrlicht=/usr/local</code>
-* <code>make</code>
+
+Then build STK.
+<code>./autogen.sh
+./configure --enable-irrlicht --with-irrlicht=/usr/local
+make</code>
