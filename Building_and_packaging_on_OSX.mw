@@ -265,7 +265,7 @@ In current SVN, STK is being ported to irrLicht. Please note that this is work-i
 * Open the Xcode project that comes with irrLicht
 * Select target libirrlicht.a, build style release, target system 10.4
 * Go in target options and edit options for ''Release'' build style.
-** Change ''Architectures'' to the native arch of your computer
+** Change ''Architectures'' to the native arch of your computer (unless you have SDL built as universal binary)
 ** In ''other C flags'', add the output of <TT>sdl-config --cflags</TT>
 ** In ''other Linker flags'', add the output of ''sdl-config --libs''
 *** Remove -Wl,framework,Cocoa
