@@ -1,0 +1,12 @@
+This page collects information about the irrlicht port. Note that the irrlicht branch is _completely_ unstable, and we will most likely not be able to offer any support regarding bugs, how to compile, ... 
+
+== Installing Irrlicht ==
+For now the build environment assumes that irrlicht is used from the uninstalled irrlicht package. You have to compile irrlicht yourself to enable SDL support in irrlicht. In the file .../include/IrrCompileConfig.h define the symbol _IRR_USE_SDL_DEVICE_  (the line is already in the file, but commented out) and then compile. If you have any problems with that, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
+
+== Configuring ==
+You have to use the option --with-irrlicht=/PATH/TO/IRRLICHT (it should be the irrlicht root directory, i.e. in which include and lib directories are).
+
+== Running ==
+Only a few tracks have been converted so far (beach and lighthouse track), and many things still don't work properly. You might be able to start a race with the GUI by now (though afaik you will always start with a single kart in the beach track). You might want to use the command line options 
+ -k 1 --track beach  --kart tux -N
+(one kart, track beach (or suse lighthouse), use the kart tux and start the race immediately.
