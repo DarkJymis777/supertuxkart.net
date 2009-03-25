@@ -1,80 +1,12 @@
-Note that these instructions apply to STK versions more recent than 0.8 alpha. If you want to compile an older version, please use the history feature of the wiki.
+This page collects information about the irrlicht port. Note that the irrlicht branch is _completely_ unstable, and we will most likely not be able to offer any support regarding bugs, how to compile, ... 
 
-<div class="outer_info">
-    <div class="inner_msg">
-'''If you are a packager making a package for a Linux distribution''', please do '''not''' try to modify our build system to use system versions of bullet and irrlicht. In both cases we use a specific and/or modified version of the library, and linking STK against the system library will only introduce bugs (corrupted graphics, memory leaks) into SuperTuxKart. Thanks
-</div></div>
+== Installing Irrlicht ==
+For now the build environment assumes that irrlicht is used from the uninstalled irrlicht package. You have to compile irrlicht yourself to enable SDL support in irrlicht. In the file .../include/IrrCompileConfig.h define the symbol _IRR_USE_SDL_DEVICE_  (the line is already in the file, but commented out) and then compile. If you have any problems with that, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
 
+== Configuring ==
+You have to use the option --with-irrlicht=/PATH/TO/IRRLICHT (it should be the irrlicht root directory, i.e. in which include and lib directories are).
 
-== Installing dependencies ==
-
-First of all, you will need a c++ compiler, the autotools build system and cmake. Other dependencies you will need include openal, ogg, vorbis. You don't need to install irrlicht, bullet, enet or wiiuse because they are included in the git repository.
-
-* Fedora
-{{popup-code
-|content=yum install gcc-c++ autoconf automake git-core libogg-devel libvorbis-devel libXrandr-devel mesa-libGL-devel mesa-libGLU-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake libbluedevil-devel}}
-* Ubuntu/Debian
-{{popup-code
-|content=sudo apt-get install autoconf automake build-essential cmake git libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev libfreetype6-dev libbluetooth-dev subversion libxrandr-dev zlib1g-dev libpng12-dev libjpeg-turbo8-dev libsm-dev
-}}
-
-== Obtain code and assets ==
-STK is splitted up into code and assets, so you need these two commands two get both:
-
-<code>git clone https://github.com/supertuxkart/stk-code.git stk-code # about 130 MB
-
-svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets # about 650 MB
-</code>
-
-See [[Source control]] for more information.
-
-The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the same folder. This means that you need the following folder structure:
-* base dir
-** stk-code
-*** src
-*** lib
-*** ...
-** stk-assets
-*** tracks
-*** ...
-
-== Building SuperTuxKart ==
-
-Next, build SuperTuxKart using CMake:
-
-<code>cd stk-code
-mkdir cmake_build
-cd cmake_build
-cmake ..
-make -j2
-</code>
-
-You can speed up compilation heavily by changing the number behind <tt>-j</tt> to the number of cores you have.
-
-=== CMake Options ===
-There is a varity ofCMake options. The most important ones are listed below:
-* To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this: <code>cmake .. -DCMAKE_BUILD_TYPE=Debug</code>
-
-* Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that, ie: <code>cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo</code>
-
-* wiiuse can be enable with <code>-DUSE_WIIUSE=yes</code>
-
-
-Finally, you can simply run SuperTuxKart from the build directory:
-<code>./bin/supertuxkart</code>
-
-Optionally, STK can be installed /usr/local in using
-
-<code>sudo make install</code>''
-
-If you want to install somewhere else, add the following options to cmake:
-
-<code>-DCMAKE_INSTALL_PREFIX=/path/to/install</code>
-
-If you want to update your copy of STK to the current git/SVN versions, go to the parent directory of stk-code:
-<code>cd stk-code
-git pull
-cd cmake_build
-make -j2
-cd ../../stk-assets
-svn update</code>
+== Running ==
+Only a few tracks have been converted so far (beach and lighthouse track), and many things still don't work properly. You might be able to start a race with the GUI by now (though afaik you will always start with a single kart in the beach track). You might want to use the command line options 
+ -k 1 --track beach  --kart tux -N
+(one kart, track beach (or suse lighthouse), use the kart tux and start the race immediately.
