@@ -8,7 +8,7 @@ The irrlicht branch is at https://supertuxkart.svn.sourceforge.net/svnroot/super
  svn switch https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/branches/irrlicht .
 This will only download the new/changed files, and not the complete repository.
 
-To configure you have to use the option --with-irrlicht=/PATH/TO/IRRLICHT (it should be the irrlicht root directory, i.e. in which include and lib directories are). That should be all.
+To configure you have to use the option --with-irrlicht=/PATH/TO/IRRLICHT (it should be the irrlicht root directory, i.e. in which include and lib directories are) and --enable-irrlicht. That should be all.
 
 == Running ==
 Only a few tracks have been converted so far (beach and lighthouse track), and many things still don't work properly. You might be able to start a race with the GUI by now (though afaik you will always start with a single kart in the beach track). You might want to use the command line options 
