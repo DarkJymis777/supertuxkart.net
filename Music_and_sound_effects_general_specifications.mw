@@ -1,6 +1,6 @@
 == Music ==
 
-Music should be in ogg/vorbis format (.ogg extension), support for mod files has been removed. Try to keep the music file size under 5 megabytes. We want most music to be light-hearted, but it is required that the music isn't 'aggressive' (we want to keep the game's ambient mostly happy).  Also most music needs to be 'loopable', except :
+Music should be in ogg/vorbis format (.ogg extension), support for mod files has been removed. Try to keep the music file size under 2-3 megabytes. We want most music to be light-hearted, but it is required that the music isn't 'aggressive' (we want to keep the game's ambient mostly happy).  Also most music needs to be 'loopable', except :
 
 *Grand Prix endings
 *Game themes
