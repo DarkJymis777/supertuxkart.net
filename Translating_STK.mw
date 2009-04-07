@@ -1,6 +1,6 @@
 This article will explain how to translate STK into another language.
 
-= Installing gettext =
+= Installing poEdit =
 
 * Get poEdit from http://www.poedit.net/ or from your repositories on linux. 
 
