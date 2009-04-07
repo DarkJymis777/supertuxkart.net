@@ -1,12 +1,12 @@
 This article will explain how to translate STK into another language.
 
-== Installing gettext ==
+= Installing gettext =
 
 * Get poEdit from http://www.poedit.net/ or from your repositories on linux. 
 
 <center>
 {| style="background-color:#ffffcc;" 
-|'''''Note :'''you may use other tools but the procedure for them is not documented here''
+|'''''Note :''' you may use other tools but the procedure for them is not documented here''
 |}
 </center>
 
@@ -14,14 +14,14 @@ This article will explain how to translate STK into another language.
 
 The directory where you need to go is /data/po. There you will see a file named ''supertuxkart.pot'' and a script called ''update_pot.sh''. The .pot file contains all translatable strings of STK. The ''update_pot.sh'' script can be run from the base directory to update the .pot file, but you generally do not need to do that since the STK developers will do it for you.
 
-== Configuring poEdit ==
+= Configuring poEdit =
 * Make sure poEdit is configured to compile .mo files on saving (check in preferences)
 [[Image:Poedit_prefs.png]]
 
 * from the '''View''' memu, check '''Show automatic comments window'''. This will make a new area appear : this area will sometimes contain tips that the devs left to help you translate a string, for instance if its meaning is ambiguous.
 [[Image:Poedit_comments.png]]
 
-== Creating a new translation ==
+= Creating a new translation =
 * Create a directory with your [http://xml.coverpages.org/iso639a.html language code] as name.
 
 * Open poEdit and use menu '''File > New catalog from POT file'''.
@@ -36,7 +36,7 @@ The directory where you need to go is /data/po. There you will see a file named 
 * Then simply select the strings in the list and enter a translation.
 * When you're done, save the file as ''[language code].po''. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
 
-== Testing your translation ==
+= Testing your translation =
 
 your translation should be automatically picked if your system is set to the language you made the translation for. If your system is in english or another language, you can force a language from terminal 
 
@@ -44,7 +44,7 @@ your translation should be automatically picked if your system is set to the lan
 * In a Windows command interpreter: <code>set LANG=de_DE</code> followed by <code>.\supertuxkart.exe</code>
 * In a Cygwin shell: <code>$ env LANG=de_DE ./supertuxkart.exe</code>
 
-== Updating an existing translation ==
+= Updating an existing translation =
 
 * Open the ''language code.po'' file in poEdit.
 * Choose ''Catalog > update from POT file''
