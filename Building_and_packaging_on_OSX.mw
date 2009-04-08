@@ -1,4 +1,5 @@
 This page will explain how I built and packaged SuperTuxKart on mac OS X.
+This page is also available in [[Deutsch:Mac|German]]
 
 You could also use OS X frameworks instead of Unix-style libs, this would of course require heavier patching of the STK build system.
 
