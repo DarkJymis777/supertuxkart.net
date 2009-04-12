@@ -261,6 +261,7 @@ Then open disk utility back up, click on convert, select the supertuxkart disk i
 
 In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with irrLicht.  JPenguin has updated them to work with r3277, but we won't any promises as to your success.
 
+* download irrlicht, and extract it tour home folder
 * You will need a patched irrlicht for this to work. The patch is pending approval for inclusion on their tracker. [http://sourceforge.net/tracker2/?func=detail&aid=2687245&group_id=74339&atid=540678]
 * Edit include/IrrCompileConfig.h, uncomment #define _IRR_USE_SDL_DEVICE_ 1
 * Open the Xcode project that comes with irrLicht
@@ -275,22 +276,7 @@ In current SVN, STK is being ported to irrLicht. Please note that this is work-i
 
 Then build.
 
-* copy libIrrlicht.a to /usr/local/lib
-<pre>
-sudo cp ~/irrlicht-1.5/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a /usr/local/lib/
-</pre>
-* copy include to /usr/local/include/irrlicht
-<pre>
-sudo cp -R ~/irrlicht-1.5/include /usr/local/include/irrlicht
-</pre>
-
 Configure and build STK :
-* Open configure.ac
-** Replace: '''CPPFLAGS="${CPPFLAGS} -I$with_irrlicht/include"''' ''(line 280)'' with: '''CPPFLAGS="${CPPFLAGS} -I$with_irrlicht/include/iirrlicht"'''
-** Replace: '''irrlicht_LIBS="$irrlicht_LIBS -lXxf86vm"'''
- ''(line 310)'' with: '''irrlicht_LIBS="$irrlicht_LIBS"'''
-
-Then build STK.
 <code>./autogen.sh
-./configure --enable-irrlicht --with-irrlicht=/usr/local
+./configure --enable-irrlicht --with-irrlicht=/users/'''YOURUSERNAME'''/irrlicht-1.5
 make</code>
