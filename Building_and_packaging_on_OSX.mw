@@ -288,26 +288,14 @@ Then open disk utility back up, click on convert, select the supertuxkart disk i
 
 In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with irrLicht.  JPenguin has updated them to work with r3277, but we won't any promises as to your success.
 
-* download irrlicht, and extract it
-<!--
-* You will need a patched irrlicht for this to work. The patch is pending approval for inclusion on their tracker. [http://sourceforge.net/tracker2/?func=detail&aid=2687245&group_id=74339&atid=540678]
-* Edit include/IrrCompileConfig.h, uncomment #define _IRR_USE_SDL_DEVICE_ 1
--->
-* Open the Xcode project that comes with irrLicht
-<!--
-* Select target libirrlicht.a, build style release, target system 10.4
-* Go in target options and edit options for ''Release'' build style.
-** Change ''Architectures'' to the native arch of your computer (unless you have SDL built as universal binary)
-** In ''other C flags'', add the output of <TT>sdl-config --cflags</TT>
-** In ''other Linker flags'', add the output of ''sdl-config --libs''
-*** Remove -Wl,framework,Cocoa
-** uncheck <TT>Inline Methods Hidden</TT> and <TT>Symbols Hidden by Default</TT>
-** Add <TT>/usr/local/include/</TT> to ''Header Search Paths''
--->
 
+* Install dependencies as described above, except for SDL & Plib
+* download irrlicht, and extract it
 Then build.
 
 Configure and build STK :
 <code>./autogen.sh
 ./configure --enable-irrlicht --with-irrlicht=/path/to/irrlicht-1.5
 make</code>
+== Packaging the Irrlicht build ==
+We doo NOT want anyone to publicly release an Irrlicht build at this point, but if you wish to package for personal use (try on you Laptop, other desktop...) it is similar to packaging the PLIB version- you just need to use the [http://supertuxkart.sourceforge.net/Building_and_packaging_on_OSX#alternative_makeapp.sh Alternative makeapp.sh Script]
