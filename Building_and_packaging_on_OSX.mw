@@ -169,13 +169,13 @@ Cflags: -I${includedir}
 
 * You can now launch STK from terminal
 <pre>
-    % /opt/supertuxkart/bin/supertuxkart
+    % /opt/supertuxkart/games/supertuxkart
 </pre>
 
-==== Making an app bundle ====
+* In the rare case that 'make install' doesn't work, but you cand still launch SuperTuxKart from typing './src/supertuxkart' from your source directory; you can still package STK- just use the alternative makeapp.sh script
 
-Download this [http://www.mediafire.com/file/qn3vwqyymgl/packagingSTK.zip packaging kit]
-If you prefer to make your own ''makeapp.sh'' script, you may; the following is an example:
+==== Making an app bundle ====
+===== makeapp.sh =====
 <pre>
 INSTALL_PREFIX="/opt/supertuxkart"
 
@@ -196,7 +196,34 @@ cp -r $INSTALL_PREFIX/share/games/supertuxkart ./SuperTuxKart.app/Contents/Resou
 
 </pre>
 
-* You'll need an icon file named 'stk.icns'
+===== alternative makeapp.sh =====
+
+<pre>
+INSTALL_PREFIX="/users/jpenguin/supertuxkartirr"
+
+echo "* Removing any existing installation"
+rm -rf ./SuperTuxKart.app
+
+echo "* Creating skeleton"
+mkdir -p ./SuperTuxKart.app/Contents/Resources
+mkdir ./SuperTuxKart.app/Contents/MacOS
+cp info.plist ./SuperTuxKart.app/Contents/info.plist
+cp stk.icns ./SuperTuxKart.app/Contents/Resources/stk.icns
+
+echo "* Copying executable"
+cp $INSTALL_PREFIX/src/supertuxkart ./SuperTuxKart.app/Contents/MacOS/supertuxkart
+
+echo "* Copying data files"
+mkdir  ./SuperTuxKart.app/Contents/Resources/data
+cp -r $INSTALL_PREFIX/data ./SuperTuxKart.app/Contents/Resources/data/data
+
+echo "* Cleaning up SVN files (IGNORE any error that may appear in this section)"
+find ./SuperTuxKart.app/Contents/ -name ".svn" -exec rm -rf '{}' \;
+</pre>
+
+===== For either makeapp.sh =====
+
+* You'll need an [http://www.mediafire.com/file/qdwwn3zmbey/stk.icns icon file named 'stk.icns']
 * Create an Info.plist file like the following one (adapt version number) :
 <pre>
 <?xml version="1.0" encoding="UTF-8"?>
