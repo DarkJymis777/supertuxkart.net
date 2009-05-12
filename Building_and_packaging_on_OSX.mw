@@ -221,7 +221,7 @@ echo "* Cleaning up SVN files (IGNORE any error that may appear in this section)
 find ./SuperTuxKart.app/Contents/ -name ".svn" -exec rm -rf '{}' \;
 </pre>
 
-===== For either makeapp.sh =====
+====== For either makeapp.sh ======
 
 * You'll need an [http://www.mediafire.com/file/qdwwn3zmbey/stk.icns icon file named 'stk.icns']
 * Create an Info.plist file like the following one (adapt version number) :
