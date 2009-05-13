@@ -288,7 +288,24 @@ Then open disk utility back up, click on convert, select the supertuxkart disk i
 
 In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with irrLicht.  JPenguin has updated them to work with r3277, but we won't any promises as to your success.
 
+== New Method ==
+* Install dependencies as described above, except for SDL & Plib
+* download irrlicht, and extract it
+Then build.
+* copy libIrrlicht.a to /usr/local/lib
+<pre>
+sudo cp ~/irrlicht-1.5/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a /usr/local/lib/
+</pre>
+* copy include to /usr/local/include/irrlicht
+<pre>
+sudo cp -R ~/irrlicht-1.5/include /usr/local/include/irrlicht
+</pre>
+* Build STK
+<pre>
+cd :~/supertuxkart/src/ide/Xcode; xcodebuild
+</pre>
 
+== Old Method ==
 * Install dependencies as described above, except for SDL & Plib
 * download irrlicht, and extract it
 Then build.
