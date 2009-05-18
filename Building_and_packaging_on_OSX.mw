@@ -5,7 +5,7 @@ For older versions, see [[Building STK 06 on OSX]]
 In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with irrLicht.
 
 = Dependencies =
-* Download https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks.zip&a=73468757
+* Download [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks.zip&a=73468757 pre-built dependencies]
 * Put the frameworks in Library/Frameworks
 
 == irrLicht ==
