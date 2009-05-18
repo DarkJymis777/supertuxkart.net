@@ -8,7 +8,7 @@ In current SVN, STK is being ported to irrLicht. Please note that this is work-i
 * Download [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks.zip&a=73468757 pre-built dependencies]
 * Put the frameworks in Library/Frameworks
 
-== irrLicht ==
+= irrLicht =
 * Download irrLicht, and extract it.
 Then build it using the provided Xcode project.
 
@@ -20,7 +20,10 @@ sudo cp ~/irrlicht-1.5/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a /usr/l
 <pre>
 sudo cp -R ~/irrlicht-1.5/include /usr/local/include/irrlicht
 </pre>
-* Build SuperTuxKart using the provided Xcode project (in /src/ide/)
+
+= SuperTuxKart =
+
+Build SuperTuxKart using the provided Xcode project (in /src/ide/)
 
 The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside (note: more work is required to make all of this flawless)
 
