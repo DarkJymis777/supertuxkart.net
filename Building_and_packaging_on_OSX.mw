@@ -4,6 +4,16 @@ For older versions, see [[Building STK 06 on OSX]]
 
 In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with irrLicht.
 
+= Getting Started =
+* Install developer tools, either from the OS X Install DVD or from Apple's website
+
+* symlink include folder of OpenGL framework to /usr/local/include/GL (Unix programs have an easier time finding it this way)
+<pre>
+    % sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /usr/local/include/GL
+</pre>
+(you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source! <TT>sudo mkdir -p /usr/local/include/</TT>)
+
+
 = Dependencies =
 * Download [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks.zip&a=73468757 pre-built dependencies]
 * Put the frameworks in Library/Frameworks
