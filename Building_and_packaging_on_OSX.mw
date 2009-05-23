@@ -16,7 +16,7 @@ In current SVN, STK is being ported to irrLicht. Please note that this is work-i
 
 = Dependencies =
 * Download [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks.zip&a=73468757 pre-built dependencies]
-* Put the frameworks in Library/Frameworks
+* Put the frameworks in [hard disk root]/Library/Frameworks
 
 = irrLicht =
 * Download irrLicht, and extract it.
