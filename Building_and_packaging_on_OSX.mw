@@ -42,10 +42,13 @@ Set a variable called <TT>SUPERTUXKART_DATADIR</TT> to <TT>$(PROJECT_DIR)/../../
 
 = Distributing =
 
-Run the following on the result .app to remove useless files
 
-<code>
-find . -name ".svn" -exec rm -rf '{}' > /dev/null \; 2> /dev/null
+The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside
+
+
+Run the following on the result .app to remove useless files :
+
+<code>find . -name ".svn" -exec rm -rf '{}' > /dev/null \; 2> /dev/null
 find . -name ".DS_Store" -exec rm -rf '{}' > /dev/null \; 2> /dev/null
 find . -name "Makefile*" -exec rm -rf '{}' > /dev/null \; 2> /dev/null
 </code>
