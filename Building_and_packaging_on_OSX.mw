@@ -35,8 +35,6 @@ sudo cp -R ~/irrlicht-1.5/include /usr/local/include/irrlicht
 
 Build SuperTuxKart using the provided Xcode project (in /src/ide/)
 
-The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside
-
 = Running =
 To be able to run, you'll need to help the executable find its data. Right-click on the executable in tree, choose get info, go the area about env variables.
 
