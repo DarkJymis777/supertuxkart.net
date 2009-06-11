@@ -2,7 +2,7 @@
 There are several ways SuperTuxKart can be installed. The easiest solution is to use a binary (which are supplied for Windows, MacOSX, and Linux), but it is not complicated to build STK yourself from either the latest stable sources or from the cutting edge SVN.
 == Binaries ==
 === Windows (Vista and XP) ===
-Download the latest binary from our [Download] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation - though since 0.6 you will only get some warnings, which you can safely ignore.
+Download the latest binary from our [[Downloads|Download]] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation - though since 0.6 you will only get some warnings, which you can safely ignore.
 
 ===Linux===
 For GNU/Linux you can see if an up-to-date package is available for your distro - depending on distro try:
