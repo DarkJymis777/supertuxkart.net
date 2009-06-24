@@ -44,11 +44,6 @@ your translation should be automatically picked if your system is set to the lan
 * In a Windows command interpreter: <code>set LANG=de_DE</code> followed by <code>.\supertuxkart.exe</code> (that's for german, replace "de_DE" with the code if the langauge you want to test)
 * In a Cygwin shell: <code>$ env LANG=de_DE ./supertuxkart.exe</code>
 
-followed by <code>.\supertuxkart.exe or ./supertuxkart.exe</code>
-
-or, in one line :
-<code>$ env LANG=sq_SQ ./supertuxkart.exe</code>
-
 = Updating an existing translation =
 
 * Open the ''language code.po'' file in poEdit.
