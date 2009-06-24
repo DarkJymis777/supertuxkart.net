@@ -41,11 +41,12 @@ The directory where you need to go is /data/po. There you will see a file named 
 your translation should be automatically picked if your system is set to the language you made the translation for. If your system is in english or another language, you can force a language from terminal 
 
 * On UNIX (Linux, Mac) : ''export LANG=[keycode] && export LC_MESSAGES=[keycode]'' then ''./src/supertuxkart'' or so.
-* In a Windows command interpreter: <code>set LANG=de_DE</code> followed by <code>.\supertuxkart.exe</code>
+* In a Windows command interpreter: <code>set LANG=de_DE</code> followed by <code>.\supertuxkart.exe</code> (that's for german, replace "de_DE" with the code if the langauge you want to test)
 * In a Cygwin shell: <code>$ env LANG=de_DE ./supertuxkart.exe</code>
 
-If your game is in Albanian, you can:
-<code>set LANG=sq_SQ</code> followed by <code>.\supertuxkart.exe or ./supertuxkart.exe</code>
+followed by <code>.\supertuxkart.exe or ./supertuxkart.exe</code>
+
+or, in one line :
 <code>$ env LANG=sq_SQ ./supertuxkart.exe</code>
 
 = Updating an existing translation =
