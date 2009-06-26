@@ -12,7 +12,7 @@ In current SVN, STK is being ported to irrLicht. Please note that this is work-i
 (you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source! <TT>sudo mkdir -p /usr/local/include/</TT>)
 
 = Dependencies =
-* Download [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks.zip&a=73468757 pre-built dependencies]
+* Download [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks2.zip&a=73468757 pre-built dependencies]
 * Put the frameworks in [hard disk root]/Library/Frameworks
 
 = irrLicht =
