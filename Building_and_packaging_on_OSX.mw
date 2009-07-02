@@ -32,10 +32,7 @@ sudo cp -R ~/irrlicht-1.5/include /usr/local/include/irrlicht
 
 Build SuperTuxKart using the provided Xcode project (in /src/ide/)
 
-= Running =
-To be able to run, you'll need to help the executable find its data. Right-click on the executable in tree, choose get info, go the area about env variables.
-
-Set a variable called <TT>SUPERTUXKART_DATADIR</TT> to <TT>$(PROJECT_DIR)/../../../</TT>
+That's all! If all went well, you're ready to run STK by hitting the big green 'run' button.
 
 = Distributing =
 
