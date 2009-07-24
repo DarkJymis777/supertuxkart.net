@@ -36,7 +36,7 @@ and if it's OK, you can run STK:
 
 == Build the latest unstable version (from SVN) ==
 Check out the sources using:
- svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
+ svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk
  cd supertuxkart
  ./autogen.sh && ./configure && make
  sudo make install
