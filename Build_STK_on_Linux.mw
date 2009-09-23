@@ -5,7 +5,7 @@ For now the build environment assumes that irrlicht is used from the uninstalled
 <!--
 You have to compile irrlicht yourself to enable SDL support in irrlicht. In the file .../include/IrrCompileConfig.h define the symbol _IRR_USE_SDL_DEVICE_  (the line is already in the file, but commented out) and then compile.
 -->
-If you have any problems with that, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
+If you have any problems with building irrlicht, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
 
 == Getting the sources and compiling ==
 The irrlicht branch is at https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/branches/irrlicht. You can change from a current SVN repository to the irrlicht branch by using
