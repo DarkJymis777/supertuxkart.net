@@ -20,11 +20,11 @@ Then build it using the provided Xcode project.
 
 * copy ''libIrrlicht.a'' to ''/usr/local/lib''
 <pre>
-sudo cp ~/irrlicht-1.5/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a /usr/local/lib/
+sudo cp ~/irrlicht-1.x/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a /usr/local/lib/
 </pre>
 * copy ''include'' to ''/usr/local/include/irrlicht''
 <pre>
-sudo cp -R ~/irrlicht-1.5/include /usr/local/include/irrlicht
+sudo cp -R ~/irrlicht-1.x/include /usr/local/include/irrlicht
 </pre>
 
 = SuperTuxKart =
