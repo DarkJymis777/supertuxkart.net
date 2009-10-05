@@ -1,8 +1,7 @@
-This page will explain how I built and packaged SuperTuxKart on mac OS X.
+This page will explain how to build and packaged SuperTuxKart on mac OS X.
 
-For older versions, see [[Building STK 06 on OSX]]
 
-In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with irrLicht.
+In current SVN, STK is being ported to irrLicht. Please note that this is work-in-progress and '''not''' meant for casual users. Information below are notes i gathered about building STK with irrLicht. For older versions, see [[Building STK 06 on OSX]]
 
 = Getting Started =
 * Install developer tools, either from the OS X Install DVD or from Apple's website
