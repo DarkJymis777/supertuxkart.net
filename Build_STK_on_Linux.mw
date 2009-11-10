@@ -1,7 +1,7 @@
 This page collects information about the irrlicht port. Note that the irrlicht branch is _completely_ unstable, and we will most likely not be able to offer any support regarding bugs, how to compile, ... 
 
 == Installing Irrlicht ==
-For now the build environment assumes that irrlicht is used from the uninstalled irrlicht source directory.
+For now the build environment assumes that irrlicht is used from the installed irrlicht source directory.
 <!--
 You have to compile irrlicht yourself to enable SDL support in irrlicht. In the file .../include/IrrCompileConfig.h define the symbol _IRR_USE_SDL_DEVICE_  (the line is already in the file, but commented out) and then compile.
 -->
