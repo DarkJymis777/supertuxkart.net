@@ -17,7 +17,7 @@ If you have been using the irrlicht branch switch to trunk by using:
 To configure you have to use the option --with-irrlicht=/PATH/TO/IRRLICHT, unless you have irrlicht installed in system directories that are searched by the compiler automatically. Neither plib nor sdl are necessary anymore, though the other dependencies (openal, ogg, vorbis) still exist.
 
 == Running ==
-Only a few tracks have been converted so far (beach, jungle and lighthouse track). The GUI is mostly working, so you can race in those tracks any way you like. Still, the irrlicht version is currently stable, and we consider it only to be 'somewhat' playable.
+Only a few tracks have been converted so far (beach, jungle and lighthouse track). The GUI is mostly working, so you can race in those tracks any way you like. Still, the irrlicht version is currently in development, and we consider it only to be 'somewhat' playable.
 
 == Exporting Tracks ==
 A new [[track_exporter | track exporter]] is under development.
