@@ -14,6 +14,8 @@ In current SVN, STK is being ported to irrLicht. Please note that this is work-i
 * Download [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks2.zip&a=73468757 pre-built dependencies]
 * Put the frameworks in [hard disk root]/Library/Frameworks
 
+'' '''NOTE: the libintl included in this package is broken, and as such the provided Xcode project does not make use of it. For now you will need to manually build gettext''' (which includes building it universal and with backward comptibility, and manually packaging it into the app, if you wish to make an app that can be distributed. Please fall back to the old instructions for the gettext part until I get around to fix this)''
+
 = irrLicht =
 * Download irrLicht, and extract it.
 Then build it using the provided Xcode project.
