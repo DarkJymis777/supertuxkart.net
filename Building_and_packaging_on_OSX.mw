@@ -37,13 +37,6 @@ That's all! If all went well, you're ready to run STK by hitting the big green '
 
 = Distributing =
 
-
 The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside
 
-
-Run the following on the result .app to remove useless files :
-
-<code>find . -name ".svn" -exec rm -rf '{}' > /dev/null \; 2> /dev/null
-find . -name ".DS_Store" -exec rm -rf '{}' > /dev/null \; 2> /dev/null
-find . -name "Makefile*" -exec rm -rf '{}' > /dev/null \; 2> /dev/null
-</code>
+''' ''NOTE: As per the gettext mention above in the dependencies section, this is not totally atm, you will need to manually include the libintl lib using dylibbundler as described in the document for STK 0.6''' ''
