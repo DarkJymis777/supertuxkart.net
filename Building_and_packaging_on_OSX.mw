@@ -39,4 +39,4 @@ That's all! If all went well, you're ready to run STK by hitting the big green '
 
 The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside
 
-''' ''NOTE: As per the gettext mention above in the dependencies section, this is not totally atm, you will need to manually include the libintl lib using dylibbundler as described in the document for STK 0.6''' ''
+''' ''NOTE: As per the gettext mention above in the dependencies section, this is not totally true atm, you will need to manually include the libintl lib using dylibbundler as described in the document for STK 0.6''' ''
