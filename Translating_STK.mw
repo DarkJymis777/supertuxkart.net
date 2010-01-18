@@ -14,6 +14,10 @@ This article will explain how to translate STK into another language.
 
 The directory where you need to go is /data/po. There you will see a file named ''supertuxkart.pot'' and a script called ''update_pot.sh''. The .pot file contains all translatable strings of STK. The ''update_pot.sh'' script can be run from the base directory to update the .pot file, but you generally do not need to do that since the STK developers will do it for you.
 
+To get the latest po subdirectory from SVN without checking out the whole SVN version, use:
+ 
+ svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/data/po/ stk_po
+
 = Configuring poEdit =
 * Make sure poEdit is configured to compile .mo files on saving (check in preferences)
 [[Image:Poedit_prefs.png]]
