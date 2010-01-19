@@ -1,10 +1,10 @@
 This page collects information about the irrlicht port. Note that the irrlicht branch is _completely_ unstable, and we will most likely not be able to offer any support regarding bugs, how to compile, ... 
 
 == Installing Irrlicht ==
-For now the build environment assumes that irrlicht is used from the installed irrlicht source directory.
-<!--
-You have to compile irrlicht yourself to enable SDL support in irrlicht. In the file .../include/IrrCompileConfig.h define the symbol _IRR_USE_SDL_DEVICE_  (the line is already in the file, but commented out) and then compile.
--->
+The build environment can use irrlicht either from an installed irrlicht package (as long as the header files are around), or directly from the irrlicht source tree. Configure should detect installation in default directories (/usr, /usr/local), if you are using an IDE, please adjust the appropriate entries.
+
+The recommended version to use is irrlicht-1.7, since it uses many bug fixes for STK. It should also compile with version 1.6, though you might notice that some karts are nearly white, the speedometer is not shown correctly, and fonts are pixelated. Irrlicht-1.7 is not yet officially released, so you have to download it directly from svn or from a alpha or beta package - please check the irrlicht pages for details.
+
 If you have any problems with building irrlicht, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
 
 == Getting the sources and compiling ==
