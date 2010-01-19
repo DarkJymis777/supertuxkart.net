@@ -21,3 +21,6 @@ Only a few tracks have been converted so far (beach, jungle and lighthouse track
 
 == Exporting Tracks ==
 A new [[track_exporter | track exporter]] is under development.
+
+== Textures ==
+To enable special graphical texture effects, those effects must be specified in an separate file. The format of this file is described [[materials_xml | here]].
