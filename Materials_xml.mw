@@ -1,0 +1,38 @@
+This page describes the format of the materials.xml file, which can be used in SuperTuxkart to define special effects for certain textures. The effects might be graphical, or physical (e.g. define a slowdown that applies while you are driving on this kind of textures). Later on other effects might be added, too (e.g. special sound effects, ...)
+
+== File Format and Location ==
+The materials.xml file is a simple xml file that contains one entry for each texture. Notice that defaults apply, so unless you want a special effect it is not necessary to create a materials.xml file to include all your textures. The materials.xml file can go into a track- or kart-directory. This file will overwrite the default settings used in stk: for example, usually sand causes a certain slow down. But on the Shifting Sand track the physics settings can be overwritten, so that there is no slowdown on sand in this track only.
+
+
+ <?xml version="1.0"?>
+ <materials>
+   <material name="bush.png" transparency="y"/>
+   <material name="bush2.png" transparency="y" clamp="y"/>
+  </materials>
+
+This shows a simple example of a materials.xml file with two textures. A list of all possible attributes are in the next section.
+
+== Attributes ==
+Note that the 0.7-alpha release is actually using some 
+The following attributes can be used (defaults in bold)
+
+*clamp=Y/'''N'''
+**Clamping (not sure if this works atm)
+*transparency=Y/'''N'''
+**Uses alpha testing: if alpha is >127 a pixel is written, otherwise not. See EMT_TRANSPARENT_ALPHA_CHANNEL_REF in irrlicht.
+*alpha=Y/'''N'''
+**Uses alpha blending, the final color is blended together from the destination color and the texture color, using the alpha channel value as blend factor. See EMT_TRANSPARENT_ALPHA_CHANNEL in irrlicht.
+*light='''Y'''/N
+**Set to false if the texture should not be affected by lights.
+*sphere=Y/'''N'''
+**Enables a reflection on this texture.
+*slowdown='''1'''
+**This slowdown factor is multiplied to the engine power. A value of 0.4 is used for the slowdown on sand in the beach track for example.
+*max-speed='''1.0'''
+**Fraction of the maximum speed of the kart a kart can have on this terrain. If the kart is faster, it will be slowed down gradually.
+*ignore=Y/'''N'''
+**The object with this texture does not interact with the player. Should be used e.g. for things that are drawn on top of the track, since otherwise there will be a slight bump in the track.
+*zipper=Y/'''N'''
+**When driving over this texture, the kart will get a zipper bonus.
+*graphical-effect="water"/"smoke"
+** Adds a particle emitter for graphical water and smoke effects.
