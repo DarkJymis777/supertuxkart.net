@@ -25,7 +25,7 @@ The following attributes can be used (defaults in bold)
 *light='''Y'''/N
 **Set to false if the texture should not be affected by lights.
 *sphere=Y/'''N'''
-**Enables a reflection on this texture.
+**Enables UV sphere mapping (a reflection-like effect) for this texture.
 *slowdown='''1'''
 **This slowdown factor is multiplied to the engine power. A value of 0.4 is used for the slowdown on sand in the beach track for example. ''Note that for the first alpha version of 0.7 you have to use 'slowdownTime'.''
 *max-speed='''1.0'''
