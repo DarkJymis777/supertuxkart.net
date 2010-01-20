@@ -27,12 +27,12 @@ The following attributes can be used (defaults in bold)
 *sphere=Y/'''N'''
 **Enables a reflection on this texture.
 *slowdown='''1'''
-**This slowdown factor is multiplied to the engine power. A value of 0.4 is used for the slowdown on sand in the beach track for example.
+**This slowdown factor is multiplied to the engine power. A value of 0.4 is used for the slowdown on sand in the beach track for example. ''Note that for the first alpha version of 0.7 you have to use 'slowdownTime'.''
 *max-speed='''1.0'''
-**Fraction of the maximum speed of the kart a kart can have on this terrain. If the kart is faster, it will be slowed down gradually.
+**Fraction of the maximum speed of the kart a kart can have on this terrain. If the kart is faster, it will be slowed down gradually. ''Note that for the first alpha version of 0.7 you have to use 'maxSpeed'.''
 *ignore=Y/'''N'''
 **The object with this texture does not interact with the player. Should be used e.g. for things that are drawn on top of the track, since otherwise there will be a slight bump in the track.
 *zipper=Y/'''N'''
 **When driving over this texture, the kart will get a zipper bonus.
 *graphical-effect="water"/"smoke"
-** Adds a particle emitter for graphical water and smoke effects.
+** Adds a particle for graphical water and smoke effects while driving on this terrain.
