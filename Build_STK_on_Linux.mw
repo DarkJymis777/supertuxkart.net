@@ -25,5 +25,5 @@ A new [[track_exporter | track exporter]] is under development.
 == Textures ==
 To enable special graphical texture effects, those effects must be specified in an separate file. The format of this file is described [[materials_xml | here]].
 
-== Converted Tracks ===
+== Converted Tracks ==
 A [[converted_tracks | list of tracks]] that have been converted is available.
