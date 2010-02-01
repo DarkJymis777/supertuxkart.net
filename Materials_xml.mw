@@ -33,6 +33,8 @@ The following attributes can be used (defaults in bold)
 *ignore=Y/'''N'''
 **The object with this texture does not interact with the player. Should be used e.g. for things that are drawn on top of the track, since otherwise there will be a slight bump in the track.
 *zipper=Y/'''N'''
-**When driving over this texture, the kart will get a zipper bonus.
+**When driving on this texture, the kart will get a zipper bonus.
+*reset=Y/'''N'''
+**When driving on this texture, the kart will be automatically rescued.
 *graphical-effect="water"/"smoke"
 ** Adds a particle for graphical water and smoke effects while driving on this terrain.
