@@ -24,6 +24,7 @@ Only a few tracks have been converted so far (beach, canyon, mines. jungle and l
 
 == Exporting Tracks ==
 A new [[track_exporter | track exporter]] is under development.
+Some info about drivelines is found at [[new_drivelines]]
 
 == Textures ==
 To enable special graphical texture effects, those effects must be specified in an separate file. The format of this file is described [[materials_xml | here]].
