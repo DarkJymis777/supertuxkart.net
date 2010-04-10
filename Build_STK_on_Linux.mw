@@ -22,13 +22,9 @@ To configure you have to use the option --with-irrlicht=/PATH/TO/IRRLICHT, unles
 == Running ==
 Only a few tracks have been converted so far (beach, canyon, mines. jungle and lighthouse track). The GUI is mostly working, so you can race in those tracks any way you like. Still, the irrlicht version is currently in development, and we consider it only to be 'somewhat' playable.
 
+== Exporting Karts ==
 
-== Headline text ==
-[http://www.example.com link title]'''Bold text'''''Italic text''<nowiki>Insert non-formatted text here</nowiki>--[[User:127.0.0.1|127.0.0.1]] 18:46, 7 April 2010 (UTC)
-----
-[[Image:Example.jpg]][[== Exporting Karts ==
-
-See [[Making_karts_for_Irrlicht]]]]
+See [[Making_karts_for_Irrlicht]]
 
 == Exporting Tracks ==
 A new [[track_exporter | track exporter]] is under development.
