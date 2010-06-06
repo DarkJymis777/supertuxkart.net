@@ -43,18 +43,4 @@ Check out the sources using:
 and if it's OK, you can run STK:
  supertuxkart
 
-== For Ubuntu Edgy Eft ==
-This guide was contributed by Damien.
-
-install following packages:
-  apt-get install libsdl1.2-dev libopenal-dev libalut-dev libmikmod2-dev plib1.8.4-dev
-  libglu1-mesa-dev subversion autoconf automake1.9 g++ gcc
-
-do a:
- $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
-then:
- $ cd trunk
- $ ./autogen.sh && ./configure && make
-and if all went well:
- $ src/supertuxkart
-Tested with g++ 3.3 and 4.1 , both succeeded.
+sKLCwq  <a href="http://cafldxwtwttq.com/">cafldxwtwttq</a>, [url=http://ibbprmtkqjhj.com/]ibbprmtkqjhj[/url], [link=http://riwajdaqdgpc.com/]riwajdaqdgpc[/link], http://xmhiwnxfwrtw.com/
