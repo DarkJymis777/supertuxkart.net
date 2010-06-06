@@ -1,16 +1,6 @@
 This page describes the format of the materials.xml file, which can be used in SuperTuxkart to define special effects for certain textures. The effects might be graphical, or physical (e.g. define a slowdown that applies while you are driving on this kind of textures). Later on other effects might be added, too (e.g. special sound effects, ...)
 
-== File Format and Location ==
-The materials.xml file is a simple xml file that contains one entry for each texture. Notice that defaults apply, so unless you want a special effect it is not necessary to create a materials.xml file to include all your textures. The materials.xml file can go into a track- or kart-directory. This file will overwrite the default settings used in stk: for example, usually sand causes a certain slow down. But on the Shifting Sand track the physics settings can be overwritten, so that there is no slowdown on sand in this track only.
-
-
- <?xml version="1.0"?>
- <materials>
-   <material name="bush.png" transparency="y"/>
-   <material name="bush2.png" transparency="y" clamp="y"/>
-  </materials>
-
-This shows a simple example of a materials.xml file with two textures. A list of all possible attributes are in the next section.
+TFJXDk  <a href="http://mbvvkarnzrxk.com/">mbvvkarnzrxk</a>, [url=http://sjlfuiduyczt.com/]sjlfuiduyczt[/url], [link=http://gwljfjqpgodq.com/]gwljfjqpgodq[/link], http://xqxscnxmgdjx.com/
 
 == Attributes ==
 Note that the 0.7-alpha release is actually using some 
