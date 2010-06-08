@@ -1,7 +1,8 @@
 There are several ways SuperTuxKart can be installed. The easiest solution is to use a binary (which are supplied for Windows, MacOSX, and Linux), but it is not complicated to build STK yourself from either the latest stable sources or from the cutting edge SVN.
 = Binaries =
 
-MwhIgD  <a href="http://yomiyrfsycxw.com/">yomiyrfsycxw</a>, [url=http://qbipdhnbshuo.com/]qbipdhnbshuo[/url], [link=http://rasgnebordbi.com/]rasgnebordbi[/link], http://mgiezzgxxijx.com/
+=== Windows (Vista and XP) ===
+Download the latest binary from our [[Downloads|Download]] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation - though since 0.6 you will only get some warnings, which you can safely ignore.
 
 ===Linux===
 For GNU/Linux you can see if an up-to-date package is available for your distro - depending on distro try:
@@ -20,7 +21,8 @@ Alternatively, download the binary tarball from the [http://sourceforge.net/proj
 and to run STK:
  run_game.sh
 
-GKvglw  <a href="http://kehelqppgtax.com/">kehelqppgtax</a>, [url=http://nqadypmpndmx.com/]nqadypmpndmx[/url], [link=http://olsokewyulet.com/]olsokewyulet[/link], http://awlogozwvuhu.com/
+=== MacOS x ===
+* The MacOS X binary can be found on our [[Downloads|downloads]] page.
 
 = Build the latest stable version =
 Download the source tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
@@ -41,4 +43,18 @@ Check out the sources using:
 and if it's OK, you can run STK:
  supertuxkart
 
-sKLCwq  <a href="http://cafldxwtwttq.com/">cafldxwtwttq</a>, [url=http://ibbprmtkqjhj.com/]ibbprmtkqjhj[/url], [link=http://riwajdaqdgpc.com/]riwajdaqdgpc[/link], http://xmhiwnxfwrtw.com/
+== For Ubuntu Edgy Eft ==
+This guide was contributed by Damien.
+
+install following packages:
+  apt-get install libsdl1.2-dev libopenal-dev libalut-dev libmikmod2-dev plib1.8.4-dev
+  libglu1-mesa-dev subversion autoconf automake1.9 g++ gcc
+
+do a:
+ $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
+then:
+ $ cd trunk
+ $ ./autogen.sh && ./configure && make
+and if all went well:
+ $ src/supertuxkart
+Tested with g++ 3.3 and 4.1 , both succeeded.
