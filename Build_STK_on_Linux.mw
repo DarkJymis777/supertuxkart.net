@@ -15,9 +15,15 @@ The irrlicht version is now on the default trunk at:
 If you have been using the irrlicht branch switch to trunk by using:
  svn switch http://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk .
 
-To configure you have to use the option --with-irrlicht=/PATH/TO/IRRLICHT, unless you have irrlicht installed in system directories that are searched by the compiler automatically. Neither plib nor sdl are necessary anymore, though the other dependencies (openal, ogg, vorbis) still exist.
+To configure you have to use the option --with-irrlicht=/PATH/TO/IRRLICHT, unless you have irrlicht installed in system directories that are searched by the compiler automatically. 
 
-<small>sudo apt-get install libogg-dev libvorbis-dev libopenal-dev</small>
+The other needed dependencies are : openal, ogg, vorbis. For ubuntu/debian :
+
+ sudo apt-get install libogg-dev libvorbis-dev libopenal-dev
+
+Depending on whether your irrlicht build uses internal or external libpng/libjpeg dependencies, you may need to configure STK this way :
+
+ ./configure LDFLAGS="-lpng -ljpeg -lbz2"
 
 == Running ==
 Only a few tracks have been converted so far (beach, canyon, mines. jungle and lighthouse track). The GUI is mostly working, so you can race in those tracks any way you like. Still, the irrlicht version is currently in development, and we consider it only to be 'somewhat' playable.
