@@ -14,7 +14,7 @@ To translate STK, you must have a Launchpad account :
 
 If you don't have a Launchpad account you can easily create one :
 
-[[Image:Register.png]]
+[http://supertuxkart.sourceforge.net/Image:Register.png http://supertuxkart.sourceforge.net/persistent/images/c/c2/Register-small.png]
 
 
 Then you need to join the "Launchpad Translators" group. Simply go to https://launchpad.net/~launchpad-translators and click on "Join this team" on the right.
@@ -22,21 +22,22 @@ Then you need to join the "Launchpad Translators" group. Simply go to https://la
 Alternatively you can also join the "STK" team at https://launchpad.net/~stk
 
 == See existing translations ==
-After you are logging in, go back to [[https://translations.launchpad.net/stk]]
+After you are logging in, go back to [https://translations.launchpad.net/stk STK's Launchpad Home]
+
 '''Don't forget to click on ''view all languages'' !'''
 
-[[Image:Main-languages.png]]
+[http://supertuxkart.sourceforge.net/Image:Main-languages.png http://supertuxkart.sourceforge.net/persistent/images/c/c3/Main-languages-small.png]
 
 == Translating ==
 Then you can start translating SuperTuxKart by clicking on the language you want.
 
 e.g. with the Irish language :
 
-[[Image:Translation.png]]
+[http://supertuxkart.sourceforge.net/Image:Translation.png http://supertuxkart.sourceforge.net/persistent/images/3/36/Translation-small.png]
 
 Once you have translated STK, scroll down and click on save and continue :
 
-[[Image:Translations-2.png]]
+[http://supertuxkart.sourceforge.net/Image:Translations-2.png http://supertuxkart.sourceforge.net/persistent/images/c/c9/Translations-2-small.png]
 
 = poEdit =
 == Installing poEdit ==
