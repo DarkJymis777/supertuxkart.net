@@ -28,6 +28,16 @@ After you are logging in, go back to [https://translations.launchpad.net/stk STK
 
 [http://supertuxkart.sourceforge.net/Image:Main-languages.png http://supertuxkart.sourceforge.net/persistent/images/c/c3/Main-languages-small.png]
 
+
+== Starting a new translation ==
+
+To start a translation for a language that currently does not exist, first visit your user's page and set your languages : https://launchpad.net/people/+me/+editlanguages
+
+
+[[Image:LPEditLanguages.png]]
+
+Then, when you have done this, you can go back to the main STK translation page and your language will appear in the list, ready to be clicked.
+
 == Translating ==
 Then you can start translating SuperTuxKart by clicking on the language you want.
 
