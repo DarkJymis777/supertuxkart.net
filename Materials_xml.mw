@@ -34,6 +34,8 @@ The following attributes can be used (defaults in bold)
 **This slowdown factor is multiplied to the engine power. A value of 0.4 is used for the slowdown on sand in the beach track for example. ''Note that for the first alpha version of 0.7 you have to use 'slowdownTime'.''
 *anisotropic="Y"
 **Enable anisotropic filtering for this texture (makes texture crisper when viewed at an angle, ideal for road materials). Default is anisotropic filtering disabled. For more info on anisotropic filtering, see [http://en.wikipedia.org/wiki/Anisotropic_filtering]
+*noculling="Y"
+**Enable two side texture
 *max-speed='''1.0'''
 **Fraction of the maximum speed of the kart a kart can have on this terrain. If the kart is faster, it will be slowed down gradually. ''Note that for the first alpha version of 0.7 you have to use 'maxSpeed'.''
 *ignore=Y/'''N'''
