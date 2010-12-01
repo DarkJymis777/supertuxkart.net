@@ -4,6 +4,71 @@ __NOTOC__
 |-
 |
 
+
+--[[User:Auria|Auria]] 17:11, 15 January 2010 (UTC)
+
+== Bugfix for Windows Vista: SuperTuxKart 0.6.2a ==
+SuperTuxKart 0.6.2a fixes the problem that STK needed to be run as administrator in Windows Vista. There are no other changes, so no need to update if you are not on Windows Vista. If you have already used 0.6.2 you can just download a new windows binary and replace the old one.
+
+--[[User:Hiker|Hiker]] 23:00, 19 October 2009 (UTC)
+
+== Bugfix release SuperTuxKart 0.6.2 ==
+We have released SuperTuxKart 0.6.2 which fixes some bugs in the previous release, the most important being a crash that could happen now and again. But additionally we fixed slowdowns of karts in a battle area, scoring of Grand Prix in case of a restart, and more.
+
+--[[User:Hiker|Hiker]] 02:27, 20 August 2009 (UTC)
+
+== New Website ==
+SuperTuxKart just got a new look!
+
+Hopefully you enjoy the renewed appearance. If you have any concerns, don't hesitate to give feedback, the website is still to evolve =)
+
+Thanks to Tom Jenkins from <del cite="http://tntwebmedia.com/blog/2009-05-22/rebirth">http://www.icecubewebdesign.co.uk/</del> <ins>http://www.tntwebmedia.com</ins> for designing this new look.
+
+Hint: From the sound of the discussions, we might take inspiration from this new look to design the GUI of SuperTuxKart 0.7
+
+--[[User:Auria|Auria]] 15:09, 6 April 2009 (UTC)
+
+== Minor bugfix release SuperTuxKart 0.6.1a ==
+Due to a minor bug in the battle mode track selection we decided to release a minor bug fix release. New packages and patches for 0.6.1 are available from our download page.
+
+--[[User:Hiker|Hiker]] 13:51, 19 February 2009 (UTC)
+
+== SuperTuxKart 0.6.1 released ==
+SuperTuxKart version 0.6.1. fixes some minor bugs of the 0.6 release, adds a new kart, a new battle map, and better support for add-on packages. We also release a first add-on package, which contains 7 additional karts and 6 tracks. Some of the tracks and karts in this package are new, some are models that were removed from the main distribution. Note: you need SuperTuxKart 0.6.1 to use the add-on package. Both can be found on our [http://sourceforge.net/project/showfiles.php?group_id=202302 download] page.
+
+--[[User:Hiker|Hiker]] 02:06, 18 February 2009 (UTC)
+
+== SuperTuxKart development blog ==
+We now have a dedicated [http://supertuxkart.blogspot.com/ SuperTuxKart blog]. Arthur will report about latest developments of STK - so if you want to know what's currently happening, go and have a look. The developers might add a technical entry now and again as well :)
+
+--[[User:Hiker|Hiker]] 01:35, 5 February 2009 (UTC)
+
+
+
+== SuperTuxKart 0.6 released ==
+We have finally released SuperTuxKart 0.6. New in this version are improved physics and kart handling (including drifting and nitro speed boost), new  powerups (plunger, bowling ball, cake, bubblegum), new and improved tracks (skyline, snow mountain, race track, space track, old mine, XR591), a new multi-player game mode (3-Strikes Battle with two special arenas), improved and new kart models with a better AI, fully positional audio with OpenAL, new music and sound effects (including engine, braking and skidding sounds) and much more. A video of the gameplay can be found on Youtube [http://de.youtube.com/watch?v=Crn-VMUkg6w YouTube] or [http://www.vimeo.com/2891554 Vimeo] (higher quality). Binaries can be found on our [https://sourceforge.net/project/showfiles.php?group_id=202302 download] page (though we are currently still waiting for a static linux binary).
+
+--[[User:Hiker|Hiker]] 02:59, 22 January 2009 (UTC)
+
+== '''SuperTuxKart 0.6 gameplay-video''' ==
+I've created a gameplay-video of STK 0.6 and uploaded it to both vimeo and youtube. You may use it on your blogs and news to advertise the upcoming release. Sorry for not embedding it here, but i don't feel like installing extensions to our wiki for that.
+Youtube (low quality): [http://de.youtube.com/watch?v=Crn-VMUkg6w]
+Vimeo (higher quality): [http://www.vimeo.com/2891554]
+
+--[[User:Conso|Conso]] 20:25, 20 January 2009 (UTC)
+
+== '''Looking for web master''' ==
+We are looking for someone to help us keeping the web page up to date. Atm the web page is a media wiki, so while no programming skills are necessary some familiarity with a media wiki would be useful. Ideally we would like to have a complete redesign of our web page. If you are interested to help out, please [[Contact_us | contact us]] on the STK-devel list or on the #tuxkart irc channel.
+
+--[[User:Hiker|Hiker]] 04:15, 20 January 2009 (UTC)
+
+== '''SuperTuxKart 0.6 RC1 released''' ==
+
+We finally managed to release a first release candidate for SuperTuxkart 0.6. It offers (among a lot of new tracks and other improvements) improved physics with skidding, nitro, a better AI, and positional sound effects. Binaries for Macs, and Windows as well as source packages can be found on our [http://sourceforge.net/project/showfiles.php?group_id=202302 download] page. Feedback is welcome! 
+
+--[[User:Hiker|Hiker]] 12:57, 23 December 2008 (UTC)
+
+
 |-
 |
 == '''SuperTuxKart version 0.5 released''' ==
