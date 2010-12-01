@@ -25,9 +25,6 @@ Depending on whether your irrlicht build uses internal or external libpng/libjpe
 
  ./configure LDFLAGS="-lpng -ljpeg -lbz2"
 
-== Running ==
-Only a few tracks have been converted so far (beach, canyon, mines. jungle and lighthouse track). The GUI is mostly working, so you can race in those tracks any way you like. Still, the irrlicht version is currently in development, and we consider it only to be 'somewhat' playable.
-
 == Exporting Karts ==
 
 See [[Making_karts_for_Irrlicht]]
