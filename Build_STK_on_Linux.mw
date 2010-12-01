@@ -4,7 +4,7 @@ This page collects information about the irrlicht port. Note that the irrlicht b
 [http://www.irrlicht3d.org/wiki/index.php?n=Main.InstallingIrrlicht Installing Irrlicht (Irrlicht Wiki)]
 The build environment can use irrlicht either from an installed irrlicht package (as long as the header files are around), or directly from the irrlicht source tree. Configure should detect installation in default directories (/usr, /usr/local), if you are using an IDE, please adjust the appropriate entries.
 
-The recommended version to use is irrlicht-1.7, since it uses many bug fixes for STK. It should also compile with version 1.6, though you might notice that some karts are nearly white, the speedometer is not shown correctly, and fonts are pixelated.
+The recommended version to use is irrlicht-1.7.x, since it contains many bug fixes for STK. It should also compile with version 1.6, though you might notice that some karts are nearly white, the speedometer is not shown correctly, and fonts are pixelated.
 
 If you have any problems with building irrlicht, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
 
