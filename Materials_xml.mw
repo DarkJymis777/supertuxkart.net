@@ -30,14 +30,14 @@ The following attributes can be used (defaults in bold)
 **Set to false if the texture should not be affected by lights.
 *sphere=Y/'''N'''
 **Enables UV sphere mapping (a reflection-like effect) for this texture.
-*slowdown='''1'''
-**This slowdown factor is multiplied to the engine power. A value of 0.4 is used for the slowdown on sand in the beach track for example. ''Note that for the first alpha version of 0.7 you have to use 'slowdownTime'.''
 *anisotropic="Y"
 **Enable anisotropic filtering for this texture (makes texture crisper when viewed at an angle, ideal for road materials). Default is anisotropic filtering disabled. For more info on anisotropic filtering, see [http://en.wikipedia.org/wiki/Anisotropic_filtering]
 *backface-culling='''Y'''/N
 **Disable backface culling (which also allows setting two textures for a mesh - front and back).
 *max-speed='''1.0'''
-**Fraction of the maximum speed of the kart a kart can have on this terrain. If the kart is faster, it will be slowed down gradually. ''Note that for the first alpha version of 0.7 you have to use 'maxSpeed'.''
+**Fraction of the maximum speed of the kart a kart can have on this terrain. If the kart is faster, it will be slowed down gradually (see slowdown-time below).
+*slowdown-time='''1.0'''
+**How long it takes for a kart to be slowed down to the speed specified in the max-speed property. A small value will feel like abruptly braking, a larger value more like a gradual slow down caused by the terrain. In 0.7 we are using values between 0.5 and 4 seconds.
 *ignore=Y/'''N'''
 **The object with this texture does not interact with the player. Should be used e.g. for things that are drawn on top of the track, since otherwise there will be a slight bump in the track.
 *zipper=Y/'''N'''
