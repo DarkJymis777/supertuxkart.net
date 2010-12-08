@@ -13,9 +13,9 @@ The final release is copied from the RC branch to the tag directory (using the r
 
 ==Checklist for stable releases==
 * Tested to compile and play under MacOSX.
-* Tested to compile and play under Windows.
-* Tested to compile and play under Linux (here for completeness, as most developers run Linux).
-* After creating a source package, try to build from this package. Sometimes, files are missed.
+* Tested to compile and play under Windows (make sure the icon is available).
+* Tested to compile and play under Linux.
+* After creating a source package, try to build from this package. Sometimes, files are missing.
 * Make sure to update the version number:
 ** in configure.ac (from which the define for the sources is created. This number should not have any spaces in it, otherwise "make dist" will fail)
 ** ChangeLog
