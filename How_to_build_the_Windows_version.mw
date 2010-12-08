@@ -12,4 +12,5 @@ That should be all. If you have any problems, please [[Community|contact us]].
 * Download and install NSIS.
 * Create a copy (best outside of STK) of src/windows_installer (I'll assume it will have the same name).
 * Create the directory windows_installer/supertuxkart, and copy the executable, all DLL and the data subdirectory into it (not all files from data are necessary for the windows install. Make sure to exclude all .svn files. It's usually best to use linux to install a package, and copy the files from that installation, since it will also exclude other minor files like linux desktop icons etc).
+* Copy the icon file (.../src/windows_installer/icon.ico) into the supertuxkart directory.
 * Start NSIS, select windows_installer/supertuxkart.nsi, and create the installer.
