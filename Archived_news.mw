@@ -4,8 +4,45 @@ __NOTOC__
 |-
 |
 
+== SuperTuxKart 0.7 alpha 2 released ==
 
---[[User:Auria|Auria]] 17:11, 15 January 2010 (UTC)
+Hi all,
+
+we have just released a 2nd alpha release of SuperTuxKart 0.7. This
+version has a lot of improvements and bug fixes, more tracks, some new
+icons and animations. It is still pretty much work in progress, and we
+would love to get some feedback - e.g. does it work for you,
+performance, do you like the new icon style or prefer the old one, bug
+reports etc. Note that due to the missing tracks  GPs and challenges
+will not work, and you will get a lot of warnings/error messages printed
+- so please don't report issues related to challenges or GP not working ;)
+
+We would also hope that people could help us to port more tracks - it's
+not that much work, and would help us to get SuperTuxKart back to where
+it was, especially getting the challenges and GPs back. Also more icons
+would be nice - and of course always more tracks.
+
+Enjoy!
+
+'''Downloads''' can be found at sourceforge : https://sourceforge.net/projects/supertuxkart/
+
+--[[User:Hiker|Hiker]] 29 April 2010
+
+== SuperTuxKart 0.7 alpha 1 released ==
+
+After some long work porting SuperTuxKart to a new graphics engine, [http://irrlicht.sourceforge.net/ irrLicht], as a replacement for the old and outdated [http://plib.sourceforge.net/ plib], we are proud to announce the first alpha release of the SuperTuxKart 0.7 development branch.
+
+'''Important'''
+This version of SuperTuxKart is an Alpha release, and as such is not stable
+nor complete, and is meant solely for artists to port tracks over to the new
+format. This binary can be used by the curious to take a look at where STK
+is headed, but is not meant to be used to play.
+
+'''Bugs'''
+Before reporting any bug, make sure to check the list of known TODOs at
+the following wiki page : [http://supertuxkart.sourceforge.net/ToDo#To_do_on_trunk_before_0.7_is_about_feature-complete]
+
+For more information, take a look at the [http://forum.freegamedev.net/viewtopic.php?f=17&t=117 forum thread]
 
 == Bugfix for Windows Vista: SuperTuxKart 0.6.2a ==
 SuperTuxKart 0.6.2a fixes the problem that STK needed to be run as administrator in Windows Vista. There are no other changes, so no need to update if you are not on Windows Vista. If you have already used 0.6.2 you can just download a new windows binary and replace the old one.
