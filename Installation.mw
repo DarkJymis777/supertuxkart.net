@@ -46,7 +46,7 @@ and if it's OK, you can run STK:
 == For Ubuntu 10.04 Lucid Lynx ==
 
 install following packages:
-  apt-get install libirrlicht libogg libvorbis libopenal-dev libalut-dev subversion autotools-dev build-essential
+  apt-get install libirrlicht libogg libvorbis libopenal-dev libalut-dev subversion autotools-dev automake autoconf build-essential
 
 do a:
  $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart supertuxkart
