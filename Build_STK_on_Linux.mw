@@ -20,6 +20,7 @@ The recommended version to use is irrlicht-1.7.2, since it contains many bug fix
 
 If you have any problems with building irrlicht, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
 
+
 == Building SuperTuxKart ==
 
 Simply use the usual autotools build triplet :
@@ -30,6 +31,7 @@ Simply use the usual autotools build triplet :
  sudo make install
 
 (if you obtained the STK source code from SVN, you will first need to run <TT>./autogen.sh</TT>)
+
 
 == Troubleshooting ==
 
