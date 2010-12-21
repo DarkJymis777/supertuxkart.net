@@ -43,18 +43,15 @@ Check out the sources using:
 and if it's OK, you can run STK:
  supertuxkart
 
-== For Ubuntu Edgy Eft ==
-This guide was contributed by Damien.
+== For Ubuntu 10.04 Lucid Lynx ==
 
 install following packages:
-  apt-get install libsdl1.2-dev libopenal-dev libalut-dev libmikmod2-dev plib1.8.4-dev
-  libglu1-mesa-dev subversion autoconf automake1.9 g++ gcc
+  apt-get install libirrlicht libogg libvorbis libopenal-dev libalut-dev subversion autotools-dev build-essential
 
 do a:
- $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart
+ $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart supertuxkart
 then:
- $ cd trunk
+ $ cd supertuxkart
  $ ./autogen.sh && ./configure && make
 and if all went well:
  $ src/supertuxkart
-Tested with g++ 3.3 and 4.1 , both succeeded.
