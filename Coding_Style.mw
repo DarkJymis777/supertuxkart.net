@@ -26,7 +26,11 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 {
     return 0;
 }</pre>
-Exceptions to this are one line functions in header files: <pre> float getValue() const { return m_my_value; }</pre>
+
+Exceptions to this are one line functions in header files:
+
+<pre> float getValue() const { return m_my_value; }</pre>
+
 * In header files try to align declaration and definitions in columns (e.g. first column type, 2nd column function name). This might not always be possible, but a more structured header file is easier to read and understand). Example:
     NetworkMode  getMode() const                   {return m_mode;           }
     void         becomeServer();
