@@ -27,8 +27,8 @@ and to run STK:
 = Build the latest stable version =
 Download the source tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
 
- tar -xjvf supertuxkart-0.6.1a.tar.bz2
- cd supertuxkart-0.6
+ tar -xjvf supertuxkart-0.7-src.tar.bz2
+ cd supertuxkart-0.7
  ./configure && make
  sudo make install
 and if it's OK, you can run STK:
