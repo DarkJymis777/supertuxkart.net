@@ -23,17 +23,3 @@ The other needed dependencies are : openal, ogg, vorbis. For ubuntu/debian :
 Depending on whether your irrlicht build uses internal or external libpng/libjpeg dependencies, you may need to configure STK this way :
 
  ./configure LDFLAGS="-lpng -ljpeg -lbz2"
-
-== Exporting Karts ==
-
-See [[Making_karts_for_Irrlicht]]
-
-== Exporting Tracks ==
-A new [[track_exporter | track exporter]] is under development.
-Some info about drivelines is found at [[new_drivelines]]
-
-== Textures ==
-To enable special graphical texture effects, those effects must be specified in an separate file. The format of this file is described [[materials_xml | here]].
-
-== Converted Tracks ==
-A [[converted_tracks | list of tracks]] that have been converted is available.
