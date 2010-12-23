@@ -23,8 +23,8 @@ That's all! If all went well, you're ready to run STK by hitting the big green '
 
 = Distributing =
 
-The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside
+The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside.
 
-''' ''NOTE: As per the gettext mention above in the dependencies section, this is not totally true atm, you will need to manually include the libintl lib using dylibbundler''' ''
+Then the last step is to package libintl inside the application bundle, for this we use [http://macdylibbundler.sourceforge.net/ dylibbundler]
 
 <code>dylibbundler -b -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs/ -od -p @executable_path/../libs/</code>
