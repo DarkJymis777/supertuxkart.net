@@ -11,14 +11,10 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 (you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source! <TT>sudo mkdir -p /usr/local/include/</TT>)
 
 = Dependencies =
-* Download pre-built dependencies 
-** [https://sourceforge.net/project/downloading.php?group_id=202302&filename=DepsFrameworks2.zip&a=73468757 for STK 0.7 alpha 2]
-** [http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/OSX/DepsFrameworks3.zip/download for latest STK trunk/more recent alphas/betas]
+* Download pre-built dependencies [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/OSX/ from here]
 * Put the frameworks in [hard disk root]/Library/Frameworks
 
 '' '''NOTE: the libintl included in this package is broken, and as such the provided Xcode project does not make use of it. For now you will need to manually build gettext''' (which includes building it universal and with backward comptibility, and manually packaging it into the app, if you wish to make an app that can be distributed. Please fall back to the old instructions for the gettext part until I get around to fix this)''
-
-
 
 = SuperTuxKart =
 
