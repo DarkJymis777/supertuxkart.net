@@ -18,18 +18,7 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 
 '' '''NOTE: the libintl included in this package is broken, and as such the provided Xcode project does not make use of it. For now you will need to manually build gettext''' (which includes building it universal and with backward comptibility, and manually packaging it into the app, if you wish to make an app that can be distributed. Please fall back to the old instructions for the gettext part until I get around to fix this)''
 
-= irrLicht =
-* Download irrLicht, and extract it.
-Then build it using the provided Xcode project.
 
-* copy ''libIrrlicht.a'' to ''/usr/local/lib''
-<pre>
-sudo cp ~/irrlicht-1.x/source/Irrlicht/MacOSX/build/Release/libIrrlicht.a /usr/local/lib/
-</pre>
-* copy ''include'' to ''/usr/local/include/irrlicht''
-<pre>
-sudo cp -R ~/irrlicht-1.x/include /usr/local/include/irrlicht
-</pre>
 
 = SuperTuxKart =
 
