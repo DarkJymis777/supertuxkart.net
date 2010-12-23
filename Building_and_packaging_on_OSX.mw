@@ -13,8 +13,7 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 = Dependencies =
 * Download pre-built dependencies [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/OSX/ from here]
 * Put the frameworks in [hard disk root]/Library/Frameworks
-
-'' '''NOTE: the libintl included in this package is broken, and as such the provided Xcode project does not make use of it. For now you will need to manually build gettext''' (which includes building it universal and with backward comptibility, and manually packaging it into the app, if you wish to make an app that can be distributed. Please fall back to the old instructions for the gettext part until I get around to fix this)''
+* Run the libintl installer if you don't already have libintl installed. (the installer will install a libintl dynamic library into /usr/local, universal binary that runs on OSX 10.4+)
 
 = SuperTuxKart =
 
