@@ -16,7 +16,7 @@ If you reuse a texture from another STK track, ideally still note down its autho
 Our license of choice is Creative-Commons-By-SA 3+.
 
 * Note that "I asked the guy and he said 'yeah you can use it'" is ''not'' a valid license (yup, happened)
-* Also note that even if you modify the image you do not have a general right to modify the license of your modified version, changing of license must be explicitly granted by the license of the work in question.
+* Also note that even if you modify the work (image, model, ...), '''in general you do not have the legal right to change the license''' of your modified version; changing of license must be explicitly granted by the license of the work in question, or by the author.
 
 
 '''These licenses are acceptable''' : CC-BY 3.0, CC-BY-SA 3.0, GPL, LGPL, Apache License, Mozilla License, Artistic, MIT, BSD License, X11 license, Public Domain
@@ -26,7 +26,6 @@ Our license of choice is Creative-Commons-By-SA 3+.
 
 
 For other licenses, we need to check on a case-by-case basis
-
 
 == Combinations ==
 
