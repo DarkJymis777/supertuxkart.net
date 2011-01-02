@@ -4,7 +4,7 @@ This page documents how challenge files are written, and how to ensure they are 
 
 The easiest way is to copy an already existing .challenge file and edit to your liking. The files are in various track folders, and you need to place your own alongside in a not-empty track folder in order for STK to find it. See [[How_to_install_add-ons|this page]] if you don't know where the track folders are. If placed and formatted correctly, you should see your challenge alongside with the rest in 'Challenges' entry in the main menu. Should you not find it, start the game with a terminal and see if any warnings are printed.
 
-The game auto-creates an entry for your challenge in the challenges.xml file upon game runtime. To find this file, refer to [[FAQ#Where_does_STK_store_the_user_config_file.3F|the FAQ]]. So if you created a challenge with ''id''="mychallenge", there will be a line <code>        <mychallenge solved="false" /></code>in challenges.xml. Simply change to ''false'' again if you need to test unlocking again, e.g. if you change ''unlock-track'' after fulfilling the challenge.
+The game auto-creates an entry for your challenge in the challenges.xml file upon game runtime. To find this file, refer to [[FAQ#Where_does_STK_store_the_user_config_file.3F|the FAQ]]. So if you created a challenge with ''id''="mychallenge", there will be a line <code>        <mychallenge solved="false" /></code>in challenges.xml. Simply change to ''false'' again if you need to test unlocking later, e.g. if you change ''unlock-track'' after fulfilling the challenge.
 
 = List of XML attributes =
 
