@@ -5,7 +5,7 @@ This page documents how challenge files are written, and how to ensure they are 
 <table cellpadding="50">
   <tr>
     <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000">id</td>
-    <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Identification which STK knows the challenge by. This can be referenced for attribute depend-on.</td>
+    <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Identification which STK knows the challenge by. This can be referenced for attribute 'depend-on'.</td>
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">name</td>
