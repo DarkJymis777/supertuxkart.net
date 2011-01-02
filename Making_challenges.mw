@@ -11,7 +11,7 @@ The game auto-creates an entry for your challenge in the challenges.xml file upo
 <table cellpadding="50">
   <tr>
     <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000">id</td>
-    <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Unique identification which STK knows the challenge by. This can be referenced for attribute 'depend-on' in other challenges.</td>
+    <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Unique identification which STK knows the challenge by. This can be referenced for ''depend-on'' in other challenges.</td>
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">name</td>
@@ -31,11 +31,11 @@ The game auto-creates an entry for your challenge in the challenges.xml file upo
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">major</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Major game mode type. For example, 'single' for single player mode.</td>
+    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Major game mode type. For example, ''single'' for single player mode.</td>
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">minor</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Minor game mode type. For example, 'quickrace'.</td>
+    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Minor game mode type. For example, ''quickrace''.</td>
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">track</td>
@@ -43,7 +43,7 @@ The game auto-creates an entry for your challenge in the challenges.xml file upo
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">difficulty</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Difficulty mode for race. For example, 'medium'.</td>
+    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Difficulty mode for race. For example, ''medium''.</td>
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">karts</td>
