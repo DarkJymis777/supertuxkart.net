@@ -54,6 +54,10 @@ The game auto-creates an entry for your challenge in the challenges.xml file upo
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Number of laps.</td>
   </tr>
   <tr>
+    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">position</td>
+    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Required rank.</td>
+  </tr>
+  <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">energy</td>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Number of energy/nitro points to collect. This attribute is not required.</td>
   </tr>
