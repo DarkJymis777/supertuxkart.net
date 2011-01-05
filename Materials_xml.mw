@@ -17,7 +17,6 @@ The materials.xml file is a simple xml file that contains one entry for each tex
 This shows a simple example of a materials.xml file with three textures, one of which contains a terrain-specific sound effect to be played when a kart is driving on that terrain. A list of all possible attributes are in the next section.
 
 == Attributes ==
-Note that the 0.7-alpha release is actually using some 
 The following attributes can be used (defaults in bold)
 
 *clamp=Y/'''N'''
@@ -26,6 +25,8 @@ The following attributes can be used (defaults in bold)
 **Uses alpha testing: if alpha is >127 a pixel is written, otherwise not. See EMT_TRANSPARENT_ALPHA_CHANNEL_REF in irrlicht.
 *alpha=Y/'''N'''
 **Uses alpha blending, the final color is blended together from the destination color and the texture color, using the alpha channel value as blend factor. See EMT_TRANSPARENT_ALPHA_CHANNEL in irrlicht.
+*additive=Y/'''N'''
+**Use [http://en.wikipedia.org/wiki/Color_mixing#Additive_Mixing additive blending]
 *light='''Y'''/N
 **Set to false if the texture should not be affected by lights.
 *sphere=Y/'''N'''
