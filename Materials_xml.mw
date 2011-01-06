@@ -19,14 +19,10 @@ This shows a simple example of a materials.xml file with three textures, one of 
 == Attributes ==
 The following attributes can be used (defaults in bold)
 
+*compositing='''none'''/blend/test/additive
+** How to composite the image with the background. ''blend'' uses the alpha channel to determine the opacity of each pixel; ''test'' uses the alpha channel but in a bi-polar fashion, i.e. each pixel is either fully transparent or fully opaque, no in-betweens; ''additive'' uses [http://en.wikipedia.org/wiki/Color_mixing#Additive_Mixing additive blending].
 *clamp=Y/'''N'''
 **Clamping (not sure if this works atm)
-*transparency=Y/'''N'''
-**Uses alpha testing: if alpha is >127 a pixel is written, otherwise not. See EMT_TRANSPARENT_ALPHA_CHANNEL_REF in irrlicht.
-*alpha=Y/'''N'''
-**Uses alpha blending, the final color is blended together from the destination color and the texture color, using the alpha channel value as blend factor. See EMT_TRANSPARENT_ALPHA_CHANNEL in irrlicht.
-*additive=Y/'''N'''
-**Use [http://en.wikipedia.org/wiki/Color_mixing#Additive_Mixing additive blending]
 *light='''Y'''/N
 **Set to false if the texture should not be affected by lights.
 *sphere=Y/'''N'''
@@ -65,3 +61,14 @@ The following attributes can be used (defaults in bold)
 ****The pitch adjustment to be used when the kart is driving at the maximum speed (as defined above). Must be between 0.5 and 2.0. The pitch adjustment is linearly interpolated for speeds between min- and max-speed; if the kart is driving faster than max-speed, max-pitch is used.
 ***positional=Y/'''N'''
 ****If the sound effect is played where the kart is currently, or from the inital position only.
+
+=== Deprecated ===
+
+Use the new '''compositing''' property instead
+
+*transparency=Y/'''N'''
+**Uses alpha testing: if alpha is >127 a pixel is written, otherwise not. See EMT_TRANSPARENT_ALPHA_CHANNEL_REF in irrlicht.
+*alpha=Y/'''N'''
+**Uses alpha blending, the final color is blended together from the destination color and the texture color, using the alpha channel value as blend factor. See EMT_TRANSPARENT_ALPHA_CHANNEL in irrlicht.
+*additive=Y/'''N'''
+**Use [http://en.wikipedia.org/wiki/Color_mixing#Additive_Mixing additive blending]
