@@ -23,7 +23,7 @@ The game auto-creates an entry for your challenge in the challenges.xml file upo
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">unlock-track</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Track which the challenge unlocks if solved. Currently a requirement to fill in, if none other ''unlock-'' property is used.</td>
+    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Track which the challenge unlocks if solved. Currently a requirement to fill in, if no other ''unlock-'' property is used.</td>
   </tr>
   <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">unlock-gp</td>
