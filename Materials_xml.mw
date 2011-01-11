@@ -41,8 +41,8 @@ The following attributes can be used (defaults in bold)
 **When driving on this texture, the kart will get a zipper bonus.
 *reset=Y/'''N'''
 **When driving on this texture, the kart will be automatically rescued.
-*graphical-effect="water"/"smoke"
-** Adds a particle for graphical water and smoke effects while driving on this terrain.
+*disable-z-write='''N'''/Y
+** If set to Y, this material will not be written to the Z buffer when rendered. Only useful with materials with alpha blending, when there are alpha sorting issues
 *sfx
 **While driving on this terrain, a special sound is played. This effect will always be looped. Additional attributes for sound effects:
 ***filename  
@@ -62,6 +62,7 @@ The following attributes can be used (defaults in bold)
 ***positional=Y/'''N'''
 ****If the sound effect is played where the kart is currently, or from the inital position only.
 
+
 === Deprecated ===
 
 Use the new '''compositing''' property instead
@@ -72,3 +73,5 @@ Use the new '''compositing''' property instead
 **Uses alpha blending, the final color is blended together from the destination color and the texture color, using the alpha channel value as blend factor. See EMT_TRANSPARENT_ALPHA_CHANNEL in irrlicht.
 *additive=Y/'''N'''
 **Use [http://en.wikipedia.org/wiki/Color_mixing#Additive_Mixing additive blending]
+*graphical-effect="water"
+** Adds a particle for graphical water effects while driving on this terrain (deprecated because this is utterly useless : doesn't work for ingored materials so you either the particles don't work, either you can drive on the water)
