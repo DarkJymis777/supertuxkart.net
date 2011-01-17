@@ -12,6 +12,10 @@ Other needed dependencies are : openal, ogg, vorbis. For ubuntu/debian :
 
 == Installing Irrlicht ==
 Start by installing irrlicht from your repositories if it is found there, otherwise check [http://www.irrlicht3d.org/wiki/index.php?n=Main.InstallingIrrlicht How to Install Irrlicht] from the irrlicht wiki.
+
+Note that it's recommended to build irrlicht in release mode for full performance (default is debug mode)
+<code>NDEBUG=1 make</code>
+
 The build environment can use irrlicht either from an installed irrlicht package (e.g. in /usr/local), or directly from the irrlicht source tree. Configure should detect installation in default directories (/usr, /usr/local).
 
 ''If you leave irrlicht in its source tree and don't install it, you have to use the option --with-irrlicht=/PATH/TO/IRRLICHT.''
@@ -19,7 +23,6 @@ The build environment can use irrlicht either from an installed irrlicht package
 The recommended version to use is irrlicht-1.7.2, since it contains many bug fixes for STK.
 
 If you have any problems with building irrlicht, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
-
 
 == Building SuperTuxKart ==
 
