@@ -37,6 +37,8 @@ The following attributes can be used (defaults in bold)
 **How long it takes for a kart to be slowed down to the speed specified in the max-speed property. A small value will feel like abruptly braking, a larger value more like a gradual slow down caused by the terrain. In 0.7 we are using values between 0.5 and 4 seconds.
 *ignore=Y/'''N'''
 **The object with this texture does not interact with the player. Should be used e.g. for things that are drawn on top of the track, since otherwise there will be a slight bump in the track.
+*friction="20000.0" (or any other value)
+**When friction is higher, the material will be less ''slippery''. Note that this only applies to materials with great slopes, as straight materials always have good traction. Default : 1.0
 *zipper=Y/'''N'''
 **When driving on this texture, the kart will get a zipper bonus.
 *reset=Y/'''N'''
