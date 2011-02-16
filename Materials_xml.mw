@@ -81,5 +81,3 @@ Use the new '''compositing''' property instead
 **Uses alpha blending, the final color is blended together from the destination color and the texture color, using the alpha channel value as blend factor. See EMT_TRANSPARENT_ALPHA_CHANNEL in irrlicht.
 *additive=Y/'''N'''
 **Use [http://en.wikipedia.org/wiki/Color_mixing#Additive_Mixing additive blending]
-*graphical-effect="water"
-** Adds a particle for graphical water effects while driving on this terrain (deprecated because this is utterly useless : doesn't work for ingored materials so you either the particles don't work, either you can drive on the water)
