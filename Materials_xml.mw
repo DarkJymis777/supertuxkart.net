@@ -37,6 +37,12 @@ The following attributes can be used (defaults in bold)
 **How long it takes for a kart to be slowed down to the speed specified in the max-speed property. A small value will feel like abruptly braking, a larger value more like a gradual slow down caused by the terrain. In 0.7 we are using values between 0.5 and 4 seconds.
 *ignore=Y/'''N'''
 **The object with this texture does not interact with the player. Should be used e.g. for things that are drawn on top of the track, since otherwise there will be a slight bump in the track.
+*surface=Y/'''N'
+**A mesh that is marked as being a surface does not have a physical representation - meaning that karts will just ignore this (drive through), but the graphics will still be shown. But as opposed to 'ignore' STK can detect this kind of terrain, and trigger special graphical effects. An example to use this for is a water surface, where the kart can either drive trough on a surface under the water (so the kart is partly under water), or is rescued (by either not having a surface under the water surface, or a surface with reset property). The surface will in this case be detected (once the wheel of the karts are under this surface), and can trigger special gfx.
+* below-surface=Y/'''N'''
+** If a material is marked as being below a surface, a special graphical effect can be triggered at the actual surface. An example would be a pond where karts could drive through. The water is marked as 'surface', and the mesh the kart is driving on has the 'below-surface' property. The water texture can then contain particle effects for water splashes, and those splashes will emerge from the surface (and not from under the surface).
+* falling-effect=Y/'''N'''
+**If the camera is driving on (or even falling onto) a terrain with a 'falling-effect', the camera will not move anymore but keep on pointing to the kart, resulting in a nice visual effect of the kart falling quickly. Can also be used for a 'seabed' under a water surface. 
 *friction="20000.0" (or any other value)
 **When friction is higher, the material will be less ''slippery''. Note that this only applies to materials with great slopes, as straight materials always have good traction. Default : 1.0
 *zipper=Y/'''N'''
