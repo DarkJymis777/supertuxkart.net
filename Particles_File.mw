@@ -1,0 +1,50 @@
+== Point emitters ==
+
+Point emitters may be created like this :
+
+<pre>
+<?xml version="1.0"?>
+<particles emitter="point">
+
+    <spreading angle="24"      />
+    
+    <velocity  x="0.000"
+               y="0.005"
+               z="0.000"         />
+    
+    <material  file="explode.png"  />
+    
+    <!-- Amount of particles emitted per second -->
+    <rate      min="30"
+               max="50"         />
+    
+    <!-- Minimal and maximal lifetime of a particle, in milliseconds. -->
+    <lifetime  min="300"
+               max="500"         />
+    
+    <!-- Size of the particles -->
+    <size      min="0.6"
+               max="0.8"        />
+    
+    <color     min="255 255 255"
+               max="255 255 255" />
+
+  <fadeout time="300" />
+
+</particles>
+</pre>
+
+
+'''velocity''' indicates in which direction the particles move, and at which speed
+
+'''spreading angle''' indicates by how much particles may randomly deviate from their base direction as defined by their velocity
+
+'''material file''' contains the name of the file to use for the particles; this image may either be in the global texture directory, either in the directory of the current track. Material properties for this image may be set as usual in a file called ''materials.xml'' and placed along the image.
+
+'''rate''' indicates the amount of particles that are to be emitted per second (the precise rate will randomly vary)
+
+'''size''' indicates the size of each particle, here too a value will be picked randomly between min and max
+
+'''color''' indicates the color applied to particles (255,255,255 is white and means no coloring is done), here too a value will be picked randomly between min and max
+
+'''fadeout time''' is an optional effect that will make particles fade away gracefully at the end of their file, instead of just disappearing. The given time is the number of milliseconds before the end of a particle's life where the fadeout should occur
