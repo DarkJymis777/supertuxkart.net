@@ -1,0 +1,50 @@
+Starting from SuperTuxKart 0.7.1, all STK builds contain a hidden track debugging mode packed with features to make it easier for artists to make tracks.
+
+== Enabling the debug mode ==
+
+When STK is closed, open the STK config file (on OSX, it's [HOME]/Library/Application Support/SuperTuxKart ; on Linux it's usually ~/.config/supertuxkart)
+
+locate the line that reads
+<pre>
+    <!-- Whether to enable track debugging features -->
+    <artist_debug_mode value="false" />
+</pre>
+
+and change it to
+
+<pre>
+    <!-- Whether to enable track debugging features -->
+    <artist_debug_mode value="true" />
+</pre>
+
+== The new features you get ==
+
+'''Note''' : many of the tools below use keyboard bindings; of course you will need to make sure your keyboard configuration does not assign these keys to something else if you wish to be able to use them
+
+=== Add-ons at will ===
+
+Nitro and zippers are especially helpful in order to quickly get to an area far from the start
+
+* F1 : bubblegums
+* F2 : plungers
+* F3 : cakes
+* F4 : switches
+* F5 : bowling balls
+* F6 : parachutes
+* F7 : zippers
+* F8 : nitro
+
+=== Hide karts and race GUI ===
+This is especially useful when you need to take the screenshot of your track, to get all annoyances out of the way
+* Ctrl+F8
+
+=== View faces and normals ===
+You can cycle through several debug draw modes, namely to see polygons and normals, by pressing F11
+
+
+=== Fly! ===
+
+STK has a secret ability : karts may be instantly turned into flying devices. This is quite useful to take a closer look at meshes that aren't too visible from the road, or to skip large portions of a track to go straight to the area you're interested in.
+
+* I : fly up (press repeatedly if needed)
+* K : fly down (press repeatedly if needed)
