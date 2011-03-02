@@ -1,6 +1,6 @@
 Starting from SuperTuxKart 0.7.1, all STK builds contain a hidden track debugging mode packed with features to make it easier for artists to make tracks.
 
-Before starting, let me remind you that there is a feature always enabled to let you start directly into a track, so that you don't need to go through the menus everytime. Simply launch STK from temrinal with
+Before starting, let me remind you that there is a feature always enabled to let you start directly into a track, so that you don't need to go through the menus everytime. Simply launch STK from terminal with
 
 <pre>
 supertuxkart -N -t trackname
