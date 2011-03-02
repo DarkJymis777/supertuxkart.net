@@ -1,5 +1,13 @@
 Starting from SuperTuxKart 0.7.1, all STK builds contain a hidden track debugging mode packed with features to make it easier for artists to make tracks.
 
+Before starting, let me remind you that there is a feature always enabled to let you start directly into a track, so that you don't need to go through the menus everytime. Simply launch STK from temrinal with
+
+<pre>
+supertuxkart -N -t trackname
+</pre>
+
+where "trackname" is the name of the directory your track is in.
+
 == Enabling the debug mode ==
 
 When STK is closed, open the STK config file (on OSX, it's [HOME]/Library/Application Support/SuperTuxKart ; on Linux it's usually ~/.config/supertuxkart)
@@ -18,6 +26,9 @@ and change it to
 </pre>
 
 == The new features you get ==
+
+Feature that is triggered automatically :
+* If there is no ground under the area where karts start, normally STK will print an error message on the terminal and abort; in debug mode, however, the kart will just hover so you can see what the problem is
 
 '''Note''' : many of the tools below use keyboard bindings; of course you will need to make sure your keyboard configuration does not assign these keys to something else if you wish to be able to use them
 
@@ -39,8 +50,7 @@ This is especially useful when you need to take the screenshot of your track, to
 * Ctrl+F8
 
 === View faces and normals ===
-You can cycle through several debug draw modes, namely to see polygons and normals, by pressing F11
-
+You can cycle through several debug draw modes, namely to see polygons and normals, by pressing Ctrl+F11
 
 === Fly! ===
 
@@ -48,3 +58,9 @@ STK has a secret ability : karts may be instantly turned into flying devices. Th
 
 * I : fly up (press repeatedly if needed)
 * K : fly down (press repeatedly if needed)
+
+=== A different viewpoint ===
+Launch supertuxkart from the terminal with the <tt>--camera-debug</tt> argument, the camera will be placed from above, allowing you to see what's going on from a different perspective
+
+=== Debug checklines ===
+Launch supertuxkart from the terminal with <TT>--check-debug</TT> argument, and you will visually see where checklines are; active checklines will appear as red, inactive ones as white; and information about which kart crosses which checkline will be printed on the terminal.
