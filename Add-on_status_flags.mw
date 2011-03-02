@@ -1,0 +1,60 @@
+For now this is just a transcript of a discussion between StephenIRC and myself on irc - atm I don't have enough time to sort this into a proper web page.
+
+
+(2:30:17 PM) StephenIRC: JoergH: Is there any specification on how the addons xml needs to be formatted?
+(2:52:01 PM) JoergH: Hmm - not really.
+(2:52:20 PM) JoergH: Xapantu did the specs, and I asked him to implement a few update/changes
+(2:52:26 PM) JoergH: Not sure if he even updated the specs
+(2:52:30 PM) JoergH: Let me check ...
+(2:53:45 PM) JoergH: http://supertuxkart.sourceforge.net/Package_Management   ... but that doesn't contain much
+(2:56:31 PM) JoergH: Can't find the url anymore.
+(2:56:42 PM) JoergH: Perhaps he posted it to the email list? ... Checking more :)
+(2:56:56 PM) StephenIRC: http://supertuxkart.sourceforge.net/User:Sj04736/AddonXML
+(2:57:04 PM) StephenIRC: That's my own proposal
+(2:57:17 PM) StephenIRC: based on what is in the xml generator file in SVN, and some issues I noticed.
+(3:02:34 PM) JoergH: Splitting the file might not be that ideal ...
+(3:02:49 PM) JoergH: the addon manager actually downloads the data in the background anyway
+(3:02:58 PM) StephenIRC: Oh, right
+(3:03:07 PM) JoergH: The addon icon is not available till the asset list is downloaded.
+(3:03:23 PM) JoergH: That just makes the code easier, since there is only one download to handle before enabling things :)
+(3:03:42 PM) JoergH: It's a bit messy, and I admit I don't like it this way too much ... but I suggested it ;)
+(3:03:57 PM) StephenIRC: ah, ok. Does the downloader check the file's mtime before it downloads?
+(3:03:59 PM) JoergH: basically to reduce load on server
+(3:04:17 PM) JoergH: No - but that's a good idea.
+(3:04:28 PM) JoergH: I have to check how to do that with curl admittedly :)
+(3:04:44 PM) JoergH: It stores a local list anyway :)
+(3:05:06 PM) JoergH: I put this in the tracker for 0.7.2 for me.
+(3:06:39 PM) StephenIRC: What do you think about using asset-id's to reference addons rather than names? This allows duplicate track titles at the very least (but it does make directory structure a bit messy)
+(3:07:19 PM) JoergH: I'll leave this to you - duplicated track titles is not a good idea in the first place :) ...
+(3:07:48 PM) JoergH: We need a monitoring process (not as in computer process, but a human doing things) to check each addon, and one thing would be to avoid duplicated downloads.
+(3:08:26 PM) JoergH: I don't know either what asset it was supposed to be :)
+(3:09:18 PM) JoergH: We need two version numbers: one would be the (STK internal) version (i.e. if the executable can actually use this addon), the second one a version number for an addon (i.e. this is a newer version of the same track)
+(3:09:35 PM) StephenIRC: yeah, revision and format ;)
+(3:10:11 PM) StephenIRC: I didn't really want to use "version" because that could mean either
+(3:10:15 PM) JoergH: Ah - missed the format :)
+(3:10:18 PM) JoergH: nod
+(3:10:47 PM) JoergH: Re approved:
+(3:10:55 PM) JoergH: we would need several states an addon can be in:
+(3:11:32 PM) JoergH: alpha, beta  (which would need some special setting in STK to get those, so that normal players don't see them, but tester can test them)
+(3:11:53 PM) JoergH: ... official, fan(?)  or so    ... not sure
+(3:12:20 PM) JoergH: Often we have people spending a lot of effort into something which we don't really consider good enough (e.g. kids doing blender work) for STK.
+(3:12:39 PM) JoergH: Still we want to make this available, but indicate to people that this is a fan made content or so.
+(3:12:59 PM) JoergH: So artists would go to upload alpha and beta version till they say it's good enough.
+(3:13:25 PM) JoergH: Then an admin would check that, and either leave it as beta and ask for approvements, or put it in official or fan state.
+(3:13:32 PM) JoergH: Not sure if we need separate fields for all of this.
+(3:13:53 PM) StephenIRC: Just rename it to status ;)
+(3:14:17 PM) JoergH: That's what I am not sure of: do we just need status, or status and approved?
+(3:14:22 PM) JoergH: E.g. worst case scenario: ....
+(3:14:45 PM) JoergH: someone uploads a 'track' consisting of porn textures or so.
+(3:15:10 PM) JoergH: Is there a way in the addon page to identify users?
+(3:15:34 PM) JoergH: I.e. we approve users (they can publish alpha/beta without anything from us), ...
+(3:15:42 PM) JoergH: and unapproved users would need permission.
+(3:16:02 PM) StephenIRC: I should be writing all this down :P
+(3:16:04 PM) JoergH: So... probably easiest is to have a status and an approved field, ...
+(3:16:09 PM) JoergH: enable logging :)
+(3:16:34 PM) JoergH: Or I can put this 
+(3:16:50 PM) JoergH: ... wrong key ... I'll copy&paste this on the wiki. Don't have time atm to do a proper wiki page :( :( :(
+(3:17:41 PM) StephenIRC: I was thinking of using the status field.. I'm not sure what you call it, but similar to how chmod has 1 = read, 2 = write, 4 = execute, and then add them up
+(3:17:53 PM) StephenIRC: so you can set all, or no flags
+(3:20:54 PM) JoergH: That would work, too - whatever is easiest for you. I don't care much about either reading one more attribute, or and'ing some flags.
+(3:21:26 PM) JoergH: Additional flag would be more readable ... but the XML don't have to be thaaat readable, as long as they work.
