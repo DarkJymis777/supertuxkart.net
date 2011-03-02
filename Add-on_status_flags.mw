@@ -1,6 +1,6 @@
 For now this is just a transcript of a discussion between StephenIRC and myself on irc - atm I don't have enough time to sort this into a proper web page.
 
-
+<pre>
 (2:30:17 PM) StephenIRC: JoergH: Is there any specification on how the addons xml needs to be formatted?
 (2:52:01 PM) JoergH: Hmm - not really.
 (2:52:20 PM) JoergH: Xapantu did the specs, and I asked him to implement a few update/changes
@@ -58,3 +58,4 @@ For now this is just a transcript of a discussion between StephenIRC and myself 
 (3:17:53 PM) StephenIRC: so you can set all, or no flags
 (3:20:54 PM) JoergH: That would work, too - whatever is easiest for you. I don't care much about either reading one more attribute, or and'ing some flags.
 (3:21:26 PM) JoergH: Additional flag would be more readable ... but the XML don't have to be thaaat readable, as long as they work.
+</pre>
