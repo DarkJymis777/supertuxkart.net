@@ -65,3 +65,5 @@ Related links:
 (3:20:54 PM) JoergH: That would work, too - whatever is easiest for you. I don't care much about either reading one more attribute, or and'ing some flags.
 (3:21:26 PM) JoergH: Additional flag would be more readable ... but the XML don't have to be thaaat readable, as long as they work.
 </pre>
+== Random brainstorming ==
+It is easier to store "states" as a single int in a database, which means that the schema doesn't need to change when you add flags. "select * from t where d1 & d2 = 0" *should* let you search by flag in the database, where d1 is the status field, d2 is the bit you're searching for (any power of 2). Use php's bindec and decbin functions to convert. XML generator can parse states before it writes the XML, and write out each flag. Client should ignore unknown flags.
