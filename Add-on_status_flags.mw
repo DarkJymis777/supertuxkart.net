@@ -67,3 +67,6 @@ Related links:
 </pre>
 == Random brainstorming ==
 It is easier to store "states" as a single int in a database, which means that the schema doesn't need to change when you add flags. "select * from t where d1 & d2 = 0" *should* let you search by flag in the database, where d1 is the status field, d2 is the bit you're searching for (any power of 2). Use php's bindec and decbin functions to convert. XML generator can parse states before it writes the XML, and write out each flag. Client should ignore unknown flags.
+
+== Legal message ==
+Allow STK to connect to the internet and receive updates? STK will receive a unique identifier used to collect statistics. No personal information will be collected by the online services at any time.
