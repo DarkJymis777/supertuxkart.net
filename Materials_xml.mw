@@ -71,6 +71,19 @@ The following attributes can be used (defaults in bold)
 ****If the sound effect is played where the kart is currently, or from the inital position only.
 
 
+
+=== Experimental ===
+
+Normal maps :
+
+ <material name="pyramidwall.png" normal-map="pyramidwall.png_normalmap.jpg" />
+
+note that in order for this to work properly, the said material must be used on a mesh that is a SEPARATE object (type = object) and has the ''tangents'' property set to true in materials.xml :
+
+ <static-object model="Pyramids.b3d" tangents="true" ... />
+
+
+
 === Deprecated ===
 
 Use the new '''compositing''' property instead
