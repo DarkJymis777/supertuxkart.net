@@ -1,3 +1,30 @@
+== Add-On Status Flags ==
+This is a list of all the possible status flag bits:
+{| style="border: 1px solid #666666;"
+!style="padding: 3px;"| Code || Meaning
+|-
+| 1 || Approved
+|-
+| 2 || Alpha
+|-
+| 4 || Beta
+|-
+| 8 || Release-Candidate (i.e. waiting for approval)
+|- 
+| 16 || Fan-made - may be lower quality artwork
+|- 
+| 32 || High-quality - verified to be of a very high standard
+|-
+| 64 || DFSG-compliant
+|-
+| 128 || Featured add-on
+|-
+| 256 || Latest revision
+|-
+| 512 || Some textures do not have dimensions that are powers of two
+|}
+
+== Conversation Transcript ==
 For now this is just a transcript of a discussion between StephenIRC and myself on irc - atm I don't have enough time to sort this into a proper web page.
 
 Some details from Xapantu are at [[User:Xapantu/Package_Management]].
