@@ -8,6 +8,8 @@ supertuxkart -N -t trackname
 
 where "trackname" is the name of the directory your track is in.
 
+Furthermore, if you encounter problems, make sure to '''run Supertuxkart from terminal''', there you may be able to see error messages related to your track.
+
 == Enabling the debug mode ==
 
 When STK is closed, open the STK config file (on OSX, it's [HOME]/Library/Application Support/SuperTuxKart ; on Linux it's usually ~/.config/supertuxkart)
