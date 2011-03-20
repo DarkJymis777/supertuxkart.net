@@ -1,7 +1,7 @@
 This article will explain how to translate STK into another language.
 
 There are two main methods :
-* the first is web-based and involves using the Launchpad web interface for translations. This is now the recommended method.
+* ''"Recommended''' : the first is web-based and involves using the Launchpad web interface for translations.
 * the second is desktop based and involves using poEdit to edit the STK .po file. This method is deprecated because after you edited the file this way you would need to send it to us and then we need to update the STK file manually (whereas it's quite automatic when using Launchpad). If you still wish to go this way see [[translating with poedit]]
 
 = Online translations on Launchpad =
@@ -16,10 +16,13 @@ If you don't have a Launchpad account you can easily create one :
 
 [http://supertuxkart.sourceforge.net/Image:Register.png http://supertuxkart.sourceforge.net/persistent/images/c/c2/Register-small.png]
 
+== Join a translation group ==
 
-Then you need to join the "Launchpad Translators" group. Simply go to https://launchpad.net/~launchpad-translators and click on "Join this team" on the right.
+'''Important!''' Until you join a translation group you will only be able to make suggestions, not actually translate.
 
-Alternatively you can also join the "STK" team at https://launchpad.net/~stk
+Join the "Launchpad Translators" group. Simply go to https://launchpad.net/~launchpad-translators and click on "Join this team" on the right. (joining is instantaneous)
+
+Alternatively you can also join the "STK" team at https://launchpad.net/~stk (but in this case joining is not instantaneous, you will need for us to approve your join request)
 
 == See existing translations ==
 After you are logging in, go back to [https://translations.launchpad.net/stk STK's Launchpad Home]
