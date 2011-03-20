@@ -2,7 +2,7 @@ This article will explain how to translate STK into another language.
 
 There are two main methods :
 * the first is web-based and involves using the Launchpad web interface for translations. This is now the recommended method.
-* the second is desktop based and involves using poEdit to edit the STK .po file. This method is deprecated because after you edited the file this way you would need to send it to us and then we need to update the STK file manually (whereas it's quite automatic when using Launchpad)
+* the second is desktop based and involves using poEdit to edit the STK .po file. This method is deprecated because after you edited the file this way you would need to send it to us and then we need to update the STK file manually (whereas it's quite automatic when using Launchpad). If you still wish to go this way see [[translating with poedit]]
 
 = Online translations on Launchpad =
 == Log in or register ==
@@ -57,67 +57,3 @@ From time to time, you will meet some ''format strings '' :
 * <TT>%s</TT>, <TT>%i</TT>, <TT>%d</TT> : something will be inserted instead of the %x, simply add the same format strings in the translation. Not that these format strings do not specify order, so they need to appear in your translation in the same order as in the original string
 * <TT>%0</TT>, <TT>%1</TT>, etc... : those are like the above ones, but are ordered (%0 is the first inserted value, %1 is the second inserted value, etc.). The advantage of those is that the translation does not need to insert the values in the same order as the original string. Note that you can use these format strings in your translation even if the original string uses the first (unordered) format string.
 * <TT>%1$s</TT>, <TT>%2$s</TT>, etc... : those are like the above ones, but are ordered (%1$s is the first inserted value, %2$s is the second inserted value, etc.). %1$s is equivalent to %0, %2$s is equivalent to %1, etc. The reason this syntax is supported is simply because it's more standard than the %0 syntax described above.
-
-= poEdit =
-== Installing poEdit ==
-
-* Get poEdit from http://www.poedit.net/ or from your repositories on linux. 
-
-<center>
-{| style="background-color:#ffffcc;" 
-|'''''Note :''' you may use other tools but the procedure for them is not documented here''
-|}
-</center>
-
-* Get latest STK (to get all latest strings)
-
-The directory where you need to go is /data/po. There you will see a file named ''supertuxkart.pot'' and a script called ''update_pot.sh''. The .pot file contains all translatable strings of STK. The ''update_pot.sh'' script can be run from the base directory to update the .pot file, but you generally do not need to do that since the STK developers will do it for you.
-
-To get the latest po subdirectory from SVN without checking out the whole SVN version, use:
- 
- svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/data/po/ stk_po
-
-== Configuring poEdit ==
-* Make sure poEdit is configured to compile .mo files on saving (check in preferences)
-[[Image:Poedit_prefs.png]]
-
-* from the '''View''' memu, check '''Show automatic comments window'''. This will make a new area appear : this area will sometimes contain tips that the devs left to help you translate a string, for instance if its meaning is ambiguous.
-[[Image:Poedit_comments.png]]
-
-== Creating a new translation ==
-* Create a directory with your [http://www.anglistikguide.de/info/tools/languagecode.html language code] as name.
-
-* Open poEdit and use menu '''File > New catalog from POT file'''.
-[[Image:Poedit1.png]]
-
-* Select ''supertuxkart.pot''.
-[[Image:Poedit2.png]]
-
-* Enter the appropriate information in the dialog that pops-up (ignore fields you do not understand or that do not make sense for this project. Only the first tab needs to be completed)
-[[Image:Poedit3.png]]
-
-* Then simply select the strings in the list and enter a translation.
-* When you're done, save the file as ''[language code].po''. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
-
-== Testing your translation ==
-
-your translation should be automatically picked if your system is set to the language you made the translation for. If your system is in english or another language, you can force a language from terminal 
-
-* On UNIX (Linux, Mac) : ''export LANG=[keycode] && export LC_MESSAGES=[keycode]'' then ''./src/supertuxkart'' or so. Make sure that LC_ALL is not set( or with the correct value ), since it overrides the other variables.
-* In a Windows command interpreter: <code>set LANGUAGE=de_DE</code> followed by <code>.\supertuxkart.exe</code> (that's for german, replace "de_DE" with the code if the langauge you want to test)
-* In a Cygwin shell: <code>$ env LANG=de_DE ./supertuxkart.exe</code>
-
-== Updating an existing translation ==
-
-* Open the ''language code.po'' file in poEdit.
-* Choose ''Catalog > update from POT file''
-[[Image:Poedit_update.png]]
-
-* Select ''supertuxkart.pot''.
-[[Image:Poedit2.png]]
-
-* You will then get a summary of changes (new and/or obsolete strings) if any.
-
-* Then simply select the strings in the list and enter a translation.
-
-* When you're done, save the file. Along it, a .mo file will be generated. Move the ''.mo'' file to /data/po/[language_code]/LC_MESSAGES/supertuxkart.mo.
