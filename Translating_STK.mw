@@ -1,7 +1,7 @@
 '''Link : [https://translations.launchpad.net/stk SuperTuxKart home at launchpad]'''
 
 There are two main methods to help translating SuperTuxKart :
-* ''"Recommended''' : the first is web-based and involves using the Launchpad web interface for translations.
+* '''Recommended''' : the first is web-based and involves using the Launchpad web interface for translations.
 * the second is desktop based and involves using poEdit to edit the STK .po file. This method is deprecated because after you edited the file this way you would need to send it to us and then we need to update the STK file manually (whereas it's quite automatic when using Launchpad). If you still wish to go this way see [[translating with poedit]]
 
 = Online translations on Launchpad =
