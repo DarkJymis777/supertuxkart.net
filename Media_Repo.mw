@@ -1,1 +1,9 @@
-[[Anaglyph Pictures]]
+The '''media repository''' is a directory in SVN where we store the blender files, the original textures/images in gimp/inkscape format, etc.
+
+You may obtain the media repository by obtaining URL
+<code>https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/media/trunk</code>
+
+Under Unix, the checkout command-line would look like :
+<code>svn checkout https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/media/trunk stk_media_repo</code>
+
+You can also browse it online [http://supertuxkart.svn.sourceforge.net/viewvc/supertuxkart/media/trunk/ at sourceforge using ViewVC]
