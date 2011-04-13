@@ -31,6 +31,7 @@ and change it to
 
 Feature that is triggered automatically :
 * If there is no ground under the area where karts start, normally STK will print an error message on the terminal and abort; in debug mode, however, the kart will just hover so you can see what the problem is
+* More precise polygon count display when FPS display is enabled
 
 '''Note''' : many of the tools below use keyboard bindings; of course you will need to make sure your keyboard configuration does not assign these keys to something else if you wish to be able to use them
 
