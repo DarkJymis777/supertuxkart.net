@@ -12,12 +12,13 @@ The final release is copied from the RC branch to the tag directory (using the r
 * Any new patches not related to the RC or release should be committed to the trunk only.
 
 ==Checklist for stable releases==
+* Give a deadline to translators
 * Tested to compile and play under MacOSX.
 * Tested to compile and play under Windows (make sure the icon is available).
 * Tested to compile and play under Linux.
 * After creating a source package, try to build from this package. Sometimes, files are missing.
 * Update ChangeLog file
-* Update translations from Launchpad
+* Update translations from Launchpad (after the publicized deadline has been reached)
 ** Regenerate the Chinese font files:
 *** A list of all Asian fonts is in src/font_tool/po_list (check that it is up to date)
 *** Run "FontTool.exe src/font_tool/po_list" (if everything goes right you'll see "Loaded list file xxx ... Loaded xxx.po ..." in the console).
