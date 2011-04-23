@@ -17,12 +17,11 @@ This short tutorial explains how to make a perfect shaped kart shadow, using the
 
 
 =Getting shadow shape=
-[[Image : Shadow_tutorial_4a.jpg | 800px | thumb | With the fuzzy select tool (aka magical wand), select the colored background (don't forget to click in every closed area), then invert the selection so it corresponds to the kart's shape]]
+[[Image : Shadow_tutorial_4.jpg | 800px | thumb | With the fuzzy select tool (aka magical wand), select the colored background (don't forget to click in every closed area), then invert the selection so it corresponds to the kart's shape]]
 
 
 
 [[Image : Shadow_tutorial_5.jpg | 800px | thumb | Feather the selection by roughly 10px (this value may need to be adjusted following your screen resolution), then eventually grow it by 2 or 3px, to smooth the shadow.]]
-
 
 =Filling shadow=
 
