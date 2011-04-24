@@ -12,9 +12,7 @@ This short tutorial explains how to make a perfect shaped kart shadow, using the
 
 
 =Cropping screenshot=
-[[Image : Shadow_tutorial_3.jpg | 800px | thumb | Then, open your screenshot image with your favorite graphics editing program. Simply crop your image so it is the smaller possible, without cutting the kart (must be a perfect square). The shadow will have the right scale on the shadow image.]]
-
-
+[[Image : Shadow_tutorial_3.jpg | 800px | thumb | Then, open your screenshot image with your favorite graphics editing program. Simply crop your image following the square we made easy to identify earlier. Thanks to this, the shadow will have the right scale on the shadow image.]]
 
 =Getting shadow shape=
 [[Image : Shadow_tutorial_4.jpg | 800px | thumb | With the fuzzy select tool (aka magical wand), select the colored background (don't forget to click in every closed area), then invert the selection so it corresponds to the kart's shape]]
