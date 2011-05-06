@@ -12,14 +12,12 @@ Also, please embed inside the file:
 
 If you want to test your music in game, modify the track.xml files in .../data, and add (or replace) the name of the .music file you want to play. Here is an example of .music file :
  
-<code>
-<?xml version="1.0"?>
-<music title    = "Sky Vibe - High Frequency"
-       composer = "Speedsound"
-       gain     = "0.5"
-       file     = "SkyVibe-HighFrequency.ogg" />
+ <?xml version="1.0"?>
+ <music title    = "Sky Vibe - High Frequency"
+        composer = "Speedsound"
+        gain     = "0.5"
+        file     = "SkyVibe-HighFrequency.ogg" />
 
-</code>
 
 The entries for title, and composer are used to display the name of the track and the composer in the game. The ogg file is the actual music file. The gain parameter is a volumne adjustment (here 0.5, means half volume)
 
