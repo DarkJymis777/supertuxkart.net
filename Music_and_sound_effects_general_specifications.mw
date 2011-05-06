@@ -1,45 +1,27 @@
+
 == Music ==
 
-Music should be in ogg/vorbis format (.ogg extension), support for mod files has been removed. Try to keep the music file size under 2-3 megabytes. We want most music to be light-hearted, but it is required that the music isn't 'aggressive' (we want to keep the game's ambient mostly happy).  Also it's generally better if your song can loop smoothly (for track music)
+Music should be in ogg/vorbis format (.ogg extension), support for mod files has been removed. Try to keep the music file size under 2 megabytes. We want most music to be light-hearted, but it is required that the music isn't 'aggressive' (we want to keep the game's ambient mostly happy).  Also it's generally better if your song can loop smoothly (for track music)
 
 Also, please embed inside the file:
 *The song's name if you wanted to give it a name (not required thought), because the file names are bound to be changed.
 *The name of the author(s). Please don't delete the name of anyone, just append yours if you made a significant modification that you want to be recognized for. This isn't required, just if the song's author desires to do so.
-*The date. Thought we use SVN to to track versions and changes to files, this might come in handy if SVN is not available or if the file was obtained through another way, which is the most likely situation for players.
 
 
+=== The music file format ===
 
-=== Testing music in 0.4 and earlier versions ===
-
-If you want to test your music in game, modify the *.track files in .../data, and add (or replace) the name of the .ogg files you want to play. If more than one is specified, one will be picked at random each time the track is started, see the following example for a modified version of data/race.track:
+If you want to test your music in game, modify the track.xml files in .../data, and add (or replace) the name of the .music file you want to play. Here is an example of .music file :
  
- ;; -*- mode: lisp -*-  
- 
- (tuxkart-track
-  (name "Race Track")
-  (description "Created by Ingo Ruhnke")
-  (music "/path/to/music1.ogg"  "/path/to/music2/ogg")   ;; modified/new entries
-  (screenshot "images/sshot-race.rgb")
-  (topview "images/topview-race.rgb")
- )
+<code>
+<?xml version="1.0"?>
+<music title    = "Sky Vibe - High Frequency"
+       composer = "Speedsound"
+       gain     = "0.5"
+       file     = "SkyVibe-HighFrequency.ogg" />
 
+</code>
 
-
-=== Music handling in current SVN ===
-The current SVN version supports separate sound packages to be installed. I.e. it is possible to add music to the game without having to modify any data files of an existing STK installation. Additionally, it allows a 'faster' music to be played in the last lap of a race, to add a bit to the excitment :)
-
-All music to be used in STK needs a separate configuration file (''filename''.'''music''') in the format:
- (music-information
-   (title      "Tuxkart 2")
-   (composer   "Matt Thomas")
-   (music      "tk5a.ogg")
-   (fast-music "tk2.ogg")
-   (fade-time   2)
-   (tracks      "beach"  "race")
- ;;   (loop     10)
- )
-
-The entries for title, and composer are used to display the name of the track and the composer in the game. Two ogg files can be used: the default one ("music"), and a faster version to be played in the last lap of a race ("fast-music"). The value of "fade-time" determines how many seconds the fade-out of the default music and fade-in of the faster music takes. The fade-in and -out take place at the same time, meaning that the faster music replaces the slower music without a music-less time. For "tracks" a list of tracks can be specified in which the specified music is played. The value for "loop" is currently not used, it is meant to restrict the number of times a song is repeated.
+The entries for title, and composer are used to display the name of the track and the composer in the game. The ogg file is the actual music file. The gain parameter is a volumne adjustment (here 0.5, means half volume)
 
 At startup, STK reads all .music files from
 * .../data/music
@@ -50,6 +32,6 @@ To test new music in STK just create a .music file (in the same directory as the
 
 == Sound effects ==
 
-The format should be wave (.wav).
+The format should be .ogg. If they are positional they should be mono
 
 Try to keep the sound effect file size under 30 kilobytes.
