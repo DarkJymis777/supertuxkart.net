@@ -97,3 +97,8 @@ It is easier to store "states" as a single int in a database, which means that t
 
 == Legal message ==
 Allow STK to connect to the internet and receive updates? STK will receive a unique identifier used to collect statistics. No personal information will be collected by the online services at any time.
+
+== TuxFamily conversation ==
+This is a chat I had with the chairman of TuxFamily about licensing and how we should handle static files such as track screenshots/kart icons and addon files. [[User:Arthur|Arthur]] 13:23, 15 May 2011 (UTC)
+
+* [[TuxFamily_conversation]]
