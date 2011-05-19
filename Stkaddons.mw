@@ -2,4 +2,32 @@ The STK-Addons website is a repository for all user-created content for Super Tu
 
 This page is a placeholder for future information.
 
+== Add-On Status Flags ==
+{|
+|-
+! Status
+! Description
+|-
+| Approved
+| A moderator has verified the add-on as having no unsafe or explicit content, and having an appropriate license.
+|-
+| Alpha
+| The add-on revision is in its early developmental stages. It is incomplete and/or broken.
+|-
+| Beta
+| The add-on revision is in its late developmental stage. It is mostly complete, but may have a few bugs or glitches.
+|-
+| Release Candidate
+| The add-on revision is in the final testing phase before its final release. This is the stage where add-on developers should be sent reports of any outstanding issues.
+|-
+| DFSG-Compliant
+| As tuxfamily.org does not require DFSG-compliant licenses, add-ons which do not completely meet the requirements may be found on the add-ons server. Some distributors of SuperTuxKart may prefer to restrict the game to using DFSG-compliant content, so this flag would be useful to them.
+|-
+| Featured
+| This add-on is verified to be of extremely high quality, and functions very well in actual gameplay (i.e. physics, fun-value, appearance, etc.)
+|-
+| Invalid Textures
+| In order to preserve compatibility with some video cards, textures used in add-ons should always have dimensions that are a power of 2. However, if add-on developers choose not to abide by this, then their add-ons will have this flag, and may be unusable on some systems.
+|}
+
 [[Category:Stkaddons]]
