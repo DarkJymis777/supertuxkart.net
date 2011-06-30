@@ -1,3 +1,5 @@
+* [[Image:France.png]] [[Tutoriel : Dessiner l'ombre de votre kart|version francaise]]
+
 This short tutorial explains how to make a perfect shaped kart shadow, using the kart model in Blender and a graphics editing software as The GIMP. The following manipulations will have to be done every time you'll change the kart model a way that impacts its top view look (eg. up-scale and down-scale transformations). So you may want to finalize the model before making the shadow.
 
 =Taking screenshot=
