@@ -20,6 +20,9 @@ This page is a placeholder for future information.
 | Release Candidate
 | The add-on revision is in the final testing phase before its final release. This is the stage where add-on developers should be sent reports of any outstanding issues.
 |-
+| Invisible
+| Based on the website configuration, the addon will either not be included in the XML listing, or it will have the "invisible" flag set, and the game will not display it.
+|-
 | DFSG-Compliant
 | As tuxfamily.org does not require DFSG-compliant licenses, add-ons which do not completely meet the requirements may be found on the add-ons server. Some distributors of SuperTuxKart may prefer to restrict the game to using DFSG-compliant content, so this flag would be useful to them.
 |-
