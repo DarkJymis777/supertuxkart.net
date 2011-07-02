@@ -70,3 +70,6 @@ Launch supertuxkart from the terminal with the <tt>--camera-debug</tt> argument,
 Launch supertuxkart from the terminal with '''--check-debug''' argument, and you will visually see where checklines are; active checklines will appear as red, inactive ones as white; and information about which kart crosses which checkline will be printed on the terminal.
 
 Also '''--track-debug''' will enable you to see where the drivelines are
+
+=== No Ready/Set/Go ===
+To speed up testing your track, in artist debug mode, when you play alone against no opponent, the ready/set/go messages are skipped very quickly
