@@ -1,3 +1,7 @@
+Last update july 8th 2011
+
+[[Image:France.png]][[Materials xml - FR| Version française]]
+
 This page describes the format of the materials.xml file, which can be used in SuperTuxkart to define special effects for certain textures. The effects might be graphical, physical (e.g. define a slowdown that applies while you are driving on this kind of textures), or a special sound effect (e.g. a sound to be played while the kart is driving on this particular terrain).
 
 == File Format and Location ==
