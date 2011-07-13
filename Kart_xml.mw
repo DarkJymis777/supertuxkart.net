@@ -47,17 +47,24 @@ Note: Actually, you don't have to create this file yourself. The blender kart ex
 The following attributes can be used (defaults in bold)
 
 *''name'': The name of the kart wich will appear in the menus (example: "Beagle").
+[[File:Kart_xml_name.png]]
 *''version'': The version number of the kart (example: "1").
 *''model-file'': The file name wich contain the model of the kart (example: "beagle.b3d").
 *''icon-file'': The icon file (128x128) used in some menus (example: "beagle_icon.png").
+[[File:Kart_xml_icon_file.png]]
 *''minimap-icon-file'': The icon file used in the minimap during races (example: "beagle_icon.png").
+[[File:Kart_xml_minimap-icon-file.png]]
 *''shadow-file'': The shadow image file used under the kart (example: "beagle_shadow.png"). See the [[Kart shadow tutorial]] for more informations on this.
 *''groups'': The group (tab) in wich the kart will appear in the karting selection menu (example: "standard").
+[[File:Kart_xml_group.png]]
 *''rgb'': If the kart don't have a valid "minimap-icon-file", a RGB colored dot will be shown on the minimap (example: "0.7 0 0"). Not really used anymore.
 *''random-wheel-rot'': This boolean value put the wheels in a random rotation at each race start. This can be useful to avoid to see a repetition in a strong texture of wheels in the same rotation (example: "true").
 *''shadow-scale'': As the shadow image can be difficult to set correctly for the kart, this value scale it (example: "1.0").
+[[File:Kart_xml_shadow_scale.png]]
 *''shadow-x-offset'': Offset the shadow image in the X value. Positive value slide the shadow to the right (example: "0.12").
+[[File:Kart_xml_shadow_xOffset.png]]
 *''shadow-y-offset'': Offset the shadow image in the Y value. Positive value slide the shadow to the top of the kart (example: "0.35").
+[[File:Kart_xml_shadow_yOffset.png]]
 *''sounds''
 **''engine'': The kind of engine sound the kart make: "large" or "small" ("small" by default).
 
@@ -67,6 +74,7 @@ Here are the frame numbers, in the "model-file", of each animation:
  // Frame range between "right" and "start-winning" is not used
  start-winning -> start-winning-loop -> end-winning // First the "start-winning" animation is played then "start-winning-loop" is played in loop and "end-winning" is finally played.
  // It's the same for "losing".
+[[File:Kart_xml_animation_plan.png]]
 Note: "-loop" version are not necessary.
 
 *''wheels''
