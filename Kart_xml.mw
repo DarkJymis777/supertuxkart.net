@@ -57,7 +57,7 @@ The following attributes can be used (defaults in bold)
 *''random-wheel-rot'': This boolean value put the wheels in a random rotation at each race start. This can be useful to avoid to see a repetition in a strong texture of wheels in the same rotation (example: "true").
 *''shadow-scale'': As the shadow image can be difficult to set correctly for the kart, this value scale it (example: "1.0").
 *''shadow-x-offset'': Offset the shadow image in the X value. Positive value slide the shadow to the right (example: "0.12").
-*''shadow-y-offset'': Offset the shadow image in the Y value. Positive value slide the shadow to the bottom (example: "-0.35").
+*''shadow-y-offset'': Offset the shadow image in the Y value. Positive value slide the shadow to the top of the kart (example: "0.35").
 *''sounds''
 **''engine'': The kind of engine sound the kart make: "large" or "small" ("small" by default).
 
