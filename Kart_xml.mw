@@ -41,7 +41,7 @@ The kart.xml file is a simple xml file wich have to exists in each kart folder
 
 This shows the kart.xml file of Beagle.
 
-Note: Actually, you don't have to create this file yourself. The blender kart exporter do it for you!
+Note: Actually, you don't have to create this file yourself. The Blender's [http://supertuxkart.sourceforge.net/New_kart_tutorial#Exporting_karts kart exporter] do it for you!
 
 == Attributes ==
 The following attributes can be used (defaults in bold)
