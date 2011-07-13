@@ -1,9 +1,7 @@
-Last update july 8th 2011
-
 This page describes the format of the kart.xml file, which is used in SuperTuxkart to define some kart options.
 
 == File Format and Location ==
-The kart.xml file is a simple xml file wich have to exist in each kart's folder. Here is the file of beagle:
+The kart.xml file is a simple xml file wich have to exists in each kart folder
 
  <?xml version="1.0"?>
  <!-- Generated with script from SVN rev 9075 -->
@@ -14,7 +12,6 @@ The kart.xml file is a simple xml file wich have to exist in each kart's folder.
        minimap-icon-file = "beagle_icon.png"
        shadow-file       = "beagle_shadow.png"
        groups            = "standard"
-       type              = "light"
        rgb               = "0.7 0 0" 
        random-wheel-rot  = "true"
        shadow-scale      = "1.0"
@@ -42,33 +39,27 @@ The kart.xml file is a simple xml file wich have to exist in each kart's folder.
    </wheels>
  </kart>
 
-Note: Actually, you don't have to create this file yourself. The Blender's [http://supertuxkart.sourceforge.net/New_kart_tutorial#Exporting_karts kart exporter] do it for you!
+This shows the kart.xml file of Beagle.
+
+Note: Actually, you don't have to create this file yourself. The blender kart exporter do it for you!
 
 == Attributes ==
-The following attributes can be used.
+The following attributes can be used (defaults in bold)
 
-*''name'': The name of the kart which will appear in the menus (example: "Beagle").
-[[File:Kart_xml_name.png]]
+*''name'': The name of the kart wich will appear in the menus (example: "Beagle").
 *''version'': The version number of the kart (example: "1").
-*''type'': The type of kart which will determine to which properties group the kart belongs (light, medium or heavy).
-*''model-file'': The file name which contain the model of the kart (example: "beagle.b3d").
+*''model-file'': The file name wich contain the model of the kart (example: "beagle.b3d").
 *''icon-file'': The icon file (128x128) used in some menus (example: "beagle_icon.png").
-[[File:Kart_xml_icon_file.png]]
 *''minimap-icon-file'': The icon file used in the minimap during races (example: "beagle_icon.png").
-[[File:Kart_xml_minimap-icon-file.png]]
-*''shadow-file'': The shadow image file used under the kart (example: "beagle_shadow.png"). See the [[Kart shadow tutorial]] for more informations.
-*''groups'': The group (tab) in which the kart will appear in the kart selection menu (example: "standard").
-[[File:Kart_xml_group.png]]
+*''shadow-file'': The shadow image file used under the kart (example: "beagle_shadow.png"). See the [[Kart shadow tutorial]] for more informations on this.
+*''groups'': The group (tab) in wich the kart will appear in the karting selection menu (example: "standard").
 *''rgb'': If the kart don't have a valid "minimap-icon-file", a RGB colored dot will be shown on the minimap (example: "0.7 0 0"). Not really used anymore.
-*''random-wheel-rot'': This boolean value put the wheels in a random rotation at each race start. This can be useful avoiding to see a repetition in a strong texture of wheels in the same rotation (example: "true").
+*''random-wheel-rot'': This boolean value put the wheels in a random rotation at each race start. This can be useful to avoid to see a repetition in a strong texture of wheels in the same rotation (example: "true").
 *''shadow-scale'': As the shadow image can be difficult to set correctly for the kart, this value scale it (example: "1.0").
-[[File:Kart_xml_shadow_scale.png]]
 *''shadow-x-offset'': Offset the shadow image in the X value. Positive value slide the shadow to the right (example: "0.12").
-[[File:Kart_xml_shadow_xOffset.png]]
-*''shadow-y-offset'': Offset the shadow image in the Y value. Positive value slide the shadow to the top of the kart (example: "0.35").
-[[File:Kart_xml_shadow_yOffset.png]]
+*''shadow-y-offset'': Offset the shadow image in the Y value. Positive value slide the shadow to the bottom (example: "-0.35").
 *''sounds''
-**''engine'': The kind of engine sound the kart make: "large" or "small" ("small" by default). Note that in the future there wil hopefully be more options to tweak the sound.
+**''engine'': The kind of engine sound the kart make: "large" or "small" ("small" by default).
 
 *''animations''
 Here are the frame numbers, in the "model-file", of each animation:
@@ -76,32 +67,9 @@ Here are the frame numbers, in the "model-file", of each animation:
  // Frame range between "right" and "start-winning" is not used
  start-winning -> start-winning-loop -> end-winning // First the "start-winning" animation is played then "start-winning-loop" is played in loop and "end-winning" is finally played.
  // It's the same for "losing".
-[[File:Kart_xml_animation_plan.png]]
 Note: "-loop" version are not necessary.
 
 *''wheels''
 **''rear-right'', ''front-left'', ''rear-left'', ''front-right''
-***''position'': The position, in the "model-file" space of each wheels (example: "0.392944 0.184659 -0.353249").
-***''model'': The model file of the current wheel (example: "wheel-rear-right.b3d").
-
-== Tweaking Physics Parameter ==
-Karts can belong to a certain properties group, where we currently have 3 specific types: light, medium or heavy. those can be set in the kart.xml, as seen below. This will load in the kart-specific settings as defined in the data/stk_config.xml file. There you have a <kart-type> tag in the <general-kart-defaults> tag, with in it the <light> tag, and so on.
-Additional section can be added to the kart.xml files in which kart-specific physics and gameplay parameters can be specified. All sections from the STK config file data/stk_config.xml which are in the <general-kart-defaults> tags can be just copied into the kart.xml file and modified. This way you can make a kart heavier, make it easier to use slip stream etc. A simple example:
- <?xml version="1.0"?>
- <!-- Generated with script from SVN rev 0.1 -->
- <kart name              = "Mozilla"
-       version           = "2"
-       model-file        = "mozilla.b3d"
-       type              = "light"
-       icon-file         = "mozillaicon.png"
-       minimap-icon-file = "mozillaicon.png"
-       shadow-file       = "mozillashadow.png"
-       groups            = "standard"
-       rgb               = "0.7 0 0" >
- ...
-     <!-- mass  -->
-     <mass value="300"/>
-     <nitro consumption="2" max-speed-increase="3"/>
- ...
- </kart>
-This makes the mozilla kart heavier (default 225), and it will use up nitro quicker, and get less benefit from it. The stk_config.xml file is well documented, so feel free to tweak the kart. Note that kart-specific physics are part of the [http://supertuxkart.sourceforge.net/GSoC_overview GSoC 2014] and will hopefully be integrated in the 0.8.3 release (see [[Milestones]]). If you do any tweaking of the physics parameters before 0.8.3 it might be necessary to redo this work after 0.8.3 (but hopefully it won't be that much work).
+***position: The position, in the "model-file" space of each wheels (example: "0.392944 0.184659 -0.353249").
+***model the model file of the current wheel (example: "wheel-rear-right.b3d").
