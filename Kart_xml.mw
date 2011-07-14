@@ -44,21 +44,21 @@ This shows the kart.xml file of Beagle.
 Note: Actually, you don't have to create this file yourself. The Blender's [http://supertuxkart.sourceforge.net/New_kart_tutorial#Exporting_karts kart exporter] do it for you!
 
 == Attributes ==
-The following attributes can be used (defaults in bold)
+The following attributes can be used.
 
-*''name'': The name of the kart wich will appear in the menus (example: "Beagle").
+*''name'': The name of the kart which will appear in the menus (example: "Beagle").
 [[File:Kart_xml_name.png]]
 *''version'': The version number of the kart (example: "1").
-*''model-file'': The file name wich contain the model of the kart (example: "beagle.b3d").
+*''model-file'': The file name which contain the model of the kart (example: "beagle.b3d").
 *''icon-file'': The icon file (128x128) used in some menus (example: "beagle_icon.png").
 [[File:Kart_xml_icon_file.png]]
 *''minimap-icon-file'': The icon file used in the minimap during races (example: "beagle_icon.png").
 [[File:Kart_xml_minimap-icon-file.png]]
-*''shadow-file'': The shadow image file used under the kart (example: "beagle_shadow.png"). See the [[Kart shadow tutorial]] for more informations on this.
-*''groups'': The group (tab) in wich the kart will appear in the karting selection menu (example: "standard").
+*''shadow-file'': The shadow image file used under the kart (example: "beagle_shadow.png"). See the [[Kart shadow tutorial]] for more informations.
+*''groups'': The group (tab) in which the kart will appear in the kart selection menu (example: "standard").
 [[File:Kart_xml_group.png]]
 *''rgb'': If the kart don't have a valid "minimap-icon-file", a RGB colored dot will be shown on the minimap (example: "0.7 0 0"). Not really used anymore.
-*''random-wheel-rot'': This boolean value put the wheels in a random rotation at each race start. This can be useful to avoid to see a repetition in a strong texture of wheels in the same rotation (example: "true").
+*''random-wheel-rot'': This boolean value put the wheels in a random rotation at each race start. This can be useful avoiding to see a repetition in a strong texture of wheels in the same rotation (example: "true").
 *''shadow-scale'': As the shadow image can be difficult to set correctly for the kart, this value scale it (example: "1.0").
 [[File:Kart_xml_shadow_scale.png]]
 *''shadow-x-offset'': Offset the shadow image in the X value. Positive value slide the shadow to the right (example: "0.12").
@@ -79,5 +79,5 @@ Note: "-loop" version are not necessary.
 
 *''wheels''
 **''rear-right'', ''front-left'', ''rear-left'', ''front-right''
-***position: The position, in the "model-file" space of each wheels (example: "0.392944 0.184659 -0.353249").
-***model the model file of the current wheel (example: "wheel-rear-right.b3d").
+***''position'': The position, in the "model-file" space of each wheels (example: "0.392944 0.184659 -0.353249").
+***''model'': The model file of the current wheel (example: "wheel-rear-right.b3d").
