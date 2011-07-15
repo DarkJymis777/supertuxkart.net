@@ -4,6 +4,73 @@ __NOTOC__
 |-
 |
 
+
+== SuperTuxKart 0.7 Release Candidate 2 ==
+
+We have just uploaded a second release candidate. Major changes include :
+
+* Asian fonts are now included in the package.
+* Several memory leaks have been fixed (which had caused problems with music and sound effects)
+* Some tracks were improved to disable unintentional shortcuts and incorrect rescues.
+* Some minor bug fixes.
+
+We also updated the translations, but not all translations are complete yet. We encourage all translators to complete their translations, as the strings are now frozen.
+
+Testing and feedback welcome!
+
+Cheers,
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (December 14, 2010)
+
+== SuperTuxKart 0.7 release candidate 1 ==
+After a burst of changes and fixes in the last few days we have finally released a first release candidate for 0.7:
+http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7/
+
+The changes compared to 0.6.2a are too numerous to list, main points would be:
+* New graphics engine
+* New GUI
+* Kart and track animations
+* New and improved tracks, karts, and items
+* Shortcut/alternative way support for tracks
+
+Compared to 0.7alpha3 challenges, unlocking etc. should all work now (though there is still a debug icon in the menu, which will be removed before the final release :oops: ).
+
+The one thing missing are translations - since we added strings even in the last week, the translations are not up-to-date yet. If you want to help out with translations have a look at our wiki page: we are basically using launchpad, details are at http://supertuxkart.sourceforge.net/Translating_STK.
+
+Feedback as always is welcome - be it here, or bugs in our tracker 
+
+Cheers,
+
+[[User:Hiker|Joerg]], December 1, 2010
+
+
+== SuperTuxKart 0.7 alpha 3 released ==
+
+In a bit of a rush, we finally managed to get a third alpha release of the upcoming 0.7 release out. You can download binary packages for Windows and Mac from the usual location at http://sourceforge.net/projects/supertuxkart/files/
+
+If you are compiling stk yourself note that it is recommended to use the current "1.7 stable" irrlicht branch, see [http://irrlicht.svn.sourceforge.net/viewvc/irrlicht/branches/releases/1.7 the branch in irrlicht's SVN repository] (which will become the next 1.7.2 release). While STK mostly still works with irrlicht 1.7.1, bugs in this irrlicht version can result in some texts not being displayed, and even in crashes (mostly in menus though).
+
+This version shows very much work in progress, but we are getting closer to a release candidate. Hopefully this will motivate some artists to help us port/create a few more tracks, while we are busy fixing bugs and tuning some settings. Known bugs or issues are:
+
+* Many challenges and GPs will be unavailable due to not-yet-converted tracks.
+* The 'networking' menu is used to test the win/lose GP and unlocking animations. There is no networking support in 0.7 alpha 3 (nor will there be any in 0.7).
+* Not all tracks have collectibles.
+* AI needs tweaks, it does too good a job with slipstreaming, and on the other hand doesn't handle multiple items good enough.
+* Disabling or enabling sound effects may require to restart STK for the change to apply correctly.
+* Switching to windowed mode from fullscreen may fail on linux.
+* If you build with irrlicht 1.7.1, you may get an empty race paused screen and/or a broken "feature unlocked" screen.
+* If you do not exactly cross the lap line your lap may not be counted.
+* If you add too many AI karts, the race may not start properly.
+* In the kart selection screen, large karts might get clipped on sides.
+* Kart animations not complete.
+* The game may not allow you to configure bindings for gamepads other than the first one.
+* The "slipstream" (follow behind a kart for a while with the slipstream effect showing, and you will get a zipper-like boost) and quick-start feature (press start very quickly _after_ 'GO') need tweaks.
+
+We are looking forward to feedback, bug reports (please check with our bug tracker at http://sourceforge.net/tracker/?group_id=202302&atid=981038 first), suggestions (though we are pretty much feature frozen for 0.7), and some contributions :)
+
+Enjoy!
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]], September 24, 2010
+
 == SuperTuxKart 0.7 alpha 2 released ==
 
 Hi all,
