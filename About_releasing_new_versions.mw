@@ -17,26 +17,27 @@ The final release is copied from the RC branch to the tag directory (using the r
 * Tested to compile and play under Windows (make sure the icon is available).
 * Tested to compile and play under Linux.
 * After creating a source package, try to build from this package. Sometimes, files are missing.
-* Update ChangeLog file
-* On Unix systems, make sure all files have appropriate read permissions
-* Update translations from Launchpad (after the publicized deadline has been reached)
+* Update ChangeLog file.
+* Update donations section in CREDITS.
+* On Unix systems, make sure all files have appropriate read permissions.
+* Update translations from Launchpad (after the publicized deadline has been reached).
 ** Regenerate the Chinese font files:
-*** A list of all Asian fonts is in src/font_tool/po_list (check that it is up to date)
+*** A list of all Asian fonts is in src/font_tool/po_list (check that it is up to date).
 *** Run "FontTool.exe src/font_tool/po_list" (if everything goes right you'll see "Loaded list file xxx ... Loaded xxx.po ..." in the console).
 *** There are two new check boxes in GUI, "Export used characters only" and "Exclude basic latin characters". Check these two options.
 *** set charset to "All avaliable".
-*** Set font size to 24pt (or any other you like :) )
+*** Set font size to 24pt (or any other you like :) ).
 *** Check "alpha" option.
-*** Set max width and height to 512
+*** Set max width and height to 512.
 *** Set file format to "png".
-*** Press create and then save
+*** Press create and then save.
 * Make sure to update the version number:
-** in configure.ac (from which the define for the sources is created. This number should not have any spaces in it, otherwise "make dist" will fail)
-** data/CREDITS
-** src/utils/constant.cpp
-** src/ide/Xcode/SuperTuxKart-Info.plist
-* Update ChangeLog
-* Update data/CREDITS
+** in configure.ac (from which the define for the sources is created. This number should not have any spaces in it, otherwise "make dist" will fail).
+** data/CREDITS.
+** src/utils/constant.cpp.
+** src/ide/Xcode/SuperTuxKart-Info.plist.
+* Update ChangeLog.
+* Update data/CREDITS.
 * Test to run when no sound card is available. Sound should be disabled and continue, not crash.
 
 Upload packages, then :
