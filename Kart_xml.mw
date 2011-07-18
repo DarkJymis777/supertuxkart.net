@@ -81,3 +81,23 @@ Note: "-loop" version are not necessary.
 **''rear-right'', ''front-left'', ''rear-left'', ''front-right''
 ***''position'': The position, in the "model-file" space of each wheels (example: "0.392944 0.184659 -0.353249").
 ***''model'': The model file of the current wheel (example: "wheel-rear-right.b3d").
+
+== Tweaking Physics Parameter ==
+Additional section can be added to the kart.xml files in which kart-specific physics and gameplay parameters can be specified. All sections from the STK config file data/stk_config.xml which are in the <general-kart-defaults> tags can be just copied into the kart.xml file and modified. This way you can make a kart heavier, make it easier to use slip stream etc. A simple example:
+ <?xml version="1.0"?>
+ <!-- Generated with script from SVN rev 0.1 -->
+ <kart name              = "Mozilla"
+       version           = "2"
+       model-file        = "mozilla.b3d"
+       icon-file         = "mozillaicon.png"
+       minimap-icon-file = "mozillaicon.png"
+       shadow-file       = "mozillashadow.png"
+       groups            = "standard"
+       rgb               = "0.7 0 0" >
+ ...
+     <!-- mass  -->
+     <mass value="300"/>
+     <nitro consumption="2" max-speed-increase="3"/>
+ ...
+ </kart>
+This makes the mozilla kart heavier (default 225), and it will use up nitro quicker, and get less benefit from it. The stk_config.xml file is well documented, so feel free to tweak the kart. Note that it is our intention to have kart-specific physics after the 0.8 release (see [[Milestones]]). If you do any tweaking of the physics parameters before 0.8 it might be necessary to redo this work after 0.8 (but hopefully it won't be that much work).
