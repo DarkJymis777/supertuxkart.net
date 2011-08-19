@@ -88,16 +88,16 @@ The shadow image is a png image which is applied on the ground under the karts. 
 
 =Exporting karts=
 
-Once everything is ready, or just to see a work in progress version of the kart ingame, you need to export it using the STK kart exporter. To do so :
-* Copy from your STK folder (the STK version for which you want to export the kart) the two following files, and paste them in your kart model folder (or anywhere you want) :
-   Resources/data/karts/stk_kart.py
-   Resources/data/tracks/b3d_export.py
-* Drag-down the upper dock of Blender, and in the "File Path" tab, click on the folder icon of the "Python Scripts :" field, and select the folder in which you pasted the two previous .py files. Then click on the window icon near the folder icon of the "Python Scripts :" field to update your Blender GUI.
-[[Image:Blender-stkkarts.png|900px|thumb]]
 
-* Click on File>Export>STK Kart Exporter to display the exporter GUI. Just fill in the fields, knowing that the "color" labeled one is used to specify the color that will be displayed around the icon. The custom sounds are not used currently. Validate with the "Export" button, wait for a couple of seconds, until the "Successful" message appears under your cursor. More info about the generated xml file [http://supertuxkart.sourceforge.net/Kart_xml here].
-* In your kart model folder, some files have been created : kart.xml, <kartname>.b3d, wheel-front-left.b3d to wheel-rear-right.b3d. Copy them, with the shadow file, the icons files, every texture used by the models, and eventually your custom materials.xml file. Paste all these files in <yourSTKinstallFolder>/Resources/data/karts/<yourKartName>, without any subfolders (even if there was some when you ran the exporter).
-* Restart STK, drive your kart :)
+
+Once everything is ready, or just to see a work in progress version of the kart ingame, you need to export it using the STK kart exporter.
+
+After setting up your blender as described in [[Installing the tools 2]], locate the SuperTuxKart panel :
+
+[[Image:Kart_panel.png]]
+
+Check the ''is a SuperTuxKart kart'' checkbox, then fill the information asked for.
+When you have configured the kart, press the '''Export''' button in the ''Kart Exporter'' panel
 
 
 
