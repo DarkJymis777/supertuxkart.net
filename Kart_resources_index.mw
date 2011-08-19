@@ -38,11 +38,11 @@ Here is a short checklist that sum-up every important point viewed in the [[New 
 * Texture files' dimensions are power of two (eg. 128x256, 512x512), and not too big (512x512 is usually fine).
 * The armature bones have a 0 roll.
 * Armature are parent of the mesh they animate (beware if you also use the "Armature" modifier, transformations may be applied twice to your mesh).
-* The wheels objects must have the "type=wheel" game-logic property (the old style of naming the wheel objects "WheelFront.R" to "WheelRear.L" is still supported, but deprecated).
+* Select the '''Wheel''' type for each wheel in the object properties panel
 * You have an icon, ideally at least in 64x64 resolution.
 * You have a shadow file.
 
-To know how to export the kart, see [[New kart tutorial#Exporting karts | Exporting karts]].
+To know how to export the kart, see [[New kart tutorial 2#Exporting karts|Exporting karts]].
 
 
 
