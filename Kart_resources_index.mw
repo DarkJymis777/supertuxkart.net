@@ -1,29 +1,38 @@
+<div class="outer_warning">
+    <div class="inner_msg">
+'''This page is a work in progress. Please note that Blender 2.5 support is still unstable. See [[Kart resources index]] for the stable Blender 2.4 precedure'''
+</div></div>
+
 This page is the index of resources about making karts for STK.
 
-<gallery mode="packed" widths=800px>File:Making_kart_illustration.jpg</gallery>
+
+[[Image : Making_kart_illustration.jpg | 800px]]
+
 
 = Get the tools =
 
-See article [[Installing Tools]] to get the proper blender setup
+See article [[Installing the tools 2]] to get the proper blender setup
 
 It's also a good idea to enable [[Artist Debug Mode]]
 
+
 = Guidelines & tutorials =
-* [[Kart Creation Tutorial]]
-* [[Kart shadow tutorial]]
-* and the more general [[Legacy:Style Guidelines]]
+* [[New kart tutorial]]
+** Older versions of the tutorial : [[Making kart tutorial]] / [[Making karts for Irrlicht]]
+* [[Kart shadow tutorial]],
+* [[Guidelines for making karts and characters]],
+* and the more general [[Style Guidelines]]
+
 
 = Blender resources and tutorials =
 * [[Blender resources page]]
 
-= Materials =
-To configure materials, see [[Materials]]
 
 = Kart export checklist =
 
-Here is a short checklist that sum-up every important point viewed in the [[Kart Creation Tutorial]].
+Here is a short checklist that sum-up every important point viewed in the [[New kart tutorial]].
 
-* The kart's total triangle count is not above 3000 (approximately). Under 2000 would be better.
+* The kart's total triangle count is not above 3000 (approximately).
 * Make sure mesh modifiers (mirror, subdivide, ...) are applied to the mesh objects.
 * Make sure your objects are oriented correctly : when you hit Numpad 1 on blender, you should see the back of the kart.
 * The kart should be located just above Y axis, as if it was the road (and to be clean centered on the Y and X axes).
@@ -32,8 +41,13 @@ Here is a short checklist that sum-up every important point viewed in the [[Kart
 * Texture files' dimensions are power of two (eg. 128x256, 512x512), and not too big (512x512 is usually fine).
 * The armature bones have a 0 roll.
 * Armature are parent of the mesh they animate (beware if you also use the "Armature" modifier, transformations may be applied twice to your mesh).
-* Select the '''Wheel''' type for each wheel in the object properties panel
+* The wheels objects must have the "type=wheel" game-logic property (the old style of naming the wheel objects "WheelFront.R" to "WheelRear.L" is still supported, but deprecated).
 * You have an icon, ideally at least in 64x64 resolution.
 * You have a shadow file.
 
-{{ArtPortalNav}}
+To know how to export the kart, see [[New kart tutorial#Exporting karts | Exporting karts]].
+
+
+
+
+If you have remarks or feedback about those resources, don't hesitate to post them [http://forum.freegamedev.net/viewtopic.php?f=18&t=1370 on the forum], and if you see any mistakes please tell, or even correct them !
