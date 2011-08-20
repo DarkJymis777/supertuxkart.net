@@ -29,7 +29,7 @@ It's also a good idea to enable [[Artist Debug Mode]]
 
 Here is a short checklist that sum-up every important point viewed in the [[New kart tutorial 2|Kart tutorial]].
 
-* The kart's total triangle count is not above 3000 (approximately).
+* The kart's total triangle count is not above 3000 (approximately). Under 2000 would be better.
 * Make sure mesh modifiers (mirror, subdivide, ...) are applied to the mesh objects.
 * Make sure your objects are oriented correctly : when you hit Numpad 1 on blender, you should see the back of the kart.
 * The kart should be located just above Y axis, as if it was the road (and to be clean centered on the Y and X axes).
