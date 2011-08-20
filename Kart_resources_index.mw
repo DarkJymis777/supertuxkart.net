@@ -27,7 +27,7 @@ It's also a good idea to enable [[Artist Debug Mode]]
 
 = Kart export checklist =
 
-Here is a short checklist that sum-up every important point viewed in the [[New kart tutorial]].
+Here is a short checklist that sum-up every important point viewed in the [[New kart tutorial 2|Kart tutorial]].
 
 * The kart's total triangle count is not above 3000 (approximately).
 * Make sure mesh modifiers (mirror, subdivide, ...) are applied to the mesh objects.
