@@ -58,18 +58,11 @@ The JPEG format is one of the most efficient in terms of compression, so althoug
 =Animating=
 
 STK's karts can be animated. The current karts animations in STK are : 
-* Steering, left and right : Specify the frames with markers named "left", "straight" and "right".
-* Winning animation, specified with the "start-winning", "start-winning-loop", and "end-winning" named markers. The frames between start-winning and start-winning-loop are played once, then the frames between start-winning-loop and end-winning are looped.
-* Losing animation : as the winning animation : "start-losing", "start-losing-loop" and "end-losing".
+* Steering, left and right : Specify the frames with markers named '''left''', '''straight''' and '''right'''.
+* Winning animation, specified with the '''start-winning''', '''start-winning-loop''', and '''end-winning''' named markers. The frames between start-winning and start-winning-loop are played once, then the frames between start-winning-loop and end-winning are looped.
+* Losing animation : as the winning animation : '''start-losing''', '''start-losing-loop''' and '''end-losing'''.
 
-
-New animations and markers will surely be added in future versions of STK, they might be :
-* Explosion : "start-explosion", "end-explosion",
-* Character selection screen animation,
-* etc.
-
-You can also make them, but they won't be used for the moment (and might be not used at all).
-
+[[Image:Animations.jpg|center|650px]]
 
 Meshes must be animated with skeletal animations, using blender's armatures. Note that STK will only be able to play animations if the armature is the parent object of the animated mesh in the Blender scene (you might have to remove the "armature" modifier if you used it, otherwise transformations can be applied twice to the mesh). STK supports multiples animated objects (one armature by distinct animated mesh) since the 0.7.1 version.
 
