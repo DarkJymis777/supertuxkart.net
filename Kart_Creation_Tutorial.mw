@@ -49,11 +49,11 @@ Every object in your blender scene will be exported by STK's kart exporter excep
 [[Image:TuxTexture.png|500px|thumb]]
 
 
-At this time, STK supports UV texturing (with one texture only by face) and material color. All other options set in blender's material panel will be ignored.
+At this time, STK supports UV texturing (with one texture only by face) and vertex colors. All other options set in blender's material panel will be ignored.
 
 To meet OpenGL requirements, the UV textures files must have power of two dimensions (e.g. 128x256, or 512x512). Note that here again, as this model purpose is a real-time use, textures size should not be unnecessarily too large. In general, 512x512 textures are large enough, and increasing the resolution does not change a lot the final ingame render.
 
-The JPEG format is one of the most efficient in terms of compression, so although some existing textures are in png, the jpg is the best format for the game (if you use jpeg, please keep the original lossless file!). If you need a part of your model to be transparent, or have specific properties, you can assign it a specific texture file (a tiny image is OK for a single color) or a material color, then create a custom [[Materials xml | materials.xml]] file -- that you will have to include later in the kart game folder with models and textures. Note that the material.xml file is used by STK, but not by Blender.
+The JPEG format is one of the most efficient in terms of compression, so although some existing textures are in png, the jpg is the best format for the game (if you use jpeg, please keep the original lossless file!). If you need a part of your model to be transparent, or have specific properties, you can assign it a specific texture file (a tiny image is OK for a single color) or a vertex color, then create a custom [[Materials xml | materials.xml]] file -- that you will have to include later in the kart game folder with models and textures. Note that the material.xml file is used by STK, but not by Blender.
 
 =Animating=
 
