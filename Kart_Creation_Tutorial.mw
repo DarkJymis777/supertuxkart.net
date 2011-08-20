@@ -75,7 +75,7 @@ Also, make sure every bone of your armature has a 0 roll, otherwise ingame anima
 
 The last things an STK kart needs are an icon and a shadow image.
 
-The icon should be a 64x64 png image, and should have the same design than the other STK karts icons (most of them are from [http://www.wormux.org/phpboost/gallery/gallery-4+avatars.php WorMux], adapted by [http://yeknan.free.fr/dc2/index.php?post/2010/12/22/SuperTuxKart-07 yeKcim (FR)]). A smaller version (for instance 32x32) may also be specified to be used in the in-game minimap (if you don't provide the smaller version, the 64x64 one is resized down, which may look less good than an icon crafted to be smaller).
+The icon should be a 128x128 or 64x64 png image, and should have the same design than the other STK karts icons (most of them are from [http://www.wormux.org/phpboost/gallery/gallery-4+avatars.php WorMux], adapted by [http://yeknan.free.fr/dc2/index.php?post/2010/12/22/SuperTuxKart-07 yeKcim (FR)]). A smaller version (for instance 32x32) may also be specified to be used in the in-game minimap (if you don't provide the smaller version, the 64x64 one is resized down, which may look less good than an icon crafted to be smaller).
 
 The shadow image is a png image which is applied on the ground under the karts. To be credible, it must correspond to the kart shape, otherwise the kart will seem to float above the ground. Here is a little method to get quick and fast a nice shadow : [[Kart shadow tutorial]].
 
