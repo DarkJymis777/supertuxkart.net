@@ -38,4 +38,3 @@ Alternatively you can use the CMake build system.  Even if you use CMake you mus
  cd cmake_build
  cmake ..
  make
- make install
