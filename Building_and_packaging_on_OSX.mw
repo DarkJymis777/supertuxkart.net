@@ -28,3 +28,14 @@ The release build style will automatically build a 10.4-compatible, universal ap
 Then the last step is to package libintl inside the application bundle, for this we use [http://macdylibbundler.sourceforge.net/ dylibbundler]
 
 <code>dylibbundler -b -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs/ -od -p @executable_path/../libs/</code>
+
+
+= CMake =
+Alternatively you can use the CMake build system.  Even if you use CMake you must install the dependency package as explained above.
+
+ export CMAKE_OSX_ARCHITECTURES=i386
+ mkdir cmake_build
+ cd cmake_build
+ cmake ..
+ make
+ make install
