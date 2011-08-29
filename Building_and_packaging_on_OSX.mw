@@ -31,7 +31,7 @@ Then the last step is to package libintl inside the application bundle, for this
 
 
 = CMake =
-Alternatively you can use the CMake build system.  Even if you use CMake you must install the dependency package as explained above.
+Alternatively you can use the CMake build system.  Even if you use CMake you must install the dependency package as explained above. At this time CMake will not make a binary that is ready for distribution.
 
  export CMAKE_OSX_ARCHITECTURES=i386
  mkdir cmake_build
