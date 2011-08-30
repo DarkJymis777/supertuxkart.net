@@ -18,9 +18,10 @@ Point emitters may be created like this :
     
     <material  file="explode.png"  />
     
-    <!-- Amount of particles emitted per second -->
+    <!-- Amount of particles emitted per second. -->
     <rate      min="30"
-               max="50"         />
+               max="50"
+               decay_rate="10"         />
     
     <!-- Minimal and maximal lifetime of a particle, in milliseconds. -->
     <lifetime  min="300"
@@ -48,6 +49,8 @@ Point emitters may be created like this :
 '''material file''' contains the name of the file to use for the particles; this image may either be in the global texture directory, either in the directory of the current track. Material properties for this image may be set as usual in a file called ''materials.xml'' and placed along the image.
 
 '''rate''' indicates the amount of particles that are to be emitted per second (the precise rate will randomly vary)
+
+* '''decay_rate'''=''value'' (optional) if set and greater than 0, will make the emission rate diminish by ''value'' particles per second until emission stops. Useful for bursts like explosions.
 
 '''lifetime''' indicates how long a particle lives before disappearing, here too a value will be picked randomly between min and max
 
