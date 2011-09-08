@@ -54,7 +54,9 @@ Exceptions to this are one line functions in header files:
 * It should be avoided to have more than one class in a file
 
 == Doxygen ==
-Use Doxygen comments (this is work in progress). The comments should be before the definition of the function/class/variable/... and be in the following format (Doxyfile is set up to use the first sentence as a brief description):
+Use Doxygen comments (this is work in progress). The comments for variables should be just before their declaration, and functions should be documented where they are implemented, and not where they are defined. I.e. don't document functions in the header file if they are implemented in the corresponding cpp file. Reason for this is that this way the documentation is on the screen when you debug. If you want to study the interface of a class, just look at the doxygen documentation, and all information is on one screen.
+
+The following format should be used (Doxyfile is set up to use the first sentence as a brief description):
  // -----------------------------------------------------------------------------
  /** Searches recursively through the model for any branches representing
   *  wheels. It looks for any branches having the name
