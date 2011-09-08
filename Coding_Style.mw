@@ -20,7 +20,9 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 * If possible, use a simple 'class XYZ' forward declarations instead of including the header file. This will reduce the amount of recompilation necessary when modifying files (see http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Header_File_Dependencies for more details).
 
 == Layout ==
-* 4 spaces, no tabs
+* 4 spaces for indentation
+* '''no tabs'''
+** Using tabs means that the files might be displayed differently from one editor to the next, or when viewed in a terminal. All editors have an option to use spaces instead of tabs.
 * Both the opening and the closing braces should be on a line of their own. That means:
 <pre>int main()
 {
