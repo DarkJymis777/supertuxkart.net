@@ -52,7 +52,7 @@ Exceptions to this are one line functions in header files:
 * It should be avoided to have more than one class in a file
 
 == Doxygen ==
-Use Doxygen comments (this is work in progress). The comments should be before the definition of the function/class/variable/... abd be in the following format (Doxyfile is set up to use the first sentence as a brief description):
+Use Doxygen comments (this is work in progress). The comments should be before the definition of the function/class/variable/... and be in the following format (Doxyfile is set up to use the first sentence as a brief description):
  // -----------------------------------------------------------------------------
  /** Searches recursively through the model for any branches representing
   *  wheels. It looks for any branches having the name
