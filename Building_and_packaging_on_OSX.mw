@@ -3,6 +3,12 @@ This page will explain how to build and packaged SuperTuxKart on mac OS X.
 
 Please note that this is meant for developers and '''not''' casual users. Information below are notes i gathered about building STK 0.7 with irrLicht 1.7+. For older versions of STK, see [[Building STK 06 on OSX]]
 
+<div class="outer_warning">
+    <div class="inner_msg">
+'''The provided Xcode project currently works out-of-the-box only works with Xcode 3.''' If you are using Xcode 4, especially if on OSX 10.7 Lion, you will need to tweak the project to use the 10.6 SDK, as the 10.4 SDK which the current project uses was removed by Apple in Xcode 4
+</div></div>
+
+
 = Getting Started =
 * Install developer tools, either from the OS X Install DVD or from Apple's website
 
