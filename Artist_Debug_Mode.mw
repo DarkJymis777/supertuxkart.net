@@ -14,7 +14,7 @@ Furthermore, if you encounter problems, make sure to '''run Supertuxkart from te
 
 == Enabling the debug mode ==
 
-When STK is closed, open the STK config file (on OSX, it's [HOME]/Library/Application Support/SuperTuxKart ; on Linux it's usually ~/.config/supertuxkart)
+When STK is closed, open the STK config file (on '''OSX''', it's [HOME]/Library/Application Support/SuperTuxKart ; on '''Linux''' it's usually ~/.config/supertuxkart ; on '''Windows XP''' it's C:\Documents and Settings\[USERNAME]\Application Data\supertuxkart ; on '''Windows 7''' it's C:\Users\[USERNAME]\AppData\Roaming\supertuxkart ; Notice that in Windows Application Data & AppData folder is hidden)
 
 locate the line that reads
 <pre>
