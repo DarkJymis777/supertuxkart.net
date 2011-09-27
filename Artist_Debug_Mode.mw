@@ -63,7 +63,7 @@ This is especially useful when you need to take the screenshot of your track, to
 * Ctrl+F8
 
 === View faces and normals ===
-You can cycle through several debug draw modes, namely to see polygons and normals, by pressing Ctrl+F11
+You can cycle through several debug draw modes by pressing Ctrl+F11. This will show the physics data being used in STK (including the normals).
 
 === Fly! ===
 
