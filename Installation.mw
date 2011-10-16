@@ -43,10 +43,12 @@ Check out the sources using:
 and if it's OK, you can run STK:
  supertuxkart
 
-== For Ubuntu 10.04 Lucid Lynx ==
+== For Ubuntu ==
 
 install following packages:
   apt-get install libirrlicht libogg libvorbis libopenal-dev libalut-dev subversion autotools-dev automake autoconf build-essential
+
+''note that at this time SuperTuxKart uses irrlicht trunk, so you may need to build and install irrlicht from their SVN. We hope irrlicht 1.8 will be released soon and then distributions can start including it in their repositories''
 
 do a:
  $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/ supertuxkart
