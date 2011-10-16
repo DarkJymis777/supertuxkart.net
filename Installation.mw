@@ -49,7 +49,7 @@ install following packages:
   apt-get install libirrlicht libogg libvorbis libopenal-dev libalut-dev subversion autotools-dev automake autoconf build-essential
 
 do a:
- $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/trunk/supertuxkart supertuxkart
+ $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/ supertuxkart
 then:
  $ cd supertuxkart
  $ ./autogen.sh && ./configure && make
