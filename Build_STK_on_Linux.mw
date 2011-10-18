@@ -26,6 +26,20 @@ If you have any problems with building irrlicht, please contact the irrlicht dev
 
 == Building SuperTuxKart ==
 
+As of 0.7.3, oou may use either CMake or autotools to build SuperTuxKart.
+
+=== CMake ===
+ mkdir cmake_build
+ cd cmake_build
+ cmake ..
+ make
+ # optional
+ sudo make install
+
+Our CMake build system is younger so we welcome success/failure stories :)
+
+=== Autotools ===
+
 Simply use the usual autotools build triplet :
 
  ./configure
@@ -34,7 +48,6 @@ Simply use the usual autotools build triplet :
  sudo make install
 
 (if you obtained the STK source code from SVN, you will first need to run <TT>./autogen.sh</TT>)
-
 
 == Troubleshooting ==
 
