@@ -36,6 +36,14 @@ As of 0.7.3, oou may use either CMake or autotools to build SuperTuxKart.
  # optional
  sudo make install
 
+this will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like :
+
+ cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk
+
+to make a debug build :
+
+ cmake .. -DCMAKE_BUILD_TYPE=Debug
+
 Our CMake build system is younger so we welcome success/failure stories :)
 
 === Autotools ===
