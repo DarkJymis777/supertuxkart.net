@@ -1,6 +1,6 @@
-<div class="outer_warning">
+<div class="outer_info">
     <div class="inner_msg">
-'''This page is a work in progress. Please note that Blender 2.5 support is still unstable. See [[Kart resources index]] for the stable Blender 2.4 precedure'''
+'''This page is for SuperTuxKart 0.7.3 and requires BLender 2.58 or better. See [[Kart resources index]] if you wish to make karts for SuperTuxKart 0.7.2 with Blender 2.4'''
 </div></div>
 
 This page is the index of resources about making karts for STK.
