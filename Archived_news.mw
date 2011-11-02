@@ -5,6 +5,51 @@ __NOTOC__
 |
 
 
+== SuperTuxKart 0.7.1 Release Candidate 1 ==
+
+SuperTuxKart 0.7.1 Release Candidate 1 is now available for download at https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7.1/
+
+This release features the following improvements over version 0.7 :
+* Particle  (smoke, splash, fire) and weather effects
+* New Fort Magma by Samuncle, new Shiny Suburbs track by Horace
+* Renamed many tracks to nicer names
+* Added internet news
+* Added optional minimal race UI
+* Added support for full-screen anti-aliasing
+* Support for live language switch
+* Clearer multiplayer setup
+* Basic level-of-detail (LOD) support
+* Debug features for track makers
+* Temporary invincibility after being hit
+* Replace more sounds to be DFSG-compliant
+* New Beagle kart by wolterh
+* Fixed character names that contain non-ASCII characters
+* Full RTL (right to left) support
+* Various other tweaks done and glitches fixed
+
+Note that all translators should now head over to Launchpad and make sure all translations are as complete as possible!
+
+Thanks to everyone who made this release possible!
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (April 4, 2011)
+
+== SuperTuxKart 0.7 Released ==
+
+After over a year of work, dozens upon dozens of new and fixed bugs, over 3000 commits, a lot of work from artists, restless testing from our faithful followers, and translations from contributors all over the world, we are thrilled to offer you SuperTuxKart 0.7 just in time for Christmas!
+
+This release is using irrlicht for graphics, and features:
+* new GUI
+* kart and track animations
+* new and improved tracks, karts, and items
+* shortcut/alternative way support for tracks
+* Asian fonts
+* many many bugfixes.
+
+Enjoy!
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (December 20, 2010)
+
+
+
 == SuperTuxKart 0.7 Release Candidate 2 ==
 
 We have just uploaded a second release candidate. Major changes include :
