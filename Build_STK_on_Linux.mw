@@ -2,10 +2,15 @@
 
 First of all, you will need a compiler and the autotools build system
  sudo apt-get install autoconf automake build-essential
-
+Or
+ sudo aptitude install autoconf automake build-essential
 Other needed dependencies are : openal, ogg, vorbis. For ubuntu/debian :
 
  sudo apt-get install libogg-dev libvorbis-dev libopenal-dev
+
+Or
+
+ sudo aptitude install libogg-dev libvorbis-dev libopenal-dev
 
 
 == Installing Irrlicht ==
@@ -18,7 +23,7 @@ The build environment can use irrlicht either from an installed irrlicht package
 
 ''If you leave irrlicht in its source tree and don't install it, you will need to configure STK with flag --with-irrlicht=/PATH/TO/IRRLICHT.''
 
-SuperTuxKart 0.7 should be built using irrlicht 1.7.2, and SuperTuxKart 0.7.1 using irrlicht 1.8 (trunk at the time of this writing since 1.8 stable is not yet out)
+SuperTuxKart 0.7.1 should be built using irrlicht 1.8 (trunk at the time of this writing since 1.8 stable is not yet out)
 
 If you have any problems with building irrlicht, please contact the irrlicht developers in their forum, since we most likely won't have the expertise to help with that.
 
