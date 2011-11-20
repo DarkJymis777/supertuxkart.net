@@ -19,7 +19,6 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 = Dependencies =
 * Download pre-built dependencies [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/OSX/ from here]
 * Put the frameworks in [hard disk root]/Library/Frameworks
-* Run the libintl installer if you don't already have libintl installed. (the installer will install a libintl dynamic library into /usr/local, universal binary that runs on OSX 10.4+)
 
 = SuperTuxKart =
 
