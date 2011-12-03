@@ -14,7 +14,10 @@ Point emitters may be created like this :
                y="0.005"
                z="0.000"         />
     
-    <material  file="explode.png"  />
+    <!-- The material and its properties -->
+    <materials>
+      <material name="_particle_sand.png" compositing="blend" clampu="Y" clampv="Y" ignore="Y"/>
+    </materials>
     
     <!-- Amount of particles emitted per second. -->
     <rate      min="30"
@@ -44,7 +47,9 @@ Point emitters may be created like this :
 
 '''spreading angle''' indicates by how much particles may randomly deviate from their base direction as defined by their velocity
 
-'''material file''' contains the name of the file to use for the particles; this image may either be in the global texture directory, either in the directory of the current track. Material properties for this image may be set as usual in a file called ''materials.xml'' and placed along the image.
+'''material''' contains the name of the file to use for the particles and other settings. This works starting from SuperTuxKart 0.8! STK 0.7.x users, instead use 
+ <material file="_particle_sand.png>
+and also add the file at the very top of materials.xml.
 
 '''rate''' indicates the amount of particles that are to be emitted per second (the precise rate will randomly vary)
 
