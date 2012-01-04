@@ -5,11 +5,12 @@ This page describes the build and packaging process on windows. You need Visual 
 * Download the dependency package from [http://sourceforge.net/projects/supertuxkart/files/ here]. Unzip it in the root directory, so that the .dll files will be in the root directory, and the dependencies directory is next to the src and data directory.
 * In Visual Studio open the project file src/ide/vc9/supertuxkart.sln for Visual Studio 9 or src/ide/vc10/supertuxkart.sln for Visual Studio 10.
 * Select Build->Build Solution (or press F7) to compile.
+* Press F5 to run the game in Visual Studio.
 
 That should be all. If you have any problems, please [[Community|contact us]].
 
 === Instructions for Creating the Installer ===
-Note that this step is only necessary if you want to create an installer package. To just run or debug STK, this is not necessary.
+Note that this step is only necessary if you want to create an installer package. To just run or debug STK, only the above Instructions for Compiling need to be followed.
 * Download and install NSIS.
 * Create a copy (best outside of STK) of src/windows_installer (I'll assume it will have the same name).
 * Create the directory windows_installer/supertuxkart, and copy the executable, all DLL and the data subdirectory into it (not all files from data are necessary for the windows install. Make sure to exclude all .svn files. It's usually best to use linux to install a package, and copy the files from that installation, since it will also exclude other minor files like linux desktop icons etc).
