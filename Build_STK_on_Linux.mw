@@ -53,10 +53,9 @@ to make a debug build :
 
 and finally if irrlicht is not installed system-wide :
 
- cmake .. -DIRRLICHT_DIR=/path/to/irrlicht
+ cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht
 
 Our CMake build system is younger so we welcome success/failure stories :)
-
 
 === Autotools ===
 
