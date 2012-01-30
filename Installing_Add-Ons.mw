@@ -1,0 +1,25 @@
+SuperTuxKart is able to install or uninstall add-ons on its own. This page includes details about that process, and instructions on how to install or remove add-ons either in-game or manually.
+
+== Installing Add-Ons In-Game ==
+Fixme: stub
+
+== Installing Add-Ons Manually ==
+Fixme: stub
+
+== The Add-On Storage Folder ==
+Depending on what system you are using, add-ons are installed to one of the following paths:
+
+On Windows:
+* %USERPROFILE%\AppData\Roaming\supertuxkart\addons\
+
+On Linux:
+* ~/.local/supertuxkart/addons/
+
+On Mac OS X:
+* (somebody who knows this, fill it in)
+
+
+Within this folder, the following files and subdirectories exist:
+* icons/, karts/, tmp/, tracks/, addons.xml, addons_installed.xml, news.xml
+
+As you would expect, the karts and tracks folders contain the add-on kart and track directories, respectively.
