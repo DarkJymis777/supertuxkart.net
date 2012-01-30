@@ -23,3 +23,5 @@ Within this folder, the following files and subdirectories exist:
 * icons/, karts/, tmp/, tracks/, addons.xml, addons_installed.xml, news.xml
 
 As you would expect, the karts and tracks folders contain the add-on kart and track directories, respectively.
+
+[[Category:Stkaddons]]
