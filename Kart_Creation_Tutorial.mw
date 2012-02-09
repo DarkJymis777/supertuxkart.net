@@ -43,6 +43,8 @@ Ideally, the kart has its own mesh, the character another independent mesh, and 
 [[Image:Wheel.jpg|center]]
 
 
+Note that karts can have (up to) 4 wheels. Wheels that are on the front are considered steering wheels and will automatically rotate as you steer in-game.
+
 Every object in your blender scene will be exported by STK's kart exporter except :
 * cameras,
 * lights,
