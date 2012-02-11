@@ -38,20 +38,24 @@ As of 0.7.3, you may use either CMake or autotools to build SuperTuxKart.
  cd cmake_build
  cmake ..
  make
- # optional
+
+or, if irrlicht is not installed system-wide, replace the 'cmake' part with :
+
+ cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht
+
+to make a debug build add '''-DCMAKE_BUILD_TYPE=Debug''' like this :
+
+ cmake .. -DCMAKE_BUILD_TYPE=Debug
+
+
+And to install (this is optional) :
+
  sudo make install
 
 this will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like :
 
  cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk
 
-to make a debug build :
-
- cmake .. -DCMAKE_BUILD_TYPE=Debug
-
-and finally if irrlicht is not installed system-wide :
-
- cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht
 
 Our CMake build system is younger so we welcome success/failure stories :)
 
