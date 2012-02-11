@@ -19,7 +19,7 @@ Start by installing irrlicht from your repositories if it is found there, otherw
 The latest SVN trunk of SuperTuxKart uses the trunk of irrlicht, which can be found at
  https://irrlicht.svn.sourceforge.net/svnroot/irrlicht/trunk
 
-Note that it's recommended to build irrlicht in release mode for full performance (default is debug mode)
+Go in /Source/Irrlicht inside that. Note that it's recommended to build irrlicht in release mode for full performance (default is debug mode)
 <code>NDEBUG=1 make</code>
 
 The build environment can use irrlicht either from an installed irrlicht package (e.g. in /usr/local), or directly from the irrlicht source tree. Configure should detect installation in default directories (/usr, /usr/local).
