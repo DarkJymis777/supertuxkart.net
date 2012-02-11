@@ -22,9 +22,7 @@ The latest SVN trunk of SuperTuxKart uses the trunk of irrlicht, which can be fo
 Go in /Source/Irrlicht inside that. Note that it's recommended to build irrlicht in release mode for full performance (default is debug mode)
 <code>NDEBUG=1 make</code>
 
-The build environment can use irrlicht either from an installed irrlicht package (e.g. in /usr/local), or directly from the irrlicht source tree. Configure should detect installation in default directories (/usr, /usr/local).
-
-''If you leave irrlicht in its source tree and don't install it, you will need to configure STK with flag --with-irrlicht=/PATH/TO/IRRLICHT.''
+The build environment can use irrlicht either from an installed irrlicht package (e.g. in /usr/local), or directly from the irrlicht source tree. Configure should detect installation in default directories (/usr, /usr/local). '''It is recommended not to install irrlicht to /usr or /usr/local if you build it from source. Just leave it in place, this will be cleaner.''' See below to help the build system find your irrlicht.
 
 SuperTuxKart 0.7.1 should be built using irrlicht 1.8 (trunk at the time of this writing since 1.8 stable is not yet out)
 
