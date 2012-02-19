@@ -54,7 +54,9 @@ Ideally, the kart has its own mesh, the character another independent mesh, and 
 [[Image:Wheel.jpg|center]]
 
 
-Note that karts can have (up to) 4 wheels. Wheels that are on the front are considered steering wheels and will automatically rotate as you steer in-game.
+Note that karts can have (up to) 4 wheels. Wheels that are on the front are considered steering wheels and will automatically rotate as you steer in-game. The wheel's origin in Blender is used by SuperTuxKart for the wheel movement, an incorrectly placed "origin" can cause the wheel improper movement, also you might want to make test for aesthetic purposes, mostly to fix the point from where the wheel steers. 
+
+The collision is calculated only for the vehicle mesh (assuming the character never go outside the kart), if your vehicle features big wheels is most likely these will go through other vehicles and track objects like walls or guard rails, even over fences some times so be sure to make enough tests if your vehicle has to have big wheels, like in the case of monster trucks. Contrary case, try no to make your vehicle's chassis too low, as the car would find problems with irregular terrain.
 
 Every object in your blender scene will be exported by STK's kart exporter except :
 * cameras,
