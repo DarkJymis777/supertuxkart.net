@@ -26,9 +26,17 @@ In the future, STK will support [http://en.wikipedia.org/wiki/Level_of_detail LO
 
 To know roughly the number of triangles of your mesh, you can temporarily convert your faces to triangles with Ctrl+T on Blender, or view the exported kart (see [[#Exporting karts]] to learn how to export a kart) in the selection screen of STK, with the "Show FPS" option checked -- wait a little to have a "Ktris" value.
 
-During the modeling phase, remember that the kart is made to be seen from medium and far distances, but not very close distances, so detailing it a lot may be useless as some details would only be visible in rare and precise situations. Also, it is way harder (and boring) trying to decrease the poly count of an existing high poly model than designing and modeling a low poly kart from the beginning, so it is worth keeping the poly number in mind.
+Alternatively, you can always consult the current face count of your project using Blender's "Info" panel
 
-Before the kart export, mesh modifiers need to be applied, as they won't be taken in consideration in the game.
+
+[[Image:blenderfacecount.png|center]]
+
+
+By default Blender displays the sum of all the faces from the active scene (only active layers will be taken in count): "Fa" stands for faces and "Ob" stands for the current number of elements placed at the 3D scene, if you enter in "Edit Mode" (TAB key) the counter will be displaying the number of faces of the shape you are currently editing, while no necessary it is recommended to work with "tri faces" until no further modeling is needed.
+
+During the modeling phase, remember that the kart is made to be seen from medium and far distances, but not very close distances, so detailing it a lot may be useless as some details would only be visible in rare and precise situations, a good trick is making these details part of the vehicle's texture. Also, it is way harder (and boring) trying to decrease the poly count of an existing high poly model than designing and modeling a low poly kart from the beginning, so it is worth keeping the poly number in mind.
+
+Before the kart export, mesh modifiers need to be applied, as they won't be taken in consideration in the game, also remember to apply any rotation and/or scale to your meshes for better results.
 
 ===Dimensions===
 STK's karts dimensions are approximately between 0.7x0.4 and 0.9x0.5 openGL units, so you may first choose a same ranged dimension. Then, ingame tests will be required to adjust it.
