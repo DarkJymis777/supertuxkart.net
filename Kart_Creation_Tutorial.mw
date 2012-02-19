@@ -73,6 +73,8 @@ To meet OpenGL requirements, the UV textures files must have power of two dimens
 
 The JPEG format is one of the most efficient in terms of compression, so although some existing textures are in png, the jpg is the best format for the game (if you use jpeg, please keep the original lossless file!). If you need a part of your model to be transparent, or have specific properties, you can assign it a specific texture file (a tiny image is OK for a single color) or a vertex color, then create a custom [[Materials xml | materials.xml]] file -- that you will have to include later in the kart game folder with models and textures. Note that the material.xml file is used by STK, but not by Blender.
 
+The current STK Blender plugin features a custom panel to directly edit the attributes of the textures to be used by the current project, Under the section [[SuperTuxKart Image Properties|Super Tux Kart Image Properties panel]] you can find an extensive explanation about each properties, note that for Karts you won't be needing to edit or watch over all the properties.
+
 =Animating=
 
 STK's karts can be animated. The current karts animations in STK are : 
