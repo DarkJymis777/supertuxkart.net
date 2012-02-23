@@ -70,6 +70,11 @@ Simply use the usual autotools build triplet :
 
 (if you obtained the STK source code from SVN, you will first need to run <TT>./autogen.sh</TT>)
 
+
+If irrlicht is not installed system-wide, replace the './configure' part with :
+
+ ./configure --with-irrlicht=/full/path/to/irrlicht
+
 == Troubleshooting ==
 
 Depending on whether your irrlicht build uses internal or external libpng/libjpeg dependencies, you may need to configure STK this way :
