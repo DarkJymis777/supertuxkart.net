@@ -47,6 +47,7 @@ to make a debug build add '''-DCMAKE_BUILD_TYPE=Debug''' like this :
 
  cmake .. -DCMAKE_BUILD_TYPE=Debug
 
+Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the ''Debug'' with ''RelWithDebInfo'' for that.
 
 And to install (this is optional) :
 
@@ -55,7 +56,6 @@ And to install (this is optional) :
 this will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like :
 
  cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk
-
 
 Our CMake build system is younger so we welcome success/failure stories :)
 
