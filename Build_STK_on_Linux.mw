@@ -1,6 +1,9 @@
 == Installing dependencies ==
 
 First of all, you will need a compiler and the autotools build system
+
+yum istall gcc-c++ autoconf automake libogg-deve libvorbis-devel openal-soft-devel fribidi-devel irrlicht-devel
+
  sudo apt-get install autoconf automake build-essential
 Or
  sudo aptitude install autoconf automake build-essential
@@ -11,7 +14,6 @@ Other needed dependencies are : openal, ogg, vorbis. For ubuntu/debian :
 Or
 
  sudo aptitude install libogg-dev libvorbis-dev libopenal-dev
-
 
 == Installing Irrlicht ==
 Start by installing irrlicht from your repositories if it is found there, otherwise check [http://www.irrlicht3d.org/wiki/index.php?n=Main.InstallingIrrlicht How to Install Irrlicht] from the irrlicht wiki.
