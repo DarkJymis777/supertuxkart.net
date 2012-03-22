@@ -2,7 +2,7 @@
 
 First of all, you will need a compiler and the autotools build system
 
- yum install gcc-c++ autoconf automake libogg-deve libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel irrlicht-devel
+ yum install gcc-c++ autoconf automake libogg-deve libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake irrlicht-devel
 
  sudo apt-get install autoconf automake build-essential
 Or
