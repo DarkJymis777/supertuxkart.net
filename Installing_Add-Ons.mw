@@ -13,7 +13,8 @@ On Windows:
 * %USERPROFILE%\AppData\Roaming\supertuxkart\addons\
 
 On Linux:
-* ~/.local/supertuxkart/addons/
+* <del>~/.local/supertuxkart/addons/</del>
+* /usr/share/games/supertuxkart/data/fonts
 
 On Mac OS X:
 * (somebody who knows this, fill it in)
