@@ -17,7 +17,9 @@ On Linux:
 * /usr/share/games/supertuxkart/data/tracks (for older STK versions)
 
 On Mac OS X:
-* (somebody who knows this, fill it in)
+* ~/Application Support/SuperTuxKart/addons
+
+Also see [[How_to_install_add-ons]]
 
 
 Within this folder, the following files and subdirectories exist:
