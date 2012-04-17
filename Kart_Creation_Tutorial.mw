@@ -67,7 +67,7 @@ Every object in your blender scene will be exported by STK's kart exporter excep
 [[Image:TuxTexture.png|500px|thumb]]
 
 
-At this time, STK supports UV texturing (with one texture only by face) and vertex colors. All other options set in blender's material panel will be ignored.
+At this time, STK supports UV texturing (with one texture only by face [''addendum'': STK 0.8 supports normal maps and shadow maps]) and vertex colors. All other options set in blender's material panel will be ignored.
 
 To meet OpenGL requirements, the UV textures files must have power of two dimensions (e.g. 128x256, or 512x512). Note that here again, as this model purpose is a real-time use, textures size should not be unnecessarily too large. In general, 512x512 textures are large enough, and increasing the resolution does not change a lot the final ingame render.
 
