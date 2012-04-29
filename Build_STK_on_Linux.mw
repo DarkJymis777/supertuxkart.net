@@ -5,7 +5,7 @@ First of all, you will need a compiler and the autotools build system. When buil
 * Fedora
  yum install gcc-c++ autoconf automake libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake irrlicht-devel
 * Ubuntu
- sudo apt-get install autoconf automake build-essential cmake libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev
+ sudo apt-get install autoconf automake build-essential cmake libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev
 
 == Installing Irrlicht ==
 
