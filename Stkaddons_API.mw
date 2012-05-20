@@ -1,0 +1,32 @@
+== List of Implemented Calls ==
+=== Session Management ===
+ client-user.php?action=connect&user={nick}
+ client-user.php?action=connect&user={nick}&password={password}
+ client-user.php?action=disconnect&user={nick}&id={sess-id}
+ client-user.php?action=refresh&user={nick}&id={sess-id}
+
+=== Voting ===
+ client-action.php?action=vote&user={nick}&id={sess-id}&addon_id={addon}&vote={vote}
+
+== Detailed Description of Calls ==
+=== Connect - Anonymous ===
+ client-user.php?action=connect&user={nick}
+Responses:
+ Success:
+   <?xml version="1.0"?>
+   <connection id="6350fee41faed540ddeb627e" registered="false" />
+ Failure (nick already used):
+   Nickname {nick} already used
+
+=== Connect - User ===
+ client-user.php?action=connect&user={nick}&password={password}
+Responses:
+ Success (will regenerate session if one already exists):
+   <?xml version="1.0"?>
+   <connection id="2556629a2107fd03345a3aeb" user="{user_id}" registered="true" />
+ Failure (wrong credentials):
+   Invalid credentials
+ Failure (password too short):
+   Your password must be at least %d characters long.
+ Failure (username too short):
+   Your username must be at least %d characters long.
