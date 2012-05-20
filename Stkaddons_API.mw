@@ -30,3 +30,5 @@ Responses:
    Your password must be at least %d characters long.
  Failure (username too short):
    Your username must be at least %d characters long.
+
+[[Category:Stkaddons]]
