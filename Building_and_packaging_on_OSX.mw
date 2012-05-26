@@ -3,11 +3,6 @@ This page will explain how to build and packaged SuperTuxKart on mac OS X.
 
 Please note that this is meant for developers and '''not''' casual users. Information below are notes i gathered about building STK 0.7 with irrLicht 1.7+. For older versions of STK, see [[Building STK 06 on OSX]]
 
-<div class="outer_warning">
-    <div class="inner_msg">
-'''The provided Xcode project currently works out-of-the-box only works with Xcode 3.''' If you are using Xcode 4, especially if on OSX 10.7 Lion, you will need to tweak the project to use the 10.6 SDK, as the 10.4 SDK which the current project uses was removed by Apple in Xcode 4
-</div></div>
-
 
 = Getting Started =
 * Install developer tools, either from the OS X Install DVD or from Apple's website
@@ -20,26 +15,40 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 * Download pre-built dependencies [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/OSX/ from here]
 * Put the frameworks in [hard disk root]/Library/Frameworks
 
-= SuperTuxKart =
-
-Build SuperTuxKart using the provided Xcode project (in /src/ide/)
-
-That's all! If all went well, you're ready to run STK by hitting the big green 'run' button.
-
-= Distributing =
-
-The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside.
-
-Then the last step is to package libintl inside the application bundle, for this we use [http://macdylibbundler.sourceforge.net/ dylibbundler]
-
-<code>dylibbundler -b -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs/ -od -p @executable_path/../libs/</code>
-
 
 = CMake =
-Alternatively you can use the CMake build system.  Even if you use CMake you must install the dependency package as explained above. At this time CMake will not make a binary that is ready for distribution.
+You can use the CMake build system to build STK. At this time CMake will not make a binary that is ready for distribution.
 
  export CMAKE_OSX_ARCHITECTURES=i386
  mkdir cmake_build
  cd cmake_build
  cmake ..
  make
+
+
+= Xcode =
+
+<div class="outer_warning">
+    <div class="inner_msg">
+'''The provided Xcode project currently works out-of-the-box only works with Xcode 3.''' If you are using Xcode 4, especially if on OSX 10.7 Lion, you will need to tweak the project to use the 10.6 SDK, as the 10.4 SDK which the current project uses was removed by Apple in Xcode 4
+</div></div>
+
+<div class="outer_warning">
+    <div class="inner_msg">
+'''In SVN trunk, the Xcode project may not be up to date'''. We will update it for stable releases but during development you may need to manually add/remove files that changed so that the project builds
+</div></div>
+
+
+== SuperTuxKart ==
+
+Build SuperTuxKart using the provided Xcode project (in /src/ide/)
+
+That's all! If all went well, you're ready to run STK by hitting the big green 'run' button.
+
+== Distributing ==
+
+The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside.
+
+Then the last step is to package libintl inside the application bundle, for this we use [http://macdylibbundler.sourceforge.net/ dylibbundler]
+
+<code>dylibbundler -b -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs/ -od -p @executable_path/../libs/</code>
