@@ -19,11 +19,12 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 = CMake =
 You can use the CMake build system to build STK. At this time CMake will not make a binary that is ready for distribution.
 
- export CMAKE_OSX_ARCHITECTURES=i386
- mkdir cmake_build
- cd cmake_build
- cmake ..
- make
+<code>export CMAKE_OSX_ARCHITECTURES=i386
+mkdir cmake_build
+cd cmake_build
+cmake ..
+make
+</code>
 
 
 = Xcode =
