@@ -17,9 +17,9 @@ For GNU/Linux you can see if an up-to-date package is available for your distro 
 
 Alternatively, download the binary tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
  tar -xjvf supertuxkart_bin_x86_linux.tar.bz2
- cd supertuxkart-0.6
+ cd supertuxkart-0.7.3
 and to run STK:
- run_game.sh
+ ./run_game.sh
 
 === MacOS x ===
 * The MacOS X binary can be found on our [[Downloads|downloads]] page.
@@ -36,24 +36,11 @@ and if it's OK, you can run STK:
 
 = Build the latest unstable version (from SVN) =
 Check out the sources using:
- svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/
- cd supertuxkart
- ./autogen.sh && ./configure && make
- sudo make install
-and if it's OK, you can run STK:
- supertuxkart
+ svn checkout https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/
 
-== For Ubuntu ==
+or, on Windows, use TortoiseSVN with URL https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/
 
-install following packages:
-  apt-get install libirrlicht libogg libvorbis libopenal-dev libalut-dev subversion autotools-dev automake autoconf build-essential
-
-''note that at this time SuperTuxKart uses irrlicht trunk, so you may need to build and install irrlicht from their SVN. We hope irrlicht 1.8 will be released soon and then distributions can start including it in their repositories''
-
-do a:
- $  svn co https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/ supertuxkart
-then:
- $ cd supertuxkart
- $ ./autogen.sh && ./configure && make
-and if all went well:
- $ src/supertuxkart
+Then choose your path depending on your OS :
+* [How_to_build_the_Windows_version|Windows]
+* [Build_STK_on_Linux|Linux]
+* [Building_and_packaging_on_OSX|OSX]
