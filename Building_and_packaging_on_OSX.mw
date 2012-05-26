@@ -28,10 +28,12 @@ You can use the CMake build system to build STK. At this time CMake will not mak
 
 = Xcode =
 
+
 <div class="outer_warning">
     <div class="inner_msg">
 '''The provided Xcode project currently works out-of-the-box only works with Xcode 3.''' If you are using Xcode 4, especially if on OSX 10.7 Lion, you will need to tweak the project to use the 10.6 SDK, as the 10.4 SDK which the current project uses was removed by Apple in Xcode 4
 </div></div>
+
 
 <div class="outer_warning">
     <div class="inner_msg">
