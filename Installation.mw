@@ -29,14 +29,24 @@ and to run STK:
 
 = Build from source =
 
-For '''stable versions''', you can download source code tarballs from the sourceforge downloads area.
+== Getting STK sources ==
 
-To build '''latest trunk''', check out the sources using:
-<code>svn checkout https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/</code>
+Pick either stable or development version. The latter has the latest features and fixes but might also have new bugs.
 
-or, on Windows, use TortoiseSVN with URL https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/
+=== Stable version ===
+To compile the stable version, you can download source code tarballs from the SourceForge [http://sourceforge.net/projects/supertuxkart/files/ downloads page].
 
-Then choose your path depending on your OS :
-* [[How_to_build_the_Windows_version|Windows]]
+=== Latest development version ===
+To build latest trunk, check out the sources using Subversion on Unix (Mac OS X, Linux, etc.):
+  svn checkout https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/ stk-trunk
+
+On Windows, use TortoiseSVN with following URL:
+  https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/
+
+== Platform-specific compile instructions ==
+
+After picking stable or SVN version, choose your path depending on your operating system:
+
 * [[Build_STK_on_Linux|Linux]]
-* [[Building_and_packaging_on_OSX|OSX]]
+* [[Building_and_packaging_on_OSX|Mac OS X]]
+* [[How_to_build_the_Windows_version|Windows]]
