@@ -3,9 +3,9 @@
 First of all, you will need a compiler and the autotools build system. When building the current SVN, you will also need cmake. Other dependencies you will need include openal, ogg, vorbis.
 
 * Fedora
- yum install gcc-c++ autoconf automake libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake irrlicht-devel
+<code>yum install gcc-c++ autoconf automake libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake irrlicht-devel</code>
 * Ubuntu
- sudo apt-get install autoconf automake build-essential cmake libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev
+<code>sudo apt-get install autoconf automake build-essential cmake libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev</code>
 
 == Installing Irrlicht ==
 
@@ -15,10 +15,10 @@ Start by installing Irrlicht from your repositories, if it is found there. Other
 * If you want to compile the current SVN of STK, you will need a recent Irrlicht trunk but NOT the very latest trunk (I recommend revision 4098).
 
 The SVN repository of irrlicht may be found at
- https://irrlicht.svn.sourceforge.net/svnroot/irrlicht/trunk
+<code>https://irrlicht.svn.sourceforge.net/svnroot/irrlicht/trunk</code>
 
 Go in /source/Irrlicht inside that. Note that it's recommended to build Irrlicht in release mode for full performance (default is debug mode)
- NDEBUG=1 make
+<code>NDEBUG=1 make</code>
 
 The build environment can use Irrlicht either from an installed package (e.g. in /usr/local), or directly from the source tree. CMake should automatically detect Irrlicht if it is installed in default directories (/usr, /usr/local). '''It is recommended not to install irrlicht to /usr or /usr/local if you build it from source. Just leave it in place, this will be cleaner.''' See [[#Building_SuperTuxKart|below]] to help the build system find your Irrlicht.
 
@@ -29,51 +29,55 @@ If you have any problems with building irrlicht, please contact the irrlicht dev
 As of 0.7.3, you may use either CMake or autotools to build SuperTuxKart. In the current SVN, autotools isn't actively being maintained any more. As such, use of CMake is encouraged.
 
 === CMake ===
- mkdir cmake_build
- cd cmake_build
- cmake ..
- make
+<code>mkdir cmake_build
+cd cmake_build
+cmake ..
+make
+</code>
 
 or, if Irrlicht is not installed system-wide, replace the 'cmake' part with:
 
- cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht
+<code>cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht</code>
 
 to make a debug build add '''-DCMAKE_BUILD_TYPE=Debug''' like this:
 
- cmake .. -DCMAKE_BUILD_TYPE=Debug
+<code>cmake .. -DCMAKE_BUILD_TYPE=Debug</code>
 
 Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the ''Debug'' with ''RelWithDebInfo'' for that.
 
 And (optionally) to install:
 
- sudo make install
+<code>sudo make install</code>
 
 this will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like:
 
- cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk
+<code>cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk</code>
 
 Our CMake build system is younger so we welcome success/failure stories :)
+
 
 === Autotools ===
 
 ''Note: This method is not actively being maintained in the current SVN. While it will often still work, the use of cmake is strongly advised.''
 
 Simply use the usual autotools build triplet :
+<code>./configure
+make
+</code>
 
- ./configure
- make
- # optional
- sudo make install
+and optionally
+
+<code>sudo make install</code>
 
 (if you obtained the STK source code from SVN, you will first need to run <TT>./autogen.sh</TT>)
 
 
 If irrlicht is not installed system-wide, replace the './configure' part with :
 
- ./configure --with-irrlicht=/full/path/to/irrlicht
+<code>./configure --with-irrlicht=/full/path/to/irrlicht</code>
 
 == Troubleshooting ==
 
 Depending on whether your irrlicht build uses internal or external libpng/libjpeg dependencies, you may need to configure STK this way :
 
- ./configure LDFLAGS="-lpng -ljpeg -lbz2"
+<code>./configure LDFLAGS="-lpng -ljpeg -lbz2"</code>
