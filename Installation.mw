@@ -41,6 +41,6 @@ Check out the sources using:
 or, on Windows, use TortoiseSVN with URL https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/
 
 Then choose your path depending on your OS :
-* [How_to_build_the_Windows_version|Windows]
-* [Build_STK_on_Linux|Linux]
-* [Building_and_packaging_on_OSX|OSX]
+* [[How_to_build_the_Windows_version|Windows]]
+* [[Build_STK_on_Linux|Linux]]
+* [[Building_and_packaging_on_OSX|OSX]]
