@@ -39,11 +39,15 @@ or, if Irrlicht is not installed system-wide, replace the 'cmake' part with:
 
 <code>cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht</code>
 
-to make a debug build add '''-DCMAKE_BUILD_TYPE=Debug''' like this:
+Note: if Irrlicht is installed system-wide, it may sometimes be necessary to also add <tt>-DIRRLICHT_INCLUDE_DIR</tt>. This would then be set to the <tt>include</tt> directory in your Irrlicht directory, eg
+
+<code>cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht -DIRRLICHT_INCLUDE_DIR=/full/path/to/irrlicht/include</code>
+
+to make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this:
 
 <code>cmake .. -DCMAKE_BUILD_TYPE=Debug</code>
 
-Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the ''Debug'' with ''RelWithDebInfo'' for that.
+Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that.
 
 And (optionally) to install:
 
@@ -54,7 +58,6 @@ this will install in /usr/local. If you want to install somewhere else, replace 
 <code>cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk</code>
 
 Our CMake build system is younger so we welcome success/failure stories :)
-
 
 === Autotools ===
 
