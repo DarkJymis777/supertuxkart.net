@@ -6,21 +6,19 @@ Download the latest binary from our [[Downloads|Download]] page. It comes with a
 
 == Linux ==
 For GNU/Linux you can see if an up-to-date package is available for your distro - depending on distro try:
-* apt-get install supertuxkart
-* aptitude install supertuxkart
-* or for Fedora:  yum install supertuxkart
-* or for Gentoo  emerge supertuxkart
-* or for [http://distrowatch.com/table.php?distribution=uhu UHU] get it at http://uhu.linux.hu/
+* Debian-based (Ubuntu, Mint, ...): <tt>apt-get install supertuxkart</tt>
+* Fedora:  <tt>yum install supertuxkart</tt>
+* Gentoo  <tt>emerge supertuxkart</tt>
 * For SuSE Linux / openSUSE, you can add the games:/action repository and then install supertuxkart using your favourite tool (YaST, rug, zen-installer, zypper, smart). SuperTuxKart is built for SuSE i586 and x86_64. There are 2 known repositories:
 **http://ftp-1.gwdg.de/pub/opensuse/repositories/games:/action/ then browse to your Linux Version.
 **http://download.opensuse.org/repositories/games:/arcade/.
 
-Alternatively, download the binary tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area]
+In case your distro does not have STK in their repositories, you can always try to download the binary tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area], then unpack
 <code>tar -xjvf supertuxkart_bin_x86_linux.tar.bz2
 cd supertuxkart-0.7.3
 </code>
 
-and to run STK:
+and finally run STK:
 <code>./run_game.sh</code>
 
 == MacOS x ==
