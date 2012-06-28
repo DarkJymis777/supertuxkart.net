@@ -39,9 +39,9 @@ or, if Irrlicht is not installed system-wide, replace the 'cmake' part with:
 
 <code>cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht</code>
 
-Note: if Irrlicht is installed system-wide, it may sometimes be necessary to also add <tt>-DIRRLICHT_INCLUDE_DIR</tt>. This would then be set to the <tt>include</tt> directory in your Irrlicht directory, eg
+Note: if Irrlicht is installed system-wide, it may sometimes be necessary to also add <tt>-DIRRLICHT_INCLUDE_DIR</tt> and <tt>-DIRRLICHT_LIBRARY</tt>. This would then be set to the <tt>include</tt> directory in your Irrlicht directory, eg
 
-<code>cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht -DIRRLICHT_INCLUDE_DIR=/full/path/to/irrlicht/include</code>
+<code>cmake .. -DIRRLICHT_DIR=/full/path/to/irrlicht -DIRRLICHT_INCLUDE_DIR=/full/path/to/irrlicht/include -DIRRLICHT_LIBRARY=/full/path/to/irrlicht/lib/Linux/libIrrlicht.a</code>
 
 to make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this:
 
