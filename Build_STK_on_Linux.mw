@@ -12,7 +12,7 @@ First of all, you will need a compiler and the autotools build system. When buil
 Start by installing Irrlicht from your repositories, if it is found there. Otherwise check out [http://www.irrlicht3d.org/wiki/index.php?n=Main.InstallingIrrlicht How to Install Irrlicht] from the Irrlicht wiki.
 
 * SuperTuxKart 0.7.3 should be built using Irrlicht trunk revision 3843.
-* If you want to compile the current SVN of STK, you will need a recent Irrlicht trunk but NOT the very latest trunk (I recommend revision 4250).
+* If you want to compile the current SVN of STK, you will need a recent revision of Irrlicht from their SVN. Either try latest, or if that fails try revision 4256 which should work at the moment of writing this.
 
 The SVN repository of irrlicht may be found at
 <code>https://irrlicht.svn.sourceforge.net/svnroot/irrlicht/trunk</code>
