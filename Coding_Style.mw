@@ -10,9 +10,9 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 
 == Including files ==
 * In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header has no hidden dependencies). Then include:
-** system files and STL,
-** external libraries used by STK (plib, openal, ...),
-** libraries that are included with the STK source code (bullet, enet),
+** System files and STL,
+** External libraries used by STK (plib, openal, ...),
+** Libraries that are included with the STK source code (bullet, enet),
 ** STK header files.
 ** Sort the STK specific header files alphabetically - first files in src, then the files from the different subdirs. This makes it much easier to spot if a file is included more than once.
 * Use a #ifdef header guard in the following form to protect against multiple include:  HEADER_FILE_NAME_HPP. I.e. HEADER_ followed by the filename in all caps, with "." replaced by "_".
