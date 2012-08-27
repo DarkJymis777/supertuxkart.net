@@ -6,4 +6,4 @@ You may obtain the media repository by obtaining URL
 Under Unix, the checkout command-line would look like :
 <code>svn checkout https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/media/trunk stk_media_repo</code>
 
-You can also browse it online [http://supertuxkart.svn.sourceforge.net/viewvc/supertuxkart/media/trunk/ at sourceforge using ViewVC]
+You can also browse it online [http://supertuxkart.svn.sourceforge.net/viewvc/supertuxkart/media/trunk/ at sourceforge using ViewVC].
