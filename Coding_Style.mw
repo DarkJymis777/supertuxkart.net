@@ -1,4 +1,4 @@
-This is our preferred coding style. It was inspired by googles coding style at http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml, but this set is only a small subset of it. Currently, not all our sources are following this style, and we welcome any patches that improves this.
+This is our preferred coding style. It was inspired by Google's coding style at http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml, but this set is only a small subset of it. Currently, not all our sources are following this style, and we welcome any patches to improve this.
 
 Most of the sources follow this coding style, and the rest is being re-styled as we continue development.
 
