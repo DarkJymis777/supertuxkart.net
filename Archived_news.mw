@@ -10,22 +10,22 @@ __NOTOC__
 SuperTuxKart 0.7.1 Release Candidate 1 is now available for download at https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7.1/
 
 This release features the following improvements over version 0.7 :
-* Particle  (smoke, splash, fire) and weather effects
-* New Fort Magma by Samuncle, new Shiny Suburbs track by Horace
-* Renamed many tracks to nicer names
-* Added internet news
-* Added optional minimal race UI
-* Added support for full-screen anti-aliasing
-* Support for live language switch
-* Clearer multiplayer setup
-* Basic level-of-detail (LOD) support
-* Debug features for track makers
-* Temporary invincibility after being hit
-* Replace more sounds to be DFSG-compliant
-* New Beagle kart by wolterh
-* Fixed character names that contain non-ASCII characters
-* Full RTL (right to left) support
-* Various other tweaks done and glitches fixed
+* Particle  (smoke, splash, fire) and weather effects.
+* New Fort Magma by Samuncle, new Shiny Suburbs track by Horace.
+* Renamed many tracks to nicer names.
+* Added internet news.
+* Added optional minimal race UI.
+* Added support for full-screen anti-aliasing.
+* Support for live language switch.
+* Clearer multiplayer setup.
+* Basic level-of-detail (LOD) support.
+* Debug features for track makers.
+* Temporary invincibility after being hit.
+* Replace more sounds to be DFSG-compliant.
+* New Beagle kart by wolterh.
+* Fixed character names that contain non-ASCII characters.
+* Full RTL (right to left) support.
+* Various other tweaks done and glitches fixed.
 
 Note that all translators should now head over to Launchpad and make sure all translations are as complete as possible!
 
@@ -38,12 +38,12 @@ Thanks to everyone who made this release possible!
 After over a year of work, dozens upon dozens of new and fixed bugs, over 3000 commits, a lot of work from artists, restless testing from our faithful followers, and translations from contributors all over the world, we are thrilled to offer you SuperTuxKart 0.7 just in time for Christmas!
 
 This release is using irrlicht for graphics, and features:
-* new GUI
-* kart and track animations
-* new and improved tracks, karts, and items
-* shortcut/alternative way support for tracks
-* Asian fonts
-* many many bugfixes.
+* New GUI.
+* Kart and track animations.
+* New and improved tracks, karts, and items.
+* Shortcut/alternative way support for tracks.
+* Asian fonts.
+* Many, many bugfixes.
 
 Enjoy!
 [[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (December 20, 2010)
@@ -55,7 +55,7 @@ Enjoy!
 We have just uploaded a second release candidate. Major changes include :
 
 * Asian fonts are now included in the package.
-* Several memory leaks have been fixed (which had caused problems with music and sound effects)
+* Several memory leaks have been fixed (which had caused problems with music and sound effects).
 * Some tracks were improved to disable unintentional shortcuts and incorrect rescues.
 * Some minor bug fixes.
 
@@ -68,20 +68,20 @@ Cheers,
 
 == SuperTuxKart 0.7 release candidate 1 ==
 After a burst of changes and fixes in the last few days we have finally released a first release candidate for 0.7:
-http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7/
+http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7/.
 
 The changes compared to 0.6.2a are too numerous to list, main points would be:
-* New graphics engine
-* New GUI
-* Kart and track animations
-* New and improved tracks, karts, and items
-* Shortcut/alternative way support for tracks
+* New graphics engine.
+* New GUI.
+* Kart and track animations.
+* New and improved tracks, karts, and items.
+* Shortcut/alternative way support for tracks.
 
 Compared to 0.7alpha3 challenges, unlocking etc. should all work now (though there is still a debug icon in the menu, which will be removed before the final release :oops: ).
 
 The one thing missing are translations - since we added strings even in the last week, the translations are not up-to-date yet. If you want to help out with translations have a look at our wiki page: we are basically using launchpad, details are at http://supertuxkart.sourceforge.net/Translating_STK.
 
-Feedback as always is welcome - be it here, or bugs in our tracker 
+Feedback as always is welcome - be it here, or bugs in our tracker.
 
 Cheers,
 
@@ -90,7 +90,7 @@ Cheers,
 
 == SuperTuxKart 0.7 alpha 3 released ==
 
-In a bit of a rush, we finally managed to get a third alpha release of the upcoming 0.7 release out. You can download binary packages for Windows and Mac from the usual location at http://sourceforge.net/projects/supertuxkart/files/
+In a bit of a rush, we finally managed to get a third alpha release of the upcoming 0.7 release out. You can download binary packages for Windows and Mac from the usual location at http://sourceforge.net/projects/supertuxkart/files/.
 
 If you are compiling stk yourself note that it is recommended to use the current "1.7 stable" irrlicht branch, see [http://irrlicht.svn.sourceforge.net/viewvc/irrlicht/branches/releases/1.7 the branch in irrlicht's SVN repository] (which will become the next 1.7.2 release). While STK mostly still works with irrlicht 1.7.1, bugs in this irrlicht version can result in some texts not being displayed, and even in crashes (mostly in menus though).
 
@@ -110,7 +110,7 @@ This version shows very much work in progress, but we are getting closer to a re
 * The game may not allow you to configure bindings for gamepads other than the first one.
 * The "slipstream" (follow behind a kart for a while with the slipstream effect showing, and you will get a zipper-like boost) and quick-start feature (press start very quickly _after_ 'GO') need tweaks.
 
-We are looking forward to feedback, bug reports (please check with our bug tracker at http://sourceforge.net/tracker/?group_id=202302&atid=981038 first), suggestions (though we are pretty much feature frozen for 0.7), and some contributions :)
+We are looking forward to feedback, bug reports (please check with our bug tracker at http://sourceforge.net/tracker/?group_id=202302&atid=981038 first), suggestions (though we are pretty much feature frozen for 0.7), and some contributions :)  .
 
 Enjoy!
 
@@ -120,14 +120,14 @@ Enjoy!
 
 Hi all,
 
-we have just released a 2nd alpha release of SuperTuxKart 0.7. This
+We have just released a 2nd alpha release of SuperTuxKart 0.7. This
 version has a lot of improvements and bug fixes, more tracks, some new
 icons and animations. It is still pretty much work in progress, and we
 would love to get some feedback - e.g. does it work for you,
 performance, do you like the new icon style or prefer the old one, bug
 reports etc. Note that due to the missing tracks  GPs and challenges
 will not work, and you will get a lot of warnings/error messages printed
-- so please don't report issues related to challenges or GP not working ;)
+- so please don't report issues related to challenges or GP not working ;)  .
 
 We would also hope that people could help us to port more tracks - it's
 not that much work, and would help us to get SuperTuxKart back to where
@@ -136,7 +136,7 @@ would be nice - and of course always more tracks.
 
 Enjoy!
 
-'''Downloads''' can be found at sourceforge : https://sourceforge.net/projects/supertuxkart/
+'''Downloads''' can be found at sourceforge : https://sourceforge.net/projects/supertuxkart/.
 
 --[[User:Hiker|Hiker]] 29 April 2010
 
@@ -152,9 +152,9 @@ is headed, but is not meant to be used to play.
 
 '''Bugs'''
 Before reporting any bug, make sure to check the list of known TODOs at
-the following wiki page : [http://supertuxkart.sourceforge.net/ToDo#To_do_on_trunk_before_0.7_is_about_feature-complete]
+the following wiki page : [http://supertuxkart.sourceforge.net/ToDo#To_do_on_trunk_before_0.7_is_about_feature-complete].
 
-For more information, take a look at the [http://forum.freegamedev.net/viewtopic.php?f=17&t=117 forum thread]
+For more information, take a look at the [http://forum.freegamedev.net/viewtopic.php?f=17&t=117 forum thread].
 
 == Bugfix for Windows Vista: SuperTuxKart 0.6.2a ==
 SuperTuxKart 0.6.2a fixes the problem that STK needed to be run as administrator in Windows Vista. There are no other changes, so no need to update if you are not on Windows Vista. If you have already used 0.6.2 you can just download a new windows binary and replace the old one.
@@ -169,11 +169,11 @@ We have released SuperTuxKart 0.6.2 which fixes some bugs in the previous releas
 == New Website ==
 SuperTuxKart just got a new look!
 
-Hopefully you enjoy the renewed appearance. If you have any concerns, don't hesitate to give feedback, the website is still to evolve =)
+Hopefully you enjoy the renewed appearance. If you have any concerns, don't hesitate to give feedback, the website is still to evolve =)  .
 
 Thanks to Tom Jenkins from <del cite="http://tntwebmedia.com/blog/2009-05-22/rebirth">http://www.icecubewebdesign.co.uk/</del> <ins>http://www.tntwebmedia.com</ins> for designing this new look.
 
-Hint: From the sound of the discussions, we might take inspiration from this new look to design the GUI of SuperTuxKart 0.7
+Hint: From the sound of the discussions, we might take inspiration from this new look to design the GUI of SuperTuxKart 0.7.
 
 --[[User:Auria|Auria]] 15:09, 6 April 2009 (UTC)
 
@@ -188,7 +188,7 @@ SuperTuxKart version 0.6.1. fixes some minor bugs of the 0.6 release, adds a new
 --[[User:Hiker|Hiker]] 02:06, 18 February 2009 (UTC)
 
 == SuperTuxKart development blog ==
-We now have a dedicated [http://supertuxkart.blogspot.com/ SuperTuxKart blog]. Arthur will report about latest developments of STK - so if you want to know what's currently happening, go and have a look. The developers might add a technical entry now and again as well :)
+We now have a dedicated [http://supertuxkart.blogspot.com/ SuperTuxKart blog]. Arthur will report about latest developments of STK - so if you want to know what's currently happening, go and have a look. The developers might add a technical entry now and again as well :)  .
 
 --[[User:Hiker|Hiker]] 01:35, 5 February 2009 (UTC)
 
@@ -201,8 +201,8 @@ We have finally released SuperTuxKart 0.6. New in this version are improved phys
 
 == '''SuperTuxKart 0.6 gameplay-video''' ==
 I've created a gameplay-video of STK 0.6 and uploaded it to both vimeo and youtube. You may use it on your blogs and news to advertise the upcoming release. Sorry for not embedding it here, but i don't feel like installing extensions to our wiki for that.
-Youtube (low quality): [http://de.youtube.com/watch?v=Crn-VMUkg6w]
-Vimeo (higher quality): [http://www.vimeo.com/2891554]
+Youtube (low quality): [http://de.youtube.com/watch?v=Crn-VMUkg6w].
+Vimeo (higher quality): [http://www.vimeo.com/2891554].
 
 --[[User:Conso|Conso]] 20:25, 20 January 2009 (UTC)
 
@@ -279,32 +279,32 @@ When I was working in the wiki, I deleted all the skins (except the classic skin
 |
 '''July 2007:''' The 0.3 release is finally out. The most important news items:
 
-* Highscore lists
-* Fullscreen support
-* A new track: The Island
-* A new character: Hexley
-* A new penalty: a bomb
-* Two new Grand Prix (a volcano and an island Grand Prix)
+* Highscore lists.
+* Fullscreen support.
+* A new track: The Island.
+* A new character: Hexley.
+* A new penalty: a bomb.
+* Two new Grand Prix (a volcano and an island Grand Prix).
 * Improved user interface
-* Improved AI
-* new documentation (including a cover for a DVD case) in English, German, and French (available as separate download)
-* And bugfixes
+* Improved AI.
+* New documentation (including a cover for a DVD case) in English, German, and French (available as separate download).
+* And bugfixes.
 |-
 |
 SuperTuxKart is an enhanced version of TuxKart, a kart racing game, originally done by Steve Baker, featuring Tux and a bunch of his friends. SuperTuxKart is the work of the GotM run for TuxKart at  happypenguin.org. It was recently picked up by a new pair of maintainers.
 
 '''September 2006:''' We finally published a first official release: version 0.2. This version is the first playable version, and (among other things) contains the following updates compared to the last GotM version of SuperTuxKart:
 
-* performance improvements
-* significant stronger computer controlled karts (which do not cheat anymore)
-* several grand prix
-* two new collectables (anchor and anvil)
+* Performance improvements.
+* Significant stronger computer controlled karts (which do not cheat anymore).
+* Several grand prix.
+* Two new collectables (anchor and anvil).
 
 Compared with the original TuxKart the following improvements were done by the GotM team:
 
-* new characters
-* new tracks
-* a completly new interface
-* some smaller graphical improvements (animated wheels, etc.)
+* New characters.
+* New tracks.
+* A completely new interface.
+* Some smaller graphical improvements (animated wheels, etc.).
 |-
 |}
