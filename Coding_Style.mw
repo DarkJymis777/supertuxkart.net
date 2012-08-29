@@ -85,5 +85,4 @@ The following format should be used (Doxyfile is set up to use the first sentenc
 * Type(including classes/struct/enum) names have all their words capitalized. Example: KartControl.
 * Use true/false instead of TRUE/FALSE. In [http://lists.kde.org/?l=kde-devel&m=111737503228222&w=2] it's written that uppercase booleans are used only for older compilers, so we should try to avoid this inconsistency.
 * Use std::string instead of char*. If you need a C-style string, use the function std::string.c_str(). However, there are cases when this cannot be avoided(like when using strings with gettext).
-* Instead of using ulList or other plib container classes, use stl containers like vector (or once we switched to irrlicht the corresponding irrlicht classes, which can have better performance than STL classes).
 * Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h).
