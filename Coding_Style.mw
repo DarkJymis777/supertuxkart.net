@@ -11,7 +11,7 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 == Including files ==
 * In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header has no hidden dependencies). Then include:
 ** System files and STL,
-** External libraries used by STK (plib, openal, ...),
+** External libraries used by STK (Irrlicht, OpenAL, ...),
 ** Libraries that are included with the STK source code (bullet, enet),
 ** STK header files.
 ** Sort the STK specific header files alphabetically - first files in src, then the files from the different subdirs. This makes it much easier to spot if a file is included more than once.
