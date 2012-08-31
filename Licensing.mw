@@ -25,8 +25,9 @@ Our license of choice is Creative-Commons-By-SA 3+.
 
 '''These licenses are acceptable''' : CC-BY 3.0, CC-BY-SA 3.0, GPL, LGPL, Apache License, Mozilla License, Artistic, MIT, BSD License, X11 license, CC0 (Public Domain)
 
+'''Licenses that can be used as a base for derivative works''' : CC-BY 2.0 / 2.5, CC-BY-SA 2.0 / 2.5. If you find an image released under this license, it is NOT acceptable to use this image directly in your work, however you are allowed to make a ''significant'' modification to it (for instance crop it and make it repeatable to build a texture) then you are allowed to release your modified version of the image under the same license, version 3.0, which is accepted. What constitutes a significant modification is open for lawyers to debate upon but as long as your modified version does not look like a copy of the original we won't be picky.
 
-'''These licenses are NOT acceptable''' : CC-BY 2.5 or before, CC-BY-SA 2.5 or before, GNU Free Documentation License, Creative Commons Sampling Plus, any Creative Commons with the "Non-Commercial" clause, any Creative Commons with the "No Derivatives" clause, Free Art License, [http://www.cgtextures.com/ CGTextures License], [http://imageafter.com Image*After Terms], [http://mayang.com/textures Mayang license], [http://texturearchive.com TextureArchive Terms], "Creative Commons" alone without a version number or without full name
+'''These licenses are NOT acceptable''' : GNU Free Documentation License, Creative Commons Sampling Plus, any Creative Commons with the "Non-Commercial" clause, any Creative Commons with the "No Derivatives" clause, Free Art License, [http://www.cgtextures.com/ CGTextures License], [http://imageafter.com Image*After Terms], [http://mayang.com/textures Mayang license], [http://texturearchive.com TextureArchive Terms], "Creative Commons" alone without a version number or without full name
 
 
 For other licenses, we need to check on a case-by-case basis
