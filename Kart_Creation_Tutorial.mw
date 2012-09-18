@@ -45,6 +45,15 @@ Note that currently, kart physics depends on the dimensions of the models, but t
 ===Transformations===
 Before being exported, the kart must be located as if the Y-axis was the road, and have a 0 X and Z translation (this last part may not be required, but this is cleaner like this ;). Also, when you hit Numpad 1 in Blender, you should see the back of the kart. The final model's rotation must be 0, and its scale 1 in object mode.
 
+<div class="outer_warning">
+    <div class="inner_msg">
+'''When preparing the mesh and armature make sure they both have a rotation of (0,0,0)''' to avoid problems. We're working on resolving these issues but for now please bear with limitations of the exporter.
+
+
+If you need to fix an already rigged model, it's not too late, you can do the following : reset the rotation on the armature to (0,0,0), unparent the mesh from the armature (select ''Keep transformation''), invoke '''apply rotation''' on the mesh, reparent the mesh and armature.
+    </div>
+</div>
+
 
 [[Image:vehiceplacement.png|center]]
 
