@@ -3,6 +3,8 @@ This page will explain how to build and packaged SuperTuxKart on mac OS X.
 
 Please note that this is meant for developers and '''not''' casual users. Information below are notes i gathered about building STK 0.7 with irrLicht 1.7+. For older versions of STK, see [[Building STK 06 on OSX]]
 
+'''Note''' : building on OSX 10.7 is a little more painful because the compiler provided by Apple wants really hard to make 64-bits binaries but the dependencies pack I provide is 32-bits for backwards compatibility. If you want to compile on 10.7, you will need to either convince the compiler to produce 32-bits binaries, either produce a 64-bits dependency pack
+
 
 = Getting Started =
 * Install developer tools, either from the OS X Install DVD or from Apple's website
