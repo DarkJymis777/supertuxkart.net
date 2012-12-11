@@ -2,7 +2,7 @@ Note that these instructions apply to STK versions more recent that 0.8 alpha. I
 
 <div class="outer_info">
     <div class="inner_msg">
-'''If you are a packager making a package for a Linux distribution''', please do '''not''' try to modify our build system to use system versions of bullet and irrlicht. In both cases we use a specific and/or modified version of the library, and linking STK against the system library will only introduce into SuperTuxKart. thanks
+'''If you are a packager making a package for a Linux distribution''', please do '''not''' try to modify our build system to use system versions of bullet and irrlicht. In both cases we use a specific and/or modified version of the library, and linking STK against the system library will only introduce bugs into SuperTuxKart. thanks
 </div></div>
 
 
