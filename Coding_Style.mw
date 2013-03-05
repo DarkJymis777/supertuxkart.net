@@ -10,14 +10,14 @@ Most of the sources follow this coding style, and the rest is being re-styled as
 
 == Including files ==
 * In file XX.cpp first include the corresponding XX.hpp file if available (this guarantees that the header has no hidden dependencies). Then include:
-** System files and STL,
-** External libraries used by STK (Irrlicht, OpenAL, ...),
-** Libraries that are included with the STK source code (bullet, enet),
 ** STK header files.
+** Libraries that are included with the STK source code (bullet, enet, irrlicht),
+** External libraries used by STK (OpenAL, ...),
+** System files and STL,
 ** Sort the STK specific header files alphabetically - first files in src, then the files from the different subdirs. This makes it much easier to spot if a file is included more than once.
 * Use a #ifdef header guard in the following form to protect against multiple include:  HEADER_FILE_NAME_HPP. I.e. HEADER_ followed by the filename in all caps, with "." replaced by "_".
 * Even when including a .hpp file that is in the same subdir (say gui/menu_manager.hpp in gui/char_sel.cpp), use the path including the subdir, i.e.:<pre> #include "gui/menu_manager.hpp"</pre>and not<pre> #include "menu_manager.hpp"</pre>This makes it easier to move files into different directories.
-* If possible, use a simple 'class XYZ' forward declarations instead of including the header file. This will reduce the amount of recompilation necessary when modifying files (see http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Header_File_Dependencies for more details).
+* If possible, use a simple 'class XYZ' forward declarations instead of including the header file. This will reduce the amount of recompilation necessary when modifying files (see http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Header_File_Dependencies for more details). Even if this means that small functions that could be inlined are moved from the header file to the cpp file (unless it's a time critical function).
 
 == Layout ==
 * 4 spaces for indentation
