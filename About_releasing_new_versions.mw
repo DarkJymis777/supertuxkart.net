@@ -45,6 +45,9 @@ Upload packages, then :
 * Update the Downloads Page
 * Update the default file settings at sourceforge
 
+For binary packages (esp. linux):
+* Don't include INSTALL, it confuses people
+
 == Naming scheme for packages ==
 All files released on the STK web page should use the following naming scheme:
 
