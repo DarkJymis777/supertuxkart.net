@@ -29,6 +29,14 @@ make
 </code>
 
 
+alternatively, to make a build backwards compatible with OSX 10.5 (this will likely need to be done from 10.6, I don't think making builds that far backwards compatible is possible under 10.7+)
+<code>export CMAKE_OSX_ARCHITECTURES=i386
+mkdir cmake_build
+cd cmake_build
+cmake .. -DCMAKE_OSX_SYSROOT=/Developer/SDKs/MacOSX10.5.sdk/ -DCMAKE_OSX_DEPLOYMENT_TARGET=10.5
+make
+</code>
+
 = Xcode =
 
 
