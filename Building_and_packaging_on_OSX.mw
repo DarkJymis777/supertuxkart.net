@@ -21,6 +21,16 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 = CMake =
 You can use the CMake build system to build STK. At this time CMake will not make a binary that is ready for distribution.
 
+'''Building on 10.7''' (and hopefully 10.8, but I can't test on this system)
+<code>mkdir cmake_build
+cd cmake_build
+cmake .. -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_C_COMPILER=/usr/bin/gcc
+make
+</code>
+
+
+
+'''Building on 10.6'''
 <code>export CMAKE_OSX_ARCHITECTURES=i386
 mkdir cmake_build
 cd cmake_build
@@ -28,7 +38,7 @@ cmake ..
 make
 </code>
 
-
+'''Building on 10.6 with compatibility for 10.5'''
 alternatively, to make a build backwards compatible with OSX 10.5 (this will likely need to be done from 10.6, I don't think making builds that far backwards compatible is possible under 10.7+)
 <code>export CMAKE_OSX_ARCHITECTURES=i386
 mkdir cmake_build
