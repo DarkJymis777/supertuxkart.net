@@ -1,0 +1,19 @@
+Splatting is supported from SuperTuxKart 0.8. This article, however, is for STK 0.8.1 or better
+
+
+
+Setup a mesh with 2 UV layers.
+
+[[Image:Splatting.jpg]]
+
+
+
+On the first layer, texture the mesh. This layer will have two uses :
+* It determines the UV layout that will be used, no matter if splatting is activated or no. Therefore, make sure the UV layout is continuous on areas where there should be smooth transitions.
+* The textures selected on this first layer will be used when the user does not support shaders. Therefore, you can assign a texture to each face so that users who have shaders disabled will see an acceptable fallback,
+
+
+
+On the second layer, place a splatting map. You can draw red, green, blue and black. Then configure the splatting texture in the materials properties and assign a texture to each color
+
+[[Image:splatconfig.jpg]]
