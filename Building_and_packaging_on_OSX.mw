@@ -70,11 +70,3 @@ make
 Build SuperTuxKart using the provided Xcode project (in /src/ide/)
 
 That's all! If all went well, you're ready to run STK by hitting the big green 'run' button.
-
-== Distributing ==
-
-The release build style will automatically build a 10.4-compatible, universal app bundle with data and frameworks inside.
-
-Then the last step is to package libintl inside the application bundle, for this we use [http://macdylibbundler.sourceforge.net/ dylibbundler]
-
-<code>dylibbundler -b -x ./SuperTuxKart.app/Contents/MacOS/supertuxkart -d ./SuperTuxKart.app/Contents/libs/ -od -p @executable_path/../libs/</code>
