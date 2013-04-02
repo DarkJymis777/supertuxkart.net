@@ -21,6 +21,9 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 = CMake =
 You can use the CMake build system to build STK. At this time CMake will not make a binary that is ready for distribution.
 
+'''Note''' : due to a factor that eludes me, Objective-C++ does not compile correctly. If you get errors in CIrrDeviceMacOSX.mm, you may need to comment out the @try and @catch statements
+
+
 '''Building on 10.7''' (and hopefully 10.8, but I can't test on this system)
 <code>mkdir cmake_build
 cd cmake_build
