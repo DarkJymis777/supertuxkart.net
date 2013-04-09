@@ -5,6 +5,135 @@ __NOTOC__
 |
 
 
+
+== SuperTuxKart 0.7.3 released ==
+
+4 months after SuperTuxKart 0.7.2, 128 tickets later and a truckload of changes, we are proud to present the latest and greatest version, '''SuperTuxKart 0.7.3'''. The big surprise is the very late-minute inclusion of the very beautiful Minigolf track by Mac, thanks for the contribution! (Don't let its childish look trick you however as it is a very challenging track :)
+
+The biggest changes since 0.7.2 include :
+* New Minigolf track
+* New Zen Garden track
+* New Subsea track
+* New Island battle arena
+* New Suzanne kart
+*    New graphical effects
+*    New weapons 'Swatter' and 'Rubber Ball'
+*    Added Thunderbird as race referee
+*    3 Strikes Battles now displays lives as spare tires
+*    Improved bubble gum
+*    See progression during Grand Prix
+*    Improve physics for tall karts (e.g. Adiumy)
+*    Lots of bug fixes
+*    Improved kart control at high speeds
+*    Better placement of rescued karts
+*    Transition track-making to blender 2.5/2.6
+
+
+So now head to our downloads page, enjoy and give us a lot of feedback on the forum!
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]] (November 13, 2011)
+
+
+
+== SuperTuxKart 0.7.3 RC 1 has been released ==
+Main improvements:
+* New Zen Garden and Subsea tracks
+*   New Island battle arena
+*    New Suzanne kart
+*    New graphical effects
+*    New weapons 'Swatter' and 'Rubber Ball'
+*    Added Thunderbird as race referee
+*    3 Strikes Battles now displays lives as spare tires
+*    Improved bubble gum
+*    See progression during Grand Prix
+*    Improve physics for tall karts (e.g. Adiumy)
+*    Lots of bug fixes
+*    Improved kart control at high speeds
+*    Better placement of rescued karts
+*    Transition track-making to blender 2.5/2.6
+
+You can find binary and source packages at https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7.3-rc1
+
+Enjoy!
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]] (November 2, 2011)
+
+
+
+== SuperTuxKart 0.7.2 has been released ==
+SuperTuxKart version 0.7.2 has been released. It offers:
+* In-game addon manager
+* Fixed major memory leaks
+* New Snow Peak track by Samuncle
+* Improved star track UFO by Rudy
+* New Beastie kart.
+* Show when you get a highscore
+* Improve gamepad configuration under Windows (add ability to tell gamepads apart)
+* Various other tweaks done and glitches fixed
+
+You may find packages at https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7.2/
+
+Enjoy!
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (July 15, 2011)
+
+
+== SuperTuxKart 0.7.2 RC1 has been released ==
+
+SuperTuxKart 0.7.2 RC1, the first release candidate towards version 0.7.2, has been released.
+This version features the following main improvements :
+
+* Added in-game addon manager ( see http://stkaddons.net/ )
+* Fixed major memory leaks (STK will no longer saturate your memory after half a dozen races)
+* New Snow Peak track by Samuncle
+* Improved star track UFO by Rudy
+* Show when you get a highscore
+* Improve gamepad configuration under Windows (add ability to tell gamepads apart)
+* Various other tweaks done and glitches fixed
+
+You may found packages at https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7.2/
+
+Please test abundantly and report any problem you may have found :)
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (June 13, 2011)
+
+
+== SuperTuxKart 0.7.1b Released ==
+
+Somehow a major bug managed to creep into the 0.7.1 release, preventing you from completing challenges. Therefore we have just released SuperTuxKart 0.7.1b, which fixes challenges - please head over to our downloads page and sorry for the inconvenience!
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (April 21, 2011)
+
+
+== SuperTuxKart 0.7.1 Released ==
+
+This release features the following improvements over version 0.7 :
+* Particle  (smoke, splash, fire) and weather effects
+* New Fort Magma by Samuncle, new Shiny Suburbs track by Horace
+* New Beagle kart by wolterh, new Emule kart by Kinsu
+* Added internet news
+* Support for live language switch
+* Added optional minimal race UI
+* Temporary invincibility after being hit
+* Added support for full-screen anti-aliasing
+* Clearer multiplayer setup
+* Renamed many tracks to nicer names
+* Basic level-of-detail (LOD) support
+* Debug features for track makers
+* Update to bullet 2.77
+* Replace more sounds to be DFSG-compliant
+* Fixed character names that contain non-ASCII characters
+* Full RTL (right to left) support
+* Various other tweaks done and glitches fixed
+
+Thanks to everyone who made this release possible! Please head over to our forums for feedback
+
+[[User:Hiker|Joerg]] and [[User:Auria|Auria]]  (April 15, 2011)
+
+
+
+<[[Archived_news|Archived News]]>
+
 == SuperTuxKart 0.7.1 Release Candidate 1 ==
 
 SuperTuxKart 0.7.1 Release Candidate 1 is now available for download at https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.7.1/.
