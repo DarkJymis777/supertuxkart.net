@@ -36,6 +36,7 @@ Then build SuperTuxKart using CMake
 <code>mkdir cmake_build
 cd cmake_build
 cmake ..
+cd ..
 make VERBOSE=1 -j2
 </code>
 
