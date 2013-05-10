@@ -56,3 +56,30 @@ And finally, to install (optional):
 this will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like:
 
 <code>cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk</code>
+
+== Using Eclipse ==
+If you want to use the eclipse ide, use the following approach:
+
+In cmake_build :
+    mkdir cmake_build
+    cmake -G "Eclipse CDT4 - Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
+
+This will generate project files based on the cmake files.
+
+Now open Eclipse, Import -> Existing projects into workspace, browse to the trunk and import the project.
+
+Right-click the project -> New -> Convert to C++ Project
+
+Right-click the project -> properties -> C/C++ Build
+* "Use default build command"
+* enter as build command "make VERBOSE=1 -j2" (replace 2 by the number of cores)
+C/C++ Build -> Discovery options
+* Automate discovery of path and symbols
+* Discovery profile : GCC per project scanner into profile
+Apply
+
+Right-click project -> index -> rebuild
+
+Now you can build the project by :
+* Right-click project -> Build Project
+* Or by using the build button at the top
