@@ -71,8 +71,8 @@ Now open Eclipse, Import -> Existing projects into workspace, browse to the trun
 Right-click the project -> New -> Convert to C++ Project
 
 Right-click the project -> properties -> C/C++ Build
-* "Use default build command"
-* enter as build command "make VERBOSE=1 -j2" (replace 2 by the number of cores)
+* Uncheck "Use default build command"
+* Enter as build command "make VERBOSE=1 -j2" (replace 2 by the number of cores)
 C/C++ Build -> Discovery options
 * Automate discovery of path and symbols
 * Discovery profile : GCC per project scanner into profile
