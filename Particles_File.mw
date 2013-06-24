@@ -59,6 +59,12 @@ and also add the file at the very top of materials.xml.
 
 '''size''' indicates the size of each particle, here too a value will be picked randomly between min and max
 
+To create a particle that grows over time, add "increaste-factor" properties like this :
+    <size min="0.65"
+          max="0.95"
+          x-increase-factor="0.6"
+          y-increase-factor="0.6" />
+
 '''color''' indicates the color applied to particles (255,255,255 is white and means no coloring is done), here too a value will be picked randomly between min and max
 
 '''fadeout time''' is an optional effect that will make particles fade away gracefully at the end of their file, instead of just disappearing. The given time is the number of milliseconds before the end of a particle's life where the fadeout should occur
