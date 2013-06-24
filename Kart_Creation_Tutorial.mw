@@ -114,7 +114,7 @@ Also, make sure every bone of your armature has a 0 roll, otherwise ingame anima
 </div></div>
 
 =Nitro emitter=
-You can specify two nitro emitter. They must be set on empty; the nitro particles will be emitted from this location.
+You can specify two nitro emitters. They must be set on empty objects; the nitro particles will be emitted from this location.
  
 [[Image:Nitro_emitter_kart.jpg|center|thumb|400px]]
 
