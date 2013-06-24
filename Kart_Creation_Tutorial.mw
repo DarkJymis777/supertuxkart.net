@@ -113,6 +113,11 @@ Also, make sure every bone of your armature has a 0 roll, otherwise ingame anima
 '''Note''' : we currently only support skeletal animations for karts. Therefore, you cannot animate a kart object by moving it around and assigning keyframes; instead you need to attach it to a bone inside the kart mesh
 </div></div>
 
+=Nitro emitter=
+You can specify two nitro emitter. They must be set on empty; the nitro particles will be emitted from this location.
+ 
+[[Image:Nitro_emitter_kart.jpg|center|thumb|400px]]
+
 =Icon & shadow=
 
 [[Image:Kart_icons_STK_071.png|700px|thumb]]
