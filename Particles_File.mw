@@ -74,3 +74,13 @@ All parameters are similar, except the opening tag is
 </pre>
 
 where box_x, box_y and box_z indicate the size of the emitter box
+
+
+
+== Sphere Emitters ==
+
+All parameters are similar, except the opening tag is
+
+<pre>
+<particles emitter="sphere" radius="0.3">
+</pre>
