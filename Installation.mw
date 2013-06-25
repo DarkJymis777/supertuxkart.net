@@ -36,7 +36,7 @@ To compile the stable version, you can download source code tarballs from the So
 
 === Latest development version ===
 To build latest trunk, check out the sources using Subversion on Unix (Mac OS X, Linux, etc.):
-  svn checkout http://svn.code.sf.net/p/supertuxkart/code/main/trunk/ supertuxkart-code stk-trunk
+  svn checkout http://svn.code.sf.net/p/supertuxkart/code/main/trunk/ stk-trunk
 
 On Windows, use TortoiseSVN with following URL:
   http://svn.code.sf.net/p/supertuxkart/code/main/trunk/
