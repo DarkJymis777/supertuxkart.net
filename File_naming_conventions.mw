@@ -1,3 +1,5 @@
+This is a suggested naming scheme that is currently being discussed.
+
 All textures must use the same naming convention.
 
 Naming are organised with this pattern
@@ -5,7 +7,7 @@ prefix_name_suffix.extension
 
 * The prefix stk_ is required when the texture is global (in the data/textures repository)
 
-* The name use the camel notation (thisIsAnExample) starting with a lower case. The first word must be the most describing for the texture. Example if you have a texture with a red wall a good name is wallRed. This allow to quickly find textures in a directory.
+* The name must be in lower case, words separated by _ (this_is_an_example). The first word must be the most describing for the texture. Example if you have a texture with a red wall a good name is wall_red. This allow to quickly find textures in a directory.
 
 * The suffix is used to describe the function of the texture.
 ** diff = diffuse
