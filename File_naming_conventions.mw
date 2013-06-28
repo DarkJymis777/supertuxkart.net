@@ -13,3 +13,4 @@ prefix_name_suffix.extension
 ** spec = specular map
 ** nm = normal map
 ** ao = ambient occlusion
+** By default nothing means diffuse
