@@ -62,13 +62,14 @@ If you want to use the eclipse ide, use the following approach:
 
 In the trunk :
     mkdir cmake_build
+    cd cmake_build
     cmake -G "Eclipse CDT4 - Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
 
 This will generate project files based on the cmake files.
 
 Now you can open Eclipse, Import -> Existing projects into workspace, browse to the trunk and import the build project.
 
-I recommend making a new project, with the trunk as directory, so that you can actually browse the source in the IDE and use the SVN plugins.
+Though, I recommend making a new project with the trunk as directory so that you can actually browse the source in the IDE and use the SVN plugins.
 
 Now right-click on this project -> New -> Convert to C++ Project (Possibly not needed if you made a C++ project in the previous step.)
 
