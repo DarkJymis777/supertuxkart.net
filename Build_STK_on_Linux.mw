@@ -76,6 +76,7 @@ Now right-click on this project -> New -> Convert to C++ Project (Possibly not n
 Right-click the project -> properties -> C/C++ Build
 * Uncheck "Use default build command"
 * Enter as build command "make VERBOSE=1 -j2" (replace 2 by the number of cores)
+* Change the build directory to cmake_build
 
 Now you can build the project by :
 * Right-click project -> Build Project
