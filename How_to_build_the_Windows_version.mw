@@ -12,6 +12,25 @@ This page describes the build and packaging process on windows. You need Visual 
 
 That should be all. If you have any problems, please [[Community|contact us]].
 
+=== Using Cmake ===
+In the very near future we are going to switch to use cmake to manage our build environments. At this stage it works ok for windows environment (though more improvements will be done). Download [url=http://www.cmake.org/]cmake[/url] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
+
+Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2008 = version 9; VS 2010 = version 10; VS 2012 = version 11). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
+
+Open this solution (not any of the project files, the solution includes all projects) in VS. Then press F5 to build all.
+
+To run inside VS some additional settings are necessary:
+- Right-click on ALL_BUILD in the solution tab, and select properties.
+- Select 'Configuration Properties', then Debugging.
+- As 'Command', set: $(ProjectDir)/bin/Debug/supertuxkart.exe
+- As 'Working Directory', set: $(ProjectDir)/..
+- In 'Environment', add: PATH=$(ProjectDir)/..;$(PATH)
+Then you should be able to run STK from Visual Studio.
+
+You can also start STK from the command line: change into STK's root directory, and do:
+./bld/Debug/supertuxkart.exe
+
+
 === Instructions for Creating the Installer ===
 Note that this step is only necessary if you want to create an installer package. To just run or debug STK, only the above Instructions for Compiling need to be followed.
 * Download and install NSIS.
