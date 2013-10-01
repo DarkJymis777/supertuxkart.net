@@ -1,4 +1,3 @@
-
 == Music ==
 
 Music should be in ogg/vorbis format (.ogg extension), support for mod files has been removed. Try to keep the music file size under 2 megabytes. We want most music to be light-hearted, but it is required that the music isn't 'aggressive' (we want to keep the game's ambient mostly happy).  Also it's generally better if your song can loop smoothly (for track music)
@@ -26,7 +25,12 @@ At startup, STK reads all .music files from
 * .../data/tracks/*   (i.e. all track specific music)
 * in all directories specified in the SUPERTUXKART_MUSIC_PATH environment variable, which is a ":" separated list. For example: SUPERTUXKART_MUSIC_PATH=/home/user1/ogg:/usr/share/ogg  (for windows user: using drive letters works as expected, e.g.: c:/myoggs:d:/moreoggs).
 
-To test new music in STK just create a .music file (in the same directory as the .ogg file), add the tracks in which this music should be used, and  add the path to this directory to the SUPERTUXKART_MUSIC_PATH environment variable. Just remember that music is picked randomly, so the new music might not be played every time.
+To test new music in STK just create a .music file (in the same directory as the .ogg file), add the tracks in which this music should be used, and  add the path to this directory to the SUPERTUXKART_MUSIC_PATH environment variable. To add the list of tracks, use a space separated list of track identifiers, e.g.:
+ <music title    = "Sky Vibe - High Frequency"
+        tracks   = "farm olivermath"
+        ... />
+
+Just remember that music is picked randomly, so the new music might not be played every time.
 
 == Sound effects ==
 
