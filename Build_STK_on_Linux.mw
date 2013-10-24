@@ -48,6 +48,8 @@ To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this:
 
 Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that.
 
+To enable wiiuse, add:
+<code> -DUSE_WIIUSE=yes</code>
 
 And finally, to install (optional):
 
