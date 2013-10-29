@@ -13,7 +13,7 @@ This page describes the build and packaging process on windows. You need Visual 
 That should be all. If you have any problems, please [[Community|contact us]].
 
 === Using Cmake ===
-In the very near future we are going to switch to use cmake to manage our build environments. At this stage it works ok for windows environment (though more improvements will be done). Download [url=http://www.cmake.org/]cmake[/url] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
+In the very near future we are going to switch to use cmake to manage our build environments. At this stage it works ok for windows environment (though more improvements will be done). Download [http://www.cmake.org cmake] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
 
 Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2008 = version 9; VS 2010 = version 10; VS 2012 = version 11). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
 
