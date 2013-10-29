@@ -2,7 +2,7 @@ This page describes the build and packaging process on windows. You need Visual 
 
 === Instructions for Compiling ===
 * Download and install a source package - either a released package or from [[Downloads#Latest_Development_Version|svn]].
-* Download the dependency package from [http://sourceforge.net/projects/supertuxkart/files/ here]. Unzip it in the root directory, so that the .dll files will be in the root directory, and the dependencies directory is next to the src and data directory.
+* Download the dependency package from [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/Windows/ here]. Unzip it in the root directory, so that the .dll files will be in the root directory, and the dependencies directory is next to the src and data directory.
 * In Visual Studio open the project file:
 ** src/ide/vc9/supertuxkart.sln for Visual Studio 9 (i.e. 2008 version)
 ** src/ide/vc10/supertuxkart.sln for Visual Studio 10 (i.e. 2010 version), or
