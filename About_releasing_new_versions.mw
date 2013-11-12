@@ -13,6 +13,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 
 ==Checklist for stable releases==
 * Give a deadline to translators
+** This should involve two steps: first contact translators and make them aware that a string freeze will happen in the near future, and ask them for feedback. They might find issues (e.g. incorrect strings, untranslatable strings, typos) that went undetected before). Once some feedback was received, announce the official string freeze.
 * Tested to compile and play under MacOSX.
 * Tested to compile and play under Windows (make sure the icon is available).
 * Tested to compile and play under Linux.
