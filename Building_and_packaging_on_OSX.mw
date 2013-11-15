@@ -53,24 +53,3 @@ make
 
 
 You can generate a Xcode project by replacing the "cmake .." line with "cmake .. -GXcode"
-
-= Xcode =
-
-
-<div class="outer_warning">
-    <div class="inner_msg">
-'''The provided Xcode project currently works out-of-the-box only works with Xcode 3.''' If you are using Xcode 4, especially if on OSX 10.7 Lion, you will need to tweak the project to use the 10.6 SDK, as the 10.4 SDK which the current project uses was removed by Apple in Xcode 4
-</div></div>
-
-
-<div class="outer_warning">
-    <div class="inner_msg">
-'''In SVN trunk, the Xcode project may not be up to date'''. We will update it for stable releases but during development you may need to manually add/remove files that changed so that the project builds
-</div></div>
-
-
-== SuperTuxKart ==
-
-Build SuperTuxKart using the provided Xcode project (in /src/ide/)
-
-That's all! If all went well, you're ready to run STK by hitting the big green 'run' button.
