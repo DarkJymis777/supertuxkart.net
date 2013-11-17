@@ -24,7 +24,7 @@ You can use the CMake build system to build STK. At this time CMake will not mak
 '''Note''' : due to a factor that eludes me, when generating a Xcode project rather than a makefile, Objective-C++ does not compile correctly. If you get errors in CIrrDeviceMacOSX.mm, you may need to comment out the @try statement and @catch block until a better solution is found
 
 
-'''Building on 10.7''' (and hopefully 10.8, but I can't test on this system)
+'''Building on 10.7, 10.8''' (10.9 works too with rev14426 and later)
 <code>mkdir cmake_build
 cd cmake_build
 cmake .. -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_C_COMPILER=/usr/bin/gcc
