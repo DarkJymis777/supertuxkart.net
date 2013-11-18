@@ -20,6 +20,10 @@ Note: If you don't have a Launchpad account, simply create one.
 
 Join the "STK" team at https://launchpad.net/~stk (unfortunately, joining is not instantaneous, you will need to wait for us to approve your join request. we usually approve within 24 hours but please allow for a bit more).
 
+== Join the STK Translators Email List ==
+We have a separate email list [https://lists.sourceforge.net/lists/listinfo/supertuxkart-translations SuperTuxKart-Translations], on which we post announcements important for translators. The list is extremely low traffic, usually we have maybe 2 or 3 emails before we do a release (which is at most 4 times a year). If you subscribe to this list you will be informed when we declare a string freeze in preparation for an upcoming release.
+
+
 == See existing translations ==
 After you have logged in, go back to [https://translations.launchpad.net/stk STK's Launchpad Home].
 
