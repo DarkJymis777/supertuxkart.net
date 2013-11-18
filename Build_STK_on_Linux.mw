@@ -19,7 +19,7 @@ First of all, you will need a compiler and the autotools build system. When buil
 == Building Irrlicht ==
 <div class="outer_info">
     <div class="inner_msg">
-This part is required only for STK 0.8, no longer required with STK SVN.
+This part is required only for STK 0.8, no longer required for later versions.
     </div>
 </div>
 
@@ -30,7 +30,6 @@ cd -</code>
 
 (in this sample I configure make to use 2 cores. You can use more/less depending on your configuration).
 Note that these steps should be repeated whenever we update irrlicht.
-
 
 == Building SuperTuxKart ==
 
