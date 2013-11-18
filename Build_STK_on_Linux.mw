@@ -17,8 +17,11 @@ First of all, you will need a compiler and the autotools build system. When buil
 
 
 == Building Irrlicht ==
-
+<div class="outer_info">
+    <div class="inner_msg">
 This part is required only for STK 0.8, no longer required with STK SVN.
+    </div>
+</div>
 
 From the STK root source directory, start by compiling irrlicht.
 <code>cd lib/irrlicht/source/Irrlicht/
