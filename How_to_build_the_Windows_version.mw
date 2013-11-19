@@ -1,4 +1,4 @@
-This page describes the build and packaging process on windows. You need Visual Studio 9 or 10, the free express version works fine
+This page describes the build and packaging process on windows. You need Visual Studio 11 or higher, the free express version works fine.
 
 === Instructions for Compiling ===
 * Download and install a source package - either a released package or from [[Downloads#Latest_Development_Version|svn]].
