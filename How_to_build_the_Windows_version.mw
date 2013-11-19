@@ -3,21 +3,10 @@ This page describes the build and packaging process on windows. You need Visual 
 === Instructions for Compiling ===
 * Download and install a source package - either a released package or from [[Downloads#Latest_Development_Version|svn]].
 * Download the dependency package from [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/Windows/ here]. Unzip it in the root directory, so that the .dll files will be in the root directory, and the dependencies directory is next to the src and data directory.
-* In Visual Studio open the project file:
-** src/ide/vc9/supertuxkart.sln for Visual Studio 9 (i.e. 2008 version)
-** src/ide/vc10/supertuxkart.sln for Visual Studio 10 (i.e. 2010 version), or
-** src/ide/vc11/supertuxkart.sln for Visual Studio 11 (2012 version)
+* Download [http://www.cmake.org cmake] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
+* Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2008 = version 9; VS 2010 = version 10; VS 2012 = version 11). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
+* In Visual Studio open the project file generated in the 'bld' folder
 * Select Build->Build Solution (or press F7) to compile.
-* Press F5 to run the game in Visual Studio.
-
-That should be all. If you have any problems, please [[Community|contact us]].
-
-=== Using Cmake ===
-In the very near future we are going to switch to use cmake to manage our build environments. At this stage it works ok for windows environment (though more improvements will be done). Download [http://www.cmake.org cmake] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
-
-Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2008 = version 9; VS 2010 = version 10; VS 2012 = version 11). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
-
-Open this solution (not any of the project files, the solution includes all projects) in VS. Then press F5 to build all.
 
 To run inside VS some additional settings are necessary:
 * Right-click on ALL_BUILD in the solution tab, and select properties.
