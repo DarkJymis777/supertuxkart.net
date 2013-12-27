@@ -3,6 +3,7 @@ This page describes the build and packaging process on windows. You need Visual 
 === Instructions for Compiling ===
 * Download and install a source package - either a released package or from [[Downloads#Latest_Development_Version|svn]].
 * Download the dependency package from [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/Windows/ here]. Unzip it in the root directory, so that the .dll files will be in the root directory, and the dependencies directory is next to the src and data directory.
+* No matter what version of visual studio you use, '''you must install visual c++ 2008''' (express will do) since STK uses some DLLs that depend on a DLL from VC2008
 * Download [http://www.cmake.org cmake] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
 * Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2008 = version 9; VS 2010 = version 10; VS 2012 = version 11). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
 * In Visual Studio open the project file generated in the 'bld' folder
