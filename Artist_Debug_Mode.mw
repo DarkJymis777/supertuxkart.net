@@ -53,8 +53,10 @@ Nitro and zippers are especially helpful in order to quickly get to an area far 
 This is especially useful when you need to take the screenshot of your track, to get all annoyances out of the way
 * Accessible by right-clicking in-game
 
-=== View faces and normals ===
-You can cycle through several debug draw modes by pressing Ctrl+F11. This will show the physics data being used in STK (including the normals).
+=== Debug views ===
+You can cycle through several rendering and physics debug draw modes. Render debug views will show intermediate render steps, like the normals or lights buffers. Physics views will show the physics data being used in STK (including the faces and normals).
+
+This is accessible by right-clicking in-game
 
 === Fly! ===
 
