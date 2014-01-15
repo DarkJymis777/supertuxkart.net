@@ -3,29 +3,23 @@ SupertTuxKart uses git for source code, and SVN for data files.
 == Game core ==
 
 The core code repository is hosted on our [https://github.com/supertuxkart/stk-code github page]. Example clone command:
-{{popup-code
-|content=git clone https://github.com/supertuxkart/stk-code.git stk-code
-}}
-It is about 130 MB in size.
+<code>git clone https://github.com/supertuxkart/stk-code.git stk-code</code>
 
 Data files are hosted on sourceforge and use SVN. Example checkout command :
-{{popup-code
-|content=svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets
-}}
-It is about 650 MB in size.
+<code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets</code>
 
 These two repositories should be downloaded in the same folder, so that folders "stk-code" and "stk-assets" are next to each other.
 
+
 == Media repository ==
 
-The media repository is '''not required to play the game'''. It contains the source files for assets (blender files, lossless music and sound files, etc.) and is meant for artists. It is around 1.5GB in size.
+The media repository is not required to play the game. It contains the source files for assets (blender files, lossless music and sound files, etc.) and is meant for artists.
 
 The media repository is hosted on sourceforge and uses SVN. Example checkout command :
-{{popup-code
-|content=svn checkout https://svn.code.sf.net/p/supertuxkart/code/media/trunk stk-media-repo
-}}
+<code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/media/trunk stk-media-repo</code>
 
 Also see [[Media_Repo|the Media repository page]]
+
 
 == Guidelines ==
 
@@ -37,5 +31,5 @@ Here are some guidelines for developers who have write access to git/SVN. These 
 * The development version should always compile. While it's not possible to test on all platforms, do your best to write portable code. Other developers and testers will usually quickly point out (and fix) any problems.
 * Commit frequently. Frequent commits have the advantage that they act as a backup (some people have lost their work because of a harddrive crash), and they make time consuming conflicts less likely.
 * Test your commits to make sure they do what they are supposed to do. It might not possible to do very thorough tests (e.g. a single change of a physics parameter means that you would have to race each kart - potentially on each track), so listen for bug reports from testers. It might be worth even asking for specific feedback from testers.
-* Make sure that at least normal racing always works. This is the functionality other developers most likely need. If there is a known minor problem (e.g. 'restarting' might not work), post this to the mailing list to avoid unnecessary bug reports, or put it in the bug tracker if you are not going to fix it quickly. These kind of minor known bugs are acceptable during most of the development cycle. When getting closer to a release, we switch to bug-fixing mode and avoid committing new features that can introduce bugs.
+* Make sure that at least normal racing always works. This is the functionality other developers most likely need. If there is a known minor problem (e.g. 'restarting' might not work), post this to the mailing list to avoid unnecessary bug reports, or put it in the bug tracker if you are not going to fix it quickly. These kind of minor known bugs are acceptable during most of the development cycle. When getting closer to a release, we switch to bux-fixing mode and avoid committing new features that can introduce bugs.
 * Try to include all changes for a single feature in one commit (i.e. don't commit each file separately, and try not to mix several features in one commit - though the latter is acceptable since it might be a lot of work to split a change set into different commits).
