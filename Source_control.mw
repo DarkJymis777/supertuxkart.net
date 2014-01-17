@@ -4,16 +4,18 @@ SupertTuxKart uses git for source code, and SVN for data files.
 
 The core code repository is hosted on our [https://github.com/supertuxkart/stk-code github page]. Example clone command:
 <code>git clone https://github.com/supertuxkart/stk-code.git stk-code</code>
+It is about 130 MB in size.
 
 Data files are hosted on sourceforge and use SVN. Example checkout command :
 <code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets</code>
+It is about 350 MB in size.
 
 These two repositories should be downloaded in the same folder, so that folders "stk-code" and "stk-assets" are next to each other.
 
 
 == Media repository ==
 
-The media repository is '''not required to play the game'''. It contains the source files for assets (blender files, lossless music and sound files, etc.) and is meant for artists.
+The media repository is '''not required to play the game'''. It contains the source files for assets (blender files, lossless music and sound files, etc.) and is meant for artists. It is around 1.5GB in size.
 
 The media repository is hosted on sourceforge and uses SVN. Example checkout command :
 <code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/media/trunk stk-media-repo</code>
