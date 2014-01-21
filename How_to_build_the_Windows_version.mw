@@ -1,21 +1,14 @@
 This page describes the build and packaging process on windows. You need Visual Studio 11 or higher, the free express version works fine.
 
 === Instructions for Compiling ===
+* Install VS 2012 or later (2008 and 2010 might still work, but are unsupported). The free express versions work fine.
 * Download and install a source package - either a released package or from [[Downloads#Latest_Development_Version|svn]].
-* Download the dependency package from [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/Windows/ here]. Unzip it in the root directory, so that the .dll files will be in the root directory, and the dependencies directory is next to the src and data directory.
-* No matter what version of visual studio you use, you may need to install visual c++ 2008 (express will do) since STK uses some DLLs that depend on a DLL from VC2008 (this is possibly limited to wiiuse, so disabling wiiuse may also fix the problem)
+* Download the latest dependency package depdendencies_for_0.8.2.zip from [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/Windows/ here]. Unzip it in the root directory, so that the dependencies directory is next to the src and data directory (if you are updating from a previous dependency package, you can delete the .dll files in the root directory, they are not needed anymore).
 * Download [http://www.cmake.org cmake] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
-* Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2008 = version 9; VS 2010 = version 10; VS 2012 = version 11). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
+* Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2012 = version 11; VS 2013 = version 12). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
 * In Visual Studio open the project file generated in the 'bld' folder
+* Right click on the supertuxkart project in the solution explorer, and select "Set as StartUp Project".
 * Select Build->Build Solution (or press F7) to compile.
-
-To run inside VS some additional settings are necessary:
-* Right-click on ALL_BUILD in the solution tab, and select properties.
-* Select 'Configuration Properties', then Debugging.
-* As 'Command', set: $(ProjectDir)/bin/Debug/supertuxkart.exe
-* As 'Working Directory', set: $(ProjectDir)/..
-* In 'Environment', add: PATH=$(ProjectDir)/..;$(PATH)
-Then you should be able to run STK from Visual Studio.
 
 You can also start STK from the command line: change into STK's root directory, and do:
 ./bld/Debug/supertuxkart.exe
