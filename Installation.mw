@@ -35,11 +35,20 @@ Pick either stable or development version. The latter has the latest features an
 To compile the stable version, you can download source code tarballs from the SourceForge [http://sourceforge.net/projects/supertuxkart/files/ downloads page].
 
 === Latest development version ===
-To build latest trunk, check out the sources using Subversion on Unix (Mac OS X, Linux, etc.):
-  svn checkout http://svn.code.sf.net/p/supertuxkart/code/main/trunk/ stk-trunk
 
-On Windows, use TortoiseSVN with following URL:
-  http://svn.code.sf.net/p/supertuxkart/code/main/trunk/
+SupertTuxKart biw uses git for source code, and SVN for data files.
+
+==== Game core ====
+
+The core code repository is hosted on our [https://github.com/supertuxkart/stk-code github page]. Example clone command:
+<code>git clone https://github.com/supertuxkart/stk-code.git stk-code</code>
+It is about 130 MB in size.
+
+Data files are hosted on sourceforge and use SVN. Example checkout command :
+<code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets</code>
+It is about 350 MB in size.
+
+These two repositories should be downloaded in the same folder, so that folders "stk-code" and "stk-assets" are next to each other.
 
 == Platform-specific compile instructions ==
 
