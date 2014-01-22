@@ -1,7 +1,7 @@
-This page describes the build and packaging process on windows. You need Visual Studio 11 or higher, the free express version works fine.
+This page describes the build and packaging process on windows. You need Visual Studio 11 or higher, the free express version works fine. VS 2010 and earlier are unsupported (though you can use VS 2010 if you either disable USE_WIIUSE, or set the (advanced) option BUILD_WIIUSE).
 
 === Instructions for Compiling ===
-* Install VS 2012 or later (2008 and 2010 might still work, but are unsupported). The free express versions work fine.
+* Install VS 2012 or later. The free express versions work fine.
 * Download and install a source package - either a released package or from our [http://supertuxkart.sourceforge.net/Source_control git/svn repositories].
 * Download the latest dependency package depdendencies_for_0.8.2.zip from [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/Windows/ here]. Unzip it in the root directory, so that the dependencies directory is next to the src and data directory (if you are updating from a previous dependency package, you can delete the .dll files in the root directory, they are not needed anymore).
 * Download [http://www.cmake.org cmake] and install it. Then start cmake-gui and select the STK root directory as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory (for now I assume that this directory is called bld).
