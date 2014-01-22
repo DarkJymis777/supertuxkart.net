@@ -36,11 +36,7 @@ To compile the stable version, you can download source code tarballs from the So
 
 === Latest development version ===
 
-SupertTuxKart biw uses git for source code, and SVN for data files.
-
-==== Game core ====
-
-The core code repository is hosted on our [https://github.com/supertuxkart/stk-code github page]. Example clone command:
+SupertTuxKart biw uses git for source code, and SVN for data files. The core code repository is hosted on our [https://github.com/supertuxkart/stk-code github page]. Example clone command:
 <code>git clone https://github.com/supertuxkart/stk-code.git stk-code</code>
 It is about 130 MB in size.
 
