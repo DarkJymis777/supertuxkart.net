@@ -57,7 +57,7 @@ This will generate project files based on the cmake files.
 
 Now you can open Eclipse, Import -> Existing projects into workspace, browse to the trunk and import the build project.
 
-Though, I recommend making a new project with the trunk as directory so that you can actually browse the source in the IDE and use the SVN plugins.
+Though, I recommend making a new project with the trunk as directory so that you can actually browse the source in the IDE and use the source control (SVN/GIT) plugins.
 
 Now right-click on this project -> New -> Convert to C++ Project (Possibly not needed if you made a C++ project in the previous step.)
 
