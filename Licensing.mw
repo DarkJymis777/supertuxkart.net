@@ -9,6 +9,9 @@ Licensing is not the most exciting topic, but if you wish to contribute, you wil
 Since SuperTuxKart is included in many linux distributions with strict license requirements (e.g. Debian), we cannot accept tracks/karts/textures/etc. with unclear licensing terms.
 Furthermore, we are hosted (freely, I might add) by SourceForge, which requires that all hosted materials be released under open licenses; therefore posting materials with improper licenses would violate our terms of hosting
 
+== STK Code ==
+The source code of SuperTuxKart is released under GPL v3.0 (we updated all files to use this version by making use of the "or (at your option) any later version" clause of the GPL).
+
 == Considerations to always keep in mind ==
 
 If you wish that your contribution be included in STK main or add-ons, '''always note down the author's name, website where image was found and full license name of everything you use (textures, models, sounds, etc.); when you make something yourself also note that you did it yourself and which license you release it under; we recommend making a file named "License.txt" to contain all this information; if we do not receive this information along your track/kart/etc., we will be legally unable to use your contribution in any way!'''
