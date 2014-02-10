@@ -11,7 +11,7 @@ Note that these instructions apply to STK versions more recent that 0.8 alpha. I
 First of all, you will need a compiler and the autotools build system. When building the current Git master, you will also need cmake. Other dependencies you will need include openal, ogg, vorbis.
 
 * Fedora
-<code>yum install gcc-c++ autoconf automake libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake irrlicht-devel libbluetooth-devel</code>
+<code>yum install gcc-c++ autoconf automake libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake irrlicht-devel libbluedevil-devel.x86_64</code>
 * Ubuntu
 <code>sudo apt-get install autoconf automake build-essential cmake libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev libbluetooth-dev</code>
 
