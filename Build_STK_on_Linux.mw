@@ -37,9 +37,13 @@ Another option is to build the regular release version with its optimizations, b
 To enable wiiuse, add:
 <code> -DUSE_WIIUSE=yes</code>
 
-And finally, to install (optional):
+To run supertuxkart. just start it from the build directory:
+<code>./bin/supertuxkart</code>
 
-<code>sudo make install</code>
+'''NOTE: make install is currently broken!!'''
+''And finally, to install (optional):
+
+<code>sudo make install</code>''
 
 this will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like:
 
