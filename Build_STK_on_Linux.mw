@@ -19,6 +19,8 @@ First of all, you will need a compiler and the autotools build system. When buil
 
 Then build SuperTuxKart using CMake
 
+'''You'll have to run these commands inside your <TT>stk-code</TT> directory. The <TT>stk-assets</TT> directory has to be in the parent directory of <TT>stk-code</TT>'''
+
 <code>mkdir cmake_build
 cd cmake_build
 cmake ..
