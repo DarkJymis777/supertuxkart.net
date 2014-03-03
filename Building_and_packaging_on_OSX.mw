@@ -21,6 +21,10 @@ Please note that this is meant for developers and '''not''' casual users. Inform
 = CMake =
 You can use the CMake build system to build STK. At this time CMake will not make a binary that is ready for distribution.
 
+'''You'll have to run these commands inside your <TT>stk-code</TT> directory. The <TT>stk-assets</TT> directory has to be in the parent directory of <TT>stk-code</TT>'''
+
+'''Currently, you can play the GIT tree only with shaders disabled on OS X'''
+
 
 '''Building on 10.7, 10.8''' (10.9 works too with rev14426 and later)
 <code>mkdir cmake_build
@@ -51,3 +55,5 @@ make
 
 
 You can generate a Xcode project by replacing the "cmake .." line with "cmake .. -GXcode"
+
+'''This is not recommended because Xcode needs much more space on the disk than CMake with make'''
