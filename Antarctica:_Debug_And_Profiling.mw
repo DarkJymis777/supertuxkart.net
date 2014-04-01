@@ -10,9 +10,9 @@ GPU Perf studio 2 is more suited to GPU but only ships on Windows at the time of
 CodeXL is more generic as it targets both CPU and GPU, and is available on Linux.
 
 To set up GPU Perf Studio:
-- Click on "Connect" in the main windows.
-- A"Server connection" pop up will appear. Set the path to stk executable built in Release mode (debug mode executable are sometimes instable when used through GPS2). Then click on the "connect in the pop up.
-- Stk will start (it is highly recommended to run it in windowed mode). Switch to GPS2 windows which will ask you confirmation about the API and the monitored application.
-- Go back to STK and run it until there is a frame you want to debug and/or profile.
-- Switch to GPS2 again, and click on the pause button. GPS2 will then register all events to replay the frame.
-- You can now access Frame Debugger (list all glDraw*/glClear with complete context ie textures, vbo...) or API Trace (list all GL command with cpu time), and optionnaly gpu profiler (get gpu execution time of each command).
+* Click on "Connect" in the main window.
+* A"Server connection" pop up will appear. Set the path to stk executable built in Release mode (debug mode executable are sometimes instable when used through GPS2). Then click on the "connect in the pop up.
+* Stk will start (it is highly recommended to run it in windowed mode). Switch to GPS2 windows which will ask you confirmation about the API and the monitored application.
+* Go back to STK and run it until there is a frame you want to debug and/or profile.
+* Switch to GPS2 again, and click on the pause button. GPS2 will then register all events to replay the frame.
+* You can now access Frame Debugger (list all glDraw*/glClear with complete context ie textures, vbo...) or API Trace (list all GL command with cpu time), and optionnaly gpu profiler (get gpu execution time of each command).
