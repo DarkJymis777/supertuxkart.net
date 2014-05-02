@@ -7,3 +7,12 @@ Some idea to improve performance in stk :
 * We may investigate compute shaders (GL 4.3 features...) to improve our post process filters. Post process filters usually read adjacent pixels (for instance gaussian blur) which means redundant texture fetches are done. While texture cache mitigate the performance inpact, compute shaders introduced shared memory that acts as an almost as fast gpr read. This shared memory can remove redundant fetches, and avoid using a fullscreen quad vertex shader. However there is some overhead involved in dealing with thread dispatch, most article on the web says that CS are a gain for kernel with > 7 radius. Some Intel docs mentions à 13% perf increase for hd4000 on tonemap+blur operation.
 
 * Splitting frame buffer may help for post processing as well, as mentionned here : https://developer.nvidia.com/sites/default/files/akamai/BAVOIL_ParticleShadowsAndCacheEfficientPost.pdf
+
+
+
+
+* About shaders :
+** We use whole InverseProjection matrix to get view position from projected screen. However most of the coeffs are 0, which is unknow by the shader. Using a formula may reduce the computation amount.
+** Similarly division is a slower operation than mult/add and it might be profitable to avoid dividing by the w component when when know that the matrix is orthogonal. It shouldn't happen a lot though.
+** Generally speaking , mult/add/sub operations are fast on gpu for float (and int on radeons) and can even be reduced to mad by the compiler. fdiv, fexp, flog, fsqrt, cos, sin, fract are usually slower (typically the cost of 4 mult). Integer division/modulo operator is one of the slowest base operation available (because it is almost never implemented on hw and need to be emulated using quite a lot of simplier instructions) and should be avoind. Considers using fdiv + fract on float cast if you don't need exact precision.
+** Avoid discard operation and writing to gl_FragDepth. It disables early z features on gpu. Early z is used to write depth value as soon as fragment shader starts (thus hiding depth write latency) and can also avoid executing a fragment shader if a fragment with a lower depth is already at the same position. In short early z reduces bandwidth usage and partially hide some write latencies.
