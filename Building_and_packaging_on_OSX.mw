@@ -29,6 +29,16 @@ You can use the CMake build system to build STK. At this time CMake will not mak
 
 
 '''Building on 10.7, 10.8''' (10.9 works too with rev14426 and later)
+
+With clang:
+<code>mkdir cmake_build
+cd cmake_build
+cmake .. -DUSE_CPP2011=1
+make
+</code>
+
+
+With GCC :
 <code>mkdir cmake_build
 cd cmake_build
 cmake .. -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_C_COMPILER=/usr/bin/gcc
