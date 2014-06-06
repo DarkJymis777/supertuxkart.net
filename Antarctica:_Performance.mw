@@ -29,8 +29,7 @@ Some idea to improve performance in stk :
 ** DoF : 5.84 ms
 ** Bloom : 1.61 ms. This could be lowered probably by using a compute shader.
 ** Tonemap : 0.46 ms
-
 ** There are also Point Lights, Transparent and Displacement passes, which are heavily dependant on the scene and are thus not included in the list.
 ** The fps are below 30 and the sum of all 3d passes hightlight a cost of 27ms, this means the 2d display is costing something like 5ms (there is no accurate way to test it)
 
-* According to Gpu Perf Studio 2 we are bandwidth bound only on DoF pass (which isn't really optimised atm).
+* According to Gpu Perf Studio 2 we are bandwidth bound only on DoF pass (which isn't really optimised atm). Most shaders thus scale well with the number of instruction.
