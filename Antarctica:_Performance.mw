@@ -16,3 +16,19 @@ Some idea to improve performance in stk :
 ** Similarly division is a slower operation than mult/add and it might be profitable to avoid dividing by the w component when when know that the matrix is orthogonal. It shouldn't happen a lot though.
 ** Generally speaking , mult/add/sub operations are fast on gpu for float (and int on radeons) and can even be reduced to mad by the compiler. fdiv, fexp, flog, fsqrt, cos, sin, fract are usually slower (typically the cost of 4 mult). Integer division/modulo operator is one of the slowest base operation available (because it is almost never implemented on hw and need to be emulated using quite a lot of simplier instructions) and should be avoind. Considers using fdiv + fract on float cast if you don't need exact precision.
 ** Avoid discard operation and writing to gl_FragDepth. It disables early z features on gpu. Early z is used to write depth value as soon as fragment shader starts (thus hiding depth write latency) and can also avoid executing a fragment shader if a fragment with a lower depth is already at the same position. In short early z reduces bandwidth usage and partially hide some write latencies.
+
+* The "target hardware" for stk maxed out is hd7750 (entry level graphic card from amd 2012) and is used to tune the performance of our effects. As of 06/06/14 the cost of every 3d passes are (1680x1050 on Hacienda, single run) :
+** Solid Pass 1 : 0.59 ms
+** Shadows : 1.98ms. This is heavily scene dépendent too and the cost can be reduced by caching some shadow map.
+** Radiance Hint : 1.87 ms
+** GI : 3.54 ms. Unfortunatly GPS2 does not provide helpfull insight on what is causing such a high cost, the shader seems to be spending lot of time doing nothing.
+** Env Map : 0.70 ms
+** Sun light : 1.65 ms. High cost but the shader also fetch the shadow map.
+** SSAO : 7.1 ms. This scales very well with the number of sample (we currently have a "high quality" ssao with 16 samples at full screen resolution, switching to 8 samples almost halves the cost)
+** Solid Pass 2 : 1.02 ms
+** DoF : 5.84 ms
+** Bloom : 1.61 ms. This could be lowered probably by using a compute shader.
+** Tonemap : 0.46 ms
+
+** There are also Point Lights, Transparent and Displacement passes, which are heavily dependant on the scene and are thus not included in the list.
+* According to Gpu Perf Studio 2 we are bandwidth bound only on DoF pass (which isn't really optimised atm).
