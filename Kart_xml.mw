@@ -17,6 +17,7 @@ The kart.xml file is a simple xml file wich have to exists in each kart folder
        minimap-icon-file = "beagle_icon.png"
        shadow-file       = "beagle_shadow.png"
        groups            = "standard"
+       type              = "light"
        rgb               = "0.7 0 0" 
        random-wheel-rot  = "true"
        shadow-scale      = "1.0"
