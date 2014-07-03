@@ -54,6 +54,7 @@ The following attributes can be used.
 *''name'': The name of the kart which will appear in the menus (example: "Beagle").
 [[File:Kart_xml_name.png]]
 *''version'': The version number of the kart (example: "1").
+*''type'': The type of kart which will determine to which properties group the kart belongs (light, medium or heavy).
 *''model-file'': The file name which contain the model of the kart (example: "beagle.b3d").
 *''icon-file'': The icon file (128x128) used in some menus (example: "beagle_icon.png").
 [[File:Kart_xml_icon_file.png]]
