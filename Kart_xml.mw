@@ -96,7 +96,7 @@ Additional section can be added to the kart.xml files in which kart-specific phy
  <kart name              = "Mozilla"
        version           = "2"
        model-file        = "mozilla.b3d"
-       type                = "light"
+       type              = "light"
        icon-file         = "mozillaicon.png"
        minimap-icon-file = "mozillaicon.png"
        shadow-file       = "mozillashadow.png"
