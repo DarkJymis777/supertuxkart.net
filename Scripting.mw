@@ -9,7 +9,7 @@ Details on triggering scripts.
 
 
 ===Action Triggers===
-Action Triggers are point based triggers with a radius. Think of it as a big bubble that pops when you enter it, triggering some action. This is probably the best method of triggering location-based events. By default the trigger is disabled when it is activated. They can be activated or deactivated as you wish, using other scripts.
+Action Triggers are point based triggers with a radius. Think of it as a big bubble that pops when you enter it, triggering some action. This is probably the best method of triggering location-based events. By default the trigger is disabled right after it is activated. They can be activated or deactivated as you wish, using other scripts.
 
 Relevant Methods:
 
