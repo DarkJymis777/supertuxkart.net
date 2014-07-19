@@ -3,3 +3,20 @@ Scripting is used to provide all kinds of fun in-game interactions. If there's a
 
 ==Scripting API==
 Link to API.
+
+==Triggering Scripts==
+Details on triggering scripts.
+
+
+===Action Triggers===
+Action Trigger based triggering.
+
+===On Collision===
+Collision-based triggering.
+
+===On Start===
+Start-up Scripts.
+
+===On Update===
+Update Scripts.
+<br><span style="color:red"> WARNING : Inefficient. </span>
