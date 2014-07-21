@@ -18,7 +18,11 @@ Relevant Methods:
 * disableTrigger(name) : Disable a trigger
 
 ===On Collision===
-Collision-based triggering.
+Collision-based triggering revolves around providing collision based interactions. Several different types of callbacks are defined. 
+<br>At present the different callbacks are
+*onKartObjectCollision()  - for Kart - Track Object collisions
+*onItemObjectCollision()  - for Item - Track Object collisons
+*onKartKartCollision()    - for Kart - Kart collisions
 
 ===On Start===
 Start-up Scripts.
