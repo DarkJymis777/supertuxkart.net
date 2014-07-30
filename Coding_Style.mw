@@ -92,7 +92,6 @@ Feel free to use more commands like \pre, \param, \return from doxygen.
 We have a separate class to Log messages for the user. This class should be used for any message that's printed on the terminal (or might be redirected into a file so that users can give us this data). Normal printf/cout/cerr are still used in many files, but this is deprecated. The various levels should be used as follows:
 * fatal: Anything that causes STK to abort.
 * error: Any error which still allows STK to continue as normal, but might have visual (or other) impact. Missing textures would be an example.
-* error: Any error which still allows STK to continue as normal, but might have visual (or other) impact. Missing textures would be an example.
 * warn: Any warning that is detected, which should not cause a difference in STK that's important for a player. An example would be if the window location can not be read: it doesn't matter that much that the windows is shown at a different location.
 * info: Any useful info a player should always have in case that something goes wrong. An example would be paths to various directories.
 * debug: Debug output, which would only be seen by developers. Mostly those should be either removed (or if necessary commented out) before committing (though sometimes we add those in in order to help us finding a problem someone else has - those should be removed or commented out once the issue is fixed).
