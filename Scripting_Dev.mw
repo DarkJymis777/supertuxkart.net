@@ -2,4 +2,4 @@
 Scripting provides dynamic binding of functions, classes and variables. Scripts are basically interpreted in a JIT (Just In Time) manner, which allows for a lot of configurability. Games benefit greatly from Scripting due to this configurability. Without scripting, creating a good game loop would require extensive amounts of hard coding. By scripting, the game engine functionality is exposed to the outside via an API. This allows the game logic to be changed at will without ever touching the game engine code. One added benefit is that you can simply change a lot of things without ever having to rebuild the game!
 
 ===The SuperTuxKart Scripting Engine===
-The STK Scripting Engine development started as part of GSoC 2014 by [[User:sachith500|sachith500]]
+The STK Scripting Engine development started as part of GSoC 2014 by [[User:sachith500|sachith500]] and the work intitially focused only on track elements, and getting a robust and extensible scripting engine up and running. The scripting language was chosen as AngelScript, due to it's good synergy with C++.
