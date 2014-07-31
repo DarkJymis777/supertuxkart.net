@@ -53,7 +53,6 @@ Exceptions to this are one line functions in header files:
 * Have a line "// ------------------------" (up to 80th column) separating each function definition (see [[#Doxygen]] for an example)
 * If the closing } is more than a few lines away from the opening {, or if there are multiple curly braces in-between, add a comment indicating what this } closes. This comment can be an informal comment, or just be the corresponding opening statement. E.g: <pre>}   // for i in all karts</pre> or <pre>}   // for(int i=0; i<m_num_karts; i++)</pre>
 * It should be avoided to have more than one class in a file. If you can't avoid it, separate them with "// ============" (up to 80th column)
-* avoid using 'friend' for classes
 
 == Doxygen ==
 Use Doxygen comments. The comments for variables should be just before their declaration, and functions should be documented where they are implemented, and not where they are defined. I.e. don't document functions in the header file if they are implemented in the corresponding cpp file. Reason for this is that this way the documentation is on the screen when you debug. If you want to study the interface of a class, just look at the doxygen documentation, and all information is on one screen. But if you debug you want to know what a function is doing, then having to look at the header file is annoying. It's also easier to keep implementation details and comments in sync.
@@ -89,6 +88,7 @@ Feel free to use more commands like \pre, \param, \return from doxygen.
 * Use true/false instead of TRUE/FALSE. In [http://lists.kde.org/?l=kde-devel&m=111737503228222&w=2] it's written that uppercase booleans are used only for older compilers, so we should try to avoid this inconsistency.
 * Use std::string instead of char*. If you need a C-style string, use the function std::string.c_str(). However, there are cases when this cannot be avoided(like when using strings with gettext).
 * Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h).
+* avoid using 'friend' for classes
 
 == Logging ==
 We have a separate class to Log messages for the user. This class should be used for any message that's printed on the terminal (or might be redirected into a file so that users can give us this data). Normal printf/cout/cerr are still used in many files, but this is deprecated. The various levels should be used as follows:
