@@ -1,4 +1,4 @@
-Note that these instructions apply to STK versions more recent than 0.8 alpha. If you want to compile an older version, please use the history feature of the wiki. See [[Source control]] to obtain the source code and game data.
+Note that these instructions apply to STK versions more recent than 0.8 alpha. If you want to compile an older version, please use the history feature of the wiki.
 
 <div class="outer_info">
     <div class="inner_msg">
@@ -8,27 +8,33 @@ Note that these instructions apply to STK versions more recent than 0.8 alpha. I
 
 == Installing dependencies ==
 
-First of all, you will need a compiler and the autotools build system. When building the current Git master, you will also need cmake. Other dependencies you will need include openal, ogg, vorbis.
+First of all, you will need a c++ compiler, the autotools build system and cmake. Other dependencies you will need include openal, ogg, vorbis. You don't need to install irrlicht, bullet, enet or wiiuse because they are included in the git repository.
 
 * Fedora
-<code>yum install gcc-c++ autoconf automake libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake irrlicht-devel libbluedevil-devel.x86_64</code>
-* Ubuntu
-<code>sudo apt-get install autoconf automake build-essential cmake libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev libbluetooth-dev</code>
+<code>yum install gcc-c++ autoconf automake git-core libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake libbluedevil-devel.x86_64</code>
+* Ubuntu/Debian
+<code>sudo apt-get install autoconf automake build-essential cmake git libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev libbluetooth-dev svn</code>
+
+== Obtain code and assets ==
+STK is splitted up into code and assets, so you need these two commands two get both:
+<code>git clone https://github.com/supertuxkart/stk-code.git stk-code # about 130 MB
+svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets # about 650 MB</code>
+See [[Source control]] for more information.
 
 == Building SuperTuxKart ==
 
 Then build SuperTuxKart using CMake
 
-'''You'll have to run these commands inside your <TT>stk-code</TT> directory. The <TT>stk-assets</TT> directory has to be in the parent directory of <TT>stk-code</TT>'''
+'''The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the same folder.'''
 
-<code>mkdir cmake_build
+<code>cd stk-code
+mkdir cmake_build
 cd cmake_build
 cmake ..
-make VERBOSE=1 -j2
+make -j2
 </code>
 
-(again in this sample I configure make to use 2 cores. You can use more/less depending on your configuration).
-
+You can speed up compilation by changing the number behind <tt>-j</tt> to the number of cores you have.
 
 To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this:
 
@@ -42,14 +48,14 @@ To enable wiiuse, add:
 To run supertuxkart. just start it from the build directory:
 <code>./bin/supertuxkart</code>
 
-'''NOTE: make install is currently broken!!'''
+'''NOTE: <tt>make install</tt> is currently [https://github.com/supertuxkart/stk-code/issues/1 broken]!!'''
 ''And finally, to install (optional):
 
 <code>sudo make install</code>''
 
-this will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like:
+This will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like:
 
-<code>cmake .. -DCMAKE_INSTALL_PREFIX=/opt/stk</code>
+<code>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</code>
 
 == Using Eclipse ==
 If you want to use the eclipse ide, use the following approach:
@@ -69,7 +75,7 @@ Now right-click on this project -> New -> Convert to C++ Project (Possibly not n
 
 Right-click the project -> properties -> C/C++ Build
 * Uncheck "Use default build command"
-* Enter as build command "make VERBOSE=1 -j2" (replace 2 by the number of cores)
+* Enter as build command "make -j2" (replace 2 by the number of cores)
 * Change the build directory to cmake_build
 
 Now you can build the project by :
