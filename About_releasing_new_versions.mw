@@ -51,7 +51,6 @@ supertuxkart-<VERSION>-<ARCHITECTURE>.<FILE EXTENSION>
 '''VERSION''':
 * Release candidates: the version number of the next stable release + rc + release candidate number. Examples: 0.3rc1 or 0.3.1rc2
 * Stable release examples: the version number. Examples: 0.3, 0.4
-* Unstable release examples: SVN + SVN revision number. Examples: SVN1020, SVN2418
 
 '''ARCHITECTURE''':
 * Source packages: src
