@@ -28,7 +28,7 @@ You can use the CMake build system to build STK. At this time CMake will not mak
 '''Currently, you can play the GIT tree only with shaders disabled on OS X'''
 
 
-'''Building on 10.7, 10.8''' (10.9 works too with rev14426 and later)
+'''Building on 10.7, 10.8, 10.9'''
 
 With clang:
 <code>mkdir cmake_build
