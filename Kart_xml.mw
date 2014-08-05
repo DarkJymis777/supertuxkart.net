@@ -1,12 +1,9 @@
 Last update july 8th 2011
 
-[[Image:France.png]][[Kart xml - FR| Version française]]
-
-
 This page describes the format of the kart.xml file, which is used in SuperTuxkart to define some kart options.
 
 == File Format and Location ==
-The kart.xml file is a simple xml file wich have to exists in each kart folder
+The kart.xml file is a simple xml file wich have to exist in each kart's folder. Here is the file of beagle:
 
  <?xml version="1.0"?>
  <!-- Generated with script from SVN rev 9075 -->
@@ -45,8 +42,6 @@ The kart.xml file is a simple xml file wich have to exists in each kart folder
    </wheels>
  </kart>
 
-This shows the kart.xml file of Beagle.
-
 Note: Actually, you don't have to create this file yourself. The Blender's [http://supertuxkart.sourceforge.net/New_kart_tutorial#Exporting_karts kart exporter] do it for you!
 
 == Attributes ==
@@ -73,7 +68,7 @@ The following attributes can be used.
 *''shadow-y-offset'': Offset the shadow image in the Y value. Positive value slide the shadow to the top of the kart (example: "0.35").
 [[File:Kart_xml_shadow_yOffset.png]]
 *''sounds''
-**''engine'': The kind of engine sound the kart make: "large" or "small" ("small" by default).
+**''engine'': The kind of engine sound the kart make: "large" or "small" ("small" by default). Note that in the future there wil hopefully be more options to tweak the sound.
 
 *''animations''
 Here are the frame numbers, in the "model-file", of each animation:
@@ -109,4 +104,4 @@ Additional section can be added to the kart.xml files in which kart-specific phy
      <nitro consumption="2" max-speed-increase="3"/>
  ...
  </kart>
-This makes the mozilla kart heavier (default 225), and it will use up nitro quicker, and get less benefit from it. The stk_config.xml file is well documented, so feel free to tweak the kart. Note that it is our intention to have kart-specific physics after the 0.8 release (see [[Milestones]]). If you do any tweaking of the physics parameters before 0.8 it might be necessary to redo this work after 0.8 (but hopefully it won't be that much work).
+This makes the mozilla kart heavier (default 225), and it will use up nitro quicker, and get less benefit from it. The stk_config.xml file is well documented, so feel free to tweak the kart. Note that kart-specific physics are part of the [http://supertuxkart.sourceforge.net/GSoC_overview GSoC 2014] and will hopefully be integrated in the 0.8.3 release (see [[Milestones]]). If you do any tweaking of the physics parameters before 0.8.3 it might be necessary to redo this work after 0.8.3 (but hopefully it won't be that much work).
