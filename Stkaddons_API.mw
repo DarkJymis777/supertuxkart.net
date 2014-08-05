@@ -5,6 +5,7 @@
  client-user.php?action=disconnect&user={nick}&id={sess-id}
  client-user.php?action=refresh&user={nick}&id={sess-id}
 
+
 === Voting ===
  client-action.php?action=vote&user={nick}&id={sess-id}&addon_id={addon}&vote={vote}
 
