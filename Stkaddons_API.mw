@@ -1,4 +1,4 @@
-== List of Implemented Calls ==
+== List of Implemented Calls == 
 === Session Management ===
  client-user.php?action=connect&user={nick}
  client-user.php?action=connect&user={nick}&password={password}
