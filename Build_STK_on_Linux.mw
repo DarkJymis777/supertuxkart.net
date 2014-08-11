@@ -48,7 +48,6 @@ To enable wiiuse, add:
 To run supertuxkart. just start it from the build directory:
 <code>./bin/supertuxkart</code>
 
-'''NOTE: <tt>make install</tt> is currently [https://github.com/supertuxkart/stk-code/issues/1 broken]!!'''
 ''And finally, to install (optional):
 
 <code>sudo make install</code>''
