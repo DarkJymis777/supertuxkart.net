@@ -14,6 +14,12 @@ This image will show you how to fill the textboxes:
 
 The “File Name” field should not contain any special characters. Leave the gravity checkbox unchecked for now, that affects upside-down roads for the development version. Once you are done, hit the Create button. <br/> <br/>
 Press and hold the “shift” key first, press and hold the middle mouse button, and move the mouse to move the camera. Do the same without holding “shift” to rotate.
+
+<br/>
+[[File:indi.png|center]]
+There is a small kart in the left lower corner of the screen, which changes its orientation as you rotate the camera, and become bigger as you zoom in, or smaller as you zoom out. This is an indicator, showing you how big things in the game are.
+
+<br/>
 Click on the spade icon to activate the height modifier tool. Move the mouse over the terrain: the effected vertices are highlighted with red. Hold down left mouse button, and move your mouse around to draw a nice mountain. You can also decrease the highlighted vertices’ height using right mouse button in the same way.
 
 [[File:Track_editor_tutorial_3.png|center|800px]]
