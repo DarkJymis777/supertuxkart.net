@@ -4,6 +4,9 @@ How to get the editor? It should be explained here : (
 == Making a track == 
 ----
 === '''''Basics''''' === 
+
+You can find a quick tutorial [[Track_Editor_Tutorial|here]].
+
 ==== New Track ==== 
 Clicking on the “New” icon on the toolbar displays the new track dialog window. Before creating the track, there are a few things to setup:
 * Track name: the name, which is displayed in SuperTuxKart. It can contain special characters
@@ -20,6 +23,7 @@ The editor doesn’t save automatically, so please save often – the electricit
 Before you can try your track, you have to build it. Click in the export button to do so: if everything goes well, you have a comforting message.
 ==== Try ==== 
 Clicking on the try icon will let you run the game with the opened track. If you want to check the newest modifications, always export your track before clicking on this icon.<br />
+
 === '''''Cameras''''' ===  
 The editor has two cameras. You can switch between them by using the “Toggle camera mode” icon, or with the hotkey ‘c’.
 ==== Default camera ==== 
