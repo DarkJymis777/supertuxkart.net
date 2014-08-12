@@ -1,4 +1,4 @@
-On the first start, you will see a directory selector window. Maneuver to the data directory, which contains the texture, karts, models, etc. (Double click on a directory to move in, and double click on the “..” to leave the current directory. Once you found the right folder, hit the OK button. If it isn’t the one the editor is expected, you won’t get rid of the selector window.
+On the first start, you will see a directory selector window. Maneuver to the data directory, which contains the texture, karts, models, etc. (Double click on a directory to move in, and double click on the “..” to leave the current directory.) Once you found the right folder, hit the OK button. If it isn’t the one the editor is expected, you won’t get rid of the selector window.
 
 [[File:Track_editor_tutorial_0.png|center]]
 <br/>
