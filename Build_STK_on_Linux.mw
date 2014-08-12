@@ -13,7 +13,7 @@ First of all, you will need a c++ compiler, the autotools build system and cmake
 * Fedora
 <code>yum install gcc-c++ autoconf automake git-core libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake libbluedevil-devel.x86_64</code>
 * Ubuntu/Debian
-<code>sudo apt-get install autoconf automake build-essential cmake git libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev libbluetooth-dev subversion</code>
+<code>sudo apt-get install autoconf automake build-essential cmake git libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev libbluetooth-dev subversion libxrandr-dev</code>
 
 == Obtain code and assets ==
 STK is splitted up into code and assets, so you need these two commands two get both:
