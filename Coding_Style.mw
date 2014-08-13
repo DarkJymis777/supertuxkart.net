@@ -90,6 +90,24 @@ Feel free to use more commands like \pre, \param, \return from doxygen.
 * Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h).
 * avoid using 'friend' for classes
 
+== Portability ==
+Here are a few hints about keeping Super TuxKart portable. Please consider those items when adding new source code, or cleaning up existing source code. The goal is to compile STK on as many platforms as possible, and remove all the warnings we can.
+
+* On some platforms (Macs) the OpenGL library is not in GL, but in OpenGL, so always use:
+ #ifdef __APPLE__
+ #  include <OpenGL/gl.h>
+ #else
+ #  include <GL/gl.h>
+ #endif
+* Even though <algorithm> is implicitly included in std::string on linux, this is not the case on all platforms (and might potentially change anytime on linux as well). So please make sure to include <algorithm> when using algorithms from the STL, e.g. find etc.
+* On at least Windows and Macs textures are lost when switching between fullscreen and window mode. If any textures are used, please make sure that they get deleted and reloaded when switching, see sdldrv::drv_toggleFullscreen for this.
+* Windows prints out a warning whenever a double precision value is specified where a normal float is expected. So to avoid these warnings you should always mark any float constants to be single precision, e.g.: use '''1.0f''' instead of just '''1.0'''.
+* To link a file, be sure that there is no space between the arguments and the filename, for example, -Lbullet/Demos/OpenGL not -L bullet/Demos/OpenGL, since it causes problems on Macs.
+* Some compilers (for example, VC6) don't support initialization of static member variables inside the class declaration, so write the initialization in the implementation file (the .cpp file).
+* Under Windows, a warning is printed if you convert an int to an OpenGL variable type implicitly ( GLint a = b; ), so please do so explicitly ( GLint a = (GLint) b; ).
+* Althought it's possible on linux, do not use C++11 because it can cause problems on older versions of Windows and Mac OS X. (This might change in the future)
+** This also means that you currently can't get rid of the auto_ptr-deprecation warnings
+
 == Logging ==
 We have a separate class to Log messages for the user. This class should be used for any message that's printed on the terminal (or might be redirected into a file so that users can give us this data). Normal printf/cout/cerr are still used in many files, but this is deprecated. The various levels should be used as follows:
 * fatal: Anything that causes STK to abort.
