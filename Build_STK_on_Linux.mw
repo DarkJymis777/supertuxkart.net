@@ -45,7 +45,7 @@ Another option is to build the regular release version with its optimizations, b
 To enable wiiuse, add:
 <code> -DUSE_WIIUSE=yes</code>
 
-To run supertuxkart. just start it from the build directory:
+To run supertuxkart, just start it from the build directory:
 <code>./bin/supertuxkart</code>
 
 ''And finally, to install (optional):
@@ -55,6 +55,12 @@ To run supertuxkart. just start it from the build directory:
 This will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like:
 
 <code>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</code>
+
+If you want to update your copy of stk-code and stk-assets, go in the parent directory of stk-code:
+<code>cd stk-code
+git pull
+cd ../stk-assets
+svn update</code>
 
 == Using Eclipse ==
 If you want to use the eclipse ide, use the following approach:
