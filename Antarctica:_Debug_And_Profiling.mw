@@ -24,5 +24,5 @@ To set up GPU Perf Studio:
 The "USE_ASAN" option in cmake on Linux allows gcc and clang to add ASAN support to the binary in debug mode.
 ASAN (for Adress SANitizer) is a Library that reports memory related error like use after free, double free, malloc/dealloc mismatch... It's basically a Valgrind-like tool but orders of magnitude faster.
 To enable it you must set some environnment var so that symbol are properly translated (and of course, have libasan installed). On Fedora 20 the following command should work :
-* ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer ASAN_OPTIONS=symbolize=1 bin/supertuxkart
+<code>ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer ASAN_OPTIONS=symbolize=1 bin/supertuxkart</code>
 Even if stk was built with gcc.
