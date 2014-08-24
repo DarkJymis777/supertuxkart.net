@@ -1,3 +1,4 @@
+== OpenGL Debug ==
 GPU Perf Studio 2 and CodeXL are used to debug and micro benchmark the new renderer.
 
 http://developer.amd.com/tools-and-sdks/graphics-development/gpu-perfstudio-2/#download
@@ -19,7 +20,7 @@ To set up GPU Perf Studio:
 * You can now access Frame Debugger (list all glDraw*/glClear with complete context ie textures, vbo...) or API Trace (list all GL command with cpu time), and optionnaly gpu profiler (get gpu execution time of each command).
 
 
-ASAN
+== ASAN ==
 The "USE_ASAN" option in cmake on Linux allows gcc and clang to add ASAN support to the binary in debug mode.
 ASAN (for Adress SANitizer) is a Library that reports memory related error like use after free, double free, malloc/dealloc mismatch... It's basically a Valgrind-like tool but orders of magnitude faster.
 To enable it you must set some environnment var so that symbol are properly translated (and of course, have libasan installed). On Fedora 20 the following command should work :
