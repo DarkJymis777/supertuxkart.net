@@ -1,4 +1,4 @@
-This page describes the build and packaging process on windows. You need Visual Studio 11 or higher, the free express version works fine. VS 2010 and earlier are unsupported (though you can use VS 2010 if you either disable USE_WIIUSE, or set the (advanced) option BUILD_WIIUSE).
+This page describes the build and packaging process on windows. You need Visual Studio 2013 (or higher), the free express version works fine. VS 2012 and earlier do not compile STK anymore.
 
 === Instructions for Compiling ===
 * Install VS 2013 or later. The free express versions work fine.
