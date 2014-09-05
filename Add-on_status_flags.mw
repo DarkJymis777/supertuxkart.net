@@ -1,27 +1,51 @@
 == Add-On Status Flags ==
 This is a list of all the possible status flag bits:
-{| style="border: 1px solid #666666;"
-!style="padding: 3px;"| Code || Meaning
+
+{|
 |-
-| 1 || Approved
+! Code
+! Status
+! Description
 |-
-| 2 || Alpha
+| 1
+| Approved
+| A moderator has verified the add-on as having no unsafe or explicit content, and having an appropriate license.
 |-
-| 4 || Beta
+| 2
+| Alpha
+| The add-on revision is in its early developmental stages. It is incomplete and/or broken.
 |-
-| 8 || Release-Candidate (i.e. waiting for approval)
+| 4
+| Beta
+| The add-on revision is in its late developmental stage. It is mostly complete, but may have a few bugs or glitches.
+|-
+| 8
+| Release Candidate
+| The add-on revision is in the final testing phase before its final release. This is the stage where add-on developers should be sent reports of any outstanding issues.
+|-
+| 16
+| low quality
+| Contains low quality artwork
+|-
+| 32
+| high quality
+| The Add-on is verified to have a very high standard
+|-
+| 64
+| DFSG-Compliant
+| As tuxfamily.org does not require DFSG-compliant licenses, add-ons which do not completely meet the requirements may be found on the add-ons server. Some distributors of SuperTuxKart may prefer to restrict the game to using DFSG-compliant content, so this flag would be useful to them.
+|-
+| 128
+| Featured
+| This add-on was suggested by the reviewer
 |- 
-| 16 || Fan-made - may be lower quality artwork
-|- 
-| 32 || High-quality - verified to be of a very high standard
+| 256
+| Latest Revision
+| This is the latest available version of the add-on
 |-
-| 64 || DFSG-compliant
-|-
-| 128 || Featured add-on
-|-
-| 256 || Latest revision
-|-
-| 512 || Some textures do not have dimensions that are powers of two
+| 512
+| Invalid Textures
+| In order to preserve compatibility with some video cards, textures used in add-ons should always have dimensions that are a power of 2. However, if add-on developers choose not to abide by this, then their add-ons will have this flag, and may be unusable on some systems.
 |}
 
 == Conversation Transcript ==
