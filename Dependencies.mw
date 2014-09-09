@@ -1,0 +1,21 @@
+SuperTuxKart is based on a variety of other open-source software to avoid rewriting existing code. The current dependencies are:
+* Irrlicht (custom version shipped with stk)
+* Bullet (custom version shipped with stk)
+* enet (currently a custom version is used, but this should change in the future)
+* OpenGL (Support for >= 3.0, though other version might work)
+* OpenAL (recommended: openal-soft-devel)
+* Ogg
+* Vorbis
+* libcurl
+* libbluetooth
+* libglew
+* xrandr (linux only)
+
+== List of pages listing dependencies ==
+Over the time, the depencies change and some fies and pages have to be updated, so here's a list of the most important lists to makes this easier:
+* This page of course
+* [https://github.com/supertuxkart/stk-code/blob/master/INSTALL.md INSTALL.md]
+* [https://github.com/supertuxkart/stk-code/blob/master/CMakeLists.txt cmake]
+* [[Build STK on Linux]]
+
+Note that the dependency packages referenced [[Building and packaging on OSX|here]] and [[How to build the Windows version|here]] also need to be updated. (Normal hiker does does that for windows and auria for Mac OS X)
