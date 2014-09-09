@@ -1,6 +1,7 @@
 SuperTuxKart is based on a variety of other open-source software to avoid rewriting existing code. The current dependencies are:
 * Irrlicht (custom version shipped with stk)
 * Bullet (custom version shipped with stk)
+* WiiUse (also included)
 * enet (currently a custom version is used, but this should change in the future)
 * OpenGL (Support for >= 3.0, though other version might work)
 * OpenAL (recommended: openal-soft-devel)
