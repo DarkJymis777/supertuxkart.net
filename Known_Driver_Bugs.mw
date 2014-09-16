@@ -4,6 +4,8 @@
 Workaround : Manually unroll the loop.
 * Array of constants seem to be slower than normal when dynamic addressed.
 Workaround : Use uniform arrays.
+* imageLoad() returns undefined values with out of bound index instead of 0 (as mentionned by the spec) on linux.
+Workaround : Clamp indexes or use texture.
 
 == AMD ==
 
@@ -11,6 +13,10 @@ Workaround : Use uniform arrays.
 Workaround : Use a dedicated texture unit for such samplers
 * Bindless srgb textures are sampled like rgb textures
 Workaround : Use #ifdefs and pow(., 2.2) to manually do the conversion
+* imageLoad() returns undefined values with out of bound index instead of 0 (as mentionned by the spec) on linux.
+Workaround : Clamp indexes or use texture.
+* On linux libasan crash early because of overlapping memcpy addresses.
+Workaround : Do not use libasan with catalyst
 
 == Mesa ==
 
