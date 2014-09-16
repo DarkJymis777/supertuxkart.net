@@ -1,0 +1,25 @@
+== Nvidia ==
+
+* Some shader with loops with a long body like GI makes the shader compiler crash.
+Workaround : Manually unroll the loop.
+* Array of constants seem to be slower than normal when dynamic addressed.
+Workaround : Use uniform arrays.
+
+== AMD ==
+
+* Samplers object seems not to be properly unbound when dealing with depth test and array texture like for shadowedsunlight shader.
+Workaround : Use a dedicated texture unit for such samplers
+* Bindless srgb textures are sampled like rgb textures
+Workaround : Use #ifdefs and pow(., 2.2) to manually do the conversion
+
+== Mesa ==
+
+* DoF shaders make the compiler go into an infinite loop
+Workaround : Do not activate dof
+
+== Intel ==
+
+* On Sandy Bridge UBO are not properly updated
+Workaround : Do not use UBO
+* srgb Texture compression is broken.
+Workaround : Do not use texture compression.
