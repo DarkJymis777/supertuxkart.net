@@ -1,48 +1,25 @@
-Latest drivers are assumed in this page.
-
-== Nvidia Drivers ==
+== Nvidia ==
 
 * Some shader with loops with a long body like GI makes the shader compiler crash.
 Workaround : Manually unroll the loop.
-* Passing sampler2D as varying between vertex shader and geometry shader make compiler crash
-Workaround : User uvec2 type instead.
 * Array of constants seem to be slower than normal when dynamic addressed.
 Workaround : Use uniform arrays.
-* On linux depth texture array with depthcomponent16 does not work.
-Workaround : Commit b376dcd6fef825edf14cbab09924efe262223aab
-* imageLoad() returns undefined values with out of bound index instead of 0 (as mentionned by the spec) on linux.
-Workaround : Clamp indexes or use texture.
-* atomics on shared memory (and to global memory to a lesser extent) like atomicMax in compute shaders make the display server hang/crash on Windows and Linux.
-Workaround : Do not use atomics.
 
-== Catalyst ==
+== AMD ==
 
 * Samplers object seems not to be properly unbound when dealing with depth test and array texture like for shadowedsunlight shader.
 Workaround : Use a dedicated texture unit for such samplers
 * Bindless srgb textures are sampled like rgb textures
 Workaround : Use #ifdefs and pow(., 2.2) to manually do the conversion
-* imageLoad() returns undefined values with out of bound index instead of 0 (as mentionned by the spec) on linux.
-Workaround : Clamp indexes or use texture.
-* On linux libasan crash early because of overlapping memcpy addresses.
-Workaround : Do not use libasan with catalyst
-* Array textures with MSAA make the display driver on Windows crash and/or generates visual glitches.
-Workaround : Use atlases or avoid MSAA
-* Float arrays in UBO (when there are 2 UBOs) are not correctly staticaly addressed by shaders although it compiles.
-Workaround : Names all field in the array manually.
-* "#extension GL_AMD_vertex_shader_layer : enable" statement is not recognised.
-Workaround :  GL_AMD_vertex_shader_layer behavior is enabled by default (ie you can write to gl_Layer in vertex shader) and it doesnt prevent the shader compilation so it's not an issue.
 
 == Mesa ==
 
-* On intel srgb Texture compression is broken.
-Workaround : Do not use texture compression. This bug is also present on Intel Windows. Not sure it can be called a bug since texture compression is not part of the standard anyway.
+* DoF shaders make the compiler go into an infinite loop
+Workaround : Do not activate dof
 
-== Intel Windows ==
+== Intel ==
 
 * On Sandy Bridge UBO are not properly updated
 Workaround : Do not use UBO
 * srgb Texture compression is broken.
-Workaround : Do not use texture compression. Not sure it can be called a bug since texture compression is not part of the standard anyway.
-
-
-[[category:Antarctica]]
+Workaround : Do not use texture compression.
