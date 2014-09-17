@@ -29,3 +29,6 @@ Workaround : Do not activate dof
 Workaround : Do not use UBO
 * srgb Texture compression is broken.
 Workaround : Do not use texture compression.
+* The terminal is flooded with warnings in debug buildsso the the fps gos down from 60 to 11.
+Workaround: disable warnings
+Solution: Modify the irrlicht Code so that it doesn't use old functions with modern hardware OR make the printing of warning configurable.
