@@ -1,38 +1,7 @@
-The STK-Addons website is a repository for all user-created content for Super Tux Kart.
+STKaddons is a plattform that allows artists and users to share additional additional tracks, arenas and karts for SuperTuxKart. Content can be either installed in-game using the [[Stkaddons:API|API]] or downloaded directly from the official website at [http://stkaddons.net stkaddons.net], where you can also download older version of an add-on.
 
-This page is a placeholder for future information.
+STKaddons was mainly written by Stephen Just and released under the MIT License. During the Google Summer of Code 2014, leyyin added missing features and did other major improvements. These changes have not yet been applied to [http://stkaddons.net stkaddons.net] and the official repository on [https://github.com/stephenjust/stk-stats github].
 
-* [[Stkaddons:Registration|Registering on STKAddons]]
 
-== Add-On Status Flags ==
-{|
-|-
-! Status
-! Description
-|-
-| Approved
-| A moderator has verified the add-on as having no unsafe or explicit content, and having an appropriate license.
-|-
-| Alpha
-| The add-on revision is in its early developmental stages. It is incomplete and/or broken.
-|-
-| Beta
-| The add-on revision is in its late developmental stage. It is mostly complete, but may have a few bugs or glitches.
-|-
-| Release Candidate
-| The add-on revision is in the final testing phase before its final release. This is the stage where add-on developers should be sent reports of any outstanding issues.
-|-
-| Invisible
-| Based on the website configuration, the addon will either not be included in the XML listing, or it will have the "invisible" flag set, and the game will not display it.
-|-
-| DFSG-Compliant
-| As tuxfamily.org does not require DFSG-compliant licenses, add-ons which do not completely meet the requirements may be found on the add-ons server. Some distributors of SuperTuxKart may prefer to restrict the game to using DFSG-compliant content, so this flag would be useful to them.
-|-
-| Featured
-| This add-on is verified to be of extremely high quality, and functions very well in actual gameplay (i.e. physics, fun-value, appearance, etc.)
-|-
-| Invalid Textures
-| In order to preserve compatibility with some video cards, textures used in add-ons should always have dimensions that are a power of 2. However, if add-on developers choose not to abide by this, then their add-ons will have this flag, and may be unusable on some systems.
-|}
 
-[[Category:Stkaddons]]
+[To be continued]
