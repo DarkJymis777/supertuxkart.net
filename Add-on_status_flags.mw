@@ -24,7 +24,7 @@ This is a list of all the possible status flag bits. (No guarantee for correctne
 |-
 | 16
 | Invisible
-| The add-on will not be avaiable to the game, to download.
+| The add-on will not be available to the game, to download.
 |-
 | 32
 | Reserved
