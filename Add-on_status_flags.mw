@@ -23,12 +23,12 @@ This is a list of all the possible status flag bits. (No guarantee for correctne
 | The add-on revision is in the final testing phase before its final release. This is the stage where add-on developers should be sent reports of any outstanding issues.
 |-
 | 16
-| low quality
-| Contains low quality artwork
+| Invisible
+| The add-on will not be avaiable to the game, to download.
 |-
 | 32
-| high quality
-| The Add-on is verified to have a very high standard
+| reserved
+| Flag reserved for future use
 |-
 | 64
 | DFSG-Compliant
