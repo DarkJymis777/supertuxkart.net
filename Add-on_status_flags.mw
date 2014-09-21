@@ -27,7 +27,7 @@ This is a list of all the possible status flag bits. (No guarantee for correctne
 | The add-on will not be avaiable to the game, to download.
 |-
 | 32
-| reserved
+| Reserved
 | Flag reserved for future use
 |-
 | 64
