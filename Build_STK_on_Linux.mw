@@ -21,11 +21,7 @@ STK is splitted up into code and assets, so you need these two commands two get 
 svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets # about 650 MB</code>
 See [[Source control]] for more information.
 
-== Building SuperTuxKart ==
-
-Then build SuperTuxKart using CMake
-
-'''The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the same folder.''' This means that you need the following folder structure:
+The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the same folder. This means that you need the following folder structure:
 * base dir
 ** stk-code
 *** src
@@ -34,6 +30,10 @@ Then build SuperTuxKart using CMake
 ** stk-assets
 *** tracks
 *** ...
+
+== Building SuperTuxKart ==
+
+Then build SuperTuxKart using CMake:
 
 <code>cd stk-code
 mkdir cmake_build
@@ -44,29 +44,29 @@ make -j2
 
 You can speed up compilation heavily by changing the number behind <tt>-j</tt> to the number of cores you have.
 
-To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this:
+There is a varity of possible CMake options. THe most important ones are listed below:
+* To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this: <code>cmake .. -DCMAKE_BUILD_TYPE=Debug</code>
 
-<code>cmake .. -DCMAKE_BUILD_TYPE=Debug</code>
+* Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that.
 
-Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that.
+* wiiuse can be enable with <code>-DUSE_WIIUSE=yes</code>
 
-To enable wiiuse, add:
-<code> -DUSE_WIIUSE=yes</code>
 
-To run supertuxkart, just start it from the build directory:
+Finally, you can simply run SuperTuxKart from the build directory:
 <code>./bin/supertuxkart</code>
 
-''And finally, to install (optional):
+Optionally, STK can be installed /usr/local in using
 
 <code>sudo make install</code>''
 
-This will install in /usr/local. If you want to install somewhere else, replace the "cmake" command with something like:
+If you want to install somewhere else, add the following options to cmake:
 
-<code>cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install</code>
+<code>-DCMAKE_INSTALL_PREFIX=/path/to/install</code>
 
-If you want to update your copy of stk-code and stk-assets, go in the parent directory of stk-code:
+If you want to update your copy of STK to the current git/SVN versions, go to the parent directory of stk-code:
 <code>cd stk-code
 git pull
+make -j2
 cd ../stk-assets
 svn update</code>
 
