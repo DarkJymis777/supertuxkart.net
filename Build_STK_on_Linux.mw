@@ -25,7 +25,15 @@ See [[Source control]] for more information.
 
 Then build SuperTuxKart using CMake
 
-'''The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the same folder.'''
+'''The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the same folder.''' This means that you need the following folder structure:
+* base dir
+** stk-code
+*** src
+*** lib
+*** ...
+** stk-assets
+*** tracks
+*** ...
 
 <code>cd stk-code
 mkdir cmake_build
@@ -34,7 +42,7 @@ cmake ..
 make -j2
 </code>
 
-You can speed up compilation by changing the number behind <tt>-j</tt> to the number of cores you have.
+You can speed up compilation heavily by changing the number behind <tt>-j</tt> to the number of cores you have.
 
 To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this:
 
