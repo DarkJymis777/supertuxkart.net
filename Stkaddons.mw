@@ -4,4 +4,4 @@ STKaddons was mainly written by Stephen Just and released under the MIT License.
 
 Internally, add-ons have different [[Add-on status flags|flags]] containing meta-information. Different flags mean different appearance on the website or in the add-on manager, e.g. "featured" adds a heart. They can also trigger different treatment, e.g. "Invisible" add-ons can't be installed.
 
-[To be continued]
+Normally, people try there Add-Ons before uploading them. Therefore, you can also [[Installing Add-Ons|install Add-Ons]] manually.
