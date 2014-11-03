@@ -66,8 +66,9 @@ If you want to install somewhere else, add the following options to cmake:
 If you want to update your copy of STK to the current git/SVN versions, go to the parent directory of stk-code:
 <code>cd stk-code
 git pull
+cd cmake_build
 make -j2
-cd ../stk-assets
+cd ../../stk-assets
 svn update</code>
 
 == Using Eclipse ==
