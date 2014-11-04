@@ -23,6 +23,8 @@ Workaround : Use #ifdefs and pow(., 2.2) to manually do the conversion
 Workaround : Clamp indexes or use texture.
 * On linux libasan crash early because of overlapping memcpy addresses.
 Workaround : Do not use libasan with catalyst
+* Array textures with MSAA make the display driver on Windows crash and/or generates visual glitches.
+Workaround : Use atlases or avoid MSAA
 
 == Mesa ==
 
