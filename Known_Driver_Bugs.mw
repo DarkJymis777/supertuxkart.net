@@ -10,6 +10,8 @@ Workaround : Use uniform arrays.
 Workaround : Commit b376dcd6fef825edf14cbab09924efe262223aab
 * imageLoad() returns undefined values with out of bound index instead of 0 (as mentionned by the spec) on linux.
 Workaround : Clamp indexes or use texture.
+* atomics on shared memory (and to global memory to a lesser extent) like atomicMax in compute shaders make the display server hang/crash on Windows and Linux.
+Workaround : Do not use atomics.
 
 == AMD ==
 
