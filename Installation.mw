@@ -41,7 +41,7 @@ It is about 130 MB in size.
 
 Data files are hosted on sourceforge and use SVN. Example checkout command :
 <code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets</code>
-It is about 350 MB in size.
+It is about 650 MB in size (some of the assets from a downloaded supertuxkart tarball could also be reused probably).
 
 These two repositories should be downloaded in the same folder, so that folders "stk-code" and "stk-assets" are next to each other.
 
