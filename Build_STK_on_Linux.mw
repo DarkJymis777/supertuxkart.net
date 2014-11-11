@@ -11,7 +11,7 @@ Note that these instructions apply to STK versions more recent than 0.8 alpha. I
 First of all, you will need a c++ compiler, the autotools build system and cmake. Other dependencies you will need include openal, ogg, vorbis. You don't need to install irrlicht, bullet, enet or wiiuse because they are included in the git repository.
 
 * Fedora
-<code>yum install gcc-c++ autoconf automake git-core libogg-devel libvorbis-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake libbluedevil-devel.x86_64</code>
+<code>yum install gcc-c++ autoconf automake git-core libogg-devel libvorbis-devel libXrandr-devel mesa-libGL-devel mesa-libGLU-devel openal-soft-devel fribidi-devel subversion libcurl-devel cmake libbluedevil-devel</code>
 * Ubuntu/Debian
 <code>sudo apt-get install autoconf automake build-essential cmake git libogg-dev libvorbis-dev libopenal-dev libxxf86vm-dev libgl1-mesa-dev libglu1-mesa-dev libcurl4-openssl-dev libfribidi-dev libbluetooth-dev subversion libxrandr-dev</code>
 
