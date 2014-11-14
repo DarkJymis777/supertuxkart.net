@@ -18,6 +18,8 @@ If you wish that your contribution be included in STK main or add-ons, '''always
 
 If you reuse a texture from another STK track, ideally still note down its author and license, by reading the appropriate License.txt file, a simple reference to another track makes things very hard to follow (rationale : the other track might get removed, or the original texture may be replaced with another texture of a different license or by another author, and then all links between tracks from license files become broken).
 
+Also be sure that you have the right to actually release the art work under the license you chose. Some (typically commercial) software might restrict what you are allowed to do with anything created with that software.
+
 == Which licenses? ==
 
 Our license of choice is Creative-Commons-By-SA version 3.0 or more recent (Note: Creative Commons is hereafter abbreviated CC).
