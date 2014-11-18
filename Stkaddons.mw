@@ -2,6 +2,6 @@ STKaddons is a plattform that allows artists and users to share additional addit
 
 STKaddons was mainly written by Stephen Just and released under the MIT License. During the Google Summer of Code 2014, leyyin added missing features and did other major improvements. These changes have not yet been applied to [http://stkaddons.net stkaddons.net] and the official repository on [https://github.com/stephenjust/stk-stats github].
 
-Internally, add-ons have different [[Add-on status flags|flags]] containing meta-information. Different flags mean different appearance on the website or in the add-on manager, e.g. "featured" adds a heart. They can also trigger different treatment, e.g. "Invisible" add-ons can't be installed.
+Internally, add-ons have different [[add-on status flags|flags]] containing meta-information. Different flags mean different appearance on the website or in the add-on manager, e.g. "featured" adds a heart. They can also trigger different treatment, e.g. "Invisible" add-ons can't be installed.
 
-Normally, people try there Add-Ons before uploading them. Therefore, you can also [[Installing Add-Ons|install Add-Ons]] manually.
+But sometimes, e.g. if you are an artist or a developer, you want to test an add-on before uploading it. Therefore, you can also [[Installing Add-Ons|install add-ons]] manually.
