@@ -11,10 +11,11 @@
 === Connect - Anonymous ===
  client-user.php?action=connect&user={nick}
 Responses:
- Success:
+
+- Success:
    <?xml version="1.0"?>
    <connection id="6350fee41faed540ddeb627e" registered="false" />
- Failure (nick already used):
+- Failure (nick already used):
    Nickname {nick} already used
 
 === Connect - User ===
