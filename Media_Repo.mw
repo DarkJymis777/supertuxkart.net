@@ -1,9 +1,10 @@
-The '''media repository''' is a directory in SVN where we store the blender files, the original textures/images in gimp/inkscape format, etc.
+The '''media repository''' is place where all the original files of 3D-Models, textures, sound and all the other game art used in STK. This is necessary because those files are normally to large or even incompatible with the game, so they are shrinked or converted before being shipped with the game. These files are only needed by artist who want to edit the models/textures/etc.
 
-You may obtain the media repository by obtaining URL
+You may obtain the media repository by downloading  
 <code>https://svn.code.sf.net/p/supertuxkart/code/media/trunk</code>
+with a SVN client
 
-Under Unix, the checkout command-line would look like :
+Under Unix, an example checkout command would be:
 <code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/media/trunk stk_media_repo</code>
 
-You can also browse it online [https://sourceforge.net/p/supertuxkart/code/ at sourceforge].
+You can also browse the repository online at [https://sourceforge.net/p/supertuxkart/code/ sourceforge].
