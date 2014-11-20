@@ -1,15 +1,10 @@
-This page explains how to make a kart for STK using Blender. It assumes you know the basics of modeling, UV texturing and skeletal animations in Blender, and concentrates on aspects that are specific to SuperTuxKart. Also see the general [[Style Guidelines]] which you can also consult for more details. See the [[Kart resources index 2|Kart resources index page]] for other resources about karts.
+This page explains how to make a kart for STK using Blender. It assumes you know the basics of modeling, UV texturing and skeletal animations in Blender, and concentrates on aspects that are specific to SuperTuxKart. Also see the general [[Style Guidelines]] which you can also consult for more details. See the [[Kart resources index|Kart resources index page]] for other resources about karts.
 
-
-
-See the [[Kart resources index 2#Kart export checklist|Kart export checklist]] for a short list that sums up every important point to know in this page, and make sure everything is OK before exporting a kart with STK's kart exporter.
+See the [[Kart resources index#Kart export checklist|Kart export checklist]] for a short list that sums up every important point to know in this page, and make sure everything is OK before exporting a kart with STK's kart exporter.
 
 See the [[Blender resources page]] for a list of tutorial links to learn how to use Blender (2.4).
 
-
-'''Important note :''' Before any work, it is essential to know that any STK content (and eventual content used to make it) must strictly be of an acceptable license (see [[Licensing]]).
-
-[[Italiano:Making_Karts|Versione in italiano]]
+'''Important note :''' Before doing any work, it is essential to know that any STK content (and eventual content used to make it) must be licensed with an acceptable open license (see [[Licensing]]).
 
 
 =Character and kart design=
@@ -82,7 +77,7 @@ Every object in your blender scene will be exported by STK's kart exporter excep
 
 At this time, STK supports UV texturing (with one texture only by face [''addendum'': STK 0.8 supports normal maps and shadow maps]) and vertex colors. All other options set in blender's material panel will be ignored.
 
-To meet OpenGL requirements, the UV textures files must have power of two dimensions (e.g. 128x256, or 512x512). Note that here again, as this model purpose is a real-time use, textures size should not be unnecessarily too large. In general, 512x512 textures are large enough, and increasing the resolution does not change a lot the final ingame render.
+To meet OpenGL requirements, the UV textures files must have power of two dimensions (e.g. 256x256, or 512x512). Note that here again, as this model purpose is a real-time use, textures size should not be unnecessarily too large. In general, 512x512 textures are large enough, and increasing the resolution does not change a lot the final ingame render.
 
 The JPEG format is one of the most efficient in terms of compression, so although some existing textures are in png, the jpg is the best format for the game (if you use jpeg, please keep the original lossless file!). If you need a part of your model to be transparent, or have specific properties, you can assign it a specific texture file (a tiny image is OK for a single color) or a vertex color, then create a custom [[Materials xml | materials.xml]] file -- that you will have to include later in the kart game folder with models and textures. Note that the material.xml file is used by STK, but not by Blender.
 
