@@ -20,9 +20,7 @@ On OSX 10.9.5 I had to use:
 <code>
 $ xcrun --show-sdk-path
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
-
 $ sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/  /usr/include
-
 $ sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/ /usr/local/include/OpenGL</code>
 The first link in order to find libcurl, the second to find opengl.
 
