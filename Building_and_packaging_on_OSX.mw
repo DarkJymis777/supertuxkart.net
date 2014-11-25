@@ -16,11 +16,11 @@ Also see [[Source control]] to obtain the source code from git.
 (you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source! <TT>sudo mkdir -p /usr/local/include/</TT>)
 
 
-On OSX 10.9.5 I had to use:
+On OSX 10.9.5 I had to use (FIXME):
 <code>
 $ xcrun --show-sdk-path
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
-$ sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/  /usr/include
+$ sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/  /usr/include
 $ sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/ /usr/local/include/OpenGL</code>
 The first link in order to find libcurl, the second to find opengl.
 
