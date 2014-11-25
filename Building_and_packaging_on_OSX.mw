@@ -13,9 +13,18 @@ Also see [[Source control]] to obtain the source code from git.
 
 * symlink include folder of OpenGL framework to /usr/local/include/GL (Unix programs have an easier time finding it this way)
 <code>sudo ln -s /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/ /usr/local/include/GL</code>
-On OSX 10.9.5 I had to use:
-<code>sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/ /usr/local/include/OpenGL</code>
 (you might need to create <TT>/usr/local/include/</TT> first if you never built and installed anything from source! <TT>sudo mkdir -p /usr/local/include/</TT>)
+
+
+On OSX 10.9.5 I had to use:
+<code>
+$ xcrun --show-sdk-path
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
+
+$ sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/  /usr/include
+
+$ sudo ln -s  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/ /usr/local/include/OpenGL</code>
+The first link in order to find libcurl, the second to find opengl.
 
 = Dependencies =
 * Download pre-built dependencies [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart%20Dependencies/OSX/ from here]
