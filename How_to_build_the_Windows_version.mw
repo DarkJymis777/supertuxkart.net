@@ -8,11 +8,12 @@ This page describes the build and packaging process on Windows. You need Visual 
 * Download [http://www.cmake.org cmake] and install it. Then start cmake-gui and select the STK code directory (stk-code by default) as 'Where is the source code', and a new directory in the root directory (next to src, data etc) as build directory. Use a folder name “bld” or “build” (for now I assume that this directory is called bld).
 * Click on configure. You will be asked to create the directory (yes), then for your VS version. Make sure to select the right version (be aware of the easy to confuse version numbers: VS 2013 = version 12). Click on configure, then generate. This will create the directory 'bld', and a VS solution in that directory.
 * In Visual Studio open the project file generated in the 'bld' folder. 
+* In the upper set of toolbars, select the dropdown menu for Solution Configurations and select “Release.” If you are a developer, you might want to use the “debug” configuration, but it does have decreased performance.
 * Right click on the supertuxkart project in the solution explorer, and select "Set as StartUp Project".
 * Select Build->Build Solution (or press F7) to compile.
 
 You can also start STK from the command line: change into STK's root directory, and do:
-./bld/Debug/supertuxkart.exe
+./bld/Release/supertuxkart.exe
 
 === Instructions for Creating the Installer ===
 Note that this step is only necessary if you want to create an installer package. To just run or debug STK, only the above Instructions for Compiling need to be followed.
