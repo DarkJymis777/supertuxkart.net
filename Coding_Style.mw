@@ -89,7 +89,7 @@ Feel free to use more commands like \pre, \param, \return from doxygen.
 * Use std::string instead of char*. If you need a C-style string, use the function std::string.c_str(). However, there are cases when this cannot be avoided(like when using strings with gettext).
 * Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h).
 * avoid using 'friend' for classes
-* use postfix operators like i++, not ++i (unless there is a difference, e.g. if i should be a class, not a simple type). It was checked that there is no difference in the created code, and us developers prefer postfix.
+* use postfix operators like i++, not ++i (unless there is a difference, e.g. if i should be a class, not a simple type). It was checked that there is no difference in the created code, and we developers prefer postfix.
 
 == Portability ==
 Here are a few hints about keeping Super TuxKart portable. Please consider those items when adding new source code, or cleaning up existing source code. The goal is to compile STK on as many platforms as possible, and remove all the warnings we can.
