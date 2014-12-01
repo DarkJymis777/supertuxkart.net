@@ -53,6 +53,7 @@ Exceptions to this are one line functions in header files:
 * Have a line "// ------------------------" (up to 80th column) separating each function definition (see [[#Doxygen]] for an example)
 * If the closing } is more than a few lines away from the opening {, or if there are multiple curly braces in-between, add a comment indicating what this } closes. This comment can be an informal comment, or just be the corresponding opening statement. E.g: <pre>}   // for i in all karts</pre> or <pre>}   // for(int i=0; i<m_num_karts; i++)</pre>
 * It should be avoided to have more than one class in a file. If you can't avoid it, separate them with "// ============" (up to 80th column)
+* In case of an "else if()" statement, the "else" and "if" go on the same line.
 
 == Doxygen ==
 Use Doxygen comments. The comments for variables should be just before their declaration, and functions should be documented where they are implemented, and not where they are defined. I.e. don't document functions in the header file if they are implemented in the corresponding cpp file. Reason for this is that this way the documentation is on the screen when you debug. If you want to study the interface of a class, just look at the doxygen documentation, and all information is on one screen. But if you debug you want to know what a function is doing, then having to look at the header file is annoying. It's also easier to keep implementation details and comments in sync.
