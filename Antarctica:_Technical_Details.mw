@@ -1,4 +1,4 @@
-This page describes the new renderer (sometimes referred as Antarctica engine or pipeline) used in STK.
+This page concerns the new renderer (sometimes referred as Antartica engine or pipeline) used in STK.
 
 The new renderer is using (almost) exclusively function from the core GL 3.3+ spec in order to take advantage of modern hardware feature.
 While it uses irrlicht graph traversal and irrlicht material manager to some extend, all meaningfull GL calls are done by this new renderer. Irrlicht's code is only used for context creation, framebuffer creation/binding, texture loading, and some offscreen rendering like minimap generation and kart selection viewer. It should be possible to completly handle the framebuffer creation and binding (it's already done for shadow map because of Irrlicht's lack of textures arrays), but texture loading requires some support from irrlicht, in order to be able to load our mesh.
@@ -7,52 +7,29 @@ It was decided to move from irrlicht OpenGL path when it appeared that Irrlicht 
 It turned out to be much easier to write a new renderer from scratch instead of patching our copy of Irrlicht (massive) codebase.
 
 
-== The main features of our renderer ==
-=== Gamma correct rendering ===
-Monitors apply a "gamma transformation" on every channel of color input: pow(., gamma) where gamma is monitor dependent but usually close to 2.2. This is intended to mimic older CRT non-linear behavior where the color (128, 128, 128) was a much darker grey than the grey right between (0, 0, 0) and (255, 255, 255) (which in turn is mapped to (187, 187, 187)) because of voltage to pixel conversion. At the other end of the rendering chain, textures are stored with an inverse gamma applied to compensate this effect when displayed on screen. With such inputs and output bias light calculations become wrong and can lead to oversaturate picture. The new renderer is using texture and framebuffer format aware of this bias to make our light mathematically correct.
+The main features of our renderer are the following :
+* Gamma correct rendering. Monitors apply a "gamma transformation" on every channel of color input : pow(., gamma) where gamma is monitor dépendent but usually close to 2.2. This is intended to mimic older CRT non-linear behavior where the color (128, 128, 128) was a much darker grey than the grey right between (0, 0, 0) and (255, 255, 255) (which in turn is mapped to (187, 187, 187)) because of voltage to pixel conversion. At the other end of the rendering chain, textures are stored with an inverse gamma applied to compensate this effect when displayed on screen. With such inputs and output bias light calculations become wrong and can lead to oversaturate picture. The new renderer is using texture and framebuffer format aware of this bias to make our light mathematically correct.
 See here for more information http://http.developer.nvidia.com/GPUGems3/gpugems3_ch24.html 
-=== HDR ===
-All our intermediate render target are using a 16 bits float format.
-=== Light prepass ===
-There are a couple of passes used in stk, but opaque geometry is rendered using 2 passes:
+* HDR. All our intermediate render target are using a 16 bits float format.
+* Light prepass : there are a couple of passes used in stk, but opaque geometry is rendered using 2 passes :
 First STK renders only normals (and soon glossiness) data to a single rendertarget. Light diffuse and specular are then computed used only this buffer, and then the second geometry pass occurs, provided with the diffuse and specular data.
-This kind of renderer (which is used in Cry Engine 3+) is similar to deffered shading (used in Unreal Engine 4 and Frostbite 2+) but with a different trade off: the bandwidth requirement is lowered as only a single intermediate render target is written to at the cost of an extra geometry pass.
-Note: A deferred shading implementation will replace the light prepass pipeline in next version.
-=== IBL ===
-Image Based Lighting is a technic to approximate environment lighting by approximating surrounding environment by a cubemap that is sampled to generate diffuse and specular lighting data. We currently only support external cubemap (typically skybox) but more traditional engine can generate a grid of light "probe" rendered offline or at loading time and eventually updated at runtime.
-Diffuse data consist in the 9 first SH coefficients and specular data are generated at loading time by importance sampling using phong distribution. A "DFG" modulation term (which approximate the impact of Fresnel and Geometric occlusion in the classic MicroFacet expression) will be used in the next release.
-See "Real Shading in UE4" http://blog.selfshadow.com/publications/s2013-shading-course/#course_content and  http://seblagarde.wordpress.com/
-=== Lights ===
-We only ship point lights at the moment. They use the classic lambert equation for diffuse part (ie dot(N, L)). For specular we choose to use a Blinn Phong BRDF with the Schlick approximation of Fresnel factor to simulate angular dependency of material reflexion. Actually the formula is pretty close, if not equal, to the one described here, although the constant factor may vary as we dont currently have a physically based renderer : http://seblagarde.wordpress.com/2011/08/17/hello-world/
-=== GPU Particles ===
-Particles are completly simulated on the GPU, using Transform Feedback (which is the ancestor of compute shaders).
-=== Instancing ===
-The new renderer focuses at being efficient at rendering a lot of objects, for this it uses instancing to draw identical meshes at different place/scale.
-
-=== Cascaded Shadow Mapping for sunlight ===
-The algorithm used is the classic one with 3 splits/4  cascades, using a plain old hardware accelerated (through shadow2D sampler) PCF filter to remove aliasing.
-
-=== SSAO ===
-We use Alchemy Ambient Obscurance algorithm that was first implemanted from Alchemy engine: http://graphics.cs.williams.edu/papers/AlchemyHPG11/ . It is considered as one of the best AO algorithm available, as it is more temporaly stable than others methods and generate subtle yet noticeable ambient shadows. We also use the improvement listed here to make it useable from a performance pov : http://graphics.cs.williams.edu/papers/SAOHPG12/
-=== Radiance Hint Global Illumination ===
-This allows to have more natural Outlook light especially in shadowed area without having to add point like to fake GI. See paper and code here : http://graphics.cs.aueb.gr/graphics/research_illumination.html
-
-== Planned features ==
-=== Physics based rendering ===
-see [[Anarctica: Physically Based Shading]]
+This kind of renderer (which is used in Cry Engine 3+) is similar to deffered shading (used in Unreal Engine 4 and Frostbite 2+) but with a different trade off : the bandwidth requirement is lowered as only a single intermediate render target is written to at the cost of an extra geometry pass.
+* IBL : Image Based Lighting is still in its early developpement in STK. IBL consists of sampling light (in a cubemap) at some punctal locations to approximate illumination in the neighborhood. It's used to fake Global Illumination. Currently we only support the "approximate illumination" part of the technics, as we don't do the light sampling yet (we use the skybox picture instead, which often lead to convincing results). The technic can also be much improving by using parralax correction on the cubemap for specular reflections.
+See more information here http://seblagarde.wordpress.com/
+* Lights : We only ship point lights at the moment. They use the classic lambert equation for diffuse part (ie dot(N, L)). For specular we choose to use a Blinn Phong BRDF with the Schlick approximation of Fresnel factor to simulate angular dependency of material reflexion. Actually the formula is pretty close, if not equal, to the one described here, although the constant factor may vary as we dont currently have a physically based renderer : http://seblagarde.wordpress.com/2011/08/17/hello-world/
+* GPU Particles. Particles are completly simulated on the GPU, using Transform Feedback (which is the ancestor of compute shaders).
+* Instancing. The new renderer focuses at being efficient at rendering a lot of objects, for this it uses instancing to draw identical meshes at different place/scale.
+* Cascaded Shadow Mapping for sunlight. The algorithm used is the classic one with 3 splits/4  cascades, using a plain old hardware accelerated (through shadow2D sampler) PCF filter to remove aliasing.
+* SSAO : We use Alchemy Ambient Obscurance algorithm that was first implemanted from Alchemy engine : http://graphics.cs.williams.edu/papers/AlchemyHPG11/ . It is considered as one of the best AO algorithm available, as it is more temporaly stable than others methods and generate subtle yet noticeable ambient shadows. We also use the improvement listed here to make it useable from a performance pov : http://graphics.cs.williams.edu/papers/SAOHPG12/
+* Radiance Hint GLobal Illumination. This allows to have more natural Outlook light especially in shadowed area without having to add point like to fake GI. See paper and code here : http://graphics.cs.aueb.gr/graphics/research_illumination.html
 
 
-=== Rectangular light ===
-Point lights are quite non realistic and they have noticeable shortcomings : their radiance tend to go very high close to them, their diffuse component is a boring sphere and their specular reflexion is infinitely thin so you have to make everything ultra sharp to actually see them. Unfortunatly shadowing area light requires different algorithm than sunlight shadow and point light shadow (see http://www.crytek.com/download/Playing%20with%20Real-Time%20Shadows.pdf for an algorithm that uses voxellisation but produces great visual results)
-=== Shadows (and maybe RSM ?) for point light ===
-
-=== Screen Space Raytraced Reflexion ===
-Introduced by Crysis 2 DX11 patch, SSRR is doing raytracing on the final image to generate local reflexion. These reflexions are used for all surface as an extra specular component so that not just glossy surface benefits from it. A lot of games reports to use it today, like assassin's creed 4, killzone 4...
+Planned features
+* Rectangular light. Point lights are quite non realistic and they have noticeable shortcomings : their radiance tend to go very high close to them, their diffuse component is a boring sphere and their specular reflexion is infinitely thin so you have to make everything ultra sharp to actually see them. Unfortunatly shadowing area light requires different algorithm than sunlight shadow and point light shadow (see http://www.crytek.com/download/Playing%20with%20Real-Time%20Shadows.pdf for an algorithm that uses voxellisation but produces great visual results)
+* Shadows (and maybe RSM ?) for point light.
+* Screen Space Raytraced Reflexion. Introduced by Crysis 2 DX11 patch, SSRR is doing raytracing on the final image to generate local reflexion. These reflexions are used for all surface as an extra specular component so that not just glossy surface benefits from it. A lot of games reports to use it today, like assassin's creed 4, killzone 4...
 
 === Links ===
-* [[Antarctica: Debug And Profiling]]
-* [[Antarctica: Performance]]
-* [[Known Driver Bugs]]
-* [[Anarctica: Physically Based Shading]]
-
-[[category:Antarctica]]
+* [[Renderer:Debug And Profiling]]
+* [[Renderer:Performance]]
+* [[Renderer:Know_Drivers_Bug]]
