@@ -2,7 +2,7 @@ __NOTOC__
 __NOEDITSECTION__
 Supertuxkart 0.8.2 and higher feature a custom engine called Antartica. '''It's not a standalone engine and we don't plan to make it standalone'''. It's designed to run only with our game and it's closely related to its.
 
-The main feature of Antarctica engine is a new renderer which currently supports OpenGL 4.0.
+The main feature of Antarctica is a new renderer which currently supports OpenGL 4.0.
 
 If you want more technical information about the engine you should read [[this]]
 
@@ -18,5 +18,26 @@ All lights can be animated if needed.
 
 The sun cast automatically real time shadows to add more realism to the scene. You don't need precomputed [[lightmaps]] anymore.
 
-== P ==
+== Realtime ambient occlusion ==
+[[Image:Antartica_ssao.jpg|center|800px]]
+Before / after
+
+Ambient occlusion is a shading technique to add darkness where objects and surface are close together, like cracks or corners.
+
+== Depth of field and Bokeh ==
+[[Image:antartica_dofbokeh.jpg|center|800px]]
+
+When objects and lights are out of focus they are slightly blurred. Light sources appear as little dots like in real camera when a strong light source is out of focus.
+More information about [https://en.wikipedia.org/wiki/Bokeh|bokeh]
+
+== Bloom & lens flare ==
+[[Image:antartica_bloom.jpg|center|800px]]
+
+Each strong light source will [https://en.wikipedia.org/wiki/Bloom_%28shader_effect%29|bloom] and produce [http://tvtropes.org/pmwiki/pmwiki.php/Main/LensFlare|anamorphic lens flare]
+== Global illumination & Image based lighting==
+[[Image:antartica_ibl.jpg|center|800px]]
+before/after
+
+The surrounding environment will affect itself. Global illumination will simulate light bouncing on surfaces and the sky texture is used to make the ambient light.
+
 </div>
