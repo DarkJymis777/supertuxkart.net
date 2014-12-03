@@ -1,0 +1,22 @@
+__NOTOC__
+__NOEDITSECTION__
+Supertuxkart 0.8.2 and higher feature a custom engine called Antartica. '''It's not a standalone engine and we don't plan to make it standalone'''. It's designed to run only with our game and it's closely related to its.
+
+The main feature of Antarctica engine is a new renderer which currently supports OpenGL 4.0.
+
+If you want more technical information about the engine you should read [[this]]
+
+= Features =
+<div id="dev_contrib">
+== Dynamic Lighting ==
+[[Image:Antartica_dynamiclight.jpg|center|800px]]
+All lights are dynamic. Artists can place an arbitrary number of them. There is no "hard limit" however for performance the engine use only the 8, 16 or 32 closest lights to the player + the sun.
+
+All lights can be animated if needed.
+== Exponential Shadow Maps ==
+[[Image:Antartica_dynamicshadows.jpg|center|800px]]
+
+The sun cast automatically real time shadows to add more realism to the scene. You don't need precomputed [[lightmaps]] anymore.
+
+== P ==
+</div>
