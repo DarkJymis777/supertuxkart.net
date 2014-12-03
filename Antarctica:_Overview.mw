@@ -33,7 +33,7 @@ More information about [https://en.wikipedia.org/wiki/Bokeh|bokeh]
 == Bloom & lens flare ==
 [[Image:antartica_bloom.jpg|center|800px]]
 
-Each strong light source will [https://en.wikipedia.org/wiki/Bloom_%28shader_effect%29|bloom] and produce [http://tvtropes.org/pmwiki/pmwiki.php/Main/LensFlare|anamorphic lens flare]
+Each strong light source will [https://en.wikipedia.org/wiki/Bloom_%28shader_effect%29| bloom] and produce [http://tvtropes.org/pmwiki/pmwiki.php/Main/LensFlare| anamorphic lens flare]
 == Global illumination & Image based lighting==
 [[Image:antartica_ibl.jpg|center|800px]]
 before/after
