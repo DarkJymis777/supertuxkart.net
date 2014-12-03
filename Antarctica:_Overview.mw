@@ -49,5 +49,6 @@ Solid objects have a new generic material that support Normal mapping, Specular 
 [[Image:antartica_volumetric.jpg|center|800px]]
 
 If fog is enabled in the scene, it is lit by light sources. It allows you to give more depth to your scene.
+
 '''WARNING:''' Currently (supertuxkart 0.8.2) only point lights are supported. Cones still use the old billboard trick. However it's planned to support them later
 </div>
