@@ -1,8 +1,8 @@
 __NOTOC__
 __NOEDITSECTION__
-Supertuxkart 0.8.2 and higher feature a custom engine called Antartica. '''It's not a standalone engine and we don't plan to make it standalone'''. It's designed to run only with our game and it's closely related to its.
+Supertuxkart 0.8.2 and higher feature a custom engine called Antartica. '''It's not a standalone engine and we don't plan to make it standalone'''. It's designed to run only with supertuxkart.
 
-The main feature of Antarctica is a new renderer which currently supports OpenGL 4.0.
+The main feature of Antartica is a new renderer which currently supports OpenGL 4.0.
 
 If you want more technical information about the engine you should read [[this]]
 
@@ -39,5 +39,11 @@ Each strong light source will [https://en.wikipedia.org/wiki/Bloom_%28shader_eff
 before/after
 
 The surrounding environment will affect itself. Global illumination will simulate light bouncing on surfaces and the sky texture is used to make the ambient light.
+
+== New solid material ==
+[[Image:antartica_material.jpg|center|800px]]
+
+Solid objects have a new generic material that support Normal mapping, Specular map, Emit map and much more. You can easily make a glossy surface or a metallic object.
+
 
 </div>
