@@ -1,3 +1,9 @@
+You can add particle emitters anywhere in a track. Simply add an empty, give it the type '''Particle emitter''', and in the '''particle kind''' property enter the name of the file describing the particles you wish to use.
+
+[[Image:Particlesb.jpg|center]]
+
+For a list of currently available particle files, check the '''data/gfx''' folder. You should be able to create new particle types by duplicating an existing one and tweaking its properties.
+
 == Point emitters ==
 
 Point emitters may be created like this :
