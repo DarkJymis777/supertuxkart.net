@@ -1,29 +1,37 @@
-Level of Detail, or LOD, allows you to have different variations of an object display at different distances from the camera. By only showing very simple objects farther away, you create less work for the GPU without a great loss of detail up close.
 
-<gallery mode="packed" widths="400px" heights="88px">
-File:Lod_low.png
-File:Lod_medium.png
-File:Lod_high.png
-</gallery>
+LOD = Level of Detail. To improve performance the engine can display a high quality object close to the player, a medium quality object in the vicinity of the player and a very low quality object far away.
 
-== For objects not from the media repository ==
+=== LOD tutorial ===
 
-=== Creating Models ===
+Start by creating the various models with different levels of detail, and give them type '''LOD Model'''. Place them anywhere in the track, these particular models won't be visible in-game. Then place an object in the track where the LOD object should be instanciated and give it type '''LOD Instance''' (you can place any model on the track; it could be a cube, etc. but of course usually it's more helpful to place the actual model).
 
-Create three models: one of high quality and a lot of faces, one of medium quality, and one of low quality. For example, a high quality palm tree has a trunk with many sides but the low quality palm tree's trunk is only two perpendicular planes. Be sure that the transition is not too noticeable.
+For instance, here is the example of how to setup a LOD sphere :
 
-Now, place all these models somewhere in the track (it doesn't matter where, since they won't be visible in the game) and give them the type "LOD Model" in the SuperTuxKart Object Properties panel. Set the "LOD Group Name" to the same name for all the objects that are part of the LOD group.
+[[Image:Lod_low.png|center|650px]]
+(20 polygons)
+<br>
+[[Image:Lod_medium.png|center|650px]]
+(100 polygons)
+<br>
+[[Image:Lod_high.png|center|650px]]
+(1000 polygons)
 
-=== Using an LOD Model In the Scene ===
+A good rule of thumb is: each lower model should have half the number of polygons compared to the previous one.
 
-To make your models appear in the game, create an object where you want your LOD group to appear. (It doesn't matter what kind of object—it could be a cube, an empty, a copy of one of the LOD models, etc.—because it won't be shown in the game.) Set the type of your object to "LOD Instance" in the SuperTuxKart Object Properties panel and set the "LOD Group Name" property to the name of your LOD group. Now, when your track is loaded, an LOD model will appear where you placed the LOD Instance object.
+The various models that represent various definitions of the same object should all receive the same '''LOD group name'''.
 
-=== LOD Standalone ===
+Once the 3 levels are defined, you are ready to place instances of the sphere in the track, setting the '''LOD group name''' of the object you want to appear there :
+[[Image:Lod_instance.png|center]]
 
-If you do not have the time to make multiple models, you can use the LOD Standalone feature. This means that an object will simply disappear at a certain distance away. Set your object to type "LOD Standalone" in the SuperTuxKart Object Properties panel, then set the visibility distance to the distance from the camera at which you want the object to become visible. You can also use the "Also export without modifiers" feature to export an LOD model without modifiers. This could be useful to reduce poly when using e.g. a bevel modifier.
+The result in-game will be that, at this location :
+* The highest resolution sphere will be visible if you are 50 meters or closer from the object
+* The medium resolution sphere will be visible if you are between 50 and 100 meters from the object
+* The low resolution sphere will be visible if you are between 100 and 200 meters from the object
+* If you are further away than 200 meters away from the object, it will not be shown at all
 
-== Using LOD with library objects ==
 
-Some objects from the media repository are already configured for LOD. For those that are, simply link the object <code>stklib_*_*_main</code>. Don't link any other object (not main.001, etc.). Objects ending in <code>main</code> are the only ones configured as LOD ''instances''.
-
-{{ArtPortalNav}}
+<div class="outer_warning">
+    <div class="inner_msg">
+'''When using LOD, please make sure that the transition between the various levels is a seamless as possible.'''
+    </div>
+</div>
