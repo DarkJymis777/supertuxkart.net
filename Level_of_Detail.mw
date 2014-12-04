@@ -1,0 +1,37 @@
+
+LOD = Level of Detail. To improve performance the engine can display a high quality object close to the player, a medium quality object in the vicinity of the player and a very low quality object far away.
+
+=== LOD tutorial ===
+
+Start by creating the various models with different levels of detail, and give them type '''LOD Model'''. Place them anywhere in the track, these particular models won't be visible in-game. Then place an object in the track where the LOD object should be instanciated and give it type '''LOD Instance''' (you can place any model on the track; it could be a cube, etc. but of course usually it's more helpful to place the actual model).
+
+For instance, here is the example of how to setup a LOD sphere :
+
+[[Image:Lod_low.png|center|650px]]
+(20 polygons)
+<br>
+[[Image:Lod_medium.png|center|650px]]
+(100 polygons)
+<br>
+[[Image:Lod_high.png|center|650px]]
+(1000 polygons)
+
+A good rule of thumb is: each lower model should have half the number of polygons compared to the previous one.
+
+The various models that represent various definitions of the same object should all receive the same '''LOD group name'''.
+
+Once the 3 levels are defined, you are ready to place instances of the sphere in the track, setting the '''LOD group name''' of the object you want to appear there :
+[[Image:Lod_instance.png|center]]
+
+The result in-game will be that, at this location :
+* The highest resolution sphere will be visible if you are 50 meters or closer from the object
+* The medium resolution sphere will be visible if you are between 50 and 100 meters from the object
+* The low resolution sphere will be visible if you are between 100 and 200 meters from the object
+* If you are further away than 200 meters away from the object, it will not be shown at all
+
+
+<div class="outer_warning">
+    <div class="inner_msg">
+'''When using LOD, please make sure that the transition between the various levels is a seamless as possible.'''
+    </div>
+</div>
