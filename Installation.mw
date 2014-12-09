@@ -5,21 +5,12 @@ There are several ways SuperTuxKart can be installed. The easiest solution is to
 Download the latest binary from our [[Downloads|Download]] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation. Newer versions (at least 0.8 and later) will prompt to uninstall a previously installed version if this situation is detected.
 
 == Linux ==
-For GNU/Linux you can see if an up-to-date package is available for your distro - depending on distro try:
-* Debian-based (Ubuntu, Mint, ...): <tt>apt-get install supertuxkart</tt>
+For Linux you can see if an up-to-date package is available for your distribution:
+* Debian-based (Ubuntu, Mint, ...): <tt>sudo apt-get install supertuxkart</tt>
 * Fedora:  <tt>yum install supertuxkart</tt>
 * Gentoo  <tt>emerge supertuxkart</tt>
-* For SuSE Linux / openSUSE, you can add the games:/action repository and then install supertuxkart using your favourite tool (YaST, rug, zen-installer, zypper, smart). SuperTuxKart is built for SuSE i586 and x86_64. There are 2 known repositories:
-**http://ftp-1.gwdg.de/pub/opensuse/repositories/games:/action/ then browse to your Linux Version.
-**http://download.opensuse.org/repositories/games:/arcade/.
 
-In case your distro does not have STK in their repositories, you can always try to download the binary tarball from the [http://sourceforge.net/project/showfiles.php?group_id=202302 STK Download area], then unpack
-<code>tar -xjvf supertuxkart_bin_x86_linux.tar.bz2
-cd supertuxkart-0.7.3
-</code>
-
-and finally run STK:
-<code>./run_game.sh</code>
+In case your linux distribution does not have STK in their repositories, you can always [[Downloads|download]] a static binary.
 
 == MacOS x ==
 * The MacOS X binary can be found on our [[Downloads|downloads]] page.
