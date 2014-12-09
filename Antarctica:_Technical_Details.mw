@@ -1,4 +1,4 @@
-This page concerns the new renderer (sometimes referred as Antartica engine or pipeline) used in STK.
+This page describes the new renderer (sometimes referred as Antartica engine or pipeline) used in STK.
 
 The new renderer is using (almost) exclusively function from the core GL 3.3+ spec in order to take advantage of modern hardware feature.
 While it uses irrlicht graph traversal and irrlicht material manager to some extend, all meaningfull GL calls are done by this new renderer. Irrlicht's code is only used for context creation, framebuffer creation/binding, texture loading, and some offscreen rendering like minimap generation and kart selection viewer. It should be possible to completly handle the framebuffer creation and binding (it's already done for shadow map because of Irrlicht's lack of textures arrays), but texture loading requires some support from irrlicht, in order to be able to load our mesh.
@@ -7,7 +7,7 @@ It was decided to move from irrlicht OpenGL path when it appeared that Irrlicht 
 It turned out to be much easier to write a new renderer from scratch instead of patching our copy of Irrlicht (massive) codebase.
 
 
-The main features of our renderer are the following :
+== The main features of our renderer ==
 * Gamma correct rendering. Monitors apply a "gamma transformation" on every channel of color input : pow(., gamma) where gamma is monitor dépendent but usually close to 2.2. This is intended to mimic older CRT non-linear behavior where the color (128, 128, 128) was a much darker grey than the grey right between (0, 0, 0) and (255, 255, 255) (which in turn is mapped to (187, 187, 187)) because of voltage to pixel conversion. At the other end of the rendering chain, textures are stored with an inverse gamma applied to compensate this effect when displayed on screen. With such inputs and output bias light calculations become wrong and can lead to oversaturate picture. The new renderer is using texture and framebuffer format aware of this bias to make our light mathematically correct.
 See here for more information http://http.developer.nvidia.com/GPUGems3/gpugems3_ch24.html 
 * HDR. All our intermediate render target are using a 16 bits float format.
@@ -24,7 +24,7 @@ See more information here http://seblagarde.wordpress.com/
 * Radiance Hint GLobal Illumination. This allows to have more natural Outlook light especially in shadowed area without having to add point like to fake GI. See paper and code here : http://graphics.cs.aueb.gr/graphics/research_illumination.html
 
 
-Planned features
+== Planned features ==
 * Rectangular light. Point lights are quite non realistic and they have noticeable shortcomings : their radiance tend to go very high close to them, their diffuse component is a boring sphere and their specular reflexion is infinitely thin so you have to make everything ultra sharp to actually see them. Unfortunatly shadowing area light requires different algorithm than sunlight shadow and point light shadow (see http://www.crytek.com/download/Playing%20with%20Real-Time%20Shadows.pdf for an algorithm that uses voxellisation but produces great visual results)
 * Shadows (and maybe RSM ?) for point light.
 * Screen Space Raytraced Reflexion. Introduced by Crysis 2 DX11 patch, SSRR is doing raytracing on the final image to generate local reflexion. These reflexions are used for all surface as an extra specular component so that not just glossy surface benefits from it. A lot of games reports to use it today, like assassin's creed 4, killzone 4...
