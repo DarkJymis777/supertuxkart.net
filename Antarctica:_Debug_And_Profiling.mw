@@ -35,6 +35,8 @@ http://msdn.microsoft.com/en-us/library/fsk896zz.aspx
 Then it's possible to use CodeXL to collect samples and find in which function cpu spend most of its time.
 
 There is also a bar profiler available in artist debug mode. It should be quite easy to understand.
-Please note that there are 2 sync points between cpu and gpu : 
+Please note that there are 2 sync points between cpu and gpu: 
 * One at the "GPU CPU stall" marker. The cpu might have to wait for the GPU to finish to render the second solid pass before uploading updated position/instances in VRAM. Thus the "GPU CPU stall" bar in the profiler represents cycles wasted. 
 * One right at the end of "Upload Draw command" bar. Here the gpu might have to wait for the cpu to finish to upload all commands in VRAM. Unfortunatly there is currently no accurate way to know the status of the gpu at this point and it is safer to keep this bar as tiny as possible.
+
+[[category:antartica]]
