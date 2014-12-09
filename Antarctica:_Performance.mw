@@ -1,4 +1,4 @@
-Some idea to improve performance in stk :
+== Some idea to improve performance ==
 
 * GPU scene management. Instead of culling objects on the cpu like Irrlicht does, gpu are now capable do to it (to some extents) which avoids ping-pong between rams and may use intermediate computations (like occluders rendering). The general idea is to send instancied objects to a geometry shader which will discard objects not visible, either because outside of the view frustum, or because they are occluded. In the later case, occluders object (ie the biggest mesh in a scene) are rendered first, depth map is then "max-mipmapped" (ie the max depth are propagated instead of weigthed average) and the mipmap levels are then used to discard object depth as fast as possible. More details is available in the paper from sisgraph here : http://developer.amd.com/resources/documentation-articles/samples-demos/gpu-demos/ati-radeon-hd-4800-series-real-time-demos/
 
@@ -9,9 +9,7 @@ Some idea to improve performance in stk :
 * Splitting frame buffer may help for post processing as well, as mentionned here : https://developer.nvidia.com/sites/default/files/akamai/BAVOIL_ParticleShadowsAndCacheEfficientPost.pdf
 
 
-
-
-* About shaders :
+* About shaders 
 ** We use whole InverseProjection matrix to get view position from projected screen. However most of the coeffs are 0, which is unknow by the shader. Using a formula may reduce the computation amount.
 ** Similarly division is a slower operation than mult/add and it might be profitable to avoid dividing by the w component when when know that the matrix is orthogonal. It shouldn't happen a lot though.
 ** Generally speaking , mult/add/sub operations are fast on gpu for float (and int on radeons) and can even be reduced to mad by the compiler. fdiv, fexp, flog, fsqrt, cos, sin, fract are usually slower (typically the cost of 4 mult). Integer division/modulo operator is one of the slowest base operation available (because it is almost never implemented on hw and need to be emulated using quite a lot of simplier instructions) and should be avoind. Considers using fdiv + fract on float cast if you don't need exact precision.
