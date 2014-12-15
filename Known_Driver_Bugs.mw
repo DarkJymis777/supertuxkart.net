@@ -25,6 +25,8 @@ Workaround : Clamp indexes or use texture.
 Workaround : Do not use libasan with catalyst
 * Array textures with MSAA make the display driver on Windows crash and/or generates visual glitches.
 Workaround : Use atlases or avoid MSAA
+* Float arrays in UBO (when there are 2 UBOs) are not correctly staticaly addressed by shaders although it compiles.
+Workaround : Names all field in the array manually.
 
 == Mesa ==
 
