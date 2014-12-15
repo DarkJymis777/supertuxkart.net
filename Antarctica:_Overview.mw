@@ -1,8 +1,7 @@
 __NOTOC__
 __NOEDITSECTION__
-Supertuxkart 0.8.2 and higher feature a custom engine called Antartica. '''It's not a standalone engine and we don't plan to make it standalone'''. It's designed to run only with supertuxkart.
-
-The main feature of Antartica is a new renderer which currently supports OpenGL 4.0.
+Supertuxkart 0.8.2 and higher feature a custom engine called Antartica.
+The main feature of Antartica is a new renderer which currently supports OpenGL 3.1.
 
 The engine is based on a heavily modified version of irrlicht. If you want more technical information about the engine you should read [[Antartica engine: Technical Details| this]]
 
