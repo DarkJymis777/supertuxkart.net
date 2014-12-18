@@ -13,7 +13,7 @@ Workaround : Clamp indexes or use texture.
 * atomics on shared memory (and to global memory to a lesser extent) like atomicMax in compute shaders make the display server hang/crash on Windows and Linux.
 Workaround : Do not use atomics.
 
-== AMD ==
+== Catalyst ==
 
 * Samplers object seems not to be properly unbound when dealing with depth test and array texture like for shadowedsunlight shader.
 Workaround : Use a dedicated texture unit for such samplers
