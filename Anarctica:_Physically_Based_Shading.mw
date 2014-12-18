@@ -1,0 +1,13 @@
+== Physically Based Shading/Rendering (PBS/PBR) ==
+
+Starting with 0.8.3 the renderer will start to use physically based rendering concept.
+PBR is a common topic in graphic engine these day and supporting such a renderer means increased "skill reutilisability" for artists ; besides PBR tends to make the lighting looks better.
+
+= What is PBR =
+
+PBR aims at lighting object by reproducing physical phenomen instead of magic heuristics. It borrows terms from light transport theory (at macroscopic level of course) to describe how light reacts when it hits a material.
+
+It affects :
+* Material definitions
+* Light type and propagation
+* Post processing (it tries to imitate what happens in a true camera)
