@@ -1,3 +1,5 @@
+Latest drivers are assumed in this page.
+
 == Nvidia Drivers ==
 
 * Some shader with loops with a long body like GI makes the shader compiler crash.
