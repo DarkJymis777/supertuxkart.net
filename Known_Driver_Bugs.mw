@@ -32,8 +32,8 @@ Workaround :  GL_AMD_vertex_shader_layer behavior is enabled by default (ie you 
 
 == Mesa ==
 
-* DoF shaders make the compiler go into an infinite loop
-Workaround : Do not activate dof
+* On intel srgb Texture compression is broken.
+Workaround : Do not use texture compression. This bug is also present on Intel Windows. Not sure it can be called a bug since texture compression is not part of the standard anyway.
 
 == Intel ==
 
