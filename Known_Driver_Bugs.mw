@@ -27,6 +27,8 @@ Workaround : Do not use libasan with catalyst
 Workaround : Use atlases or avoid MSAA
 * Float arrays in UBO (when there are 2 UBOs) are not correctly staticaly addressed by shaders although it compiles.
 Workaround : Names all field in the array manually.
+* "#extension GL_AMD_vertex_shader_layer : enable" statement is not recognised.
+Workaround :  GL_AMD_vertex_shader_layer behavior is enabled by default (ie you can write to gl_Layer in vertex shader) and it doesnt prevent the shader compilation so it's not an issue.
 
 == Mesa ==
 
