@@ -1,4 +1,4 @@
-== Nvidia ==
+== Nvidia Drivers ==
 
 * Some shader with loops with a long body like GI makes the shader compiler crash.
 Workaround : Manually unroll the loop.
