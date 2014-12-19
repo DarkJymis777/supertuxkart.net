@@ -18,6 +18,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 * Tested to compile and play under Windows (make sure the icon is available).
 * Tested to compile and play under Linux.
 * After creating a source package, try to build from this package. Sometimes, files are missing.
+* Run optimize_data.sh.
 * Update ChangeLog file.
 * Update donations section in CREDITS.
 * On Unix systems, make sure all files have appropriate read permissions.
