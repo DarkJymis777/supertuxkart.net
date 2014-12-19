@@ -1,9 +1,7 @@
-== Physically Based Shading/Rendering (PBS/PBR) ==
-
 Starting with 0.8.3 the renderer will start to use physically based rendering concept.
 PBR is a common topic in graphic engine these day and supporting such a renderer means increased "skill reutilisability" for artists ; besides PBR tends to make the lighting looks better.
 
-= What is PBR =
+== What is PBR ==
 
 PBR aims at lighting object by reproducing physical phenomen instead of magic heuristics. It borrows terms from light transport theory (at macroscopic level of course) to describe how light reacts when it hits a material.
 
@@ -11,3 +9,26 @@ It affects :
 * Material definitions
 * Light type and propagation
 * Post processing (it tries to imitate what happens in a true camera)
+
+== Material definitions ==
+
+The material definition is tied to the BRDF used : 
+http://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function
+BRDF is a mathematical function describing how much light coming from some direction is reflected to some viewing direction. Usually 2 BRDF is used, one for the diffuse part (light that "enters" matter and exits it shortly after) and one for the specular part (light reflected).
+
+For specular STK will use the Cook Torrance ("Microfacet") model built around 3 swappables terms : Distribution, Geometric (material selfshadowing) and Fresnel.
+We use the classic Schlick approximation for Fresnel term F(l) = 1. + (1. - F0) (1. - (n.l))^5 used virtually everywhere and GGX Distribution term D(l) = a * a / (((n.h)^2 * (a - 1) + 1) where a is the roughness and the Schmidt Geometric term (which also use a).
+For diffuse part we'll use an heuristic provided by Burley from Disney R&D that tries to mimic material retro reflexion in light direction and shallow diffusion on rough material :
+http://en.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function  (p14)
+
+There are 2 main families of material : metal and dielectric.
+Metal doesnt have diffuse part and thus they can be described by their roughness a and their F0 term. F0 is simply the metal color when looking in the normal direction.
+Dielectric havec diffuse and specular part and thus require a roughness term, a F0 and a diffuse color. We use the same approximation as Epic in UE4 by saying that F0 is the 0.04 grey color for every material available. It doesnt seem to affect artist freedom and spare them an additionnal texture while reducing bandwidth cost on the renderer side.
+
+Thus a material is defined by :
+* Color
+* Roughness
+* Metalness
+
+A roughness of 0 means the material is perfectly smooth. Unfortunatly the D term is not defined in such case and thus a small delta is applied. A roughness of 1 means the material is rough and won't have highlight.
+Metalness is either 0 (material is a dielectric) or 1 (material is a metal). Actually it's possible to use value between 0 and 1 to blend more subtly material junction but it should be on a per case basis.
