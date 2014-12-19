@@ -34,6 +34,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 ** src/ide/Xcode/SuperTuxKart-Info.plist
 * Update ChangeLog.
 * Update data/CREDITS.
+** Make sure data/CREDITS is still in UTF (not ascii).
 * Test to run when no sound card is available. Sound should be disabled and continue, not crash.
 
 Upload packages, then :
