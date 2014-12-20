@@ -65,3 +65,28 @@ supertuxkart-<VERSION>-<ARCHITECTURE>.<FILE EXTENSION>
 
 
 ''Examples of full package file names: supertuxkart-0.3-linuxi586.tar.bz2, supertuxkart-SVN2110-macosx.dmg, supertuxkart-0.4rc1-win.zip''
+
+== Where to advertise a new release ==
+
+This page collects web pages that should be informed about a new SuperTuxKart release. If you add a note to a board, blog, web page, please add the URL here, and add your name (hoping that in upcoming releases you can contact the same pages again).
+
+Mark what's done with {{done}}
+
+* STK home page
+* STK blog
+* Sourceforge page (news entry and to slashdot firehose)
+* stkaddons.net (in-game news)
+* http://freshmeat.net/projects/supertuxkart
+* http://freegamer.blogspot.com (was picked up from freegamedev forum)
+* http://forum.freegamedev.net/ (hiker)
+* http://irrlicht.sourceforge.net/forum/styles/prosilver/imageset/irrlicht_logo.png
+* http://community.games4mac.de/index.php?showforum=56
+* http://linux.softpedia.com/get/GAMES-ENTERTAINMENT/Arcade/SuperTuxKart-3916.shtml
+* http://www.linuxgames.com/
+* http://www.macupdate.com/info.php/id/24331/supertuxkart
+* http://www.linux-gamers.net
+* http://www.ubuntuusers.de
+* http://packages.qa.debian.org/s/supertuxkart.html
+* http://gamepwned.com 
+* http://www.bulletphysics.com 
+* http://ubuntuforums.org
