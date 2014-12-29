@@ -33,7 +33,7 @@ The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the sa
 
 == Building SuperTuxKart ==
 
-Then build SuperTuxKart using CMake:
+Next, build SuperTuxKart using CMake:
 
 <code>cd stk-code
 mkdir cmake_build
@@ -44,7 +44,8 @@ make -j2
 
 You can speed up compilation heavily by changing the number behind <tt>-j</tt> to the number of cores you have.
 
-There is a varity of possible CMake options. THe most important ones are listed below:
+=== CMake Options ===
+There is a varity ofCMake options. The most important ones are listed below:
 * To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this: <code>cmake .. -DCMAKE_BUILD_TYPE=Debug</code>
 
 * Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that.
