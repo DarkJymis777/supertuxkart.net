@@ -124,13 +124,11 @@ The icon should be a 128x128 or 64x64 png image, and should have the same design
 
 The shadow image is a png image which is applied on the ground under the karts. To be credible, it must correspond to the kart shape, otherwise the kart will seem to float above the ground. Here is a little method to get quick and fast a nice shadow : [[Kart shadow tutorial]].
 
-=Exporting karts=
+= Exporting karts =
 
+To see how you kart looks in STK, you need to export it using the STK kart exporter.
 
-
-Once everything is ready, or just to see a work in progress version of the kart ingame, you need to export it using the STK kart exporter.
-
-After setting up your blender as described in [[Installing the tools 2]], locate the SuperTuxKart panel :
+After setting up blender as described in [[Installing the tools]], locate the SuperTuxKart panel :
 
 [[Image:Kart_panel.png]]
 
@@ -138,5 +136,4 @@ Check the ''is a SuperTuxKart kart'' checkbox, then fill the information asked f
 When you have configured the kart, press the '''Export''' button in the ''Kart Exporter'' panel
 
 
-
-If you have remarks or feedback about this tutorial, don't hesitate to post them [http://forum.freegamedev.net/viewtopic.php?f=18&t=1370 on the forum], and if you see any mistakes please tell, or even correct them !
+If you have remarks or feedback about this tutorial, don't hesitate to post them [http://forum.freegamedev.net/viewtopic.php?f=18&t=1370 on the forum], and if you see any mistakes please tell, or even correct them!
