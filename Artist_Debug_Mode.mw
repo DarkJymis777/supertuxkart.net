@@ -40,16 +40,16 @@ and change it to
 
 '''Note''': Many of the tools listed below use keyboard bindings. Of course you will need to make sure your keyboard configuration does not assign these keys to something else if you wish to be able to use them.
 
-== In-Race Debug Menu ==
-By right clicking anytime in the STK window, you can open the debug menu. Beside some features only usefull for debugging or other deveeloper tasks, there are also some features for artist: 
+== In-Game Debug Menu ==
+By right clicking somewhere in the STK window, you can open the debug menu. Beside some features only usefull for debugging or other developer tasks, there are also some features just for artist: 
 * Powerups at will: Nitro and zippers are especially helpful in order to quickly get to an area far from the start
 * Hide karts and race GUI: This is especially useful when you need to take the screenshot of your track, to get all annoyances out of the way
 * Debug views: You can cycle through several rendering and physics debug draw modes. Render debug views will show intermediate render steps, like the normals or lights buffers. Physics views will show the physics data being used in STK (including the faces and normals).
 * Flying: karts may be instantly turned into flying objects. This is quite useful to take a closer look at meshes that aren't too visible from the road, or to skip large portions of a track to go straight to the area you're interested in.
 ** I: fly up (press repeatedly if needed)
 ** K: fly down (press repeatedly if needed)
-* A different viewpoint: Launch supertuxkart from the terminal with the <tt>--camera-debug</tt> argument, the camera will be placed from above, allowing you to see what's going on from a different perspective
-* Debug checklines: Launch supertuxkart from the terminal with '''--check-debug''' argument, and you will visually see where checklines are; active checklines will appear as red, inactive ones as white; and information about which kart crosses which checkline will be printed on the terminal.
+* A different viewpoint: Launch SuperTuxKart from the terminal with <tt>--camera-debug</tt>, the camera will be placed from above, allowing you to see what's going on from a different perspective
+* Debug checklines: Launch supertuxkart from the terminal with '''--check-debug''', and you will visually see where checklines are; active checklines will appear as red, inactive ones as white; and information about which kart crosses which checkline will be printed on the terminal.
 ** Also '''--track-debug''' will enable you to see where the drivelines are
 * No Ready/Set/Go: To speed up testing your track, in artist debug mode, when you play alone against no opponent, the ready/set/go messages are skipped very quickly
 * [STK 0.8.2] Adjust Lights: You can adjust the values for red, green, blue, energy and radius of the light nearest to the kart (nitro emitters and other invisible lights are skipped) and see the effect immidiately
