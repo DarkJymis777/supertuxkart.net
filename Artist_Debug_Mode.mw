@@ -1,6 +1,4 @@
-[[Image:France.png]][[Artist Debug Mode -FR| Version française]]
-
-Starting from SuperTuxKart 0.7.1, all STK builds contain a hidden track debugging mode packed with features to make it easier for artists to make tracks.
+From version 0.7.1 on, SuperTuxKart contains a hidden track debugging mode packed with features to make it easier for artists to make tracks.
 
 Before starting, let me remind you that there is a feature always enabled to let you start directly into a track, so that you don't need to go through the menus everytime. Simply launch STK from terminal with
 
@@ -10,7 +8,7 @@ supertuxkart -N -t trackname
 
 where "trackname" is the name of the directory your track is in.
 
-Furthermore, if you encounter problems, make sure to '''run Supertuxkart from terminal''', there you may be able to see error messages related to your track.
+Furthermore, if you encounter problems, make sure to '''run Supertuxkart from a terminal''', there you may be able to see error messages related to your track.
 
 == Enabling the debug mode ==
 
@@ -23,59 +21,36 @@ You can also watch the output in the terminal to see if there is a note on where
 STK versions 0.8.2 and later store the config files in a subdirectory of the base directory above with the name of the version number - e.g. version 0.8.2 on windows will store the files in %APPDATA%/supertuxkart/0.8.2.
 
 
-
 Locate the line that reads
-<pre>
+
     <!-- Whether to enable track debugging features -->
     <artist_debug_mode value="false" />
-</pre>
 
 and change it to
 
-<pre>
     <!-- Whether to enable track debugging features -->
     <artist_debug_mode value="true" />
-</pre>
 
 == The new features you get ==
 
 Feature that is triggered automatically :
 * If there is no ground under the area where karts start, normally STK will print an error message on the terminal and abort; in debug mode, however, the kart will just hover so you can see what the problem is
 * You can now select "0 laps" in the race setup; useful to test kart animations
-* More precise polygon count display when FPS display is enabled
+* More precise polygon count is displayed when "show FPS" is enabled
 * You can get into 3-strikes battle mode in single-player mode (useful to test battle arenas)
 
-'''Note''' : many of the tools below use keyboard bindings; of course you will need to make sure your keyboard configuration does not assign these keys to something else if you wish to be able to use them
+'''Note''': Many of the tools listed below use keyboard bindings. Of course you will need to make sure your keyboard configuration does not assign these keys to something else if you wish to be able to use them.
 
-=== Powerups at will ===
-
-Nitro and zippers are especially helpful in order to quickly get to an area far from the start
-
-* Accessible by right-clicking in-game
-
-=== Hide karts and race GUI ===
-This is especially useful when you need to take the screenshot of your track, to get all annoyances out of the way
-* Accessible by right-clicking in-game
-
-=== Debug views ===
-You can cycle through several rendering and physics debug draw modes. Render debug views will show intermediate render steps, like the normals or lights buffers. Physics views will show the physics data being used in STK (including the faces and normals).
-
-This is accessible by right-clicking in-game
-
-=== Fly! ===
-
-STK has a secret ability : karts may be instantly turned into flying devices. This is quite useful to take a closer look at meshes that aren't too visible from the road, or to skip large portions of a track to go straight to the area you're interested in.
-
-* I : fly up (press repeatedly if needed)
-* K : fly down (press repeatedly if needed)
-
-=== A different viewpoint ===
-Launch supertuxkart from the terminal with the <tt>--camera-debug</tt> argument, the camera will be placed from above, allowing you to see what's going on from a different perspective
-
-=== Debug checklines ===
-Launch supertuxkart from the terminal with '''--check-debug''' argument, and you will visually see where checklines are; active checklines will appear as red, inactive ones as white; and information about which kart crosses which checkline will be printed on the terminal.
-
-Also '''--track-debug''' will enable you to see where the drivelines are
-
-=== No Ready/Set/Go ===
-To speed up testing your track, in artist debug mode, when you play alone against no opponent, the ready/set/go messages are skipped very quickly
+== In-Race Debug Menu ==
+By right clicking anytime in the STK window, you can open the debug menu. Beside some features only usefull for debugging or other deveeloper tasks, there are also some features for artist: 
+* Powerups at will: Nitro and zippers are especially helpful in order to quickly get to an area far from the start
+* Hide karts and race GUI: This is especially useful when you need to take the screenshot of your track, to get all annoyances out of the way
+* Debug views: You can cycle through several rendering and physics debug draw modes. Render debug views will show intermediate render steps, like the normals or lights buffers. Physics views will show the physics data being used in STK (including the faces and normals).
+* Flying: karts may be instantly turned into flying objects. This is quite useful to take a closer look at meshes that aren't too visible from the road, or to skip large portions of a track to go straight to the area you're interested in.
+** I: fly up (press repeatedly if needed)
+** K: fly down (press repeatedly if needed)
+* A different viewpoint: Launch supertuxkart from the terminal with the <tt>--camera-debug</tt> argument, the camera will be placed from above, allowing you to see what's going on from a different perspective
+* Debug checklines: Launch supertuxkart from the terminal with '''--check-debug''' argument, and you will visually see where checklines are; active checklines will appear as red, inactive ones as white; and information about which kart crosses which checkline will be printed on the terminal.
+** Also '''--track-debug''' will enable you to see where the drivelines are
+* No Ready/Set/Go: To speed up testing your track, in artist debug mode, when you play alone against no opponent, the ready/set/go messages are skipped very quickly
+* [STK 0.8.2] Adjust Lights: You can adjust the values for red, green, blue, energy and radius of the light nearest to the kart (nitro emitters and other invisible lights are skipped) and see the effect immidiately
