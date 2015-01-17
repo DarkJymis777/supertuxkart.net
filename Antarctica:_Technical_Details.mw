@@ -35,6 +35,8 @@ We use Alchemy Ambient Obscurance algorithm that was first implemanted from Alch
 This allows to have more natural Outlook light especially in shadowed area without having to add point like to fake GI. See paper and code here : http://graphics.cs.aueb.gr/graphics/research_illumination.html
 
 == Planned features ==
+=== Physics based rendering ===
+[TODO]
 === Rectangular light ===
 Point lights are quite non realistic and they have noticeable shortcomings : their radiance tend to go very high close to them, their diffuse component is a boring sphere and their specular reflexion is infinitely thin so you have to make everything ultra sharp to actually see them. Unfortunatly shadowing area light requires different algorithm than sunlight shadow and point light shadow (see http://www.crytek.com/download/Playing%20with%20Real-Time%20Shadows.pdf for an algorithm that uses voxellisation but produces great visual results)
 === Shadows (and maybe RSM ?) for point light ===
