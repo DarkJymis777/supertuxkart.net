@@ -3,7 +3,7 @@ __NOEDITSECTION__
 Supertuxkart 0.8.2 and higher feature a custom engine called Antartica.
 The main feature of Antartica is a new renderer which currently supports OpenGL 3.1.
 
-The engine is based on a heavily modified version of irrlicht. If you want more technical information about the engine you should read [[Antartica engine: Technical Details| this]]
+The engine is based on a heavily modified version of irrlicht. If you want more technical information about the engine you should read [[Antartica engine: Technical Details|this]].
 
 = Features =
 <div id="dev_contrib">
@@ -27,12 +27,12 @@ Ambient occlusion is a shading technique to add darkness where objects and surfa
 [[Image:antartica_dofbokeh.jpg|center|800px]]
 
 When objects and lights are out of focus they are slightly blurred. Light sources appear as little dots like in real camera when a strong light source is out of focus.
-More information about [https://en.wikipedia.org/wiki/Bokeh|bokeh]
+More information about [https://en.wikipedia.org/wiki/Bokeh bokeh].
 
 == Bloom & lens flare ==
 [[Image:antartica_bloom.jpg|center|800px]]
 
-Each strong light source will [https://en.wikipedia.org/wiki/Bloom_%28shader_effect%29| bloom] and produce [http://tvtropes.org/pmwiki/pmwiki.php/Main/LensFlare| anamorphic lens flare]
+Each strong light source will [https://en.wikipedia.org/wiki/Bloom_%28shader_effect%29 bloom] and produce [http://tvtropes.org/pmwiki/pmwiki.php/Main/LensFlare anamorphic lens flare].
 == Global illumination & Image based lighting==
 [[Image:antartica_ibl.jpg|center|800px]]
 before/after
@@ -49,7 +49,7 @@ Solid objects have a new generic material that support Normal mapping, Specular 
 
 If fog is enabled in the scene, it is lit by light sources. It allows you to give more depth to your scene.
 
-'''WARNING:''' Currently (supertuxkart 0.8.2) only point lights are supported. Cones still use the old billboard trick. However it's planned to support them later
+'''WARNING:''' Currently (supertuxkart 0.8.2) only point lights are supported. Cones still use the old billboard trick. However it's planned to support them later.
 
 [[Category:Antartica]]
 </div>
