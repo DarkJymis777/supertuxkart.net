@@ -1,27 +1,15 @@
 '''Link : [https://translations.launchpad.net/stk SuperTuxKart home at launchpad].'''
 
-SuperTuxKart translation is web-based and involves using the [https://translations.launchpad.net/stk SuperTuxKart Launchpad web interface] for translations.
+SuperTuxKart translation is web-based and involves using the [https://translations.launchpad.net/stk SuperTuxKart Launchpad web interface] for translations. Therefore you need a launchpad account If you want to help translating.
 
-
-= Online translations on Launchpad =
-== Log in or register ==
-
-To translate STK you must go to the STK project on Launchpad : [https://translations.launchpad.net/stk https://translations.launchpad.net/stk].
-
-First, you need a Launchpad account :
-
-[http://supertuxkart.sourceforge.net/Image:Main-logout.png http://supertuxkart.sourceforge.net/persistent/images/2/21/Main-logout-small.png]
-
-Note: If you don't have a Launchpad account, simply create one.
-
-== Join a translation group ==
+== Join the translation group ==
 
 '''Important!''' Until you join a translation group you will only be able to make suggestions, not actually translate.
 
-Join the "STK" team at https://launchpad.net/~stk (unfortunately, joining is not instantaneous, you will need to wait for us to approve your join request. we usually approve within 24 hours but please allow for a bit more).
+Join the "STK" team at [https://launchpad.net/~stk launchpad.net/~stk] (unfortunately, joining is not instantaneous, you will need to wait for us to approve your join request. We usually approve within 24 hours but sometimes we need some more time).
 
 == Join the STK Translators Email List ==
-We have a separate email list [https://lists.sourceforge.net/lists/listinfo/supertuxkart-translations SuperTuxKart-Translations], on which we post announcements important for translators. The list is extremely low traffic, usually we have maybe 2 or 3 emails before we do a release (which is at most 4 times a year). If you subscribe to this list you will be informed when we declare a string freeze in preparation for an upcoming release.
+We have a separate email list [https://lists.sourceforge.net/lists/listinfo/supertuxkart-translations SuperTuxKart-Translations], on which we post announcements important for translators. The list is extremely low traffic (2 mails in 2013). If you subscribe to this list you will be informed when we declare a string freeze in preparation for an upcoming release.
 
 
 == See existing translations ==
@@ -36,7 +24,6 @@ After you have logged in, go back to [https://translations.launchpad.net/stk STK
 
 To start a translation for a language that currently does not exist, first visit your user's page and set your languages : https://launchpad.net/people/+me/+editlanguages.
 
-
 [[Image:LPEditLanguages.png]]
 
 Then, when you have done this, you can go back to the main STK translation page and your language will appear in the list, ready to be clicked.
@@ -48,18 +35,21 @@ e.g. with the Irish language :
 
 [http://supertuxkart.sourceforge.net/Image:Translation.png http://supertuxkart.sourceforge.net/persistent/images/3/36/Translation-small.png]
 
-Once you have translated STK, scroll down and click on save and continue :
+Once you have translated STK, scroll down and click on save and continue:
 
 [http://supertuxkart.sourceforge.net/Image:Translations-2.png http://supertuxkart.sourceforge.net/persistent/images/c/c9/Translations-2-small.png]
 
 
 === Format Strings ===
 
-From time to time, you will meet some ''format strings '' :
+From time to time, you will meet some ''format strings '':
 
-* <TT>%s</TT>, <TT>%i</TT>, <TT>%d</TT> : something will be inserted instead of the %x, simply add the same format strings in the translation. Note that these format strings do not specify order, so they need to appear in your translation in the same order as in the original string
-* <TT>%0</TT>, <TT>%1</TT>, etc... : those are like the above ones, but are ordered (%0 is the first inserted value, %1 is the second inserted value, etc.). The advantage of those is that the translation does not need to insert the values in the same order as the original string. Note that you can use these format strings in your translation even if the original string uses the first (unordered) format string.
-* <TT>%1$s</TT>, <TT>%2$s</TT>, etc... : those are like the above ones, but are ordered (%1$s is the first inserted value, %2$s is the second inserted value, etc.). %1$s is equivalent to %0, %2$s is equivalent to %1, etc. The reason this syntax is supported is simply because it's more standard than the %0 syntax described above.
+* <TT>%s</TT>, <TT>%i</TT>, <TT>%d</TT>: something will be inserted instead of the %x, simply add the same format strings in the translation. Note that these format strings do not specify order, so they need to appear in your translation in the same order as in the original string
+* <TT>%0</TT>, <TT>%1</TT>, etc.: Those are like the above ones, but are ordered (%0 is the first inserted value, %1 is the second inserted value, etc.). The advantage of those is that the translation does not need to insert the values in the same order as the original string. Note that you can use these format strings in your translation even if the original string uses the first (unordered) format string.
+* <TT>%1$s</TT>, <TT>%2$s</TT>, etc.: Those are like the above ones, but are ordered (%1$s is the first inserted value, %2$s is the second inserted value, etc.). %1$s is equivalent to %0, %2$s is equivalent to %1, etc. The reason this syntax is supported is simply because it's more standard than the %0 syntax described above.
+
+== Special plural forms ==
+Some languages, such as gaelic, require speical plural forms. Therrefore you might e.g. find a comment saying: <TT>I18N: Only used for count > 3<TT>. If your language has only one singular and one plural, you can simply ignore the comment. Otherwise, please refer to https://github.com/supertuxkart/stk-code/pull/1877#issuecomment-69560925.
 
 = Launchpad for Admins =
 If an updated supertuxkart.pot file is committed, launchpad will pick up this file within a few hours. In order to speed up this process, go to https://code.launchpad.net/~stk/stk/trunk (or from the launchpad main page at https://launchpad.net/stk select 'lp:stk') and look at the 'Import details' section. It will tell you when the last import happened, and when the next one is scheduled. Click on 'Import Now' to trigger an immediate import. This will cause launchpad to update its own copy of the STK sources from our repository, which will take several minutes (refreshing the page shows the steps currently happening).
