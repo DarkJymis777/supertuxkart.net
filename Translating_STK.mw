@@ -48,7 +48,7 @@ From time to time, you will meet some ''format strings '':
 * <TT>%0</TT>, <TT>%1</TT>, etc.: Those are like the above ones, but are ordered (%0 is the first inserted value, %1 is the second inserted value, etc.). The advantage of those is that the translation does not need to insert the values in the same order as the original string. Note that you can use these format strings in your translation even if the original string uses the first (unordered) format string.
 * <TT>%1$s</TT>, <TT>%2$s</TT>, etc.: Those are like the above ones, but are ordered (%1$s is the first inserted value, %2$s is the second inserted value, etc.). %1$s is equivalent to %0, %2$s is equivalent to %1, etc. The reason this syntax is supported is simply because it's more standard than the %0 syntax described above.
 
-== Special plural forms ==
+=== Special plural forms ===
 Some languages, such as gaelic, require speical plural forms. Therrefore you might e.g. find a comment saying: <TT>I18N: Only used for count > 3<TT>. If your language has only one singular and one plural, you can simply ignore the comment. Otherwise, please refer to https://github.com/supertuxkart/stk-code/pull/1877#issuecomment-69560925.
 
 = Launchpad for Admins =
