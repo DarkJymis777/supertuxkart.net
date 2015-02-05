@@ -19,6 +19,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 ** Do not include the .ilk file, it's only used for linking and otherwise useless.
 * Tested to compile and play under Linux.
 * After creating a source package, try to build from this package. Sometimes, files are missing.
+* Document the assets svn version in doc/assets_version (so that we can keep track of which assets version was used for which stk release, we don't have branches directories for assets due to their size).
 * Run optimize_data.sh.
 * Update ChangeLog file.
 * Update donations section in CREDITS.
