@@ -28,7 +28,10 @@ We only ship point lights at the moment. They use the classic lambert equation f
 Particles are completly simulated on the GPU, using Transform Feedback (which is the ancestor of compute shaders).
 === Instancing ===
 The new renderer focuses at being efficient at rendering a lot of objects, for this it uses instancing to draw identical meshes at different place/scale.
-=== Cascaded Shadow Mapping for sunlight === The algorithm used is the classic one with 3 splits/4  cascades, using a plain old hardware accelerated (through shadow2D sampler) PCF filter to remove aliasing.
+
+=== Cascaded Shadow Mapping for sunlight ===
+The algorithm used is the classic one with 3 splits/4  cascades, using a plain old hardware accelerated (through shadow2D sampler) PCF filter to remove aliasing.
+
 === SSAO ===
 We use Alchemy Ambient Obscurance algorithm that was first implemanted from Alchemy engine: http://graphics.cs.williams.edu/papers/AlchemyHPG11/ . It is considered as one of the best AO algorithm available, as it is more temporaly stable than others methods and generate subtle yet noticeable ambient shadows. We also use the improvement listed here to make it useable from a performance pov : http://graphics.cs.williams.edu/papers/SAOHPG12/
 === Radiance Hint Global Illumination ===
