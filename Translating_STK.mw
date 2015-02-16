@@ -1,43 +1,35 @@
-'''Link : [https://translations.launchpad.net/stk SuperTuxKart home at launchpad].'''
+'''Link : [https://www.transifex.com/projects/p/supertuxkart/ SuperTuxKart home at Transifex].'''
 
-SuperTuxKart translation is web-based and involves using the [https://translations.launchpad.net/stk SuperTuxKart Launchpad web interface] for translations. Therefore you need a launchpad account If you want to help translating.
+SuperTuxKart translation is web-based and involves using the [https://www.transifex.com/projects/p/supertuxkart/ Transifex web application] for translations.
 
-== Join the translation group ==
-
-'''Important!''' Until you join a translation group you will only be able to make suggestions, not actually translate.
-
-Join the "STK" team at [https://launchpad.net/~stk launchpad.net/~stk] (unfortunately, joining is not instantaneous, you will need to wait for us to approve your join request. We usually approve within 24 hours but sometimes we need some more time).
 
 == Join the STK Translators Email List ==
 We have a separate email list [https://lists.sourceforge.net/lists/listinfo/supertuxkart-translations SuperTuxKart-Translations], on which we post announcements important for translators. The list is extremely low traffic (2 mails in 2013). If you subscribe to this list you will be informed when we declare a string freeze in preparation for an upcoming release.
 
 
-== See existing translations ==
-After you have logged in, go back to [https://translations.launchpad.net/stk STK's Launchpad Home].
 
-'''Don't forget to click on ''view all languages'' !'''
 
-[http://supertuxkart.sourceforge.net/Image:Main-languages.png http://supertuxkart.sourceforge.net/persistent/images/c/c3/Main-languages-small.png]
+== Join the translation group ==
+
+'''Important!''' You need to join the translation group in order to be able to translate.
+
+To join a team, first click on the language you wish to help translate for, and click on "Join group" (unfortunately, joining is not instantaneous, you will need to wait for us to approve your join request. We usually approve within 24 hours but sometimes we need some more time).
+
+[[Image:Transifex_join_team.jpg]]
+
 
 
 == Starting a new translation ==
 
-To start a translation for a language that currently does not exist, first visit your user's page and set your languages : https://launchpad.net/people/+me/+editlanguages.
+To start a translation for a language that currently does not exist, simply click on the "Request language" button.
 
-[[Image:LPEditLanguages.png]]
+[[Image:Transifex_request.jpg]]
 
-Then, when you have done this, you can go back to the main STK translation page and your language will appear in the list, ready to be clicked.
 
 == Translating ==
-Then you can start translating SuperTuxKart by clicking on the language you want.
+Then you can start translating SuperTuxKart by clicking on the language you want, then clicking on "Supertuxkart.pot", then clicking on "Translate now"
 
-e.g. with the Irish language :
-
-[http://supertuxkart.sourceforge.net/Image:Translation.png http://supertuxkart.sourceforge.net/persistent/images/3/36/Translation-small.png]
-
-Once you have translated STK, scroll down and click on save and continue:
-
-[http://supertuxkart.sourceforge.net/Image:Translations-2.png http://supertuxkart.sourceforge.net/persistent/images/c/c9/Translations-2-small.png]
+[[Image:Transifex_translate.jpg]]
 
 
 === Format Strings ===
@@ -50,8 +42,3 @@ From time to time, you will meet some ''format strings '':
 
 === Special plural forms ===
 Some languages, such as Gaelic or Russian, require plural forms different from the English pattern. We use ''ngettext'' to handle these. You can find the definition for your language's plural forms in the [http://localization-guide.readthedocs.org/en/latest/l10n/pluralforms.html Localization Guide] or in the [http://www.unicode.org/cldr/charts/26/supplemental/language_plural_rules.html Common Locale Data Repository].
-
-= Launchpad for Admins =
-If an updated supertuxkart.pot file is committed, launchpad will pick up this file within a few hours. In order to speed up this process, go to https://code.launchpad.net/~stk/stk/trunk (or from the launchpad main page at https://launchpad.net/stk select 'lp:stk') and look at the 'Import details' section. It will tell you when the last import happened, and when the next one is scheduled. Click on 'Import Now' to trigger an immediate import. This will cause launchpad to update its own copy of the STK sources from our repository, which will take several minutes (refreshing the page shows the steps currently happening).
-
-After that updating the source files, launchpad will import the .pot file: go to https://translations.launchpad.net/stk/trunk/+imports to see what is happening (it will take a few minutes after updating the sources before anything can be seen here). Again it will take several minutes before the import is finished and approved. After that, the new translations will be visible for translators.
