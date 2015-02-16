@@ -23,13 +23,12 @@ It's also a good idea to enable [[Artist Debug Mode]]
 = Blender resources and tutorials =
 * [[Blender resources page]]
 
-
 = Materials =
 To configure materials, see [[Track_Maker's_Guide#Materials]]
 
 = Kart export checklist =
 
-Here is a short checklist that sum-up every important point viewed in the [[New kart tutorial 2|Kart tutorial]].
+Here is a short checklist that sum-up every important point viewed in the [[Kart Creation Tutorial]].
 
 * The kart's total triangle count is not above 3000 (approximately). Under 2000 would be better.
 * Make sure mesh modifiers (mirror, subdivide, ...) are applied to the mesh objects.
@@ -43,10 +42,3 @@ Here is a short checklist that sum-up every important point viewed in the [[New 
 * Select the '''Wheel''' type for each wheel in the object properties panel
 * You have an icon, ideally at least in 64x64 resolution.
 * You have a shadow file.
-
-To know how to export the kart, see [[New kart tutorial 2#Exporting karts|Exporting karts]].
-
-
-
-
-If you have remarks or feedback about those resources, don't hesitate to post them [http://forum.freegamedev.net/viewtopic.php?f=18&t=1370 on the forum], and if you see any mistakes please tell, or even correct them !
