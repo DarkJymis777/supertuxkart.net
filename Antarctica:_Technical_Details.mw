@@ -48,8 +48,8 @@ Point lights are quite non realistic and they have noticeable shortcomings : the
 Introduced by Crysis 2 DX11 patch, SSRR is doing raytracing on the final image to generate local reflexion. These reflexions are used for all surface as an extra specular component so that not just glossy surface benefits from it. A lot of games reports to use it today, like assassin's creed 4, killzone 4...
 
 === Links ===
-* [[Antarctica:Debug And Profiling]]
-* [[Antarctica:Performance]]
-* [[Antarctica:Known Drivers Bug]]
+* [[Antarctica: Debug And Profiling]]
+* [[Antarctica: Performance]]
+* [[Known Driver Bugs]]
 
 [[category:Antarctica]]
