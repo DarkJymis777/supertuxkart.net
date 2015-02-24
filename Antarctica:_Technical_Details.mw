@@ -1,4 +1,4 @@
-This page describes the new renderer (sometimes referred as Antartica engine or pipeline) used in STK.
+This page describes the new renderer (sometimes referred as Antarctica engine or pipeline) used in STK.
 
 The new renderer is using (almost) exclusively function from the core GL 3.3+ spec in order to take advantage of modern hardware feature.
 While it uses irrlicht graph traversal and irrlicht material manager to some extend, all meaningfull GL calls are done by this new renderer. Irrlicht's code is only used for context creation, framebuffer creation/binding, texture loading, and some offscreen rendering like minimap generation and kart selection viewer. It should be possible to completly handle the framebuffer creation and binding (it's already done for shadow map because of Irrlicht's lack of textures arrays), but texture loading requires some support from irrlicht, in order to be able to load our mesh.
@@ -48,8 +48,8 @@ Point lights are quite non realistic and they have noticeable shortcomings : the
 Introduced by Crysis 2 DX11 patch, SSRR is doing raytracing on the final image to generate local reflexion. These reflexions are used for all surface as an extra specular component so that not just glossy surface benefits from it. A lot of games reports to use it today, like assassin's creed 4, killzone 4...
 
 === Links ===
-* [[Antartica:Debug And Profiling]]
-* [[Antartica:Performance]]
-* [[Antartica:Known Drivers Bug]]
+* [[Antarctica:Debug And Profiling]]
+* [[Antarctica:Performance]]
+* [[Antarctica:Known Drivers Bug]]
 
-[[category:antartica]]
+[[category:Antarctica]]
