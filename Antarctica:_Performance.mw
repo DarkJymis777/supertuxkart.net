@@ -32,4 +32,4 @@
 
 * According to Gpu Perf Studio 2 we are bandwidth bound only on DoF pass (which isn't really optimised atm). Most shaders thus scale well with the number of instruction.
 
-[[category:antartica]]
+[[category:Antarctica]]
