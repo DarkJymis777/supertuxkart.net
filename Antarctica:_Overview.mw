@@ -1,9 +1,9 @@
 __NOTOC__
 __NOEDITSECTION__
-Supertuxkart 0.8.2 and higher feature a custom engine called Antartica.
-The main feature of Antartica is a new renderer which currently supports OpenGL 3.1.
+Supertuxkart 0.8.2 and higher feature a custom engine called Antarctica.
+The main feature of Antarctica is a new renderer which currently supports OpenGL 3.1.
 
-The engine is based on a heavily modified version of irrlicht. If you want more technical information about the engine you should read [[Antartica engine: Technical Details|this]].
+The engine is based on a heavily modified version of irrlicht. If you want more technical information about the engine you should read [[Antarctica: Technical Details|this]].
 
 = Features =
 <div id="dev_contrib">
@@ -51,5 +51,5 @@ If fog is enabled in the scene, it is lit by light sources. It allows you to giv
 
 '''WARNING:''' Currently (supertuxkart 0.8.2) only point lights are supported. Cones still use the old billboard trick. However it's planned to support them later.
 
-[[Category:Antartica]]
 </div>
+[[Category:Antarctica]]
