@@ -39,3 +39,5 @@ Thus a material is defined by :
 A roughness of 0 means the material is perfectly smooth. Unfortunatly the D term is not defined in such case and thus a small delta is applied. A roughness of 1 means the material is rough and won't have highlight.
 
 Metalness is either 0 (material is a dielectric) or 1 (material is a metal). Actually it's possible to use value between 0 and 1 to blend more subtly material junction but it should be on a per case basis.
+
+[[category: antarctica]]
