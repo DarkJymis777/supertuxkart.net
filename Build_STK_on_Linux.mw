@@ -48,7 +48,7 @@ You can speed up compilation heavily by changing the number behind <tt>-j</tt> t
 There is a varity ofCMake options. The most important ones are listed below:
 * To make a debug build add <tt>-DCMAKE_BUILD_TYPE=Debug</tt> like this: <code>cmake .. -DCMAKE_BUILD_TYPE=Debug</code>
 
-* Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that.
+* Another option is to build the regular release version with its optimizations, but with debugging symbols still enabled. Replace the <tt>Debug</tt> with <tt>RelWithDebInfo</tt> for that, ie: <code>cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo</code>
 
 * wiiuse can be enable with <code>-DUSE_WIIUSE=yes</code>
 
