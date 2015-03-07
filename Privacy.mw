@@ -21,9 +21,11 @@ When signing in to the STKAddons service from STK, we store information required
 If you grant permission in-game, we will also collect anonymous statistics related to your system configuration (screen resolution, gl_ext list, video card model), performance (average fps, both overall and per track), and asset usage (how many times you use each track and kart). You will be asked to enable this data collection when you launch the game for the first time. This will allow us to determine which assets to focus on improving, and how much we can increase the graphical demands of the game. (This is NOT implemented as of STK 0.8.1 but may exist in a future release.)
 
 In more detail, depending on your choices, the following data is collected:
-* If you do not enable internet access: No information about you will be collected or used. Obviously you will also not be able to install addons, receive news messages, ...
+; If you do not enable internet access:
+: No information about you will be collected or used. Obviously you will also not be able to install addons, receive news messages, ...
 
-* If you enable internet access: You will be able to download addons anonymously, and will receive news which is shown in game. We collect anonymous information about which addon was downloaded to generate statistics about addons. While we do not store any information about you or your computer directly, our web server (as most other web servers) will log your IP address, and which pages you access.
+; If you enable internet access:
+: You will be able to download addons anonymously, and will receive news which is shown in game. We collect anonymous information about which addon was downloaded to generate statistics about addons. While we do not store any information about you or your computer directly, our web server (as most other web servers) will log your IP address, and which pages you access.
 
 * If you allow us to collect HW information: In this case your computer will send anonmymous configuration information to our server. This information includes hardware specs of your machine (e.g. available RAM, graphics card, os / distro), and graphics related driver information (driver, driver version, supported opengl features). This information is stored on our server, and available for anyone to browse at http://addons.supertuxkart.net:8080. It is used by us (and potentially by other developers) to evaluate which opengl features can be used without making a game unable to run for a majority of users.
 
