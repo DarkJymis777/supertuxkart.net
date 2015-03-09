@@ -2,7 +2,7 @@ There are several ways SuperTuxKart can be installed. The easiest solution is to
 = Binaries =
 
 == Windows (XP and above) ==
-Download the latest binary from our [[Downloads|Download]] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation. Newer versions (at least 0.8 and later) will prompt to uninstall a previously installed version if this situation is detected.
+Download the latest binary from our [[Downloads|Download]] page. It comes with an installer. It is recommended not to install a current version of SuperTuxKart on top of an existing installation. Newer versions (0.8 and later) will prompt to uninstall a previously installed version if this situation is detected.
 
 == Linux ==
 For Linux you can see if an up-to-date package is available for your distribution:
