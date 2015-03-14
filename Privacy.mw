@@ -27,7 +27,7 @@ In more detail, depending on your choices, the following data is collected:
 ; If you enable internet access:
 : You will be able to download addons anonymously, and will receive news which is shown in game. We collect anonymous information about which addon was downloaded to generate statistics about addons. While we do not store any information about you or your computer directly, our web server (as most other web servers) will log your IP address, and which pages you access.
 
-; If you allow us to collect HW information:
+; If you allow us to collect hardware information:
 : In this case your computer will send anonmymous configuration information to our server. This information includes hardware specs of your machine (e.g. available RAM, graphics card, os / distro), and graphics related driver information (driver, driver version, supported opengl features). This information is stored on our server, and available for anyone to browse at http://addons.supertuxkart.net:8080. It is used by us (and potentially by other developers) to evaluate which opengl features can be used without making a game unable to run for a majority of users.
 
 ; If you use an STK online account:
