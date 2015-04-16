@@ -31,11 +31,10 @@ The final release is copied from the RC branch to the tag directory (using the r
 *** Run "FontTool.exe tools/font_tool/po_list" (if everything goes right you'll see "Opened list file xxx ... Opened xxx.po ..." in the console).
 *** [[Fonts | See here]] for how to generate the font files.
 * Make sure to update the version number:
-** in configure.ac (from which the define for the sources is created. This number should not have any spaces in it, otherwise "make dist" will fail).
 ** CMakeLists.txt
 ** data/CREDITS
 ** src/utils/constant.cpp
-** src/ide/Xcode/SuperTuxKart-Info.plist
+** data/SuperTuxKart-Info.plist
 * Update ChangeLog.
 * Update data/CREDITS.
 ** Make sure data/CREDITS is still in UTF (not ascii).
