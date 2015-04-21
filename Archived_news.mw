@@ -4,6 +4,60 @@ __NOTOC__
 |-
 |
 
+== SuperTuxKart is applying for Google's Summer of Code 2013 ==
+We are proud to announce that for the first time in the project's history, SuperTuxKart has applied to become a mentor organisation in this year's [https://www.google-melange.com/gsoc/homepage/google/gsoc2013 Google Summer of Code] (GSoC). GSoc is a program where google will pay students to participate in open source projects full-time. This is a great chance for student to get developing experience while being helped by one of our experienced mentors, but also for STK to get new developers to implement new features. 
+
+We don't know if we will be selected (which will be announced on April 8th), but if you are interested please have a look at our [[GSoC_overview|overview]] page, which gives some basic information about our GSoC application, and our [[GSoC_ideas|list of ideas]].
+
+
+== SuperTuxKart will be SourceForge's "Project of the Month April" ==
+We had a rather excellent result in the polls for SourceForge's "Project of the Month" - one of (if not the) highest number of votes by a hobby project . We lost to PostBooks in the end (which is actually a company with around 40 employees).
+
+SourceForge decided because of our outstanding results and support from our fans to declare us "Project of the Month" in April (and also allow me to post this ahead of time).
+
+Thank you very much to all our faithful fans for your votes! Thanks to all the countless blog and forum posts, and tweets, icons, videos, and everything. 
+
+
+== SuperTuxKart as SourceForge's Project of the Month Contender ==
+[[Image:Vote_stk.png‎|left|link=http://vote.supertuxkart.net]] SuperTuxKart was just selected as one of the 9 project to compete for SourceForge's project of the month award in March. The actual decision is done by a public poll, so if you think that STK should win, please go to http://vote.supertuxkart.net, which will redirect you to the actual poll, where you can also see all competitors. We appreciate any votes, and any advertising you can do - e.g. postings in different languages so that we can reach a wider audience.
+
+
+== SuperTuxKart 0.8 released ==
+
+Hi all,
+
+over a year after the 0.7.3 release, we are proud and excited to announce the release of SuperTuxKart 0.8!
+We have closed over 230 tickets, and made some significant changes: You can now enjoy a story mode
+with challenges against a stronger AI, and improved physics with better skidding and collisions.
+Tracks can be driven in reverse, and we have new music especially composed for SuperTuxKart. To see it in action:
+
+[[image:Youtube08.jpg|150px|link=http://youtu.be/wwSXCrNjTm4]]
+
+
+Many many more changes were done, the main ones are:
+
+* Story mode and new challenge set
+* Improved AI
+* Skidding and better collision physics
+* Reverse mode
+* New green valley track
+* New Blackhill Mansion track
+* Updated XR591 track
+* Updated Fort Magma track
+* Updated Jungle track
+* Updated Sand track
+* New music
+* Updated menus
+
+
+We hope you will enjoy this brand new version!
+
+Head over to [http://supertuxkart.sourceforge.net/Downloads http://supertuxkart.sourceforge.net/Downloads] to download the game now! Windows and OSX binaries are already available, and Linux binaries should appear in the coming days as packagers make binaries for various distributions.
+
+
+A big thanks to all the people who have contributed to SuperTuxKart, without whom this release would not have been possible (full list in the credits of the game).
+
+December 10, 2012
 
 
 == SuperTuxKart 0.7.3 released ==
