@@ -1,6 +1,10 @@
 The '''media repository''' is place where all the original files of 3D-Models, textures, sound and all the other game art used in STK. This is necessary because those files are normally too large or even incompatible with the game, so they are shrinked or converted before being shipped with the game. These files are only needed by artist who want to edit the models/textures/etc.
 
-You may obtain the media repository by downloading  
+You may obtain the media repository by two ways:
+
+* If you want to do an addon track for supertuxkart 0.9 you can download the zip [https://drive.google.com/file/d/0B1Ghen5O7kdgZ2haeHAtNGNpZVE/view?usp=sharing here]
+
+* If you want to do a track for the development version of stk, you must use the svn version 
 <code>https://svn.code.sf.net/p/supertuxkart/code/media/trunk</code>
 with a SVN client
 
