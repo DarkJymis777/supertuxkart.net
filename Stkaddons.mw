@@ -1,6 +1,6 @@
-STKaddons is a plattform that allows artists and users to share additional additional tracks, arenas and karts for SuperTuxKart. Content can be either installed in-game using the [[Stkaddons API|API]] or downloaded directly from the official website at [http://stkaddons.net stkaddons.net], where you can also download older version of an add-on.
+STKaddons is a plattform that allows artists and users to share additional additional tracks, arenas and karts for SuperTuxKart. Content can be either installed in-game using the [[Stkaddons API|API]] or downloaded directly from the official website at [http://addons.supertuxkart.net addons.supertuxkart.net], where you can also download older version of an add-on.
 
-STKaddons was mainly written by Stephen Just and released under the MIT License. During the Google Summer of Code 2014, leyyin added missing features and did other major improvements. These changes have not yet been applied to [http://stkaddons.net stkaddons.net] and the official repository on [https://github.com/stephenjust/stk-stats github].
+STKaddons was mainly written by Stephen Just and released under the MIT License. During the Google Summer of Code 2014, leyyin added missing features and did other major improvements. These changes have not yet been applied to [http://addons.supertuxkart.net addons.supertuxkart.net] and the official repository on [https://github.com/stephenjust/stk-stats github].
 
 Internally, add-ons have different [[add-on status flags|flags]] containing meta-information. Different flags mean different appearance on the website or in the add-on manager, e.g. "featured" adds a heart. They can also trigger different treatment, e.g. "Invisible" add-ons can't be installed.
 
