@@ -12,13 +12,11 @@ Furthermore, if you encounter problems, make sure to '''run Supertuxkart from a 
 
 == Enabling the debug mode ==
 
-When STK is closed, open the STK config file. For versions before 0.8.2:
-* On '''Windows''': It is in %APPDATA%/supertuxkart (you can enter that in the Explorer and it will take you there) (valid for STK 0.6.2a and higher)
-* On '''Linux''': Either in $XDG_CONFIG_HOME/supertuxkart (first choice), ~/.config/supertuxkart (second choice) or in ~/.supertuxkart (third choice). (valid for STK 0.7 and higher)
-* On '''Mac OS X''': It is in ~/Library/Application Support/supertuxkart. Note that this directory may be hidden. 
+When STK is closed, open the STK config file. 
+* On '''Windows''': It is in %APPDATA%/supertuxkart/0.8.2 (you can enter that in the Explorer and it will take you there)
+* On '''Linux''': Either in $XDG_CONFIG_HOME/supertuxkart/0.8.2 (first choice), ~/.config/supertuxkart/0.8.2 (second choice) or in ~/.supertuxkart/0.8.2 (third choice).
+* On '''Mac OS X''': It is in ~/Library/Application Support/supertuxkart/0.8.2. Note that this directory may be hidden. 
 You can also watch the output in the terminal to see if there is a note on where the config files are stored or search for a file called "config.xml".
-
-STK versions 0.8.2 and later store the config files in a subdirectory of the base directory above with the name of the version number - e.g. version 0.8.2 on windows will store the files in %APPDATA%/supertuxkart/0.8.2.
 
 
 Locate the line that reads
