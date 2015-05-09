@@ -19,4 +19,4 @@ Over the time, the depencies change and some fies and pages have to be updated, 
 * [https://github.com/supertuxkart/stk-code/blob/master/CMakeLists.txt cmake]
 * [[Build STK on Linux]]
 
-Note that the dependency packages referenced [[Building and packaging on OSX|here]] and [[How to build the Windows version|here]] also need to be updated. (Normal hiker does does that for windows and auria for Mac OS X)
+Note that the dependency packages referenced [[Building and packaging on OSX|here]] and [[How to build the Windows version|here]] also need to be updated. (hiker maintains the windows dependencies, auria the Mac OS X dependencies and deve the linux dependencies)
