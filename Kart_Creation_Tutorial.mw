@@ -1,4 +1,4 @@
-This page explains how to make a kart for STK using Blender. It assumes you know the basics of modeling, UV texturing and skeletal animations in Blender, and concentrates on aspects that are specific to SuperTuxKart. Also see the general [[Style Guidelines]] which you can also consult for more details. See the [[Kart resources index|Kart resources index page]] for other resources about karts.
+This page explains how to make a kart for STK using Blender. It assumes you know the basics of modeling, UV texturing and skeletal animations in Blender, and concentrates on aspects that are specific to SuperTuxKart. See the [[Kart resources index|Kart resources index page]] for other resources about karts.
 
 See the [[Kart resources index#Kart export checklist|Kart export checklist]] for a short list that sums up every important point to know in this page, and make sure everything is OK before exporting a kart with STK's kart exporter.
 
