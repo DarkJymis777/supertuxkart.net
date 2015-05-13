@@ -5,7 +5,7 @@ Once the replay feature is created and sucessfully implemented, Time Trial highs
 
 - Info should include STK name, date, kart used, total time and lap splits
 
-- Link to the [[replay]] when you doubleclick on the time
+- Link to the replay when you doubleclick on the time
 
 - Should reset each time a new STK version is released.
 
