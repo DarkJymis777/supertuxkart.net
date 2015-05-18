@@ -8,7 +8,7 @@ Examples can be found [[Scripting_Usage|here]]
 Development notes can be found [[Scripting_Dev|here]]
 
 ==Scripting API==
-The API can be found at [[Scripting_API]]
+The API can be found at http://supertuxkart.sourceforge.net/doxygen/group__Scripting.html
 
 == Triggers for scripts==
 ===Action Triggers===
