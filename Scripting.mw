@@ -31,7 +31,6 @@ At present the different callbacks are
 ===On Start===
 Start-up scripts will run exactly once, during the track loading process. As such, they are ideal for setting the initial states of any animations, creating new action triggers, etc.
 
-
  void onStart()
 
 ===On Update===
