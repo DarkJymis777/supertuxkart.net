@@ -21,10 +21,12 @@ Relevant Methods:
 
 ===On Collision===
 Collision-based triggering revolves around providing collision based interactions. Several different types of callbacks are defined. 
-<br>At present the different callbacks are
-*onKartObjectCollision() - for collisions between karts and track objects
-*onItemObjectCollision() - for collisions between items and track objects
-*onKartKartCollision() -for collisions between karts
+
+At present the different callbacks are
+
+ void onKartObjectCollision(int idKart) // for collisions between karts and track objects
+ void onItemObjectCollision() // for collisions between items and track objects
+ void onKartKartCollision(int idKart1, int idKart 2) //for collisions between karts
 
 ===On Start===
 Start-up scripts will run exactly once, during the track loading process. As such, they are ideal for setting the initial states of any animations, creating new action triggers, etc.
