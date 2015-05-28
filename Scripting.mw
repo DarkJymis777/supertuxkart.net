@@ -28,6 +28,17 @@ At present the different callbacks are
  void onItemObjectCollision() // for collisions between items and track objects
  void onKartKartCollision(int idKart1, int idKart 2) //for collisions between karts
 
+To detect collision between a kart and a physical object (track object), the "oncollision" property should be defined on the object in the scene.xml file, containing the name of the scripting function to call
+
+ // scene.xml
+ <object type="movable" id="TestObject" ... model="TestObject.b3d" oncollision="onTestObjectCollision"/>
+
+ // scripting.as
+ void onTestObjectCollision(int idKart, const string obj_id)
+ {
+     // ...
+ }
+
 ===On Start===
 Start-up scripts will run exactly once, during the track loading process. As such, they are ideal for setting the initial states of any animations, creating new action triggers, etc.
 
