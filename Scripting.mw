@@ -24,7 +24,6 @@ Collision-based triggering revolves around providing collision based interaction
 
 At present the different callbacks are
 
- void onKartObjectCollision(int idKart) // for collisions between karts and track objects
  void onItemObjectCollision() // for collisions between items and track objects
  void onKartKartCollision(int idKart1, int idKart 2) //for collisions between karts
 
