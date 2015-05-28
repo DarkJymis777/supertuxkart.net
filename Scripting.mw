@@ -30,7 +30,7 @@ At present the different callbacks are
 To detect collision between a kart and a physical object (track object), the "oncollision" property should be defined on the object in the scene.xml file, containing the name of the scripting function to call
 
  // scene.xml
- <object type="movable" id="TestObject" ... model="TestObject.b3d" oncollision="onTestObjectCollision"/>
+ <object type="movable" id="TestObject" ... model="TestObject.b3d" on-kart-collision="onTestObjectCollision"/>
 
  // scripting.as
  void onTestObjectCollision(int idKart, const string obj_id)
