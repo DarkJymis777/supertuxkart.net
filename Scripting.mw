@@ -3,8 +3,6 @@ Scripting is used to provide all kinds of fun in-game interactions. If there's a
 
 You can use AngelScript for scripting in version higher than 0.8.1. If you to learn how to add your own scripts, you should refer the AngelScript documentation.
 
-Examples can be found [[Scripting_Usage|here]]
-
 Development notes can be found [[Scripting_Dev|here]]
 
 ==Scripting API==
