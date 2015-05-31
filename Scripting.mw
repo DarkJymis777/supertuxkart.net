@@ -25,13 +25,25 @@ At present the different callbacks are
  void onItemObjectCollision() // for collisions between items and track objects
  void onKartKartCollision(int idKart1, int idKart 2) //for collisions between karts
 
-To detect collision between a kart and a physical object (track object), the "oncollision" property should be defined on the object in the scene.xml file, containing the name of the scripting function to call
+To detect collision between a kart and a physical object (track object), the "on-kart-collision" property should be defined on the object in the scene.xml file, containing the name of the scripting function to call
 
  // scene.xml
- <object type="movable" id="TestObject" ... model="TestObject.b3d" on-kart-collision="onTestObjectCollision"/>
+ <object type="movable" id="TestObject" ... model="TestObject.b3d" on-kart-collision="onTestObjectKartCollision"/>
 
  // scripting.as
- void onTestObjectCollision(int idKart, const string obj_id)
+ void onTestObjectKartCollision(int idKart, const string obj_id)
+ {
+     // ...
+ }
+
+
+To detect collision between an item (a powerup/weapon) and a physical object (track object), the "on-item-collision" property should be defined on the object in the scene.xml file, containing the name of the scripting function to call
+
+ // scene.xml
+ <object type="movable" id="TestObject" ... model="TestObject.b3d" on-item-collision="onTestObjectItemCollision"/>
+
+ // scripting.as
+ void onTestObjectItemCollision(int itemType, int idKart, const string objID)
  {
      // ...
  }
