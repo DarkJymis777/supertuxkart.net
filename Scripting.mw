@@ -44,7 +44,10 @@ To detect collision between an item (a powerup/weapon) and a physical object (tr
  // scripting.as
  void onTestObjectItemCollision(int itemType, int idKart, const string objID)
  {
-     // ...
+    if (itemType == Kart::PowerupType::BOWLING)
+    {
+        // ...
+    }
  }
 
 ===On Start===
