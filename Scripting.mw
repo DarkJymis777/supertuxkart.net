@@ -30,7 +30,7 @@ To detect collision between a kart and a physical object (track object), the "on
  <object type="movable" id="TestObject" ... model="TestObject.b3d" on-kart-collision="onTestObjectKartCollision"/>
 
  // scripting.as
- void onTestObjectKartCollision(int idKart, const string obj_id)
+ void onTestObjectKartCollision(int idKart, const string libraryInstance, const string obj_id)
  {
      // ...
  }
