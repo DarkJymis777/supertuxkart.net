@@ -32,8 +32,9 @@ The final release is copied from the RC branch to the tag directory (using the r
 *** [[Fonts | See here]] for how to generate the font files.
 * Make sure to update the version number:
 ** CMakeLists.txt
-** data/CREDITS
 ** src/utils/constant.cpp
+** data/CREDITS
+** data/supertuxkart.VERSION  (same as 'supertuxkart.' + STK_VERSION from constant.cpp)
 ** data/SuperTuxKart-Info.plist
 * Update ChangeLog.
 * Update data/CREDITS.
