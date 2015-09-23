@@ -55,7 +55,7 @@ All files released on the STK web page should use the following naming scheme:
 supertuxkart-<VERSION>-<ARCHITECTURE>.<FILE EXTENSION>
 
 '''VERSION''':
-* Release candidates: the version number of the next stable release + rc + release candidate number. Examples: 0.3rc1 or 0.3.1rc2
+* Release candidates: the version number of the next stable release + "-rc" + release candidate number. Examples: 0.3-rc1 or 0.3.1-rc2
 * Stable release examples: the version number. Examples: 0.3, 0.4
 
 '''ARCHITECTURE''':
@@ -68,7 +68,7 @@ supertuxkart-<VERSION>-<ARCHITECTURE>.<FILE EXTENSION>
 * Depends on the file type. Examples: tar.gz, tar.bz2, dmg, zip, ...
 
 
-''Examples of full package file names: supertuxkart-0.3-linuxi586.tar.bz2, supertuxkart-SVN2110-macosx.dmg, supertuxkart-0.4rc1-win.zip''
+''Examples of full package file names: supertuxkart-0.3-linuxi586.tar.bz2, supertuxkart-git2110-macosx.dmg, supertuxkart-0.4-rc1-win.zip''
 
 == Where to advertise a new release ==
 
