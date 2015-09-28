@@ -24,7 +24,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 * Update ChangeLog file.
 * Update donations section in CREDITS.
 * On Unix systems, make sure all files have appropriate read permissions.
-* Update translations from Teansifex (after the publicized deadline has been reached).
+* Update translations from Transifex (after the publicized deadline has been reached).
 ** Install the transifex client ( http://docs.transifex.com/developer/client/setup ). On windows place it in the data/po folder. Run ./data/po/pull_from_transifex.sh
 ** Regenerate the Chinese font files:
 *** A list of all Asian fonts is in tools/font_tool/po_list (check that it is up to date).
