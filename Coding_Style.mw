@@ -86,6 +86,7 @@ Feel free to use more commands like \pre, \param, \return from doxygen.
 * Variable names are lower case separated by '_'. Example: sun_position (member variable: m_kart_pointer).
 * Function names should be capitalized, except the first word. Example: getWidth(). 
 * Type(including classes/struct/enum) names have all their words capitalized. Example: KartControl.
+* The actual enums should be in uppercase, and contain a prefix to make it obvious where the enum is coming from. Example: ATTACH_BOMB, ATTACH_ANVIL, ...
 * Use true/false instead of TRUE/FALSE. In [http://lists.kde.org/?l=kde-devel&m=111737503228222&w=2] it's written that uppercase booleans are used only for older compilers, so we should try to avoid this inconsistency.
 * Use std::string instead of char*. If you need a C-style string, use the function std::string.c_str(). However, there are cases when this cannot be avoided(like when using strings with gettext).
 * Use std::min() / std::max() instead of a #define (windows needs NOMINMAX to be defined before including windows.h).
