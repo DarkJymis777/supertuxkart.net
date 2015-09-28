@@ -30,6 +30,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 *** A list of all Asian fonts is in tools/font_tool/po_list (check that it is up to date).
 *** Run "FontTool.exe tools/font_tool/po_list" (if everything goes right you'll see "Opened list file xxx ... Opened xxx.po ..." in the console).
 *** [[Fonts | See here]] for how to generate the font files.
+** Run data/po/update_po
 * Make sure to update the version number:
 ** CMakeLists.txt
 ** src/utils/constant.cpp
