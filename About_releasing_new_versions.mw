@@ -13,24 +13,24 @@ The final release is copied from the RC branch to the tag directory (using the r
 
 ==Checklist for stable releases==
 * Give a deadline to translators
+** Run data/po/update_pot and make sure transifex has the latest pot file for translations.
 ** This should involve two steps: first contact translators and make them aware that a string freeze will happen in the near future, and ask them for feedback. They might find issues (e.g. incorrect strings, untranslatable strings, typos) that went undetected before. Once some feedback was received, announce the official string freeze.
-* Tested to compile and play under MacOSX.
-* Tested to compile and play under Windows (make sure the icon is available).
-** Do not include the .ilk file, it's only used for linking and otherwise useless.
-* Tested to compile and play under Linux.
 * After creating a source package, try to build from this package. Sometimes, files are missing.
 * Document the assets svn version in doc/assets_version (so that we can keep track of which assets version was used for which stk release, we don't have branches directories for assets due to their size).
+* Create a 'tag' for the assets under https://svn.code.sf.net/p/supertuxkart/code/stk-assets-release/
 * Run optimize_data.sh.
 * Update ChangeLog file.
-* Update donations section in CREDITS.
+* Update data/CREDITS.
+** Don't forget the donations section in CREDITS.
+** Make sure data/CREDITS is still in UTF (not ascii).
 * On Unix systems, make sure all files have appropriate read permissions.
 * Update translations from Transifex (after the publicized deadline has been reached).
 ** Install the transifex client ( http://docs.transifex.com/developer/client/setup ). On windows place it in the data/po folder. Run ./data/po/pull_from_transifex.sh
+** Run data/po/update_po_authors.py on all(!) .po files to update the credit sections for translators.
 ** Regenerate the Chinese font files:
 *** A list of all Asian fonts is in tools/font_tool/po_list (check that it is up to date).
 *** Run "FontTool.exe tools/font_tool/po_list" (if everything goes right you'll see "Opened list file xxx ... Opened xxx.po ..." in the console).
 *** [[Fonts | See here]] for how to generate the font files.
-** Run data/po/update_po
 * Make sure to update the version number:
 ** CMakeLists.txt
 ** src/utils/constant.cpp
@@ -38,18 +38,18 @@ The final release is copied from the RC branch to the tag directory (using the r
 ** src/windows_installer/supertuxkart.nsi (two locations)
 ** Create a file data/supertuxkart.VERSION  (same as 'supertuxkart.' + STK_VERSION from constant.cpp) - and delete any previous file. This file is used by stk to make sure it is reading the correct assets input data.
 ** data/SuperTuxKart-Info.plist
-* Update ChangeLog.
-* Update data/CREDITS.
-** Make sure data/CREDITS is still in UTF (not ascii).
-* Test to run when no sound card is available. Sound should be disabled and continue, not crash.
 * Check that the addon server has all achievements defined (data/achievements.xml should be in sync with table v2_achievements).
+
+
+For binary packages (esp. linux):
+* Don't include INSTALL, it confuses people
+For Windows: 
+* Do not include the .ilk file, it's only used for linking and otherwise useless.
+
 
 Upload packages, then :
 * Update the Downloads Page
 * Update the default file settings at sourceforge
-
-For binary packages (esp. linux):
-* Don't include INSTALL, it confuses people
 
 == Naming scheme for packages ==
 All files released on the STK web page should use the following naming scheme:
