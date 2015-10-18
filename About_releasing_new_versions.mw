@@ -47,6 +47,10 @@ For Windows:
 * Do not include the .ilk file, it's only used for linking and otherwise useless.
 
 
+For source package:
+* Copy stk-assets into stk-code/data
+* Check that make install works as expected
+
 Upload packages, then :
 * Update the Downloads Page
 * Update the default file settings at sourceforge
