@@ -108,7 +108,7 @@ Here are a few hints about keeping Super TuxKart portable. Please consider those
 * To link a file, be sure that there is no space between the arguments and the filename, for example, -Lbullet/Demos/OpenGL not -L bullet/Demos/OpenGL, since it causes problems on Macs.
 * Some compilers (for example, VC6) don't support initialization of static member variables inside the class declaration, so write the initialization in the implementation file (the .cpp file).
 * Under Windows, a warning is printed if you convert an int to an OpenGL variable type implicitly ( GLint a = b; ), so please do so explicitly ( GLint a = (GLint) b; ).
-* Althought it's possible on linux, do not use C++11 because it can cause problems on older versions of Windows and Mac OS X. (This might change in the future)
+* It's okay to use C++11 features, but they should be available on GCC 4.8 and VS 2013 - features implemented more recently than that should not be used yet
 ** This also means that you currently can't get rid of the auto_ptr-deprecation warnings
 
 == Logging ==
