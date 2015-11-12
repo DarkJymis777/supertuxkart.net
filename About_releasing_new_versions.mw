@@ -39,7 +39,7 @@ The final release is copied from the RC branch to the tag directory (using the r
 ** Create a file data/supertuxkart.VERSION  (same as 'supertuxkart.' + STK_VERSION from constant.cpp) - and delete any previous file. This file is used by stk to make sure it is reading the correct assets input data.
 ** data/SuperTuxKart-Info.plist
 * Check that the addon server has all achievements defined (data/achievements.xml should be in sync with table v2_achievements).
-
+* Next version only: remove the fonts page for the wiki and then delete this point
 
 For binary packages (esp. linux):
 * Don't include INSTALL, it confuses people
