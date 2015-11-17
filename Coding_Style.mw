@@ -107,7 +107,7 @@ Here are a few hints about keeping Super TuxKart portable. Please consider those
 * To link a file, be sure that there is no space between the arguments and the filename, for example, -Lbullet/Demos/OpenGL not -L bullet/Demos/OpenGL, since it causes problems on Macs.
 * Some compilers (for example, VC6) don't support initialization of static member variables inside the class declaration, so write the initialization in the implementation file (the .cpp file).
 * Under Windows, a warning is printed if you convert an int to an OpenGL variable type implicitly ( GLint a = b; ), so please do so explicitly ( GLint a = (GLint) b; ).
-* It's recommended to use C++11 features, but they should be available on GCC 4.6, clang 3.4 and VS 2013 - features implemented more recently than that should not be used yet
+* It's recommended to use C++11 features, but they should be available in GCC 4.6, clang 3.4 and VS 2013 - features implemented more recently than that should not be used yet
 
 == Logging ==
 We have a separate class to Log messages for the user. This class should be used for any message that's printed on the terminal (or might be redirected into a file so that users can give us this data). Normal printf/cout/cerr are still used in many files, but this is deprecated. The various levels should be used as follows:
