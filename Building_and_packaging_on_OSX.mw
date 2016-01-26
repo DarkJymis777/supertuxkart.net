@@ -42,7 +42,7 @@ You can use the CMake build system to build STK. At this time CMake will not mak
 With clang:
 <code>mkdir cmake_build
 cd cmake_build
-cmake .. -DUSE_CPP2011=1
+cmake ..
 make
 </code>
 
