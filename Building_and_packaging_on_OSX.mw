@@ -52,7 +52,7 @@ make
 </code>
 
 '''Building on 10.10 with 10.9 compat'''
-<code>cmake .. -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 -DUSE_WIIUSE=0</code>
+<code>cmake .. -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9</code>
 
 '''Building on 10.6'''
 <code>export CMAKE_OSX_ARCHITECTURES=i386
