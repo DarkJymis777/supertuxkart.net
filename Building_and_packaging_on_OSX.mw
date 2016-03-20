@@ -34,7 +34,7 @@ You can use the CMake build system to build STK. At this time CMake will not mak
 
 '''You'll have to run these commands inside your <TT>stk-code</TT> directory. The <TT>stk-assets</TT> directory has to be in the parent directory of <TT>stk-code</TT>'''
 
-'''Building on 10.7, 10.8, 10.9'''
+'''Building'''
 
 With clang:
 <code>mkdir cmake_build
@@ -53,24 +53,6 @@ make
 
 '''Building on 10.10 with 10.9 compat'''
 <code>cmake .. -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9</code>
-
-'''Building on 10.6'''
-<code>export CMAKE_OSX_ARCHITECTURES=i386
-mkdir cmake_build
-cd cmake_build
-cmake ..
-make
-</code>
-
-'''Building on 10.6 with compatibility for 10.5'''
-alternatively, to make a build backwards compatible with OSX 10.5 (this will likely need to be done from 10.6, I don't think making builds that far backwards compatible is possible under 10.7+)
-<code>export CMAKE_OSX_ARCHITECTURES=i386
-mkdir cmake_build
-cd cmake_build
-cmake .. -DCMAKE_OSX_SYSROOT=/Developer/SDKs/MacOSX10.5.sdk/ -DCMAKE_OSX_DEPLOYMENT_TARGET=10.5
-make
-</code>
-
 
 
 You can generate a Xcode project by replacing the "cmake .." line with "cmake .. -GXcode"
