@@ -52,7 +52,7 @@ make
 '''Building on 10.10 with 10.9 compat'''
 <code>cmake .. -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9</code>
 
+= XCode =
+You can also generate a Xcode project by replacing the "cmake .." line with "cmake .. -GXcode"
 
-You can generate a Xcode project by replacing the "cmake .." line with "cmake .. -GXcode"
-
-'''This is not recommended because Xcode needs much more space on the disk than CMake with make'''
+Please note that Xcode is much less well tested than makefiles, so there may be issues when trying to use Xcode
