@@ -52,7 +52,15 @@ make
 '''Building on 10.10 with 10.9 compat'''
 <code>cmake .. -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9</code>
 
-= XCode =
-You can also generate a Xcode project by replacing the "cmake .." line with "cmake .. -GXcode"
+= Xcode =
+1. Place an additional copy of the dependencies into <TT>Users/<YOUR_USERNAME>/Library/Frameworks</TT> <br>
+2. In terminal, use <TT>cd</TT> to navigate to your cloned <TT>stk-code</TT> directory <br>
+3. Execute the following commands:
 
-Please note that Xcode is much less well tested than makefiles, so there may be issues when trying to use Xcode
+<code>mkdir xcode_build && cd xcode_build
+cmake .. -GXcode</code>
+
+4. Use Finder to navigate to your <TT>stk-code/xcode_build</TT> folder and open the newly generated Xcode project (<TT>SuperTuxKart.xcodeproj</TT>) <br>
+5. Build the project in Xcode: Product -> Build <br>
+
+'''Note:''' Xcode is much less well tested than makefiles, so there may be issues when trying to use Xcode.
