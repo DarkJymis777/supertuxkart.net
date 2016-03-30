@@ -1,175 +1,38 @@
-{{#css:
+SuperTuxKart is a free 3D kart racing game; we want to make the game fun more than we want to make it realistic. You can play with up to 4 friends on one PC, racing against each other or just try to beat the computer (a network multiplayer feature is planned).
 
-.full {
-   width: 50%;
-}
+See the great lighthouse or drive through the sand and visit the pyramids. Race underground or in space, watching the stars passing by. Have some rest under the palms on the beach (watching the other karts overtaking you :) ). But don't eat the bananas! Watch for bowling balls, plungers, bubble gum and cakes thrown by opponents.
 
-@media only screen and (max-width: 480px)  {
+You can do a single race against other karts, compete in one of several Grand Prix, try to beat the high score in time trials on your own, play battle mode against your friends, and more!
 
-  .full {
+There are also many user made track, karts and arenas available in-game as [http://addons.supertuxkart.net/ Add-ons].
 
-    display:block;
-    height: 300px;
+== About us ==
 
-  }
+=== Main Developers ===
 
-}
+* [[JoergHenrichs|Joerg Henrichs]] (aka hiker): Project Leader
+* Marianne Gagnon (aka Auria): GUI, textures
+* Jean-Manuel Clemençon (aka Samuncle): Lead artist
+* Magne Djupvik (aka Arthur): blogging, testing and community managment
 
-@media only screen and (max-width: 800px)  {
+== See ==
 
-  .full {
-
-    display:block;
-    width:100%;
-    height: 200px;
-
-  }
-
-}
-
-}}
-{{Generic-hide-summary}}{{generic-css}}
-{{ArticleMainTitle|content=..:: Welcome to the Mascot Kingdom! ::..}}
-
-<gallery mode="packed" widths=320px>
-File:Supertuxkart-0.9-screenshot-3.jpg
-File:Supertuxkart-0.9-screenshot-2.jpg
-File:Supertuxkart-0.9.1-screenshot-5.jpg
-</gallery>
-Karts. Nitro. Action! SuperTuxKart is a 3D open-source arcade racer with a variety characters, tracks, and modes to play. Our aim is to create a game that is more fun than realistic, and provide an enjoyable experience for all ages.
-
-In Story mode, you must face the evil Nolok, and defeat him in order to make the Mascot Kingdom safe once again! You can race by yourself against the computer, compete in several Grand Prix cups, or try to beat your fastest time in Time Trial mode. You can also race with up to four friends on one PC, or battle each other in multiplayer arenas. Network multiplayer modes are currently under development.
-<gallery mode="packed" widths=320px>
-File:Supertuxkart-0.9-screenshot-1.jpg
-File:Supertuxkart-0.9-screenshot-8.jpg
-File:Supertuxkart-0.9.1-screenshot-7.jpg
-</gallery>
-
-<br />
-
-{{ArticleMainTitle|content=Main Characters}}
-
-{{character-presentation
-|name=Tux
-|icon=Character_tux_icon.png
-|type=odd
-|description=The hero of SuperTuxKart. Tux is a brave penguin who must save his friend, Gnu, from the evil clutches of Nolok. Tux is the mascot of Linux.
-}}
-{{character-presentation
-|name=Gnu
-|icon=Character_gnu_icon.png
-|type=even
-|description=Tux's wise mentor, Gnu rides a flying carpet and lives peacefully in a pagoda. When Nolok captures him, the entire kingdom will try to save him. Gnu is the mascot of the GNU Project.
-}}
-{{character-presentation
-|name=Nolok
-|icon=Character_nolok_icon.png
-|type=odd
-|description=The villain of SuperTuxKart, Nolok is always concocting some sort of malevolent plan inside his fiery lava castle.
-}}
+=== Version 0.9 ===
 
 
-{{ArticleMainTitle|content=Additional Characters}}
+==== Video ====
+<youtube>0FEwDH7XU9Q</youtube>
 
-<table><tr>
-{{character-presentation-small
-|name=Sara
-|icon=Character_sara_icon.png
-|type=odd
-|description=Sara is a powerful magician, and the ruler of the Mascot Kingdom. She can race using a motorbike, or a specialised snowmobile. She is the mascot of the OpenGameArt website.
-}}
-{{character-presentation-small
-|name=Adiumy
-|icon=Character_adiumy_icon.png
-|type=even
-|description=Adiumy is an adorable duckling, and rides a three-wheeled, wind-up kart. He is the mascot of Adium.
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Konqi
-|icon=Character_konqi_icon.png
-|type=odd
-|description=While Konqi's ancient ancestors were dangerous and feared, dragons today are harmless... mostly. He is the mascot of the KDE project.
-}}
-{{character-presentation-small
-|name=ElePHPant
-|icon=Character_php_icon.png
-|type=even
-|description=ElePHPant is the Prince of Moonbay's personal driver. His high rank allows him access to some of the best racing karts ever made. He is the mascot of the PHP project.
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Beastie
-|icon=Character_beasties_icon.png
-|type=odd
-|description=Always ready to take part in an epic race, Beastie lives in Ravenbridge mansion with his friend Gavroche. He is the mascot of the BSD project.
-}}
-{{character-presentation-small
-|name=Amanda
-|icon=Character_panda_icon.png
-|type=even
-|description=Amanda was rescued by monks when they found her in a basket as a cub. She now teaches the ancient art of racing in a monastery. She is the mascot of Window Maker.
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Emule
-|icon=Character_emule_icon.png
-|type=odd
-|description=Emule's superior knowledge of mechanical engineering allowed him to build his own kart with a turbocharged engine. He is the mascot of eMule.
-}}
-{{character-presentation-small
-|name=Suzanne
-|icon=Character_suzanne_icon.png
-|type=even
-|description=Racing has been Suzanne's dream since childhood. She began her racing career in the prestigious Kart Academy of Val Verde. She is the mascot of Blender.
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Gavroche
-|icon=Character_gaveroche_icon.png
-|type=odd
-|description=Gavroche is a goblin that shares Ravenbridge mansion with Beastie. Sometimes he makes scary noises, tricking people into thinking the house is haunted. He is the mascot of MediaGoblin.
-}}
-{{character-presentation-small
-|name=Hexley
-|icon=Character_hexley_icon.png
-|type=even
-|description=Hexley's ancestors started kart racing many years ago, and generation after generation, they became very good at it. He is the mascot of Darwin.
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Xue
-|icon=Character_xue_icon.png
-|type=odd
-|description=Xue likes to stand out from the crowd, and her unusual kart reflects this. She races a special hovercraft, which is small enough to be driven by a mouse. She is the mascot of XFCE.
-}}
-{{character-presentation-small
-|name=Pidgin
-|icon=Character_pidgin_icon.png
-|type=even
-|description=Pidgin's ability to fly makes him perfect to deliver the results of the Grand Prix around the Mascot Kingdom. He is the mascot of Pidgin.
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Puffy
-|icon=Character_puffy_icon.png
-|type=odd
-|description=Puffy races mainly to earn enough money to accomplish his dream: to buy a submarine. He is the mascot of the OpenBSD project.
-}}
-{{character-presentation-small
-|name=Wilber
-|icon=Character_wilbert_icon.png
-|type=even
-|description=Wilber is the official cameraman who works for WTXB-TV to record kart races, which are very popular in the Mascot Kingdom. He is the mascot of GIMP.
-}}
-</tr><tr>
-</table>
-<div class="article_main_title">
+==== Screenshots ====
+* [[Image:Supertuxkart-0.9-screenshot-1.jpg|300px|alt=SuperTuxKart 0.9 screenshot]]
+* [[Image:Supertuxkart-0.9-screenshot-2.jpg|300px|alt=SuperTuxKart 0.9 screenshot]]
+* [[Image:Supertuxkart-0.9-screenshot-6.jpg|300px|alt=SuperTuxKart 0.9 screenshot]]
+* [[Image:Supertuxkart-0.9-screenshot-3.jpg|300px|alt=SuperTuxKart 0.9 screenshot]]
+* [[Image:Supertuxkart-0.9-screenshot-9.jpg|300px|alt=SuperTuxKart 0.9 screenshot]]
+* [[Image:Supertuxkart-0.9-screenshot-8.jpg|300px|alt=SuperTuxKart 0.9 screenshot]]
+* [[Image:Supertuxkart-0.9-screenshot-5.jpg|300px|alt=SuperTuxKart 0.9 screenshot]]
+<sub>''All screenshots released by the SuperTuxKart-Team under CC-BY-SA 3.0''</sub>
 
-== ...And many more! ==
-</div>
-You can create your own characters, tracks, and arenas and share them with the SuperTuxKart community! You can do this by going to [http://addons.supertuxkart.net addons.supertuxkart.net].
 
-If you are interested you can take a look at the [[Art Portal]].
-
-[[Terms|Terms and conditions]]
+==== Previous versions ====
+See the [[Screenshots_Old|Screenshot archive]].
