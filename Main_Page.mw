@@ -1,9 +1,39 @@
-<strong>MediaWiki has been successfully installed.</strong>
+{{#css:
+.landing-page-download {
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    text-align: center;
+}
 
-Consult the [//meta.wikimedia.org/wiki/Help:Contents User's Guide] for information on using the wiki software.
+@media screen and (max-width: 1000px) {
+    .landing-page-download {
+        position: static;
+        margin-bottom: 10px;
+    }
+}
 
-== Getting started ==
-* [//www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Configuration settings list]
-* [//www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
-* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]
-* [//www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources Localise MediaWiki for your language]
+.landing-page-download p {
+        margin: 0px;
+}
+
+.landing-page-download-link {
+        font-size: 28px;
+}
+
+.landing-page-download-link a {
+            color: green;
+}
+
+.youtube-embed-landing-page {
+    text-align: center;
+}
+}}
+<p style="max-width: 730px;">SuperTuxKart is a free 3D kart racing game with many track, characters and items for you to try. Have fun! [[Discover|[read more]]]</p>
+
+<div class="landing-page-download">
+<p class="landing-page-download-link">&#91;[[Download|Play now !]]&#93;</p>
+<p class="landing-page-download-os">win | mac | linux</p>
+</div>
+
+<div class="youtube-embed-landing-page"><youtube>0FEwDH7XU9Q</youtube></div>
