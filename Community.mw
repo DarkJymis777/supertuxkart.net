@@ -4,18 +4,15 @@
 }
 
 ul#get-involved-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    max-width: 1000px;
     margin: 0;
     list-style: none;
     overflow: hidden;
 }
 
 ul#get-involved-list > li  {
-    display: block;
-    margin: 5px;
+    float: left;
+    width: 20%;
 }
 
 ul#get-involved-list > li > div {
@@ -44,35 +41,12 @@ ul#get-involved-list > li > div {
     font-size: 100px;
 }
 
-.community-link .get-involved-icons
-{
-    font-size: 125px;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: -10px;
-}
-
-.get-involved-container
-{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.get-involved-panel
-{
-    min-width: 33%;
-}
-
-
 }}
-{{Generic-hide-summary}}
 <html>
 <ul id="get-involved-list">
     <li>
         <a class="community-link" href="http://forum.freegamedev.net/viewforum.php?f=16">
-            <div class="get-involved-icon"><i class="get-involved-icons icon-forum"></i></div>
+            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
             <div class="get-involved-name">Forum</div>
         </a>
     </li>
@@ -84,20 +58,20 @@ ul#get-involved-list > li > div {
     </li>
     <li>
         <a class="community-link" href="http://webchat.freenode.net/?channels=%23stk">
-            <div class="get-involved-icon"><i class="get-involved-icons icon-irc"></i></div>
+            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
             <div class="get-involved-name">IRC</div>
         </a>
     </li>
     <li>
         <a class="community-link" href="https://lists.sourceforge.net/lists/listinfo/supertuxkart-devel">
-            <div class="get-involved-icon"><i class="fa fa-envelope"></i></div>
+            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
             <div class="get-involved-name">Mailing List</div>
         </a>
     </li>
     <li>
         <a class="community-link" href="http://sourceforge.net/projects/supertuxkart/">
-            <div class="get-involved-icon"><i class="get-involved-icons icon-sf-logo" style="font-size: 90px; margin-top: 5px; margin-bottom: -5px;"></i></div>
-            <div class="get-involved-name">SourceForge</div>
+            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
+            <div class="get-involved-name">Sourceforge</div>
         </a>
     </li>
 </ul>
@@ -105,23 +79,23 @@ ul#get-involved-list > li > div {
 </html>
 
 <html>
-<div style="text-align: center; margin-top: 20px; margin-bottom: 10px">
-<a href="/donate" style="color: red;">
+<div style="text-align: center; margin-top: 20px; marign-bottom: 10px">
+<a href="http://supertuxkart.sourceforge.net/donate.php" style="color: red;">
 <h2> <i class="fa fa-heart"></i> Support Us </h2>
-<p>Donations help us get things finished faster!</p>
+<p>Donations help us getting things finished faster!</p>
 </a>
 </div>
 </html>
 
-<div class="get-involved-container">
-<div class="get-involved-panel">
+<div style="overflow: hidden">
+<div style="float: left; width: 50%;">
 
-== <i style="margin: 0px 5px;" class="fa fa-code"></i> For Programmers ==
+== <i style="margin: 0px 5px;" class="fa fa-file-code-o"></i> For programmers ==
 === Programming ===
 * [[Source control]]
 * [[Coding Style|Coding style guidelines]]
-* [[Talk:ToDo|To Do]] 
-* [[Talk:Milestones|Milestones]] 
+* [[ToDo|To Do]] 
+* [[Milestones]] 
 * [[Antarctica: Technical Details|Antarctica engine (renderer)]]
 * [[Scripting]]
 * [https://github.com/supertuxkart/stk-code/issues?q=is%3Aopen+is%3Aissue+label%3A%22T%3Afor+beginners%22 Tasks for beginners]
@@ -131,24 +105,37 @@ ul#get-involved-list > li > div {
 * [[Build STK on Linux|Building on Linux]]
 * [[Building and packaging on OSX]]
 
+=== Design documents ===
+* [[Story mode]]
+* [[AI for battle mode]]
+
 === Misc ===
 * [[Making_challenges|Create challenges]]
 * [[About releasing new versions]]
 
 </div>
-<div class="get-involved-panel">
-
-== <i style="margin: 0px 5px;" class="fa fa-users"></i> For Everyone ==
-
-* [[Wiimote|Connecting your Wiimote]]
-* [[Translating STK]]
-
-</div>
-<div class="get-involved-panel">
+<div style="float: left; width: 50%;">
 
 == <i style="margin: 0px 5px;" class="fa fa-paint-brush"></i> For Artists ==
 
-<!--Transclude Art Portal-->
-{{:Art Portal}}
-</div>
+=== Guidelines ===
+* [[Style Guidelines]]
+* [[Licensing]]
+* [[Music and sound effects general specifications|Music & SFX specifications]]
+* [[File naming conventions]]
+* [[Global Universe]]
+
+=== Creating ===
+* List of [[Object list|needed objects]]
+* [[Track Maker's Guide|Track Maker's Guide]]
+* [[Kart resources index|Making Karts]]
+
+=== Misc HowTo's ===
+* Using the [[Media Repo]]
+* [[Installing the tools| Installing the tools]]
+* Running STK in [[Artist Debug Mode]]
+* [[Translating_STK | Translate STK]]
+* Connect your [[Wiimote]]
+* [[Fonts | Generate and use fonts]]
+* [[Track_Editor| Track Editor]]
 </div>
