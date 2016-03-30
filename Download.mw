@@ -1,0 +1,83 @@
+{{#css:
+#mw-content-text a {
+    color: #2F5F0F;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.article-title {
+    display: none;
+}
+
+ul.download-container-all {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+}
+
+.download-container-outer {
+    height: 60px;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #cccccc;
+    border: 1px solid #999999;
+}
+
+    
+.download-container-inner {
+    height: 100%;
+    position: relative;
+}
+
+.download-container-inner img {
+    max-height: 100%;
+    float: left;        
+}
+
+.download-container-inner span {
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+i.os-icon {
+    color: #363636;
+    font-size: 60px;
+}
+
+}}
+<html>
+<h2>SuperTuxKart 0.9</h2>
+<ul class="download-container-all">
+    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-win.exe/download"><div class="download-container-inner">
+        <i class="fa fa-windows fa-fw os-icon"></i>
+        <span>Windows</span>
+    </div></a></li>
+    
+    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-linux.tar.gz/download"><div class="download-container-inner">
+        <i class="fa fa-linux fa-fw os-icon"></i>
+        <span>Linux</span>
+      </div></a></li>
+    
+    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/SuperTuxKart-0.9.dmg/download"><div class="download-container-inner">
+        <i class="fa fa-apple fa-fw os-icon"></i>
+        <span>Mac OS X</span>
+    </div></a></li>
+    
+    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-src.tar.xz/download"><div class="download-container-inner">
+        <i class="fa fa-code fa-fw os-icon"></i>
+        <span>Source Code</span>
+    </div></a></li>
+</ul>
+<h3><a href="#">Different Operation Systems</a></h3>
+<h3><a href="#">Older Versions</a></h3>
+</html>
