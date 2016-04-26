@@ -12,7 +12,15 @@
 }
 
 .one_character caption {
-    background-color: red;
+    background-color: #7ec283;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
+
+.character_description{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 }}
@@ -38,7 +46,7 @@ There are also many user made track, karts and arenas available in-game as [http
 <tr><td>
 [[Image:Character_tux_icon.png]]
 </td>
-<td>
+<td class="character_description">
 The hero of SuperTuxKart. It's a brave penguin who will try to save his best friend Gnu from the evil nolok.
 Project behind Tux: Linux
 </td></tr>
@@ -49,11 +57,11 @@ Project behind Tux: Linux
 <div class="one_character">
 <table>
   <caption>Gnu</caption>
-<tr><td>
+<tr><td class="character_description">
 A beloved character who lives peacefully. When an UFO abduct him, the whole kingdom will try to save him
 </td>
 <td>
-[[Image:Character_tux_icon.png]]
+[[Image:Character_gnu_icon.png]]
 </td></tr>
 
 </table>
@@ -65,7 +73,7 @@ A beloved character who lives peacefully. When an UFO abduct him, the whole king
 <tr><td>
 [[Image:Character_tux_icon.png]]
 </td>
-<td>
+<td class="character_description">
 Sara is the princess of the kingdom of macots. Her coat of arms is a cupcake with two chainsaw. The cupcake is also the most powerful weapon in the game.
 </td></tr>
 
