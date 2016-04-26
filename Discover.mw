@@ -1,3 +1,9 @@
+{{#css:
+#toc {
+    display: none;
+}
+
+}}
 Karts. Nitro. Action! SuperTuxKart is a 3D Open Source arcade kart racer with multiple characters, tracks and modes you can play. Beat the evil Nolok by any means necessary, and make the mascot kingdom safe once again!
 
 We want to make the game fun more than we want to make it realistic. You can play with up to 4 friends on one PC, race against each other or just try to beat the computer (a network multiplayer feature is under development).
@@ -18,9 +24,12 @@ There are also many user made track, karts and arenas available in-game as [http
 == Main Characters ==
 
 === Tux ===
-Tux is the hero of SuperTuxKart. It's a brave penguin who will try to save his best friend Gnu from the evil nolok. 
+Tux is the hero of SuperTuxKart. It's a brave penguin who will try to save his best friend Gnu from the evil nolok.
+
+
 
 Project behind Tux: Linux
+[[Image:Character_tux_icon.png]]
 
 === Gnu ===
 Gnu is a beloved character who lives peacefully. When an UFO abduct him, the whole kingdom will try to save him
