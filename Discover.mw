@@ -3,7 +3,23 @@
     display: none;
 }
 
+.main_title {
+    background-color: #D7D7CB;
+    text-align: center;
+    color: #5d5d5d;
+    /*padding-top: 1px;
+    padding-bottom: 1px;*/
+}
+
+.one_character caption {
+    background-color: red;
+}
+
 }}
+<div class="main_title">
+== Welcome to the mascot kingdom! ==
+</div>
+
 Karts. Nitro. Action! SuperTuxKart is a 3D Open Source arcade kart racer with multiple characters, tracks and modes you can play. Beat the evil Nolok by any means necessary, and make the mascot kingdom safe once again!
 
 We want to make the game fun more than we want to make it realistic. You can play with up to 4 friends on one PC, race against each other or just try to beat the computer (a network multiplayer feature is under development).
@@ -12,31 +28,50 @@ You can do a single race against other karts, compete in one of several Grand Pr
 
 There are also many user made track, karts and arenas available in-game as [http://addons.supertuxkart.net/ Add-ons].
 
-<html>
-<div style="text-align: center; margin-top: 20px; marign-bottom: 10px">
-<a href="http://supertuxkart.sourceforge.net/donate.php" style="color: #d7d7cb;">
-<h2> <i class="fa fa-heart"></i> Support Us </h2>
-<p>Donations help us getting things finished faster!</p>
-</a>
-</div>
-</html>
-
+<div class="main_title">
 == Main Characters ==
+</div>
 
-=== Tux ===
-Tux is the hero of SuperTuxKart. It's a brave penguin who will try to save his best friend Gnu from the evil nolok.
-Project behind Tux: Linux
+<div class="one_character">
+<table>
+  <caption>Tux</caption>
+<tr><td>
 [[Image:Character_tux_icon.png]]
+</td>
+<td>
+The hero of SuperTuxKart. It's a brave penguin who will try to save his best friend Gnu from the evil nolok.
+Project behind Tux: Linux
+</td></tr>
 
-=== Gnu ===
-Gnu is a beloved character who lives peacefully. When an UFO abduct him, the whole kingdom will try to save him
+</table>
+</div>
 
-Project behind Gnu: Gnu
+<div class="one_character">
+<table>
+  <caption>Gnu</caption>
+<tr><td>
+[[Image:Character_tux_icon.png]]
+</td>
+<td>
+A beloved character who lives peacefully. When an UFO abduct him, the whole kingdom will try to save him
+</td></tr>
 
-=== Sara ===
+</table>
+</div>
+
+<div class="one_character">
+<table>
+  <caption>Sara</caption>
+<tr><td>
+[[Image:Character_tux_icon.png]]
+</td>
+<td>
 Sara is the princess of the kingdom of macots. Her coat of arms is a cupcake with two chainsaw. The cupcake is also the most powerful weapon in the game.
+</td></tr>
 
-Project behind Sara: Open Game Art
+</table>
+</div>
+
 
 === Nolok ===
 Nolok is the bad guy. At the head of Nolok Industries, he will try everything in is power to disrupt the peaceful kingdom
