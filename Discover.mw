@@ -28,32 +28,15 @@ h1 {
 }
 
 }}
-
-<table>
-<tr>
-
-<td>
-[[Image:Supertuxkart-0.9-screenshot-2.jpg|400px]]
-</td>
-
-<td>
-[[Image:Supertuxkart-0.9-screenshot-2.jpg|400px]]
-</td>
-
-<td>
-[[Image:Supertuxkart-0.9-screenshot-2.jpg|400px]]
-</td>
-
-<td>
-[[Image:Supertuxkart-0.9-screenshot-2.jpg|400px]]
-</td>
-
-</tr>
-</table>
-
 <div class="main_title">
 == ..:: Welcome to the mascot kingdom ::.. ==
 </div>
+
+<gallery mode="packed" widths=320px>
+File:Supertuxkart-0.9-screenshot-2.jpg
+File:Supertuxkart-0.9-screenshot-2.jpg
+File:Supertuxkart-0.9-screenshot-2.jpg
+</gallery>
 
 Karts. Nitro. Action! SuperTuxKart is a 3D Open Source arcade kart racer with multiple characters, tracks and modes you can play. Beat the evil Nolok by any means necessary, and make the mascot kingdom safe once again!
 
