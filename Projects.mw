@@ -1,12 +1,21 @@
-Due to the Open source nature of SuperTuxKart, the game is used in various research project, discover what people have done with our game.
+Due to the Open source nature of SuperTuxKart, the game is used in various research project, studies or simply prototypes made by fans
 
-If you have a project using STK note listed here you can contact us and we will gladly include it.
+You can discover what people have done with our game.
+
+If you have a project using SuperTuxKart note listed here or if you want to use the game in your own project you can contact us.
 
 == Microsoft IllumiRoom Demo ==
 IllumiRoom is a proof-of-concept system from Microsoft Research. It augments the area surrounding a television screen with projected visualizations to enhance the traditional living room entertainment experience.
 
 [http://research.microsoft.com/en-us/projects/illumiroom/| Official website] and  [https://www.youtube.com/watch?v=nGGMv9RnJIA| Video showcasing the project] (SuperTuxKart appears around 1 min)
 
-== Android Controller Demo ==
+== Virtual Joystick using Kinect ==
+A simple demo of the flexibility of our Virtual Joystick system playing an out of the box version of tux kart this is managed by unifing our inputs for the Gesture Therapy platform
+
+[https://www.youtube.com/watch?v=8vSfHG7BHUk| Video demonstration]
+
 
 == Open Street Map ==
+Generating 3D levels for SuperTuxKart using OpenStreetMap data and importing real world data
+
+[https://wiki.openstreetmap.org/wiki/SuperTuxKart| Official website]
