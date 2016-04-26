@@ -3,6 +3,10 @@
     display: none;
 }
 
+h1 {
+    display: none;
+}
+
 .main_title {
     background-color: #D7D7CB;
     text-align: center;
