@@ -1,3 +1,4 @@
+{{Template generic_css}}
 {{#css:
 .landing-page-download {
     position: absolute;
