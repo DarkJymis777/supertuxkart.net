@@ -33,6 +33,10 @@
     padding-bottom: 1px;*/
 }
 
+.article_date {
+    color: #8d8d8d;
+    font-size: 12px;
+}
 
 .youtube-embed-landing-page {
     text-align: center;
