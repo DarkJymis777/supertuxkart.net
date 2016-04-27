@@ -30,9 +30,7 @@ See the great lighthouse or drive through the sand and visit the pyramids. Race 
 
 You can do a single race against other karts, compete in one of several Grand Prix, or try to beat the high score in Time Trials on your own.
 
-[[Discover|Find more here]]!
-}}
-
+[[Discover|Find more here]]!}}
 {{faq-question
 |title=What is the history of STK?
 |answer=First there was [http://tuxkart.sourceforge.net TuxKart]. Work on this happened (roughly) between April 2000 and March 2004. In June 2004, the 'Game of the Month' project of the [http://www.happypenguin.org Linux Game Tome] decided to improve TuxKart. This was done between [http://www.happypenguin.org/newroot//forums/viewtopic.php?t=1407&postdays=0&postorder=asc&start=0 June and December 2004]. Unfortunately, this projected ended in a big disagreement, and it was finally decided to save the current state as "SuperTuxKart". While some graphical improvements were done, the code base itself was very unstable and practically unplayable. Nobody worked on (Super)TuxKart for several years.
@@ -51,18 +49,14 @@ Version 0.7 was released on December 20, 2010. It contained several significant 
 
 Version 0.8 was released in December 2012, adding a story mode and new challenges, improved AI and skidding, reverse mode, new tracks and music. The menus were also improved.
 }}
-
 {{faq-question
 |title=How can I install STK?
 |answer=Detailed instructions are on our [[Installation]] page.
 }}
-
 {{faq-question
 |title=Who is behind STK?
 |answer=See our [[Team]] page for information about the people behind SuperTuxKart!
 }}
-
-
 {{faq-question
 |title=What are the hardware requirements?
 |answer=
@@ -83,7 +77,6 @@ With this setup the game might be choppy
 Optional
 * (If you prefer playing with a joystick) A joystick with at least 6 buttons.
 }}
-
 {{faq-question
 |title=My computer is too old to run STK. What should I do?
 |answer=You can try your luck and run the game. If it works, great! If it doesn't, we're sorry for you, but we can't support everything. We have a limited amount of manpower and time to support old GPUs. If we did try to support old GPUs, it would basically mean no new and advanced features.
@@ -96,31 +89,26 @@ Questions often asked when playing STK.
 |title=The AI (computer kart) shot backwards - how can I do this?
 |answer=Most items (bowling ball, cake, plunger) can be used backwards. Just fire them while looking backwards.
 }}
-
 {{faq-question
 |title=Can I play STK on the internet?
 |answer=The network support feature is under development. The basic support has been added in the Google Summer of Code 2013, but it's still not finished. See [[Networked Multiplayer]] (and pages linked from there) for more information.
 }}
-
-<div class="faq_question">
-==Some keyboard keys do not work when pressed simultaneously==
-</div>
-When playing with a keyboard, you may experience issues when pressing multiple keys simultaneously, for instance trying to use nitro while accelerating and turning. In such situations, some keypress may not register. This is however not a bug of SuperTuxKart, but a phyiscal limitation of your keyboard, most keyboards can only handle so many keys pressed at the same time ( for more detailed information, please check http://www.sjbaker.org/wiki/index.php?title=Keyboards_Are_Evil ). The solution is to use a gaming input device (gamepad, or gaming keyboard), or tweak the keys configuration to find keys that your keyboard will be able to register simultaneously.
-
-<div class="faq_question">
-==I suddenly got a big red circle on my screen, what's that?==
-</div>
-If there's a penguin in the middle of the circle, someone's shot a plunger at your face. You can do that to others by shooting the plunger backwards (see the FAQ entry about throwing items backwards). If there is no penguin, then it's a bug.
-
-<div class="faq_question">
-==I want to help! What can I do?==
-</div>
-* The [[ToDo|ToDo list]] and [https://github.com/supertuxkart/stk-code/issues bug tracker] list the most important tasks, but you can of course also do something else.
+{{faq-question
+|title=Why some keyboard keys do not work when pressed simultaneously?
+|answer=When playing with a keyboard, you may experience issues when pressing multiple keys simultaneously, for instance trying to use nitro while accelerating and turning. In such situations, some keypress may not register. This is however not a bug of SuperTuxKart, but a phyiscal limitation of your keyboard, most keyboards can only handle so many keys pressed at the same time ( for more detailed information, please check http://www.sjbaker.org/wiki/index.php?title=Keyboards_Are_Evil ). The solution is to use a gaming input device (gamepad, or gaming keyboard), or tweak the keys configuration to find keys that your keyboard will be able to register simultaneously.
+}}
+{{faq-question
+|title=I suddenly got a big red circle on my screen, what's that?
+|answer=If there's a penguin in the middle of the circle, someone's shot a plunger at your face. You can do that to others by shooting the plunger backwards (see the FAQ entry about throwing items backwards). If there is no penguin, then it's a bug.
+}}
+{{faq-question
+|title=I want to help! What can I do?
+|answer=* The [[ToDo|ToDo list]] and [https://github.com/supertuxkart/stk-code/issues bug tracker] list the most important tasks, but you can of course also do something else.
 
 * Have a look at the [[Community|Get involved]] Article. It should contain all the information you need to start with coding, modelling, desinging or whatever you'ld like to do.
 
 * Contact the current developers and artist through the IRC (#stk on irc.freenode.net) or the [http://forum.freegamedev.net/viewforum.php?f=16 forum] and tell them what you want to achieve.
-
+}}
 =Technical questions=
 
 <div class="faq_question">
