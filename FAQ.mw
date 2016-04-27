@@ -92,18 +92,15 @@ Optional
 = Playing STK =
 Questions often asked when playing STK.
 
-<div class="faq_question">
-== The AI (computer kart) shot backwards - how can I do this? ==
-</div>
-Most items (bowling ball, cake, plunger) can be used backwards. Just fire them while looking backwards.
+{{faq-question
+|title=The AI (computer kart) shot backwards - how can I do this?
+|answer=Most items (bowling ball, cake, plunger) can be used backwards. Just fire them while looking backwards.
+}}
 
-<div class="faq_question">
-==Can I play STK on the internet?==
-</div>
-<div class="faq_question">
-==Can I play STK on the internet?==
-</div>
-The network support feature is under development. The basic support has been added in the Google Summer of Code 2013, but it's still not finished. See [[Networked Multiplayer]] (and pages linked from there) for more information.
+{{faq-question
+|title=Can I play STK on the internet?
+|answer=The network support feature is under development. The basic support has been added in the Google Summer of Code 2013, but it's still not finished. See [[Networked Multiplayer]] (and pages linked from there) for more information.
+}}
 
 <div class="faq_question">
 ==Some keyboard keys do not work when pressed simultaneously==
