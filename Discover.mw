@@ -143,21 +143,53 @@ She is the powerful wizard ruling the Cupcakes'N'Karts Empire. Her grand mother 
 
 <div class="one_character">
 <table>
-  <caption>Nolok</caption>
+  <caption>Adiumy</caption>
 <tr><td class="character_description">
-The head of Nolok Industries, this shady character is always concocting some malevolent plan in his steaming lava castle.
+He is a baby duck. Despite his cuteness he is one of the hardest kart to master
 </td>
 <td>
-[[Image:Character_nolok_icon.png]]
+[[Image:Character_adiumy_icon.png]]
 </td></tr>
 </table>
 </div>
 
-</td></tr></table>
+</td></tr>
+
+<tr><td class="full"  width="50%">
+
+<div class="one_character">
+<table>
+  <caption>Sara</caption>
+<tr><td>
+[[Image:Character_sara_icon.png]]
+</td>
+<td class="character_description">
+She is the powerful wizard ruling the Cupcakes'N'Karts Empire. Her grand mother Amelia started the empire.
+</td></tr>
+
+</table>
+</div>
+
+</td><td class="full"  width="50%">
+
+<div class="one_character">
+<table>
+  <caption>Adiumy</caption>
+<tr><td class="character_description">
+He is a baby duck. Despite his cuteness he is one of the hardest kart to master
+</td>
+<td>
+[[Image:Character_adiumy_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+</table>
 
 
 <gallery mode="packed">
-File:Character_adiumy_icon.png
 File:Character_beasties_icon.png
 File:Character_php_icon.png
 File:Character_panda_icon.png
