@@ -83,7 +83,7 @@ Optional
 }}
 
 <div class="article_main_title">
-== ..:: Questions about the gameplay ::.. ==
+== Questions about the gameplay ==
 </div>
 {{faq-question
 |title=The AI (computer kart) shot backwards - how can I do this?
@@ -111,6 +111,7 @@ Optional
 }}
 
 <div class="article_main_title">
+
 == ..:: Technical question ::.. ==
 </div>
 {{faq-question
