@@ -73,6 +73,14 @@ i.os-icon {
 |name=Windows
 |icon=fa-windows
 }}
+{{os-presentation
+|name=Mac OSX
+|icon=fa-apple
+}}
+{{os-presentation
+|name=Source Code
+|icon=fa-code
+}}
 <html>
 <ul class="download-container-all">
     <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-win.exe/download"><div class="download-container-inner">
