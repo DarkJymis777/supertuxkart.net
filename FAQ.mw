@@ -100,6 +100,9 @@ Most items (bowling ball, cake, plunger) can be used backwards. Just fire them w
 <div class="faq_question">
 ==Can I play STK on the internet?==
 </div>
+<div class="faq_question">
+==Can I play STK on the internet?==
+</div>
 The network support feature is under development. The basic support has been added in the Google Summer of Code 2013, but it's still not finished. See [[Networked Multiplayer]] (and pages linked from there) for more information.
 
 <div class="faq_question">
