@@ -144,9 +144,9 @@ The head of Nolok Industries, this shady character is always concocting some mal
 </td></tr></table>
 
 
-<div style="float: left; clear: none;">
+<div style="float:left; width:100%;">
 
-<div class="one_character">
+<div >
 <table>
   <caption>Sara</caption>
 <tr><td>
@@ -159,7 +159,7 @@ She is the powerful wizard ruling the Cupcakes'N'Karts Empire. Her grand mother 
 </table>
 </div>
 
-<div class="one_character">
+<div >
 <table>
   <caption>Nolok</caption>
 <tr><td class="character_description">
