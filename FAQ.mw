@@ -9,15 +9,15 @@
     background-color: #D7D7CB;
     color: #414141;
 }
-
+/*
 h1 {
     background-color: #7ec283;
     text-align: center;
 
-    /*padding-top: 1px;
-    padding-bottom: 1px;*/
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
-
+*/
 
 }}
 <div class="faq_question">
