@@ -61,7 +61,9 @@ i.os-icon {
 
 }}
 {{Generic-hide-summary}}
-{{generic-css}}
+{{generic-css
+|name=Linux
+}}
 <div class="article_main_title">
 == ..:: Get the last version (0.9.1) ::.. ==
 </div>
