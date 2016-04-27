@@ -65,7 +65,31 @@ h1 {
 <table>
   <caption>Joerg Henrichs (aka Hiker)</caption>
 <tr><td>
+[[Image:Empty_icon.png]]
+</td>
+<td class="character_description">
+The project leader
+</td></tr>
+</table>
+</div>
+
+<div class="one_character">
+<table>
+  <caption>Marianne Gagnon (aka Auria)</caption>
+<tr><td class="character_description">
+GUI, Export tools
+</td>
+<td class="character_description">
 [[Image:Auria_icon.png]]
+</td></tr>
+</table>
+</div>
+
+<div class="one_character">
+<table>
+  <caption>Jean-Manuel Clemençon (aka Samuncle)</caption>
+<tr><td>
+[[Image:Empty_icon.png]]
 </td>
 <td class="character_description">
 The project leader
@@ -86,8 +110,6 @@ GUI, Export tools
 </div>
 
 * [[JoergHenrichs|Joerg Henrichs]] (aka hiker): Project Leader
-* Marianne Gagnon (aka Auria): 
-* Jean-Manuel Clemençon (aka Samuncle): Lead artist
 * Magne Djupvik (aka Arthur): blogging, testing and community managment
 
 == Additional Developers ==
