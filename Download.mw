@@ -68,6 +68,10 @@ i.os-icon {
 {{os-presentation
 |name=Linux
 }}
+
+{{os-presentation
+|name=Windows
+}}
 <html>
 <ul class="download-container-all">
     <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-win.exe/download"><div class="download-container-inner">
