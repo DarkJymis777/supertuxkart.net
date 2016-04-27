@@ -1,12 +1,4 @@
 {{#css:
-#toc {
-    display: none;
-}
-
-h1 {
-    display: none;
-}
-
 .one_character caption {
     background-color: #7ec283;
     padding-top: 1px;
@@ -49,6 +41,7 @@ h1 {
 }
 
 }}
+{{Generic-hide-summary}}
 {{generic-css}}
 <div class="article_main_title">
 == ..:: Welcome to the Cupcakes'N'Karts Empire ::.. ==
