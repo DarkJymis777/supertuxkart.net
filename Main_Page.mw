@@ -25,6 +25,15 @@
             color: green;
 }
 
+.main_title {
+    background-color: #D7D7CB;
+    text-align: center;
+    color: #5d5d5d;
+    /*padding-top: 1px;
+    padding-bottom: 1px;*/
+}
+
+
 .youtube-embed-landing-page {
     text-align: center;
 }
@@ -36,6 +45,7 @@
 <p class="landing-page-download-os">win | mac | linux</p>
 </div>
 
-plop
-
+<div id="main_title">
+==..:: SuperTuxKart 0.9.1 released ::..==
+</div>
 <div class="youtube-embed-landing-page"><youtube>0FEwDH7XU9Q</youtube></div>
