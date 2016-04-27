@@ -81,19 +81,12 @@ You can do a single race against other karts, compete in one of several Grand Pr
 |description=The hero of SuperTuxKart. It's a brave penguin who will try to save his best friend Gnu from the evil nolok.
 Project behind Tux: Linux
 }}
-
-<div class="one_character">
-<table>
-  <caption>Gnu</caption>
-<tr><td class="character_description">
-A beloved musician who lives peacefully in a pagoda. He is Tux's wise mentor and when Nolok abducts him, the whole kingdom will try to save him
-</td>
-<td>
-[[Image:Character_gnu_icon.png]]
-</td></tr>
-
-</table>
-</div>
+{{character-presentation
+|name=Gnu
+|icon=Character_gnu_icon.png
+|type=even
+|description=A beloved musician who lives peacefully in a pagoda. He is Tux's wise mentor and when Nolok abducts him, the whole kingdom will try to save him
+}}
 
 <div class="one_character">
 <table>
