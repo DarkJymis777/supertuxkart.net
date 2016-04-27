@@ -20,7 +20,7 @@ h1 {
 }}
 {{generic-css}}
 <div class="article_main_title">
-== ..:: How can we help you ? ::.. ==
+== ..:: General question ::.. ==
 </div>
 {{faq-question
 |title=What is SuperTuxKart
@@ -82,9 +82,9 @@ Optional
 |answer=You can try your luck and run the game. If it works, great! If it doesn't, we're sorry for you, but we can't support everything. We have a limited amount of manpower and time to support old GPUs. If we did try to support old GPUs, it would basically mean no new and advanced features.
 }}
 
-= Playing STK =
-Questions often asked when playing STK.
-
+<div class="article_main_title">
+== ..:: Questions about the gameplay ::.. ==
+</div>
 {{faq-question
 |title=The AI (computer kart) shot backwards - how can I do this?
 |answer=Most items (bowling ball, cake, plunger) can be used backwards. Just fire them while looking backwards.
@@ -109,7 +109,10 @@ Questions often asked when playing STK.
 
 * Contact the current developers and artist through the IRC (#stk on irc.freenode.net) or the [http://forum.freegamedev.net/viewforum.php?f=16 forum] and tell them what you want to achieve.
 }}
-=Technical questions=
+
+<div class="article_main_title">
+== ..:: Technical question ::.. ==
+</div>
 {{faq-question
 |title=I found a bug, how should I contact you?
 |answer=First, look at the [https://github.com/supertuxkart/stk-code/issues STK bug tracker] and open a new issue if your problem hasn't been reported yet.
