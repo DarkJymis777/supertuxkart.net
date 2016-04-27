@@ -60,13 +60,13 @@ Version 0.8 was released in December 2012, adding a story mode and new challenge
 {{faq-question
 |title=What are the hardware requirements?
 |answer=
-===Recommended===
+'''Recommended'''
 * GPU: NVIDIA GeForce 470 GTX or AMD Radeon 6870 HD series card or higher
 * CPU: Quad-core Intel or AMD processor, 2.5 GHz or faster.
 * At least 1 GB VRAM (video memory).
 * Disk space: 600MB
 
-===Minimal ===
+'''Minimal'''
 With this setup the game might be choppy
 
 * GPU: NVIDIA GeForce 8xxx, ATI Radeon HD 4xxx or Intel HD Graphics 3000 (no shadows and no global illumination) or higher
@@ -74,7 +74,7 @@ With this setup the game might be choppy
 * You'll need at least 512 MB of free VRAM (video memory).
 * Disk space: 600MB
 
-Optional
+'''Optional'''
 * (If you prefer playing with a joystick) A joystick with at least 6 buttons.
 }}
 {{faq-question
