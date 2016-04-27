@@ -87,20 +87,12 @@ Project behind Tux: Linux
 |type=even
 |description=A beloved musician who lives peacefully in a pagoda. He is Tux's wise mentor and when Nolok abducts him, the whole kingdom will try to save him
 }}
-
-<div class="one_character">
-<table>
-  <caption>Nolok</caption>
-<tr><td>
-[[Image:Character_nolok_icon.png]]
-</td>
-<td class="character_description">
-The head of Nolok Industries, this shady character is always concocting some malevolent plan in his steaming lava castle.
-</td></tr>
-
-</table>
-</div>
-
+{{character-presentation
+|name=Nolok
+|icon=Character_nolok_icon.png
+|type=odd
+|description=The head of Nolok Industries, this shady character is always concocting some malevolent plan in his steaming lava castle.
+}}
 <div class="article_main_title">
 
 == Secondary characters ==
