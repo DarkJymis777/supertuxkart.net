@@ -99,8 +99,9 @@ When playing with a keyboard, you may experience issues when pressing multiple k
 </div>
 If there's a penguin in the middle of the circle, someone's shot a plunger at your face. You can do that to others by shooting the plunger backwards (see the FAQ entry about throwing items backwards). If there is no penguin, then it's a bug.
 
+<div class="faq_question">
 ==I want to help! What can I do?==
-
+</div>
 * The [[ToDo|ToDo list]] and [https://github.com/supertuxkart/stk-code/issues bug tracker] list the most important tasks, but you can of course also do something else.
 
 * Have a look at the [[Community|Get involved]] Article. It should contain all the information you need to start with coding, modelling, desinging or whatever you'ld like to do.
