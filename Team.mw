@@ -66,15 +66,13 @@ h1 {
 
 == Additional developers ==
 </div>
-
 * Magne Djupvik (Arthur)
 ** Public relations and faithful follower
 ** SuperTuxKart Blog
 ** Play testing
 ** Pun master
 
-
-* Online = 
+* Online 
 ** Add-ons website
 ** Daniel Butum (leyyin)
 ** Stephen Just
@@ -88,7 +86,6 @@ h1 {
 ** math07
 ** Elderme : Work on graphical engine
 
-
 * Google Summer of Code Students
 ** Robin Nicollet
 ** Glenn de Jonghe
@@ -99,7 +96,6 @@ h1 {
 ** Sachith Seneviratne
 ** Akshay Singhvi
 
-
 *Bug fixes & misc contributions
 ** Divya Kukar (divvy81)
 ** Fabien Sanglard : normal map shader
@@ -108,7 +104,6 @@ h1 {
 ** Stephen Dunn (Work on audio)
 ** Patrick Ammann
 ** Ward Muylaert
-
 
 * Visual art
 ** Wolfs : Green Valley
@@ -131,39 +126,39 @@ h1 {
 ** Julian Schönbächler : Amanda and Gavroche
 ** Kinsu : Emule
 
-Karts
-- Micket and Lionel Fuentes (Funto) : Beastie
-- Benjamin Arnaudet : GNU
-- abejones : Adiumy
-- Christian Framing : work on Konqi (EvilTux)
-- Frederico de Oliveira Linhares : Hexley character
-- Conso : work on Wilber
-- Vincent Lejeune (vlj) : Xue and adiummy animations from 0.8.2
+*Karts
+** Micket and Lionel Fuentes (Funto) : Beastie
+** Benjamin Arnaudet : GNU
+** abejones : Adiumy
+** Christian Framing : work on Konqi (EvilTux)
+** Frederico de Oliveira Linhares : Hexley character
+** Conso : work on Wilber
+** Vincent Lejeune (vlj) : Xue and adiummy animations from 0.8.2
 
-Minibjorn
-- Powerups and baddies (models + icons)
-- Explosion and smoke particles
-- Several textures
-- 'Feature Unlocked' chest
+* Minibjorn
+** Powerups and baddies (models + icons)
+** Explosion and smoke particles
+** Several textures
+** 'Feature Unlocked' chest
 
-Rudy85
-- Character animations
+* Rudy85
+** Character animations
 
-Icons
-- Anthony Carré (yeKcim)
-- betharatux1
+* Icons
+** Anthony Carré (yeKcim)
+** betharatux1
 
-Thomas Oppl
-- New banana model
-- Winter sky cube
+* Thomas Oppl
+** New banana model
+** Winter sky cube
 
-GUI Icons and Other Art
-- onyum.com, commissioned by OpenGameArt.org/Bart Kelsey
-- Andreas Bilng, Enrico Billing, Dakal
-- The Tango icon project, the Gnome icon set
-- Dakal : textures
-- Andy (Needer)
-- Paul Elms (scifly)
+* GUI Icons and Other Art
+** onyum.com, commissioned by OpenGameArt.org/Bart Kelsey
+** Andreas Bilng, Enrico Billing, Dakal
+** The Tango icon project, the Gnome icon set
+** Dakal : textures
+** Andy (Needer)
+** Paul Elms (scifly)
 - Elisee : Checker background
 - Mariam Lamrani (may-panda): wallpaper and poster
 - Thomas Fournet (Totoplus62): Trailer and icons
