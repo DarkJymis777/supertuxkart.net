@@ -21,7 +21,7 @@ h1 {
 
 }}
 
-{{faq-question}}
+{{faq-question|signature=Me|reason=being who you are}}
 
 <div class="faq_question">
 ==What is SuperTuxKart==
