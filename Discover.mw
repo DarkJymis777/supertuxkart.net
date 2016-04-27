@@ -36,6 +36,17 @@ h1 {
     display:block;
 
     width:100%;
+
+  }
+
+}
+
+@media only screen and (max-width: 1000px)  {
+
+  .full {
+
+    display:block;
+
     height: 300px;
 
   }
