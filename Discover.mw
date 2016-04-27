@@ -29,6 +29,14 @@ h1 {
     width: 100%;
 }
 
+@media screen and (max-width: 640px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}
+
+
 }}
 <div class="main_title">
 == ..:: Welcome to the Cupcakes'N'Karts Empire ::.. ==
