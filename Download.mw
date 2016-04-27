@@ -53,6 +53,10 @@ i.os-icon {
     color: #363636;
     font-size: 60px;
 }
+/*
+.header_wrapper {
+    display: none;
+}*/
 
 }}
 <html>
