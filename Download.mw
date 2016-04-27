@@ -65,7 +65,7 @@ i.os-icon {
 <div class="article_main_title">
 == ..:: Get the last version (0.9.1) ::.. ==
 </div>
-{{os-presentation2
+{{os-presentation
 |name=Linux
 |icon=fa-linux
 }}
