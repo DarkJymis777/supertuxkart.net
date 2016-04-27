@@ -32,7 +32,6 @@
     text-align: center;
 }
 }}
-
 {{generic-css}}
 <p style="max-width: 730px;">SuperTuxKart is a free 3D kart racing game with many track, characters and items for you to try. Have fun! [[Discover|[read more]]]</p>
 
