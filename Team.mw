@@ -1,6 +1,93 @@
-== Main Developers ==
+{{#css:
+#toc {
+    display: none;
+}
+
+h1 {
+    display: none;
+}
+
+.main_title {
+    background-color: #D7D7CB;
+    text-align: center;
+    color: #5d5d5d;
+    /*padding-top: 1px;
+    padding-bottom: 1px;*/
+}
+
+.one_character caption {
+    background-color: #7ec283;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.character_description{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.full {
+   width: 50%;
+}
+
+@media only screen and (max-width: 480px)  {
+
+  .full {
+
+    display:block;
+    height: 300px;
+
+  }
+
+}
+
+@media only screen and (max-width: 800px)  {
+
+  .full {
+
+    display:block;
+    width:100%;
+    height: 200px;
+
+  }
+
+}
+
+}}
+<div class="main_title">
+== ..:: Meet the team behind the game ::.. ==
+</div>
 
 * [[JoergHenrichs|Joerg Henrichs]] (aka hiker): Project Leader
-* Marianne Gagnon (aka Auria): GUI, Export tools
+* Marianne Gagnon (aka Auria): 
 * Jean-Manuel Clemençon (aka Samuncle): Lead artist
 * Magne Djupvik (aka Arthur): blogging, testing and community managment
+
+== Additional Developers ==
+
+<div class="one_character">
+<table>
+  <caption>Joerg Henrichs (aka Hiker)</caption>
+<tr><td>
+[[Image:Auria_icon.png]]
+</td>
+<td class="character_description">
+The project leader
+</td></tr>
+</table>
+</div>
+
+<div class="one_character">
+<table>
+  <caption>Marianne Gagnon (aka Auria)</caption>
+<tr><td>
+[[Image:Auria_icon.png]]
+</td>
+<td class="character_description">
+GUI, Export tools
+</td></tr>
+</table>
+</div>
