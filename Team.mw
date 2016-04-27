@@ -94,6 +94,8 @@ I joined SuperTuxKart team in 20xx originally to improve the graphics, but after
 </td>
 <td class="character_description">
 I'm the lead artist of SuperTuxKart. When I installed for the first time Linux in 2009, while searching for games available on Linux, one of the most popular game was SuperTuxKart. I started to mod maps for fun and eventually I made my first map, Hacienda.
+
+Thanks to my family and especially my father, Jean-Claude Clémençon
 </td></tr>
 </table>
 </div>
@@ -113,36 +115,12 @@ GUI, Export tools
 * [[JoergHenrichs|Joerg Henrichs]] (aka hiker): Project Leader
 * Magne Djupvik (aka Arthur): blogging, testing and community managment
 
-== Additional Developers ==
-= SuperTuxKart =
-A Kart Racing Game Featuring Tux & Friends
-- Version git
-- Visit us at supertuxkart.net
-- SuperTuxKart is released under GPL 3.0
-- Assets are released under Creative Commons and other licenses
 
-= Joerg Henrichs (hiker) =
+<div class="main_title">
+== Additional developers ==
+</div>
 
-Developer and project leader
-- Lead programming
-- Windows Packaging
-
-
-= Marianne Gagnon (Auria) =
-
-Developer
-- Lead Programming
-- Mac OS X Packager
-
-
-= Jean-Manuel Clémençon (Samuncle) =
-
-Lead graphical artist
-- Art work:
--   Cocoa temple, Grand Paradiso Island, Old Mine
--   BlackHill Mansion, Hacienda, Fort Magma, XR591
--   Snow Peak, Zen Garden, Ligthouse, Sara
-- Thanks to my family and especially my father
+- 
 - Jean Claude Clemençon
 
 
