@@ -1,4 +1,3 @@
-
 {{#css:
 .landing-page-download {
     position: absolute;
@@ -40,7 +39,7 @@
 <p class="landing-page-download-os">win | mac | linux</p>
 </div>
 
-<div class="main_title">
+<div class="article_main_title">
 ==..:: SuperTuxKart 0.9.1 released ::..==
 </div>
 <div class="youtube-embed-landing-page"><youtube>tKD3aWJDg3M</youtube></div>
@@ -55,11 +54,11 @@ We have also updated our donation package: the previously included track Carnava
 
 Read the full article [http://supertuxkart.blogspot.ca/2015/10/supertuxkart-091-is-released.html on our blog]
 
-<div class="article_date">
+<div class="article_main_title">
 October 17, 2015
 </div>
 
-<div class="main_title">
+<div class="article_main_title">
 
 ==We have a new Website==
 </div>
@@ -67,7 +66,7 @@ We just made public our new website. The old website was a bit outdated and not 
 
 We commissioned Jean-Manuel Clémençon our lead artist to create a fresh design while retaining the feel and look of our beloved old one.
 
-<div class="main_title">
+<div class="article_main_title">
 ==SuperTuxKart 0.9 released==
 </div>
 <div class="youtube-embed-landing-page"><youtube>0FEwDH7XU9Q</youtube></div>
