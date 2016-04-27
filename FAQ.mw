@@ -8,6 +8,15 @@
     font-size: 16px;
 }
 
+h1 {
+    background-color: #D7D7CB;
+    text-align: center;
+    color: #5d5d5d;
+    /*padding-top: 1px;
+    padding-bottom: 1px;*/
+}
+
+
 }}
 = About SuperTuxKart =
 <div class="faq_question">
