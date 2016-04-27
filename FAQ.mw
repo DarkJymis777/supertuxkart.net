@@ -9,9 +9,9 @@
 }
 
 h1 {
-    background-color: #414141;
+    background-color: #D7D7CB;
     text-align: center;
-    color: #5d5d5d;
+    color: #414141;
     /*padding-top: 1px;
     padding-bottom: 1px;*/
 }
