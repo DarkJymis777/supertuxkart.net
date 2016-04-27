@@ -58,6 +58,14 @@ h1 {
 |name=Joerg Henrichs
 |icon=Empty_icon.png
 |description=He is the master
+|type=yes
+}}
+
+{{character-presentation
+|name=Joerg Henrichs
+|icon=Empty_icon.png
+|description=He is the master
+|type=no
 }}
 
 <div class="one_character">
