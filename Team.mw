@@ -68,6 +68,8 @@ h1 {
 |type=no
 }}
 
+
+{{#ifeq: plop | plop | value if identical | value if different }}
 <div class="one_character">
 <table>
   <caption>Joerg Henrichs (aka Hiker)</caption>
