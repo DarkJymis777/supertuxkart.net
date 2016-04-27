@@ -54,6 +54,12 @@ h1 {
 == ..:: Meet the team behind the game ::.. ==
 </div>
 
+{{character-presentation
+|name=Joerg Henrichs
+|icon=Empty_icon.png
+|description=He is the master
+}}
+
 <div class="one_character">
 <table>
   <caption>Joerg Henrichs (aka Hiker)</caption>
