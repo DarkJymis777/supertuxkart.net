@@ -1,17 +1,19 @@
 {{#css:
 
 .faq_question h2 {
-    background-color: #7ec283;
+
     padding: 3px;
     padding-left: 10px;
     font-weight: bold;
     font-size: 16px;
+    background-color: #D7D7CB;
+    color: #414141;
 }
 
 h1 {
-    background-color: #D7D7CB;
+    background-color: #7ec283;
     text-align: center;
-    color: #414141;
+
     /*padding-top: 1px;
     padding-bottom: 1px;*/
 }
