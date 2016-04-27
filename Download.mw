@@ -59,8 +59,12 @@ i.os-icon {
 }*/
 
 }}
+{{Generic-hide-summary}}
+{{generic-css}}
+<div class="article_main_title">
+== ..:: Get the last version (0.9.1) ::.. ==
+</div>
 <html>
-<h2>SuperTuxKart 0.9</h2>
 <ul class="download-container-all">
     <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-win.exe/download"><div class="download-container-inner">
         <i class="fa fa-windows fa-fw os-icon"></i>
