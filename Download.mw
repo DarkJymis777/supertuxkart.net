@@ -67,9 +67,11 @@ i.os-icon {
 </div>
 {{os-presentation
 |name=Linux
+|icon=fa-linux
 }}
 {{os-presentation
 |name=Windows
+|icon=fa-windows
 }}
 <html>
 <ul class="download-container-all">
