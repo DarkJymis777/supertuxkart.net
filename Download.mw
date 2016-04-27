@@ -63,6 +63,7 @@ i.os-icon {
 {{generic-css}}
 <div class="article_main_title">
 == ..:: Get the last version (0.9.1) ::.. ==
+{{os-presentation}}
 </div>
 <html>
 <ul class="download-container-all">
