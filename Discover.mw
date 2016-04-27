@@ -29,13 +29,17 @@ h1 {
     width: 100%;
 }
 
-@media screen and (max-width: 640px) {
-	table {
-		overflow-x: auto;
-		display: block;
-	}
-}
+@media only screen and (max-width: 480px)  {
 
+  .full {
+
+    display:block;
+
+    width:100%;
+
+  }
+
+}
 
 }}
 <div class="main_title">
@@ -120,7 +124,7 @@ The head of Nolok Industries, this shady character is always concocting some mal
 == Secondary characters ==
 </div>
 
-<table><tr><td>
+<table><tr><td class="full">
 
 <div class="one_character">
 <table>
@@ -135,7 +139,7 @@ She is the powerful wizard ruling the Cupcakes'N'Karts Empire. Her grand mother 
 </table>
 </div>
 
-</td><td>
+</td><td class="full">
 
 <div class="one_character">
 <table>
