@@ -119,84 +119,69 @@ GUI, Export tools
 == Additional developers ==
 </div>
 
-- 
-- Jean Claude Clemençon
+* Magne Djupvik (Arthur)
+** Public relations and faithful follower
+** SuperTuxKart Blog
+** Play testing
+** Pun master
 
 
+* Online = 
+** Add-ons website
+** Daniel Butum (leyyin)
+** Stephen Just
 
-= Magne Djupvik (Arthur) =
-
-Public relations and faithful follower
-- SuperTuxKart Blog
-- Play testing
-- Pun master
-
-
-= Online = 
-Add-ons website
-- Daniel Butum (leyyin)
-- Stephen Just
-
-
-= Additional Programming =
-
-Main Contributors
-- Benau : font rendering, battle AI
-- Dawid Gan (deveee) : general improvements and many many bugfixes
-- Marc Coll : Grand Prix editor
-- Flakebi
-- Konstin
-- math07
-- Elderme : Work on graphical engine
+* Main Contributors
+** Benau : font rendering, battle AI
+** Dawid Gan (deveee) : general improvements and many many bugfixes
+** Marc Coll : Grand Prix editor
+** Flakebi
+** Konstin
+** math07
+** Elderme : Work on graphical engine
 
 
-Google Summer of Code Students
-- Robin Nicollet
-- Glenn de Jonghe
-- Lauri Kasanen
-- Daniel Butum
-- Bart Cools
-- Csaba Molnar
-- Sachith Seneviratne
-- Akshay Singhvi
+* Google Summer of Code Students
+** Robin Nicollet
+** Glenn de Jonghe
+** Lauri Kasanen
+** Daniel Butum
+** Bart Cools
+** Csaba Molnar
+** Sachith Seneviratne
+** Akshay Singhvi
 
 
-Bug fixes & misc contributions
-- Divya Kukar (divvy81)
-- Fabien Sanglard : normal map shader
-- Damien
-- David (Work on flying items)
-- Stephen Dunn (Work on audio)
-- Patrick Ammann
-- Ward Muylaert
+*Bug fixes & misc contributions
+** Divya Kukar (divvy81)
+** Fabien Sanglard : normal map shader
+** Damien
+** David (Work on flying items)
+** Stephen Dunn (Work on audio)
+** Patrick Ammann
+** Ward Muylaert
 
 
-= Visual art =
+* Visual art
+** Wolfs : Green Valley
+** Mac_DMH : Minigolf
+** Rubberduck : STK Enterprise
+** Thomas Oppl : Shiny Suburbs
+** Rudy85 : Subsea
+** Canis Lupus : Northern Resort & Scotland
+** Ivar ten Cate (Varivar) : Original 'Old Mine' &'Snow Peaks' Improvements
+** MacIO : Cave X
+** Johannes Sjolund : The Island
+** Wayne Dennis : Improvements to 'The Island'
+** Steve and Oliver Baker : Oliver's Math Class
 
-Tracks
-- Wolfs : Green Valley
-- Mac_DMH : Minigolf
-- Rubberduck : STK Enterprise
-- Thomas Oppl : Shiny Suburbs
-- Rudy85 : Subsea
-- Canis Lupus : Northern Resort & Scotland
-- Ivar ten Cate (Varivar) : Original 'Old Mine' &'Snow Peaks' Improvements
-
-
-Tracks
-- MacIO : Cave X
-- Johannes Sjolund : The Island
-- Wayne Dennis : Improvements to 'The Island'
-- Steve and Oliver Baker : Oliver's Math Class
-
-Karts
-- JunglePenguin : Xue
-- Minibjorn : Puffy
-- Cheleb : Nolok, Pidgin
-- Tob : Wilber, elePHPant
-- Cédric Archambault : Suzanne
-- Julian Schönbächler : Amanda and Gavroche
-- Kinsu : Emule
+** JunglePenguin : Xue
+** Minibjorn : Puffy
+** Cheleb : Nolok, Pidgin
+** Tob : Wilber, elePHPant
+** Cédric Archambault : Suzanne
+** Julian Schönbächler : Amanda and Gavroche
+** Kinsu : Emule
 
 Karts
 - Micket and Lionel Fuentes (Funto) : Beastie
