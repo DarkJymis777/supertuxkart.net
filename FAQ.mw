@@ -1,6 +1,18 @@
-= About SuperTuxKart =
+{{#css:
 
+.faq_question {
+    background-color: #7ec283;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    width: 100%;
+}
+
+}}
+= About SuperTuxKart =
+<div class="faq_question">
 ==What is SuperTuxKart==
+</div>
 SuperTuxKart is a free 3D kart racing game; we want to make the game fun more than we want to make it realistic. You can play with up to 4 friends on one PC, racing against each other or just try to beat the computer (a network multiplayer feature is under development).
 
 See the great lighthouse or drive through the sand and visit the pyramids. Race under water or in space, watching the stars passing by. Have some rest under the palms on the beach (watching the other karts overtaking you :) ). But don't eat the bananas!
@@ -9,7 +21,9 @@ You can do a single race against other karts, compete in one of several Grand Pr
 
 [[Discover|Find more here]]!
 
+<div class="faq_question">
 ==What is the history of STK? ==
+</div>
 First there was [http://tuxkart.sourceforge.net TuxKart]. Work on this happened (roughly) between April 2000 and March 2004. In June 2004, the 'Game of the Month' project of the [http://www.happypenguin.org Linux Game Tome] decided to improve TuxKart. This was done between [http://www.happypenguin.org/newroot//forums/viewtopic.php?t=1407&postdays=0&postorder=asc&start=0 June and December 2004]. Unfortunately, this projected ended in a big disagreement, and it was finally decided to save the current state as "SuperTuxKart". While some graphical improvements were done, the code base itself was very unstable and practically unplayable. Nobody worked on (Super)TuxKart for several years.
 
 In 2006, Joerg Henrichs (a.k.a. "Hiker") picked up SuperTuxKart, fixed the outstanding bugs and performance issues without any involvement of the original game designer or the GotM project. With the help of "Coz" a first release of STK was done in September 2006.
@@ -26,13 +40,19 @@ Version 0.7 was released on December 20, 2010. It contained several significant 
 
 Version 0.8 was released in December 2012, adding a story mode and new challenges, improved AI and skidding, reverse mode, new tracks and music. The menus were also improved.
 
+<div class="faq_question">
 ==How can I install STK ?==
+</div>
 Detailed instructions are on our [[Installation]] page.
 
+<div class="faq_question">
 == Who is behind STK? ==
+</div>
 See our [[Team]] page for information about the people behind SuperTuxKart!
 
+<div class="faq_question">
 == Hardware requirements ==
+</div>
 
 ===Recommended===
 * GPU: NVIDIA GeForce 470 GTX or AMD Radeon 6870 HD series card or higher
@@ -51,22 +71,32 @@ With this setup the game might be choppy
 Optional
 * (If you prefer playing with a joystick) A joystick with at least 6 buttons.
 
+<div class="faq_question">
 == My computer is too old to run STK. What should I do ? ==
+</div>
 You can try your luck and run the game. If it works, great! If it doesn't, we're sorry for you, but we can't support everything. We have a limited amount of manpower and time to support old GPUs. If we did try to support old GPUs, it would basically mean no new and advanced features.
 
 = Playing STK =
 Questions often asked when playing STK.
 
+<div class="faq_question">
 == The AI (computer kart) shot backwards - how can I do this? ==
+</div>
 Most items (bowling ball, cake, plunger) can be used backwards. Just fire them while looking backwards.
 
+<div class="faq_question">
 ==Can I play STK on the internet?==
+</div>
 The network support feature is under development. The basic support has been added in the Google Summer of Code 2013, but it's still not finished. See [[Networked Multiplayer]] (and pages linked from there) for more information.
 
+<div class="faq_question">
 ==Some keyboard keys do not work when pressed simultaneously==
+</div>
 When playing with a keyboard, you may experience issues when pressing multiple keys simultaneously, for instance trying to use nitro while accelerating and turning. In such situations, some keypress may not register. This is however not a bug of SuperTuxKart, but a phyiscal limitation of your keyboard, most keyboards can only handle so many keys pressed at the same time ( for more detailed information, please check http://www.sjbaker.org/wiki/index.php?title=Keyboards_Are_Evil ). The solution is to use a gaming input device (gamepad, or gaming keyboard), or tweak the keys configuration to find keys that your keyboard will be able to register simultaneously.
- 
+
+<div class="faq_question">
 ==I suddenly got a big red circle on my screen, what's that?==
+</div>
 If there's a penguin in the middle of the circle, someone's shot a plunger at your face. You can do that to others by shooting the plunger backwards (see the FAQ entry about throwing items backwards). If there is no penguin, then it's a bug.
 
 ==I want to help! What can I do?==
@@ -79,13 +109,15 @@ If there's a penguin in the middle of the circle, someone's shot a plunger at yo
 
 =Technical questions=
 
-
+<div class="faq_question">
 ==I found a bug, how should I contact you?==
+</div>
 
 First, look at the [https://github.com/supertuxkart/stk-code/issues STK bug tracker] and open a new issue if your problem hasn't been reported yet.
 
+<div class="faq_question">
 == Where does STK store the user config file? ==
-
+</div>
 Note that STK 0.8.2 and STK 0.9 both store their config in the "0.8.2" folder because the config is compatible.
 
 * On '''Windows''': It is in %APPDATA%/supertuxkart/0.8.2 (you can enter that in the Explorer and it will take you there)
@@ -93,5 +125,7 @@ Note that STK 0.8.2 and STK 0.9 both store their config in the "0.8.2" folder be
 * On '''Mac OS X''': It is in ~/Library/Application Support/supertuxkart/0.8.2. Note that this directory may be hidden. 
 You can also watch the output in the terminal to see if there is a note on where the config files are stored or search for a file called "config.xml".
 
+<div class="faq_question">
 == The git version doesn't compile ==
+</div>
 This happens sometimes; The developers should be aware of that and it should be fixed soon. If [https://travis-ci.org/supertuxkart/stk-code Travis CI] says that the current git version compiles, but it doesn't do so for you, then propably something is wrong with your compiler setup. (Check if you have all dependencies, re-run cmake, ...)
