@@ -1,4 +1,4 @@
-{{generic_css}}
+{{generic-css}}
 {{#css:
 .landing-page-download {
     position: absolute;
