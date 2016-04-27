@@ -26,18 +26,7 @@
             color: green;
 }
 
-.main_title {
-    background-color: #D7D7CB;
-    text-align: center;
-    color: #5d5d5d;
-    /*padding-top: 1px;
-    padding-bottom: 1px;*/
-}
 
-.article_date {
-    color: #3d3d3d;
-    font-size: 12px;
-}
 
 .youtube-embed-landing-page {
     text-align: center;
