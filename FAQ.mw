@@ -9,7 +9,7 @@
 }
 
 h1 {
-    background-color: #D7D7CB;
+    background-color: #414141;
     text-align: center;
     color: #5d5d5d;
     /*padding-top: 1px;
