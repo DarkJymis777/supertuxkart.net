@@ -55,10 +55,10 @@ h1 {
 </div>
 
 {{character-presentation
-|name=Joerg Henrichs
+|name=Joerg Henrichs (aka Hiker)
 |icon=Empty_icon.png
-|description=He is the master
 |type=even
+|description=I am the current project leader of SuperTuxKart. I discovered TuxKart around 2006 after installing Suse Linux a while ago. After some search, a 'Game of the Month' team was working on improving the game, however the project was grounded due to performances issues.
 }}
 {{character-presentation
 |name=Auria
@@ -66,19 +66,6 @@ h1 {
 |description=She is a dev
 |type=even
 }}
-
-<div class="one_character">
-<table>
-  <caption>Joerg Henrichs (aka Hiker)</caption>
-<tr><td>
-[[Image:Empty_icon.png]]
-</td>
-<td class="character_description">
-I am the current project leader of SuperTuxKart. I discovered TuxKart around 2006 after installing Suse Linux a while ago. After some search, a 'Game of the Month' team was working on improving the game, however the project was grounded due to performances issues.
-
-</td></tr>
-</table>
-</div>
 
 <div class="one_character">
 <table>
