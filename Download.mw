@@ -61,13 +61,13 @@ i.os-icon {
 
 }}
 {{Generic-hide-summary}}
-{{generic-css
-|name=Linux
-}}
+{{generic-css}}
 <div class="article_main_title">
 == ..:: Get the last version (0.9.1) ::.. ==
 </div>
-{{os-presentation}}
+{{os-presentation
+|name=Linux
+}}
 <html>
 <ul class="download-container-all">
     <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-win.exe/download"><div class="download-container-inner">
