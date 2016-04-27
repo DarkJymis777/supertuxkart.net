@@ -7,14 +7,6 @@ h1 {
     display: none;
 }
 
-.main_title {
-    background-color: #D7D7CB;
-    text-align: center;
-    color: #5d5d5d;
-    /*padding-top: 1px;
-    padding-bottom: 1px;*/
-}
-
 .one_character caption {
     background-color: #7ec283;
     padding-top: 1px;
@@ -57,7 +49,8 @@ h1 {
 }
 
 }}
-<div class="main_title">
+{{generic-css}}
+<div class="article_main_title">
 == ..:: Meet the team behind the game ::.. ==
 </div>
 
@@ -114,8 +107,7 @@ GUI, Export tools
 * Magne Djupvik (aka Arthur): blogging, testing and community managment
 
 
-<div class="main_title">
-
+<div class="article_main_title">
 == Additional developers ==
 </div>
 
