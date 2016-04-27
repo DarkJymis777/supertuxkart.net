@@ -1,12 +1,4 @@
 {{#css:
-#toc {
-    display: none;
-}
-
-h1 {
-    display: none;
-}
-
 .full {
    width: 50%;
 }
@@ -35,6 +27,7 @@ h1 {
 }
 
 }}
+{{Generic-hide-summary}}
 {{generic-css}}
 <div class="article_main_title">
 == ..:: Meet the team behind the game ::.. ==
