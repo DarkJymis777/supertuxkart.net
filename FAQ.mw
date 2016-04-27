@@ -110,24 +110,20 @@ Questions often asked when playing STK.
 * Contact the current developers and artist through the IRC (#stk on irc.freenode.net) or the [http://forum.freegamedev.net/viewforum.php?f=16 forum] and tell them what you want to achieve.
 }}
 =Technical questions=
-
-<div class="faq_question">
-==I found a bug, how should I contact you?==
-</div>
-
-First, look at the [https://github.com/supertuxkart/stk-code/issues STK bug tracker] and open a new issue if your problem hasn't been reported yet.
-
-<div class="faq_question">
-== Where does STK store the user config file? ==
-</div>
-Note that STK 0.8.2 and STK 0.9 both store their config in the "0.8.2" folder because the config is compatible.
+{{faq-question
+|title=I found a bug, how should I contact you?
+|answer=First, look at the [https://github.com/supertuxkart/stk-code/issues STK bug tracker] and open a new issue if your problem hasn't been reported yet.
+}}
+{{faq-question
+|title=Where does STK store the user config file?
+|answer=Note that STK 0.8.2 and STK 0.9 both store their config in the "0.8.2" folder because the config is compatible.
 
 * On '''Windows''': It is in %APPDATA%/supertuxkart/0.8.2 (you can enter that in the Explorer and it will take you there)
 * On '''Linux''': Either in $XDG_CONFIG_HOME/supertuxkart/0.8.2 (first choice), ~/.config/supertuxkart/0.8.2 (second choice) or in ~/.supertuxkart/0.8.2 (third choice).
 * On '''Mac OS X''': It is in ~/Library/Application Support/supertuxkart/0.8.2. Note that this directory may be hidden. 
 You can also watch the output in the terminal to see if there is a note on where the config files are stored or search for a file called "config.xml".
-
-<div class="faq_question">
-== The git version doesn't compile ==
-</div>
-This happens sometimes; The developers should be aware of that and it should be fixed soon. If [https://travis-ci.org/supertuxkart/stk-code Travis CI] says that the current git version compiles, but it doesn't do so for you, then propably something is wrong with your compiler setup. (Check if you have all dependencies, re-run cmake, ...)
+}}
+{{faq-question
+|title=The git version doesn't compile
+|answer=This happens sometimes; The developers should be aware of that and it should be fixed soon. If [https://travis-ci.org/supertuxkart/stk-code Travis CI] says that the current git version compiles, but it doesn't do so for you, then propably something is wrong with your compiler setup. (Check if you have all dependencies, re-run cmake, ...)
+}}
