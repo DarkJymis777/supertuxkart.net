@@ -70,20 +70,19 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |name=Tux
 |icon=Character_tux_icon.png
 |type=odd
-|description=The hero of SuperTuxKart. It's a brave penguin who will try to save his best friend Gnu from the evil nolok.
-Project behind Tux: Linux
+|description=The hero of SuperTuxKart. Tux is a brave penguin who must save his friend, Gnu, from the evil clutches of Nolok. Tux is the mascot of Linux.
 }}
 {{character-presentation
 |name=Gnu
 |icon=Character_gnu_icon.png
 |type=even
-|description=A beloved musician who lives peacefully in a pagoda. He is Tux's wise mentor and when Nolok abducts him, the whole kingdom will try to save him
+|description=Tux's wise mentor, Gnu rides a flying carpet and lives peacefully in a pagoda. When Nolok captures him, the entire kingdom will try to save him. Gnu is the mascot of the GNU Project.
 }}
 {{character-presentation
 |name=Nolok
 |icon=Character_nolok_icon.png
 |type=odd
-|description=The head of Nolok Industries, this shady character is always concocting some malevolent plan in his steaming lava castle.
+|description=The villain of SuperTuxKart, Nolok is always concocting some sort of malevolent plan inside his fiery lava castle. However, most of his plans seem to rely on winning kart racing tournaments...
 }}
 <div class="article_main_title">
 
