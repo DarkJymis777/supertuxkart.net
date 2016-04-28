@@ -88,6 +88,10 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 
 == Other Characters ==
 </div>
+
+
+<table><tr>
+
 {{character-presentation-small
 |name=Tux
 |icon=Character_tux_icon.png
@@ -95,11 +99,7 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |description=plop
 }}
 
-<table><tr>
-
-
 <td class="full">
-
 <div class="one_character">
 <table>
   <caption>Adiumy</caption>
