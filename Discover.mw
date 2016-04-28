@@ -115,39 +115,22 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |description=plop
 }}
 </tr><tr>
+{{character-presentation-small
+|name=Beastie
+|icon=Character_beasties_icon.png
+|type=odd
+|description=plop
+}}
+{{character-presentation-small
+|name=Amanda
+|icon=Character_panda_icon.png
+|type=even
+|description=plop
+}}
+</tr><tr>
+
 
 <td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Beastie</caption>
-<tr><td>
-[[Image:Character_beasties_icon.png]]
-</td>
-<td class="character_description">
-While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
-</td></tr>
-
-</table>
-</div>
-
-</td><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Amanda</caption>
-<tr><td class="character_description">
-
-</td>
-<td>
-[[Image:Character_panda_icon.png]]
-</td></tr>
-</table>
-</div>
-
-</td></tr>
-
-<tr><td class="full" >
 
 <div class="one_character">
 <table>
