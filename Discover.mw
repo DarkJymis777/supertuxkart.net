@@ -154,68 +154,26 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |description=plop
 }}
 </tr><tr>
-
-
-<div class="one_character">
-<table>
-  <caption>Puffy</caption>
-<tr><td>
-[[Image:Character_puffy_icon.png]]
-</td>
-<td class="character_description">
-While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
-</td></tr>
-
-</table>
-</div>
-
-</td><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Xue</caption>
-<tr><td class="character_description">
-
-</td>
-<td>
-[[Image:Character_xue_icon.png]]
-</td></tr>
-</table>
-</div>
-
-</td></tr>
-
-<tr><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Pidgin</caption>
-<tr><td>
-[[Image:Character_pidgin_icon.png]]
-</td>
-<td class="character_description">
-While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
-</td></tr>
-
-</table>
-</div>
-
-</td><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Wilber</caption>
-<tr><td class="character_description">
-
-</td>
-<td>
-[[Image:Character_wilbert_icon.png]]
-</td></tr>
-</table>
-</div>
-
-</td></tr>
-
+{{character-presentation-small
+|name=Xue
+|icon=Character_xue_icon.png
+|type=odd
+|description=plop
+}}
+{{character-presentation-small
+|name=Pidgin
+|icon=Character_pidgin_icon.png
+|type=even
+|description=plop
+}}
+</tr><tr>
+{{character-presentation-small
+|name=Wilber
+|icon=Character_wilber_icon.png
+|type=even
+|description=plop
+}}
+</tr><tr>
 </table>
 
 
