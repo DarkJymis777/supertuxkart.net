@@ -168,6 +168,12 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 }}
 </tr><tr>
 {{character-presentation-small
+|name=Puffy
+|icon=Character_puffy_icon.png
+|type=odd
+|description=plop
+}}
+{{character-presentation-small
 |name=Wilbert
 |icon=Character_wilbert_icon.png
 |type=even
