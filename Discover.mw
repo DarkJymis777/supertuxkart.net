@@ -1,17 +1,4 @@
 {{#css:
-.one_character caption {
-    background-color: #7ec283;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    font-weight: bold;
-    width: 100%;
-}
-
-.character_description{
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-}
 
 .full {
    width: 50%;
