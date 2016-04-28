@@ -102,25 +102,15 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |type=even
 |description=He is a baby duck. Despite his cuteness he is one of the hardest kart to master
 }}
+</tr><tr>
 
-</tr>
+{{character-presentation-small
+|name=Konqi
+|icon=Character_konqi_icon.png
+|type=odd
+|description=While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
+}}
 
-<tr><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Konqi</caption>
-<tr><td>
-[[Image:Character_konqi_icon.png]]
-</td>
-<td class="character_description">
-While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
-</td></tr>
-
-</table>
-</div>
-
-</td><td class="full" >
 
 <div class="one_character">
 <table>
