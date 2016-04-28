@@ -63,7 +63,7 @@ i.os-icon {
 {{Generic-hide-summary}}
 {{generic-css}}
 <div class="article_main_title">
-== ..:: Last Version (0.9.1) ::.. ==
+== ..:: Latest Version (0.9.1) ::.. ==
 </div>
 {{os-presentation
 |name=Linux
@@ -103,6 +103,6 @@ i.os-icon {
         <span>Source Code</span>
     </div></a></li>
 </ul>
-<h3><a href="#">Different Operation Systems</a></h3>
+<h3><a href="#">Other Operation Systems</a></h3>
 <h3><a href="#">Older Versions</a></h3>
 </html>
