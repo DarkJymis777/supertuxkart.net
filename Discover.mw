@@ -1,4 +1,17 @@
 {{#css:
+.one_character caption {
+    background-color: #7ec283;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.character_description{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
 
 .full {
    width: 50%;
@@ -48,9 +61,10 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 </gallery>
 
 <br />
+<br />
 <div class="article_main_title">
 
-== Characters ==
+== Main Characters ==
 </div>
 {{character-presentation
 |name=Tux
@@ -70,99 +84,232 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |type=odd
 |description=The villain of SuperTuxKart, Nolok is always concocting some sort of malevolent plan inside his fiery lava castle. However, most of his plans seem to rely on winning kart racing tournaments...
 }}
-<table><tr>
-{{character-presentation-small
-|name=Sara
-|icon=Character_sara_icon.png
-|type=odd
-|description=She is the powerful wizard ruling the Mascot Kingdom. Her grand mother Amelia started the kingdom.
-}}
-{{character-presentation-small
-|name=Adiumy
-|icon=Character_adiumy_icon.png
-|type=even
-|description=He is a baby duck. Despite his cuteness he is one of the hardest kart to master
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Konqi
-|icon=Character_konqi_icon.png
-|type=odd
-|description=While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
-}}
-{{character-presentation-small
-|name=ElePHPant
-|icon=Character_php_icon.png
-|type=even
-|description=plop
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Beastie
-|icon=Character_beasties_icon.png
-|type=odd
-|description=plop
-}}
-{{character-presentation-small
-|name=Amanda
-|icon=Character_panda_icon.png
-|type=even
-|description=plop
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Emule
-|icon=Character_emule_icon.png
-|type=odd
-|description=plop
-}}
-{{character-presentation-small
-|name=Suzanne
-|icon=Character_suzanne_icon.png
-|type=even
-|description=plop
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Gaveroche
-|icon=Character_gaveroche_icon.png
-|type=odd
-|description=plop
-}}
-{{character-presentation-small
-|name=Hexley
-|icon=Character_hexley_icon.png
-|type=even
-|description=plop
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Xue
-|icon=Character_xue_icon.png
-|type=odd
-|description=plop
-}}
-{{character-presentation-small
-|name=Pidgin
-|icon=Character_pidgin_icon.png
-|type=even
-|description=plop
-}}
-</tr><tr>
-{{character-presentation-small
-|name=Puffy
-|icon=Character_puffy_icon.png
-|type=odd
-|description=plop
-}}
-{{character-presentation-small
-|name=Wilbert
-|icon=Character_wilbert_icon.png
-|type=even
-|description=plop
-}}
-</tr><tr>
+<div class="article_main_title">
+
+== Other Characters ==
+</div>
+
+<table><tr><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Sara</caption>
+<tr><td>
+[[Image:Character_sara_icon.png]]
+</td>
+<td class="character_description">
+She is the powerful wizard ruling the Mascot Kingdom. Her grand mother Amelia started the kingdom.
+</td></tr>
+
 </table>
+</div>
+
+</td><td class="full">
+
+<div class="one_character">
+<table>
+  <caption>Adiumy</caption>
+<tr><td class="character_description">
+He is a baby duck. Despite his cuteness he is one of the hardest kart to master
+</td>
+<td>
+[[Image:Character_adiumy_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+<tr><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Konqi</caption>
+<tr><td>
+[[Image:Character_konqi_icon.png]]
+</td>
+<td class="character_description">
+While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
+</td></tr>
+
+</table>
+</div>
+
+</td><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>ElePHPant</caption>
+<tr><td class="character_description">
+
+</td>
+<td>
+[[Image:Character_php_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+<tr><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Beastie</caption>
+<tr><td>
+[[Image:Character_beasties_icon.png]]
+</td>
+<td class="character_description">
+While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
+</td></tr>
+
+</table>
+</div>
+
+</td><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Amanda</caption>
+<tr><td class="character_description">
+
+</td>
+<td>
+[[Image:Character_panda_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+<tr><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Emule</caption>
+<tr><td>
+[[Image:Character_emule_icon.png]]
+</td>
+<td class="character_description">
+While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
+</td></tr>
+
+</table>
+</div>
+
+</td><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Suzanne</caption>
+<tr><td class="character_description">
+
+</td>
+<td>
+[[Image:Character_suzanne_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+
+<tr><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Gavroche</caption>
+<tr><td>
+[[Image:Character_gaveroche_icon.png]]
+</td>
+<td class="character_description">
+While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
+</td></tr>
+
+</table>
+</div>
+
+</td><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Hexley</caption>
+<tr><td class="character_description">
+
+</td>
+<td>
+[[Image:Character_hexley_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+<tr><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Puffy</caption>
+<tr><td>
+[[Image:Character_puffy_icon.png]]
+</td>
+<td class="character_description">
+While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
+</td></tr>
+
+</table>
+</div>
+
+</td><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Xue</caption>
+<tr><td class="character_description">
+
+</td>
+<td>
+[[Image:Character_xue_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+<tr><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Pidgin</caption>
+<tr><td>
+[[Image:Character_pidgin_icon.png]]
+</td>
+<td class="character_description">
+While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
+</td></tr>
+
+</table>
+</div>
+
+</td><td class="full" >
+
+<div class="one_character">
+<table>
+  <caption>Wilber</caption>
+<tr><td class="character_description">
+
+</td>
+<td>
+[[Image:Character_wilbert_icon.png]]
+</td></tr>
+</table>
+</div>
+
+</td></tr>
+
+</table>
+
+
 <div class="article_main_title">
 
 == ...And many more! ==
