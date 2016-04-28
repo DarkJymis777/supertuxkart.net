@@ -128,72 +128,33 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |description=plop
 }}
 </tr><tr>
+{{character-presentation-small
+|name=Emule
+|icon=Character_emule_icon.png
+|type=odd
+|description=plop
+}}
+{{character-presentation-small
+|name=Suzanne
+|icon=Character_suzanne_icon.png
+|type=even
+|description=plop
+}}
+</tr><tr>
+{{character-presentation-small
+|name=Emule
+|icon=Character_emule_icon.png
+|type=odd
+|description=plop
+}}
+{{character-presentation-small
+|name=Hexley
+|icon=Character_hexley_icon.png
+|type=even
+|description=plop
+}}
+</tr><tr>
 
-
-<td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Emule</caption>
-<tr><td>
-[[Image:Character_emule_icon.png]]
-</td>
-<td class="character_description">
-While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
-</td></tr>
-
-</table>
-</div>
-
-</td><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Suzanne</caption>
-<tr><td class="character_description">
-
-</td>
-<td>
-[[Image:Character_suzanne_icon.png]]
-</td></tr>
-</table>
-</div>
-
-</td></tr>
-
-
-<tr><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Gavroche</caption>
-<tr><td>
-[[Image:Character_gaveroche_icon.png]]
-</td>
-<td class="character_description">
-While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
-</td></tr>
-
-</table>
-</div>
-
-</td><td class="full" >
-
-<div class="one_character">
-<table>
-  <caption>Hexley</caption>
-<tr><td class="character_description">
-
-</td>
-<td>
-[[Image:Character_hexley_icon.png]]
-</td></tr>
-</table>
-</div>
-
-</td></tr>
-
-<tr><td class="full" >
 
 <div class="one_character">
 <table>
