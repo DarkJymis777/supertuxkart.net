@@ -95,7 +95,6 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |type=odd
 |description=She is the powerful wizard ruling the Mascot Kingdom. Her grand mother Amelia started the kingdom.
 }}
-
 {{character-presentation-small
 |name=Adiumy
 |icon=Character_adiumy_icon.png
@@ -103,30 +102,21 @@ File:Supertuxkart-0.9-screenshot-6.jpg
 |description=He is a baby duck. Despite his cuteness he is one of the hardest kart to master
 }}
 </tr><tr>
-
 {{character-presentation-small
 |name=Konqi
 |icon=Character_konqi_icon.png
 |type=odd
 |description=While his ancestor where quite dangerous and feared, dragons are now mostly harmless.
 }}
+{{character-presentation-small
+|name=ElePHPant
+|icon=Character_php_icon.png
+|type=even
+|description=plop
+}}
+</tr><tr>
 
-
-<div class="one_character">
-<table>
-  <caption>ElePHPant</caption>
-<tr><td class="character_description">
-
-</td>
-<td>
-[[Image:Character_php_icon.png]]
-</td></tr>
-</table>
-</div>
-
-</td></tr>
-
-<tr><td class="full" >
+<td class="full" >
 
 <div class="one_character">
 <table>
