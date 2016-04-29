@@ -68,6 +68,16 @@ i.os-icon {
 {{os-presentation
 |name=Linux
 |icon=fa-linux
+|content=
+
+{{os-link
+|content=Full game (tar.xz archive) includes 32 bit & 64 bit
+}}
+
+{{os-link
+|content='''Full game''' (tar.xz archive) includes 32 bit & 64 bit
+}}
+
 }}
 {{os-presentation
 |name=Windows
@@ -82,13 +92,7 @@ i.os-icon {
 |icon=fa-code
 }}
 
-{{os-link
-|content=Full game (tar.xz archive) includes 32 bit & 64 bit
-}}
 
-{{os-link
-|content='''Full game''' (tar.xz archive) includes 32 bit & 64 bit
-}}
 <div class="article_main_title">
 
 == Older versions ==
