@@ -86,6 +86,9 @@ i.os-icon {
 |link=
 }}
 <div class="article_main_title">
+{{os-link
+|content=Full game (tar.xz archive) includes 32 bit & 64 bit
+}}
 
 == Older versions ==
 </div>
