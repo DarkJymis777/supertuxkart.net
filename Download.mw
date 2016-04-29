@@ -73,7 +73,10 @@ i.os-icon {
 |content=Full game (tar.xz archive) includes 32 bit & 64 bit
 }}
 {{os-link
-|content='''Full game''' (tar.xz archive) includes 32 bit & 64 bit
+|content='''Ubuntu''' (tar.xz archive) includes 32 bit & 64 bit
+}}
+{{os-link
+|content='''Debian''' (tar.xz archive) includes 32 bit & 64 bit
 }}
 }}
 {{os-presentation
