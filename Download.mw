@@ -68,27 +68,24 @@ i.os-icon {
 {{os-presentation
 |name=Linux
 |icon=fa-linux
-|link=http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.1/supertuxkart-0.9.1-linux.tar.xz/download
 }}
 {{os-presentation
 |name=Windows
 |icon=fa-windows
-|link=
 }}
 {{os-presentation
 |name=Mac OSX
 |icon=fa-apple
-|link=
 }}
 {{os-presentation
 |name=Source Code
 |icon=fa-code
-|link=
 }}
-<div class="article_main_title">
+
 {{os-link
 |content=Full game (tar.xz archive) includes 32 bit & 64 bit
 }}
+<div class="article_main_title">
 
 == Older versions ==
 </div>
