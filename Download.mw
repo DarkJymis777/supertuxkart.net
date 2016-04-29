@@ -63,7 +63,7 @@ i.os-icon {
 {{Generic-hide-summary}}
 {{generic-css}}
 <div class="article_main_title">
-== ..:: Latest Version (0.9.1) ::.. ==
+== ..:: Get the latest version for your system ::.. ==
 </div>
 {{os-presentation
 |name=Linux
@@ -74,7 +74,8 @@ i.os-icon {
 '''Full game''' (tar.xz archive) includes 32 bit & 64 bit
 }}
 '''Ubuntu'''
-SuperTuxKart 0.8 is also available in Ubuntu 12.04 and 12.10 backports: 
+SuperTuxKart 0.8 is also available in Ubuntu 12.04 and 12.10 backports:
+'''Debian'''
 }}
 {{os-presentation
 |name=Windows
