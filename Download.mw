@@ -70,7 +70,7 @@ i.os-icon {
 |icon=fa-linux
 |content=
 {{os-link
-|content='''Recommended'''
+|content='''Recommended'''<br />
 '''Full game''' (tar.xz archive) includes 32 bit & 64 bit
 }}
 {{os-link
