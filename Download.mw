@@ -73,12 +73,8 @@ i.os-icon {
 |content='''Recommended'''<br />
 '''Full game''' (tar.xz archive) includes 32 bit & 64 bit
 }}
-{{os-link
-|content='''Ubuntu''' (tar.xz archive) includes 32 bit & 64 bit
-}}
-{{os-link
-|content='''Debian''' (tar.xz archive) includes 32 bit & 64 bit
-}}
+'''Ubuntu'''
+SuperTuxKart 0.8 is also available in Ubuntu 12.04 and 12.10 backports: 
 }}
 {{os-presentation
 |name=Windows
