@@ -76,11 +76,9 @@ i.os-icon {
 *'''Ubuntu''' [http://packages.ubuntu.com/search?keywords=supertuxkart Ubuntu packages]
 *'''Debian''' [http://packages.debian.org/wheezy-backports/supertuxkart Wheezy Backport]
 *'''Arch Linux''' [https://www.archlinux.org/packages/community/x86_64/supertuxkart/ community repository]
-
-'''Gentoo'''
-
-'''OpenSuse'''
-'''Mageia'''
+*'''Gentoo''' [http://packages.gentoo.org/package/games-action/supertuxkart the game in the official overlay]
+*'''OpenSuse''' [http://software.opensuse.org/package/supertuxkart Official package]
+*'''Mageia''' [http://madb.mageia.org/package/show/name/supertuxkart]
 '''Package for RPM
 }}
 {{os-presentation
