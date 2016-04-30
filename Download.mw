@@ -84,9 +84,9 @@ i.os-icon {
 
 '''OpenSuse''' [http://software.opensuse.org/package/supertuxkart Official package]
 
-'''Mageia''' [http://madb.mageia.org/package/show/name/supertuxkart]
+'''Mageia''' Official repository [http://madb.mageia.org/package/show/name/supertuxkart]
 
-'''Package for RPM
+'''Package for RPM based distribution''' available [http://rpm.pbone.net/index.php3?stat=3&search=supertuxkart&srodzaj=3 here]
 }}
 {{os-presentation
 |name=Windows
