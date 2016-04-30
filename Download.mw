@@ -73,12 +73,19 @@ i.os-icon {
 '''Full game 0.9.1''' (tar.xz archive) includes 32 bit & 64 bit
 }}
 '''Package for specific distributions (might not be the last version)'''
-*'''Ubuntu''' Packages are available for various version [http://packages.ubuntu.com/search?keywords=supertuxkart packages]
-*'''Debian''' /!\ old version [http://packages.debian.org/wheezy-backports/supertuxkart Wheezy Backport]
-*'''Arch Linux''' SuperTuxKart can be installed from [https://www.archlinux.org/packages/community/x86_64/supertuxkart/ community repository]
-*'''Gentoo''' The game in the official overlay is available [http://packages.gentoo.org/package/games-action/supertuxkart here]
-*'''OpenSuse''' [http://software.opensuse.org/package/supertuxkart Official package]
-*'''Mageia''' [http://madb.mageia.org/package/show/name/supertuxkart]
+
+'''Ubuntu''' Packages are available for various version [http://packages.ubuntu.com/search?keywords=supertuxkart packages]
+
+'''Debian''' /!\ old version [http://packages.debian.org/wheezy-backports/supertuxkart Wheezy Backport]
+
+'''Arch Linux''' SuperTuxKart can be installed from [https://www.archlinux.org/packages/community/x86_64/supertuxkart/ community repository]
+
+'''Gentoo''' The game in the official overlay is available [http://packages.gentoo.org/package/games-action/supertuxkart here]
+
+'''OpenSuse''' [http://software.opensuse.org/package/supertuxkart Official package]
+
+'''Mageia''' [http://madb.mageia.org/package/show/name/supertuxkart]
+
 '''Package for RPM
 }}
 {{os-presentation
