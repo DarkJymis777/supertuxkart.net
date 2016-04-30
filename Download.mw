@@ -75,7 +75,7 @@ i.os-icon {
 '''Package for specific distributions (might not be the last version)'''
 *'''Ubuntu''' [http://packages.ubuntu.com/search?keywords=supertuxkart Ubuntu packages]
 *'''Debian''' [http://packages.debian.org/wheezy-backports/supertuxkart Wheezy Backport]
-*'''Arch Linux'''
+*'''Arch Linux''' [https://www.archlinux.org/packages/community/x86_64/supertuxkart/ community repository]
 
 '''Gentoo'''
 
