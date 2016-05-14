@@ -115,3 +115,9 @@ You can also watch the output in the terminal to see if there is a note on where
 |title=The git version doesn't compile
 |answer=This happens sometimes; The developers should be aware of that and it should be fixed soon. If [https://travis-ci.org/supertuxkart/stk-code Travis CI] says that the current git version compiles, but it doesn't do so for you, then propably something is wrong with your compiler setup. (Check if you have all dependencies, re-run cmake, ...)
 }}
+{{faq-question
+|title=How do I unlock all tracks?
+|answer=The intended in-game way is to play story mode and beat all challenges.
+
+If however you want to unlock everything without playing story mode, you can also cheat by editing a config file. Open the folder mentionned above in question "Where does STK store the user config file". From there, open folder "0.8.2" then open file "players.xml". Replace all occurrences of "none" with "hard" (or "easy" or "medium", indicating the highest level at which you have solved a challenge).
+}}
