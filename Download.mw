@@ -118,8 +118,9 @@ You can download here all older versions of SuperTuxKart. The mirror is provided
 |content=Older versions aren't unsupported and won't be updated. Using them '''isn't recommended'''.
 }}
 
-|name=Source Code
-|icon=fa-code
+{{os-presentation
+|name=Unsupported Version
+|icon=fa-history
 |main-link=http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/
 |content=* 0.9.1, 0.9
 * 0.8.1, 0.8
