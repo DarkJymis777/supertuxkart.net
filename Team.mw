@@ -59,25 +59,17 @@
 
 == Additional developers ==
 </div>
-* Magne Djupvik (Arthur)
-** Public relations and faithful follower
-** SuperTuxKart Blog
-** Play testing
-** Pun master
-
-* Online 
-** Add-ons website
-** Daniel Butum (leyyin)
-** Stephen Just
-
 * Main Contributors
-** Benau : font rendering, battle AI
-** Dawid Gan (deveee) : general improvements and many many bugfixes
-** Marc Coll : Grand Prix editor
+** Magne Djupvik (Testing and bug report)
+** Stephen Just (Network and Addon website)
+** Daniel Butum (Network and Addon website)
+** Benau (font rendering, battle AI)
+** Dawid Gan (general improvements and many many bugfixes)
+** Marc Coll (Grand Prix editor)
 ** Flakebi
 ** Konstin
 ** math07
-** Elderme : Work on graphical engine
+** Elderme (Work on graphical engine)
 
 * Google Summer of Code Students
 ** Robin Nicollet
@@ -91,7 +83,7 @@
 
 *Bug fixes & misc contributions
 ** Divya Kukar (divvy81)
-** Fabien Sanglard : normal map shader
+** Fabien Sanglard 
 ** Damien
 ** David (Work on flying items)
 ** Stephen Dunn (Work on audio)
