@@ -67,6 +67,7 @@ i.os-icon {
 </div>
 {{os-presentation
 |name=Linux
+|main-link=http://google.com
 |icon=fa-linux
 |content={{os-link
 |content='''Recommended'''<br />
