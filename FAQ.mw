@@ -85,15 +85,6 @@ With this setup the game might be choppy
 |title=I suddenly got a big red circle on my screen, what's that?
 |answer=If there's a penguin in the middle of the circle, someone's shot a plunger at your face. You can do that to others by shooting the plunger backwards (see the FAQ entry about throwing items backwards). If there is no penguin, then it's a bug.
 }}
-{{faq-question
-|title=I want to help! What can I do?
-|answer=* The [[ToDo|ToDo list]] and [https://github.com/supertuxkart/stk-code/issues bug tracker] list the most important tasks, but you can of course also do something else.
-
-* Have a look at the [[Community|Get involved]] Article. It should contain all the information you need to start with coding, modelling, desinging or whatever you'ld like to do.
-
-* Contact the current developers and artist through the IRC (#stk on irc.freenode.net) or the [http://forum.freegamedev.net/viewforum.php?f=16 forum] and tell them what you want to achieve.
-}}
-
 <div class="article_main_title">
 
 == Technical question ==
