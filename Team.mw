@@ -33,25 +33,26 @@
 == ..:: Meet the team behind the game ::.. ==
 </div>
 {{character-presentation
-|name=Joerg Henrichs (aka Hiker)
+|name=Joerg Henrichs (aka Hiker) | Project Leader
 |icon=Empty_icon.png
 |type=even
 |description=I am the current project leader of SuperTuxKart. I discovered TuxKart around 2006 after installing Suse Linux a while ago. After some search, a 'Game of the Month' team was working on improving the game, however the project was grounded due to performances issues.
 }}
 {{character-presentation
-|name=Marianne Gagnon (aka Auria)
+|name=Marianne Gagnon (aka Auria) | Main Developer
 |icon=Auria_icon.png
 |type=odd
 |description=I joined the SuperTuxKart team a few years ago, originally to help with the graphics. I quickly started doing programming on the game's core, especially the GUI and the various blender plugins.
 }}
 {{character-presentation
-|name=Jean-Manuel Clemençon (aka Samuncle)
+|name=Jean-Manuel Clemençon (aka Samuncle) | Lead Artist
 |icon=Sam_icon.png
 |type=even
 |description=I'm the lead artist of SuperTuxKart. When I installed for the first time Linux in 2009, while searching for games available on Linux, one of the most popular game was SuperTuxKart. I started to mod maps for fun and eventually I made my first map, Hacienda.
 }}
 
 <div class="article_main_title">
+
 == Additional developers ==
 </div>
 * Magne Djupvik (Testing and bug report)
