@@ -92,6 +92,7 @@ i.os-icon {
 {{os-presentation
 |name=Windows
 |icon=fa-windows
+|main-link=http://samuncle.net/cdn/ava.php?f_id=stk-win-091
 |content={{os-link
 |content=
 '''Full game''' (.exe) 32 bit & 64 bit
@@ -100,10 +101,12 @@ i.os-icon {
 {{os-presentation
 |name=Mac OSX
 |icon=fa-apple
+|main-link=http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.1/SuperTuxKart-0.9.1a.dmg/download
 }}
 {{os-presentation
 |name=Source Code
 |icon=fa-code
+|main-link=http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.1/supertuxkart-0.9.1-src.tar.xz/download
 }}
 
 
