@@ -113,20 +113,7 @@ i.os-icon {
 <div class="article_main_title">
 == Older versions ==
 </div>
-You can download here all older versions of SuperTuxKart. The mirror is provided by SourceForge.net
 {{popup-warning
-|content=Older versions aren't unsupported and won't be updated. Using them '''isn't recommended'''.
+|content=Older versions aren't unsupported and won't be updated. Using them '''is not recommended'''.
 }}
-{{os-presentation
-|name=Unsupported Version
-|icon=fa-history
-|main-link=http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/
-|content=* 0.9.1, 0.9
-* 0.8.1, 0.8
-* 0.7.3, 0.7.2, 0.7.1, 0.7
-* 0.6.2, 0.6.1a, 0.6
-* 0.5
-* 0.4
-* 0.3
-* 0.2
-}}
+However if your computer isn't powerful enough to run the last version of SuperTuxKart or if you are just curious, You can download [http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/ here] all older versions of SuperTuxKart.
