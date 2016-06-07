@@ -114,7 +114,7 @@ i.os-icon {
 == Older versions ==
 </div>
 {{popup-warning
-|content=Older versions are unsupported and won't be updated. Using them isn't recommended.
+|content=Older versions aren't unsupported and won't be updated. Using them '''isn't recommended'''.
 }}
 
 *0.9.1
