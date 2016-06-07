@@ -115,6 +115,6 @@ i.os-icon {
 == Older versions ==
 </div>
 {{popup-warning
-|content=Older versions aren't unsupported and won't be updated. Using them '''is not recommended'''.
+|content=Older versions aren't supported and won't be updated. Using them '''is not recommended'''.
 }}
 However if your computer isn't powerful enough to run the latest version of SuperTuxKart or if you are just curious, you can find all the older versions of SuperTuxKart [http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/ here].
