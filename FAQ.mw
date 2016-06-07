@@ -44,18 +44,19 @@ In 2015 we released the version 0.9 a groundbreaking release powered by a brand 
 |title=What are the hardware requirements?
 |answer=
 '''Recommended'''
-* GPU: NVIDIA GeForce 470 GTX or AMD Radeon 6870 HD series card or higher
-* CPU: Quad-core Intel or AMD processor, 2.5 GHz or faster.
-* At least 1 GB VRAM (video memory).
-* Disk space: 600MB
+* GPU: NVIDIA GeForce 660 GTX or AMD Radeon  HD 7870 series card or higher
+* CPU: Intel Core I7 or AMD processor, 3.07 GHz or faster.
+* At least 2 GB VRAM (video memory).
+* At least 4 GB of RAM
+* Disk space: 700MB
 
 '''Minimal'''
 With this setup the game might be choppy
-
-* GPU: NVIDIA GeForce 8xxx, ATI Radeon HD 4xxx or Intel HD Graphics 3000 (no shadows and no global illumination) or higher
-* You should have a CPU speed of 1GHz or higher.
-* You'll need at least 512 MB of free VRAM (video memory).
-* Disk space: 600MB
+* GPU: NVIDIA GeForce 470 GTX, AMD Radeon 6870 HD series card or or Intel HD Graphics 3000
+* CPU: Intel Core I5 or AMD processor, 2.8 GHz or faster.
+* At least 1 GB VRAM (video memory).
+* At least 3 GB of RAM
+* Disk space: 700MB
 
 '''Optional'''
 * (If you prefer playing with a joystick) A joystick with at least 6 buttons.
