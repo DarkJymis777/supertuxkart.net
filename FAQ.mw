@@ -64,6 +64,14 @@ With this setup the game might be choppy
 |title=My computer is too old to run STK. What should I do?
 |answer=You can try your luck and run the game. If it works, great! If it doesn't, we're sorry for you, but we can't support everything. We have a limited amount of manpower and time to support old GPUs. If we did try to support old GPUs, it would basically mean no new and advanced features.
 }}
+{{faq-question
+|title=I want to help! What can I do?
+|answer=* The [[ToDo|ToDo list]] and [https://github.com/supertuxkart/stk-code/issues bug tracker] list the most important tasks, but you can of course also do something else.
+
+* Have a look at the [[Community|Get involved]] Article. It should contain all the information you need to start with coding, modelling, desinging or whatever you'ld like to do.
+
+* Contact the current developers and artist through the IRC (#stk on irc.freenode.net) or the [http://forum.freegamedev.net/viewforum.php?f=16 forum] and tell them what you want to achieve.
+}}
 
 <div class="article_main_title">
 
