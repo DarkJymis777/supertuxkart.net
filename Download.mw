@@ -65,6 +65,8 @@ i.os-icon {
 <div class="article_main_title">
 == ..:: Get the latest version for your system ::.. ==
 </div>
+{{Clickable button|[[Talk:Main page|Main page talk page]]}} 
+
 {{os-presentation
 |name=Linux
 |main-link=http://samuncle.net/cdn/ava.php?f_id=stk-lin-091
@@ -111,6 +113,7 @@ i.os-icon {
 
 
 <div class="article_main_title">
+
 == Older versions ==
 </div>
 {{popup-warning
