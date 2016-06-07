@@ -51,137 +51,122 @@
 |description=I'm the lead artist of SuperTuxKart. When I installed for the first time Linux in 2009, while searching for games available on Linux, one of the most popular game was SuperTuxKart. I started to mod maps for fun and eventually I made my first map, Hacienda.
 }}
 
-* [[JoergHenrichs|Joerg Henrichs]] (aka hiker): Project Leader
-* Magne Djupvik (aka Arthur): blogging, testing and community managment
+<div class="article_main_title">
+== Additional developers ==
+</div>
+* Magne Djupvik (Testing and bug report)
+* Stephen Just (Network and Addon website)
+* Daniel Butum (Network and Addon website)
+* Benau (font rendering, battle AI)
+* Dawid Gan (general improvements and many many bugfixes)
+* Marc Coll (Grand Prix editor)
+* Flakebi
+* Konstin
+* math07
+* Elderme (Work on graphical engine)
+
+<div class="article_main_title">
+== Google Summer of Code Students ==
+</div>
+* Robin Nicollet
+* Glenn de Jonghe
+* Lauri Kasanen
+* Daniel Butum
+* Bart Cools
+* Csaba Molnar
+* Sachith Seneviratne
+* Akshay Singhvi
+
+<div class="article_main_title">
+== Bug fixes & misc contributions ==
+</div>
+* Divya Kukar (divvy81)
+* Fabien Sanglard 
+* Damien
+* David (Work on flying items)
+* Stephen Dunn (Work on audio)
+* Patrick Ammann
+* Ward Muylaert
+
+<div class="article_main_title">
+== Visual Art ==
+</div>
+* Wolfs : Green Valley
+* Mac_DMH : Minigolf
+* Rubberduck : STK Enterprise
+* Thomas Oppl : Shiny Suburbs
+* Rudy85 : Subsea
+* Canis Lupus : Northern Resort & Scotland
+* Ivar ten Cate (Varivar) : Original 'Old Mine' &'Snow Peaks' Improvements
+* MacIO : Cave X
+* Johannes Sjolund : The Island
+* Wayne Dennis : Improvements to 'The Island'
+* Steve and Oliver Baker : Oliver's Math Class
+* JunglePenguin : Xue
+* Minibjorn : Puffy
+* Cheleb : Nolok, Pidgin
+* Tob : Wilber, elePHPant
+* Cédric Archambault : Suzanne
+* Julian Schönbächler : Amanda and Gavroche
+* Kinsu : Emule
+* Micket and Lionel Fuentes (Funto) : Beastie
+* Benjamin Arnaudet : GNU
+* abejones : Adiumy
+* Christian Framing : work on Konqi (EvilTux)
+* Frederico de Oliveira Linhares : Hexley character
+* Conso : work on Wilber
+* Vincent Lejeune (vlj) : Xue and adiummy animations from 0.8.2
+* Minibjorn Powerups and baddies (models + icons)
+* Rudy85 (Character animations)
+* Icons
+* Anthony Carré (yeKcim)
+* betharatux1
+* Thomas Oppl (New banana model and Winter sky cube)
+
+<div class="article_main_title">
+== GUI Icons and Other Art==
+</div>
+* onyum.com, commissioned by OpenGameArt.org/Bart Kelsey
+* Andreas Bilng, Enrico Billing, Dakal
+* The Tango icon project, the Gnome icon set
+* Dakal : textures
+* Andy (Needer)
+* Paul Elms (scifly)
+* Elisee : Checker background
+* Mariam Lamrani (may-panda): wallpaper and poster
+* Thomas Fournet (Totoplus62): Trailer and icons
 
 
 <div class="article_main_title">
-
-== Additional developers ==
+== Photographs & Textures ==
 </div>
-* Main Contributors
-** Magne Djupvik (Testing and bug report)
-** Stephen Just (Network and Addon website)
-** Daniel Butum (Network and Addon website)
-** Benau (font rendering, battle AI)
-** Dawid Gan (general improvements and many many bugfixes)
-** Marc Coll (Grand Prix editor)
-** Flakebi
-** Konstin
-** math07
-** Elderme (Work on graphical engine)
+* Frank Vincentz, Pascalou Petit, KENPEI's photo
+* Luis Miguel Bugallo Sánchez, Wilfredo R Rodriguez H
+* Krzysztof P. Jasiutowiczs, Ben Clough, Found5dollar
+* Benjamint444, Christoph Egger
+* The Celestia project, NASA, Moser Juan José
+* Gregory Schick, Julius Krischan Makowka
+* BurningWell : public domain photos
+* http://www.publicdomainpictures.net/
+* http://pdphoto.org/
+* Wikimedia Commons
+* Extreme Tux Racer
+* The Glest Jungle Set (http://www.titusgames.de)
 
-* Google Summer of Code Students
-** Robin Nicollet
-** Glenn de Jonghe
-** Lauri Kasanen
-** Daniel Butum
-** Bart Cools
-** Csaba Molnar
-** Sachith Seneviratne
-** Akshay Singhvi
-
-*Bug fixes & misc contributions
-** Divya Kukar (divvy81)
-** Fabien Sanglard 
-** Damien
-** David (Work on flying items)
-** Stephen Dunn (Work on audio)
-** Patrick Ammann
-** Ward Muylaert
-
-* Visual art
-** Wolfs : Green Valley
-** Mac_DMH : Minigolf
-** Rubberduck : STK Enterprise
-** Thomas Oppl : Shiny Suburbs
-** Rudy85 : Subsea
-** Canis Lupus : Northern Resort & Scotland
-** Ivar ten Cate (Varivar) : Original 'Old Mine' &'Snow Peaks' Improvements
-** MacIO : Cave X
-** Johannes Sjolund : The Island
-** Wayne Dennis : Improvements to 'The Island'
-** Steve and Oliver Baker : Oliver's Math Class
-
-** JunglePenguin : Xue
-** Minibjorn : Puffy
-** Cheleb : Nolok, Pidgin
-** Tob : Wilber, elePHPant
-** Cédric Archambault : Suzanne
-** Julian Schönbächler : Amanda and Gavroche
-** Kinsu : Emule
-
-*Karts
-** Micket and Lionel Fuentes (Funto) : Beastie
-** Benjamin Arnaudet : GNU
-** abejones : Adiumy
-** Christian Framing : work on Konqi (EvilTux)
-** Frederico de Oliveira Linhares : Hexley character
-** Conso : work on Wilber
-** Vincent Lejeune (vlj) : Xue and adiummy animations from 0.8.2
-
-* Minibjorn
-** Powerups and baddies (models + icons)
-** Explosion and smoke particles
-** Several textures
-** 'Feature Unlocked' chest
-
-* Rudy85
-** Character animations
-
-* Icons
-** Anthony Carré (yeKcim)
-** betharatux1
-
-* Thomas Oppl
-** New banana model
-** Winter sky cube
-
-* GUI Icons and Other Art
-** onyum.com, commissioned by OpenGameArt.org/Bart Kelsey
-** Andreas Bilng, Enrico Billing, Dakal
-** The Tango icon project, the Gnome icon set
-** Dakal : textures
-** Andy (Needer)
-** Paul Elms (scifly)
-- Elisee : Checker background
-- Mariam Lamrani (may-panda): wallpaper and poster
-- Thomas Fournet (Totoplus62): Trailer and icons
-
-Photographs & Textures
-- Frank Vincentz, Pascalou Petit, KENPEI's photo
-- Luis Miguel Bugallo Sánchez, Wilfredo R Rodriguez H
-- Krzysztof P. Jasiutowiczs, Ben Clough, Found5dollar
-- Benjamint444, Christoph Egger
-- The Celestia project, NASA, Moser Juan José
-- Gregory Schick, Julius Krischan Makowka
-
-Other media sources
-- BurningWell : public domain photos
-- http://www.publicdomainpictures.net/
-- http://pdphoto.org/
-- Wikimedia Commons
-- Extreme Tux Racer
-- The Glest Jungle Set (http://www.titusgames.de)
-
-= Audio Art =
-
-Music
-- 0zone0ne
-- Krobonil
-- Claude Werner (Bollen)
-
-Misc songs
-- DJ Helium : 'Secret Garden' and 'Greenvalley'
-- The Dead Rocks
-- Magne Djupvik : 'Penguin Party'
-- Dundersylt : last lap, race start songs
-
-Misc songs
-- Matt Thomas : 'Boom-boom-boom song'
-- Weirwood : 'Kart grand prix'
-- Speedsound : 'Sky Vibe Hi Frequency'
-- Kalsan : 'Lava'
+<div class="article_main_title">
+== Audio and Musics ==
+</div>
+* 0zone0ne
+* Krobonil
+* Claude Werner (Bollen)
+* DJ Helium : 'Secret Garden' and 'Greenvalley'
+* The Dead Rocks
+* Magne Djupvik : 'Penguin Party'
+* Dundersylt : last lap, race start songs
+* Matt Thomas : 'Boom-boom-boom song'
+* Weirwood : 'Kart grand prix'
+* Speedsound : 'Sky Vibe Hi Frequency'
+* Kalsan : 'Lava'
 
 Voice acting
 - Viktor Aurelius: Nolok
