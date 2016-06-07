@@ -113,29 +113,11 @@ i.os-icon {
 <div class="article_main_title">
 
 == Older versions ==
-</div>
-<html>
-<ul class="download-container-all">
-    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-win.exe/download"><div class="download-container-inner">
-        <i class="fa fa-windows fa-fw os-icon"></i>
-        <span>Windows</span>
-    </div></a></li>
-    
-    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-linux.tar.gz/download"><div class="download-container-inner">
-        <i class="fa fa-linux fa-fw os-icon"></i>
-        <span>Linux</span>
-      </div></a></li>
-    
-    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/SuperTuxKart-0.9.dmg/download"><div class="download-container-inner">
-        <i class="fa fa-apple fa-fw os-icon"></i>
-        <span>Mac OS X</span>
-    </div></a></li>
-    
-    <li class="download-container-outer"><a href="http://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9/supertuxkart-0.9-src.tar.xz/download"><div class="download-container-inner">
-        <i class="fa fa-code fa-fw os-icon"></i>
-        <span>Source Code</span>
-    </div></a></li>
-</ul>
-<h3><a href="#">Other Operation Systems</a></h3>
-<h3><a href="#">Older Versions</a></h3>
-</html>
+{{popup-warning
+|content=Older versions are unsupported and won't be updated. Using them isn't recommended.
+}}
+
+*0.9.1
+*0.9
+*0.8.2
+*0.8.1
