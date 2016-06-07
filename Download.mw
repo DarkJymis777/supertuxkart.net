@@ -113,11 +113,16 @@ i.os-icon {
 <div class="article_main_title">
 == Older versions ==
 </div>
+You can download here all older versions of SuperTuxKart. The mirror is provided by SourceForge.net
 {{popup-warning
 |content=Older versions aren't unsupported and won't be updated. Using them '''isn't recommended'''.
 }}
 
-*0.9.1
-*0.9
-*0.8.2
-*0.8.1
+* 0.9.1, 0.9
+* 0.8.1, 0.8
+* 0.7.3, 0.7.2, 0.7.1, 0.7
+* 0.6.2, 0.6.1a, 0.6
+* 0.5
+* 0.4
+* 0.3
+* 0.2
