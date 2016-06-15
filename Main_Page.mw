@@ -24,12 +24,6 @@
 .landing-page-download-link a {
             color: green;
 }
-
-
-
-.youtube-embed-landing-page {
-    text-align: center;
-}
 }}
 {{generic-css}}
 <p style="max-width: 730px;">SuperTuxKart is a 3D open-source arcade racer with a variety characters, tracks, and modes to play. [[Discover|Discover more...]]</p>
@@ -42,7 +36,11 @@
 <div class="article_main_title">
 ==..:: SuperTuxKart 0.9.1 released! ::..==
 </div>
-<div class="youtube-embed-landing-page"><youtube>tKD3aWJDg3M</youtube></div>
+
+{{blog-main-article
+|author=samuncle
+|date=October 17, 2015
+|content=<div class="youtube-embed-landing-page"><youtube>tKD3aWJDg3M</youtube></div>
 After countless hours of bug fixing, tweaking, and improving, we are proud to announce the release of SuperTuxKart 0.9.1!
 <gallery mode="packed" >
 File:Supertuxkart-0.9.1-screenshot-1.jpg
@@ -52,19 +50,18 @@ File:Supertuxkart-0.9.1-screenshot-3.jpg
 We have also updated our donation package: The previously included track Carnaval del Cacao is now released under CC-BY 3.0 and is available from our addons server. The new package includes an updated version of Antediluvian Abyss, as well a new track called Candela City, which we expect to be included in the 0.9.2 release. If you want to support SuperTuxKart, head over to the [http://supertuxkart.sourceforge.net/donate.php donation page.] If you have previously donated US$5 or more, please contact us, and we will make the new package available to you for free.
 
 Read the full article [http://supertuxkart.blogspot.ca/2015/10/supertuxkart-091-is-released.html on our blog.]
-
-<div class="article_date">
-October 17, 2015
-</div>
-
+}}
 <div class="article_main_title">
 
 ==We have a new website!==
 </div>
-We have just released our new website! The old site has been with us for a while, so it has become quite outdated, and lacks modern conveniences such as mobile support.
+{{blog-main-article
+|author=samuncle
+|date=July 17, 2016
+|content=We have just released our new website! The old site has been with us for a while, so it has become quite outdated, and lacks modern conveniences such as mobile support.
 
 We commissioned Jean-Manuel Clémençon, our lead artist, to create a fresh new design while retaining the feel and look of our beloved old site.
-
+}}
 <div class="article_main_title">
 
 ==SuperTuxKart 0.9 released!==
