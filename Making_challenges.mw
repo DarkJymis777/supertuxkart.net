@@ -9,6 +9,15 @@ Be Careful! If you mess up a file  SuperTuxKart might stop working and you will 
 
 = List of XML attributes =
 
+
+{| class="wikitable"
+!Name
+!Description
+|-
+|id
+|Unique identification which STK knows the challenge by. This can be referenced for depend-on in other challenges.
+|}
+
 <table cellpadding="50">
   <tr>
     <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000">id</td>
