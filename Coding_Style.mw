@@ -107,11 +107,12 @@ Feel free to use more commands like \pre, \param, \return from doxygen.
 Here are a few hints about keeping Super TuxKart portable. Please consider those items when adding new source code, or cleaning up existing source code. The goal is to compile STK on as many platforms as possible, and remove all the warnings we can.
 
 * On some platforms (Macs) the OpenGL library is not in GL, but in OpenGL, so always use:
- #ifdef __APPLE__
+{{popup-code
+|content=<pre> #ifdef __APPLE__
  #  include <OpenGL/gl.h>
  #else
  #  include <GL/gl.h>
- #endif
+ #endif</pre>}}
 * Even though <algorithm> is implicitly included in std::string on linux, this is not the case on all platforms (and might potentially change anytime on linux as well). So please make sure to include <algorithm> when using algorithms from the STL, e.g. find etc.
 * On at least Windows and Macs textures are lost when switching between fullscreen and window mode. If any textures are used, please make sure that they get deleted and reloaded when switching, see sdldrv::drv_toggleFullscreen for this.
 * Windows prints out a warning whenever a double precision value is specified where a normal float is expected. So to avoid these warnings you should always mark any float constants to be single precision, e.g.: use '''1.0f''' instead of just '''1.0'''.
