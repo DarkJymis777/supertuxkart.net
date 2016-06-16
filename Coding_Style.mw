@@ -68,8 +68,9 @@ Exceptions to this are one line functions in header files:
 == Doxygen ==
 Use Doxygen comments. The comments for variables should be just before their declaration, and functions should be documented where they are implemented, and not where they are defined. I.e. don't document functions in the header file if they are implemented in the corresponding cpp file. Reason for this is that this way the documentation is on the screen when you debug. If you want to study the interface of a class, just look at the doxygen documentation, and all information is on one screen. But if you debug you want to know what a function is doing, then having to look at the header file is annoying. It's also easier to keep implementation details and comments in sync.
 
-The following format should be used (Doxyfile is set up to use the first sentence as a brief description). 
- /** This function is called when the AI is trying to hit an item that is 
+The following format should be used (Doxyfile is set up to use the first sentence as a brief description).
+{{popup-code
+|content= /** This function is called when the AI is trying to hit an item that is 
   *  pre-selected to be collected. The AI only evaluates if it's still
   *  feasible/useful to try to collect this item, or abandon it (and then 
   *  look for a new item). At item is unselected if the kart has passed it 
@@ -83,7 +84,7 @@ The following format should be used (Doxyfile is set up to use the first sentenc
  bool SkiddingAI::handleSelectedItem(float kart_aim_angle, Vec3 *aim_point)
  {
  }   // handleSelectedItem
-
+}}
 Feel free to use more commands like \pre, \param, \return from doxygen.
 
 == Coding ==
