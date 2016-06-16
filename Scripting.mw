@@ -55,8 +55,9 @@ To detect collision between an item (a powerup/weapon) and a physical object (tr
 
 ===On Start===
 Start-up scripts will run exactly once, during the track loading process. As such, they are ideal for setting the initial states of any animations, creating new action triggers, etc.
-
- void onStart()
+{{popup-code
+|content=void onStart()
+}}
 
 ===On Update===
 <span style="color:red">WARNING : Inefficient. Use sparingly.</span>
