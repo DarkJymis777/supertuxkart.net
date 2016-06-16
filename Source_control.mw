@@ -10,7 +10,7 @@ It is about 130 MB in size.
 
 Data files are hosted on sourceforge and use SVN. Example checkout command :
 {{popup-code
-|content=>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets
+|content=svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets
 }}
 It is about 650 MB in size.
 
@@ -21,7 +21,9 @@ These two repositories should be downloaded in the same folder, so that folders 
 The media repository is '''not required to play the game'''. It contains the source files for assets (blender files, lossless music and sound files, etc.) and is meant for artists. It is around 1.5GB in size.
 
 The media repository is hosted on sourceforge and uses SVN. Example checkout command :
-<code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/media/trunk stk-media-repo</code>
+{{popup-code
+|content=svn checkout https://svn.code.sf.net/p/supertuxkart/code/media/trunk stk-media-repo
+}}
 
 Also see [[Media_Repo|the Media repository page]]
 
