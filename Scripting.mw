@@ -24,24 +24,23 @@ Relevant Methods:
 Collision-based triggering revolves around providing collision based interactions. Several different types of callbacks are defined. 
 
 At present the different callbacks are
-
- void onKartKartCollision(int idKart1, int idKart 2) //for collisions between karts
+{{popup-code
+|content=<pre> void onKartKartCollision(int idKart1, int idKart 2) //for collisions between karts</pre>}}
 
 To detect collision between a kart and a physical object (track object), the "on-kart-collision" property should be defined on the object in the scene.xml file, containing the name of the scripting function to call
-
- // scene.xml
+{{popup-code
+|content= // scene.xml
  <object type="movable" id="TestObject" ... model="TestObject.b3d" on-kart-collision="onTestObjectKartCollision"/>
 
  // scripting.as
  void onTestObjectKartCollision(int idKart, const string libraryInstance, const string obj_id)
  {
      // ...
- }
-
+ }</pre>}}
 
 To detect collision between an item (a powerup/weapon) and a physical object (track object), the "on-item-collision" property should be defined on the object in the scene.xml file, containing the name of the scripting function to call
-
- // scene.xml
+{{popup-code
+|content=<pre> // scene.xml
  <object type="movable" id="TestObject" ... model="TestObject.b3d" on-item-collision="onTestObjectItemCollision"/>
 
  // scripting.as
@@ -52,6 +51,7 @@ To detect collision between an item (a powerup/weapon) and a physical object (tr
         // ...
     }
  }
+</pre>}}
 
 ===On Start===
 Start-up scripts will run exactly once, during the track loading process. As such, they are ideal for setting the initial states of any animations, creating new action triggers, etc.
