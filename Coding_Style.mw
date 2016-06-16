@@ -33,17 +33,20 @@ This makes it easier to move files into different directories.
 ** Using tabs means that the files might be displayed differently from one editor to the next, or when viewed in a terminal. All editors have an option to use spaces instead of tabs.
 ** You can use tools/whitespaces.py to get rid of them. (They'll be replaced with 4 spaces)
 * Both the opening and the closing braces should be on a line of their own. That means:
-<pre>int main()
+{{popup-code
+|content=<pre>int main()
 {
     return 0;
-}</pre>
+}</pre>}}
 
 Exceptions to this are one line functions in header files:
 
-<pre> float getValue() const { return m_my_value; }</pre>
+{{popup-code
+|content=<pre> float getValue() const { return m_my_value; }</pre>}}
 
 * In header files try to align declaration and definitions in columns (e.g. first column type, 2nd column function name). This might not always be possible, but a more structured header file is easier to read and understand). Example:
-    NetworkMode  getMode() const                   { return m_mode;            }
+{{popup-code
+|content=    NetworkMode  getMode() const                   { return m_mode;            }
     void         becomeServer();
     void         becomeClient();
     void         setState(NetworkState s)          { m_state = s;              }
@@ -54,7 +57,7 @@ Exceptions to this are one line functions in header files:
     const std::string& getClientName(int i) const  { return m_client_names[i]; }
     bool         initialiseConnections();
     void         update(float dt);
-
+}}
 * Start with private declarations, then the public ones (this might be a bit unusual: the idea is that the doxygen output is sorted with public declarations first, which is what people studying the code should look like. If you are actually looking at the sources, you are more likely interested in the implementation, so having this come first saves scrolling down time).
 * Try not to use more than 80 characters in a line (soft limit).
 * Have a line "// ------------------------" (up to 80th column) separating each function definition (see [[#Doxygen]] for an example)
