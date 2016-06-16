@@ -9,7 +9,9 @@ The core code repository is hosted on our [https://github.com/supertuxkart/stk-c
 It is about 130 MB in size.
 
 Data files are hosted on sourceforge and use SVN. Example checkout command :
-<code>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets</code>
+{{popup-code
+|content=>svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets
+}}
 It is about 650 MB in size.
 
 These two repositories should be downloaded in the same folder, so that folders "stk-code" and "stk-assets" are next to each other.
