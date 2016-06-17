@@ -53,58 +53,12 @@ Be Careful! If you mess up a file  SuperTuxKart might stop working and you will 
 |laps
 |Number of laps.
 |-
-|
-|
+|position
+|Required rank.
 |-
-|
-|
+|energy
+|Number of energy/nitro points to collect. This attribute is not required.
 |-
-|
-|
+|time
+|Maximum amount of time in seconds.
 |}
-
-<table cellpadding="50">
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">unlock-mode</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Game mode which the challenge unlocks if solved. For example, ''FOLLOW_LEADER''.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">depend-on</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Challenge id(s) which the challenge depends on in order to be shown. This attribute is not required.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">major</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Major game mode type. For example, ''single'' for single player mode.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">minor</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Minor game mode type. For example, ''quickrace''.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">track</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Track where challenge takes place.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">difficulty</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Difficulty mode for race. For example, ''medium''.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">karts</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Number of karts.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">laps</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Number of laps.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">position</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Required rank.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">energy</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Number of energy/nitro points to collect. This attribute is not required.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">time</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Maximum amount of time in seconds.</td>
-  </tr>
-</table>
