@@ -16,30 +16,54 @@ Be Careful! If you mess up a file  SuperTuxKart might stop working and you will 
 |-
 |id
 |Unique identification which STK knows the challenge by. This can be referenced for depend-on in other challenges.
+|-
+|name
+|Short descriptive name for the challenge. Shows up over the main description.
+|-
+|description
+|Full description of the challenge.
+|-
+|unlock-track
+|Track which the challenge unlocks if solved. Currently a requirement to fill in, if no other unlock- property is used.
+|-
+|unlock-gp
+|Grand Prix which the challenge unlocks if solved.
+|-
+|unlock-mode
+|Game mode which the challenge unlocks if solved. For example, ''FOLLOW_LEADER''.
+|-
+|depend-on
+|Challenge id(s) which the challenge depends on in order to be shown. This attribute is not required.
+|-
+|major
+|Major game mode type. For example, single for single player mode.
+|-
+|minor
+|Minor game mode type. For example, quickrace.
+|-
+|track
+|Track where challenge takes place.
+|-
+|difficulty 	
+|Difficulty mode for race. For example, ''medium''.
+|-
+|karts
+|Number of karts.
+|-
+|laps
+|Number of laps.
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
 |}
 
 <table cellpadding="50">
-  <tr>
-    <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000">id</td>
-    <td STYLE="border-top: 1 px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Unique identification which STK knows the challenge by. This can be referenced for ''depend-on'' in other challenges.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">name</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Short descriptive name for the challenge. Shows up over the main description.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">description</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Full description of the challenge.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">unlock-track</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Track which the challenge unlocks if solved. Currently a requirement to fill in, if no other ''unlock-'' property is used.</td>
-  </tr>
-  <tr>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">unlock-gp</td>
-    <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Grand Prix which the challenge unlocks if solved.</td>
-  </tr>
-  <tr>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000">unlock-mode</td>
     <td STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000;border-right: 1px solid #000000">Game mode which the challenge unlocks if solved. For example, ''FOLLOW_LEADER''.</td>
   </tr>
