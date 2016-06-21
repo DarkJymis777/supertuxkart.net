@@ -123,7 +123,7 @@ To see how you kart looks in STK, you need to export it using the STK kart expor
 
 After setting up blender as described in [[Installing the tools]], locate the SuperTuxKart panel :
 
-[[Image:Kart_panel.png]]
+<gallery mode="packed" widths=640px heights=360px>Kart_panel.png</gallery>
 
 Check the ''is a SuperTuxKart kart'' checkbox, then fill the information asked for.
 When you have configured the kart, press the '''Export''' button in the ''Kart Exporter'' panel
