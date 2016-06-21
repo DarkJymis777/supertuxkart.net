@@ -57,7 +57,7 @@ If you need to fix an already rigged model, it's not too late, you can do the fo
 ===Objects in Blender scene===
 Ideally, the kart has its own mesh, the character another independent mesh, and each wheel another additional mesh object. Assign the wheels their type in the property panel :
 
-<gallery mode="packed" widths=800px>Wheel.jpg</gallery>
+<gallery mode="packed" widths=640px heights=360px>Wheel.jpg</gallery>
 
 
 Note that karts can have (up to) 4 wheels. Wheels that are on the front are considered steering wheels and will automatically rotate as you steer in-game. The wheel's origin in Blender is used by SuperTuxKart for the wheel movement, an incorrectly placed "origin" can cause the wheel improper movement, also you might want to make test for aesthetic purposes, mostly to fix the point from where the wheel steers. 
