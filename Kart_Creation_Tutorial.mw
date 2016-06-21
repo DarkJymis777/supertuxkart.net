@@ -52,7 +52,7 @@ If you need to fix an already rigged model, it's not too late, you can do the fo
     </div>
 </div>
 
-<gallery mode="packed" widths=800px>vehiceplacement.png</gallery>
+<gallery mode="packed" widths=640px heights=360px>vehiceplacement.png</gallery>
 
 ===Objects in Blender scene===
 Ideally, the kart has its own mesh, the character another independent mesh, and each wheel another additional mesh object. Assign the wheels their type in the property panel :
