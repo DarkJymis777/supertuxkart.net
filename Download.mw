@@ -102,6 +102,7 @@ i.os-icon {
 |content=
 '''Full game''' (.dmg) 64-bit
 }}
+}}
 {{os-presentation
 |name=Source Code
 |icon=fa-code
@@ -109,6 +110,7 @@ i.os-icon {
 |content={{os-link
 |content=
 '''Full game''' (.tar.xz) stable release. To get the very latest code, see [[Source_control]]
+}}
 }}
 
 
