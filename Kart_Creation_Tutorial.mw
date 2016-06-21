@@ -16,7 +16,7 @@ Once you have chosen your mascot, you need a kart design for it. If you wish it 
 It is important to note that some weapons like the swatter attach themselves on the back part of the kart, so it is important to make sure that this area can receive equipment.
 
 =Modeling=
-[[Image:Emule_model.jpg|700px|thumb]]
+<gallery mode="packed" widths=800px>File:Emule_model.jpg</gallery>
 
 
 ===Mesh & vertex count===
@@ -27,8 +27,7 @@ To know roughly the number of triangles of your mesh, you can temporarily conver
 
 Alternatively, you can always consult the current face count of your project using Blender's "Info" panel
 
-
-[[Image:blenderfacecount.png|center]]
+<gallery mode="packed" widths=800px>blenderfacecount.png</gallery>
 
 
 By default Blender displays the sum of all the faces from the active scene (only active layers will be taken in count): "Fa" stands for faces and "Ob" stands for the current number of elements placed at the 3D scene, if you enter in "Edit Mode" (TAB key) the counter will be displaying the number of faces of the shape you are currently editing, while no necessary it is recommended to work with "tri faces" until no further modeling is needed.
