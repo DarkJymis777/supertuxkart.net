@@ -26,6 +26,7 @@
 }
 }}
 {{generic-css}}
+{{global-warning}}
 <p style="max-width: 730px;">SuperTuxKart is a 3D open-source arcade racer with a variety characters, tracks, and modes to play. [[Discover|Discover more...]]</p>
 
 <div class="landing-page-download">
