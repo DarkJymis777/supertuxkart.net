@@ -87,7 +87,7 @@ STK's karts can be animated. The current karts animations in STK are :
 * Winning animation, specified with the '''start-winning''', '''start-winning-loop''', and '''end-winning''' named markers. The frames between start-winning and start-winning-loop are played once, then the frames between start-winning-loop and end-winning are looped.
 * Losing animation : as the winning animation : '''start-losing''', '''start-losing-loop''' and '''end-losing'''.
 
-[[Image:Animations.jpg|center|650px]]
+<gallery mode="packed" widths=640px heights=360px>Animations.jpg</gallery>
 
 Meshes must be animated with skeletal animations, using blender's armatures. Note that STK will only be able to play animations if the armature is the parent object of the animated mesh in the Blender scene (you might have to remove the "armature" modifier if you used it, otherwise transformations can be applied twice to the mesh). STK supports multiples animated objects (one armature by distinct animated mesh) since the 0.7.1 version.
 
