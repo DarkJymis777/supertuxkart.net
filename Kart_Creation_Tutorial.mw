@@ -93,10 +93,10 @@ STK's karts can be animated. The current karts animations in STK are :
 Meshes must be animated with skeletal animations, using blender's armatures. Note that STK will only be able to play animations if the armature is the parent object of the animated mesh in the Blender scene (you might have to remove the "armature" modifier if you used it, otherwise transformations can be applied twice to the mesh). STK supports multiples animated objects (one armature by distinct animated mesh) since the 0.7.1 version.
 
 Also, make sure every bone of your armature has a 0 roll, otherwise ingame animation will look pretty weird.
-
 {{popup-warning
 |content=The duration of 'left steer' and 'right steer' does not matter since in-game the frame will move between the markers depending on how much the kart steers; for animations like winning or losing, however, the duration of the animation in blender is directly related to its duration once exported to STK.
 }}
+
 {{popup-warning
 |content=we currently only support skeletal animations for karts. Therefore, you cannot animate a kart object by moving it around and assigning keyframes; instead you need to attach it to a bone inside the kart mesh
 }}
