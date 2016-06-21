@@ -42,6 +42,7 @@ ul#get-involved-list > li > div {
 }
 
 }}
+{{global-warning}}
 <html>
 <ul id="get-involved-list">
     <li>
