@@ -62,6 +62,7 @@ i.os-icon {
 }}
 {{Generic-hide-summary}}
 {{generic-css}}
+{{global-warning}}
 <div class="article_main_title">
 == ..:: Get the latest version for your system ::.. ==
 </div>
