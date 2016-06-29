@@ -1,6 +1,8 @@
 {{Generic-hide-summary}}
 {{generic-css}}
-<!-- Dummy section only used to trigger the display of the donate form-->
+<!-- Dummy section only used to trigger the display of the donate form
+<div class="youtube-embed-landing-page"><youtube>ev8Zltau4zw</youtube></div>
+-->
 <div id="section-donate-true"></div>
 
 <div class="article_main_title">
