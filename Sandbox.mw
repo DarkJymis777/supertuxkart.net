@@ -1,8 +1,11 @@
+{{Generic-hide-summary}}
+{{generic-css}}
 <!-- Dummy section only used to trigger the display of the donate form-->
 <div id="section-donate-true"></div>
 
-Donating to SuperTuxKart
-
+<div class="article_main_title">
+== ..:: Donating to SuperTuxKart ::.. ==
+</div>
 If you enjoyed SuperTuxKart and would like to contribute back to the project, or just to say thank you, you may donate to help the project!
 
 Donations help us improve the game, as they may be used to purchase hardware, file hosting and distribution services, servers to host websites and future networking gameplay services, to pay artists to produce improved artwork, and more.
