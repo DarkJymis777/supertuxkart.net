@@ -8,36 +8,44 @@ The following manipulations will have to be done every time you'll change the ka
 
 
 [[Image : Shadow_tutorial_1.jpg|800px]] 
+
 Jump to top-view (numpad 7) fullscreen (Ctrl + up) orthogonal mode (numpad 5 to switch persp/ortho) in Blender, making sure you will be able later to locate the (-1, -1) (1, -1) (1, 1) (-1, 1) square on the (X, Y) plane even without seeing its edges. Here, the screen's side and the View>"Background Image" Blender property window will enable to locate the square.
 
 
 
 [[Image : Shadow_tutorial_2.jpg|800px]] 
+
 Add a  colored background in Blender. It creates a high contrast with the model in shaded view mode. Don't forget to increase the background's size in the property window if you use a small image.
 
 
 
 =Cropping screenshot=
 [[Image : Shadow_tutorial_3.jpg|800px]] 
+
 Then, open your screenshot image with your favorite graphics editing program. Simply crop your image following the square we made easy to identify earlier. Thanks to this, the shadow will have the right scale on the shadow image.
 
 =Getting shadow shape=
 [[Image : Shadow_tutorial_4.jpg|800px]] 
+
 With the fuzzy select tool (aka magical wand), select the colored background (don't forget to click in every closed area), then invert the selection so it corresponds to the kart's shape
 
 
 
 [[Image : Shadow_tutorial_5.jpg|800px]] 
+
 Feather the selection by roughly 10px (this value may need to be adjusted following your screen resolution), then eventually grow it by 2 or 3px, to smooth the shadow.
 
 =Filling shadow=
 
 [[Image : Shadow_tutorial_6.jpg|800px ]]
+
 Create a transparent layer, and fill your selection with black opacity 50% using the bucket tool.
 
 =Saving=
 
-[[Image : Shadow_tutorial_7.jpg|800px]] Then, resize your image to 256x256 (or even 128x128 if it does not contain a lot of details), hide or delete your green layer, and save the image as a PNG file, with transparency.
+[[Image : Shadow_tutorial_7.jpg|800px]] 
+
+Then, resize your image to 256x256 (or even 128x128 if it does not contain a lot of details), hide or delete your green layer, and save the image as a PNG file, with transparency.
 
 
 
