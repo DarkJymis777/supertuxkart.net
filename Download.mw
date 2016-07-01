@@ -68,9 +68,9 @@ i.os-icon {
 </div>
 {{os-presentation
 |name=Linux
-|main-link=http://samuncle.net/tux/supertuxkart-0.9.2-linux.tar.xz
+|main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-linux.tar.xz/download
 |icon=fa-linux
-|content=[http://samuncle.net/tux/supertuxkart-0.9.2-linux.tar.xz '''Full game'''] [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-linux.tar.xz/download (sourceforge mirror)]
+|content=[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-linux.tar.xz/download '''Full game'''] [http://samuncle.net/tux/supertuxkart-0.9.2-linux.tar.xz (mirror)]
 
 '''Package for specific distributions (might not be the latest version)'''
 
@@ -91,10 +91,10 @@ i.os-icon {
 {{os-presentation
 |name=Windows
 |icon=fa-windows
-|main-link=http://samuncle.net/tux/supertuxkart-0.9.2.exe
+|main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2.exe/download
 |content={{os-link
 |content=
-[http://samuncle.net/tux/supertuxkart-0.9.2.exe '''Full game''' (.exe) 32-bit & 64-bit] ([https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2.exe/download sourceforge mirror])
+[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2.exe/download '''Full game''' (.exe) 32-bit & 64-bit] ([http://samuncle.net/tux/supertuxkart-0.9.2.exe  mirror])
 
 [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-win32-mingw.zip/download SuperTuxKart 0.9.2 for Windows XP]
 }}
@@ -102,10 +102,10 @@ i.os-icon {
 {{os-presentation
 |name=Mac OSX
 |icon=fa-apple
-|main-link=http://samuncle.net/tux/SuperTuxKart-0.9.2-osx.dmg
+|main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/SuperTuxKart-0.9.2-osx.dmg/download
 |content={{os-link
 |content=
-[http://samuncle.net/tux/SuperTuxKart-0.9.2-osx.dmg '''Full game''' (.dmg)] ([https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/SuperTuxKart-0.9.2-osx.dmg/download sourceforge mirror])
+[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/SuperTuxKart-0.9.2-osx.dmg/download '''Full game''' (.dmg)] ([http://samuncle.net/tux/SuperTuxKart-0.9.2-osx.dmg mirror])
 }}
 }}
 {{os-presentation
