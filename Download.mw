@@ -70,7 +70,7 @@ i.os-icon {
 |name=Linux
 |main-link=http://samuncle.net/tux/supertuxkart-0.9.2-linux.tar.xz
 |icon=fa-linux
-|content=[http://samuncle.net/tux/supertuxkart-0.9.2-linux.tar.xz '''Full game'''] [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2-release/supertuxkart-0.9.2-linux.tar.xz/download (sourceforge mirror)]
+|content=[http://samuncle.net/tux/supertuxkart-0.9.2-linux.tar.xz '''Full game'''] [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-linux.tar.xz/download (sourceforge mirror)]
 
 '''Package for specific distributions (might not be the latest version)'''
 
@@ -94,9 +94,9 @@ i.os-icon {
 |main-link=http://samuncle.net/tux/supertuxkart-0.9.2.exe
 |content={{os-link
 |content=
-[http://samuncle.net/tux/supertuxkart-0.9.2.exe '''Full game''' (.exe) 32-bit & 64-bit] ([https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2-release/supertuxkart-0.9.2.exe/download sourceforge mirror])
+[http://samuncle.net/tux/supertuxkart-0.9.2.exe '''Full game''' (.exe) 32-bit & 64-bit] ([https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2.exe/download sourceforge mirror])
 
-[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2-release/supertuxkart-0.9.2-win32-mingw.zip/download SuperTuxKart 0.9.2 for Windows XP]
+[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-win32-mingw.zip/download SuperTuxKart 0.9.2 for Windows XP]
 }}
 }}
 {{os-presentation
@@ -105,13 +105,13 @@ i.os-icon {
 |main-link=http://samuncle.net/tux/SuperTuxKart-0.9.2-osx.dmg
 |content={{os-link
 |content=
-[http://samuncle.net/tux/SuperTuxKart-0.9.2-osx.dmg '''Full game''' (.dmg)] ([https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2-release/SuperTuxKart-0.9.2-osx.dmg/download sourceforge mirror])
+[http://samuncle.net/tux/SuperTuxKart-0.9.2-osx.dmg '''Full game''' (.dmg)] ([https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/SuperTuxKart-0.9.2-osx.dmg/download sourceforge mirror])
 }}
 }}
 {{os-presentation
 |name=Source Code
 |icon=fa-code
-|main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2-release/supertuxkart-0.9.2-src.tar.xz/download
+|main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-src.tar.xz/download
 |content={{os-link
 |content=
 '''Full game''' (.tar.xz) stable release. To get the very latest code, see the page [[Source_control | Source control]].
