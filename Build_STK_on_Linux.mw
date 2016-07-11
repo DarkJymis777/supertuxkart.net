@@ -18,8 +18,12 @@ First of all, you will need a c++ compiler, the autotools build system and cmake
 
 == Obtain code and assets ==
 STK is splitted up into code and assets, so you need these two commands two get both:
+
 <code>git clone https://github.com/supertuxkart/stk-code.git stk-code # about 130 MB
-svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets # about 650 MB</code>
+
+svn checkout https://svn.code.sf.net/p/supertuxkart/code/stk-assets stk-assets # about 650 MB
+</code>
+
 See [[Source control]] for more information.
 
 The <TT>stk-code</TT> and the <TT>stk-assets</TT> directory need to be in the same folder. This means that you need the following folder structure:
