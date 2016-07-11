@@ -36,6 +36,7 @@ You can use the CMake build system to build STK. At this time CMake will not mak
 '''Building'''
 
 With clang:
+
 <code>mkdir cmake_build
 cd cmake_build
 cmake ..
@@ -44,6 +45,7 @@ make
 
 
 With GCC :
+
 <code>mkdir cmake_build
 cd cmake_build
 cmake .. -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_C_COMPILER=/usr/bin/gcc
