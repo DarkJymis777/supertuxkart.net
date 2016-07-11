@@ -15,6 +15,7 @@ Also see [[Source control]] to obtain the source code from git.
 
 
 On OSX 10.9.5 I had to use (FIXME):
+
 <code>
 $ xcrun --show-sdk-path
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
