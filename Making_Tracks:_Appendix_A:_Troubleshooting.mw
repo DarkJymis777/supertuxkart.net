@@ -1,0 +1,13 @@
+While the track-making process is usually fairly straightforward and the exporters usually work fine, problems can appear. If you can't find anything helpful on this page, feel free to look for your problem or ask for help on the [http://forum.freegamedev.net/viewforum.php?f=16 forum]. Be sure to read the [[Communication]] page too, if you are posting on the forum.
+
+{{Faq-question|title=My AI karts drive off the road!|answer=There could be many reasons for this:
+
+* Your driveline is misplaced.
+* Your driveline has a break in it.
+* Your road makes too sharp of a turn.
+* Your road is too narrow.
+
+Try to correct any of the issues that apply, and see if that helps.
+}}
+
+{{Faq-question|title=Transparent or translucent decorations don't appear correctly!|answer=Most likely this is a sorting issue. Try exporting transparent parts as separate objects ("Object" in SuperTuxKart Object Properties panel in Blender). If your transparent section includes part of the main drivable area, be sure the check the "Drivable" box in the SuperTuxKart Object Properties panel. Also, ensure that "Disable writing to Z-buffer" is checked for any transparent or partially transparent textures in the SuperTuxKart Image Properties panel.}}
