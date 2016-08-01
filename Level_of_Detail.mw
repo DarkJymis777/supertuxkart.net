@@ -7,13 +7,13 @@ Start by creating the various models with different levels of detail, and give t
 
 For instance, here is the example of how to setup a LOD sphere :
 
-[[Image:Lod_low.png|center|650px]]
+[[File:Lod_low.png|center|650px]]
 (20 polygons)
 <br>
-[[Image:Lod_medium.png|center|650px]]
+[[File:Lod_medium.png|center|650px]]
 (100 polygons)
 <br>
-[[Image:Lod_high.png|center|650px]]
+[[File:Lod_high.png|center|650px]]
 (1000 polygons)
 
 A good rule of thumb is: each lower model should have half the number of polygons compared to the previous one.
@@ -21,7 +21,7 @@ A good rule of thumb is: each lower model should have half the number of polygon
 The various models that represent various definitions of the same object should all receive the same '''LOD group name'''.
 
 Once the 3 levels are defined, you are ready to place instances of the sphere in the track, setting the '''LOD group name''' of the object you want to appear there :
-[[Image:Lod_instance.png|center]]
+[[File:Lod_instance.png|center]]
 
 The result in-game will be that, at this location :
 * The highest resolution sphere will be visible if you are 50 meters or closer from the object
