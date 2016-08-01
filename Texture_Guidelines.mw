@@ -15,6 +15,7 @@ Textures should be drawn as if ambient color and light in the picture were neutr
 == Patterns ==
 
 There should be no immediately visible pattern to the texture. Obvious patterns make the track or kart look silly. Here is an example of what '''not''' to do:
+
 [[File:File-Repeating_texture.jpg]]
 
 == Technical Restrictions ==
