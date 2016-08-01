@@ -49,6 +49,10 @@ Now, you need to be able to save the modifications from the array and curve modi
 
 Unless you're very lucky, your track probably won't have closed properly with a cyclic curve, and the ends probably overlap or doesn't quite connect. Now that you've applied the modifiers, it should be fairly easy to correct this in edit mode by deleting excess points and connecting other ones.
 
+=== Improving Gameplay ===
+
+It's important that your track be fun to drive. There are guidelines to help you with this at [[Making Tracks: Notes#Gameplay]]. Try adding banking to curves, and widen the track around curves and at the end of jumps. Things like this will make your track more enjoyable.
+
 == Conclusion ==
 
 You've now put at least part of your ideas into Blender. In the next module, you'll learn how to make the track drivable in STK.
