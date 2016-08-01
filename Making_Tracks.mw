@@ -1,0 +1,36 @@
+{{Popup-prerequisite|content=
+* [[Getting To Know the Style]]
+* [[Texture Guidelines]]
+* [[Music and sound effects general specifications]]
+* [[Installing Tools]]
+* [[Communication]]
+* [[Licensing]]
+}}
+
+Welcome to the track-making tutorial. If you're familiar with SuperTuxKart, you probably remember the old Track Maker's Guide. While most of the needed content was available in the old guide, certainly not all of it was (especially lighting) and it was difficult to follow and overall badly in need of repair.
+
+This new guide is redesigned to be much more organized. Each section, or module, is clearly defined, and therefore you should never have to look through multiple pages to find information that should be all under one section.
+
+This page is a list of the modules in the Making Tracks tutorial. Note that not all are only for tracks: certain pages are also used in other guides.
+
+== Contents ==
+
+* [[Making Tracks:Notes|Notes]]
+* [[Making Tracks:Ideas and Concept Art|Ideas and Concept Art]]
+* [[Making Tracks:Properties and Modeling|Properties and Modeling]]
+* [[Making Tracks:Drivelines and Checklines|Drivelines and Checklines]]
+* [[Making Tracks:Testing|Testing]]
+* [[Texture|Texturing]]
+* [[Material|Materials]]
+* [[Making Tracks:Landscape|Landscape]]
+* [[Making Tracks:Decorations|Decorations]]
+* [[Making Tracks:Special Effects and Items|Special Effects and Items]]
+* [[Making Tracks:Sky and Lighting|Sky and Lighting]]
+* [[Physics]]
+* [[Scripting]]
+* [[Cutscenes]]
+* [[Making Tracks:Conclusion|Conclusion]]
+
+== Appendices ==
+
+* [[Making Tracks:Appendix A: Troubleshooting|Appendix A: Troubleshooting]]
