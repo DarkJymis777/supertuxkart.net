@@ -9,5 +9,4 @@ While the track-making process is usually fairly straightforward and the exporte
 
 Try to correct any of the issues that apply, and see if that helps.
 }}
-
 {{Faq-question|title=Transparent or translucent decorations don't appear correctly!|answer=Most likely this is a sorting issue. Try exporting transparent parts as separate objects ("Object" in SuperTuxKart Object Properties panel in Blender). If your transparent section includes part of the main drivable area, be sure the check the "Drivable" box in the SuperTuxKart Object Properties panel. Also, ensure that "Disable writing to Z-buffer" is checked for any transparent or partially transparent textures in the SuperTuxKart Image Properties panel.}}
