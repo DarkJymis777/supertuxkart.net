@@ -8,23 +8,23 @@ The engine is based on a heavily modified version of irrlicht. If you want more 
 = Features =
 <div id="dev_contrib">
 == Dynamic Lighting ==
-[[Image:Antartica_dynamiclight.jpg|center|800px]]
+[[File:Antartica_dynamiclight.jpg|center|800px]]
 All lights are dynamic. Artists can place an arbitrary number of them. There is no "hard limit" however for performance the engine use only the 8, 16 or 32 closest lights to the player + the sun.
 
 All lights can be animated if needed.
 == Exponential Shadow Maps ==
-[[Image:Antartica_dynamicshadows.jpg|center|800px]]
+[[File:Antartica_dynamicshadows.jpg|center|800px]]
 
 The sun cast automatically real time shadows to add more realism to the scene. You don't need precomputed [[lightmaps]] anymore.
 
 == Realtime ambient occlusion ==
-[[Image:Antartica_ssao.jpg|center|800px]]
+[[File:Antartica_ssao.jpg|center|800px]]
 Before / after
 
 Ambient occlusion is a shading technique to add darkness where objects and surface are close together, like cracks or corners.
 
 == Depth of field and Bokeh ==
-[[Image:antartica_dofbokeh.jpg|center|800px]]
+[[File:Antartica_dofbokeh.jpg|center|800px]]
 
 When objects and lights are out of focus they are slightly blurred. Light sources appear as little dots like in real camera when a strong light source is out of focus.
 More information about [https://en.wikipedia.org/wiki/Bokeh bokeh].
