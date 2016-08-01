@@ -1,0 +1,30 @@
+Having good textures is perhaps one of the most important things when creating 3D artwork. Even a beautifully modeled object can look hideous with bad textures, so it's important that the textures you make and use fit these guidelines.
+
+== Style ==
+
+Textures in SuperTuxKart are hand-drawn or painted, not just photos (though you may use photos for reference). Of course, this does not mean you need physical paints—you can use a digital painting application like Krita. Other applications are also listed at the [[Installing Tools]] page.
+
+Textures are also not completely fake, cartoon-y looking. Feel free to add plenty of detail, as long as you use only hand painting.
+
+== Color and Lighting ==
+
+Textures in SuperTuxKart are colorful and contrasting, but must not clash. Extremely bright, neon/plastic/candy-colored textures will not be accepted into the main repository unless they are used in only a very small area, like the start sign in XR591. The same rule applies to textures that are only one color.
+
+Textures should be drawn as if ambient color and light in the picture were neutral. SuperTuxKart's engine will automatically change the color balance and brightness based on lighting in the scene.
+
+== Patterns ==
+
+There should be no immediately visible pattern to the texture. Obvious patterns make the track or kart look silly. Here is an example of what '''not''' to do:
+[[File:File-Repeating_texture.jpg]]
+
+== Technical Restrictions ==
+
+* Dimensions of images should be powers of two. A standard-size generic texture, for example, is 1024 × 1024, or 2<sup>10</sup> × 2<sup>10</sup>.
+* Do not use large textures for small objects—this wastes video RAM.
+* Textures should be in PNG format when
+** The texture will be used in an up-close object requiring high detail
+** The object contains transparent or partially-transparent parts
+* Textures should be in JPEG format for
+** Far-away objects
+** Sky textures (sometimes)
+** Ambient Light Maps
