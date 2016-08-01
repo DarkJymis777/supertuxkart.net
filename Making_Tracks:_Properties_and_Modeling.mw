@@ -1,33 +1,17 @@
-When you open Blender with the SuperTuxKart plugins installed, you will find that some new menus have been added. Under "Scene" in the Properties window, you'll find ''Kart Exporter'', ''Track Exporter'', ''SuperTuxKart Scene Properties'', and ''SuperTuxKart Image Properties.'' Also in the Properties window, under Object, you'll find ''SuperTuxKart Object Properties.'' If you do not see these, refer to the [[Installing Tools]] page.
+When you open Blender with the SuperTuxKart plugins installed, you will find that some new menus have been added. Under "Scene" in the Properties window, you'll find ''Kart Exporter'', ''Track Exporter'', ''SuperTuxKart Scene Properties'', and ''SuperTuxKart Image Properties.'' Also in the Properties window, under Object, you'll find ''SuperTuxKart Properties.'' If you do not see these, refer to the [[Installing Tools]] page.
 
-== Setting Track Properties ==
+== Setting Basic Properties ==
 
-The first thing you need to do is check the "Is a SuperTuxKart track" box under "SuperTuxKart Scene Properties". Many more options will now appear in the Scene Properties panel.
+The first thing you need to do is check the "Is a SuperTuxKart track" box under "SuperTuxKart Scene Properties". Many more options will now appear in the Scene Properties panel. However, right now, you only need to change a few things:
 
-=== Basic Properties ===
-
-Set these properties right away, so that you will be able to export your track:
-
-* In the "Track Exporter" panel, click the folder button to set the assets path. This could be the <code>stk-assets</code> or <code>data</code> folder, or the <code>addons</code> folder. When exporting your track, the track exporter will create a folder at this path called <code>tracks</code>. Inside this will be another folder containing your track.
+* In the "Track Exporter" panel, click the folder button to set the assets path. Choose the directory where you will be saving your .blend file.
 * In the SuperTuxKart Scene Properties, set the following:
 ** The track name
 ** The folder name
 ** The group: if you are making a track for the Add-On website, set it to "Add-Ons". If you are hoping to have your track become part of the main game, set it to "standard".
 ** The designer: this could be your full name or a nickname, if you wish to remain semi-anonymous.
 
-=== Optional Properties ===
-
-You may wish to set these properties when you made more progress on your track, but it is not necessary to change them since they are not needed for the track to be usable.
-
-* '''Music:''' The <code>.music</code> file to be used for background music. See [[Music and sound effects general specifications]].
-* '''Screenshot:''' This picture will be shown in the track selection menu. It should be a 4:3 aspect ratio image scaled onto a 1024 × 1024 image. This is because graphics cards expect textures with powers-of-two sides.
-* '''Camera far clip:''' This is the render distance, or the distance from the camera at which objects stop being visible. (Without fog enabled this is '''not''' a gradual transition.) For indoor tracks it might be able to be reduced to improve performance, but if you are creating an outdoor track with clouds you may need to increase the render distance.
-* '''Under Driving/laps:'''
-** '''Can be driven in reverse:''' If this box is checked, the option to drive backward through the track will be enabled. If jumps or other obstacles prevent the player from driving backward along the track, do not enable this.
-** '''Number of laps:''' The default number of laps. Short tracks should have a larger number of laps by default, while long tracks should not have as many.
-* '''Under Start line positions:''' The built in help on these options should be sufficient. If SuperTuxKart crashes when you try to start your track, it may be caused by an insufficiently wide starting area. You can set a fewer number of karts allowed per row or adjust the space around karts with these options.
-
-{{Popup-warning|content=Feel free to look through other options and become familiar with the layout of the various options, but DO NOT change them. If you forget what properties you changed earlier, you'll spend too much time trying to fix it later.}}
+Feel free to look through other options and become familiar with the layout of the various options, but DO NOT change them. If you forget what properties you changed earlier, you'll spend too much time trying to fix it later.
 
 == Modeling the Track ==
 
@@ -35,7 +19,7 @@ You may wish to set these properties when you made more progress on your track, 
 
 === Creating a segment ===
 
-Start by deleting the default objects that Blender creates (i.e. delete the cube, the lamp, and the camera.) Then, create a plane. In edit mode, make it 10 or 12 Blender units wide along the Y-axis, but keep it only 2–4 units long along the X-axis. If you want, you can [[Texturing|texture]] your road segment with UV texturing. This is not necessary yet, especially for indoor tracks, but will save you a lot of work in the UV editor later on for outdoor tracks.
+Start by deleting the default objects that Blender creates (i.e. delete the cube, the lamp, and the camera.) Then, create a plane. In edit mode, make it 10 or 12 Blender units wide along the Y-axis, but keep it only 2-4 units long along the X-axis. If you want, you can [[Texture|texture]] your road segment with UV texturing, but this is not not necessary yet.
 
 === Extruding the road ===
 
@@ -57,24 +41,14 @@ Now, select the curve and switch to edit mode. You can adjust the handles on eac
 
 Now, still in edit mode on the curve, in the 3D View window, go to Curve > Toggle Cyclic. Your road will now be a single loop.
 
-{{Popup-warning|content=The segment and curve objects generally do not like to have scale/rotation on them. This means you should only ever scale the curve in edit mode, never in object mode. (If you already scaled them, don't worry you're not screwed up! Select both the curve and the model segment, then press Ctrl+A and select "Rotation & Scale"; then you will probably need to go in the edit mode of the curve, select all vertices, and tweak the radius property in the "N" panel, or simply select "Object Data" in the standard properties panel. and toggle off "Radius")
-
-If your curve is still 2D, you'll have to switch it to 3D mode to be able to apply rotation. Then you can switch it back to 2D.}}
-
 === Make the road usable ===
 
 Now, you need to be able to save the modifications from the array and curve modifiers, but still be able to edit the road. To do this, in object mode, select the road and apply the array modifier, then the curve modifier.
 
 === Correct misaligned ends ===
 
-Unless you're very lucky, your track probably won't have closed properly with a cyclic curve, and the ends probably overlap or don't quite connect. Now that you've applied the modifiers, it should be fairly easy to correct this in edit mode by deleting excess points and connecting other ones.
-
-=== Improving Gameplay ===
-
-It's important that your track be fun to drive. There are guidelines to help you with this at [[Making Tracks: Notes#Gameplay]]. Try adding banking to curves, and widen the track around curves and at the end of jumps. Things like this will make your track more enjoyable.
+Unless you're very lucky, your track probably won't have closed properly with a cyclic curve, and the ends probably overlap or doesn't quite connect. Now that you've applied the modifiers, it should be fairly easy to correct this in edit mode by deleting excess points and connecting other ones.
 
 == Conclusion ==
 
 You've now put at least part of your ideas into Blender. In the next module, you'll learn how to make the track drivable in STK.
-
-{{ArtPortalNav}}
