@@ -1,26 +1,20 @@
-This article details the way things are in the SuperTuxKart Universe (known as the Mascot Kingdom). It is important to make sure that your artwork fits into this universe—if it doesn't, it will not become part of SuperTuxKart, though it is still welcome on the [http://addons.supertuxkart.net Add-Ons Website].
-
-However, '''SuperTuxKart is NOT an RPG'''. SuperTuxKart has ''narrative'', not plot. (Well, there's the cutscenes in Story Mode, but that's all.) Each track, arena, or kart has a sort-of background, but that does not really appear prominently in the game. It's analogous to a picture and a video: things in SuperTuxKart are like pictures—there's no plot, but you can still see what's happening. An RPG is more like a video—things change, and there's a plot.
+This article details the way things are in the SuperTuxKart Universe (known as the Mascot Kingdom). It is important to make sure that your artwork fits into this universe—if it doesn't, it will not become part of SuperTuxKart, though it is still welcome on the [https://addons.supertuxkart.net Add-Ons Website].
 
 Note that this article does '''not''' describe restrictions on specific elements of artwork. Instead, it describes characters, places, and other entities which make the Mascot Kingdom come to life. For restrictions on specific types of artwork, see their corresponding links on the [[Art Portal]].
 
 == Introduction to the Universe ==
 
-The Mascot Kingdom is very similar to our own universe. Plants, animals, weather, etc. are all similar to Earth, except for certain exceptions such as the XR591 track, which is located on the SuperTuxKart equivalent of Mars, and STK Enterprise, which is located in a spaceship.
+The Mascot Kingdom is very similar to our own. Plants, animals, weather, etc. are all similar to Earth, except for certain exceptions such as the XR591 track, which is located on the SuperTuxKart equivalent of Mars, and STK Enterprise, which is located in a spaceship.
 
 Similarity to Earth, however, should ''not'' be taken to mean "mirror Earth as closely as possible." Instead, use real elements from Earth and use them as inspiration to ''interpret'' how they would appear in the Mascot Kingdom. If you find this difficult to understand, don't worry. As you read this article, you will see numerous examples of how this takes place.
 
 == The Mood ==
 
-SuperTuxKart is a lighthearted game, and thus any artwork should be generally cheerful and friendly. It's important to keep in mind that SuperTuxKart's intended audience is children. Children often don't notice satire, so you cannot rely on satire to lighten gloomy artwork.
+SuperTuxKart is a lighthearted game, and thus any artwork should be cheerful and friendly. It's important to keep in mind that SuperTuxKart's intended audience is children. Children often don't notice satire, so you cannot rely on satire to lighten gloomy artwork.
 
-Tracks and karts can be spooky-themed, however. Fort Magma is an excellent example of this. However, note that it includes both light areas (like the hall directly behind the start line) and dark areas (the rest of the track). The track is also unrealistic and caricatural enough to not appear grim, and open areas prevent it from feeling oppressive.
+Tracks and karts can be dark, however. Fort Magma is an excellent example of this. However, note that it includes both light ares (like the hall directly behind the start line) and dark areas (the rest of the track). The track is also unrealistic enough to not appear grim, and open areas prevent it from feeling oppressive.
 
 == Places ==
-
-<gallery widths=1024px heights=512px mode="packed">
-File:Stkflag_worldMap_a.png
-</gallery>
 
 Places are fictional locations which affect the style of artwork. Many of these are heavily influenced by real-world places, but you will see that they are not exactly the same. They are ''interpretations'' of real-world places. They are also not equivalent to a track, because a track takes place in a fictional location, and is yet another ''interpretation'' of that location.
 
@@ -38,7 +32,7 @@ Keep in mind that these are ''interpretations'' of real-world locations. (Many a
 * '''Asienti:''' A continent very much like Asia
 * '''Alantropic Ocean:''' A large ocean
 * '''XR591:''' A planet similar to Mars, but with aliens and pools of noxious chemicals
-* '''(Name still needed):''' A planet very similar to Venus, filled with volcanoes and magma. This is where Nolok lives.
+* '''(Name still needed):''' A planet very similar to Mars, filled with volcanos and magma. This is where Nolok lives.
 
 === Specific Locations ===
 
@@ -61,11 +55,9 @@ These are places in which tracks can exist. There might be more than one of thes
 ** '''Example Track:''' Hacienda
 * '''(Name still needed):''' A lush yet non-tropical valley in Europa, part of the Alpalaya mountain chain. Also the location of the village of Berglidorf and Princess Sara's Palace
 ** '''Example Track:''' Green Valley
-* '''Malampoor:''' A warm and highly populated southeastern Asientian city-state
+* '''Malampoor:''' A warm and highly populated Asientian city-state
 * '''Malao:''' A modern metropolis in southwestern Asienti, analogous to real-world Dubai
-** '''Example Track:''' Shiny Suburbs (?)
-* '''Shakura:''' An island country like Japan
-** '''Example Track:''' Zen Garden
+** '''Example Track:''' Shiney Suburbs (?)
 * '''Dizzy World Amusement Park:''' An steampunk-style amusement park above the clouds
 * '''Princess Sara Transcontinental Airport:''' An international airport located in the Gran Paradiso Islands
 
@@ -101,106 +93,8 @@ These characters are generally on the "good" side, but have no specified role in
 
 These organizations and companies should be used to brand objects in your artwork. For example, a laptop should have the Wegacom or Myrtille logo on it.
 
-{| class="wikitable"
-!Name
-!Description
-!Logo
-|-
-! colspan="3" |Technology
-|-
-|Wegacom Corporation
-|A computer and smartphone manufacturer
-|<gallery mode="packed">File:Supertuxkart-0.9-screenshot-3.jpg</gallery>
-|-
-|Myrtille
-|A high tech smartphone/tablet/notebook manufacturer
-|
-|-
-|Vaalbara
-|A telecommunication & networking company
-|
-|-
-! colspan="3" |Heavy Industry
-|-
-|Mandarava Motors
-|Automobile manufacturer
-|<gallery mode="packed">File:Stkflag_mandaravaMotors_a.png</gallery>
-|-
-|Nolok Industries
-|Company of Nolok, the bad guy, producing mechanical parts and explosives
-|
-|-
-! colspan="3" |Transport
-|-
-|Canyon Junction Railway Corporation
-|Railroad freight company
-|<gallery mode="packed">File:Stkflag_canyonJunctionRailway_a.png</gallery>
-|-
-|TCP (Trans Continental Post)
-|global courier delivery services company
-|<gallery mode="packed>File:Stkflag_transContPostAD_a.png</gallery>
-|-
-|OCA (Oceanic Airlines)
-|A low cost airline carrier known for their poor attention to safety (primarily after the mysterious crash of flight 404)
-|<gallery mode="packed">File:Stkflag_oceanicAirlinesAD_a.png</gallery>
-|-
-|RCA (Royal Cupcake Airways)
-|The flagship airline of the Mascot Kingdom
-|<gallery mode="packed">File:Stkflag_cupcakeAirwayLogo_a.png</gallery>
-|-
-|Harvey & Weylyn
-|A shipyard 
-|<gallery mode="packed">File:Stkflag_harveyWeylyn_a.jpg</gallery>
-|-
-|Sara Space Agency Organization 
-|The Kingdom space program
-|<gallery mode="packed">File:Stkflag_SSAO_a.jpg</gallery>
-|-
-! colspan="3" |Food and drink
-|-
-|Sunshine Cola
-|Soda and sweet juices
-|<gallery mode="packed">File:Stkflag_sunshineCola_a.jpg</gallery>
-|-
-|Big Farmer Co
-|A farming Co-Operative
-|
-|-
-! colspan="3" |Conglomerate
-|-
-|Tuxel
-|A multinational who is the official fuel distributor for kart racing
-|Oil and Energies
-|-
-|Nolok Industries
-|The company of the bad guy (Nolok)
-|
-|-
-|OPAC
-|A conglomerate which produces every product imaginable
-|
-|-
-! colspan="3" |Entertainment
-|-
-|WXTB-TV
-|A TV station located in Las Dunas
-|
-|-
-|Dizzy World
-|A steampunk amusement park that flies above the clouds
-|
-|-
-|Caldeira
-|Fashion and clothes
-|<gallery mode="packed">File:Stkflag_caldeiraFashion_a.jpg</gallery>
-|-
-|Lampone
-|Haute Couture
-|<gallery mode="packed>File:Stkflag_lamponeCouture_a.png</gallery>
-|}
+<!-- Table here -->
 
 == Other Notes About Style ==
 
 * The official unit of measurement is metric. All measurements on signs, etc. should be in metric.
-
-{{ArtPortalNav}}
