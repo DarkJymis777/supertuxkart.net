@@ -1,0 +1,63 @@
+''This page contains guidelines and information about track making that apply to multiple sections. Other sections may list their own guidelines for that specific topic.''
+
+== Blender ==
+
+Blender is currently used for all detailed and professional-grade tracks in SuperTuxKart. While Blender is very advanced, and actually fairly easy-to-use once you are used to it, it can be daunting for new users and a SuperTuxKart track is '''<u>not</u>''' a good place to start for those who have never used Blender. See the [[Blender resources page]] for tutorials.
+
+== Scaling ==
+
+It's important to know how sizes in Blender translate to STK. Here are some references:
+
+* A typical track (for example, Antediluvian Abyss) is about 12 Blender units wide at an average section.
+* Certain tracks have very wide sections. For example, the width of the road at the start of Cocoa Temple is ~18 Blender units.
+* Tracks like Blackhill Mansion (soon to be replaced by Ravenbridge Mansion) have certain sections (such as the path through the graveyard) that are as narrow as 8 units wide.
+* A palm tree is about 27 Blender units tall.
+
+== Polycount ==
+
+Polycount is the number of surfaces, or faces 3D objects have. Older versions of Blender only supported objects made of "quads" (quadrilaterals—polygons made of four points) and "tris" (triangles—polygons made of three points). "Poly" was generally taken to mean "number of quads." However, Blender now supports n-gons, or polygons with unlimited numbers of points, and only supplies numbers of surfaces and tris. Thus, since the number of tris can always be relied upon to stay the same (a triangle never gets more points!) it is more accurate to count tris than poly. Therefore, these guidelines refer to tris.
+
+=== A Bit of History ===
+
+In the old days of gaming it was impossible to compute perfect lights for all pixels. All intense computation was done for each poly and then interpolated to the pixels inside the poly.
+
+But nowadays modern engines like [[Antarctica: Overview|Antarctica]] use per-pixel lighting. Therefore, the most complex part isn't the vertex shader but the pixel shader. Let's take an example of an object that has ~500 polygons. For the GPU, managing a vertex is maybe ~10 instructions (it's not the exact number, just to give you an indication). For each poly of your model the computer will do ~10 instructions, so 500 * 10 = 5000 instructions for the entire mesh.
+
+Now, the pixel part. It depends on how many pixels will be taken up by your object, but let's go with the worst case scenario—let's assume the whole screen is filled with your object. For each pixel to compute (the light, the gloss, the normal map, etc), it will take ~50 instructions to the GPU.
+
+If you have a resolution of 800*600 (most people have higher resolution), 800 * 600 * 50 = 24000000 instructions. So even if you double the number of surfaces, you won't greatly affect the majority of the power spent. It's calculated by pixel, not by surface now.
+
+Thus, we can increase the polycount without too much trouble. However it's important to keep it under control.
+
+=== Measuring Polycount ===
+
+Blender displays polycount in the '''Info''' window/toolbar next to the rendering engine selector:
+
+[[File:Blender_screenshot_tris.png]]
+
+Look for the number of '''Tris'''. This is the information you need. Also, remember that the number of tris in the entire scene is only shown in object mode.
+
+=== Polycount Guidelines ===
+
+* The polycount for a track should be ~290000 tris. Cocoa Temple exceeds this limit at 295058 tris, but Cocoa Temple is an exceptionally large and complicated track. Your track should not exceed the limit unless '''''<u>ABSOLUTELY</u>''''' necessary. (In this case, "'''''<u>ABSOLUTELY</u>''''' necessary" means that your track is as detailed or more than Cocoa Temple, has the same or better quality, and is not unnecessarily wasting poly.) Most tracks will not even come close to this limit. Antediluvian Abyss, for example, uses 230810 tris, and Gran Paradiso Island uses 235411 tris.
+* Use an appropriate balance of high- and low-poly. Partially-covered objects and objects that are always seen from far away should be low poly.
+* Avoid unnecessary objects. Objects that cannot be seen or would not be noticed if they were missing should be avoided.
+
+=== Polycount Examples ===
+
+* A cargo plane: 1500 tris
+* A palm tree with Line of Distance
+** High: 800 tris
+** Medium: 400 tris
+** Low: 82 tris
+* A basic plant: 600 tris
+* A medium-sized tree: 1200 tris
+* A pumpkin: 255 tris
+
+<!-- Images here -->
+
+== About Including Your Track in Main ==
+
+The visual quality of SuperTuxKart has steadily improved from version to version. We thus have to say that unfortunately we can't accept everyone's contributions (but you may put them on the [https://addons.supertuxkart.net Add-On site]). Keeping the visual side improving is important to achieve a high-quality game. Therefore, in general only contributions from people with decent Blender experience will become part of the main game. If you are new to Blender, you are free (and even welcome) to try learning by making tracks; however it must be said right from the beginning that unless you learn very fast or have natural talent, your (first?) tracks will most likely not go in main. Note, however, that there is nothing preventing you from releasing your own add-ons on the forums or Add-On site, to share with others.
+
+Also be sure to read [[Communication]]. Following the guidelines there will help keep the community a happier and friendlier place.
