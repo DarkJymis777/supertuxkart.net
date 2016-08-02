@@ -4,7 +4,7 @@ SuperTuxKart will export both IPO and skeletal animation which you set in Blende
 
 Because it is a lot of work for the physics engine to calculate collisions between two moving objects, you must set the "Shape" property in the SuperTuxKart Object Properties panel, either for each decoration or for an LOD Instance. This is the shape used for the physics engine, and will not be visible, but it should make sense. For example, a train should have a "Box" shape, but a ball should have the "sphere" shape. The "Cone" shape is pointy-side up in the physics engine.
 
-=== About Skeletal Animation ===
+== About Skeletal Animation ==
 
 A few considerations need to be taken into account for skeletal animation, so that your objects export correctly:
 
