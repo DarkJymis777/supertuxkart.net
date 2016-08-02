@@ -1,0 +1,74 @@
+== Special Effects ==
+
+Though not strictly necessary, special effects make your track more dynamic and interesting. SuperTuxKart supports many types of special visual and auditory effects.
+
+=== Particles ===
+
+Particles are used to add things to the air like dust or smoke or fire. They are configured via an XML file. If you intend to add particles, see the [[Particles File]] page to create a particles file (or reuse an existing one), then continue with this tutorial.
+
+==== Particle Emitters ====
+
+Particle emitters are empty Blender objects with their type set to "Particle Emitter" in the SuperTuxKart Object Properties panel. Simply set the "Particle File" field to the name of your particle file, modify the clip distance (if you need to) for performance reasons, and make sure that "Enable emission" is checked. You can uncheck "Enable emission" if you intend to dynamically enable and disable it with scripting.
+
+==== Particles From Driving Karts ====
+
+You can set particles to be emitted whenever a kart drives and/or skids on a certain texture. To enable this, select the image you will use in the SuperTuxKart Image Properties panel (If you wanted particles to be emitted whenever the player drives off the road, you  would want to select the image that is used to texture the sides of the road.) and check the "Particle effect" box. Set the "Particles file" property to the name of a particle file, and check the "Skid" and/or "Drive" boxes to enable the particle effect for driving and/or skidding karts.
+
+=== Particles On Collision ===
+
+You can also set particles to be emitted when a kart collides with a textured object. Select the texture in the SuperTuxKart Image Properties panel, and, under "Interaction" enable "Collision action". Enter the filename of your particle file in the "Particles on hit" field.
+
+=== Sounds ===
+
+You can add ambient sounds to your track to make it more interesting. Sound files must be in Ogg Vorbis format (.ogg). See [[Music and sound effects general specifications]] for more information on what the style of the sound should be like.
+
+==== Sound Emitters ====
+
+Create an empty Blender object and set its type to "Sound Emitter" in the SuperTuxKart Object Properties panel. Enter the name of your sound file in the "Sound File" field. The following properties are configurable:
+
+* '''Sound volume:''' The volume of the sound: 0 is silent, 1 is full volume.
+* '''Rolloff rate:''' How quickly the sound loses volume as distance from the camera increases
+* '''Maximum distance:''' The distance at which the sound is no longer audible
+* '''Play on approach:''' Makes the sound begin playing when the player approaches the sound emitter. Otherwise, the sound plays constantly unless acted upon by scripting.
+** '''Play when at distance:''' Configurable if "Play on approach" is checked. It is the distance, in Blender units, from the sound emitter at which a kart triggers the sound to play.
+
+<!-- What does "Sound conditions" do? Does it hook into scripting? -->
+
+==== Sounds From Driving Karts ====
+
+You can set a sound effect to be played when a kart is driving on a particular texture. Select the image you want to use in the SuperTuxKart Image Properties panel, and check the "Play sound effect" box. Enter the name of your sound file in the "Sound File" field. The following properties are configurable:
+
+* '''Minimum kart speed:''' The minimum speed at which the sound will play
+* '''Maximum kart speed:''' The maximum speed at which the sound will play
+* '''Sound pitch at min speed:''' The adjustment to the pitch made at minimum speed— numbers less than 1 lower the pitch, while numbers greater than 1 increase the pitch.
+* '''Sound pitch at max speed:''' The adjustment to the pitch made at maximum speed— numbers less than 1 lower the pitch, while numbers greater than 1 increase the pitch.
+* '''Positional sound effect:''' If checked, the sound will decrease in volume as distance increases.
+* '''Rolloff rate:''' The rate at which volume decreases as distance increases
+
+=== Billboards ===
+
+Billboards are flat quads which always face the player. Orient the quad along X or Z axis and set the type to "Billboard" in the SuperTuxKart Object Properties panel. This can be used to make a fake halo around lights. (However, this is no longer necessary for point lights with fog enabled in SuperTuxKart ≥ 0.9.)
+
+You can also enable the "Fade out when close" option in the SuperTuxKart Object Properties panel to make the billboard fade away as the kart approaches.
+
+=== Animated Textures ===
+
+Any objects that are part of the main track (i.e. no other special object listed here except objects of type "object") can mark one texture to be animated. The object must define the filename of the texture in the property texture to animate, and should set the speed of movement by setting the "Animation X Speed" and/or "Animation Y Speed" properties. See the following example:
+
+<gallery widths=640px heights=360px mode="packed>
+File:Stk_animTexture.jpg
+</gallery>
+
+This can be used to simulate liquids flowing like water in a river. For an example, see the animated fish in Antediluvian Abyss. The .blend is in the 20_ancestral_abyss folder in the in the tracks folder of the media repository.
+
+You can also use a "movie" texture like this one, for complex effects (fire, clouds, etc). You need to enable "Anim the texture by step". "Animation Y Speed" becomes the number of frames in the texture (in this example 4). The "time between two frames" property is the amount of time, in milliseconds, between frames.
+
+<gallery mode="packed">
+File:Stktex_animatedFire_a.png
+</gallery>
+
+You should not use a large number of frames, otherwise you might experience performance issues.
+
+== Per-Object Glow ==
+
+Objects with the type "Object", "LOD Instance", or "LOD Standalone" in the SuperTuxKart Object Properties panel can set a
