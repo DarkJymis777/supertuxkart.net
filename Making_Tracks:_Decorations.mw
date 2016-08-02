@@ -34,6 +34,8 @@ To use a model from the media repository, in Blender, in the Info window, go to 
 
 When you duplicate a library object in your scene, be sure to use Alt + D (link duplicate) rather than Shift + D (actual duplicate). If you use an actual duplicate, the object will no longer be linked to the library.
 
+{{Popup-warning|content=If your decorations are of high quality, you may want to consider separating them from your track and contributing them as library nodes. See the [[Making Library Nodes]] page for more information.]]
+
 === Editing Decorations from the Media Repository ===
 
 Usually, objects from the media repo are good enough and can be scaled, rotated, or repositioned to fit as you need. However, if necessary, you can use File > Append instead of File > Link in the instructions above to actually import the object into your scene. This is not recommended, but you may do this under certain circumstances, if the edits you plan to make could not be put in the media repo itself.
