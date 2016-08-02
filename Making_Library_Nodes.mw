@@ -14,6 +14,7 @@ Library nodes are Blender objects which can be linked to in tracks and arenas. T
 * [[Making Library Nodes: Notes|Notes]]
 * [[Making Library Nodes: Modeling|Modeling]]
 * [[Animating Decorations]]
+* [[Level of Detail]]
 * [[Texture|Texturing]]
 * [[Material|Materials]]
 * [[Making Library Nodes: Testing|Testing]]
