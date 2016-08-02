@@ -1,0 +1,13 @@
+SuperTuxKart will export both IPO and skeletal animation which you set in Blender. However, objects with either type of animation must have their type set to "Object" or "LOD Model" (if you are using LOD) in the SuperTuxKart Object Properties panel.
+
+{{Popup-warning|content=To make your animation loop continuously, be sure to add a cyclic modifier to the animated curves in the Graph Editor!}}
+
+Because it is a lot of work for the physics engine to calculate collisions between two moving objects, you must set the "Shape" property in the SuperTuxKart Object Properties panel, either for each decoration or for an LOD Instance. This is the shape used for the physics engine, and will not be visible, but it should make sense. For example, a train should have a "Box" shape, but a ball should have the "sphere" shape. The "Cone" shape is pointy-side up in the physics engine.
+
+=== About Skeletal Animation ===
+
+A few considerations need to be taken into account for skeletal animation, so that your objects export correctly:
+
+* When preparing the mesh and armature make sure they both have a rotation of (0,0,0) to avoid problems (after the rigging is done, though, you can move the object around. Just make sure the "rest position" of both of them is non-rotated).
+* If you need to fix an already rigged model, it's not too late, you can do the following: reset the rotation on the armature to (0,0,0), unparent the mesh from the armature (select "Keep transformation"), invoke apply rotation on the mesh (Ctrl+A), and reparent the mesh and armature. Then you can rotate the armature again.
+* At this time, a mesh and its armature need to have their centers at the same point.
