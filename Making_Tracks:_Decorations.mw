@@ -24,7 +24,7 @@ You may put decorations directly on the track if you wish, as with the crates of
 
 If you have one decoration that is used multiple times throughout your track and it is not from the media repository, you can save space by making it a separate object. In the SuperTuxKart Object Properties panel for each of the objects, set its type to "Object" and set the the "Name" property to the same name for each of the duplicates.
 
-If you are using LOD for your duplicated objects (see below), you do not have to worry about this.
+If you are using LOD for your duplicated objects (see the [[Level of Detail]] module), you do not have to worry about this.
 
 == Decorations from the Media Repository ==
 
