@@ -24,9 +24,17 @@ Many textures in the media repository are also configured to be magnet sections.
 
 == Reset (Rescue) Player ==
 
-You can set a texture to reset the player whenever the player drives on it. To do so, select the texture in the SuperTuxKart Image Properties panel, and, under "Interaction", check the "Reset kart (on drive)" box.
+Resetting the player returns him or her to the track. Players who fall into the abyss will be automatically rescued, but to make the track more enjoyable, be sure to have some system for resetting players who go far off the track. However, do not immediately rescue any kart that goes off the road. Use other methods, like a slowdown effect, to keep players on the road.
 
-Note, however, that you should not use this for any texture that is not the main road. You should use other methods, like a slowdown effect (see below) to encourage players to drive on the road.
+=== On Drive ===
+
+You can set a texture to reset the player whenever the player drives on it. To do so, select a texture in the SuperTuxKart Image Properties panel, and, under "Interaction", check the "Reset kart (on drive)" box.
+
+=== On Collision (Per-Texture) ===
+
+Select a texture in the SuperTuxKart Image Properties panel, and, under "Interaction", check the "Collision action" checkbox. In the "Action" menu, select "Rescue kart".
+
+{{Popup-warning|content=Rescuing the player upon collision with an object is discussed in the [[#Kart-Object Interaction|Kart-Object Interaction]] section below.}}
 
 == Traction and Friction ==
 
@@ -45,3 +53,17 @@ To enable normals smoothing, check the "Smooth Normals" box in the SuperTuxKart 
 == Kart-Object Interaction ==
 
 Making objects interactive makes your track more interesting. Some things are only possible with scripting, which is covered in a future module, but for basic interaction a few actions can be easily set.
+
+Select an object in Blender's 3D View window, then, in the SuperTuxKart Object Properties panel, give the object the type "Object", "LOD Instance", or "LOD Standalone" (depending on if you are using LOD for that object). The "Interaction" menu has several options:
+
+{{Popup-warning|content=All interaction types except for "Ghost" allow for configuring the '''Shape''' property. This is used for animated objects. (See [[Animating Decorations]])}}
+
+* '''Ghost:''' The object is visible, but karts drive through it as if it does not exist. This can be applied to many objects to reduce load on the physics engine.
+* '''Static (won't move):''' This is the default option. The object cannot be moved by karts.
+* '''Movable by player:''' Karts can push this object around; ideal for road cones or balls. However, they may NOT have IPO animation (it wouldn't make sense anyway). This also creates a new option:
+** '''Mass (kg):''' The heavier an object is, the harder it will be for a kart to push it. A medium-weight kart is 225 kg. The beach balls in Gran Paradiso Island are an unrealistic 5 kg.
+* '''Reset player:''' The kart will be reset back to the track upon collision with this object.
+* '''Knock player:''' The kart will be thrown into the air upon collision with this object, like being hit with a bowling ball.
+* '''Flatten player:''' The kart will be flattened, like being hit with a fly swatter.
+
+The Object type also features an interaction option which LOD Instance and LOD Standalone lack: "Physics only". This is the opposite of "Ghost"—the object will be invisible, but can still be collided with by karts.
