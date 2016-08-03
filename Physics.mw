@@ -1,0 +1,43 @@
+In SuperTuxKart, most modifications to standard physics are controlled per-texture. Textures in the media repository are already configured for physics via <code>materials.xml</code> in the <code>textures</code> folder of the <code>stk-assets</code> repository. See the [[Materials xml]] page for information on understanding the file.
+
+{{Popup-warning|content=Any textures in the <code>gfx</code> folder in the <code>textures</code> folder of the media repository with the suffix "AlphaTest" or "AlphaTested" will not appear in-game. For more information, see the [[Media Repo]] page.}}
+
+== Zippers (Speed Booosters) ==
+
+If you have your own texture for zippers, or you will be using a texture from the media repository that is not configured as a zipper, you can use <code>gfx_booster_AlphaTest.png</code> as a texture wherever you want a zipper.
+
+{{Popup-warning|content=A favorite method of our lead artist, Jean-Manuel Clémençon, is to use a a checkerboard texture from the <code>textures/flags</code> folder of the media repository, in conjunction with an arrow texture from the same folder to denote a zipper. <code>gfx_booster_AlphaTest.png</code> serves as the actual zipper texture, in a section of the mesh slightly above the checkered texture. The arrow texture is also in a section of the mesh slightly above the checkerboard. Usually, he makes the arrow texture animated and adds point lights above the booster, too.}}
+
+You can also use your own textures for zippers, by selecting your texture in the SuperTuxKart Image Properties panel, and, under "Interaction", checking the box "Zipper (speed boost)". This allows you to modify the following options:
+
+* '''Zipper duration:''' The time, in seconds, that the speed boost will last. If this value is negative, the kart-specific value will be used.
+* '''Zipper max speed increase:''' Additional speed allowed on top of the kart-specific maximum kart speed if a zipper is used. If this value is negative, the kart-specific value will be used.
+* '''Zipper fade out time:''' The time it takes for a kart to slow down to normal top speed after using a zipper. If this value is negative, the kart-specific value will be used.
+* '''Zipper speed gain:''' A one time additional speed gain—the kart will instantly add this amount of speed to its current speed. If this value is negative, the kart-specific value will be used.
+* '''Zipper minimum speed:''' Set a minimum speed for karts launched from the zipper (e.g. for jumps). If this value is negative, no minimum speed will be set.
+
+== Magnet Sections ==
+
+Magnet sections allow karts to drive on any surface, no matter what its orientation. This allows karts to drive on walls, roofs, etc. Magnet sections are controlled per-texture, so simply select the texture used on the angled or upside-down part of your track in the SuperTuxKart Image Properties panel, and, under "Interaction", check the "Affec gravity" box.
+
+Many textures in the media repository are also configured to be magnet sections. Check the [[Materials xml|Materials.xml]] file in the <code>textures</code> folder of the <code>stk-assets</code> repository.
+
+== Reset (Rescue) Player ==
+
+You can set a texture to reset the player whenever the player drives on it. To do so, select the texture in the SuperTuxKart Image Properties panel, and, under "Interaction", check the "Reset kart (on drive)" box.
+
+Note, however, that you should not use this for any texture that is not the main road. You should use other methods, like a slowdown effect (see below) to encourage players to drive on the road.
+
+== Traction and Friction ==
+
+Select any texture in the SuperTuxKart Image Properties panel, and under "Interaction", check any of the following boxes:
+
+* '''Enable Slowdown:''' Slow down any karts that drive on this texture; useful for textures that are off the main road
+* '''High tires adhesion:''' Give karts extra grip on this texture
+* '''Ignore (ghost material):''' The texture is still visible, but karts can drive through it as if it doesn't exist
+
+== Normals Smoothing ==
+
+Normals smoothing allows for smoother driving by interpolating ''normals,'' imaginary lines perpendicular to surfaces. This allows for tracks to be smoother in the physics engine without increasing polycount for the track in the graphical engine. However, because normals have to be interpolated, this can cause problems when the object being driven on is not separate from the walls. You should use it with caution.
+
+To enable normals smoothing, check the "Smooth Normals" box in the SuperTuxKart Scene Properties panel.
