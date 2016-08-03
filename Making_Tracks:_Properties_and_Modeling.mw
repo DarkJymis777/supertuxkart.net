@@ -41,6 +41,8 @@ Now, select the curve and switch to edit mode. You can adjust the handles on eac
 
 Now, still in edit mode on the curve, in the 3D View window, go to Curve > Toggle Cyclic. Your road will now be a single loop.
 
+{{Popup-warning|content=The segment and curve objects generally do not like to have scale/rotation on them. This means you should only ever scale the curve in edit mode, never in object mode. (If you already scaled them, don't worry you're not screwed up! Select both the curve and the model segment, then press Ctrl+A and select "Rotation & Scale"; then you will probably need to go in the edit mode of the curve, select all vertices, and tweak the radius property in the "N" panel, or simply select "Object Data" in the standard properties panel. and toggle off "Radius")}}
+
 === Make the road usable ===
 
 Now, you need to be able to save the modifications from the array and curve modifiers, but still be able to edit the road. To do this, in object mode, select the road and apply the array modifier, then the curve modifier.
