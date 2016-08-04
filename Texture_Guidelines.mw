@@ -36,6 +36,7 @@ File:Bad-text-border-blender.jpg
 
 * Dimensions of images should be powers of two. A standard-size generic texture, for example, is 1024 × 1024, or 2<sup>10</sup> × 2<sup>10</sup>.
 * Do not use large textures for small objects—this wastes video RAM.
+* Texture files '''must''' be placed in the same folder as your exported object.
 * Textures should be in PNG format when
 ** The texture will be used in an up-close object requiring high detail
 ** The object contains transparent or partially-transparent parts
