@@ -4,7 +4,7 @@ Having good textures is perhaps one of the most important things when creating 3
 
 Textures in SuperTuxKart are hand-drawn or painted, not just photos (though you may use photos for reference). Of course, this does not mean you need physical paints—you can use a digital painting application like Krita. Other applications are also listed at the [[Installing Tools]] page.
 
-Textures are also not completely fake, cartoon-y looking. Feel free to add plenty of detail, as long as you use only hand painting.
+Textures are also not completely fake, cartoon-y looking. Feel free to add plenty of detail, as long as you use only hand painting. For more information on creating textures, see [[Making Textures]]
 
 == Color and Lighting ==
 
@@ -17,6 +17,20 @@ Textures should be drawn as if ambient color and light in the picture were neutr
 There should be no immediately visible pattern to the texture. Obvious patterns make the track or kart look silly. Here is an example of what '''not''' to do:
 
 [[File:File-Repeating_texture.jpg]]
+
+Another problem appears, however, with textures that completely lack a pattern. This is a major reason for avoiding using photographs as textures:
+
+<gallery widths=640px heights=200px mode="packed">
+File:Bad-text-border-notmatching.jpg
+File:Bad-text-border-notmatching-blender.jpg
+</gallery>
+
+Notice that texturing in Blender creates an ugly tiling pattern, despite the texture itself having no pattern. By removing some of the detail, however, and smoothing edges, you can get a much better result, though still not perfect:
+
+<gallery widths=640px heights=200px mode="packed">
+File:Bad-text-border.jpg
+File:Bad-text-border-blender.jpg
+</gallery>
 
 == Technical Restrictions ==
 
