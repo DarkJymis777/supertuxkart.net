@@ -1,6 +1,4 @@
-Texturing is the process of applying images to 3D objects so that they appear more realistic. Use UV texturing in Blender for your objects for them to appear in-game, but '''don't waste time with Blender materials or cycles materials.''' They don't get exported into the game—instead, use SuperTuxKart's own materials system. More information can be found on the [[Materials]] page.
-
-In fact, don't even bother with the Texture section of Blender's Properties window. Simply applying a UV map is enough.
+Texturing is the process of applying images to 3D objects so that they appear more realistic. Use UV texturing in Blender for your objects for them to appear in-game, but '''don't waste time with Blender materials or cycles materials.''' They don't get exported into the game—instead, use SuperTuxKart's own materials system. More information can be found on the [[Material]] page.
 
 == Sources of Textures ==
 
@@ -10,7 +8,7 @@ The SuperTuxKart [[Media Repo|media repository]] should be the first place you l
 
 Don't like the default color of the textures? No problem! Just use vertex coloring (see below). Vertex color lets you paint different colors on an object so that you don't need a new texture. Gran Paradiso Island, for example, uses vertex color to make the sea floor greenish-blue, even though the original texture is a tan color rock texture.
 
-{{Popup-warning|content=Make sure you're using the actual texture, not the gloss or normal map. Gloss maps are denoted by a filename ending with <code>gloss</code>, while normal maps are denoted by a filename ending with <code>nm</code>.}}
+{{Popup-warning|content=Make sure you're using the actual texture, not the gloss or normal map. Gloss maps are denoted by a filename ending with <code>gloss</code>, while normal maps are denoted with a filename ending with <code>nm</code>.}}
 
 === Free Online Sources ===
 
@@ -22,18 +20,4 @@ Making your own textures gives you the most freedom to customize your textures. 
 
 == Vertex Coloring ==
 
-Vertex coloring lets you modify the color of objects by vertex. The coloring is then applied on top of any textures. (This is why we require most textures included in the game to be of a semi-neutral color.) Vertex color is extremely efficient in terms of processing, and is a much better option in most cases than using a separate texture for gradients or using splatting. A short tutorial follows below, since (surprisingly) very few tutorials are available on the internet. (A good video tutorial is available [https://youtu.be/Ivb45iA5QT8 here], however the first part about materials is not relevant for STK.)
-
-=== Getting started ===
-
-Select the object you want to color. In the Properties window, under "Data", click the plus button next to the box under "Vertex Colors". Now, in the 3D View window header, switch to "Vertex Paint" mode (rather than Object or Edit modes). Several new options will appear in the toolshelf at the left of the 3D View window.
-
-=== Painting ===
-
-Choose a color with the color picker at the left, adjust the radius (size) of the brush, change the strength if you want to, and choose a blending mode ("Mix" is the default). Then, left-click on vertices to color them. You'll notice that you can't paint in the middle of a face. That's because vertex coloring works per-vertex—you can't assign colors to the middle of a face, because there's no vertex to assign it to. It's one of the limitations of vertex coloring, and you may have to work around it by using subdivision (shortcut: w > Subdivide) on a face.
-
-=== Viewing your work in Object Mode ===
-
-To make your painting visible in Object Mode when not in Textured view, enable "Textured Solid" under "Shading" in the 3D View window properties panel (shortcut: n).
-
-{{ArtPortalNav}}
+Vertex coloring lets you modify the color of objects by vertex. The coloring is then applied on top of any textures. (This is why we require most textures included in the game to be of a semi-neutral color.) Vertex color is extremely efficient in terms of processing, and is a much better option in most cases than using a separate texture for gradients or using splatting. A short tutorial follows below, since (surprisingly) very few tutorials are available on the internet.
