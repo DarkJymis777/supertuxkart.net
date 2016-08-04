@@ -1,0 +1,23 @@
+Texturing is the process of applying images to 3D objects so that they appear more realistic. Use UV texturing in Blender for your objects for them to appear in-game, but '''don't waste time with Blender materials or cycles materials.''' They don't get exported into the game—instead, use SuperTuxKart's own materials system. More information can be found on the [[Material]] page.
+
+== Sources of Textures ==
+
+=== The Media Repository ===
+
+The SuperTuxKart [[Media Repo|media repository]] should be the first place you look for textures. They're included in the game, so you don't have to distribute copies with your object and they use advanced graphical effects like gloss and normal maps to take advantage of all the features of SuperTuxKart's engine. They are in the <code>textures</code> folder.
+
+Don't like the default color of the textures? No problem! Just use vertex coloring (see below). Vertex color lets you paint different colors on an object so that you don't need a new texture. Gran Paradiso Island, for example, uses vertex color to make the sea floor greenish-blue, even though the original texture is a tan color rock texture.
+
+{{Popup-warning|content=Make sure you're using the actual texture, not the gloss or normal map. Gloss maps are denoted by a filename ending with <code>gloss</code>, while normal maps are denoted with a filename ending with <code>nm</code>.}}
+
+=== Free Online Sources ===
+
+There are many sources of free images that can be used as textures. Several are listed on the [[Reusable Artwork Resources]] page. Just be sure they fit the [[Texture Guidelines|texture guidelines]].
+
+=== Making Your Own Textures ===
+
+Making your own textures gives you the most freedom to customize your textures. However, it will take quite a bit of time. If you're interested, however, you can see the [[Making Textures]] page.
+
+== Vertex Coloring ==
+
+Vertex coloring lets you modify the color of objects by vertex. The coloring is then applied on top of any textures. (This is why we require most textures included in the game to be of a semi-neutral color.) Vertex color is extremely efficient in terms of processing, and is a much better option in most cases than using a separate texture for gradients or using splatting. A short tutorial follows below, since (surprisingly) very few tutorials are available on the internet.
