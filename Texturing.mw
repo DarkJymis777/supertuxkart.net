@@ -20,4 +20,12 @@ Making your own textures gives you the most freedom to customize your textures. 
 
 == Vertex Coloring ==
 
-Vertex coloring lets you modify the color of objects by vertex. The coloring is then applied on top of any textures. (This is why we require most textures included in the game to be of a semi-neutral color.) Vertex color is extremely efficient in terms of processing, and is a much better option in most cases than using a separate texture for gradients or using splatting. A short tutorial follows below, since (surprisingly) very few tutorials are available on the internet.
+Vertex coloring lets you modify the color of objects by vertex. The coloring is then applied on top of any textures. (This is why we require most textures included in the game to be of a semi-neutral color.) Vertex color is extremely efficient in terms of processing, and is a much better option in most cases than using a separate texture for gradients or using splatting. A short tutorial follows below, since (surprisingly) very few tutorials are available on the internet. (A good video tutorial is available [https://youtu.be/Ivb45iA5QT8 here], however the first part about materials is not relevant for STK.)
+
+=== Getting started ===
+
+Select the object you want to color. In the Properties window, under "Data", click the plus button next to the box under "Vertex Colors". Now, in the 3D View window header, switch to "Vertex Paint" mode (rather than Object or Edit modes). Several new options will appear in the toolshelf at the left of the 3D View window.
+
+=== Painting ===
+
+Choose a color with the color picker at the left, adjust the radius (size) of the brush,
