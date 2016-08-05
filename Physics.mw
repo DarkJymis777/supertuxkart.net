@@ -66,4 +66,4 @@ Select an object in Blender's 3D View window, then, in the SuperTuxKart Object P
 * '''Knock player:''' The kart will be thrown into the air upon collision with this object, like being hit with a bowling ball.
 * '''Flatten player:''' The kart will be flattened, like being hit with a fly swatter.
 
-The Object type also features an interaction option which LOD Instance and LOD Standalone lack: "Physics only". This is the opposite of "Ghost"—the object will be invisible, but can still be collided with by karts.
+The Object type also features an interaction option which LOD Instance and LOD Standalone lack: '''"Physics only"'''. This is the opposite of "Ghost"—the object will be invisible, but can still be collided with by karts.
