@@ -1,4 +1,4 @@
-SuperTuxKart will export both IPO and skeletal animation which you set in Blender. However, objects with either type of animation must have their type set to "Object" or "LOD Model" (if you are using LOD) in the SuperTuxKart Object Properties panel.
+SuperTuxKart will export both IPO and skeletal animation which you set in Blender. However, objects with either type of animation must have their type set to "Object", "LOD Model" (if you are using LOD), or "LOD Standalone" in the SuperTuxKart Object Properties panel.
 
 {{Popup-warning|content=To make your animation loop continuously, be sure to add a cyclic modifier to the animated curves in the Graph Editor!}}
 
