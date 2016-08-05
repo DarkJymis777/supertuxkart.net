@@ -8,7 +8,7 @@ The SuperTuxKart [[Media Repo|media repository]] should be the first place you l
 
 Don't like the default color of the textures? No problem! Just use vertex coloring (see below). Vertex color lets you paint different colors on an object so that you don't need a new texture. Gran Paradiso Island, for example, uses vertex color to make the sea floor greenish-blue, even though the original texture is a tan color rock texture.
 
-{{Popup-warning|content=Make sure you're using the actual texture, not the gloss or normal map. Gloss maps are denoted by a filename ending with <code>gloss</code>, while normal maps are denoted with a filename ending with <code>nm</code>.}}
+{{Popup-warning|content=Make sure you're using the actual texture, not the gloss or normal map. Gloss maps are denoted by a filename ending with <code>gloss</code>, while normal maps are denoted by a filename ending with <code>nm</code>.}}
 
 === Free Online Sources ===
 
