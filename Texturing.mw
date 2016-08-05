@@ -28,4 +28,8 @@ Select the object you want to color. In the Properties window, under "Data", cli
 
 === Painting ===
 
-Choose a color with the color picker at the left, adjust the radius (size) of the brush,
+Choose a color with the color picker at the left, adjust the radius (size) of the brush, change the strength if you want to, and choose a blending mode ("Mix" is the default). Then, left-click on vertices to color them. You'll notice that you can't paint in the middle of a face. That's because vertex coloring works per-vertex—you can't assign colors to the middle of a face, because there's no vertex to assign it to. It's one of the limitations of vertex coloring, and you may have to work around it by using subdivision (shortcut: w > Subdivide) on a face.
+
+=== Viewing your work in Object Mode ===
+
+To make your painting visible in Object Mode, enable "Textured Solid" under "Shading" in the 3D View window properties panel (shortcut: n).
