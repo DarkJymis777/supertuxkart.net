@@ -18,7 +18,9 @@ Start with a quad plane, and delete only its face (preserving the vertices and e
 
 The start line of a track in SuperTuxKart is denoted by a gap between two disconnected quads, and "antennae" lines from the endpoints of the quad which will be the start line. A picture does a better job of explaining this:
 
-[[File:Driveline_start.png|800px]]
+<gallery widths=800px heights=372px mode="packed">
+File:Driveline_start.png
+</gallery>
 
 === Make the driveline active ===
 
