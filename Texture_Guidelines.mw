@@ -16,7 +16,9 @@ Textures should be drawn as if ambient color and light in the picture were neutr
 
 There should be no immediately visible pattern to the texture. Obvious patterns make the track or kart look silly. Here is an example of what '''not''' to do:
 
-[[File:File-Repeating_texture.jpg]]
+<gallery widths=640px heights=200px mode="packed">
+File:File-Repeating_texture.jpg
+</gallery>
 
 Another problem appears, however, with textures that completely lack a pattern. This is a major reason for avoiding using photographs as textures:
 
