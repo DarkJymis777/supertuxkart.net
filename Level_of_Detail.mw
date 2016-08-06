@@ -6,6 +6,8 @@ File:Lod_medium.png
 File:Lod_high.png
 </gallery>
 
+== For objects not from the media repository ==
+
 === Creating Models ===
 
 Create three models: one of high quality and a lot of faces, one of medium quality, and one of low quality. For example, a high quality palm tree has a trunk with many sides but the low quality palm tree's trunk is only two perpendicular planes. Be sure that the transition is not too noticeable.
@@ -19,3 +21,7 @@ To make your models appear in the game, create an object where you want your LOD
 === LOD Standalone ===
 
 If you do not have the time to make multiple models, you can use the LOD Standalone feature. Set your object to type "LOD Standalone" in the SuperTuxKart Object Properties panel, then set the visibility distance to the distance from the camera at which you want the object to become visible. You can also use the "Also export without modifiers" feature to export an LOD model without modifiers. This could be useful to reduce poly when using e.g. a bevel modifier.
+
+== Using LOD with library objects ==
+
+Some objects from the media repository are already configured for LOD. For those that are, simply link the object <code>stklib_*_*_main</code>. Don't link any other object (not main.001, etc.). Objects ending in <code>main</code> are the only ones configured as LOD ''instances''.
