@@ -8,48 +8,77 @@ The engine is based on a heavily modified version of irrlicht. If you want more 
 = Features =
 <div id="dev_contrib">
 == Dynamic Lighting ==
-[[File:Antartica_dynamiclight.jpg|center|800px]]
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_dynamiclight.jpg
+</gallery>
+
 All lights are dynamic. Artists can place an arbitrary number of them. There is no "hard limit" however for performance the engine use only the 8, 16 or 32 closest lights to the player + the sun.
 
 All lights can be animated if needed.
-== Exponential Shadow Maps ==
-[[File:Antartica_dynamicshadows.jpg|center|800px]]
 
-The sun cast automatically real time shadows to add more realism to the scene. You don't need precomputed [[lightmaps]] anymore.
+== Exponential Shadow Maps ==
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_dynamicshadows.jpg
+</gallery>
+
+The sun cast automatically real time shadows to add more realism to the scene. You don't need precomputed lightmaps anymore.
 
 == Realtime ambient occlusion ==
-[[File:Antartica_ssao.jpg|center|800px]]
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_ssao.jpg
+</gallery>
+
 Before / after
 
 Ambient occlusion is a shading technique to add darkness where objects and surface are close together, like cracks or corners.
 
 == Depth of field and Bokeh ==
-[[File:Antartica_dofbokeh.jpg|center|800px]]
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_dofbokeh.jpg
+</gallery>
 
 When objects and lights are out of focus they are slightly blurred. Light sources appear as little dots like in real camera when a strong light source is out of focus.
 More information about [https://en.wikipedia.org/wiki/Bokeh bokeh].
 
 == Bloom & lens flare ==
-[[File:Antartica_bloom.jpg|center|800px]]
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_bloom.jpg
+</gallery>
 
 Each strong light source will [https://en.wikipedia.org/wiki/Bloom_%28shader_effect%29 bloom] and produce [http://tvtropes.org/pmwiki/pmwiki.php/Main/LensFlare anamorphic lens flare].
+
 == Global illumination & Image based lighting==
-[[File:Antartica_ibl.jpg|center|800px]]
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_ibl.jpg
+</gallery>
+
 before/after
 
 The surrounding environment will affect itself. Global illumination will simulate light bouncing on surfaces and the sky texture is used to make the ambient light.
 
 == New solid material ==
-[[File:Antartica_material.jpg|center|800px]]
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_material.jpg
+</gallery>
 
 Solid objects have a new generic material that support Normal mapping, Specular map, Emit map and much more. You can easily make a glossy surface or a metallic object.
 
-==Volumetric Real time lights ==
-[[File:Antartica_volumetric.jpg|center|800px]]
+== Volumetric Real time lights ==
+
+<gallery widths=800px heights=427px mode="packed">
+File:Antartica_volumetric.jpg
+</gallery>
 
 If fog is enabled in the scene, it is lit by light sources. It allows you to give more depth to your scene.
 
-'''WARNING:''' Currently (supertuxkart 0.8.2) only point lights are supported. Cones still use the old billboard trick. However it's planned to support them later.
+'''WARNING:''' Currently (SuperTuxKart 0.9.2) only point lights are supported. Cones still use the old billboard trick. However it's planned to support them later.
 
 </div>
 [[Category:Antarctica]]
