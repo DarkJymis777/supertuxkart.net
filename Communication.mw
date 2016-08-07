@@ -12,9 +12,5 @@ Also, keep in mind that '''the developers only work on their free time.''' They 
 
 === When reporting a bug or crash in the game ===
 
-* First, check if it's already reported on [https://github.com/supertuxkart/stk-code/issues GitHub]. Be sure to check both "open" and "closed" bugs.
-* If the bug is closed, check the reasons for being closed. If it was fixed in a development version of STK, you may want to either wait for the next release or consider building from source (see the [[Community]] page). If it was resolved as invalid, but still is a problem, comment on the issue and see if something can be done.
-* If the bug is resolved "duplicate", find the duplicate bug and report any further information there.
-* If the bug is open, see if you can report any more information to the team.
-
-If you cannot find the same bug
+* First, check if it's already reported on [https://github.com/supertuxkart/stk-code/issues?q=is%3Aissue GitHub].
+* If the bug is open, see if you can report any more information to the team. Otherwise you probably have to wait for the next release for the fix to be included in the game.
