@@ -67,6 +67,16 @@ File:Stktex_animatedFire_a.png
 
 You should not use a large number of frames, otherwise you might experience performance issues.
 
-== Per-Object Glow ==
+== Per-Object Effects ==
 
-Objects with the type "Object", "LOD Instance", or "LOD Standalone" in the SuperTuxKart Object Properties panel can set a
+Although most effects are controlled by texture, objects with the type "Object", "LOD Instance", or "LOD Standalone" in the SuperTuxKart Object Properties panel can set a few special effects of their own. Note, however, that this requires setting the "Interaction" and "Shape" properties, which can cause problems if you're not careful. See [[Physics#Kart-Object_Interaction]].
+
+=== Glow ===
+
+A glowing outline can be set to appear around certain objects, such as a barrel of nuclear waste. Items use this, for example. Simply set a color using the color picker button for the "Glow (outline)" property in the SuperTuxKart Object Properties panel for your object.
+
+=== Distortion ===
+
+Distortion is an extremely useful effect in many places. It simulates looking through a wavy piece of glass, but can also be used in other places. It is used in Antediluvian Abyss to create a distortion effect when looking through the glass and in Cocoa Temple to simulate heat waves in the cocoa roaster part of the temple. Enable it by checking the "Refraction/reflection" box in the SuperTuxKart Object Properties panel for your object.
+
+Although this is a per-object effect and is independent of materials/textures used, the <code>textures/gfx</code> folder of the [[Media Repo|media repository]] includes a texture called <code>gfx_distord_AlphaTested.png</code> which you can use to flag objects as being used for distortion. Like all textures ending with "AlphaTested" in the <code>gfx</code> folder, it won't appear in-game. '''However, you still have to enable distortion in the SuperTuxKart Object Properties panel. <code>gfx_distord_AlphaTested.png</code> does not do anything special.'''
