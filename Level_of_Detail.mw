@@ -20,7 +20,7 @@ To make your models appear in the game, create an object where you want your LOD
 
 === LOD Standalone ===
 
-If you do not have the time to make multiple models, you can use the LOD Standalone feature. Set your object to type "LOD Standalone" in the SuperTuxKart Object Properties panel, then set the visibility distance to the distance from the camera at which you want the object to become visible. You can also use the "Also export without modifiers" feature to export an LOD model without modifiers. This could be useful to reduce poly when using e.g. a bevel modifier.
+If you do not have the time to make multiple models, you can use the LOD Standalone feature. This means that an object will simply disappear at a certain distance away. Set your object to type "LOD Standalone" in the SuperTuxKart Object Properties panel, then set the visibility distance to the distance from the camera at which you want the object to become visible. You can also use the "Also export without modifiers" feature to export an LOD model without modifiers. This could be useful to reduce poly when using e.g. a bevel modifier.
 
 == Using LOD with library objects ==
 
