@@ -56,7 +56,7 @@ Making objects interactive makes your track more interesting. Some things are on
 
 Select an object in Blender's 3D View window, then, in the SuperTuxKart Object Properties panel, give the object the type "Object", "LOD Instance", or "LOD Standalone" (depending on if you are using LOD for that object). The "Interaction" menu has several options:
 
-{{Popup-warning|content=All interaction types except for "Ghost" allow for configuring the '''Shape''' property. This is used for animated objects. (See [[Animating Decorations]])}}
+{{Popup-warning|content=All interaction types except for "Ghost" allow for configuring the '''Shape''' property. This is used for animated objects, but applies to all objects that are not exported as part of the main track. Choose a shape carefully or set "Interaction" to "Ghost", otherwise you might end up with invisible barriers in your track. (See [[Animating Decorations]])}}
 
 * '''Ghost:''' The object is visible, but karts drive through it as if it does not exist. This can be applied to many objects to reduce load on the physics engine.
 * '''Static (won't move):''' This is the default option. The object cannot be moved by karts.
