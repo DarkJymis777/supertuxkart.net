@@ -96,4 +96,4 @@ Set the "Start Sphere Radius" property so that the start spheres (where the the 
 
 === Suspend Camera Movement ===
 
-This effect is controlled per-texture. When a kart is over this texture, the camera will stop moving but still face the kart. This is most useful to emphasize a kart's fall into a pit or into water, which is why this is enabled by checking the "Falling Effect" box in the SuperTuxKart Image Properties panel. However, it might also be useful for e.g. a kart being shot by a cannon (See [[Making Tracks: Physics|Physics]]). This effect is already enabled if you are using <code>gfx_resetWaterSplash_AlphaTested.png</code> for water.
+This effect is controlled per-texture. When a kart is over this texture, the camera will stop moving but still face the kart. This is most useful to emphasize a kart's fall into a pit or into water, which is why this is enabled by checking the "Falling Effect" box in the SuperTuxKart Image Properties panel. However, it might also be useful for e.g. a kart being shot by a cannon (See [[Physics]]). This effect is already enabled if you are using <code>gfx_resetWaterSplash_AlphaTested.png</code> for water.
