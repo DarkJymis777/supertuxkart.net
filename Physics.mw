@@ -78,8 +78,8 @@ To make a cannon, first make a line with two points where you want the cannon to
 
 Give the second line the type "Cannon End" in the SuperTuxKart Object Properties panel. (Note: You do not need to give the Bézier curve a special object type.) Give the first line the type "Cannon Start". This opens up the following options in the SuperTuxKart Object Properties panel for the cannon start line:
 
-'''Flight end line:''' Use the drop-down menu to select the cannon end line you created above.
-'''Path:''' Use the drop-down menu to select the Bézier curve you created above.
-'''Speed:''' This is the speed of the kart. For long distances, make sure the kart travels quickly.
+* '''Flight end line:''' Use the drop-down menu to select the cannon end line you created above.
+* '''Path:''' Use the drop-down menu to select the Bézier curve you created above.
+* '''Speed:''' This is the speed of the kart. For long distances, make sure the kart travels quickly.
 
 {{Popup-warning|content=Make sure the driveline or navmesh includes the cannon start line and the flight path!}}
