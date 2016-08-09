@@ -7,7 +7,9 @@
 * [[Needed Objects]]
 }}
 
-Library nodes are Blender objects which can be linked to in tracks and arenas. The assets repository, which is shipped with the game, then contains the exported Blitz3D (B3D) format version of the library node, which is placed into the scene when the track or arena is loaded. Thus, tracks take up less space and objects can be easily reused in multiple tracks.
+Library nodes are Blender objects which can be linked to in tracks and arenas. The assets repository, which is shipped with the game, then contains the exported Blitz3D (B3D) format version of the library node, which is placed into the scene when the track or arena is loaded. Thus, tracks take up less space and objects can be easily reused in multiple tracks. You can help by making more objects to reduce the workload of track makers.
+
+{{Popup-warning|content=Due to the recent reorganization of artists' documentation, a few items covered in these articles might not be very relevant for library nodes. This is because many of the articles are now shared between the various tutorials.}}
 
 == Contents ==
 
