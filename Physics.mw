@@ -74,7 +74,7 @@ Cannons allow you to launch karts long distances without the unreliability of zi
 
 To make a cannon, first make a line with two points where you want the cannon to start. When a kart drives over this line, it will be shot by the cannon. Next make a Bézier curve with its beginning near the cannon start line, and its ending near where you want the karts to land. The karts will follow this path during their flight from the cannon. Finally, make another line with two points near the end of the Bézier curve. This is where the karts will actually end.
 
-{{Popup-warning|content=Try to make the start and end lines approximately perpendicular to the Bézier curve. This will result in a more smooth transition from driving to the cannon.}}
+{{Popup-warning|content=Try to make the start and end lines approximately perpendicular to the Bézier curve. This will result in a more smooth transition from driving to flight.}}
 
 Give the second line the type "Cannon End" in the SuperTuxKart Object Properties panel. (Note: You do not need to give the Bézier curve a special object type.) Give the first line the type "Cannon Start". This opens up the following options in the SuperTuxKart Object Properties panel for the cannon start line:
 
