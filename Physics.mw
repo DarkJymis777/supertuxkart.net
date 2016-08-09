@@ -67,3 +67,19 @@ Select an object in Blender's 3D View window, then, in the SuperTuxKart Object P
 * '''Flatten player:''' The kart will be flattened, like being hit with a fly swatter.
 
 The Object type also features an interaction option which LOD Instance and LOD Standalone lack: '''"Physics only"'''. This is the opposite of "Ghost"—the object will be invisible, but can still be collided with by karts.
+
+== Cannons ==
+
+Cannons allow you to launch karts long distances without the unreliability of zippers. It simulates being shot through a cannon.
+
+To make a cannon, first make a line with two points where you want the cannon to start. When a kart drives over this line, it will be shot by the cannon. Next make a Bézier curve with its beginning near the cannon start line, and its ending near where you want the karts to land. The karts will follow this path during their flight from the cannon. Finally, make another line with two points near the end of the Bézier curve. This is where the karts will actually end.
+
+{{Popup-warning|content=Try to make the start and end lines approximately perpendicular to the Bézier curve. This will result in a more smooth transition from driving to the cannon.}}
+
+Give the second line the type "Cannon End" in the SuperTuxKart Object Properties panel. (Note: You do not need to give the Bézier curve a special object type.) Give the first line the type "Cannon Start". This opens up the following options in the SuperTuxKart Object Properties panel for the cannon start line:
+
+'''Flight end line:''' Use the drop-down menu to select the cannon end line you created above.
+'''Path:''' Use the drop-down menu to select the Bézier curve you created above.
+'''Speed:''' This is the speed of the kart. For long distances, make sure the kart travels quickly.
+
+{{Popup-warning|content=Make sure the driveline or navmesh includes the cannon start line and the flight path!}}
