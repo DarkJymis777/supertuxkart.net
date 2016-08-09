@@ -6,7 +6,7 @@ In SuperTuxKart, most modifications to standard physics are controlled per-textu
 
 If you have your own texture for zippers, or you will be using a texture from the media repository that is not configured as a zipper, you can use <code>gfx_booster_AlphaTest.png</code> as a texture wherever you want a zipper.
 
-{{Popup-warning|content=A favorite method of our lead artist, Jean-Manuel Clémençon, is to use a a checkerboard texture from the <code>textures/flags</code> folder of the media repository, in conjunction with an arrow texture from the same folder to denote a zipper. <code>gfx_booster_AlphaTest.png</code> serves as the actual zipper texture, in a section of the mesh slightly above the checkered texture. The arrow texture is also in a section of the mesh slightly above the checkerboard. Usually, he makes the arrow texture animated and adds point lights above the booster, too.}}
+{{Popup-warning|content=A favorite method of our lead artist, Jean-Manuel Clémençon, is to use a a checkerboard texture from the <code>textures/flags</code> folder of the media repository, in conjunction with an arrow texture from the same folder to denote a zipper. <code>gfx_booster_AlphaTest.png</code> serves as the actual zipper texture, in a section of the mesh slightly above the checkered texture. The arrow texture is in a section of the mesh between the checkerboard and the zipper texture. Usually, he makes the arrow texture animated and adds point lights above the booster, too.}}
 
 You can also use your own textures for zippers, by selecting your texture in the SuperTuxKart Image Properties panel, and, under "Interaction", checking the box "Zipper (speed boost)". This allows you to modify the following options:
 
