@@ -1,0 +1,7 @@
+Materials are a method of making textures simulate real-life... materials. A texture on a flat surface can give you the look of, for example, leather, but it can't give you everything. What other properties does leather have? It's shiney, but not reflective, and slightly bumpy. All these effects and more are controlled by the material.
+
+It's important to note at this point that we are not referring to Blender or Cycles materials. These are ignored by SuperTuxKart. Instead, use our own materials system to apply materials to textures.
+
+{{Popup-warning|content=Several other features, including special effects and physics properties also piggyback on SuperTuxKart's materials system. These reside in the "Interaction" section of the SuperTuxKart Image Properties panel, and are discussed in other articles. This article only discusses the "Display" section.}}
+
+If you used textures from the media repository, you don't have to worry about materials. The materials are already configured in <code>materials.xml</code> in the <code>textures</code> folder of the <code>stk-assets</code> repository.
