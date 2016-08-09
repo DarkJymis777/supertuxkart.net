@@ -32,4 +32,4 @@ Choose a color with the color picker at the left, adjust the radius (size) of th
 
 === Viewing your work in Object Mode ===
 
-To make your painting visible in Object Mode, enable "Textured Solid" under "Shading" in the 3D View window properties panel (shortcut: n).
+To make your painting visible in Object Mode when not in Textured view, enable "Textured Solid" under "Shading" in the 3D View window properties panel (shortcut: n).
