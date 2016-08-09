@@ -80,3 +80,20 @@ A glowing outline can be set to appear around certain objects, such as a barrel 
 Distortion is an extremely useful effect in many places. It simulates looking through a wavy piece of glass, but can also be used in other places. It is used in Antediluvian Abyss to create a distortion effect when looking through the glass and in Cocoa Temple to simulate heat waves in the cocoa roaster part of the temple. Enable it by checking the "Refraction/reflection" box in the SuperTuxKart Object Properties panel for your object.
 
 Although this is a per-object effect and is independent of materials/textures used, the <code>textures/gfx</code> folder of the [[Media Repo|media repository]] includes a texture called <code>gfx_distord_AlphaTested.png</code> which you can use to flag objects as being used for distortion. Like all textures ending with "AlphaTested" in the <code>gfx</code> folder, it won't appear in-game. '''However, you still have to enable distortion in the SuperTuxKart Object Properties panel. <code>gfx_distord_AlphaTested.png</code> does not do anything special.'''
+
+== Special Camera Effects ==
+
+=== Alternate End Cameras ===
+
+Alternate end cameras allow you to show a different view at the end of the race. By default, the camera will face back on the player's kart at the end of the race. To show another view, place Blender cameras along the track, give them one of the types below in the SuperTuxKart Object Properties panel:
+
+* '''End Camera (Fixed):'''  At the end of the race, the nearest end camera will turn and zoom automatically to follow the kart.
+* '''End Camera (Look Ahead):''' The default end camera, used only if you want to switch between fixed and look-ahead modes.
+
+Set the "Start Sphere Radius" property so that the start spheres (where the the game will switch to another camera) overlap.
+
+{{Popup-warning|content=The "Cutscene Camera" object type is discussed in [[Making Tracks: Appendix B: Cutscenes|Appendix B: Cutscenes]].}}
+
+=== Suspend Camera Movement ===
+
+This effect is controlled per-texture. When a kart is over this texture, the camera will stop moving but still face the kart. This is most useful to emphasize a kart's fall into a pit or into water, which is why this is enabled by checking the "Falling Effect" box in the SuperTuxKart Image Properties panel. However, it might also be useful for e.g. a kart being shot by a cannon (See [[Making Tracks: Physics|Physics]]). This effect is already enabled if you are using <code>gfx_resetWaterSplash_AlphaTested.png</code> for water.
