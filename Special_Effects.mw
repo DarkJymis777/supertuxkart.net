@@ -92,7 +92,7 @@ Alternate end cameras allow you to show a different view at the end of the race.
 
 Set the "Start Sphere Radius" property so that the start spheres (where the the game will switch to another camera) overlap.
 
-{{Popup-warning|content=The "Cutscene Camera" object type is discussed in [[Making Tracks: Appendix B: Cutscenes|Appendix B: Cutscenes]].}}
+{{Popup-warning|content=The "Cutscene Camera" object type is discussed in [[Cutscenes|Appendix B: Cutscenes]].}}
 
 === Suspend Camera Movement ===
 
