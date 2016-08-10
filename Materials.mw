@@ -5,3 +5,27 @@ It's important to note at this point that we are not referring to Blender or Cyc
 {{Popup-warning|content=Several other features, including special effects and physics properties also piggyback on SuperTuxKart's materials system. These reside in the "Interaction" section of the SuperTuxKart Image Properties panel, and are discussed in other articles. This article only discusses the "Display" section.}}
 
 If you used textures from the media repository, you don't have to worry about materials. The materials are already configured in <code>materials.xml</code> in the <code>textures</code> folder of the <code>stk-assets</code> repository.
+
+Textures not from the media repository will have to be configured in the SuperTuxKart Image Properties panel. There are several options to configure.
+
+== Shader ==
+
+Shaders are little programs that control how things are rendered in the scene. They can do all sorts of things, so picking the right one is important. The shader is selected using the drop-down "Shader" menu in the "Display" section of the SuperTuxKart Image Properties panel.
+
+=== Generic (solid) Shader ===
+
+This shader is used for most textures. It supports a number of options to enhance the look of textures and is recommended for most special effects.
+
+==== Gloss Map ====
+
+The gloss map is what lets you simulate a shiny surface. However, there are multiple factors to shininess. To take these all into account, the red, green, and blue channels of the gloss map image each correspond to a separate part.
+
+* The red channel controls specularity. This is how much light reflects of the surface, or reflectivity. The greater the amount of red in the gloss map, the more light will be reflected.
+* The green channel controls diffusion. This is how much light is scattered. Less diffusion means a more mirror or chrome-like appearance. Perhaps counterintuitively, the greater amount of green in the gloss map, the less diffusion will occur.
+* The blue channel controls emission. The more blue present, the more the material will emit light. However, this light is only localized and does not brighten the surrounding area.
+
+<gallery mode="packed" widths="640px" heights="300px">
+File:Gloss_Map_Explanation.png
+</gallery>
+
+{{Popup-warning|content=If you have trouble with making your gloss map changes take effect in-game, try disabling texture compression in the game options.}}
