@@ -16,7 +16,7 @@ Shaders are little programs that control how things are rendered in the scene. T
 
 This shader is used for most textures. It supports a number of options to enhance the look of textures and is recommended for most special effects.
 
-<gallery mode="packed" widths="512" heights="512">
+<gallery mode="packed" widths="256" heights="256">
 File:Stk_generic_ice_a.png|Texture
 File:Stk_generic_ice_a_gloss.png|Gloss Map
 File:Stk_generic_ice_a_nm.png|Normal Map
