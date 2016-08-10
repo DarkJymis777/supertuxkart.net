@@ -36,7 +36,7 @@ Select a texture in the SuperTuxKart Image Properties panel, and, under "Interac
 
 {{Popup-warning|content=Rescuing the player upon collision with an object is discussed in the [[#Kart-Object Interaction|Kart-Object Interaction]] section below.}}
 
-== Traction and Friction ==
+== Traction, Collision, and Friction ==
 
 Select any texture in the SuperTuxKart Image Properties panel, and under "Interaction", check any of the following boxes:
 
