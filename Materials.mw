@@ -16,6 +16,12 @@ Shaders are little programs that control how things are rendered in the scene. T
 
 This shader is used for most textures. It supports a number of options to enhance the look of textures and is recommended for most special effects.
 
+<gallery mode="packed" widths="512" heights="512">
+File:Stk_generic_ice_a.png|Texture
+File:Stk_generic_ice_a_gloss.png|Gloss Map
+File:Stk_generic_ice_a_nm.png|Normal Map
+</gallery>
+
 ==== Gloss Map ====
 
 The gloss map is what lets you simulate a shiny surface. However, there are multiple factors to shininess. To take these all into account, the red, green, and blue channels of the gloss map image each correspond to a separate part.
