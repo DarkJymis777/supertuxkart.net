@@ -24,7 +24,7 @@ File:Stk_generic_ice_a_nm.png|Normal Map
 
 ==== Gloss Map ====
 
-The gloss map is what lets you simulate a shiny surface. However, there are multiple factors to shininess. To take these all into account, the red, green, and blue channels of the gloss map image each correspond to a separate part.
+The gloss map is what lets you simulate a shiny surface. However, there are multiple factors to shininess. To take these all into account, the red, green, and blue channels of the gloss map image each correspond to a separate part. Making and testing a gloss map can be very time consuming, especially since you need to reload the game each time you try out a new gloss map. If you are good at Blender, however, you may find [http://forum.freegamedev.net/viewtopic.php?f=18&t=6246 this] useful.
 
 * The red channel controls specularity. This is how much light reflects of the surface, or reflectivity. The greater the amount of red in the gloss map, the more light will be reflected.
 * The green channel controls diffusion. This is how much light is scattered. Less diffusion means a more mirror or chrome-like appearance. Perhaps counterintuitively, the greater amount of green in the gloss map, the less diffusion will occur.
