@@ -41,3 +41,11 @@ File:Gloss_Map_Explanation.png
 Normal maps allow you to reduce poly while still getting the cool visual effects of a bumpy or wavy surface. Many textures from the media repository already have normal maps, so you don't need to create your own if you're using textures from the media repository. (In fact, you can't, although you may be able to help by making normal maps for textures that don't have them.)
 
 TODO: Quick how-to
+
+==== Alpha Mask ====
+
+Since multiple shaders support alpha masks, this is discussed in a separate [[#Alpha Masks|section]] below.
+
+==== Colorizing ====
+
+TODO
