@@ -16,11 +16,11 @@ You can do a single race against other karts, compete in one of several Grand Pr
 |title=What is the history of SuperTuxKart?
 |answer=First there was [http://tuxkart.sourceforge.net TuxKart]. Work on this happened (roughly) between April 2000 and March 2004. In June 2004, the 'Game of the Month' project of the [https://web.archive.org/web/20040915081722/http://www.happypenguin.org/ Linux Game Tome] decided to improve TuxKart. This was done between [https://web.archive.org/web/20090211231421/http://www.happypenguin.org/newroot/forums/viewtopic.php?t=1407&postdays=0&postorder=asc&start=0 June and December 2004]. Unfortunately, this projected ended in a big disagreement, and it was finally decided to save the current state as "SuperTuxKart". While some graphical improvements were done, the code base itself was very unstable and practically unplayable. Nobody worked on (Super)TuxKart for several years.
 
-In 2006, Joerg Henrichs (a.k.a. "Hiker") picked up SuperTuxKart, fixed the outstanding bugs and performance issues without any involvement of the original game designer or the GotM project. With the help of "Coz" a first release of STK was done in September 2006.
+In 2006, Joerg Henrichs (a.k.a. "Hiker") picked up SuperTuxKart, fixed the outstanding bugs and performance issues without any involvement of the original game designer or the Game of the Month project. With the help of "Coz" a first release of STK was done in September 2006.
 
 In May 2007, version 0.3 was released. It added high-score lists, a new track (Island), the time bomb, MacOSX support, and OpenAL support.
 
-In February 2008 version 0.4 was released.  This version used Bullet Physics to improve the collision handling. "Auria" joined and started improving tracks (Shifting Sand, Lighthouse).
+In February 2008 version 0.4 was released.  This version used Bullet Physics to improve the collision handling. "Auria" joined and started improving tracks (Shifting Sands, Lighthouse).
 
 Version 0.5 was released in May 2008. It included many improved tracks, unlockable challenges, Follow-the-leader game mode, and more translations (OS language detector and matching to closest translation).
 
@@ -30,7 +30,7 @@ Version 0.7 was released on December 20, 2010. It contained several significant 
 
 Version 0.8 was released in December 2012, adding a story mode and new challenges, improved AI and skidding, reverse mode, new tracks and music. The menus were also improved.
 
-In 2015 we released the version 0.9 a groundbreaking release powered by a brand new game engine called Antarctica.
+In 2015 we released the version 0.9, a groundbreaking release powered by a brand new game engine called Antarctica.
 }}
 {{faq-question
 |title=How can I install STK?
