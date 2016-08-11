@@ -19,7 +19,7 @@ Feel free to look through other options and become familiar with the layout of t
 
 === Creating a segment ===
 
-Start by deleting the default objects that Blender creates (i.e. delete the cube, the lamp, and the camera.) Then, create a plane. In edit mode, make it 10 or 12 Blender units wide along the Y-axis, but keep it only 2-4 units long along the X-axis. If you want, you can [[Texture|texture]] your road segment with UV texturing, but this is not not necessary yet.
+Start by deleting the default objects that Blender creates (i.e. delete the cube, the lamp, and the camera.) Then, create a plane. In edit mode, make it 10 or 12 Blender units wide along the Y-axis, but keep it only 2–4 units long along the X-axis. If you want, you can [[Texturing|texture]] your road segment with UV texturing. This is not necessary yet, especially for indoor tracks, but will save you a lot of work in the UV editor later on for outdoor tracks.
 
 === Extruding the road ===
 
