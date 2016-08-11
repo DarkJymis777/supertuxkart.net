@@ -90,3 +90,7 @@ Splatting allows you to "draw" up to four textures onto another texture and mix 
 === Bubble ===
 
 TODO
+
+== Backface Culling ==
+
+Backface culling makes planes only visible from one side—the side the normal is on. Unfortunately, due to the real-time light rendering algorithm introduced with SuperTuxKart 0.9, this feature no longer works. You can instead use Blender's "Solidify" modifier with a thickness of zero and with "Fill Rim" disabled in order to generate duplicate faces pointing the other way on export.
