@@ -1,5 +1,7 @@
 Texturing is the process of applying images to 3D objects so that they appear more realistic. Use UV texturing in Blender for your objects for them to appear in-game, but '''don't waste time with Blender materials or cycles materials.''' They don't get exported into the game—instead, use SuperTuxKart's own materials system. More information can be found on the [[Material]] page.
 
+In fact, don't even bother with the Texture section of Blender's Properties window. Simply applying a UV map is enough.
+
 == Sources of Textures ==
 
 === The Media Repository ===
