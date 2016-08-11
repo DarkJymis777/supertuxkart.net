@@ -41,7 +41,9 @@ Now, select the curve and switch to edit mode. You can adjust the handles on eac
 
 Now, still in edit mode on the curve, in the 3D View window, go to Curve > Toggle Cyclic. Your road will now be a single loop.
 
-{{Popup-warning|content=The segment and curve objects generally do not like to have scale/rotation on them. This means you should only ever scale the curve in edit mode, never in object mode. (If you already scaled them, don't worry you're not screwed up! Select both the curve and the model segment, then press Ctrl+A and select "Rotation & Scale"; then you will probably need to go in the edit mode of the curve, select all vertices, and tweak the radius property in the "N" panel, or simply select "Object Data" in the standard properties panel. and toggle off "Radius")}}
+{{Popup-warning|content=The segment and curve objects generally do not like to have scale/rotation on them. This means you should only ever scale the curve in edit mode, never in object mode. (If you already scaled them, don't worry you're not screwed up! Select both the curve and the model segment, then press Ctrl+A and select "Rotation & Scale"; then you will probably need to go in the edit mode of the curve, select all vertices, and tweak the radius property in the "N" panel, or simply select "Object Data" in the standard properties panel. and toggle off "Radius")
+
+If your curve is still 2D, you'll have to switch it to 3D mode to be able to apply rotation. Then you can switch it back to 2D.}}
 
 === Make the road usable ===
 
