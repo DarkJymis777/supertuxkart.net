@@ -68,7 +68,7 @@ Textures using the unlit shader will always be at full brightness, in spite of l
 
 === Vegetation ===
 
-The vegetation shader performs alpha testing, just like the cutout transparency. However, it additionally animates objects that have the texture applied, making them wave as if blowing in the wind. Using vertex painting, (see [[Texture#Vertex Coloring]] for a tutorial) paint in black vertices to remain stationary, and leave white parts of the mesh that will wave. The vegetation shader also provides two other options for control:
+The vegetation shader performs alpha testing, just like the cutout transparency. However, it additionally animates objects that have the texture applied, making them wave as if blowing in the wind. Using vertex painting, (see [[Texturing#Vertex Coloring]] for a tutorial) paint in black vertices to remain stationary, and leave white parts of the mesh that will wave. The vegetation shader also provides two other options for control:
 
 * '''Waving speed:''' How fast the vegetation will move back and forth
 * '''Waving amplitude:''' The distance, in Blender units that the vegetation will wave
