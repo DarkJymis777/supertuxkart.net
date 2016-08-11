@@ -1,4 +1,4 @@
-Materials are a method of making textures simulate real-life... materials. A texture on a flat surface can give you the look of, for example, leather, but it can't give you everything. What other properties does leather have? It's shiney, but not reflective, and slightly bumpy. All these effects and more are controlled by the material.
+Materials are a method of making textures simulate real-life... materials. A texture on a flat surface can give you the look of, for example, leather, but it can't give you everything. What other properties does leather have? It's shiny, but not reflective, and slightly bumpy. All these effects and more are controlled by the material.
 
 It's important to note at this point that we are not referring to Blender or Cycles materials. These are ignored by SuperTuxKart. Instead, use our own materials system to apply materials to textures.
 
