@@ -119,3 +119,5 @@ in the SuperTuxKart Image Properties panel for your texture.
 == Texture mirroring in reversed races ==
 
 You can set a texture to be mirrored when playing in reverse mode. This is useful for textures like arrows to show the way. Select one of the two options from the drop-down menu for the "Mirror in reversed races" option of the SuperTuxKart Image properties panel.
+
+{{ArtPortalNav}}
