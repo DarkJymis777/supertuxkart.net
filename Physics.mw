@@ -18,7 +18,7 @@ You can also use your own textures for zippers, by selecting your texture in the
 
 == Magnet Sections ==
 
-Magnet sections allow karts to drive on any surface, no matter what its orientation. This allows karts to drive on walls, roofs, etc. Magnet sections are controlled per-texture, so simply select the texture used on the angled or upside-down part of your track in the SuperTuxKart Image Properties panel, and, under "Interaction", check the "Affec gravity" box.
+Magnet sections allow karts to drive on any surface, no matter what its orientation. This allows karts to drive on walls, roofs, etc. Magnet sections are controlled per-texture, so simply select the texture used on the angled or upside-down part of your track in the SuperTuxKart Image Properties panel, and, under "Interaction", check the "Affect gravity" box.
 
 Many textures in the media repository are also configured to be magnet sections. Check the [[Materials xml|Materials.xml]] file in the <code>textures</code> folder of the <code>stk-assets</code> repository.
 
