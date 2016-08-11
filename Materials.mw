@@ -99,7 +99,7 @@ TODO
 
 Alpha masks allow for making a solid image transparent, either partially or fully. It is a grayscale image in which white represents full opacity and black represents full transparency. To make one, simply make a copy of your texture, use a tool like fuzzy select in GIMP or Krita to select a part that should be solid, and color it white, and select the parts that should be transparent and color them black. Use different shades of gray for different levels of translucency. Type its filename in the "Mask image" field for Alpha Test or Alpha Blending shaders in the SuperTuxKart Image Properties panel.
 
-<gallery mode="packed" widths="512px" heights="512px">
+<gallery mode="packed" widths="256px" heights="256px">
 File:Palmtree3.jpg|Texture
 File:Palmtree3_alpha.jpg|Alpha Mask
 </gallery>
