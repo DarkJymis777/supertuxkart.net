@@ -32,9 +32,11 @@ To make the exporter recognize the driveline, under Object Properties for the dr
 
 == Creating secondary drivelines ==
 
-You can use these drivelines for shortcuts or alternate routes. They have the same structure as a main driveline, but rather than making the driveline cyclic, place the antennae where you want the AI karts to deviate from the main track and place the end of the last quad where you want the alternate route to rejoin the main one. Then set the type to "Driveline (additional)" in the SuperTuxKart object properties panel. A picture:
+Although each track can only have one main driveline, you can use secondary drivelines for shortcuts or alternate routes. They have the same structure as a main driveline, but rather than making the driveline cyclic, place the antennae near two points of a quad of the main driveline where you want the AI karts to deviate from the main track and place the end of the last quad where you want the alternate route to rejoin the main one. Then set the type to "Driveline (additional)" in the SuperTuxKart object properties panel. A picture:
 
-<!-- Add picture here -->
+<gallery mode="packed" widths="634px" heights="342px">
+File:Driveline_shortcut_entrance.png
+</gallery>
 
 == Checklines ==
 
