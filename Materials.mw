@@ -52,11 +52,11 @@ TODO
 
 === Cutout Transparency ===
 
-The cutout transparency shader is best for things like vegetation (when you do not want it to move—otherwise, use the vegetation shader). It performs "alpha testing", to make pixels of a texture either 100% solid or 100% transparent. However, it doesn't have all the features of the solid shader, so avoid using it for solid textures.
+The cutout transparency shader is best for things like vegetation (when you do not want it to move—otherwise, use the vegetation shader). It performs "alpha testing", to make pixels of a texture either 100% solid or 100% transparent. However, it doesn't have all the features of the solid shader, so avoid using it for solid textures. Cutout transparency supports alpha masks; see [[#Alpha Mask 2|Alpha Mask]] below.
 
 === Blending Transparency ===
 
-The blending transparency ("alpha blend") shader is used for translucent textures, like windows. The colors of the objects seen through these textures will be blended with the colors of the translucent parts of the texture.
+The blending transparency ("alpha blend") shader is used for translucent textures, like windows. The colors of the objects seen through these textures will be blended with the colors of the translucent parts of the texture. Blending transparency supports alpha masks; see [[#Alpha Mask 2|Alpha Mask]] below.
 
 === Additive Transparency ===
 
@@ -94,6 +94,15 @@ TODO
 
 ----
 
+
+== Alpha Mask ==
+
+Alpha masks allow for making a solid image transparent, either partially or fully. It is a grayscale image in which white represents full opacity and black represents full transparency. To make one, simply make a copy of your texture, use a tool like fuzzy select in GIMP or Krita to select a part that should be solid, and color it white, and select the parts that should be transparent and color them black. Use different shades of gray for different levels of translucency. Type its filename in the "Mask image" field for Alpha Test or Alpha Blending shaders in the SuperTuxKart Image Properties panel.
+
+<gallery mode="packed" widths="512px" heights="512px">
+File:Palmtree3.jpg|Texture
+File:Palmtree3_alpha.jpg|Alpha Mask
+</gallery>
 
 == Backface Culling ==
 
