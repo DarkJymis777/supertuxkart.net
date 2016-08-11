@@ -1,4 +1,4 @@
-{{Popup-warning|content=This page provides practical instructions for creating drivelines. For more details and a more complex explanation, see the [[Theoretical Driveline Model]] page.}}
+{{Popup-warning|content=This page provides practical instructions for creating drivelines. For more details and a more complex explanation, as well as discussion of not-yet-implemented features, see the [[Theoretical Driveline Model]] page.}}
 
 Drivelines are used to show SuperTuxKart where the track is. Drivelines are represented in Blender by a series of connected quads, with the beginning marked by a special structure. However, they are not visible while playing unless this is enabled via [[Artist Debug Mode]].
 
