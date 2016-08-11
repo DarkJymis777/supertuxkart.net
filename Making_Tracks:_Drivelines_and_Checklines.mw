@@ -8,11 +8,15 @@ Drivelines are used to show SuperTuxKart where the track is. Drivelines are repr
 
 === If you followed the previous module ===
 
-You will have a flat track made of quads already. You can simply duplicate this track, switch into edit mode, select all points with the "a" keyboard shortcut, tap the Delete key and delete '''only faces'''. Then follow the instructions below.
+You will have a flat track made of quads already. You can simply duplicate this track, switch into edit mode, select all points with the "a" keyboard shortcut, tap the Delete key and delete '''only faces'''. Then follow the instructions below for creating a start line.
 
 === If you made a track another way ===
 
 Start with a quad plane, and delete only its face (preserving the vertices and edges). Then, attach points until you have a series of quads, each connected to its adjacent ones, all along your track in a loop. Make sure that the driveline turns smoothly around corners; otherwise the AI karts could have trouble driving.
+
+<gallery mode="packed" widths="550px" heights="229px">
+File:Driveline_bad.png
+</gallery>
 
 === Creating the start line ===
 
