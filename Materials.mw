@@ -98,3 +98,16 @@ TODO
 == Backface Culling ==
 
 Backface culling makes planes only visible from one side—the side the normal is on. Unfortunately, due to the real-time light rendering algorithm introduced with SuperTuxKart 0.9, this feature no longer works. You can instead use Blender's "Solidify" modifier with a thickness of zero and with "Fill Rim" disabled in order to generate duplicate faces pointing the other way on export.
+
+== Texture Clamping ==
+
+Texture clamping prevents textures from being repeated over an object. You can control this for both the U (horizontal) and V (Vertical) axes of the texture. Check either or both of the boxes
+
+* '''Clamp texture horizontally'''
+* '''Clamp texture vertically'''
+
+in the SuperTuxKart Image Properties panel for your texture.
+
+== Texture mirroring in reversed races ==
+
+You can set a texture to be mirrored when playing in reverse mode. This is useful for textures like arrows to show the way. Select one of the two options from the drop-down menu for the "Mirror in reversed races" option of the SuperTuxKart Image properties panel.
