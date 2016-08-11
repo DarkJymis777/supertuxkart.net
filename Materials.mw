@@ -44,7 +44,7 @@ TODO: Quick how-to
 
 ==== Alpha Mask ====
 
-Since multiple shaders support alpha masks, this is discussed in a separate [[#Alpha Masks|section]] below.
+Sorry, this is a mistake. The solid shader doesn't support alpha masks.
 
 ==== Colorizing ====
 
@@ -53,3 +53,40 @@ TODO
 === Cutout Transparency ===
 
 The cutout transparency shader is best for things like vegetation (when you do not want it to move—otherwise, use the vegetation shader). It performs "alpha testing", to make pixels of a texture either 100% solid or 100% transparent. However, it doesn't have all the features of the solid shader, so avoid using it for solid textures.
+
+=== Blending Transparency ===
+
+The blending transparency ("alpha blend") shader is used for translucent textures, like windows. The colors of the objects seen through these textures will be blended with the colors of the translucent parts of the texture.
+
+=== Additive Transparency ===
+
+The additive shader works the same way as the alpha blending shader, but instead of darkening colors when mixing, colors are lightened. This is useful for things like light beams or fire, to lighten objects behind the texture.
+
+=== Unlit (solid) ===
+
+Textures using the unlit shader will always be at full brightness, in spite of lights or shadows. This shader does not support transparency.
+
+=== Vegetation ===
+
+The vegetation shader performs alpha testing, just like the cutout transparency. However, it additionally animates objects that have the texture applied, making them wave as if blowing in the wind. Using vertex painting, (see [[Texture#Vertex Coloring]] for a tutorial) paint in black vertices to remain stationary, and leave white parts of the mesh that will wave. The vegetation shader also provides two other options for control:
+
+* '''Waving speed:''' How fast the vegetation will move back and forth
+* '''Waving amplitude:''' The distance, in Blender units that the vegetation will wave
+
+=== Water ===
+
+TODO
+
+=== Reflection (Sphere Mapping) ===
+
+{{Popup-warning|content=Warning! Deprecated! Don't use this shader, use the solid shader with a gloss map instead!}}
+
+This shader simulates a chrome appearance by simply reflecting anything nearby. Because of this, it is really not the most realistic and doesn't provide all the details of the solid shader with a gloss map. However, if you're desperate and don't have a lot of time, you can use this shader to get an easy chrome effect.
+
+=== Splatting ===
+
+Splatting allows you to "draw" up to four textures onto another texture and mix the textures together. However, it is VERY costly in terms of video RAM. More info on the [[Splatting]] page, TODO: rewrite the docs and move them here.
+
+=== Bubble ===
+
+TODO
