@@ -39,3 +39,5 @@ When you duplicate a library object in your scene, be sure to use Alt + D (link 
 === Editing Decorations from the Media Repository ===
 
 Usually, objects from the media repo are good enough and can be scaled, rotated, or repositioned to fit as you need. However, if necessary, you can use File > Append instead of File > Link in the instructions above to actually import the object into your scene. This is not recommended, but you may do this under certain circumstances, if the edits you plan to make could not be put in the media repo itself.
+
+{{ArtPortalNav}}
