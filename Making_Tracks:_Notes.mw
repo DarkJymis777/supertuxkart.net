@@ -54,7 +54,10 @@ Look for the number of '''Tris'''. This is the information you need. Also, remem
 * A medium-sized tree: 1200 tris
 * A pumpkin: 255 tris
 
-<!-- Images here -->
+<gallery mode="packed" widths="400px" heights="208px">
+File:Detail-distant-compared-to-near.jpg|The fence, vegetation, and water are detailed near where karts drive, but far away the fence is very basic, there is no vegetation, and the water has no bottom, only the skybox.
+File:Player-point-of-view.jpg|From the player's point of view, you don't notice the lack of detail far away.
+</gallery>
 
 == Gameplay ==
 
