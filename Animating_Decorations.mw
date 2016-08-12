@@ -13,3 +13,5 @@ A few considerations need to be taken into account for skeletal animation, so th
 * When preparing the mesh and armature make sure they both have a rotation of (0,0,0) to avoid problems (after the rigging is done, though, you can move the object around. Just make sure the "rest position" of both of them is non-rotated).
 * If you need to fix an already rigged model, it's not too late, you can do the following: reset the rotation on the armature to (0,0,0), unparent the mesh from the armature (select "Keep transformation"), invoke apply rotation on the mesh (Ctrl+A), and reparent the mesh and armature. Then you can rotate the armature again.
 * At this time, a mesh and its armature need to have their centers at the same point.
+
+{{ArtPortalNav}}
