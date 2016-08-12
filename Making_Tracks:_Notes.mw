@@ -33,7 +33,9 @@ Thus, we can increase the polycount without too much trouble. However it's impor
 
 Blender displays polycount in the '''Info''' window/toolbar next to the rendering engine selector:
 
-[[File:Blender_screenshot_tris.png]]
+<gallery mode="packed" widths="591px" heights="26px">
+File:Blender_screenshot_tris.png
+</gallery>
 
 Look for the number of '''Tris'''. This is the information you need. Also, remember that the number of tris in the entire scene is only shown in object mode.
 
