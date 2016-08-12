@@ -51,7 +51,7 @@ Now, you need to be able to save the modifications from the array and curve modi
 
 === Correct misaligned ends ===
 
-Unless you're very lucky, your track probably won't have closed properly with a cyclic curve, and the ends probably overlap or doesn't quite connect. Now that you've applied the modifiers, it should be fairly easy to correct this in edit mode by deleting excess points and connecting other ones.
+Unless you're very lucky, your track probably won't have closed properly with a cyclic curve, and the ends probably overlap or don't quite connect. Now that you've applied the modifiers, it should be fairly easy to correct this in edit mode by deleting excess points and connecting other ones.
 
 === Improving Gameplay ===
 
