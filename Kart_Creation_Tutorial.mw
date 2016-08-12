@@ -27,7 +27,7 @@ To know roughly the number of triangles of your mesh, you can temporarily conver
 
 Alternatively, you can always consult the current tris of your project using Blender's "Info" panel:
 
-<gallery mode="packed" widths=640px heights=360px>
+<gallery mode="packed" widths=591px heights=26px>
 File:Blender_screenshot_tris.png
 </gallery>
 
