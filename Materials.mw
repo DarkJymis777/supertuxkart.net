@@ -44,7 +44,9 @@ To apply a normal map, simply enter the filename into the "Normal map" box.
 
 ===== Creating the Normal Map =====
 
-{{Popup-warning|content=This tutorial assumes that your textures are square. It actually doesn't matter if they aren't, but you'll have to do a little more work with editing the UV mapping and subdividing. Square textures work easily because a square plane will unwrap perfectly on top of them by default and a subdivide will create square quads which can correspond to pixels.}}
+{{Popup-warning|content=This tutorial assumes that your textures are square. It actually doesn't matter if they aren't, but you'll have to do a little more work with editing the UV mapping and subdividing. Square textures work easily because a square plane will unwrap perfectly on top of them by default and a subdivide will create square quads which can correspond to pixels.
+
+If the texture is, for example,  256 × 512, you will have to make the plane twice as long in a certain direction, with an edge in the middle so that when you perform subdivisions, you are subdividing squares.}}
 
 Start in an empty Blender scene. Delete the default cube, light, and camera. Then, create a plane. In Edit Mode for the plane, with all four vertices selected, do a series subdivisions (shortcut: w > Subdivide) depending on the resolution . This might cause a bit of lag.
 
