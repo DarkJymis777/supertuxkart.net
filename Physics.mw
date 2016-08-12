@@ -83,3 +83,5 @@ Give the second line the type "Cannon End" in the SuperTuxKart Object Properties
 * '''Speed:''' This is the speed of the kart. For long distances, make sure the kart travels quickly.
 
 {{Popup-warning|content=Make sure the driveline or navmesh includes the cannon start line and the flight path!}}
+
+{{ArtPortalNav}}
