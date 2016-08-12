@@ -53,3 +53,5 @@ By right clicking somewhere in the STK window, you can open the debug menu. Besi
 * A different viewpoint: Launch SuperTuxKart from the terminal with <tt>--camera-debug</tt> or select "Top view" from the menu, the camera will be placed from above, allowing you to see what's going on from a different perspective
 * [STK 0.8.2] First person camera: Fly around the map with WASD and rotate the camera with Q and E. There's also a smooth version which damps your movements. The damping can be adjusted in the config file of SuperTuxKart
 * [STK 0.8.2] Adjust Lights: You can adjust the values for red, green, blue, energy and radius of the light nearest to the kart (nitro emitters and other invisible lights are skipped) and see the effect immidiately
+
+{{ArtPortalNav}}
