@@ -111,3 +111,5 @@ You can click "Save User Settings" to avoid repeating these steps each time you 
 === SuperTuxKart Track Editor ===
 
 The SuperTuxKart track editor is a fairly new effort to make creating and modifying SuperTuxKart tracks easy for enthusiasts who are not interested in dealing with the complexities (and features) of Blender. Because it is still under development, bugs and crashes should be expected. Instructions for compiling and using the STK editor can be found at the [[Track Editor]] page.
+
+{{ArtPortalNav}}
