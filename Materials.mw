@@ -40,7 +40,21 @@ File:Gloss_Map_Explanation.png
 
 Normal maps allow you to reduce poly while still getting the cool visual effects of a bumpy or wavy surface. Many textures from the media repository already have normal maps, so you don't need to create your own if you're using textures from the media repository. (In fact, you can't, although you may be able to help by making normal maps for textures that don't have them.)
 
-TODO: Quick how-to
+===== Creating the Normal Map =====
+
+{{Popup-warning|content=This tutorial assumes that your textures are square. It actually doesn't matter if they aren't, but you'll have to do a little more work with editing the UV mapping. Square textures work easily because a square plane will unwrap perfectly on top of them by default.}}
+
+Start in an empty Blender scene. Delete the default cube, light, and camera. Then, create a plane. In edit mode for the plane, with all four vertices selected, do eight subdivisions (shortcut: w > Subdivide). This might cause a bit of lag.
+
+With all vertices selected, unwrap the the plane (shortcut: u > Unwrap). This will probably again cause some lag, but don't worry. In the UV/Image Editor window, you should see your plane. Open the texture you want to create a normal map for and enable "Textured solid" in the 3D View window properties panel (shortcut: n).
+
+Now, switch the 3D View window to Sculpt Mode instead of Edit Mode. Several options will appear in the toolshelf at the left. Most important, however, is to turn off mirroring. To do this, deselect the "X" button below the "Mirror" section in the "Symmetry/Lock" section of the toolshelf.
+
+Adjust the settings in the toolshelf for the sculpting brush as needed, and sculpt the plane in a way that you think would be realistic and fitting for the texture.
+
+When you have finished sculpting, switch to Edit Mode, select all vertices, and, in the UV/Image Editor, click the "x" next to the texture filename to unlink the datablock.
+
+Still in Edit Mode, in the UV/Image Editor, click the "New" button to create a new image. Set the dimensions to the same as those of the original texture. If you switch to Object Mode now, you should see that your plane is black.
 
 ==== Alpha Mask ====
 
