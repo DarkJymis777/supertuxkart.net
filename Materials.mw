@@ -40,6 +40,8 @@ File:Gloss_Map_Explanation.png
 
 Normal maps allow you to reduce poly while still getting the cool visual effects of a bumpy or wavy surface. Many textures from the media repository already have normal maps, so you don't need to create your own if you're using textures from the media repository. (In fact, you can't, although you may be able to help by making normal maps for textures that don't have them.)
 
+To apply a normal map, simply enter the filename into the "Normal map" box.
+
 ===== Creating the Normal Map =====
 
 {{Popup-warning|content=This tutorial assumes that your textures are square. It actually doesn't matter if they aren't, but you'll have to do a little more work with editing the UV mapping. Square textures work easily because a square plane will unwrap perfectly on top of them by default.}}
@@ -54,7 +56,27 @@ Adjust the settings in the toolshelf for the sculpting brush as needed, and scul
 
 When you have finished sculpting, switch to Edit Mode, select all vertices, and, in the UV/Image Editor, click the "x" next to the texture filename to unlink the datablock.
 
-Still in Edit Mode, in the UV/Image Editor, click the "New" button to create a new image. Set the dimensions to the same as those of the original texture. If you switch to Object Mode now, you should see that your plane is black.
+Switch to object mode and create a new plane of exactly the same size and shape at exactly the same position as the one you sculpted.
+
+Switch to Edit Mode, select all vertices of the flat plane, and unwrap it (shortcut: u > Unwrap). In the UV/Image Editor, click the "New" button to create a new image. Set the dimensions to the same as those of the original texture. Switch to Object Mode now; you should see that your flat plane is black if you have "Textured solid" enabled.
+
+{{Popup-warning|content=It is '''very''' important that at some point you have selected all the vertices of the flat plane in edit mode and have  the blank texture open in the UV/Image editor. This assigns the texture as a ''face texture'', which is needed for baking.}}
+
+Remember how I said above to ignore Blender materials and the "Texture" section of the Properties window? Well, here's a rare exception, because we're using Blender's own tools to create the normal map. Make sure that you have "Blender Render" selected as the rendering engine in the Info window. In the "Materials" section of the Properties window, with the <u>flat</u> plane selected, click the "New" button. Leave the settings as they are right now.
+
+In the "Texture" section of the Properties window, with "material textures" selected, and still with the flat plane selected, click the "New" button. Set the following properties:
+
+* Set the name of the texture to the same name that you gave your new blank image in the UV/Image editor.
+* Make sure "Type" is set to "Image or Movie".
+* Under "Image," click the photograph icon and select the new blank texture you just created.
+* Under "Mapping," set "Coordinates" to "UV."
+* Click in the "Map" field underneath "Mapping" and select "UVMap."
+
+Select the sculpted plane. Switch to the "Render" section of the Properties window. Under "Bake", check "Selected to active." Switch "Bake mode" from "Full Render" to "Normals." Make sure "Bake from multires" is <u>un</u>checked and "Normal Space" is set to "Tangent."
+
+Now, in object mode, '''first''' select the sculpted plane, '''then''' select the flat plane. Click the "Bake" button in the "Render" section of the Properties window. If you watch the blank image in the UV/Image editor, you'll see Blender draw a lot of purple and blue.
+
+To save the normal map, go to Image > Save As Image in the UV/Image Editor window. The normal map can now be applied.
 
 ==== Alpha Mask ====
 
