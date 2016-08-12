@@ -63,3 +63,5 @@ Start-up scripts will run exactly once, during the track loading process. As suc
 <span style="color:red">WARNING : Inefficient. Use sparingly.</span>
 
 Update scripts will keep running throughout the race and as such, will cause performance issues if used carelessly. They are ideal, however, for testing out scripts during testing. Whenever possible, these scripted actions should be moved into one of the other types (most probably the action-trigger driven type) so as to improve performance.
+
+{{ArtPortalNav}}
