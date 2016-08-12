@@ -104,7 +104,15 @@ After placing the scripts into Blender's scripts directory, open Blender. Go to 
 * SuperTuxKart Track Exporter
 * SuperTuxKart Panel
 
+<gallery mode="packed" widths="400" heights="252">
+File:Stk-tools-2.png
+</gallery>
+
 Now search for "B3D". Check the box next to "B3D (BLITZ3D) Model Exporter".
+
+<gallery mode="packed" widths="400" heights="252">
+File:Stk-tools-1.png
+</gallery>
 
 You can click "Save User Settings" to avoid repeating these steps each time you open Blender.
 
