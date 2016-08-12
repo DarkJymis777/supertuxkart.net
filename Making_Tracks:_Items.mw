@@ -10,3 +10,5 @@ Take inspiration from Northern Resort for item placement and choice.
 == Adding Items ==
 
 To place items, simply create an "Empty" object where you want an item to be, then, in the SuperTuxKart Object Properties panel, make it one of the types listed in the "Items" section. You can also enable the "Drop to ground" option for all items except Easter eggs, which ensures that the item is able to be picked up from the track.
+
+{{ArtPortalNav}}
