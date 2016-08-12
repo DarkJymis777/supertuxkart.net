@@ -25,3 +25,5 @@ If you do not have the time to make multiple models, you can use the LOD Standal
 == Using LOD with library objects ==
 
 Some objects from the media repository are already configured for LOD. For those that are, simply link the object <code>stklib_*_*_main</code>. Don't link any other object (not main.001, etc.). Objects ending in <code>main</code> are the only ones configured as LOD ''instances''.
+
+{{ArtPortalNav}}
