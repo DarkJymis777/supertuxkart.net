@@ -1,4 +1,4 @@
-When you open Blender with the SuperTuxKart plugins installed, you will find that some new menus have been added. Under "Scene" in the Properties window, you'll find ''Kart Exporter'', ''Track Exporter'', ''SuperTuxKart Scene Properties'', and ''SuperTuxKart Image Properties.'' Also in the Properties window, under Object, you'll find ''SuperTuxKart Properties.'' If you do not see these, refer to the [[Installing Tools]] page.
+When you open Blender with the SuperTuxKart plugins installed, you will find that some new menus have been added. Under "Scene" in the Properties window, you'll find ''Kart Exporter'', ''Track Exporter'', ''SuperTuxKart Scene Properties'', and ''SuperTuxKart Image Properties.'' Also in the Properties window, under Object, you'll find ''SuperTuxKart Object Properties.'' If you do not see these, refer to the [[Installing Tools]] page.
 
 == Setting Basic Properties ==
 
