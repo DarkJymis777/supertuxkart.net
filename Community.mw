@@ -4,15 +4,18 @@
 }
 
 ul#get-involved-list {
-    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     margin: 0;
     list-style: none;
     overflow: hidden;
 }
 
 ul#get-involved-list > li  {
-    float: left;
-    width: 20%;
+    display: block;
+    margin: 5px;
 }
 
 ul#get-involved-list > li > div {
