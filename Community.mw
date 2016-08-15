@@ -44,7 +44,23 @@ ul#get-involved-list > li > div {
     font-size: 100px;
 }
 
+.get-involved-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.get-involved-panel
+{
+    min-width: 33%;
+}
+
+
 }}
+
+
 {{global-warning}}
 <html>
 <ul id="get-involved-list">
@@ -91,8 +107,8 @@ ul#get-involved-list > li > div {
 </div>
 </html>
 
-<div style="overflow: hidden">
-<div style="float: left; width: 50%;">
+<div class="get-involved-container">
+<div class="get-involved-panel">
 
 == <i style="margin: 0px 5px;" class="fa fa-file-code-o"></i> For programmers ==
 === Programming ===
@@ -114,7 +130,7 @@ ul#get-involved-list > li > div {
 * [[About releasing new versions]]
 
 </div>
-<div style="float: left; width: 50%;">
+<div class="get-involved-panel">
 
 == <i style="margin: 0px 5px;" class="fa fa-paint-brush"></i> For Artists ==
 
@@ -139,4 +155,5 @@ ul#get-involved-list > li > div {
 * [[Translating_STK | Translate STK]]
 * [[Track_Editor| Track Editor]]
 * Connect your [[Wiimote]]
+</div>
 </div>
