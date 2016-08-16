@@ -84,7 +84,7 @@ ul#get-involved-list > li > div {
     </li>
     <li>
         <a class="community-link" href="https://lists.sourceforge.net/lists/listinfo/supertuxkart-devel">
-            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
+            <div class="get-involved-icon"><i class="fa fa-envelope"></i></div>
             <div class="get-involved-name">Mailing List</div>
         </a>
     </li>
