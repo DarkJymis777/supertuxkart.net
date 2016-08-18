@@ -30,9 +30,9 @@
 }}
 {{Generic-hide-summary}}
 {{generic-css}}
-<div class="article_main_title">
-== ..:: Welcome to the Mascot Kingdom! ::.. ==
-</div>
+
+{{ArticleMainTitle|content=..:: Welcome to the Mascot Kingdom! ::..}}
+
 <gallery mode="packed" widths=320px>
 File:Supertuxkart-0.9-screenshot-3.jpg
 File:Supertuxkart-0.9-screenshot-2.jpg
@@ -48,10 +48,9 @@ File:Supertuxkart-0.9.1-screenshot-7.jpg
 </gallery>
 
 <br />
-<div class="article_main_title">
 
-== Main Characters ==
-</div>
+{{ArticleMainTitle|content=Main Characters}}
+
 {{character-presentation
 |name=Tux
 |icon=Character_tux_icon.png
@@ -70,10 +69,10 @@ File:Supertuxkart-0.9.1-screenshot-7.jpg
 |type=odd
 |description=The villain of SuperTuxKart, Nolok is always concocting some sort of malevolent plan inside his fiery lava castle.
 }}
-<div class="article_main_title">
 
-== Additional Characters ==
-</div>
+
+{{ArticleMainTitle|content=Additional Characters}}
+
 <table><tr>
 {{character-presentation-small
 |name=Sara
