@@ -47,14 +47,14 @@ Look for the number of '''Tris'''. This is the information you need. Also, remem
 
 === Polycount Examples ===
 
-* A cargo plane: 1500 tris
-* A palm tree with Line of Distance
-** High: 800 tris
-** Medium: 400 tris
-** Low: 82 tris
-* A basic plant: 600 tris
-* A medium-sized tree: 1200 tris
-* A pumpkin: 255 tris
+* A cargo plane: ~4000 tris
+* A palm tree with Level of Detail
+** High: 1400 tris
+** Medium: 1400 tris
+** Low: 42 tris
+* A basic plant: 32 tris
+* A medium-sized tree: 1380 tris
+* A pumpkin: 470 tris
 
 <gallery mode="packed" widths="400px" heights="208px">
 File:Detail-distant-compared-to-near.jpg|The fence, vegetation, and water are detailed near where karts drive, but far away the fence is very basic, there is no vegetation, and the water has no bottom, only the skybox.
