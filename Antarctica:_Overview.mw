@@ -28,10 +28,8 @@ The sun cast automatically real time shadows to add more realism to the scene. Y
 == Realtime ambient occlusion ==
 
 <gallery widths=800px heights=427px mode="packed">
-File:Antartica_ssao.jpg
+File:Antartica_ssao.jpg|Before/After
 </gallery>
-
-Before / after
 
 Ambient occlusion is a shading technique to add darkness where objects and surface are close together, like cracks or corners.
 
