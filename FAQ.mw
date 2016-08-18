@@ -28,9 +28,9 @@ Version 0.6 was released on January 22, 2009. It had significantly improved game
 
 Version 0.7 was released on December 20, 2010. It contained several significant improvements including: a new 3D rendering engine(Irrlicht),a new GUI (Graphical User Interface), new kart and track animations, new tracks, karts and items/powerups, and support for shortcuts/alternative paths. Versions 0.7.1, 0.7.2, 0.7.3 were released shortly after with more improvements.
 
-Version 0.8 was released in December 2012, adding a story mode and new challenges, improved AI and skidding, reverse mode, new tracks and music. The menus were also improved.
+Version 0.8 was released in December 2012, adding a story mode and new challenges, improved AI and skidding, reverse mode, new tracks and music. The menus were also improved. This was followed by 0.8.1, which added and updated tracks, added the Soccer and Egg Hunt modes, and other graphical and gameplay enhancements.
 
-In 2015 we released the version 0.9, a groundbreaking release powered by a brand new game engine called Antarctica.
+In 2015, we released version 0.9, a groundbreaking release powered by a brand new game engine called Antarctica, adding advanced graphical features which would have been impossible in previous versions. These features include dynamic lighting, instanced rendering (allowing for a large increase in vegetation), and more. More information is available on the [[Antarctica: Overview]] page. 0.9 has been followed by two point releases so far, which have added additional features and new tracks.
 }}
 {{faq-question
 |title=How can I install STK?
