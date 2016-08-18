@@ -118,7 +118,7 @@ To enable colorization for a material, check the "Colorizable" box in the SuperT
 
 {{Popup-warning|content=Leave "Hue settings for colorization" empty on karts! Kart colorization is controlled by soccer team for soccer mode and setting this property will cause problems!}}
 
-<gallery mode=packed widths=512px heights=512px>
+<gallery mode=packed widths=256px heights=256px>
 File:Gnu.png|Texture for Gnu on his kart
 File:Gnu_mask.png|Colorization mask for Gnu
 </gallery>
