@@ -104,7 +104,24 @@ Sorry, this is a mistake. The solid shader doesn't support alpha masks.
 
 ==== Colorizing ====
 
-TODO
+{{Popup-warning|content=Note: customizable colorizing currently is only available for library nodes! If your objects aren't library nodes, you might want to consider [[Texturing#Vertex Coloring|vertex coloring]].}}
+
+Colorizing is a great way to reduce the need for multiple models of an object. Using a set of hues you provide, the shader can pick a random color for each instance of a material, much like vertex coloring. However, colorizing works with library nodes, while vertex coloring does not.
+
+Colorizing is also used to mark teams in soccer mode. Karts on the "red" team will be colorized red, while karts on the "blue" team will be colorized blue.
+
+To enable colorization for a material, check the "Colorizable" box in the SuperTuxKart Image Properties panel. This opens up three options:
+
+* '''Colorization factor:''' This is the amount that the shader will increase saturation on colorized instances. This is useful for dark textures, so that a change in hue will be noticeable enough.
+* '''Colorization mask:''' The colorization mask controls which parts of the texture will be colorized. Transparent sections will be colorized, while black sections will not be. (See images below.)
+* '''Hue settings for colorization:''' The numbers in this box control the hue palette the shader can pick from. ''(Note: when we say "hue", think "hue-saturation-value." Hue does not mean the same thing as color in this case.)'' Separate hues by spaces. 0.1 is red, 0.2 is orange, 0.3 is yellow, and so on.
+
+{{Popup-warning|content=Leave "Hue settings for colorization" empty on karts! Kart colorization is controlled by soccer team for soccer mode and setting this property will cause problems!}}
+
+<gallery mode=packed widths=512px heights=512px>
+File:Gnu.png|Texture for Gnu on his kart
+File:Gnu_mask.png|Colorization mask for Gnu
+</gallery>
 
 === Cutout Transparency ===
 
