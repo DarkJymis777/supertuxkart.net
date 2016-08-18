@@ -77,10 +77,11 @@ i.os-icon {
 * '''Arch Linux:''' 0.9.2 available in the community repository.
 * '''Gentoo:''' 0.9.2 is available in overlay the official overlay [http://packages.gentoo.org/package/games-action/supertuxkart here].
 * '''OpenSUSE:''' 0.9.2 is available in Tumbleweed; 0.9.1 is available in Leap 42.1.
+* '''Manjaro:''' 0.8.2 is available.
 * '''Mageia:''' 0.9.1 is [http://madb.mageia.org/package/show/name/supertuxkart available].
 * '''Fedora:''' 0.9.2 is available in Fedora 24, 25, and Rawhide. 0.9.1 is available in Fedora 23.
 
-'''Package for RPM based distribution''' available [http://rpm.pbone.net/index.php3?stat=3&search=supertuxkart&srodzaj=3 here]
+''A list of packages for RPM-based distributions is available [http://rpm.pbone.net/index.php3?stat=3&search=supertuxkart&srodzaj=3 here].''
 }}
 {{os-presentation
 |name=Windows
