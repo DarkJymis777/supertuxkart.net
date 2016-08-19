@@ -16,6 +16,8 @@ On the first layer, texture the mesh. This layer will have two uses :
 
 On the second layer, place a splatting map. You can draw red, green, blue and black. Then configure the splatting texture in the materials properties and assign a texture to each color
 
-[[Image:splatconfig.jpg]]
+<gallery mode=packed widths=295px heights=430px>
+File:Splatconfig.jpg
+</gallery>
 
 In this case, the specified textures will be placed on the terrain according to the splatting map, using the UV mapping from the first layer
