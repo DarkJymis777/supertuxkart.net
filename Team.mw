@@ -29,9 +29,7 @@
 }}
 {{Generic-hide-summary}}
 {{generic-css}}
-<div class="article_main_title">
-== ..:: Meet the team behind the game ::.. ==
-</div>
+{{ArticleMainTitle|content=..:: Meet the team behind the game ::..}}
 {{character-presentation
 |name=Joerg Henrichs (aka Hiker)  Project Leader
 |icon=Empty_icon.png
@@ -52,10 +50,7 @@
 After more than 5 years working for SuperTuxKart, I created some of the most complex and challenging tracks like Cocoa Temple or Antediluvian Abyss. My last project was to create a stadium to showcase your new battle mode and designing our new website.
 }}
 
-<div class="article_main_title">
-
-== Additional developers ==
-</div>
+{{ArticleMainTitle|content=Additional Developers}}
 * Magne Djupvik (Testing and bug report)
 * Stephen Just (Network and Addon website)
 * Daniel Butum (Network and Addon website)
@@ -67,9 +62,7 @@ After more than 5 years working for SuperTuxKart, I created some of the most com
 * math07
 * Elderme (Work on graphical engine)
 
-<div class="article_main_title">
-== Google Summer of Code Students ==
-</div>
+{{ArticleMainTitle|content=Google Summer of Code Students}}
 * Robin Nicollet
 * Glenn de Jonghe
 * Lauri Kasanen
@@ -79,9 +72,7 @@ After more than 5 years working for SuperTuxKart, I created some of the most com
 * Sachith Seneviratne
 * Akshay Singhvi
 
-<div class="article_main_title">
-== Bug fixes & misc contributions ==
-</div>
+{{ArticleMainTitle|content=Bug Fixes & Misc. Contributions}}
 * Divya Kukar (divvy81)
 * Fabien Sanglard 
 * Damien
@@ -90,9 +81,7 @@ After more than 5 years working for SuperTuxKart, I created some of the most com
 * Patrick Ammann
 * Ward Muylaert
 
-<div class="article_main_title">
-== Visual Art ==
-</div>
+{{ArticleMainTitle|content=Visual Art}}
 * Wolfs : Green Valley
 * Mac_DMH : Minigolf
 * Rubberduck : STK Enterprise
@@ -126,10 +115,7 @@ After more than 5 years working for SuperTuxKart, I created some of the most com
 * betharatux1
 * Thomas Oppl (New banana model and Winter sky cube)
 
-<div class="article_main_title">
-
-== GUI Icons and Other Art==
-</div>
+{{ArticleMainTitle|content=GUI Icons and Other Art}}
 * onyum.com, commissioned by OpenGameArt.org/Bart Kelsey
 * Andreas Bilng, Enrico Billing, Dakal
 * The Tango icon project, the Gnome icon set
@@ -141,9 +127,7 @@ After more than 5 years working for SuperTuxKart, I created some of the most com
 * Thomas Fournet (Totoplus62): Trailer and icons
 
 
-<div class="article_main_title">
-== Photographs & Textures ==
-</div>
+{{ArticleMainTitle|content=Photographs & Textures}}
 * Frank Vincentz, Pascalou Petit, KENPEI's photo
 * Luis Miguel Bugallo Sánchez, Wilfredo R Rodriguez H
 * Krzysztof P. Jasiutowiczs, Ben Clough, Found5dollar
@@ -157,9 +141,7 @@ After more than 5 years working for SuperTuxKart, I created some of the most com
 * Extreme Tux Racer
 * The Glest Jungle Set (http://www.titusgames.de)
 
-<div class="article_main_title">
-== Audio and Musics ==
-</div>
+{{ArticleMainTitle|content=Audio & Music}}
 * 0zone0ne
 * Krobonil
 * Claude Werner (Bollen)
@@ -174,47 +156,51 @@ After more than 5 years working for SuperTuxKart, I created some of the most com
 * GeekPenguinBR : 'Jumping to the stars'
 
 Voice acting
-- Viktor Aurelius: Nolok
+* Viktor Aurelius: Nolok
 
 Sound effects
-- Mike Koening and soundbible.com
-- Battle For Wesnoth
-- Iwan 'qubodup' Gabovitch
-- The Trigger-Rally project
-- pdsounds.org
+* Mike Koening and soundbible.com
+* Battle For Wesnoth
+* Iwan 'qubodup' Gabovitch
+* The Trigger-Rally project
+* pdsounds.org
 
-= Misc =
+{{ArticleMainTitle|content=Miscellaneous}}
 
-Website
-- Tom Jenkins : skin and layout
-- Remy le Guen (Vivelefrat)
-- Sebastian Rode
+Former Websites
+* Tom Jenkins : skin and layout
+* Remy le Guen (Vivelefrat)
+* Sebastian Rode
+
+Current Website
+* Jean-Manuel Clémençon (design)
+* Konstin (coding)
 
 Packaging
-- Auria: MacOS package
-- hiker: Windows
-- Dawid Gan: Static packages
+* Auria: MacOS package
+* hiker: Windows
+* Dawid Gan: Static packages
 
 Testing
-- Magne Djupvik
-- KroArtem
-- Everyone else who helped test STK!
+* Magne Djupvik
+* KroArtem
+* Everyone else who helped test STK!
 
+{{ArticleMainTitle|content=Software used by SuperTuxKart}}
 
-= Software =
-
-Software used
-- Irrlicht
-- Bullet
-- enet
-- curl
-- OpenAL
-- ogg
-- vorbis
-- fribidi
-- blender
-- wiiuse
-
+<gallery mode="packed">
+File:Irrlicht_logo.png|link=http://irrlicht.sourceforge.net
+File:Bullet-logo.png|link=http://bulletphysics.org
+File:Enet-logo.png|link=http://enet.bespin.org
+File:Curl-logo.png|link=https://curl.haxx.se
+File:Openal-logo.png|link=https://openal.org
+File:Ogg-logo.png|link=https://xiph.org/ogg/
+File:Vorbis-logo.png|link=http://vorbis.com
+File:Fribidi-logo.png|link=https://fribidi.org
+File:Blender-logo.png|link=https://blender.org
+File:Wiiuse-logo.PNG|link=http://www.macs.hw.ac.uk/~ruth/year4VEs/Labs/wiiuse.html
+File:Zlib-logo.png|link=http://www.zlib.net
+</gallery>
 
 = Donations =
 
