@@ -114,7 +114,7 @@ Colorizing is also used to mark teams in soccer mode. Karts on the "red" team wi
 
 To enable colorization for a material, check the "Colorizable" box in the SuperTuxKart Image Properties panel. This opens up three options:
 
-* '''Colorization factor:''' This is the amount that the shader will increase saturation on colorized instances. This is useful for dark textures, so that a change in hue will be noticeable enough.
+* '''Colorization factor:''' This is the amount that the shader will increase saturation on colorized instances. This is useful for textures with low saturation, so that a change in hue will be noticeable enough.
 * '''Colorization mask:''' The colorization mask controls which parts of the texture will be colorized. Transparent sections will be colorized, while black sections will not be. (See images below.)
 * '''Hue settings for colorization:''' The numbers in this box control the hue palette the shader can pick from. Separate hues by spaces. 1.0 is red, 0.02 is orange, 0.1 is yellow, 0.3 is green, 0.5 is blue, 0.66 is indigo, and 0.8 is purple.
 
