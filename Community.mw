@@ -44,6 +44,14 @@ ul#get-involved-list > li > div {
     font-size: 100px;
 }
 
+.community-link .get-involved-icons
+{
+    font-size: 125px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
 .get-involved-container
 {
     display: flex;
@@ -66,7 +74,7 @@ ul#get-involved-list > li > div {
 <ul id="get-involved-list">
     <li>
         <a class="community-link" href="http://forum.freegamedev.net/viewforum.php?f=16">
-            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
+            <div class="get-involved-icon"><i class="get-involved-icons icon-forum"></i></div>
             <div class="get-involved-name">Forum</div>
         </a>
     </li>
@@ -78,7 +86,7 @@ ul#get-involved-list > li > div {
     </li>
     <li>
         <a class="community-link" href="http://webchat.freenode.net/?channels=%23stk">
-            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
+            <div class="get-involved-icon"><i class="get-involved-icons icon-irc"></i></div>
             <div class="get-involved-name">IRC</div>
         </a>
     </li>
@@ -90,7 +98,7 @@ ul#get-involved-list > li > div {
     </li>
     <li>
         <a class="community-link" href="http://sourceforge.net/projects/supertuxkart/">
-            <div class="get-involved-icon"><i class="fa fa-puzzle-piece"></i></div>
+            <div class="get-involved-icon"><i class="get-involved-icons icon-sf-logo" style="font-size: 90px; margin-top: 5px; margin-bottom: -5px;"></i></div>
             <div class="get-involved-name">Sourceforge</div>
         </a>
     </li>
