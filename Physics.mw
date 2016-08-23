@@ -44,6 +44,10 @@ Select any texture in the SuperTuxKart Image Properties panel, and under "Intera
 * '''High tires adhesion:''' Give karts extra grip on this texture
 * '''Ignore (ghost material):''' The texture is still visible, but karts can drive through it as if it doesn't exist
 
+=== Force fields ===
+
+To enable a force field-like effect on a material, you can check the "Collision action" checkbox and set "Action" to "Push back kart." The translucent spheres in the overworld (challenge selection) use this to prevent you from entering locked challenges.
+
 == Normals Smoothing ==
 
 Normals smoothing allows for smoother driving by interpolating ''normals,'' imaginary lines perpendicular to surfaces. This allows for tracks to be smoother in the physics engine without increasing polycount for the track in the graphical engine. However, because normals have to be interpolated, this can cause problems when the object being driven on is not separate from the walls. You should use it with caution.
