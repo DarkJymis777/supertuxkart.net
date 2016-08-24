@@ -67,7 +67,7 @@ i.os-icon {
 |name=Linux
 |main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-linux.tar.xz/download
 |icon=fa-linux
-|content=[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-linux.tar.xz/download '''Full game'''] [http://samuncle.net/tux/supertuxkart-0.9.2-linux.tar.xz (mirror)]
+|content=[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-linux.tar.xz/download '''Full game''']
 
 '''Packages for specific distributions (might not be the latest version)'''
 
@@ -89,7 +89,7 @@ i.os-icon {
 |main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2.exe/download
 |content={{os-link
 |content=
-[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2.exe/download '''Full game''' (.exe) 32-bit & 64-bit] ([http://samuncle.net/tux/supertuxkart-0.9.2.exe  mirror])
+[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2.exe/download '''Full game''' (.exe) 32-bit & 64-bit] 
 
 [https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/supertuxkart-0.9.2-win32-mingw.zip/download SuperTuxKart 0.9.2 for Windows XP]
 }}
@@ -100,7 +100,7 @@ i.os-icon {
 |main-link=https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/SuperTuxKart-0.9.2-osx.dmg/download
 |content={{os-link
 |content=
-[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/SuperTuxKart-0.9.2-osx.dmg/download '''Full game''' (.dmg)] ([http://samuncle.net/tux/SuperTuxKart-0.9.2-osx.dmg mirror])
+[https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/0.9.2/SuperTuxKart-0.9.2-osx.dmg/download '''Full game''' (.dmg)]
 }}
 }}
 {{os-presentation
