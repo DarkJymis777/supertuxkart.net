@@ -1,0 +1,41 @@
+Sky and lighting may not seem like very important or time-consuming element of track creation, but just because this is one of the last sections, <u>do not slack off</u> on it. Lighting is probably the single most important step in setting the theme or mood of your track—more than even decorations. Decorations should complement the mood, but even the way in which they do this is greatly affected by the lighting. Compare Cocoa Temple with its nighttime version, Carnival del Cacao.
+
+<gallery mode="packed" widths="400px" heights="215px">
+File:Supertuxkart-0.9-screenshot-1.jpg
+File:Supertuxkart-0.9.1-screenshot-3.jpg
+</gallery>
+
+The nighttime sky in Carnival del Cacao is contrasted by the colorful light from the fireworks and the more noticeable light from the torches, creating a more festive atmosphere. Cocoa Temple seems quite everyday and ordinary in comparison.
+
+== Sky ==
+
+Sky complements lighting in setting the mood (and in fact directly effects the lighting if an ambient light map is used). A dark track should have a dark sky, and a light track should have a light sky. Sky is configured in the SuperTuxKart Scene Properties panel. Select a type from the "Sky Type" drop-down menu. Each type is detailed below.
+
+=== Box ===
+
+For performance and lighting reasons, SuperTuxKart uses a ''skybox'' for textured skies, meaning that the track essentially exists inside a textured cube. (Skydomes are no longer an option.) Though simple in design, skyboxes are not always easy to create. Textures must fit together properly; otherwise the corners of the skybox will be readily visible. Don't try to make the skybox too detailed, and '''don't use photographs'''; otherwise you will have problems with noticeable edges. The same rules for [[Texture Guidelines|texture guidelines]] apply to skybox textures.
+
+Don't worry too much if edges are visible. As long as your track is interesting enough, players won't be bothered much by a slightly visible edge, as is visible in the top center of this picture:
+
+<gallery mode="packed" widths="600px" heights="326px">
+File:Supertuxkart-0.9-screenshot-2.jpg
+</gallery>
+
+Another way to avoid visible lines in a skybox is to hide them with vegetation and land formations. The skybox in Cocoa Temple is barely visible, but the vegetation in front of it does not look strange because the skybox texture itself suggests vegetation:
+
+<gallery mode="packed" widths="400px" heights="300px">
+File:Skybox_aa.jpg
+File:Supertuxkart-0.9-screenshot-1.jpg
+</gallery>
+
+== Sun ==
+
+=== Sun (Lighting and Shadows) ===
+
+=== Sun (Visible) ===
+
+== Point lights ==
+
+== Ambient Light Map ==
+
+== Fog and Volumetric Lighting ==
