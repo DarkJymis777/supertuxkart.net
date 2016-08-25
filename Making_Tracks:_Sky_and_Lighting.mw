@@ -71,7 +71,7 @@ File:Sun-godray.jpg|In SuperTuxKart
 Thanks to the support for dynamic shadows added in SuperTuxKart 0.9, most (if not all) objects will cast a shadow—and objects using animation or the vegetation shader will cast animated shadows! Simply check the "Dynamic shadows" checkbox under "Graphical Effects" in the SuperTuxKart Scene Properties panel.
 
 <gallery mode="packed" widths="400px" heights="214px">
-File:Antarctica_dynamicshadows.jpg
+File:Antartica_dynamicshadows.jpg
 </gallery>
 
 == Point lights ==
