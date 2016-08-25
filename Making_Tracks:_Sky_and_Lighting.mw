@@ -78,4 +78,10 @@ A rare exception is made for configuring point lights: they are configured via B
 
 == Ambient Light Map ==
 
+Ambient light maps, also known as image-based lighting or spherical harmonics lighting can be used in conjunction with the the color of the sun to affect the lighting of a track by simulating light bouncing off the image. An ambient light map, however, unlike changing sun color, allows for variable lighting across the scene. 
+
+You can configure an ambient light map for your track by enabling "Ambient light map" under "Graphical Effects" in the SuperTuxKart Scene Properties panel. This allows you to set an ambient light map for each side of the invisible cube which will be used to light the scene.
+
+Often, an ambient light map texture is simply a blurred and shrunken version of the corresponding skybox texture. For performance reasons, ambient light map textures should not exceed 256 × 256 pixels in size.
+
 == Fog and Volumetric Lighting ==
