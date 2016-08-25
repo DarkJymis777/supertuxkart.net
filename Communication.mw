@@ -4,9 +4,8 @@ Before you contact the team, report a bug, post on the forums, etc. you should r
 
 == Please keep in mind... ==
 
-It's important to keep a few things in mind whenever contacting the team. First and foremost, '''the developers are not paid.''' The developers do this because they enjoy it, not because you paid them. They're not paid to please you. [http://forum.freegamedev.net/viewtopic.php?f=17&t=6730 Here] is an example of what ''not'' to do.
-
-Also, keep in mind that '''the developers only work on their free time.''' They might not have a chance to answer right away. Be patient—they'll respond eventually. And if they don't, <u>politely</u> bump your post. This also means that you shouldn't make trivial requests that are of no importance, nor extremely demanding requests. Again, [https://github.com/supertuxkart/stk-code/issues/2551 here] is an example of what ''not'' to do.
+{{Faq-question|title=The developers are not paid.|answer=The developers do this because they enjoy it, not because you paid them. They're not paid to please you. [http://forum.freegamedev.net/viewtopic.php?f=17&t=6730 Here] is an example of what ''not'' to do.}}
+{{Faq-question|title=The developers only work on their free time.|answer=They might not have a chance to answer right away. Be patient—they'll respond eventually. And if they don't, <u>politely</u> bump your post. This also means that you shouldn't make trivial requests that are of no importance, nor extremely demanding requests. [https://github.com/supertuxkart/stk-code/issues/2551 Here] is an example of what ''not'' to do.}}
 
 == Guidelines ==
 
