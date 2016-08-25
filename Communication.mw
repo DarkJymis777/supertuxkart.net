@@ -12,7 +12,16 @@ Also, keep in mind that '''the developers only work on their free time.''' They 
 
 === When reporting a bug or crash in the game ===
 
-* First, check if it's already reported on [https://github.com/supertuxkart/stk-code/issues?q=is%3Aissue GitHub].
-* If the bug is open, see if you can report any more information to the team. Otherwise you probably have to wait for the next release for the fix to be included in the game.
+* If the bug is already reported on [https://github.com/supertuxkart/stk-code/issues?q=is%3Aissue GitHub]:
+** If the bug is open, see if you can report any more information to the team.
+** If the bug is closed, you probably will have to wait for the next release for the fix to be included in the game, unless you want to build from source.
+* If the bug is not reported:
+** Make the title clear and descriptive.
+** Include a detailed explanation of the problem.
+** Include system information such as your operating system, operating system version, graphics processor (GPU) model and manufacturer, graphics driver version, and CPU model.
+** Include the stdout.log file. (See "Where does STK store the user config file" on the [[FAQ]] page for information about where this file is located.)
+** Include screenshots, if needed.
+** If you are capable of compiling STK yourself and running it under a debugger (such as GDB, Valgrind, or Visual Studio Debugger), please compile STK in debug mode, run it, and post the output from the debugger.
+** Include any other information as you see fit.
 
 {{ArtPortalNav}}
