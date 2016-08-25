@@ -74,7 +74,7 @@ i.os-icon {
 * '''Ubuntu:''' Latest version available is 0.9.2. Use our [https://launchpad.net/~stk/+archive/ubuntu/dev PPA] for the latest versions.
 * '''Debian:''' Latest version available is 0.9.2, in Unstable.
 * '''Arch Linux:''' 0.9.2 available in the community repository.
-* '''Gentoo:''' 0.9.2 is available in the games overlay [http://packages.gentoo.org/package/games-action/supertuxkart here].
+* '''Gentoo:''' 0.9.2 is available in hasufell's games overlay [http://packages.gentoo.org/package/games-action/supertuxkart here].
 * '''OpenSUSE:''' 0.9.2 is available in Tumbleweed; 0.9.1 is available in Leap 42.1.
 * '''Manjaro:''' 0.9.2 is available.
 * '''Mageia:''' 0.9.1 is [http://madb.mageia.org/package/show/name/supertuxkart available].
