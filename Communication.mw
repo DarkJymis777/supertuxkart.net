@@ -23,5 +23,12 @@ Before you contact the team, report a bug, post on the forums, etc. you should r
 ** Include screenshots, if needed.
 ** If you are capable of compiling STK yourself and running it under a debugger (such as GDB, Valgrind, or Visual Studio Debugger), please compile STK in debug mode, run it, and post the output from the debugger.
 ** Include any other information as you see fit.
+** Answer any questions the team asks as completely as you can.
+
+=== When presenting an asset or other artwork contribution ===
+
+* Provide the source files (.kra, .xcf, .blend, etc.).
+* Clearly state the license. (See [[Licensing]] for options.)
+* Accept criticism and see what can be done to improve your artwork.
 
 {{ArtPortalNav}}
