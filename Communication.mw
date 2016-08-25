@@ -4,7 +4,7 @@ Before you contact the team, report a bug, post on the forums, etc. you should r
 
 == Please keep in mind... ==
 
-{{Faq-question|title=The developers are not paid.|answer=The developers do this because they enjoy it, not because you paid them. They're not paid to please you. [http://forum.freegamedev.net/viewtopic.php?f=17&t=6730 Here] is an example of what ''not'' to do.}}
+{{Faq-question|title=The developers are not paid.|answer=The developers do this because they enjoy it, not because you paid them. They're not paid to please you, though they'll try to take your suggestions into account if possible. [http://forum.freegamedev.net/viewtopic.php?f=17&t=6730 Here] is an example of what ''not'' to do.}}
 {{Faq-question|title=The developers only work on their free time.|answer=They might not have a chance to answer right away. Be patient—they'll respond eventually. And if they don't, <u>politely</u> bump your post. This also means that you shouldn't make trivial requests that are of no importance, nor extremely demanding requests. [https://github.com/supertuxkart/stk-code/issues/2551 Here] is an example of what ''not'' to do.}}
 {{Faq-question|title=Open-source does not always mean your contributions will be accepted.|answer=The team has to keep the quality of code and artwork up. This does mean that sometimes your work can't be accepted. Please don't be discouraged—the team will be glad to help or give advice.}}
 
@@ -30,5 +30,17 @@ Before you contact the team, report a bug, post on the forums, etc. you should r
 * Provide the source files (.kra, .xcf, .blend, etc.).
 * Clearly state the license. (See [[Licensing]] for options.)
 * Accept criticism and see what can be done to improve your artwork.
+
+=== When making a suggestion for STK ===
+
+This is a sensitive topic. Of course we need to accept criticism and suggestions—if we don't, then it is contrary to an open-source ideal: that the software is for everyone's benefit. But where does a request become too much? For that we must also watch for conflicts with an open-source ideal: that everyone should contribute where possible. So when making a suggestion for STK, please ask yourself these questions:
+
+* Have I made any contribution to SuperTuxKart before?
+** This could be donating, making objects, tracks, textures, etc. Even add-ons help the game.
+* If I were able to do what I am asking for, would I be willing to do so?
+* Do I understand the effort needed to perform this task?
+* Do I at the very least express support for the team and the work they do?
+* Have I made a lot of feature requests lately?
+** This may sound mundane, but it is really a sign of whether you respect the team's work. If you respect their work, you're a lot less likely to complain.
 
 {{ArtPortalNav}}
