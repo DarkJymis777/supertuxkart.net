@@ -104,6 +104,6 @@ Weather is an excellent way to manipulate the mood of a track. To enable weather
 
 == Water ==
 
-Without complex animation, unfortunately it is impossible to create waves or moving water. However, you do have a few options to make realistic water. Most water in SuperTuxKart is simply a water texture (e.g. jungleWater.png for Cocoa Temple)
+Without complex animation, unfortunately it is impossible to create waves or moving water. However, you do have a few options to make realistic water. Most water in SuperTuxKart is simply a water texture (e.g. jungleWater.png for Cocoa Temple) using the alpha blending shader (see [[Materials]]). You can use an animated texture to simulate flowing water.
 
 {{ArtPortalNav}}
