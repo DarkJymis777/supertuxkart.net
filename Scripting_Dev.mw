@@ -6,4 +6,6 @@ The STK Scripting Engine development started as part of GSoC 2014 by [[User:sach
 
 Here is an abstract representation of the initially implemented Scripting Engine (Please note that some of these details maybe different now, [[User:sachith500|contact me]] if you want exact details, or ask on the mailing list.
 
-[[File:Scripting_Engine.jpg|Layer based representation of the Scripting Engine]]
+<gallery mode="packed" widths="400px" heights="269px">
+File:Scripting_Engine.jpg|Layer based representation of the Scripting Engine
+</gallery>
