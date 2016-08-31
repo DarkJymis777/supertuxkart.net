@@ -1,8 +1,6 @@
 {{Generic-hide-summary}}
 {{generic-css}}
-<div class="article_main_title">
-== General Questions ==
-</div>
+{{ArticleMainTitle|content=General Questions}}
 {{faq-question
 |title=What is SuperTuxKart?
 |answer=SuperTuxKart is a free 3D kart racing game; we want to make the game fun more than we want to make it realistic. You can play with up to 4 friends on one PC, racing against each other or just try to beat the computer (a network multiplayer feature is under development).
@@ -68,15 +66,12 @@ In 2015, we released version 0.9, a groundbreaking release powered by a brand ne
 |title=I want to help! What can I do?
 |answer=* The [[ToDo|ToDo list]] and [https://github.com/supertuxkart/stk-code/issues bug tracker] list the most important tasks, but you can of course also do something else.
 
-* Have a look at the [[Community|Get involved]] Article. It should contain all the information you need to start with coding, modelling, desinging or whatever you'ld like to do.
+* Have a look at the [[Community|Get involved]] article. It should contain all the information you need to start with coding, modeling, designing or whatever you'd like to do.
 
 * Contact the current developers and artist through the IRC (#stk on irc.freenode.net) or the [http://forum.freegamedev.net/viewforum.php?f=16 forum] and tell them what you want to achieve.
 }}
 
-<div class="article_main_title">
-
-== Gameplay Questions ==
-</div>
+{{ArticleMainTitle|content=Gameplay Questions}}
 {{faq-question
 |title=The AI (computer kart) shot backwards—how can I do this?
 |answer=Most items (bowling ball, cake, plunger) can be used backwards. Just fire them while looking backwards.
@@ -93,10 +88,7 @@ In 2015, we released version 0.9, a groundbreaking release powered by a brand ne
 |title=I suddenly got a big red circle on my screen, what's that?
 |answer=If there's a penguin in the middle of the circle, someone's shot a plunger at your face. You can do that to others by shooting the plunger backwards (see the FAQ entry about throwing items backwards). If there is no penguin, then it's a bug.
 }}
-<div class="article_main_title">
-
-== Technical Questions ==
-</div>
+{{ArticleMainTitle|content=Technical Questions}}
 {{faq-question
 |title=I found a bug, how should I contact you?
 |answer=First, look at the [https://github.com/supertuxkart/stk-code/issues STK bug tracker] and open a new issue if your problem hasn't been reported yet.
