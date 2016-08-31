@@ -102,6 +102,6 @@ This effect is controlled per-texture. When a kart is over this texture, the cam
 
 Without complex animation, unfortunately it is impossible to create waves or moving water. However, you do have a few options to make realistic water. Most water in SuperTuxKart is simply a water texture (e.g. jungleWater.png for Cocoa Temple) using the alpha blending shader (see [[Materials]]). You can use an animated texture to simulate flowing water (see above).
 
-The best method for creating water is to have three planes: the top one textures with gfx_resetWaterSplash_AlphaTested.png, the middle textured with gfx_distord_AlphTest.png and set as a refraction object (see above), and the bottom plane textured with your water texture.
+The best method for creating water is to have three planes: the top one textures with gfx_resetWaterSplash_AlphaTested.png, the middle textured with gfx_distord_AlphTest.png and set as a refraction/distortion object (see above), and the bottom plane textured with your water texture.
 
 {{ArtPortalNav}}
