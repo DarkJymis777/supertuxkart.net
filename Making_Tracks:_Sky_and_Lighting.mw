@@ -105,6 +105,6 @@ With fog enabled, you can have volumetric lights. This creates a halo-like effec
 File:Antartica_volumetric.jpg
 </gallery>
 
-Volumetric lighting creates a halo around lights, much like in real life. With fog enabled, point lights will autmatically be surrounded by a halo. However, for cones/light beams, you will have to create a fake halo with a mesh or [[Special Effects#Billboards|billboard]]. Be sure to make the mesh a ghost object or the texture a ghost material—see [[Physics]] for more information.
+Volumetric lighting creates a halo around lights, much like in real life. With fog enabled, point lights will autmatically be surrounded by a halo. However, for cones/light beams, you will have to create a fake halo with a mesh or [[Special Effects#Billboards|billboard]]. Be sure to make the mesh a ghost object or the texture a ghost material—see [[Physics]] for more information. Also set the shader to additive blending—see [[Materials]].
 
 {{ArtPortalNav}}
