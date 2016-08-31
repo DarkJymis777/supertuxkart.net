@@ -1,0 +1,26 @@
+{{Popup-warning|content=This page is work-in-progress. Information may be inaccurate or incomplete.}}
+
+Cutscenes are a method for rendering a scene with the game engine without creating a real track. They are used in story mode to show Nolok's capture of Gnu, etc. Cutscenes are also used by the team to create trailers and can allow for better screenshots. They're very useful.
+
+''Note: You must have the SuperTuxKart Blender plugins installed to follow this tutorial. See the [[Installing Tools]] page for more information.''
+
+== Creating a Cutscene ==
+
+Since cutscenes are similar to tracks (and technically ''are'' tracks to the engine) with respect to scaling, library nodes, special effects, sky, etc., you should take a look at the [[Making Tracks]] page first for links to more information. In fact, the only pages you will not find helpful in making a cutscene are those regarding drivelines and navmeshes.
+
+To start with, create a scene in Blender and check the "Is a SuperTuxKart track" box in the SuperTuxKart Scene Properties panel. Fill out the boxes for the cutscene's name, folder name, etc., and check the "Is a cutscene" box—this allows your track to export without a driveline and run as a cutscene.
+
+Create camera in Blender and set its type to "Cutscene camera" in the SuperTuxKart Object Properties panel. You can animate this camera with IPO animation for scaling, rotation, and movement.
+
+{{Popup-warning|content=You can create multiple cutscene cameras; however you will have to switch between the cameras while the cutscene is running. This may produce suboptimal results, so you may prefer to animate the camera's location instead.}}
+
+== Running a Cutscene ==
+
+In the Track Exporter panel, click "Export track." Copy the resulting folder, as well as any needed textures to the <code>tracks</code> directory of the addons folder. (See the [[FAQ]] for information on where this is located.)
+
+To run your cutscene, run SuperTuxKart from the command line like this:
+{{Popup-code|content=supertuxkart --cutscene=<cutscene name> --no-start-screen}}
+
+{{Popup-warning|content=Currrently, the cutscene will continue running until you press the escape key (ESC).}}
+
+{{ArtPortalNav}}
