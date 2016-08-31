@@ -98,10 +98,6 @@ Set the "Start Sphere Radius" property so that the start spheres (where the the 
 
 This effect is controlled per-texture. When a kart is over this texture, the camera will stop moving but still face the kart. This is most useful to emphasize a kart's fall into a pit or into water, which is why this is enabled by checking the "Falling Effect" box in the SuperTuxKart Image Properties panel. However, it might also be useful for e.g. a kart being shot by a cannon (See [[Physics]]). This effect is already enabled if you are using <code>gfx_resetWaterSplash_AlphaTested.png</code> for water.
 
-== Weather ==
-
-Weather is an excellent way to manipulate the mood of a track. To enable weather, select the weather type under "Weather" in the SuperTuxKart Scene Properties panel. (Currently, only rain and snow are supported.) You can also check the "Lighting" checkbox to enable lightning, and you can set the name of a sound file to play in the "Weather sound" box.
-
 == Water ==
 
 Without complex animation, unfortunately it is impossible to create waves or moving water. However, you do have a few options to make realistic water. Most water in SuperTuxKart is simply a water texture (e.g. jungleWater.png for Cocoa Temple) using the alpha blending shader (see [[Materials]]). You can use an animated texture to simulate flowing water (see above).
