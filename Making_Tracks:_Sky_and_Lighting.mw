@@ -90,6 +90,10 @@ You can configure an ambient light map for your track by enabling "Ambient light
 
 Often, an ambient light map texture is simply a blurred and shrunken version of the corresponding skybox texture. For performance reasons, ambient light map textures should not exceed 256 × 256 pixels in size.
 
+== Weather ==
+
+Weather is an excellent way to manipulate the mood of a track. To enable weather, select the weather type under "Weather" in the SuperTuxKart Scene Properties panel. (Currently, only rain and snow are supported.) You can also check the "Lightning" checkbox to enable lightning, and you can set the name of a sound file to play in the "Weather sound" box.
+
 == Fog and Volumetric Lighting ==
 
 With fog enabled, you can have volumetric lights. This creates a halo-like effect, where light reflects off of the fog. First, enable fog by checking the "Fog" checkbox under "Graphical Effects" in the SuperTuxKart Scene Properties panel. This creates four more options:
