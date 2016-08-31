@@ -67,8 +67,7 @@ ul#get-involved-list > li > div {
 
 
 }}
-
-
+{{Generic-hide-summary}}
 <html>
 <ul id="get-involved-list">
     <li>
