@@ -8,7 +8,7 @@ Textures are also not completely fake, cartoon-y looking. Feel free to add plent
 
 == Color and Lighting ==
 
-Textures in SuperTuxKart are colorful and contrasting, but must not clash. Extremely bright, neon/plastic/candy-colored textures will not be accepted into the main repository unless they are used in only a very small area, like the start sign in XR591. The same rule applies to textures that are only one color.
+Textures in SuperTuxKart are colorful and contrasting, but must not clash. Extremely bright, neon/plastic/candy-colored textures will not be accepted into the main repository unless they are used in only a very small area, like the start sign in XR591. The same rule applies to textures that are only one color. Pure black or pure white textures are also discouraged—you lose color information with 100% black or white.
 
 Textures should be drawn as if ambient color and light in the picture were neutral. SuperTuxKart's engine will automatically change the color balance and brightness based on lighting in the scene and vertex coloring.
 
