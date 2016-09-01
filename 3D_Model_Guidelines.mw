@@ -6,8 +6,13 @@ Objects in SuperTuxKart should be realistic in size, shape, general form. Howeve
 
 <gallery mode="packed" widths="300px" heights="200px">
 File:RealPalmTree.jpg|A real palm tree
-File:Supertuxkart-0.8.1-screenshot-2.png|Old, cartoony palm tree model
+File:Supertuxkart-0.8.1-screenshot-2.png|Old, very cartoony palm tree model
 File:Supertuxkart-0.9-screenshot-7.jpg|Modern, realistic, yet simplified model
 </gallery>
 
-You can see that the the new palm tree model far more closely matches the shape of a real palm tree. However, it is not so detailed that it looks real.
+You can see that the the new palm tree model far more closely matches the shape of a real palm tree. However, it is not so detailed that it looks real. In short, <u>maintain realism in general form, but also retain a cartoony appearance by avoiding excessive detail in shape or textures.</u>
+
+== Rules ==
+
+* All models '''MUST''' be child-friendly. SuperTuxKart should fit the ESRB "Everyone" [https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board#Ratings rating].
+* Models should be capable of looking good both alone and in groups.
