@@ -32,7 +32,7 @@ File:Supertuxkart-0.9-screenshot-1.jpg|In-game
 
 === Plain Color ===
 
-The sky will be a single solid color, set by the "Sky color" property. This is useful for mostly-indoor tracks.
+The sky will be a single solid color, set by the "Sky color" property. This could useful for mostly-indoor tracks, but is not recommended.
 
 === None ===
 
