@@ -13,48 +13,13 @@ It's important to know how sizes in Blender translate to STK. Here are some refe
 * Tracks like Blackhill Mansion (soon to be replaced by Ravenbridge Mansion) have certain sections (such as the path through the graveyard) that are as narrow as 8 units wide.
 * A palm tree is about 27 Blender units tall.
 
-== Polycount ==
+== Polycount Guidelines ==
 
-Polycount is the number of surfaces, or faces 3D objects have. Older versions of Blender only supported objects made of "quads" (quadrilaterals—polygons made of four points) and "tris" (triangles—polygons made of three points). "Poly" was generally taken to mean "number of quads." However, Blender now supports n-gons, or polygons with unlimited numbers of points, and only supplies numbers of surfaces and tris. Thus, since the number of tris can always be relied upon to stay the same (a triangle never gets more points!) it is more accurate to count tris than poly. Therefore, these guidelines refer to tris.
-
-=== A Bit of History ===
-
-In the old days of gaming it was impossible to compute perfect lights for all pixels. All intense computation was done for each poly and then interpolated to the pixels inside the poly.
-
-But nowadays modern engines like [[Antarctica: Overview|Antarctica]] use per-pixel lighting. Therefore, the most complex part isn't the vertex shader but the pixel shader. Let's take an example of an object that has ~500 polygons. For the GPU, managing a vertex is maybe ~10 instructions (it's not the exact number, just to give you an indication). For each poly of your model the computer will do ~10 instructions, so 500 * 10 = 5000 instructions for the entire mesh.
-
-Now, the pixel part. It depends on how many pixels will be taken up by your object, but let's go with the worst case scenario—let's assume the whole screen is filled with your object. For each pixel to compute (the light, the gloss, the normal map, etc), it will take ~50 instructions to the GPU.
-
-If you have a resolution of 800*600 (most people have higher resolution), 800 * 600 * 50 = 24000000 instructions. So even if you double the number of surfaces, you won't greatly affect the majority of the power spent. It's calculated by pixel, not by surface now.
-
-Thus, we can increase the polycount without too much trouble. However it's important to keep it under control.
-
-=== Measuring Polycount ===
-
-Blender displays polycount in the '''Info''' window/toolbar next to the rendering engine selector:
-
-<gallery mode="packed" widths="591px" heights="26px">
-File:Blender_screenshot_tris.png
-</gallery>
-
-Look for the number of '''Tris'''. This is the information you need. Also, remember that the number of tris in the entire scene is only shown in object mode.
-
-=== Polycount Guidelines ===
+''For more details about polycount, as well examples for decorations, see [[3D Model Guidelines]].''
 
 * The polycount for a track should be ~290000 tris. Cocoa Temple exceeds this limit at 295058 tris, but Cocoa Temple is an exceptionally large and complicated track. Your track should not exceed the limit unless '''''<u>ABSOLUTELY</u>''''' necessary. (In this case, "'''''<u>ABSOLUTELY</u>''''' necessary" means that your track is as detailed or more than Cocoa Temple, has the same or better quality, and is not unnecessarily wasting poly.) Most tracks will not even come close to this limit. Antediluvian Abyss, for example, uses 230810 tris, and Gran Paradiso Island uses 235411 tris.
 * Use an appropriate balance of high- and low-poly. Partially-covered objects and objects that are always seen from far away should be low poly.
 * Avoid unnecessary objects. Objects that cannot be seen or would not be noticed if they were missing should be avoided.
-
-=== Polycount Examples ===
-
-* A cargo plane: ~4000 tris
-* A palm tree with Level of Detail
-** High: 1400 tris
-** Medium: 1400 tris
-** Low: 42 tris
-* A basic plant: 32 tris
-* A medium-sized tree: 1380 tris
-* A pumpkin: 470 tris
 
 <gallery mode="packed" widths="400px" heights="208px">
 File:Detail-distant-compared-to-near.jpg|The fence, vegetation, and water are detailed near where karts drive, but far away the fence is very basic, there is no vegetation, and the water has no bottom, only the skybox.
