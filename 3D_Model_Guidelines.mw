@@ -17,3 +17,4 @@ You can see that the the new palm tree model far more closely matches the shape 
 * All models '''MUST''' be child-friendly. SuperTuxKart should fit the ESRB "Everyone" [https://en.wikipedia.org/wiki/Entertainment_Software_Rating_Board#Ratings rating].
 * Models should be capable of looking good both alone and in groups.
 * High-poly models should make use of [[Level of Detail]].
+* Avoid adding ground or vegetation around your objects, as this limits their usability in different scenarios.
