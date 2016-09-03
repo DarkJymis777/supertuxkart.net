@@ -6,12 +6,11 @@ Blender is currently used for all detailed and professional-grade tracks in Supe
 
 == Scaling ==
 
-It's important to know how sizes in Blender translate to STK. Here are some references:
+It's important to know how sizes in Blender translate to STK, especially for the road. (More references can be found on the [[3D Model Guidelines]] page. Here are some references:
 
 * A typical track (for example, Antediluvian Abyss) is about 12 Blender units wide at an average section.
 * Certain tracks have very wide sections. For example, the width of the road at the start of Cocoa Temple is ~18 Blender units.
 * Tracks like Blackhill Mansion (soon to be replaced by Ravenbridge Mansion) have certain sections (such as the path through the graveyard) that are as narrow as 8 units wide.
-* A palm tree is about 27 Blender units tall.
 
 == Polycount Guidelines ==
 
