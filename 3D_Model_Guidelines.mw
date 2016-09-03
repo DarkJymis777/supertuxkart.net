@@ -55,3 +55,11 @@ Look for the number of '''Tris'''. This is the information you need. Also, remem
 * A basic plant: 32 tris
 * A medium-sized tree: 1380 tris
 * A pumpkin: 470 tris
+
+== Scaling ==
+
+Objects must have the correct proportions so that they do not look odd in-game.
+
+* A palm tree is about 27 Blender units tall.
+* The wooden buildings in Northern Resort are approximately 8 Blender units tall.
+* The Lampone flags in Candela City are 10 Blender units tall.
