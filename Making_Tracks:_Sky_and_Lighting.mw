@@ -96,7 +96,7 @@ You can add clouds by using meshes. However, make sure the camera far clip set i
 
 == Weather ==
 
-Weather is an excellent way to manipulate the mood of a track. To enable weather, select the weather type under "Weather" in the SuperTuxKart Scene Properties panel. (Currently, only rain and snow are supported.) You can also check the "Lightning" checkbox to enable lightning, and you can set the name of a sound file to play in the "Weather sound" box.
+Weather is an excellent way to manipulate the mood of a track. To enable weather, select the weather type under "Weather" in the SuperTuxKart Scene Properties panel. (Currently, only rain and snow are supported.) You can also check the "Lightning" checkbox to enable lightning, and you can set the name of a sound file (.ogg format) to play in the "Weather sound" box.
 
 == Fog and Volumetric Lighting ==
 
