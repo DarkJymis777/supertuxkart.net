@@ -39,7 +39,7 @@ Thus, we can increase the polycount without too much trouble. However it's impor
 
 Blender displays polycount in the '''Info''' window/toolbar next to the rendering engine selector:
 
-<gallery mode="packed" widths="591px" heights="26px">
+<gallery mode="packed" widths="800px" heights="40px">
 File:Blender_screenshot_tris.png
 </gallery>
 
