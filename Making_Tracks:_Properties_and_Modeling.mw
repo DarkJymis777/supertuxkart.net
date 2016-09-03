@@ -4,7 +4,7 @@ When you open Blender with the SuperTuxKart plugins installed, you will find tha
 
 The first thing you need to do is check the "Is a SuperTuxKart track" box under "SuperTuxKart Scene Properties". Many more options will now appear in the Scene Properties panel. However, right now, you only need to change a few things:
 
-* In the "Track Exporter" panel, click the folder button to set the assets path. Choose the directory where you will be saving your .blend file.
+* In the "Track Exporter" panel, click the folder button to set the assets path. This could be the <code>stk-assets</code> or <code>data</code> folder, or the <code>addons</code> folder. When exporting your track, the track exporter will create a folder at this path called <code>tracks</code>. Inside this will be another folder containing your track.
 * In the SuperTuxKart Scene Properties, set the following:
 ** The track name
 ** The folder name
