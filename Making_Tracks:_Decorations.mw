@@ -30,7 +30,7 @@ If you are using LOD for your duplicated objects (see the [[Level of Detail]] mo
 
 You should use decorations from the media repository whenever possible. They can be guaranteed to to match the style of SuperTuxKart, use advanced graphical effects to ensure that they look good, and save you work, since you don't need to make and texture all your models. If you have not already checked out the media repository, see the [[Media Repo]] page.
 
-To use a model from the media repository, in Blender, in the Info window, go to File > Link. Navigate to the library folder in the media repo, find an object, then open the .blend file. In the "Object" folder, open the object that you want. (There should usually only be one object per .blend.) Make it a proxy by going to Object > Make Proxy in the 3D View window header so that you can move, rotate, and scale it.
+To use a model from the media repository, in Blender, in the Info window, go to File > Link. Navigate to the library folder in the media repo, find an object, then open the .blend file. In the "Object" folder, open the object that you want. (There should usually only be one object per .blend, unless the library node uses [[Level of Detail]].) Make it a proxy by going to Object > Make Proxy in the 3D View window header so that you can move, rotate, and scale it.
 
 When you duplicate a library object in your scene, be sure to use Alt + D (link duplicate) rather than Shift + D (actual duplicate). If you use an actual duplicate, the object will no longer be linked to the library.
 
