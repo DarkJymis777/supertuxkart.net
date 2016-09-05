@@ -133,7 +133,7 @@ The cutout transparency shader is best for things like vegetation (when you do n
 
 The blending transparency ("alpha blend") shader is used for translucent textures, like windows. The colors of the objects seen through these textures will be blended with the colors of the translucent parts of the texture. Blending transparency supports alpha masks; see [[#Alpha Mask 2|Alpha Mask]] below.
 
-{{Popup-warning|content=Blending transparency can only make objects darker, not lighter. Be aware that very darkly tinted transparent sections could greatly reduce the visibility of objects behind them.
+{{Popup-warning|content=Blending transparency can only make objects darker, not lighter. Be aware that very darkly tinted transparent sections could greatly reduce the visibility of objects behind them.}}
 
 === Additive Transparency ===
 
