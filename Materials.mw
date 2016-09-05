@@ -127,7 +127,7 @@ File:Gnu_mask.png|Colorization mask for Gnu
 
 === Cutout Transparency ===
 
-The cutout transparency shader is best for things like vegetation (when you do not want it to move—otherwise, use the vegetation shader). It performs "alpha testing", to make pixels of a texture either 100% solid or 100% transparent. However, it doesn't have all the features of the solid shader, so avoid using it for solid textures. Cutout transparency supports alpha masks; see [[#Alpha Mask 2|Alpha Mask]] below.
+The cutout transparency shader is best for things like vegetation (when you do not want it to move—otherwise, use the vegetation shader). It performs "alpha testing", to make pixels of a texture either 100% solid or 100% transparent. However, it doesn't have all the features of the solid shader, so avoid using it for solid textures. If your texture is mostly solid with a few transparent sections, you should use a separate texture. Cutout transparency supports alpha masks; see [[#Alpha Mask 2|Alpha Mask]] below.
 
 === Blending Transparency ===
 
