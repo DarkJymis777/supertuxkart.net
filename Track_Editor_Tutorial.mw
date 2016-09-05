@@ -1,32 +1,42 @@
 On the first start, you will see a directory selector window. Maneuver to the data directory, which contains the texture, karts, models, etc. (Double click on a directory to move in, and double click on the “..” to leave the current directory.) Once you found the right folder, hit the OK button. If it isn’t the one the editor is expected, you won’t get rid of the selector window.
 
-[[File:Track_editor_tutorial_0.png|center]]
+<gallery mode="packed" widths="603px" heights="511px">
+File:Track_editor_tutorial_0.png
+</gallery>
 
 Once it is selected, be patient: the editor will load the textures, which takes some time. The next message window will be the welcome screen. It contains the recently opened track list, which is most likely empty. Just click on the new button in order to create a new track.
 
-
-[[File:Track_editor_tutorial_1.png|center]]
-
+<gallery mode="packed"
+File:Track_editor_tutorial_1.png
+</gallery>
 
 This image will show you how to fill the textboxes: 
 
-[[File:Track_editor_tutorial_2.png|center]]
+<gallery mode="packed">
+File:Track_editor_tutorial_2.png
+</gallery>
 
 The “File Name” field should not contain any special characters. Leave the gravity checkbox unchecked for now, that affects upside-down roads for the development version. Once you are done, hit the Create button. <br/> <br/>
 Press and hold the “shift” key first, press and hold the middle mouse button, and move the mouse to move the camera. Do the same without holding “shift” to rotate.
 
-[[File:indi.png|center]]
+<gallery mode="packed">
+File:indi.png
+</gallery>
 
 There is a small kart in the left lower corner of the screen, which changes its orientation as you rotate the camera, and become bigger as you zoom in, or smaller as you zoom out. This is an indicator, showing you how big things in the game are.
 
 Click on the spade icon to activate the height modifier tool. Move the mouse over the terrain: the effected vertices are highlighted with red. Hold down left mouse button, and move your mouse around to draw a nice mountain. You can also decrease the highlighted vertices’ height using right mouse button in the same way.
 
-[[File:Track_editor_tutorial_3.png|center|800px]]
+<gallery mode="packed" widths="800px" heights="497px">
+File:Track_editor_tutorial_3.png
+</gallery>
 
 Play a little with the tool: modify the radius and the intensity of the tool with the scrollbars and switch between different edge types by clicking on the icons. You can always cancel your modification using the undo icon in the toolbar (red arrow pointing left), or with the hotkey ctrl+z.
 Once you are confident, create a mountain to the middle of the map. It should look similar to this: 
 
-[[File:Track_editor_tutorial_4.png|center|800px]]
+<gallery mode="packed" widths="800px" heights="493px">
+File:Track_editor_tutorial_4.png
+</gallery>
 
 Time to define the driveline. You can do it with placing control points. Click on the third main icon in the toolbar to activate the road panel:
 
