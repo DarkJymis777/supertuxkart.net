@@ -78,7 +78,7 @@ In 2015, we released version 0.9, a groundbreaking release powered by a brand ne
 }}
 {{faq-question
 |title=Can I play STK on the internet?
-|answer=The network support feature is under development. The basic support has been added in the Google Summer of Code 2013, but it's still not finished. See [[Networked Multiplayer]] (and pages linked from there) for more information.
+|answer=The network support feature is under development. The basic support has been added in the Google Summer of Code 2013, but it's still not finished. See [[Talk:Networked Multiplayer]] (and pages linked from there) for more information.
 }}
 {{faq-question
 |title=Why some keyboard keys do not work when pressed simultaneously?
