@@ -26,6 +26,35 @@ If you have one decoration that is used multiple times throughout your track and
 
 If you are using LOD for your duplicated objects (see the [[Level of Detail]] module), you do not have to worry about this.
 
+== Particle Systems for Distributing Decorations ==
+
+You can use Blender's own particle system as an easy way to randomly disperse objects. First, make sure the object you would like to distribute is set as an Object, LOD Standalone, or LOD Instance type in the SuperTuxKart Object Properties panel. If you are using an object linked from the library (see below) make sure you have made a proxy already.
+
+Next, select the object you want the object to be distributed on. In Blender's Properties window, in the Particles section, click the plus (+) button to add a particle system. You may want to give the particle settings a name so that you can use the settings on other objects too.
+
+{{Popup-warning|content=It's best if the object the particles are being emitted from is a semi-flat surface (i.e. not a polyhedron). If is not, you'll end up with objects being emitted all over the place where you don't want them.}}
+
+Under '''Emission''', set the following properties:
+
+* Number: this is the number of object that will be emitted.
+* Set both "Start" and "End" to 1.0.
+* You may want to check "Use Modifier Stack" if you are using modifiers on the surface that will emit objects.
+
+Under '''Velocity''', set "Normal" to 0.0. This makes sure that objects will be upright.
+
+Under '''Physics''', set the following properties:
+
+* Select "None" instead of "Newtonian."
+* Set "Size" to 1.
+* You may want to set "Random Size" to approximately 0.6.
+
+Under '''Render''', set the following properties:
+
+* Select "Object" instead of "Halo."
+* Set "Dupli Object" to the name of your Object, LOD Instance, LOD Standalone, or library node proxy.
+
+All done! Now these objects will export as part of your track!
+
 == Decorations from the Media Repository ==
 
 You should use decorations from the media repository whenever possible. They can be guaranteed to to match the style of SuperTuxKart, use advanced graphical effects to ensure that they look good, and save you work, since you don't need to make and texture all your models. If you have not already checked out the media repository, see the [[Media Repo]] page.
