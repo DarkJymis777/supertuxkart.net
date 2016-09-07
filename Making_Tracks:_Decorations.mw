@@ -32,6 +32,12 @@ You can use Blender's own particle system as an easy way to randomly disperse ob
 
 Next, select the object you want the object to be distributed on. In Blender's Properties window, in the Particles section, click the plus (+) button to add a particle system. You may want to give the particle settings a name so that you can use the settings on other objects too.
 
+<gallery mode="packed" widths=400px heights=300px>
+File:Particlesystem.png|Particle system properties
+File:Particlesystem3dview.PNG|Particle system in Blender
+File:Particlesystem-ingame.png|Particle system in-game
+</gallery>
+
 {{Popup-warning|content=It's best if the object the particles are being emitted from is a semi-flat surface (i.e. not a polyhedron). If is not, you'll end up with objects being emitted all over the place where you don't want them.}}
 
 Under '''Emission''', set the following properties:
