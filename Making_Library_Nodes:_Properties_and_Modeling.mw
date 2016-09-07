@@ -2,38 +2,4 @@ This page won't go into detail about modeling—any Blender tutorial can help wi
 
 == Modeling ==
 
-Use whatever methods you need to model your objects. However, it helps to understand the scaling of objects a bit—for more information, see the [[3D Model Guidelines]] page, which you should have already read. If you are using level of detail, you may want to skip ahead to the [[Level of Detail]] page and then come back to this page.
-
-== Library Node IDs ==
-
-Every library node must have an ID. The format is
-{{Popup-code|content=stklib_objectName_variationLetter}}
-
-The object name should be short and descriptive. It should not explain the details of your object, such as a plant's species. If an object similar to yours already exists in the <code>library</code> folder of the media repository, use a different variation letter. For example, if you were creating a palm tree model, you would notice that <code>stklib_palmTree_a</code> already exists. Therefore you would use <code>stklib_palmTree_b</code> for a library node ID.
-
-== Properties ==
-
-In Blender, you must first check the box "Is a SuperTuxKart library node" in the SuperTuxKart Scene Properties panel.
-
-Set "Code (folder name)" to the library node's ID.
-
-=== Object Properties ===
-
-You should have at least one main object that will be visible in Blender when someone links to your library node.
-
-* If you made a library node with only a single object, that will be your main object. Simply set the object to type "Object" in the SuperTuxKart Object Properties panel.
-* If you are using [[Level of Detail]], your LOD instance will be the main object.
-* Do not use the "None" object type; this is only for tracks, arenas, and cutscenes.
-* You can use the "Ignore" type to make prevent the object from being exported.
-
-=== Naming ===
-
-It is extremely important to have consistent naming for library nodes, since other artists will be using them.
-
-* The .blend file should be named with the library node ID with the <code>.blend</code> file extension.
-* The object to be linked in a scene (of type "Object," "LOD Instance," or "LOD Standalone" in the SuperTuxKart Object Properties panel) should be named with the library node prefix suffixed with <code>_main</code>. For example,
-{{Popup-code|content=stklib_palmTree_a_main}}
-
-* Other objects (e.g. LOD Models, particle emitters, etc. should be given a clear and identifying name to avoid confusion.)
-
-{{ArtPortalNav}}
+Use whatever methods you need to model your objects. However, it helps to understand the scaling of objects a bit—for more information, see the [[3D Model Guidelines]] page, which you should have already read. When you have finished
