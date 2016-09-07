@@ -1,3 +1,11 @@
+== Ideas ==
+
+Don't just randomly make models—make sure there's a need for them. First check the [[Needed Objects]] page, and discuss with the team to clarify what they need. Concept art is also extremely helpful, but don't spend too much time on it.
+
 == Importing Models from other sources ==
 
 If Blender can import it, the SuperTuxKart exporter scripts can export it. If you prefer to create your models in another program, you can simply import them into Blender (provided the format is supported) by going to File > Import in Blender's info window. However, you will still need to set up materials and other properties to be able to use your models in SuperTuxKart.
+
+== Blender ==
+
+Blender can be difficult to learn. However, start with a basic object and learn from there. Making objects for SuperTuxKart is a great way to help while learning Blender, and a great way to move toward more advanced things like making tracks or arenas.
