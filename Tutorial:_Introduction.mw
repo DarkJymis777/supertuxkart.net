@@ -10,11 +10,9 @@ The goal is:
 * gathering live feedback
 * This tutorial won't cover how to use blender. I assume you have already a basic knowledge in blender.
 
-== Before starting ==
-
+= Before starting =
 To follow the tutorial you need the fellowing tools and software on your computer:
-
-* [https://www.blender.org|Blender 3D] with our [[Installing Tools| exporting tools]]
+*[https://www.blender.org/| Blender 3D] with our [[Installing_the_tools| exporting tools]]
 *A 2D image manipulation program (I will use gimp or krita but you can also use photoshop)
 *A vector image program (inskape or illustrator is fine)
 *The development version of SuperTuxKart (Tutorial here [[Build_STK_on_Linux| for Linux]], [[How_to_build_the_Windows_version| for Microsoft Windows]] and [[Building_and_packaging_on_OSX| For MacOSX]])
@@ -23,45 +21,39 @@ To follow the tutorial you need the fellowing tools and software on your compute
 *Time and motivation
 
 
-Don't forget our own resources:
-
-*[[Making Tracks]]
-*[[Style]]
+Don't forget our own ressources
+*[[Track_Maker%27s_Guide| The track maker guide]]
+*[[Style_Guidelines| The style guidelines]] 
+*The [[universe| universe of SuperTuxKart]]
 
 So, we are ready to dive into the creation of our arena. The next step is to gather references that will help us to keep one foot in reality.
 
-== Gathering references ==
-
-{{Popup-warning|content=Why do we need references?
-
-People aren't not very good to remember details. In one second we can roughly only remember 10 different objects.}}
+= Gathering references =
+<div class="outer_info">
+    <div class="inner_msg">
+Why do we need references ?<br />
+People aren't not very good to remember details. In one second we can roughly only remember 10 different objects
+</div></div>
 
 For instance if I ask you to create a concrete barrier, everyone knows how a concrete barrier look, you probably see them everyday when you go to work. So you open blender and do something like
 
-<gallery mode="packed" widths="800px" heights="461px">
-File:Stk-tutorial-barrier-1.jpg
-</gallery>
+[[Image:Stk-tutorial-barrier-1.jpg|center|800px]]
 
-The problem is you are missing a lot of details and over simplifying the object. It looks very cheap and if you do all your objects like that the end result won't be as good as it could be. The solution is simply to gather pictures, drawing, ideas, etc that will help you during the process of creating the map. Yes it's a bit like cheating but it's recommended and allowed. The goal is to have the right inspiration. Now if I show you a picture like
-
-[https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BarreiraNewJersey.JPG/1280px-BarreiraNewJersey.JPG this one], you can see all the details and reproduce them for your track/objects/etc.
-
-<gallery mode="packed" widths="800px" heights="461px">
-File:Stk-tutorial-barrier-2.jpg
-</gallery>
+The problem is you are missing a lot of details and over simplifying the object. It looks very cheap and if you do all your objects like that the end result won't be as good as it could be. The solution is simply to gather pictures, drawing, ideas, etc that will help you during the process of creating the map. Yes it's a bit like cheating but it's recommended and allowed. The goal is to have the right inspiration. Now if I show you a picture like [https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BarreiraNewJersey.JPG/1280px-BarreiraNewJersey.JPG| this one], you can see all the details and reproduce them for your track/objects/etc.
+[[Image:Stk-tutorial-barrier-2.jpg|center|800px]]
 
 See the big difference. The barrier is interesting to see, there is a lot of details like the wires on top to load them, the warning strip at the bottom etc.
-It's not photorealistic but now at least we got an object with interesting details that could be a real life barrier. (And besides, the goal isn't to be completely realistic—just mostly realistic.)
+It's not photorealist but now at least we got an object with interesting details that could be a real life barrier.
 
 It's important to gather references from the biggest object to the smallest detail. In our case we are interested in stadium and what's inside them.
 
-=== Large scale references ===
+== Large scale references ==
 
 Las Dunas is a city located in the United Counties of Amarigo (UCA). It is mainly based on the city of Los Angeles, Las Vegas, Santa Monica. Ideally the stadium should be a "mix" between one from Los Angeles and Las Vegas.
 
 Ideally we should go to Los Angeles/Las Vegas to take references unfortunatly I don't live near those cities so my main research will be online and by going to the stadium of my city. You have to understand we don't go for the generic stadium found in all cities. We go for something big and epic. People should be able to remember very easily the architecture.
 
-==== References for the stadium ====
+=== References for the stadium ===
 
 We are looking for references for stadium. Also note even if we are inside the whole time of the battle, we gather references from stadium and surrounding to get an idea how it looks both inside and outside. The outside may seems useless for you but if we do a track outside in the city it might be interesting. It's also good to model a part of the area around the playground so we can do screenshots and use it in the trailer.
 
@@ -79,8 +71,7 @@ Stadium in real life are designed to handle large crowds, they have built in saf
 
 It might be interesting to meet an architect who build them. We won't do that for the tutorial but it gives you an idea of the depth and analysis that comes into next generation supertuxkart tracks.
 
-==== References for the city ====
-
+=== References for the city ===
 Even if we won't do the city here is some interesting landmark. Maybe we can make them visible from inside the stadium. Don't forget Las Dunas is a crossover between Los Angeles and Las Vegas. So we should take inspiration from both cities
 *https://i.imgur.com/esOs30th.jpg
 *http://i.imgur.com/PVkCIqsh.jpg
@@ -88,15 +79,13 @@ Even if we won't do the city here is some interesting landmark. Maybe we can mak
 *http://i.imgur.com/xowPam9h.jpg
 *http://i.imgur.com/bLh4QvKh.jpg
 
-==== References for the blimp ====
-
+=== References for the blimp ===
 In the original Las Dunas stadium there is a small blimp. I really like it and I got some ideas for it. Here is some references of blimps
 
 *http://bloximages.newyork1.vip.townnews.com/hickoryrecord.com/content/tncms/assets/v3/editorial/9/07/90770e7c-c34d-11e2-b37d-0019bb30f31a/519d7a29de094.image.jpg
 *http://aftermathnews.files.wordpress.com/2007/08/isis_air_high_altitude_airship_concept.jpg
 
-==== References for the general mood ====
-
+=== References for the general mood ===
 Pictures above where mainly for geometry and architecture. Now we want some information about how the track should look (the sky, the color, etc). I will respect the original idea of a track during night time. Since the city is in a desert we should go for warm colors in the yellow/orange. The sky is bright and we can see the stars and the moon
 
 *http://i.imgur.com/UtiVIcuh.jpg
@@ -106,8 +95,7 @@ Pictures above where mainly for geometry and architecture. Now we want some info
 
 I will try to avoid pinkish colors to not make a clone of Candela City who has already a pinkish sky. Each track should have it's own color palette. It helps to make them different and interesting for players
 
-==== References for racing inside a stadium ====
-
+=== References for racing inside a stadium ===
 We want to see how stadium are modified for racing purpose
 
 *https://i.imgur.com/043nWRph.jpg
@@ -116,11 +104,10 @@ We want to see how stadium are modified for racing purpose
  
 The last one is the most interesting one. The resolution is quite big and allows you to see many small details. It will be one of my main reference for inside the stadium.
 
-=== Small scale references ===
-
+== Small scale references ==
 Now we have a lot of pictures about stadiums/arenas/etc. We need to focus on the details in the playground. It's very important to get as many references as we can. These are the objects near the player that must have the highest quality possible
 
-==== Bench ====
+===Bench===
 Around the player there will be bench where the public sit down. You can see there are differences between the WIP area and the area for the public.
 
 *https://i.imgur.com/YenjcJah.jpg
@@ -150,7 +137,8 @@ In the next part we will test the current tracks and other games to create the l
 
 If you have questions you can ask on our forum or IRC channel.
 
-Part 2 of the tutorial is available [[Tutorial: Planning| here]]
+Part 2 of the tutorial is available [[Tutorial:Planning| here]]
 
 = Navigation data for AI =
-For computer players to work, a navmesh for the arena is required, details [[Legacy:New drivelines#Navmeshes|here]].
+For computer players to work, a navmesh for the arena is required, details here:
+http://supertuxkart.sourceforge.net/New_drivelines#Navmeshes
