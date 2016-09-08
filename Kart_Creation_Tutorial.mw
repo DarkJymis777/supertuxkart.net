@@ -122,7 +122,7 @@ The shadow image is a png image which is applied on the ground under the karts. 
 
 To see how you kart looks in STK, you need to export it using the STK kart exporter.
 
-After setting up blender as described in [[Installing the tools]], locate the SuperTuxKart panel :
+After setting up blender as described in [[Installing Tools]], locate the SuperTuxKart panel :
 
 <gallery mode="packed" widths=640px heights=360px>Kart_panel.png</gallery>
 
