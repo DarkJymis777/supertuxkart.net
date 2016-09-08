@@ -1,45 +1,40 @@
-Welcome in the '''part 3''' of this tutorial designed to help you to do racing tracks for SuperTuxKart.
-
-If you haven't read yet the [[Tutorial: Planning| part 2]] it's recommended to do it before reading this one.
+Welcome in the '''part 3''' of this tutorial designed to help you to do racing tracks for SuperTuxKart.<br />
+If you haven't read yet the [[Tutorial:Planning| part 2]] it's recommended to do it before reading this one.
 
 The goal is
 *Imagining the arena
 *Creating an architectural concept for the stadium
 *Imagining the playground
 
-== Composition of a map ==
+=Composition of a map=
 
 Now before jumping into work It's important to clarify a few point. Let's break down what constitute a map. I will take for example the Gran Paradiso Island to explain different area in maps. Remember even if it's a track and we are building an arena both are very similar. There is roughly 3 area in a map.
 
-<gallery mode="packed" widths="800px" heights="490px">
-File:GranParadiso area.jpg
-</gallery>
+[[Image:GranParadiso area.jpg|center|800px]]
 
-=== The playground area ===
-
+==The playground area==
 The green zone is called the playground area. It's the area where the player can drive during a normal race or a normal battle. It's the only part where the player can go (without cheating and or enabling artist debug mode)
 *The area is highly detailed
 *It's the only area where the player can go
 *There can be secret area. But if it's intended to be able to be discovered by the player then it's the playground area
-
-=== The Surrounding area ===
+==The Surrounding area==
 The blue zone is called the surrounding area. This area isn't accessible by the player
 *It's a bit less detailed compared to the playground
 *The transition between the playground and surrounding should be as smooth as possible. The area shouldn't be too different from the playground except players can't go
-
-=== The landscape area ===
+==The landscape area==
 The red zone is called the landscape area. Just like the surrounding area it's not accessible by the player
 *Everything is very low poly and minimalist
 *It gives a sense of depth and makes the world appear bigger than it really is
 *The player shouldn't be able to see the tricks used (like simple 2D trees or fake mountain).
 
-{{Popup-warning|content=The frontier between the playground and surrounding should be very clear. The player should ALWAYS know where he/she can go. In Gran Paradiso Island you can see the separation with a small wall and palm trees and heavy vegetation where the player can't go.}}
+<div class="outer_info">
+    <div class="inner_msg">
+The frontier between the playground and surrounding should be very clear. The player should ALWAYS know where he/she can go. In Gran Paradiso Island you can see the separation with a small wall and palmtrees and heavy vegetation where the player can't go
+</div></div>
 
-== Concept art ==
-
+=Concept art=
 Now we know what kind of area there will be in our Arena. We can start to paint/draw/create concepts :).
-
-=== Creating the Arena ===
+==Creating the Arena==
 Since the whole playground will be rougly enclosed in the Arena It's a good idea to draw a concept for the arena.
 
 As I said in the previous tutorial we want to create a unique building for the arena, we should create something never seen before and that will act as a landmark.
