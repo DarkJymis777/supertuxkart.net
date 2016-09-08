@@ -138,28 +138,16 @@ ul#get-involved-list > li > div {
 </div>
 <div class="get-involved-panel">
 
+== <i style="margin: 0px 5px;" class="fa fa-users"></i> For Everyone ==
+
+* [[Wiimote|Connecting your Wiimote]]
+* [[Translating STK]]
+
+</div>
+<div class="get-involved-panel">
+
 == <i style="margin: 0px 5px;" class="fa fa-paint-brush"></i> For Artists ==
 
-=== Guidelines ===
-* [[texture]] and [[material]]
-* [[Style Guidelines]]
-* [[Licensing]]
-* [[Music and sound effects general specifications|Music & SFX specifications]]
-* [[File naming conventions]]
-* [[Universe]]
-* [[Art Portal]] (Work-in-progress)
-
-=== Creating ===
-* List of [[Needed Objects]]
-* [[Track Maker's Guide|Track Maker's Guide]]
-* [[Kart resources index|Making Karts]]
-
-=== Misc HowTo's ===
-* Using the [[Media Repo]]
-* [[Installing the tools| Installing the tools]]
-* Running STK in [[Artist Debug Mode]]
-* [[Translating_STK | Translate STK]]
-* [[Track_Editor| Track Editor]]
-* Connect your [[Wiimote]]
+{{:Art Portal}}
 </div>
 </div>
