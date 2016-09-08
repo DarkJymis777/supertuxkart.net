@@ -116,7 +116,7 @@ ul#get-involved-list > li > div {
 <div class="get-involved-container">
 <div class="get-involved-panel">
 
-== <i style="margin: 0px 5px;" class="fa fa-file-code-o"></i> For Programmers ==
+== <i style="margin: 0px 5px;" class="fa fa-code"></i> For Programmers ==
 === Programming ===
 * [[Source control]]
 * [[Coding Style|Coding style guidelines]]
