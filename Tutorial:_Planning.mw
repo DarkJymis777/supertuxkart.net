@@ -1,32 +1,26 @@
 Welcome in the '''part 2''' of this tutorial designed to help you to do racing tracks for SuperTuxKart.<br />
-If you haven't read yet the [[Tutorial: Introduction| part 1]] it's recommended to do it before reading this one.
+If you haven't read yet the [[Tutorial:Introduction| part 1]] it's recommended to do it before reading this one.
 
 The goal is
 *Testing tracks
 *Testing other games so we can see how they made stadium
 *Creating a list of stuff we want in our arena
 
-== Testing the current tracks ==
+=Testing the current tracks=
 
 Okay now we gathered all references. Since the arena will be a "mix" between Las Dunas Stadium made by GeekPenguinBR and the current stadium arena, we can have some fun time and test both to take inspiration. We will do a small list of things we like.
 
-{{Popup-warning|content=Should I really play the track?
+<div class="outer_info">
+    <div class="inner_msg">
+Should I really play the track ?<br />
+Yes it's recommended. When you want to do something based on a current track it's good to test it so you can gather ideas. And also it's fun to do. It's not everyday you are asked to play to a video game :P
+</div></div>
 
-Yes it's recommended. When you want to do something based on a current track it's good to test it so you can gather ideas. And also it's fun to do. It's not everyday you are asked to play to a video game :P}}
-
-=== The stadium ===
+==The stadium==
 The first one is the "old stadium". You can test it with only one player if you have the development version of SuperTuxKart and by enabling the [[Artist_Debug_Mode| Artist Debug Mode]] which allows you to explore maps easily.
-
-<gallery mode="packed" widths="800px" heights="490px">
-File:The_stadium_1.jpg
-</gallery>
-
+[[Image:The_stadium_1.jpg|center|800px]]
 An overview of the arena. The map is very basic and has only the strict minimum. The whole place seems a bit empty.
-
-<gallery mode="packed" widths="800px" heights="490px">
-File:The_stadium_2.jpg
-</gallery>
-
+[[Image:The_stadium_2.jpg|center|800px]]
 We can see the playground from the point of view of the player. There is not a lot of details.
 
 So in our arena what should be kept from this stadium ?
@@ -34,18 +28,13 @@ So in our arena what should be kept from this stadium ?
 *The medium structure is very nice because it will create an obstacle and allow for interesting battles
 *One of the change we will do is create a tunnel under the central point to allow a more interesting gameplay
 
-=== The Las Dunas Stadium ===
-This track (it's not an arena) was made by GeekPenguinBR. It's a modern track with a lot of details. This will be one of our main inspiration. You can read the post on the [http://forum.freegamedev.net/viewtopic.php?f=18&t=6230&sid=3447164c48c84ab54159dbf56e3da35c forum] and download the arena [https://drive.google.com/open?id=0B62JMX-oo1PiY0lPVzJ6NFNjRkE here].
+==The Las Dunas Stadium==
+This track (it's not an arena) was made by GeekPenguinBR. It's a modern track with a lot of details. This will be one of our main inspiration. You can read the post on the [[http://forum.freegamedev.net/viewtopic.php?f=18&t=6230&sid=3447164c48c84ab54159dbf56e3da35c| forum]] and download the arena [[https://drive.google.com/open?id=0B62JMX-oo1PiY0lPVzJ6NFNjRkE| here]].
 
 We can see from the earlier screenshots it was started just like our will be. By taking the Stadium and improving it. One of the big issue is the track wasn't designed for highest difficulty. I won't post a screenshot for everything interesting in the track because there are too much stuff. Here is a overview of the track.
-
-<gallery mode="packed" widths="800px" heights="491px">
-File:The_stadium_3.jpg
-</gallery>
-
-<gallery mode="packed" widths="800px" heights="496px">
-File:The_stadium_4.jpg|Up close with the TV van
-</gallery>
+[[Image:The_stadium_3.jpg|center|800px]]
+One of the close up with the TV car
+[[Image:The_stadium_4.jpg|center|800px]]
 
 What are the interesting ideas ?
 *The level of detail is stunning. We should aim at something similar (even better if possible)
@@ -103,11 +92,13 @@ It doesn't have to be a game focus on racing (even if it's better). You can stil
 ==References from other medias==
 Of course not only games can be used. If you want to take inspiration from the movie Artificial Intelligence [https://www.youtube.com/watch?v=ZMbAmqD_tn0| disturbing scene "flesh fair"] with a lot of machine being exploded why not :P. Just keep it family friendly!
 
-{{Popup-warning|content=But but, you included tons of different games. Why not Mario Kart?
+<div class="outer_info">
+    <div class="inner_msg">
+But but, you included tons of different games. Why not Mario Kart ?<br />
+Well yes you are right. My personal rule is: I never take inspiration from Mario Kart, because SuperTuxKart is already a kart game. You can take inspiration from MK however I wouldn't recommend it. It's better to let your own ideas growing instead of making a boring copy.<br />
+All my maps are original and features original ideas
+</div></div>
 
-Well yes you are right. My personal rule is: I never take inspiration from Mario Kart, because SuperTuxKart is already a kart game. You can take inspiration from MK however I wouldn't recommend it. It's better to let your own ideas growing instead of making a boring copy.
-
-All my maps are original and features original ideas.}}
 
 =What do we want in our stadium=
 Okay folks, after playing games, gathering references, watching movies we are ready to make a list of stuff we want in our stadium.
@@ -144,4 +135,4 @@ In the next part we will start to create concepts for the arena and design the p
 
 If you have questions you can ask on our forum or IRC channel.
 
-Part 3 of the tutorial is available [[Tutorial: Imagining the arena| here]]
+Part 3 of the tutorial is available [[Tutorial:Imagining the arena| here]]
