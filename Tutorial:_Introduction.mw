@@ -137,7 +137,7 @@ In the next part we will test the current tracks and other games to create the l
 
 If you have questions you can ask on our forum or IRC channel.
 
-Part 2 of the tutorial is available [[Tutorial:Planning| here]]
+Part 2 of the tutorial is available [[Tutorial: Planning| here]]
 
 = Navigation data for AI =
 For computer players to work, a navmesh for the arena is required, details here:
