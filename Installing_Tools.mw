@@ -116,7 +116,7 @@ File:Stk-tools-1.png
 
 You can click "Save User Settings" to avoid repeating these steps each time you open Blender.
 
-{{Popup-warning|content=Blender stores settings in each .blend file; this means that if you open a .blend file that was started before you enabled the plugins, you will need to go in preferences for that particular blend and repeat the steps}}
+{{Popup-warning|content=Blender stores settings in each .blend file; this means that if you open a .blend file that was started before you enabled the plugins, you will need to go in preferences for that particular blend and repeat the steps.}}
 
 === SuperTuxKart Track Editor ===
 
