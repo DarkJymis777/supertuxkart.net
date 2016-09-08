@@ -2,6 +2,10 @@ This page won't go into detail about modeling—any Blender tutorial can help wi
 
 == Modeling ==
 
-Use whatever methods you need to model your objects. However, it helps to understand the scaling of objects a bit—for more information, see the [[3D Model Guidelines]] page, which you should have already read. When you have finished
+Use whatever methods you need to model your objects. However, it helps to understand the scaling of objects a bit—for more information, see the [[3D Model Guidelines]] page, which you should have already read. If you are using level of detail, you may want to skip ahead to the [[Level of Detail]] page and then come back to this page.
+
+== Properties ==
+
+Library nodes are distinguished by the <code>stklib</code> prefix. Your .blend file should be named <code>stklib_<object name>_<variation letter (a, b, C, etc.)>.blend</code>. If an object similar to yours already exists in the <code>library</code> folder of the media repository, use a different variation letter. For example, if you were creating a palm tree model, you would notice that <code>stklib_palmTree_a</code> already exists. Therefore you would use <code>stklib_palmTree_b</code> for a library node ID.
 
 {{ArtPortalNav}}
