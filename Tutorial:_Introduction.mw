@@ -14,7 +14,7 @@ The goal is:
 
 To follow the tutorial you need the fellowing tools and software on your computer:
 
-*[https://www.blender.org| Blender 3D] with our [[Installing_the_tools| exporting tools]]
+* [https://www.blender.org|Blender 3D] with our [[Installing Tools| exporting tools]]
 *A 2D image manipulation program (I will use gimp or krita but you can also use photoshop)
 *A vector image program (inskape or illustrator is fine)
 *The development version of SuperTuxKart (Tutorial here [[Build_STK_on_Linux| for Linux]], [[How_to_build_the_Windows_version| for Microsoft Windows]] and [[Building_and_packaging_on_OSX| For MacOSX]])
@@ -25,9 +25,8 @@ To follow the tutorial you need the fellowing tools and software on your compute
 
 Don't forget our own resources:
 
-*[[Track_Maker's_Guide| The track maker guide]]
-*[[Style_Guidelines| The style guidelines]] 
-*The [[universe| universe of SuperTuxKart]]
+*[[Making Tracks]]
+*[[Style]]]
 
 So, we are ready to dive into the creation of our arena. The next step is to gather references that will help us to keep one foot in reality.
 
