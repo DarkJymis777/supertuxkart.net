@@ -1,0 +1,138 @@
+Welcome in the '''part 2''' of this tutorial designed to help you to do racing tracks for SuperTuxKart.<br />
+If you haven't read yet the [[Tutorial:Introduction| part 1]] it's recommended to do it before reading this one.
+
+The goal is
+*Testing tracks
+*Testing other games so we can see how they made stadium
+*Creating a list of stuff we want in our arena
+
+=Testing the current tracks=
+
+Okay now we gathered all references. Since the arena will be a "mix" between Las Dunas Stadium made by GeekPenguinBR and the current stadium arena, we can have some fun time and test both to take inspiration. We will do a small list of things we like.
+
+<div class="outer_info">
+    <div class="inner_msg">
+Should I really play the track ?<br />
+Yes it's recommended. When you want to do something based on a current track it's good to test it so you can gather ideas. And also it's fun to do. It's not everyday you are asked to play to a video game :P
+</div></div>
+
+==The stadium==
+The first one is the "old stadium". You can test it with only one player if you have the development version of SuperTuxKart and by enabling the [[Artist_Debug_Mode| Artist Debug Mode]] which allows you to explore maps easily.
+[[Image:The_stadium_1.jpg|center|800px]]
+An overview of the arena. The map is very basic and has only the strict minimum. The whole place seems a bit empty.
+[[Image:The_stadium_2.jpg|center|800px]]
+We can see the playground from the point of view of the player. There is not a lot of details.
+
+So in our arena what should be kept from this stadium ?
+*I kinda like the playground (where the battles are happening) and I want to somehow have a similar basic layout.
+*The medium structure is very nice because it will create an obstacle and allow for interesting battles
+*One of the change we will do is create a tunnel under the central point to allow a more interesting gameplay
+
+==The Las Dunas Stadium==
+This track (it's not an arena) was made by GeekPenguinBR. It's a modern track with a lot of details. This will be one of our main inspiration. You can read the post on the [[http://forum.freegamedev.net/viewtopic.php?f=18&t=6230&sid=3447164c48c84ab54159dbf56e3da35c| forum]] and download the arena [[https://drive.google.com/open?id=0B62JMX-oo1PiY0lPVzJ6NFNjRkE| here]].
+
+We can see from the earlier screenshots it was started just like our will be. By taking the Stadium and improving it. One of the big issue is the track wasn't designed for highest difficulty. I won't post a screenshot for everything interesting in the track because there are too much stuff. Here is a overview of the track.
+[[Image:The_stadium_3.jpg|center|800px]]
+One of the close up with the TV car
+[[Image:The_stadium_4.jpg|center|800px]]
+
+What are the interesting ideas ?
+*The level of detail is stunning. We should aim at something similar (even better if possible)
+*Wilbert (gimp's mascot) as cameraman.
+*Giant Sunshine Cola can
+*On fire barrels
+*Blimp
+*Giant screen
+*The monster truck
+
+Okay now we have a list of stuff that should be taken from both tracks. If we can resume it will be the layout of the old stadium with the objects and quality of the las dunas track.
+
+=Testing other games=
+Now we finished our SuperTuxKart game it might be a good idea to test other games who have stadium. To see how they where done, what was inside, etc.
+It's important to choose game that are recognized in their field and considered as references. If you don't have the game yourself you can watch video on YouTube.
+<div class="outer_info">
+    <div class="inner_msg">
+Why not taking as references Open Source games ?<br />
+It's not recommended because unfortunately Open Source games aren't what people consider the references. So for artistic purpose and to get the best chances to make something epic we must see what masters do. It should be also a recent game (like not older than 2010).
+</div></div>
+
+==Fifa Series==
+One of the first game that comes to my mind for stadium is the Fifa series. Unfortunately I don't have any Fifa games. But we can watch some videos on youtube. Yes the Fifa series is all about soccer but we can learn stuff about the stadium.
+
+I watched this [https://www.youtube.com/watch?v=jHGsgHWH1oI| video] and here is what I think is interesting
+*You have animated advestising between the playground and the public
+*You have dynamic sound reacting to player's action (very cool maybe we can do that with scripting)
+*Policeman watching the public
+*The public isn't static and moves.
+
+==Motocross games==
+I don't have any motocross game. I watched this [https://www.youtube.com/watch?v=Ma6UjBPd8F8| video on youtube] and I really enjoyed the first part. We can learn a lot.
+
+*Dramatic scenery and people reacting to your actions.
+*It's during night. So very cool. We can see the mountain in the distance which is what I wanted (not necessarily mountains but outside of the stadium).
+*Everything is very dusty
+*You have tons of flashes from camera in the public.
+*One of the most annoying thing was the sound of the bike
+
+==Demolition derby==
+On [https://www.youtube.com/watch?v=2LJr4O72wHo| this video] we can see close up of an arena.
+*There are part of broken cars
+*A blimp
+*Everything is very rusty and dusty
+
+==Fallout 4==
+It might seems very strange to you because fallout isn't a racing game nor a game with cars. However I choose to include it because I have it and there is in [http://fallout.wikia.com/wiki/Diamond_City| Diamond city] a stadium (actually it's an old baseball stadium).
+
+It doesn't have to be a game focus on racing (even if it's better). You can still gather interesting informations.
+
+*There are giant floodlight
+*You can see the City in the distance (from inside the stadium)
+*If we want an old abandoned stadium it might be an interesting reference
+
+==References from other medias==
+Of course not only games can be used. If you want to take inspiration from the movie Artificial Intelligence [https://www.youtube.com/watch?v=ZMbAmqD_tn0| disturbing scene "flesh fair"] with a lot of machine being exploded why not :P. Just keep it family friendly!
+
+<div class="outer_info">
+    <div class="inner_msg">
+But but, you included tons of different games. Why not Mario Kart ?<br />
+Well yes you are right. My personal rule is: I never take inspiration from Mario Kart, because SuperTuxKart is already a kart game. You can take inspiration from MK however I wouldn't recommend it. It's better to let your own ideas growing instead of making a boring copy.<br />
+All my maps are original and features original ideas
+</div></div>
+
+
+=What do we want in our stadium=
+Okay folks, after playing games, gathering references, watching movies we are ready to make a list of stuff we want in our stadium.
+
+==The playground (where the player is)==
+*It will be dusty and rusty with sand/earth/concrete
+*Similar to the first stadium (the old arena)
+*There should be some jumps and tunnels
+*Maybe the player could be able to go outside of the pitch (to explore the surrounding of the stadium)
+*There should be a monster truck moving around and doing jump. Not sure if it should interact with the player
+*Since the Arena is inspired by motocross sport. Maybe they could be bikes racing around.
+
+==The stadium (around the player)==
+*The name of the stadium will be: Las Dunas Motor Arena
+*The Arena style (the building) will be relatively modern and futuristic
+*The building should be very stylized. People should be able to recognize immediately the stadium
+*There will be giant floodlight around the stadium
+*The public must be animated and not boring
+*We should see flashes from camera in the public
+
+==The landscape (around the stadium)==
+*Inspired by Las Vegas/Los Angeles (a modern city)
+*A desert (similar to the grand canyon maybe)
+*Some typical landmark (like the Welcome to Las Dunas) and Ploppywood sign (equivalent of Hollywood sign)
+= Conclusion =
+
+What we learned so far:
+*We tested different games to see how they made their stadium
+*We saw how you can take references from a lot of sources (in a movie for instance)
+*We have a list of stuff we want in our arena.
+*We are ready to imagine our arena.
+
+In the next part we will start to create concepts for the arena and design the playground.
+
+If you have questions you can ask on our forum or IRC channel.
+
+Part 3 of the tutorial is available [[Tutorial:Imagining the arena| here]]
