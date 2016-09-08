@@ -4,7 +4,7 @@ It's important to note at this point that we are not referring to Blender or Cyc
 
 {{Popup-warning|content=Several other features, including special effects and physics properties also piggyback on SuperTuxKart's materials system. These reside in the "Interaction" section of the SuperTuxKart Image Properties panel, and are discussed in other articles. This article only discusses the "Display" section.}}
 
-If you used textures from the media repository, you don't have to worry about materials. The materials are already configured in <code>materials.xml</code> in the <code>textures</code> folder of the <code>stk-assets</code> repository.
+If you used textures from the media repository, you don't have to worry about materials. The materials are already configured in <code>materials.xml</code> in the <code>textures</code> folder of the <code>stk-assets</code> repository and will not be configurable through the SuperTuxKart Image Properties panel.
 
 Textures not from the media repository will have to be configured in the SuperTuxKart Image Properties panel. There are several options to configure.
 
