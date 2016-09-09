@@ -83,8 +83,7 @@ A rare exception is made for configuring point lights: they are configured via B
 
 {{Popup-warning|content=Only the nearest 8, 16, or 32 point lights closest to the camera will be visible in-game. Avoid using too many lights. Instead, use one or two point lights along with an outline effect or the blue (emit) channel of the gloss map.}}
 
-</onlyinclude>
-== Ambient Light Map ==
+</onlyinclude>== Ambient Light Map ==
 
 Ambient light maps, also known as image-based lighting or spherical harmonics lighting can be used in conjunction with the the color of the sun to affect the lighting of a track by simulating light bouncing off the image. An ambient light map, however, unlike changing sun color, allows for variable lighting across the scene. 
 
