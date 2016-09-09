@@ -16,9 +16,17 @@ Yes it's recommended. When you want to do something based on a current track it'
 
 === The stadium ===
 The first one is the "old stadium". You can test it with only one player if you have the development version of SuperTuxKart and by enabling the [[Artist_Debug_Mode| Artist Debug Mode]] which allows you to explore maps easily.
-[[Image:The_stadium_1.jpg|center|800px]]
+
+<gallery mode="packed" widths="800px" heights="490px">
+File:The_stadium_1.jpg
+</gallery>
+
 An overview of the arena. The map is very basic and has only the strict minimum. The whole place seems a bit empty.
-[[Image:The_stadium_2.jpg|center|800px]]
+
+<gallery mode="packed" widths="800px" heights="490px">
+File:The_stadium_2.jpg
+</gallery>
+
 We can see the playground from the point of view of the player. There is not a lot of details.
 
 So in our arena what should be kept from this stadium ?
