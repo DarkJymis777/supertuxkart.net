@@ -11,7 +11,9 @@ The goal is
 
 Now before jumping into work It's important to clarify a few point. Let's break down what constitute a map. I will take for example the Gran Paradiso Island to explain different area in maps. Remember even if it's a track and we are building an arena both are very similar. There is roughly 3 area in a map.
 
-[[Image:GranParadiso area.jpg|center|800px]]
+<gallery mode="packed" widths="800px" heights="490px">
+File:GranParadiso area.jpg
+</gallery>
 
 === The playground area ===
 
@@ -19,6 +21,7 @@ The green zone is called the playground area. It's the area where the player can
 *The area is highly detailed
 *It's the only area where the player can go
 *There can be secret area. But if it's intended to be able to be discovered by the player then it's the playground area
+
 ==The Surrounding area==
 The blue zone is called the surrounding area. This area isn't accessible by the player
 *It's a bit less detailed compared to the playground
