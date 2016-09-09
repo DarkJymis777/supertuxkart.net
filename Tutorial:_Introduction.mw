@@ -38,16 +38,20 @@ People aren't not very good to remember details. In one second we can roughly on
 
 For instance if I ask you to create a concrete barrier, everyone knows how a concrete barrier look, you probably see them everyday when you go to work. So you open blender and do something like
 
-[[Image:Stk-tutorial-barrier-1.jpg|center|800px]]
+<gallery mode="packed" widths="800px" heights="461px">
+File:Stk-tutorial-barrier-1.jpg
+</gallery>
 
 The problem is you are missing a lot of details and over simplifying the object. It looks very cheap and if you do all your objects like that the end result won't be as good as it could be. The solution is simply to gather pictures, drawing, ideas, etc that will help you during the process of creating the map. Yes it's a bit like cheating but it's recommended and allowed. The goal is to have the right inspiration. Now if I show you a picture like
 
 [https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/BarreiraNewJersey.JPG/1280px-BarreiraNewJersey.JPG this one], you can see all the details and reproduce them for your track/objects/etc.
 
-[[Image:Stk-tutorial-barrier-2.jpg|center|800px]]
+<gallery mode="packed" widths="800px" heights="461px">
+File:Stk-tutorial-barrier-2.jpg
+</gallery>
 
 See the big difference. The barrier is interesting to see, there is a lot of details like the wires on top to load them, the warning strip at the bottom etc.
-It's not photorealistic but now at least we got an object with interesting details that could be a real life barrier. (And besides, the goal isn't to be completely realistic---just mostly realistic.)
+It's not photorealistic but now at least we got an object with interesting details that could be a real life barrier. (And besides, the goal isn't to be completely realistic—just mostly realistic.)
 
 It's important to gather references from the biggest object to the smallest detail. In our case we are interested in stadium and what's inside them.
 
