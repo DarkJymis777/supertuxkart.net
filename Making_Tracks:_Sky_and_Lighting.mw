@@ -109,7 +109,8 @@ With fog enabled, you can have volumetric lights. This creates a halo-like effec
 * '''Fog Max:''' This is the maximum density the fog can reach. This is useful to stop the fog from getting thicker even as objects get farther away.
 
 <!-- Mark for transclusion into Library Nodes tutorial -->
-<onlyinclude>=== Volumetric Lights ===
+<onlyinclude>
+=== Volumetric Lights ===
 
 <gallery mode="packed" widths="600px" heights="322px">
 File:Antartica_volumetric.jpg
