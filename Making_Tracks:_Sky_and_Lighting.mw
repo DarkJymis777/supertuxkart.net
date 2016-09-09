@@ -77,7 +77,7 @@ File:Antartica_dynamicshadows.jpg
 <!--Separate for transclusion in Library Nodes tutorial-->
 <onlyinclude>== Point lights ==
 
-Point lights are simply points that emit light in all directions. Simply set any Blender point lights to the "Light" type in the SuperTuxKart Object Properties panel. Point lights will create a halo if fog is enabled. See [[#Fog and Volumetric Lighting]] below.
+Point lights are simply points that emit light in all directions. Simply set any Blender point lights to the "Light" type in the SuperTuxKart Object Properties panel. Point lights will create a halo if fog is enabled. See [[#Volumetric Lights]] below.
 
 A rare exception is made for configuring point lights: they are configured via Blender's interface. You can set the light color, distance, and energy in the Data section of Blender's Properties window for your lamps.
 
