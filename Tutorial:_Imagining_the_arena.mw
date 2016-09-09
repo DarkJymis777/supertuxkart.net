@@ -22,7 +22,7 @@ The green zone is called the playground area. It's the area where the player can
 *It's the only area where the player can go
 *There can be secret area. But if it's intended to be able to be discovered by the player then it's the playground area
 
-==The Surrounding area==
+=== The Surrounding area ===
 The blue zone is called the surrounding area. This area isn't accessible by the player
 *It's a bit less detailed compared to the playground
 *The transition between the playground and surrounding should be as smooth as possible. The area shouldn't be too different from the playground except players can't go
@@ -33,10 +33,7 @@ The red zone is called the landscape area. Just like the surrounding area it's n
 *It gives a sense of depth and makes the world appear bigger than it really is
 *The player shouldn't be able to see the tricks used (like simple 2D trees or fake mountain).
 
-<div class="outer_info">
-    <div class="inner_msg">
-The frontier between the playground and surrounding should be very clear. The player should ALWAYS know where he/she can go. In Gran Paradiso Island you can see the separation with a small wall and palmtrees and heavy vegetation where the player can't go
-</div></div>
+{{Popup-warning|content=The frontier between the playground and surrounding should be very clear. The player should ALWAYS know where he/she can go. In Gran Paradiso Island you can see the separation with a small wall and palm trees and heavy vegetation where the player can't go.}}
 
 == Concept art ==
 
