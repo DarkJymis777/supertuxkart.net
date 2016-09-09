@@ -6,17 +6,15 @@ The goal is
 *Testing other games so we can see how they made stadium
 *Creating a list of stuff we want in our arena
 
-=Testing the current tracks=
+== Testing the current tracks ==
 
 Okay now we gathered all references. Since the arena will be a "mix" between Las Dunas Stadium made by GeekPenguinBR and the current stadium arena, we can have some fun time and test both to take inspiration. We will do a small list of things we like.
 
-<div class="outer_info">
-    <div class="inner_msg">
-Should I really play the track ?<br />
-Yes it's recommended. When you want to do something based on a current track it's good to test it so you can gather ideas. And also it's fun to do. It's not everyday you are asked to play to a video game :P
-</div></div>
+{{Popup-warning|content=Should I really play the track?
 
-==The stadium==
+Yes it's recommended. When you want to do something based on a current track it's good to test it so you can gather ideas. And also it's fun to do. It's not everyday you are asked to play to a video game :P}}
+
+=== The stadium ===
 The first one is the "old stadium". You can test it with only one player if you have the development version of SuperTuxKart and by enabling the [[Artist_Debug_Mode| Artist Debug Mode]] which allows you to explore maps easily.
 [[Image:The_stadium_1.jpg|center|800px]]
 An overview of the arena. The map is very basic and has only the strict minimum. The whole place seems a bit empty.
@@ -28,7 +26,7 @@ So in our arena what should be kept from this stadium ?
 *The medium structure is very nice because it will create an obstacle and allow for interesting battles
 *One of the change we will do is create a tunnel under the central point to allow a more interesting gameplay
 
-==The Las Dunas Stadium==
+=== The Las Dunas Stadium ===
 This track (it's not an arena) was made by GeekPenguinBR. It's a modern track with a lot of details. This will be one of our main inspiration. You can read the post on the [[http://forum.freegamedev.net/viewtopic.php?f=18&t=6230&sid=3447164c48c84ab54159dbf56e3da35c| forum]] and download the arena [[https://drive.google.com/open?id=0B62JMX-oo1PiY0lPVzJ6NFNjRkE| here]].
 
 We can see from the earlier screenshots it was started just like our will be. By taking the Stadium and improving it. One of the big issue is the track wasn't designed for highest difficulty. I won't post a screenshot for everything interesting in the track because there are too much stuff. Here is a overview of the track.
