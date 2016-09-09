@@ -1,0 +1,4 @@
+Point lights will export with library nodes. This allows you to create lamps, streetlights, etc. with properly positioned lights.
+
+<!--Transclude point lights and volumetric lights from Making Tracks: Sky and Lighting-->
+{{:Making Tracks: Sky and Lighting}}
