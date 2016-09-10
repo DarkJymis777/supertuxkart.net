@@ -32,7 +32,6 @@ It is extremely important to have consistent naming for library nodes, since oth
 
 * The .blend file should be named with the library node ID with the <code>.blend</code> file extension.
 * The object to be linked in a scene (of type "Object," "LOD Instance," or "LOD Standalone" in the SuperTuxKart Object Properties panel) should be named with the library node prefix suffixed with <code>_main</code>. For example,
-
 {{Popup-code|content=stklib_palmTree_a_main}}
 
 * Other objects (e.g. LOD Models, particle emitters, etc. should be given a clear and identifying name to avoid confusion.)
