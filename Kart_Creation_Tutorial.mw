@@ -9,7 +9,7 @@ See the [[Blender resources page]] for a list of tutorial links to learn how to 
 
 =Character and kart design=
 
-All of STK's characters are open-source mascots, therefore if you want to add a kart to STK you must satisfy this constraint. You can find a list of the most known open-source mascots [http://chl.be/mascots/ here] (try to find all of STK's characters :p). Be careful that you do not choose one which is already involved in some work in progress, or present in the add-on pack of STK. You can check it out on [http://forum.freegamedev.net/viewforum.php?f=16 the forum], and the [http://www.addons.supertuxkart.net/ Add-Ons website].
+All of STK's characters are open-source mascots, therefore if you want to add a kart to STK you must satisfy this constraint. Be careful that you do not choose one which is already involved in some work in progress, or present in the add-on pack of STK. You can check it out on [http://forum.freegamedev.net/viewforum.php?f=16 the forum], and the [http://www.addons.supertuxkart.net/ Add-Ons website].
 
 Once you have chosen your mascot, you need a kart design for it. If you wish it to be included in the official game package, you must design it so it fits well with the game atmosphere and is credible. See [[Legacy:Style Guidelines]] to know more about STK's design requirements. Remember that the most seen part of the karts by players is the back so this is a part that should be polished.
 
@@ -20,19 +20,20 @@ It is important to note that some weapons like the swatter attach themselves on 
 
 
 ===Mesh & vertex count===
-The model of a kart for STK should not have more than 3000 triangles, eg. 2000 for the vehicle, wheels included, and 1000 for the character (note that this limitation is not respected by every current STK kart, as some need to be improved). It makes 1500 faces if every face is a quad, ideally this would be around 1300. You can consult some old statistics about models [http://supertuxkart.sourceforge.net/Making_kart_tutorial#Polygon_count here].
-In the future, STK will support [http://en.wikipedia.org/wiki/Level_of_detail LOD], so a low poly model (500 to 900 faces) would also be very appreciated.
+When modeling for video games, the polygon count means the triangle counts. The model of a kart for STK should not have more than 18 000 triangles (character and wheels included). Ideally it should be between 6 000 and 12 000 but all vehicles are differents and not exactly karts. A vehicle which is a kart and cartoon-like should be about 3 000 triangles. When modeling, always try to aim the old requiments (about 6 000 triangles).
+In the future, STK will support [http://en.wikipedia.org/wiki/Level_of_detail LOD], so a lower definition model (so lower polygon count) would also be very appreciated.
+For your work to be accepted by the team, you have to know that we can be flexible according to vehicle and character kind, but if the polygon count is excessive compared to your vehicle design it won't be accepted.
 
-To know roughly the number of triangles of your mesh, you can temporarily convert your faces to triangles with Ctrl+T on Blender, or view the exported kart (see [[#Exporting karts]] to learn how to export a kart) in the selection screen of STK, with the "Show FPS" option checked -- wait a little to have a "Ktris" value.
+To know roughly the number of triangles of your mesh, you can temporarily convert your faces to triangles with Ctrl+T on Blender, or view the exported kart (see [[#Exporting karts]] to learn how to export a kart) in the selection screen of STK, with the 'Show FPS' option checked -- wait a little to have a 'Ktris' value.
 
-Alternatively, you can always consult the current tris of your project using Blender's "Info" panel:
+Alternatively, you can always consult the current tris of your project using Blender's 'Info' panel:
 
 <gallery mode="packed" widths=591px heights=26px>
 File:Blender_screenshot_tris.png
 </gallery>
 
 
-By default Blender displays the sum of all the faces from the active scene (only active layers will be taken in count): "Fa" stands for faces and "Ob" stands for the current number of elements placed at the 3D scene, if you enter in "Edit Mode" (TAB key) the counter will be displaying the number of faces of the shape you are currently editing, while no necessary it is recommended to work with "tri faces" until no further modeling is needed.
+By default Blender displays the sum of all the faces from the active scene (only active layers will be taken in count): 'Fa' stands for faces and 'Ob' stands for the current number of elements placed at the 3D scene, if you enter in 'Edit Mode' (TAB key) the counter will be displaying the number of faces of the shape you are currently editing, while no necessary it is recommended to work with 'tri faces' until no further modeling is needed.
 
 During the modeling phase, remember that the kart is made to be seen from medium and far distances, but not very close distances, so detailing it a lot may be useless as some details would only be visible in rare and precise situations, a good trick is making these details part of the vehicle's texture. Also, it is way harder (and boring) trying to decrease the poly count of an existing high poly model than designing and modeling a low poly kart from the beginning, so it is worth keeping the poly number in mind.
 
@@ -62,7 +63,7 @@ Ideally, the kart has its own mesh, the character another independent mesh, and 
 <gallery mode="packed" widths=640px heights=360px>Wheel.jpg</gallery>
 
 
-Note that karts can have (up to) 4 wheels. Wheels that are on the front are considered steering wheels and will automatically rotate as you steer in-game. The wheel's origin in Blender is used by SuperTuxKart for the wheel movement, an incorrectly placed "origin" can cause the wheel improper movement, also you might want to make test for aesthetic purposes, mostly to fix the point from where the wheel steers. 
+Note that karts can have (up to) 4 wheels. Wheels that are on the front are considered wheel-steerings and will automatically rotate as you steer in-game. The wheel's origin in Blender is used by SuperTuxKart for the wheel movement, an incorrectly placed geometry's origin can cause the wheel improper movement, also you might want to make test for aesthetic purposes, mostly to fix the point from where the wheel steers. 
 
 The collision is calculated only for the vehicle mesh (assuming the character never go outside the kart), if your vehicle features big wheels is most likely these will go through other vehicles and track objects like walls or guard rails, even over fences some times so be sure to make enough tests if your vehicle has to have big wheels, like in the case of monster trucks. Contrary case, try no to make your vehicle's chassis too low, as the car would find problems with irregular terrain.
 
@@ -85,13 +86,14 @@ The current STK Blender plugin features a custom panel to directly edit the attr
 =Animating=
 
 STK's karts can be animated. The current karts animations in STK are : 
-* Steering, left and right : Specify the frames with markers named '''left''', '''straight''' and '''right'''.
+* Steering, left and right: Specify the frames with markers named '''left''', '''straight''' and '''right'''.
 * Winning animation, specified with the '''start-winning''', '''start-winning-loop''', and '''end-winning''' named markers. The frames between start-winning and start-winning-loop are played once, then the frames between start-winning-loop and end-winning are looped.
-* Losing animation : as the winning animation : '''start-losing''', '''start-losing-loop''' and '''end-losing'''.
+* Losing animation: as the winning animation : '''start-losing''', '''start-losing-loop''' and '''end-losing'''.
+* Other parts with loop animation (like Xue's hovercraft's propeller and Adiumy's key): markers '''start-speed-weighted''' and '''end-speed-weighted'''.
 
 <gallery mode="packed" widths=640px heights=360px>Animations.jpg</gallery>
 
-Meshes must be animated with skeletal animations, using blender's armatures. Note that STK will only be able to play animations if the armature is the parent object of the animated mesh in the Blender scene (you might have to remove the "armature" modifier if you used it, otherwise transformations can be applied twice to the mesh). STK supports multiples animated objects (one armature by distinct animated mesh) since the 0.7.1 version.
+Meshes must be animated with skeletal animations, using blender's armatures. Note that STK will only be able to play animations if the armature is the parent object of the animated mesh in the Blender scene (you might have to remove the 'armature' modifier if you used it, otherwise transformations can be applied twice to the mesh). STK supports multiples animated objects (one armature by distinct animated mesh) since the 0.7.1 version.
 
 Also, make sure every bone of your armature has a 0 roll, otherwise ingame animation will look pretty weird.
 {{popup-warning
@@ -107,6 +109,8 @@ You can specify two nitro emitters. They must be set on empty objects; the nitro
  
 [[Image:Nitro_emitter_kart.jpg|center|thumb|400px]]
 
+{{Popup-warning|content=Currently you must have two nitro emitters even if you want keep one. If not, your empty is ignored and a default nitro emitter is set. Just duplicate the existing one at the same position.}}
+
 =Icon & shadow=
 
 [[Image:Kart_icons_STK_071.png|700px|thumb]]
@@ -114,7 +118,7 @@ You can specify two nitro emitters. They must be set on empty objects; the nitro
 
 The last things an STK kart needs are an icon and a shadow image.
 
-The icon should be a 128x128 or 64x64 png image, and should have the same design than the other STK karts icons (most of them are from [http://www.wormux.org/phpboost/gallery/gallery-4+avatars.php WorMux], adapted by [http://yeknan.free.fr/dc2/index.php?post/2010/12/22/SuperTuxKart-07 yeKcim (FR)]). A smaller version (for instance 32x32) may also be specified to be used in the in-game minimap (if you don't provide the smaller version, the 64x64 one is resized down, which may look less good than an icon crafted to be smaller).
+The icon should be a 128x128 or 64x64 png image, and should have the same design than the other STK karts icons. A smaller version (for instance 32x32) may also be specified to be used in the in-game minimap (if you don't provide the smaller version, the 64x64 one is resized down, which may look less good than an icon crafted to be smaller).
 
 The shadow image is a png image which is applied on the ground under the karts. To be credible, it must correspond to the kart shape, otherwise the kart will seem to float above the ground. Here is a little method to get quick and fast a nice shadow : [[Kart shadow tutorial]].
 
