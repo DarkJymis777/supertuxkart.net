@@ -6,6 +6,14 @@ Use whatever methods you need to model your objects. However, it helps to unders
 
 == Properties ==
 
-Library nodes are distinguished by the <code>stklib</code> prefix. Your .blend file should be named <code>stklib_<object name>_<variation letter (a, b, C, etc.)>.blend</code>. If an object similar to yours already exists in the <code>library</code> folder of the media repository, use a different variation letter. For example, if you were creating a palm tree model, you would notice that <code>stklib_palmTree_a</code> already exists. Therefore you would use <code>stklib_palmTree_b</code> for a library node ID.
+Every library node has an ID. The format is
+{{Popup-code|content=stklib_objectName_variationLetter}}
+
+The object name should be short and descriptive. It should not explain the details of your object, such as a plant's species. If an object similar to yours already exists in the <code>library</code> folder of the media repository, use a different variation letter. For example, if you were creating a palm tree model, you would notice that <code>stklib_palmTree_a</code> already exists. Therefore you would use <code>stklib_palmTree_b</code> for a library node ID.
+
+=== Object Naming ===
+
+It is extremely important to have consistent naming for library nodes, since other artists will be using them.
+
 
 {{ArtPortalNav}}
