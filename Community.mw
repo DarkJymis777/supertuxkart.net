@@ -97,7 +97,7 @@ ul#get-involved-list > li > div {
     <li>
         <a class="community-link" href="http://sourceforge.net/projects/supertuxkart/">
             <div class="get-involved-icon"><i class="get-involved-icons icon-sf-logo" style="font-size: 90px; margin-top: 5px; margin-bottom: -5px;"></i></div>
-            <div class="get-involved-name">Sourceforge</div>
+            <div class="get-involved-name">SourceForge</div>
         </a>
     </li>
 </ul>
