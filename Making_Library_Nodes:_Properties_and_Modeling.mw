@@ -24,6 +24,7 @@ You should have at least one main object that will be visible in Blender when so
 * If you made a library node with only a single object, that will be your main object. Simply set the object to type "Object" in the SuperTuxKart Object Properties panel.
 * If you are using [[Level of Detail]], your LOD instance will be the main object.
 * Do not use the "None" object type; this is only for tracks, arenas, and cutscenes.
+* You can use the "Ignore" type to make prevent the object from being exported.
 
 === Naming ===
 
