@@ -88,7 +88,8 @@ The current STK Blender plugin features a custom panel to directly edit the attr
 STK's karts can be animated. The current karts animations in STK are : 
 * Steering, left and right: Specify the frames with markers named '''left''', '''straight''' and '''right'''.
 * Winning animation, specified with the '''start-winning''', '''start-winning-loop''', and '''end-winning''' named markers. The frames between start-winning and start-winning-loop are played once, then the frames between start-winning-loop and end-winning are looped.
-* Losing animation: as the winning animation : '''start-losing''', '''start-losing-loop''' and '''end-losing'''.
+* Losing animation: as the winning animation: '''start-losing''', '''start-losing-loop''' and '''end-losing'''.
+* Jumping animation: markers '''start-jump''' and '''end-jump'''.
 * Other parts with loop animation (like Xue's hovercraft's propeller and Adiumy's key): markers '''start-speed-weighted''' and '''end-speed-weighted'''.
 
 <gallery mode="packed" widths=640px heights=360px>Animations.jpg</gallery>
